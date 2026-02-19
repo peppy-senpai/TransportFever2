@@ -1,0 +1,80 @@
+local transf = require "transf"
+local vec2 = require "vec2"
+local vec3 = require "vec3"
+local modulesutil = require "modulesutil"
+local constructionutil = require "constructionutil"
+
+--Begin Generated
+local generatedData = {
+	["assets"] = {
+		models = {
+			["station/water/era_a/safeguard_metal_pillar.mdl"] = {
+				{ 0.00000, 1.00000, 0.00000, 0.00000, -1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -5.50000, -6.25000, -0.30000, 1.00000, },
+				{ 0.00000, 1.00000, 0.00000, 0.00000, -1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -5.50000, -3.12500, -0.30000, 1.00000, },
+				{ 0.00000, 1.00000, 0.00000, 0.00000, -1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -5.50000, 0.00000, -0.30000, 1.00000, },
+				{ 0.00000, 1.00000, 0.00000, 0.00000, -1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -5.50000, 3.12500, -0.30000, 1.00000, },
+				{ 0.00000, 1.00000, 0.00000, 0.00000, -1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -5.50000, 6.25000, -0.30000, 1.00000, },
+			},
+		},
+	},
+}
+--End Generated
+
+function data()
+
+return { 
+	cost = {
+		price = 10000,
+	},
+	category = {
+		categories = { "misc" },
+	},
+	description = {
+		name = _("Pedestrian entrance"),
+		description = _("A small ramp to connect to the street."),
+		icon = "ui/construction/station/water/pedestrian_entrance.tga"
+	}, 
+	availability = {
+		yearFrom = 1850,
+		yearTo = 0,
+	},
+	type = "pedestrian_entrance",
+	order = {
+		value = 1,
+	},
+	metadata = {
+		platform = true,
+		type = 0
+	},
+	
+	updateFn = function(result, transformInvalid, tag, slotId, addModelFnInvalid, params)
+		local coordI, coordJ, facing = result.DemangleId(slotId)
+		local size = {1, 1}
+
+		local bounds, center, range = result.MakeBoundsAndCenter(slotId, size, coordI, coordJ, facing)
+
+		result.addModuleData[slotId] = function(transform, addModelFn)
+			local tf = transf.mul(transf.transl(center), transform)
+			addModelFn("station/water/era_a/pedestrian_entrance_network_person.mdl", tf)
+			
+			constructionutil.addModels(generatedData["assets"], result.models, tf)
+		end
+		
+		result.MakeSlots(bounds, range[12], "12_12")
+		--result.MakeSlots(bounds, range[12], "50_12")
+		--result.MakeSlots(bounds, range[12], "100_25")
+		--result.MakeSlots(bounds, range[12], "100_25_flip")
+		--result.MakeSlots(bounds, range[50], "50_12_flip")
+		result.MakeSlots(bounds, range[-12], "50_50")
+		--result.MakeSlots(bounds, range[12], "100_50")
+		
+		result.AddFace(bounds, -0.3, -0.3)
+
+	end,
+	
+	getModelsFn = function()
+		return {}
+	end
+}
+
+end

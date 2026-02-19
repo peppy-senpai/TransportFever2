@@ -1,0 +1,140 @@
+local vec3 = require "vec3"
+local streetutil = require "streetutil"
+
+local function largeStreetEdges(x, y, z)
+	local edges = { }
+	streetutil.addStraightEdge(edges, vec3.new( x[2], y[5], 0), vec3.new( x[1], y[5], 0)) -- A
+	streetutil.addEdgeAutoTangents(edges, vec3.new( -x[2], y[5], 0), vec3.new( 0, y[5], z[1]), vec3.new(-1, 0, 0), vec3.new(-1, 0, 0)) -- B1
+	streetutil.addEdgeAutoTangents(edges, vec3.new( 0, y[5], z[1]), vec3.new( x[2], y[5], 0), vec3.new(-1, 0, 0), vec3.new(-1, 0, 0)) -- B2
+	streetutil.addStraightEdge(edges, vec3.new(-x[1], y[5], 0), vec3.new(-x[2], y[5], 0)) -- C
+
+	streetutil.addStraightEdge(edges, vec3.new( x[1], y[4], 0), vec3.new( x[2], y[4], 0)) -- D
+	streetutil.addEdgeAutoTangents(edges, vec3.new( x[2], y[4], 0), vec3.new( 0, y[4], z[1]), vec3.new(1, 0, 0), vec3.new(1, 0, 0)) -- E1
+	streetutil.addEdgeAutoTangents(edges, vec3.new( 0, y[4], z[1]), vec3.new( -x[2], y[4], 0), vec3.new(1, 0, 0), vec3.new(1, 0, 0)) -- E2
+	streetutil.addStraightEdge(edges, vec3.new(-x[2], y[4], 0), vec3.new(-x[1], y[4], 0)) -- F
+
+	streetutil.addStraightEdge(edges, vec3.new( x[5], y[2], 0), vec3.new( x[5], y[1], 0)) -- G
+	streetutil.addStraightEdge(edges, vec3.new(-x[5], y[1], 0), vec3.new(-x[5], y[2], 0)) -- H
+
+	return edges
+end
+
+local function mediumStreetEdges(x, y, z, bridgeEndOffset)
+	local edges = { }
+
+	streetutil.addStraightEdge(edges, vec3.new( x[2], y[4], 0), vec3.new( x[5], y[2], 0)) -- I
+	streetutil.addStraightEdge(edges, vec3.new(-x[5], y[2], 0), vec3.new(-x[2], y[4], 0)) -- J
+	
+	streetutil.addEdgeAutoTangents(edges, vec3.new( -x[5], y[2], 0), vec3.new( -x[4], y[3], z[2]), vec3.new(0, 2, 0), vec3.new(0.1, 1, 0.125)) -- K
+	streetutil.addEdgeAutoTangents(edges, vec3.new( x[4], y[3], z[3]), vec3.new(x[5], y[2], 0), vec3.new(0.2, -1, -0.2), vec3.new(0, -1, 0)) -- L
+
+	streetutil.addEdgeAutoTangents(edges, vec3.new( x[4] + 1.5 * bridgeEndOffset, y[6], z[2]-2), vec3.new( x[2],  y[5], 0), vec3.new(-1, 0, -0.125), vec3.new(-1, -1, 0)) -- M
+	streetutil.addEdgeAutoTangents(edges, vec3.new( -x[2], y[5], 0), vec3.new(-x[4] - bridgeEndOffset, y[6], z[4]), vec3.new(-1, 1, 0), vec3.new(-1, 0, 0.25)) -- N
+	return edges
+end
+
+local function bridgeStreetEdges(x, y, z, bridgeEndOffset)
+	local edges = { }
+
+	streetutil.addEdgeAutoTangents(edges, vec3.new( -x[4], y[3], z[2]), vec3.new( x[4] + 1.5 * bridgeEndOffset, y[6], z[2]-2), vec3.new(0.1, 1, 0.125), vec3.new(-1, 0, -0.125)) -- O
+	streetutil.addEdgeAutoTangents(edges, vec3.new( -x[4] - bridgeEndOffset, y[6], z[4]), vec3.new( x[4], y[3], z[3]), vec3.new(-1, 0, 0.25), vec3.new( 0.2, -1, -0.2)) -- P
+
+	return edges
+end
+
+local types = {"standard/country_medium_one_way_new.lua", "standard/country_large_one_way_new.lua"}
+
+function data()
+return {
+	type = "STREET_CONSTRUCTION",
+	description = {
+		name = _("T-intersection"),
+		description = _("Three-way highway intersection.")
+	},
+	availability = {
+		yearFrom = 1960
+	},
+	order = 5000,
+	params = {
+		{
+			key = "streetType2",
+			name = _("Number of lanes"),
+			values = { _("2"), _("3") },
+			defaultIndex = 0,
+			yearFrom = 1960,
+			yearTo = 0
+		},
+		{
+			key = "scale",
+			name = _("Scale"),
+			values = { _("Small"), _("Medium"), _("Large") },
+			defaultIndex = 0,
+			yearFrom = 1960,
+			yearTo = 0
+		},
+	},
+	updateFn = function(params)
+		local result = { }
+
+		result.models = { }
+
+		local streetDist = 1
+		local l1 = (params.scale * 5)
+		local halfWidth = params.streetType2 == 1 and 12 or 8
+		local center = halfWidth + streetDist
+		local outerWidth = streetDist + 4 + 2 * halfWidth
+		local rampLength = 61 + l1
+		local rampLengthX = 61 + 3*l1
+		local segmentLength = 20
+		local center2 = center + 7
+		
+		local x = { -center2 - rampLengthX - segmentLength, -center2 - rampLengthX, 0, -center2, -center }
+		local y = { -outerWidth - rampLength - segmentLength - l1, -outerWidth - rampLength - l1, -outerWidth - l1, -center, center, outerWidth + 20 + l1 }
+		local z = { -2, 5, 8, 13 }
+		local bridgeEndOffset = params.streetType2 == 1 and -2 or -2
+
+		local ledges = largeStreetEdges(x, y, z)
+		local medges = mediumStreetEdges(x, y, z, bridgeEndOffset)
+		local bedges = bridgeStreetEdges(x, y, z, bridgeEndOffset)
+		result.edgeLists = {
+			{
+				type = "STREET",
+				params = {
+					type = types[params.streetType2 + 1],
+				},
+				edges = ledges,
+				--snapNodes = {1, 4, 6, 11, 13, 14},
+				snapNodes = {},
+				freeNodes = streetutil.freeAllNodes(ledges),
+			},
+			{
+				type = "STREET",
+				params = {
+					type = params.streetType2 == 0 and "standard/country_small_one_way_new.lua" or types[math.max(params.streetType2, 1)],
+				},
+				edges = medges,
+				snapNodes = {},
+				freeNodes = streetutil.freeAllNodes(medges),
+			},
+			{
+				type = "STREET",
+				edgeType = "BRIDGE",
+				edgeTypeName = "cement.lua",
+				params = {
+					type = params.streetType2 == 0 and "standard/country_small_one_way_new.lua" or types[math.max(params.streetType2, 1)],
+				},
+				edges = bedges,
+				snapNodes = {},
+				freeNodes = streetutil.freeAllNodes(bedges),
+			},
+		}
+
+		result.groundFaces = { }
+
+		result.cost = 0
+
+		return result
+	end
+}
+
+end

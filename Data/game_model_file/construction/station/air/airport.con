@@ -1,0 +1,1300 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+local constructionutil = require "constructionutil"
+local paramsutil = require "paramsutil"
+local colliderutil = require "colliderutil"
+local modulesutil = require "modulesutil"
+
+function data()
+
+-- Starting slot id of each type of slot (can be non-consecutive)
+local mainBuilding1SlotId = 1000
+local mainBuilding2SlotId = 1500
+local hangar1SlotId = 2000
+local hangar2SlotId = 2500
+local towerSlotId = 4000
+local cargo_stockSlotId = 5000
+local secondRunwaySlotId = 8000
+local terminalBSlotId = 8050
+local landingSlotId = 9000
+local terminal1SlotId = 70000
+local terminal2SlotId = 75000
+local terminalCargo1SlotId = 80000
+local terminalCargo2SlotId = 85000
+
+local taxiModuleOverlap = 24
+
+return { 
+	type = "AIRPORT",
+	description = {
+		name = _("Airport"),
+		description = _("Airport with up to two runways for small and large aircraft."),
+		icon = "ui/construction/station/air/airport_passenger.tga"
+	},
+	availability = {
+		yearFrom = 1950,
+	},
+	constructionTemplates = {
+		{
+			type = "DYNAMIC",
+			constructionType = "AIRPORT",
+			description = {
+				name = _("Passenger airport"),
+				description = _("Airport with up to two runways for small and large passenger aircraft."),
+				icon = "ui/construction/station/air/airport.tga"
+			},
+			data = {
+				params = {
+					{
+						key = "hangar",
+						name = _("Hangar"),
+						values = { _("Yes"), _("No") },
+						defaultIndex = 0,
+					},
+					{
+						key = "terminals",
+						name = _("Terminals"),
+						values = { _("1"), _("2"), _("3") },
+						defaultIndex = 0,
+					},
+					{
+						key = "dir",
+						name = _("Landing direction"),
+						values = { _("Left"), _("Right") },
+						defaultIndex = 0,
+					}
+				},
+			}
+		},
+		{
+			type = "DYNAMIC",
+			constructionType = "AIRPORT_CARGO",
+			description = {
+				name = _("Cargo airport"),
+				description = _("Airport with up to two runways for small and large cargo aircraft."),
+				icon = "ui/construction/station/air/airport_cargo.tga"
+			}, 	
+			data = {
+				params = {
+					{
+						key = "hangar",
+						name = _("Hangar"),
+						values = { _("Yes"), _("No") },
+						defaultIndex = 0,
+					},
+					{
+						key = "terminals",
+						name = _("Terminals"),
+						values = { _("1"), _("2"), _("3") },
+						defaultIndex = 0,
+					},
+					{
+						key = "dir",
+						name = _("Landing direction"),
+						values = { _("Left"), _("Right") },
+						defaultIndex = 0,
+					}
+				},
+			}
+		},
+		-- {
+			-- type =  "STATIC",
+			-- description = {
+				-- name = _("Airport (empty)"),
+				-- description = _("Airport with up to two concrete runways for large aircraft (with no module)."),
+				-- icon = "ui/construction/station/air/airport_empty.tga"
+			-- }, 	
+			-- data = {
+					-- initialModules =	{	
+						-- [mainBuilding1SlotId + 2] = "station/air/airport_main_building.module",
+						-- [terminalCargo1SlotId     + 6] = "station/air/airport_cargo_terminal.module",
+						-- [hangar1SlotId     + 10] = "station/air/airport_hangar.module",
+						-- [landingSlotId       + 1] = "station/air/airport_era_b_landing_direction.module",
+					-- }
+					-- initialModules =	{	
+						-- [mainBuilding1SlotId + 2] = "station/air/airport_main_building.module",
+						-- [terminal1SlotId     + 6] = "station/air/airport_terminal.module",
+						-- [hangar1SlotId     + 10] = "station/air/airport_hangar.module",
+						-- [landingSlotId       + 1] = "station/air/airport_era_b_landing_direction.module",
+					-- }
+				-- initialModules =	{	
+					-- [landingSlotId       + 1] = "station/air/airport_era_b_landing_direction.module",
+				-- }
+			-- }
+		-- },
+	},
+	order = 3000,
+	soundConfig = {
+		soundSet = { name = "airport_1980" }
+	},
+	params = {
+		-- {
+			-- key = "debugEra",
+			-- name = _("Debug Airport Era"),
+			-- values = { _("Era B"), _("Era C") },
+		-- },
+		-- {
+			-- key = "debugMode",
+			-- name = _("Debug Mode"),
+			-- values = { _("One Way"), _("Any direction") },
+		-- },
+		-- {
+			-- key = "debugBridge",
+			-- name = _("Debug Max Bridge Length"),
+			-- values = { _("0"), _("20"), _("40"), _("60"), _("80") },
+		-- },
+		-- {
+			-- key = "signalsOnRunway",
+			-- name = _("Signals On Runway (Debug)"),
+			-- values = { _("No"), _("Yes") },
+		-- },
+		-- {
+			-- key = "firstRunwayTakeoff",
+			-- name = _("First runway takeoff"),
+			-- values = { _("No"), _("Yes") },
+			-- yearFrom = 1980,
+			-- yearTo = 0
+		-- },
+		-- {
+			-- key = "secondRunwayLanding",
+			-- name = _("Second runway landing"),
+			-- values = { _("No"), _("Yes") },
+			-- yearFrom = 1980,
+			-- yearTo = 0
+		-- }
+	},
+	preProcessFn = function(modules, change)
+		if change.added then
+			if change.slotId == landingSlotId + 1 then
+				modules[landingSlotId + 0] = nil
+			elseif change.slotId == landingSlotId + 0 then
+				modules[landingSlotId + 1] = nil
+			elseif change.slotId == landingSlotId + 2 then
+				modules[landingSlotId + 3] = nil
+			elseif change.slotId == landingSlotId + 3 then
+				modules[landingSlotId + 2] = nil
+			end
+			modules[change.slotId] = change.module
+		else
+			modules[change.slotId] = nil
+		end
+		return modules
+	end,
+	createTemplateFn = function(params)
+		local result = {}
+		local cargo = params.templateIndex == 1
+		local hangar = params.hangar == 0
+		local terminals = params.terminals and params.terminals + 1 or 1
+		local erac = params.year and params.year > 1980 or false
+		
+		result[mainBuilding1SlotId + 2] = "station/air/airport_main_building.module"
+		
+		if cargo then
+			result[terminalCargo1SlotId     + 6] = "station/air/airport_cargo_terminal.module"
+		else
+			result[terminal1SlotId     + 6] = "station/air/airport_terminal.module"
+		end
+		if terminals > 1 then
+			if cargo then
+				result[terminalCargo1SlotId     + 9] = "station/air/airport_cargo_terminal.module"
+			else
+				result[terminal1SlotId     + 9] = "station/air/airport_terminal.module"
+			end
+		end
+		if terminals > 2 then
+			if cargo then
+				result[terminalCargo1SlotId     + 12] = "station/air/airport_cargo_terminal.module"
+			else
+				result[terminal1SlotId     + 12] = "station/air/airport_terminal.module"
+			end
+		end
+			
+		if hangar then result[hangar1SlotId     + 7 + 3 * terminals] = "station/air/airport_hangar.module" end
+			
+		if erac then
+			result[landingSlotId       + 1 - params.dir] = "station/air/airport_era_c_landing_direction.module"
+		else
+			result[landingSlotId       + 1 - params.dir] = "station/air/airport_era_b_landing_direction.module"
+		end
+		
+		return result
+	end,
+	updateFn = function(params)
+		local result = { }
+		
+		result.models = { }
+		result.colliders = { }
+		result.terminalGroups = { }
+		result.edgeObjects = { }
+		result.hangarCounter = 1
+		
+		params.debugBridge = 0
+		local debugMode = 1 -- params.debugMode + 1
+		local signalsOnRunway = true -- params.signalsOnRunway == 1
+		
+		local fence = { }
+		local fence_face = { }
+		local edges = { }
+		local runway_large = { }
+		local taxiway = { }
+		local terrain_faces = { }	
+		local apron_face = { }
+		
+		if not params.modules then params.modules = { } end
+		result.slots = { }
+		
+		local min1K = 1000
+		local max1K = -1000
+		local min2K = 1000
+		local max2K = -1000
+		local hasSecondRunway = params.modules[secondRunwaySlotId] ~= nil
+		local hasSecondTaxiway = params.modules[terminalBSlotId] ~= nil and params.modules[secondRunwaySlotId] ~= nil
+		local taxiwayStartX = -250
+		local taxiwayEndX = 250
+		local slotDistance = 20
+		local numSlots = 25
+		local taxiDistance = 60
+		local runway1YCoord = 90
+		local runway2YCoord = 149
+		local centerY = (runway2YCoord + runway1YCoord) / 2
+		local runway1Facing = 1 -- 1 == east, land form west, takeoff to east
+		local runway2Facing = 1 -- -1 == west, land form east, takeoff to west
+		
+		local backSpace = 0
+		local mainBuildingSize = { 120, 110 }
+		local hangarSize = { 80, 110 }
+		local terminalSize = { 60, 110 }
+		local slotHeight = 110
+		local mainBuildingOffsetY = backSpace + mainBuildingSize[2] / 2
+		local hangarOffsetY = backSpace + hangarSize[2] / 2
+		local terminalOffsetY = backSpace + terminalSize[2] / 2
+		local slotYDistance = 30
+		local modules1BackY = runway1YCoord - taxiDistance - slotYDistance - slotHeight
+		local modules2BackY = runway2YCoord + taxiDistance + slotYDistance + slotHeight
+		local modules1WalkwayPosY = modules1BackY + terminalSize[2] / 2 + backSpace
+		local modules2WalkwayPosY = modules2BackY - terminalSize[2] / 2 - backSpace
+		local modules1PosY = runway1YCoord - taxiDistance - 30
+		local modules2PosY = runway2YCoord + taxiDistance + 30
+		
+		local offset = 40 -- extra size at end of runway
+		local airportLimitStart = taxiwayStartX - offset 
+		local airportLimitEnd = taxiwayEndX + offset
+		
+		local runwaySlotSize = taxiwayEndX + offset - 20
+		local taxiway2SlotSize = taxiwayEndX
+		
+		local papiOffset = -7
+		
+		-- Data for automatic creation of stations
+		local slot2node = { }
+		-- Data for automatic creation of colliders, terrain alignments and ground faces
+		local autoMaker = { }
+		-- Specify addons to modules (for automaker)
+		local colliderAlignmentAndGroundTexture = {
+			collider = "box",
+			alignment = true,
+			-- ground_faces = {
+				-- {
+					-- type = "FILL",
+					-- key = "industry_floor.lua"
+				-- },
+				-- {
+					-- type = "STROKE_OUTER",
+					-- key = "industry_floor_paving.lua"
+				-- }
+			-- }
+		}
+		local colliderAndAlignment = {
+			collider = "box",
+			alignment = true,
+		}
+		
+		-- Landing light modules
+		--if params.modules[landingSlotId + 0] ~= nil or (params.modules[landingSlotId + 0] == nil and params.modules[landingSlotId + 1] == nil) then
+			result.slots[#result.slots + 1] = {
+				id = landingSlotId,
+				transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(airportLimitEnd - 5, runway1YCoord, 0 )),
+				type = "landing_a",
+				spacing = {10,40,15,15}
+			}
+		--end
+		--if params.modules[landingSlotId + 1] ~= nil or (params.modules[landingSlotId + 0] == nil and params.modules[landingSlotId + 1] == nil) then
+			result.slots[#result.slots + 1] = {
+				id = landingSlotId + 1,
+				transf = transf.rotZYXTransl(transf.degToRad(180, 0, 0), vec3.new(airportLimitStart + 5, runway1YCoord, 0 )),
+				type = "landing_a",
+				spacing = {10,40,15,15}
+			}
+		--end
+		if hasSecondRunway then
+			--if params.modules[landingSlotId + 2] ~= nil or (params.modules[landingSlotId + 2] == nil and params.modules[landingSlotId + 3] == nil) then
+				result.slots[#result.slots + 1] = {
+					id = landingSlotId + 2,
+					transf = transf.rotZYXTransl(transf.degToRad(180, 0, 0), vec3.new(airportLimitStart + 5, runway2YCoord, 0 )),
+					type = "landing_a",
+					spacing = {10,40,15,15}
+				}
+			--end
+			--if params.modules[landingSlotId + 3] ~= nil or (params.modules[landingSlotId + 2] == nil and params.modules[landingSlotId + 3] == nil) then
+				result.slots[#result.slots + 1] = {
+					id = landingSlotId + 3,
+					transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(airportLimitEnd - 5, runway2YCoord, 0 )),
+					type = "landing_a",
+					spacing = {10,40,15,15}
+				}
+			--end
+		end
+		-- Extra takeoff/landing modules
+		-- if hasSecondRunway then
+				-- result.slots[#result.slots + 1] = {
+					-- id = landingSlotId + 4,
+					-- transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(330, runway2YCoord + 30, 0 )),
+					-- type = "takeoff_b",
+					-- spacing = {10,10,10,10}
+				-- }
+				-- result.slots[#result.slots + 1] = {
+					-- id = landingSlotId + 5,
+					-- transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(-330, runway1YCoord - 30, 0 )),
+					-- type = "takeoff_b",
+					-- spacing = {10,10,10,10}
+				-- }
+		-- end
+		
+		if params.modules[landingSlotId] ~= nil then
+			runway1Facing = -1
+		end
+		if params.modules[landingSlotId + 2] ~= nil then
+			runway2Facing = 1
+		elseif params.modules[landingSlotId + 3] ~= nil then
+			runway2Facing = -1
+		else
+			runway2Facing = runway1Facing
+		end
+		local hasSecondLanding = false
+		local hasSecondTakeoff = false
+		-- if params.modules[landingSlotId + 4] ~= nil then
+		if params.secondRunwayLanding == 1 then
+			hasSecondLanding = true
+		end
+		-- if params.modules[landingSlotId + 5] ~= nil then
+		if params.firstRunwayTakeoff == 1 then
+			hasSecondTakeoff = true
+		end
+		local inverseDirection = runway1Facing ~= runway2Facing
+		
+		if not params.year then params.year = 0 end
+		local isAirportModern = params.year > 1980 -- params.debugEra == 1
+		
+		local runwayStreet = "airport/airport_runway_medium_era_b.lua"
+		local taxiStreet = "airport/airport_taxiway_medium_era_b.lua"
+		if isAirportModern then
+			runwayStreet = "airport/airport_runway_medium.lua"
+			taxiStreet = "airport/airport_taxiway_medium.lua"
+		end
+		
+		local size = hasSecondTaxiway and modules2PosY or (hasSecondRunway and runway2YCoord + 35 or runway1YCoord + 35)
+		local mainGroundDimX = {taxiwayStartX - offset, taxiwayEndX + offset}
+		local mainGroundDimY = {modules1PosY, size}
+		local dimensions = {(taxiwayEndX - taxiwayStartX + 2 * offset) / 2, (size - modules1PosY) / 2 }
+		local center =  {(taxiwayEndX + taxiwayStartX) / 2, (size + modules1PosY) / 2}
+		-- Main collider
+		result.colliders = {
+			colliderutil.createBox({ center[1], center[2], 10 }, { dimensions[1], dimensions[2], 20 })
+		}
+		-- Alignment for runway/taxi
+		terrain_faces = { { 
+			{mainGroundDimX[1], mainGroundDimY[1], 0}, {mainGroundDimX[2], mainGroundDimY[1], 0}, 
+			{mainGroundDimX[2], mainGroundDimY[2], 0}, {mainGroundDimX[1], mainGroundDimY[2], 0}
+		} }
+		local ug_terrain_faces = { }
+		-- Alignment for landing/takeoff
+		local l = runway1YCoord - 30
+		local t = hasSecondRunway and runway2YCoord + 30 or runway1YCoord + 30
+		local landing_faces = { { {taxiwayStartX - offset, t, 0}, {-700, t + 43,  43 }, {-700, l - 43, 43},   {taxiwayStartX - offset, l, 0} } }
+		local takeoff_faces = { { {taxiwayEndX + offset,   l, 0}, {700,  l - 43, 134},  {700,  t + 43,  134}, {taxiwayEndX + offset,   t, 0} } }
+		
+		-- Ground grass (main)
+		local field_face = terrain_faces[1]
+		
+		result.slotConfig = {
+			["2nd_runway"] = {
+				maxModules = -1,
+				message = ""
+			},
+			terminal_B = {
+				maxModules = -2,
+				message = hasSecondRunway and "" or _("You need a 2nd runway."),
+			},
+			-- modern_main_building = {
+				-- maxModules = (hasSecondRunway and hasSecondTaxiway) and 2 or 1,
+				-- message = ""
+			-- },
+			landing_a = {
+				maxModules = -1,
+				message = ""
+			}
+		}
+		
+		result.slots[#result.slots + 1] = {
+			id = secondRunwaySlotId,
+			transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(0, runway2YCoord, 0 )),
+			type = "2nd_runway",
+			spacing = {runwaySlotSize,runwaySlotSize,30,30}
+		}
+		if hasSecondRunway then
+			result.slots[#result.slots + 1] = {
+				id = terminalBSlotId,
+				transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(0, runway2YCoord + taxiDistance, 0 )),
+				type = "terminal_B",
+				spacing = {taxiway2SlotSize,taxiway2SlotSize,20,20}
+			}
+		end
+		
+		-- Determine spaces between terminals
+		local connect1 = {}
+		local connect2 = {}
+		
+		local needsNode1 = {}
+		local occupied1 = {}
+		for k = 0, numSlots do
+			if params.modules[hangar1SlotId + k] ~= nil then
+				occupied1[k - 2] = true
+				occupied1[k - 1] = true
+				occupied1[k - 0] = true
+				occupied1[k + 1] = true
+				min1K = math.min(min1K, k - 2)
+				max1K = math.max(max1K, k + 2)
+				needsNode1[#needsNode1 + 1] = k
+			elseif params.modules[terminal1SlotId + k] ~= nil then
+				occupied1[k - 1] = true
+				occupied1[k - 0] = true
+				occupied1[k + 1] = true
+				
+				if not params.modules[terminal1SlotId + k].metadata.cargo then
+					connect1[k - 1] = true
+					connect1[k + 1] = true
+				end
+				min1K = math.min(min1K, k - 1)
+				max1K = math.max(max1K, k + 2)
+				needsNode1[#needsNode1 + 1] = k + 0.5
+			elseif params.modules[terminalCargo1SlotId + k] ~= nil then
+				occupied1[k - 1] = true
+				occupied1[k - 0] = true
+				occupied1[k + 1] = true
+				
+				if not params.modules[terminalCargo1SlotId + k].metadata.cargo then
+					connect1[k - 1] = true
+					connect1[k + 1] = true
+				end
+				min1K = math.min(min1K, k - 1)
+				max1K = math.max(max1K, k + 2)
+				needsNode1[#needsNode1 + 1] = k + 0.5
+			elseif params.modules[mainBuilding1SlotId + k] ~= nil then
+				occupied1[k - 3] = true
+				occupied1[k - 2] = true
+				occupied1[k - 1] = true
+				occupied1[k - 0] = true
+				occupied1[k + 1] = true
+				occupied1[k + 2] = true
+				
+				connect1[k - 3] = true
+				connect1[k + 2] = true
+				min1K = math.min(min1K, k - 3)
+				max1K = math.max(max1K, k + 3)
+			end
+		end
+		local needsNode2 = {}
+		local occupied2 = {}
+		for k = 0, numSlots do
+			if params.modules[hangar2SlotId + k] ~= nil then
+				occupied2[k - 2] = true
+				occupied2[k - 1] = true
+				occupied2[k - 0] = true
+				occupied2[k + 1] = true
+				min2K = math.min(min2K, k - 2)
+				max2K = math.max(max2K, k + 2)
+				needsNode2[#needsNode2 + 1] = k
+			elseif params.modules[terminal2SlotId + k] ~= nil then
+				occupied2[k - 1] = true
+				occupied2[k - 0] = true
+				occupied2[k + 1] = true
+				
+				if not params.modules[terminal2SlotId + k].metadata.cargo then
+					connect2[k - 1] = true
+					connect2[k + 1] = true
+				end
+				min2K = math.min(min2K, k - 1)
+				max2K = math.max(max2K, k + 2)
+				needsNode2[#needsNode2 + 1] = k + 0.5
+			elseif params.modules[terminalCargo2SlotId + k] ~= nil then
+				occupied2[k - 1] = true
+				occupied2[k - 0] = true
+				occupied2[k + 1] = true
+				
+				if not params.modules[terminalCargo2SlotId + k].metadata.cargo then
+					connect2[k - 1] = true
+					connect2[k + 1] = true
+				end
+				min2K = math.min(min2K, k - 1)
+				max2K = math.max(max2K, k + 2)
+				needsNode2[#needsNode2 + 1] = k + 0.5
+			elseif params.modules[mainBuilding2SlotId + k] ~= nil then
+				occupied2[k - 3] = true
+				occupied2[k - 2] = true
+				occupied2[k - 1] = true
+				occupied2[k - 0] = true
+				occupied2[k + 1] = true
+				occupied2[k + 2] = true
+				
+				connect2[k - 3] = true
+				connect2[k + 2] = true
+				min2K = math.min(min2K, k - 3)
+				max2K = math.max(max2K, k + 3)
+			end
+		end
+		local l = params.debugBridge ~= nil and params.debugBridge or 0
+		local function AutoConnect(connect)
+			for k = 0, numSlots do
+				if connect[k] == true then
+					local i = nil
+					for j = 1, l + 1 do 
+						if connect[k+j] then i = j break end
+					end
+					if i ~= nil then
+						for j = 1, i - 1 do 
+							connect[k+j] = true
+						end
+					end
+				end
+			end
+		end
+		AutoConnect(connect1)
+		AutoConnect(connect2)
+		
+		function vec3.fromAngle(x)
+			return vec3.new(math.cos(x), math.sin(x), 0)
+		end
+		
+		-- local function MakeBlastFence(x, y, degs)
+			-- for i = -11, 12 do
+				-- result.models[#result.models + 1] = {
+					-- id = isAirportModern and "station/air/asset/blastfence_white.mdl" or "station/air/asset/blastfence_red.mdl",
+					-- transf = transf.rotZYXTransl(transf.degToRad(degs, 0, 0), vec3.new(x + i * 2, y, 0))
+				-- }
+			-- end
+		-- end
+		--MakeBlastFence(taxiwayStartX, runway1YCoord - taxiDistance - 20, 0)
+		--MakeBlastFence(taxiwayEndX, runway1YCoord - taxiDistance - 20, 0)
+		--if hasSecondRunway then
+		--	MakeBlastFence(taxiwayStartX, runway2YCoord + taxiDistance + 20, 180)
+		--	MakeBlastFence(taxiwayEndX, runway2YCoord + taxiDistance + 20, 180)
+		--end
+		
+		-- Add links between terminals
+		for k = min1K, max1K - 1 do
+			local posX = slotDistance * k + taxiwayStartX + slotDistance/2
+			if occupied1[k] == nil then
+				if connect1[k] then
+					result.models[#result.models + 1] = {
+						id = "station/air/airport/era_b_pt_20m_patch.mdl",
+						transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0),  vec3.new(posX, modules1PosY - mainBuildingOffsetY, 0))
+					}
+					terrain_faces[#terrain_faces + 1] = { 
+						{posX - 10, modules1BackY + 29, 0}, {posX + 10, modules1BackY + 29, 0}, 
+						{posX + 10, modules1BackY + slotHeight, 0}, {posX - 10, modules1BackY + slotHeight, 0}
+					}
+					result.colliders[#result.colliders + 1] = colliderutil.createBox({ posX, modules1BackY + (slotHeight + 29) / 2, -1 }, { 10, (slotHeight - 29) / 2, 2 })
+				else 
+					result.models[#result.models + 1] = {
+						id = "station/air/airport/terminal_link.mdl",
+						transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0),  vec3.new(posX, modules1PosY - mainBuildingOffsetY - 23, -5))
+					}
+					ug_terrain_faces[#ug_terrain_faces + 1] = { 
+						{posX - 10, modules1BackY + 29, 0}, {posX + 10, modules1BackY + 29, 0}, 
+						{posX + 10, modules1BackY + 49, 0}, {posX - 10, modules1BackY + 49, 0}
+					}
+				end
+			end
+		end
+		for k = min2K, max2K - 1 do
+			local posX = slotDistance * k + taxiwayStartX + slotDistance/2
+			if occupied2[k] == nil then
+				if connect2[k] then
+					result.models[#result.models + 1] = {
+						id = "station/air/airport/era_b_pt_20m_patch.mdl",
+						transf = transf.rotZYXTransl(transf.degToRad(180, 0, 0),  vec3.new(posX, modules2PosY + mainBuildingOffsetY, 0))
+					}
+					terrain_faces[#terrain_faces + 1] = { 
+						{posX + 10, modules2BackY - 29, 0}, {posX - 10, modules2BackY - 29, 0}, 
+						{posX - 10, modules2BackY - slotHeight, 0}, {posX + 10, modules2BackY - slotHeight, 0}
+					}
+					result.colliders[#result.colliders + 1] = colliderutil.createBox({ posX, modules2BackY - (slotHeight + 29) / 2, -1 }, { 10, (slotHeight - 29) / 2, 2 })
+				else 
+					result.models[#result.models + 1] = {
+						id = "station/air/airport/terminal_link.mdl",
+						transf = transf.rotZYXTransl(transf.degToRad(180, 0, 0),  vec3.new(posX, modules2PosY + mainBuildingOffsetY + 23, -5))
+					}
+					ug_terrain_faces[#ug_terrain_faces + 1] = { 
+						{posX + 10, modules2BackY - 29, 0}, {posX - 10, modules2BackY - 29, 0}, 
+						{posX - 10, modules2BackY - 49, 0}, {posX + 10, modules2BackY - 49, 0}
+					}
+				end
+			end
+		end
+		for k = math.min(min1K, min2K), math.max(max1K, max2K) - 1 do
+			local posX = slotDistance * k + taxiwayStartX + slotDistance/2
+			result.models[#result.models + 1] = {
+				id = "station/air/airport/terminal_link.mdl",
+				transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0),  vec3.new(posX, centerY - 8, -5))
+			}
+		end
+		
+		-- RUNWAYS
+		local function MakeRunway(runways, array, runwayYCoord, taxiwayStartX, taxiwayEndX, facing, landing, takeoff)
+			local points = {}
+			local waitSize = 40
+			if facing == 1 then
+				points = {taxiwayStartX - 30, taxiwayStartX, taxiwayStartX + waitSize, taxiwayEndX - waitSize, taxiwayEndX, taxiwayEndX + 30}
+			else 
+				points = {taxiwayEndX + 30, taxiwayEndX, taxiwayEndX - waitSize, taxiwayStartX + waitSize, taxiwayStartX, taxiwayStartX - 30}
+			end
+			
+			-- local spacing = 7.5
+			-- local dist = points[6] - points[1]
+			-- local numSignals = math.floor(dist / spacing)
+			-- spacing = dist / numSignals
+			-- for k = 0, numSignals do 
+				-- result.models[#result.models + 1] = {
+					-- id = "station/air/asset/edge_light_runway_c.mdl",
+					-- transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0),  vec3.new(points[1] + facing * k * spacing, runwayYCoord + facing * 15, 0))
+				-- }
+				-- result.models[#result.models + 1] = {
+					-- id = "station/air/asset/center_light_runway_c.mdl",
+					-- transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0),  vec3.new(points[1] + facing * k * spacing, runwayYCoord, 0.1))
+				-- }
+				-- result.models[#result.models + 1] = {
+					-- id = "station/air/asset/edge_light_runway_c.mdl",
+					-- transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0),  vec3.new(points[1] + facing * k * spacing, runwayYCoord - facing * 15, 0))
+				-- }
+			-- end
+			result.models[#result.models + 1] = {
+				id = "station/air/asset/end_light_green_c_small.mdl",
+				transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0),  vec3.new(points[1], runwayYCoord, 0))
+			}
+			if isAirportModern then
+				result.models[#result.models + 1] = {
+					id = "station/air/asset/approach_light_papi_c.mdl",
+					transf = transf.rotZYXTransl(transf.degToRad(facing == -1 and 0 or 180, 0, 0),  vec3.new((points[1] + points[2]) / 2 + facing * papiOffset, runwayYCoord + facing * 30, 0))
+				}
+			end
+			local diff = (points[2] - points[1])
+			array[#array + 1] = { { points[1], runwayYCoord,  0 }, { diff, 0, 0 } }
+			array[#array + 1] = { { points[2], runwayYCoord,  0 }, { diff, 0, 0 } }
+			
+			local diff = (points[3] - points[2])
+			array[#array + 1] = { { points[2], runwayYCoord,  0 }, { diff, 0, 0 } }
+			array[#array + 1] = { { points[3], runwayYCoord,  0 }, { diff, 0, 0 } }
+			if takeoff then
+				runways[#runways + 1] = {
+					type = "TAKEOFF",
+					node = #array,
+					edges = { #array / 2 }
+				} 
+			end
+			
+			local diff = (points[4] - points[3])
+			array[#array + 1] = { { points[3], runwayYCoord,  0 }, { diff, 0, 0 } }
+			array[#array + 1] = { { points[4], runwayYCoord,  0 }, { diff, 0, 0 } }
+			-- Runway wait
+			if true then
+				local mod = hasSecondTaxiway
+					and (facing == 1 and "station/air/asset/sign_a_right_b_left.mdl" or "station/air/asset/sign_b_right_a_left.mdl")
+					or (facing == 1 and "station/air/asset/sign_a_right.mdl" or "station/air/asset/sign_a_left.mdl")
+				result.edgeObjects[#result.edgeObjects + 1] = {
+					edge = #runway_large / 2 - 1,
+					param = 0.9,
+					left = false,
+					model = mod
+				}
+			end
+			if landing then
+				runways[#runways + 1] = {
+					type = "LANDING",					
+					node = #array,
+					edges = { #array / 2 - 1 }
+				} 
+			end
+			
+			local diff = (points[5] - points[4])
+			array[#array + 1] = { { points[4], runwayYCoord,  0 }, { diff, 0, 0 } }
+			array[#array + 1] = { { points[5], runwayYCoord,  0 }, { diff, 0, 0 } }
+			-- Runway wait
+			-- if true then
+				-- result.edgeObjects[#result.edgeObjects + 1] = {
+					-- edge = #runway_large / 2 - 1,
+					-- param = 0.5,
+					-- left = false,
+					-- model = "station/air/asset/sign_prohibiton.mdl"
+				-- }
+			-- end
+			
+			local diff = (points[6] - points[5])
+			array[#array + 1] = { { points[5], runwayYCoord,  0 }, { diff, 0, 0 } }
+			array[#array + 1] = { { points[6], runwayYCoord,  0 }, { diff, 0, 0 } }
+			result.models[#result.models + 1] = {
+				id = "station/air/asset/end_light_red_c_small.mdl",
+				transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0),  vec3.new(points[6], runwayYCoord, 0))
+			}
+		end
+		
+		local function MakeTaxiway(array, runwayYCoord, taxiYCoord, second, facing, taxiwayStartX, taxiwayEndX, slotDistance, occupied)
+			-- west entry: taxiway from terminals if facing east ==>, to terminals if facing west <==
+			if facing == 1 then
+				taxiway[#taxiway + 1] = { { taxiwayStartX, taxiYCoord,   0 }, { 0, -taxiYCoord + runwayYCoord, 0 } }
+				taxiway[#taxiway + 1] = { { taxiwayStartX, runwayYCoord, 0 }, { 0, -taxiYCoord + runwayYCoord, 0 } }
+			else
+				taxiway[#taxiway + 1] = { { taxiwayStartX, runwayYCoord, 0 }, { 0, taxiYCoord - runwayYCoord, 0 } }
+				taxiway[#taxiway + 1] = { { taxiwayStartX, taxiYCoord,   0 }, { 0, taxiYCoord - runwayYCoord, 0 } }
+			end
+			-- Taxi to runway west
+			if debugMode == 1 then
+				if facing == 1 then
+					result.edgeObjects[#result.edgeObjects + 1] = {
+						edge = #array / 2 + #taxiway / 2 - 1,
+						param = 0.43,
+						left = false,
+						model = "station/air/asset/invisible.mdl", --second and "station/air/asset/sign_27_left.mdl" or "station/air/asset/sign_9_right.mdl"
+					}
+				else
+					result.edgeObjects[#result.edgeObjects + 1] = {
+						edge = #array / 2 + #taxiway / 2 - 1,
+						param = 0.43,
+						left = false,
+						model = "station/air/asset/invisible.mdl", --second and "station/air/asset/sign_27_right.mdl" or "station/air/asset/sign_9_left.mdl"
+					}
+				end
+			end
+			-- Plane wait on runway entry
+			if debugMode == 2 then
+				-- result.edgeObjects[#result.edgeObjects + 1] = {
+					-- edge = #array / 2 + #taxiway / 2 - 1,
+					-- param = 0.5,
+					-- left = false,
+					-- model = "station/air/asset/signal_runway_modern.mdl"
+				-- }
+			end
+			
+			-- east entry: taxiway to terminals if facing east ==>, from terminals if facing west <==
+			if facing == 1 then
+				taxiway[#taxiway + 1] = { {taxiwayEndX, runwayYCoord, 0 }, { 0, -runwayYCoord + taxiYCoord, 0 } }
+				taxiway[#taxiway + 1] = { {taxiwayEndX, taxiYCoord,   0 }, { 0, -runwayYCoord + taxiYCoord, 0 } }
+			else
+				taxiway[#taxiway + 1] = { {taxiwayEndX, taxiYCoord,   0 }, { 0, runwayYCoord - taxiYCoord, 0 } }
+				taxiway[#taxiway + 1] = { {taxiwayEndX, runwayYCoord, 0 }, { 0, runwayYCoord - taxiYCoord, 0 } }
+			end
+			-- Plane wait on runway entry
+			if debugMode == 2 then
+				-- result.edgeObjects[#result.edgeObjects + 1] = {
+					-- edge = #array / 2 + #taxiway / 2 - 1,
+					-- param = 0.5,
+					-- left = true,
+					-- model = "station/air/asset/signal_runway_modern.mdl"
+				-- }
+			end
+			-- Taxi to runway east
+			if debugMode == 1 then
+				if facing == -1 then
+					result.edgeObjects[#result.edgeObjects + 1] = {
+						edge = #array / 2 + #taxiway / 2 - 1,
+						param = 0.43,
+						left = false,
+						model = "station/air/asset/invisible.mdl", --second and "station/air/asset/sign_27_right.mdl" or "station/air/asset/sign_9_left.mdl"
+					}
+				else
+					result.edgeObjects[#result.edgeObjects + 1] = {
+						edge = #array / 2 + #taxiway / 2 - 1,
+						param = 0.43,
+						left = false,
+						model = "station/air/asset/invisible.mdl", --second and "station/air/asset/sign_27_left.mdl" or "station/air/asset/sign_9_right.mdl"
+					}
+				end
+			end
+			
+			-- main way, one way
+			if occupied[#occupied] ~= numSlots then occupied[#occupied+1] = numSlots end
+			if occupied[1] ~= 0 then table.insert(occupied, 1, 0) end
+			local start = 0
+			for i = 2, #occupied do
+				local distance = (occupied[i] - start) * slotDistance
+				if distance < 100 then
+					if facing == 1 then
+						taxiway[#taxiway + 1] = { {occupied[i] * slotDistance + taxiwayStartX, taxiYCoord, 0 }, { -distance, 0, 0 } }
+						taxiway[#taxiway + 1] = { {start       * slotDistance + taxiwayStartX, taxiYCoord, 0 }, { -distance, 0, 0 } }
+					else
+						taxiway[#taxiway + 1] = { {start       * slotDistance + taxiwayStartX, taxiYCoord, 0 }, { distance, 0, 0 } }
+						taxiway[#taxiway + 1] = { {occupied[i] * slotDistance + taxiwayStartX, taxiYCoord, 0 }, { distance, 0, 0 } }
+					end
+						
+					if distance > 20 then
+						-- Wait area before intersection
+						if debugMode == 1 then
+							result.edgeObjects[#result.edgeObjects + 1] = {
+								edge = #array / 2 + #taxiway / 2 - 1,
+								param = 1 - 20 / distance,
+								left = false,
+								model = "station/air/asset/invisible.mdl", --second and "station/air/asset/sign_27_straight.mdl" or "station/air/asset/sign_9_straight.mdl"
+							}
+						end
+					end
+				else
+					-- Add more signals if taxiway is uninterrupted for a long time
+					local newStart = start * slotDistance + taxiwayStartX
+					local newEnd = occupied[i] * slotDistance + taxiwayStartX
+					local segments = math.floor(distance / 50)
+					local segmentLen = distance / segments
+					
+					for i = 0, segments - 1 do
+						if facing == 1 then
+							taxiway[#taxiway + 1] = { {newStart + (i+1) * segmentLen, taxiYCoord, 0 }, { -segmentLen, 0, 0 } }
+							taxiway[#taxiway + 1] = { {newStart + i * segmentLen, taxiYCoord, 0 }, { -segmentLen, 0, 0 } }
+						else
+							taxiway[#taxiway + 1] = { {newStart + i * segmentLen, taxiYCoord, 0 }, { segmentLen, 0, 0 } }
+							taxiway[#taxiway + 1] = { {newStart + (i+1) * segmentLen, taxiYCoord, 0 }, { segmentLen, 0, 0 } }
+						end
+						
+						-- Wait area on taxi
+						if debugMode == 1 then
+							if (facing == 1 or i > 0) and (facing == -1 or i < segments - 1) then
+								result.edgeObjects[#result.edgeObjects + 1] = {
+									edge = #array / 2 + #taxiway / 2 - 1,
+									param = 1 - 20 / segmentLen,
+									left = false,
+									model = "station/air/asset/invisible.mdl", --second and "station/air/asset/sign_27_straight.mdl" or "station/air/asset/sign_9_straight.mdl"
+								}
+							end	
+						end
+					end
+				end
+				start = occupied[i]
+			end
+		end
+		result.runways = { }
+		
+		-- RUNWAY 1
+		MakeRunway(result.runways, runway_large, runway1YCoord, taxiwayStartX, taxiwayEndX, runway1Facing, true, not hasSecondRunway or hasSecondTakeoff)
+			
+		-- RUNWAY 2
+		if hasSecondRunway then
+			MakeRunway(result.runways, runway_large, runway2YCoord, taxiwayStartX, taxiwayEndX, runway2Facing, hasSecondLanding, true)
+			
+			-- taxiway large to medium
+			local dist = runway2YCoord - runway1YCoord
+			local sign = runway1Facing
+			if runway1Facing == (hasSecondTaxiway and (inverseDirection and 1 or sign * 1) or (inverseDirection and -1 or 1)) then 
+				taxiway[#taxiway + 1] = { { taxiwayStartX, runway1YCoord,  0 },  { 0, dist, 0 } }
+				taxiway[#taxiway + 1] = { { taxiwayStartX, runway2YCoord,  0 },  { 0, dist, 0 } }
+			else
+				taxiway[#taxiway + 1] = { { taxiwayStartX, runway2YCoord,  0 },  { 0, -dist, 0 } }
+				taxiway[#taxiway + 1] = { { taxiwayStartX, runway1YCoord,  0 },  { 0, -dist, 0 } }
+			end
+			
+			-- Mid runway plane way area west
+			if true then -- inverseDirection and not (hasSecondRunway or secondRunwayLanding or firstRunwayTakeoff) then
+				result.edgeObjects[#result.edgeObjects + 1] = {
+					edge = #runway_large / 2 + #taxiway / 2 - 1,
+					param = 0.55,
+					left = false,
+					model = "station/air/asset/signal_runway_modern.mdl"
+				}
+			end
+			
+			if runway1Facing == (hasSecondTaxiway and (inverseDirection and 1 or sign * -1) or (inverseDirection and -1 or 1)) then 
+				taxiway[#taxiway + 1] = { { taxiwayEndX, runway2YCoord,  0 },  { 0, -dist, 0 } }
+				taxiway[#taxiway + 1] = { { taxiwayEndX, runway1YCoord,  0 },  { 0, -dist, 0 } }
+			else
+				taxiway[#taxiway + 1] = { { taxiwayEndX, runway1YCoord,  0 },  { 0, dist, 0 } }
+				taxiway[#taxiway + 1] = { { taxiwayEndX, runway2YCoord,  0 },  { 0, dist, 0 } }
+			end
+			
+			-- Mid runway plane way area east
+			if true then -- inverseDirection and not (hasSecondRunway or secondRunwayLanding or firstRunwayTakeoff) then
+				result.edgeObjects[#result.edgeObjects + 1] = {
+					edge = #runway_large / 2 + #taxiway / 2 - 1,
+					param = 0.55,
+					left = false,
+					model = "station/air/asset/signal_runway_modern.mdl"
+				}
+			end
+			
+			if hasSecondTaxiway then
+				local taxiYCoord = runway2YCoord + taxiDistance
+				local facing = inverseDirection and runway2Facing or runway2Facing
+				MakeTaxiway(runway_large, runway2YCoord, taxiYCoord, true, facing, taxiwayStartX, taxiwayEndX, slotDistance, needsNode2)
+			end
+		end
+		--TAXIWAY
+		local taxiYCoord = runway1YCoord - taxiDistance
+		local facing = inverseDirection and runway1Facing or runway1Facing
+		MakeTaxiway(runway_large, runway1YCoord, taxiYCoord, false, facing, taxiwayStartX, taxiwayEndX, slotDistance, needsNode1)
+		
+		local function MakeSlots(params, result, autoMaker, slotDistance, keyword, box, startX, posY, numSlots, startId, facing, callback, skipSecondLast, skipLast)
+			for k = 0, numSlots do
+				if skipLast and (k == 0 or k == numSlots) or skipSecondLast and (k == 1 or k == numSlots - 1) then
+				
+				else
+					local center = vec3.new(slotDistance * k + startX, posY, 0)
+				
+					result.slots[#result.slots + 1] = {
+						id = startId + k,
+						transf = transf.rotZYXTransl(transf.degToRad(facing == -1 and 180 or 0, 0, 0), center),
+						type = keyword,
+						spacing = box,
+						height = 35,
+					}
+					
+					-- If slot not empty, generate alignment, texture and collision
+					if params.modules[startId + k] ~= nil then
+						autoMaker[#result.slots] = colliderAlignmentAndGroundTexture
+						
+						if callback then callback(k) end
+					end
+				end
+			end
+		end
+		
+		local snapNodes = { }
+		local function MakeAllSlots( modulesPosY, taxiCoordY, facing, mainBuildingSlotId, hangarSlotId, terminalSlotId, terminalCargoSlotId, occupied, connect)
+			local slotSize = {  mainBuildingSize[1] / 2, mainBuildingSize[1] / 2, mainBuildingSize[2] / 2 + backSpace, slotHeight - mainBuildingSize[2] / 2 - backSpace }
+			local function makeMainBuildingConnections(k) 
+				local rot = transf.degToRad(facing == 1 and 0 or 180, 0, 0)
+				local offX = taxiwayStartX
+				local posY = modulesPosY + facing * mainBuildingOffsetY
+				local posZ = 0
+				if connect[facing == 1 and k - 4 or k + 3] == true then
+					result.models[#result.models + 1] = {
+						id = "station/air/airport/era_b_main_connection_lft.mdl",
+						transf = transf.rotZYXTransl(rot,  vec3.new(offX + slotDistance * k, posY, posZ))
+					}
+				else
+					result.models[#result.models + 1] = {
+						id = "station/air/airport/era_b_main_connection_wall_lft.mdl",
+						transf = transf.rotZYXTransl(rot,  vec3.new(offX + slotDistance * k, posY, posZ))
+					}
+				end
+				if connect[facing == 1 and k + 3 or k - 4] == true then
+					result.models[#result.models + 1] = {
+						id = "station/air/airport/era_b_main_connection_rgt.mdl",
+						transf = transf.rotZYXTransl(rot,  vec3.new(offX + slotDistance * k, posY, posZ))
+					}
+				else
+					result.models[#result.models + 1] = {
+						id = "station/air/airport/era_b_main_connection_wall_rgt.mdl",
+						transf = transf.rotZYXTransl(rot,  vec3.new(offX + slotDistance * k, posY, posZ))
+					}
+				end
+				
+			end
+			MakeSlots(params, result, autoMaker, slotDistance, "modern_main_building", 
+					slotSize, taxiwayStartX, modulesPosY + facing * mainBuildingOffsetY, numSlots, mainBuildingSlotId, facing, makeMainBuildingConnections)
+			local function makeHangarStreet(k)
+				taxiway[#taxiway + 1] = { 
+					{ slotDistance * k + taxiwayStartX, taxiCoordY, 0 },  
+					{ 0, -facing * 10, 0 }
+				}
+				taxiway[#taxiway + 1] = { 
+					{ slotDistance * k + taxiwayStartX, taxiCoordY - facing * (slotHeight - backSpace - hangarSize[2] + slotYDistance - 9), 0 },
+					{ 0, -facing * 10, 0 }
+				}
+				-- Hangar wait
+				-- result.edgeObjects[#result.edgeObjects + 1] = {
+					-- edge = #runway_large / 2 + #taxiway / 2 - 1,
+					-- param = 0.8,
+					-- left = true,
+					-- model = facing == 1 and "station/air/asset/sign_a.mdl" or "station/air/asset/sign_b.mdl"
+				-- }
+				
+			end
+			slotSize = { hangarSize[1] / 2, hangarSize[1] / 2, hangarSize[2] / 2 + backSpace, slotHeight - hangarSize[2] / 2 - backSpace }
+			MakeSlots(params, result, autoMaker, slotDistance, "modern_hangar", 
+					slotSize, taxiwayStartX, modulesPosY + facing * hangarOffsetY, numSlots, hangarSlotId, facing, makeHangarStreet, true)
+			local function makeTerminalStreet(k)
+				taxiway[#taxiway + 1] = { { slotDistance * k + slotDistance/2 + taxiwayStartX, taxiCoordY - facing * (slotYDistance - 9), 0 },  { 0, facing * 10, 0 } }
+				taxiway[#taxiway + 1] = { { slotDistance * k + slotDistance/2 + taxiwayStartX, taxiCoordY,      0 },  { 0, facing * 10, 0 } }
+				-- Terminal wait
+				-- result.edgeObjects[#result.edgeObjects + 1] = {
+					-- edge = #runway_large / 2 + #taxiway / 2 - 1,
+					-- param = 0.3,
+					-- left = false,
+					-- model = facing == 1 and "station/air/asset/sign_a.mdl" or "station/air/asset/sign_b.mdl"
+				-- }
+				
+				local rot = transf.degToRad(facing == 1 and 0 or 180, 0, 0)
+				local offX = taxiwayStartX + slotDistance/2
+				local posY = modulesPosY + facing * mainBuildingOffsetY
+				local posZ = 0
+				local cargo = params.modules[terminalCargoSlotId + k] ~= nil and params.modules[terminalCargoSlotId + k].metadata.cargo and true or false
+				
+				if not cargo then
+					if connect[facing == 1 and k - 2 or k + 2] == true then
+						result.models[#result.models + 1] = {
+							id = "station/air/airport/era_b_pt_connection_lft.mdl",
+							transf = transf.rotZYXTransl(rot,  vec3.new(offX + slotDistance * (k), posY, posZ))
+						}
+					else
+						result.models[#result.models + 1] = {
+							id = "station/air/airport/era_b_pt_connection_wall_lft.mdl",
+							transf = transf.rotZYXTransl(rot,  vec3.new(offX + slotDistance * (k), posY, posZ))
+						}
+					end
+					if connect[facing == 1 and k + 2 or k - 2] == true then
+						result.models[#result.models + 1] = {
+							id = "station/air/airport/era_b_pt_connection_rgt.mdl",
+							transf = transf.rotZYXTransl(rot,  vec3.new(offX + slotDistance * (k), posY, posZ))
+						}
+					else
+						result.models[#result.models + 1] = {
+							id = "station/air/airport/era_b_pt_connection_wall_rgt.mdl",
+							transf = transf.rotZYXTransl(rot,  vec3.new(offX + slotDistance * (k), posY, posZ))
+						}
+					end
+				end
+				
+				-- Do not add runways past this point (only add edges with bigger ids)
+				-- Table mapping terminals to taxiway node
+				-- #runway_large + #taxiway - 1
+				slot2node[(cargo and terminalCargoSlotId or terminalSlotId) + k] = {override = nil, color = facing == 1 and 0 or 0}
+				
+				local dirs = {
+					{ vec3.new(offX + slotDistance * k - 5, posY - 5, 0), 30 },
+					{ vec3.new(offX + slotDistance * k - 10, posY + 20, 0), 80 },
+				}
+				local r = math.random(1, #dirs)
+				-- MakeRandomBaggageTrain(dirs[r][1], dirs[r][2], cargo)
+			end
+			slotSize = { terminalSize[1] / 2, terminalSize[1] / 2, terminalSize[2] / 2 + backSpace, slotHeight - terminalSize[2] / 2 - backSpace }
+			MakeSlots(params, result, autoMaker, slotDistance, "modern_terminal", 
+					slotSize, taxiwayStartX + slotDistance/2, modulesPosY + facing * terminalOffsetY, numSlots - 1, terminalSlotId, facing, makeTerminalStreet, true, true)
+			MakeSlots(params, result, autoMaker, slotDistance, "modern_cargo_terminal", 
+					slotSize, taxiwayStartX + slotDistance/2, modulesPosY + facing * terminalOffsetY, numSlots - 1, terminalCargoSlotId, facing, makeTerminalStreet, true, true)
+		end
+		MakeAllSlots(modules1BackY, runway1YCoord - taxiDistance, 1, mainBuilding1SlotId, hangar1SlotId, terminal1SlotId, terminalCargo1SlotId, occupied1, connect1)
+		if hasSecondRunway and hasSecondTaxiway then
+			MakeAllSlots(modules2BackY, runway2YCoord + taxiDistance, -1, mainBuilding2SlotId, hangar2SlotId, terminal2SlotId, terminalCargo2SlotId, occupied2, connect2)
+		end
+			
+		result.edgeLists = {
+			{
+				type = "STREET",
+				params = { type = runwayStreet },
+				edges = runway_large,
+				snapNodes = { },
+				alignTerrain = false
+			}, {
+				type = "STREET",
+				params = { type = taxiStreet },
+				edges = taxiway,
+				snapNodes = { },
+				alignTerrain = false
+			},
+		}
+		
+		-- Add all alignments
+		result.terrainAlignmentLists = {
+			{
+				type = "EQUAL",
+				faces = terrain_faces,
+				slopeLow = 0.275,
+				slopeHigh = 0.6
+			},
+			{
+				type = "LESS",
+				faces = landing_faces,
+				slopeLow = 0.275,
+				slopeHigh = 0.6
+			},
+			{
+				type = "LESS",
+				faces = takeoff_faces,
+				slopeLow = 0.275,
+				slopeHigh = 0.6
+			},
+			{
+				type = "GREATER",
+				faces = ug_terrain_faces,
+				slopeLow = 0.275,
+				slopeHigh = 0.6
+			}
+		}
+		
+		-- Add all ground textures
+		result.groundFaces = {
+			{  
+				face = field_face,
+				modes = {
+					{
+						type = "FILL",
+						key = "shared/cut_grass_mix.gtex.lua",
+					}
+				}
+			},
+		}
+		
+		local fenceLength = 3
+		local offsetX = -125
+		local fence_face = { terrain_faces[1][1] }
+
+		local function MakeFence(fromK, toK, dir, fenceYLimit, occupied, connect, terminalSlotId, terminalCargoSlotId, hangarSlotId, mainBuildingSlotId, off) 
+			local fenceAnchor = 81
+			local off2 = -dir * 17.6
+		
+			fence_face[#fence_face + 1] = { slotDistance * (fromK + 1) + taxiwayStartX, fenceYLimit, 0}
+			for k = fromK, toK, dir do
+				if dir == 1 and not hasSecondLanding and not hasSecondRunway then
+					break
+				end
+				local terminal = params.modules[terminalSlotId + k]
+				local cargo_terminal = params.modules[terminalCargoSlotId + k]
+				local hangar = params.modules[hangarSlotId + k]
+				local mainBuilding = params.modules[mainBuildingSlotId + k]
+				if terminal ~= nil or cargo_terminal ~= nil then
+					local tl = params.modules[terminalSlotId + k - 3]
+					local tr = params.modules[terminalSlotId + k + 3]
+					local tcl = params.modules[terminalCargoSlotId + k - 3]
+					local tcr = params.modules[terminalCargoSlotId + k + 3]
+					local skipLeft = params.modules[hangarSlotId + k - 3] ~= nil or (tcl ~= nil)
+					local skipRight = params.modules[hangarSlotId + k + 4] ~= nil or (tcr ~= nil)
+					local cargo = cargo_terminal ~= nil
+					if dir == -1 then
+						if not cargo then
+							fence_face[#fence_face + 1] = { slotDistance * (k+2) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+							fence_face[#fence_face + 1] = { slotDistance * (k+2) + taxiwayStartX + dir * 4, fenceYLimit + dir * fenceAnchor, 0}
+							constructionutil.makeFence(fence_face, "station/air/asset/fence_metal.mdl", fenceLength, false, result.models, true)	
+							fence_face = {}
+							fence_face[#fence_face + 1] = { slotDistance * (k-1) + taxiwayStartX - dir * 4, fenceYLimit + dir * fenceAnchor, 0}
+							fence_face[#fence_face + 1] = { slotDistance * (k-1) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+						else
+							fence_face[#fence_face + 1] = { slotDistance * (k+2) + taxiwayStartX, fenceYLimit + dir * fenceAnchor + off2 - 2, 0}
+							constructionutil.makeFence(fence_face, "station/air/asset/fence_metal.mdl", fenceLength, false, result.models, true)	
+							fence_face = {}
+							if not skipRight then
+								fence_face[#fence_face + 1] = { slotDistance * (k+2) + taxiwayStartX, fenceYLimit + dir * (slotHeight - 12), 0}
+							end
+							fence_face[#fence_face + 1] = { slotDistance * (k+2) + taxiwayStartX, fenceYLimit + dir * slotHeight, 0}
+							fence_face[#fence_face + 1] = { slotDistance * (k-1) + taxiwayStartX, fenceYLimit + dir * slotHeight, 0}
+							if not skipLeft then
+								fence_face[#fence_face + 1] = { slotDistance * (k-1) + taxiwayStartX, fenceYLimit + dir * (slotHeight - 12), 0}
+							end
+							constructionutil.makeFence(fence_face, "station/air/asset/fence_metal.mdl", fenceLength, false, result.models, true)	
+							fence_face = {}
+							fence_face[#fence_face + 1] = { slotDistance * (k-1) + taxiwayStartX, fenceYLimit + dir * fenceAnchor + off2 + 2, 0}
+						end
+					else 
+						if not cargo then
+							fence_face[#fence_face + 1] = { slotDistance * (k-1) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+							fence_face[#fence_face + 1] = { slotDistance * (k-1) + taxiwayStartX + dir * 4, fenceYLimit + dir * fenceAnchor, 0}
+							constructionutil.makeFence(fence_face, "station/air/asset/fence_metal.mdl", fenceLength, false, result.models, true)	
+							fence_face = {}
+							fence_face[#fence_face + 1] = { slotDistance * (k+2) + taxiwayStartX - dir * 4, fenceYLimit + dir * fenceAnchor, 0}
+							fence_face[#fence_face + 1] = { slotDistance * (k+2) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+						else
+							fence_face[#fence_face + 1] = { slotDistance * (k-1) + taxiwayStartX, fenceYLimit + dir * fenceAnchor + off2 + 2, 0}
+							constructionutil.makeFence(fence_face, "station/air/asset/fence_metal.mdl", fenceLength, false, result.models, true)	
+							fence_face = {}
+							if not skipLeft then
+								fence_face[#fence_face + 1] = { slotDistance * (k-1) + taxiwayStartX, fenceYLimit + dir * (slotHeight - 12), 0}
+							end
+							fence_face[#fence_face + 1] = { slotDistance * (k-1) + taxiwayStartX, fenceYLimit + dir * slotHeight, 0}
+							fence_face[#fence_face + 1] = { slotDistance * (k+2) + taxiwayStartX, fenceYLimit + dir * slotHeight, 0}
+							if not skipRight then
+								fence_face[#fence_face + 1] = { slotDistance * (k+2) + taxiwayStartX, fenceYLimit + dir * (slotHeight - 12), 0}
+							end
+							constructionutil.makeFence(fence_face, "station/air/asset/fence_metal.mdl", fenceLength, false, result.models, true)	
+							fence_face = {}
+							fence_face[#fence_face + 1] = { slotDistance * (k+2) + taxiwayStartX, fenceYLimit + dir * fenceAnchor + off2 - 2, 0}
+						end
+					end
+				elseif hangar ~= nil then
+					local skipLeft = params.modules[hangarSlotId + k - 4] ~= nil or params.modules[terminalSlotId + k - 4] ~= nil or params.modules[terminalCargoSlotId + k - 4] ~= nil
+					local skipRight = params.modules[hangarSlotId + k + 4] ~= nil or params.modules[terminalSlotId + k + 3] ~= nil or params.modules[terminalCargoSlotId + k + 3] ~= nil
+					--and string.find(terminal, "cargo")
+					if dir == -1 then
+						if not skipRight then
+							fence_face[#fence_face + 1] = { slotDistance * (k + 2) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+						end
+						fence_face[#fence_face + 1] = { slotDistance * (k + 2) + taxiwayStartX, fenceYLimit + dir * slotHeight, 0}
+						fence_face[#fence_face + 1] = { slotDistance * (k - 2) + taxiwayStartX, fenceYLimit + dir * slotHeight, 0}
+						if not skipLeft then
+							fence_face[#fence_face + 1] = { slotDistance * (k - 2) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+						end
+					else
+						if not skipLeft then
+							fence_face[#fence_face + 1] = { slotDistance * (k - 2) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+						end
+						fence_face[#fence_face + 1] = { slotDistance * (k - 2) + taxiwayStartX, fenceYLimit + dir * slotHeight, 0}
+						fence_face[#fence_face + 1] = { slotDistance * (k + 2) + taxiwayStartX, fenceYLimit + dir * slotHeight, 0}
+						if not skipRight then
+							fence_face[#fence_face + 1] = { slotDistance * (k + 2) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+						end
+					end
+				elseif mainBuilding ~= nil then
+					if dir == -1 then
+						fence_face[#fence_face + 1] = { slotDistance * (k + 3) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+						fence_face[#fence_face + 1] = { slotDistance * (k + 3) + taxiwayStartX + dir * 8, fenceYLimit + dir * fenceAnchor, 0}
+						constructionutil.makeFence(fence_face, "station/air/asset/fence_metal.mdl", fenceLength, false, result.models, true)	
+						fence_face = {}
+						fence_face[#fence_face + 1] = { slotDistance * (k - 3) + taxiwayStartX - dir * 8, fenceYLimit + dir * fenceAnchor, 0}
+						fence_face[#fence_face + 1] = { slotDistance * (k - 3) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+					else
+						fence_face[#fence_face + 1] = { slotDistance * (k - 3) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+						fence_face[#fence_face + 1] = { slotDistance * (k - 3) + taxiwayStartX + dir * 8, fenceYLimit + dir * fenceAnchor, 0}
+						constructionutil.makeFence(fence_face, "station/air/asset/fence_metal.mdl", fenceLength, false, result.models, true)	
+						fence_face = {}
+						fence_face[#fence_face + 1] = { slotDistance * (k + 3) + taxiwayStartX - dir * 8, fenceYLimit + dir * fenceAnchor, 0}
+						fence_face[#fence_face + 1] = { slotDistance * (k + 3) + taxiwayStartX, fenceYLimit + dir * fenceAnchor, 0}
+
+					end
+				elseif occupied[k + (dir == -1 and 0 or 1)] == nil then
+					local anchor = 0
+					if connect[k + (dir == -1 and 0 or 1)] == true then
+						anchor = fenceAnchor
+					end
+					if dir == -1 then
+						fence_face[#fence_face + 1] = { slotDistance * (k + 1) + taxiwayStartX, fenceYLimit + dir * anchor, 0}
+						fence_face[#fence_face + 1] = { slotDistance * (k + 0) + taxiwayStartX, fenceYLimit + dir * anchor, 0}
+					else 
+						fence_face[#fence_face + 1] = { slotDistance * (k + 1) + taxiwayStartX, fenceYLimit + dir * anchor, 0}
+						fence_face[#fence_face + 1] = { slotDistance * (k + 2) + taxiwayStartX, fenceYLimit + dir * anchor, 0}
+					end
+				end
+			end
+			fence_face[#fence_face + 1] = { slotDistance * (toK + off) + taxiwayStartX, fenceYLimit, 0}
+		end
+		
+		fence_face[#fence_face + 1] = terrain_faces[1][4]
+		if min2K < max2K then
+			MakeFence(min2K - 1, max2K - 2, 1, terrain_faces[1][4][2], occupied2, connect2, terminal2SlotId, terminalCargo2SlotId, hangar2SlotId, mainBuilding2SlotId, 2)
+		end
+		fence_face[#fence_face + 1] = terrain_faces[1][3]
+		fence_face[#fence_face + 1] = terrain_faces[1][2]
+		if min1K < max1K then
+			MakeFence(max1K - 1, min1K, -1, terrain_faces[1][2][2], occupied1, connect1, terminal1SlotId, terminalCargo1SlotId, hangar1SlotId, mainBuilding1SlotId, 0)
+		end
+		fence_face[#fence_face + 1] = terrain_faces[1][1]
+		constructionutil.makeFence(fence_face, "station/air/asset/fence_metal.mdl", fenceLength, false, result.models, true)	
+		
+		modulesutil.makeAutoExtras(result, autoMaker)
+		
+		result.stations = { }
+		modulesutil.makeAutoTerminals(result.slots, params.modules, {modern_terminal = true, modern_cargo_terminal = true}, #result.models, slot2node, result)
+		
+		result.cost = 8000000
+	
+		result.terminateConstructionHook = function()
+			modulesutil.addAutoSnap(params, result)
+		end
+
+		return result
+	end
+}
+
+end

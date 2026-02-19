@@ -1,0 +1,109 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+local colliderutil = require "colliderutil"
+local constructionutil = require "constructionutil"
+local modulesutil = require "modulesutil"
+
+local cargoCapacity = 25
+local passengerCapacity = 0
+
+--Begin Generated
+local generatedData = {
+	["era_a_cargo_building_10_10"] = {
+		models = {
+			["asset/ground/barrel_steel.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 4.20648, -0.85000, 0.63000, 1.00000, ignore = { 3, 50 }, },
+			},
+			["station/air/asset/pylon_c.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 2.95400, -4.06600, 0.63600, 1.00000, ignore = { 2, 50 }, },
+			},
+			["station/road/streetstation_sidebuilding_era_a_cargo_s1.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, -0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00059, -5.00000, 0.00000, 1.00000, },
+			},
+		},
+	},
+}
+--End Generated
+
+function data()
+
+return { 
+	cost = {
+		price = 80000,
+	},
+	category = {
+		categories = { "cargo", },
+	},
+	description = {
+		name = _("Small cargo building"),
+		description = _("Building for storage of some cargo items. Provides capacity for 25 cargo items."),
+		icon = "ui/construction/station/street/era_a_cargo_building_10_10.tga"
+	}, 
+	availability = {
+		yearFrom = 0,
+		yearTo = 0
+	},
+	type = "street_terminal_entrance",
+	order = {
+		value = 10,
+	},
+	metadata = {
+		building = true,
+		cargo = true,
+		moreCapacity = {
+			cargo = cargoCapacity - 2,
+			passenger = passengerCapacity
+		}
+	},
+	
+	updateFn = function(result, transform, tag, slotId, addModelFn, params)
+
+		constructionutil.addModelsAndGroups(params, generatedData["era_a_cargo_building_10_10"], result, tag, transform)
+
+		modulesutil.addPoolEdges(result, true, {
+			{ 5, 0 }
+		}, #result.models - 6)
+
+		local terrain_faces = {
+			{
+				type = "EQUAL",
+				faces = { { { -5.5, 0, 0, 1 }, { -5.5, -10.5, 0, 1 }, { 5.5, -10.5, 0, 1 }, { 5.5, 0, 0, 1 } } }, 
+				slopeLow = 0.3,
+				slopeHigh = 0.6,
+				optional = false,
+			}
+		}
+		modulesutil.TransformAlignmentFaces(transform, terrain_faces)
+		table.insert(result.terrainAlignmentLists, terrain_faces[1])
+		
+		table.insert(result.groundFaces, {  
+			face = terrain_faces[1].faces[1],
+			modes = {
+				{
+					type = "FILL",               
+					key = "industry_floor_high_priority.gtex.lua"
+				},
+				{
+					type = "STROKE",
+					key = "pedestrian_connection_border.lua"
+				},
+			},
+			loop = true, 
+		})
+ 
+		return result
+    end	,
+	getModelsFn = function()
+		
+		local result = {
+			{ 
+				id = "station/road/streetstation_sidebuilding_era_a_cargo_s1.mdl",
+				transf = { 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000 },
+			}
+		}
+		
+		return result
+	end	
+}
+
+end

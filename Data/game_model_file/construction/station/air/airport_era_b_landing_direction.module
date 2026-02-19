@@ -1,0 +1,96 @@
+local transf = require "transf"
+local vec3 = require "vec3"
+local vec4 = require "vec4"
+local colliderutil = require "colliderutil"
+local modulesutil = require "modulesutil"
+local constructionutil = require "constructionutil"
+
+--Begin Generated
+local generatedData = {
+	["era_b_airport_runway_permanent"] = {
+		models = {
+			["station/air/airport/era_b_sm_runway.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, },
+			},
+		},
+	},
+}
+--End Generated
+
+function data()
+
+return { 
+	description = {
+		icon = "ui/construction/station/air/landing_b.tga",
+		name = _("Approach lights"),
+		description = _("Determines the approach and takeoff direction of the runway."),
+	},
+	category = {
+		categories = {"misc"},
+	},
+	availability = {
+		yearFrom = 1950,
+		yearTo = 1980,
+	},
+	type = "landing_a",
+	order = {
+		value = 1000,
+	},
+	
+	updateFn = function(result, transform, tag)
+		result.models[#result.models + 1] = { 
+			id = "station/air/asset/approach_light_white_b.mdl",
+			transf = transform,
+			tag = tag
+		}
+		local center = modulesutil.mul(transform, {20.0, 0.0, -1.0, 1.0})
+		table.insert(result.colliders, 
+			colliderutil.createBox(center, { 20, 7, 3 })
+		)
+		
+		local mainGroundDimX = {0, 40}
+		local mainGroundDimY = {-12, 12}
+		
+		local terrain_faces2 = {
+			{
+				type = "EQUAL",
+				faces = {
+					{ 
+						{mainGroundDimX[1], mainGroundDimY[1], 0, 1}, {mainGroundDimX[2], mainGroundDimY[1], 0, 1}, 
+						{mainGroundDimX[2], mainGroundDimY[2], 0, 1}, {mainGroundDimX[1], mainGroundDimY[2], 0, 1}
+					}
+				},
+				slopeLow = 0.275,
+				slopeHigh = 0.6
+			}
+		}
+		modulesutil.TransformAlignmentFaces(transform, terrain_faces2)
+		table.insert(result.terrainAlignmentLists, terrain_faces2[1])
+		
+		table.insert(result.groundFaces, {  
+			face = terrain_faces2[1].faces[1],
+			modes = {
+				{
+					type = "FILL",
+					key = "none.lua",
+					texCoords = { {1.0, .0}, {1.0, 1.0}, {.0, 1.0}, {.0, .0} }
+				}
+			}
+		})
+		constructionutil.addModels(generatedData["era_b_airport_runway_permanent"], result.models, transform)
+	end,
+	
+	getModelsFn = function()
+		
+		local result = {
+			{ 
+				id = "station/air/asset/approach_light_white_b.mdl",
+				transf = transf.scale(vec3.new(1, 1, 1)),
+			}
+		}
+		
+		return result
+	end
+}
+
+end

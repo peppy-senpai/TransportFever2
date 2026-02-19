@@ -1,0 +1,130 @@
+local constructionutil = require "constructionutil"
+
+function data()
+
+local modelIds = {
+
+--[[ copy file names here: BEGIN ]]--
+
+"asset/railing_new.mdl",
+"asset/railing_new_start.mdl",
+"street/sign/do_not_enter_eu_c.mdl",
+"street/sign/one_way_eu_c.mdl",
+"asset/lamp_old.mdl",
+"asset/park_fountain_1.mdl",
+"asset/park_kiosk_1.mdl",
+
+--"asset/clock_wall_old.mdl",
+"asset/hydrant_new.mdl",
+"asset/hydrant_old.mdl",
+
+"asset/ampel.mdl",
+"asset/antenna_01.mdl",
+"asset/barrel_water_blue.mdl",
+-- "asset/temple_big_01.mdl",
+-- "asset/temple_big_02.mdl",
+-- "asset/temple_big_03.mdl",
+-- "asset/temple_big_04.mdl",
+-- "asset/temple_middle_01.mdl",
+-- "asset/temple_middle_02.mdl",
+-- "asset/temple_middle_03.mdl",
+-- "asset/temple_middle_04.mdl",
+-- "asset/temple_middle_05.mdl",
+-- "asset/church_kazan.mdl",
+-- "asset/mosque.mdl",
+-- "asset/bedouin_tent_01.mdl",
+-- "asset/bedouin_tent_02.mdl",
+-- "asset/bedouin_tent_03.mdl",
+"street/street_asset_mix/trash_standing_c.mdl",
+"street/street_asset_mix/mailbox_us_a.mdl",
+"street/street_asset_mix/mailbox_eu_c.mdl",
+"street/street_asset_mix/fireplug_us_c.mdl",
+
+--[[ copy file names here: END ]]--
+	
+}
+
+local modelIdsNames = {
+
+"Railing",
+"Railing (end)",
+"Do not enter sign",
+"One way sign",
+"Lamp",
+"Park fountain",
+"Park kiosk",
+
+--"asset/clock_wall_old.mdl",
+"Hydrant (new)",
+"Hydrant (old)",
+
+"Traffic light",
+"Antenna",
+"Water barrel",
+-- "asset/temple_big_01.mdl",
+-- "asset/temple_big_02.mdl",
+-- "asset/temple_big_03.mdl",
+-- "asset/temple_big_04.mdl",
+-- "asset/temple_middle_01.mdl",
+-- "asset/temple_middle_02.mdl",
+-- "asset/temple_middle_03.mdl",
+-- "asset/temple_middle_04.mdl",
+-- "asset/temple_middle_05.mdl",
+-- "Church (Kazan)",
+-- "Mosque",
+-- "Bedouin Tent 01",
+-- "Bedouin Tent 02",
+-- "Bedouin Tent 03",
+"Trash can",
+"Mailbox (US)",
+"Mailbox (EU)",
+"Hydrant (US)",
+
+}
+
+return { 
+	type = "ASSET_DEFAULT",
+	
+	description = { name = _("Asset builder") },
+	
+	buildMode = "MULTI",
+	categories = { "misc" },
+	
+	skipCollision = false,
+	autoRemovable = false,
+	
+	order = 115,
+	params = {
+		{
+			key = "asset",
+			name = _("Asset"),
+			values = modelIdsNames,
+			uiType = "COMBOBOX"
+		},
+		{
+			key = "terrainAlignment",
+			name = _("Terrain alignment"),
+			values = { _("Yes"), _("No") },
+			defaultIndex = 1
+		}
+	},
+	
+	updateFn = function(params)
+		local result = { }
+		
+		result.models = {
+			{
+				id = modelIds[params.asset + 1],
+				transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 }),
+			}
+		}
+		
+		if params.terrainAlignment == 1 then
+			result.terrainAlignmentLists = { { type = "EQUAL", faces =  { } } }
+		end
+		
+		return result
+	end
+}
+
+end

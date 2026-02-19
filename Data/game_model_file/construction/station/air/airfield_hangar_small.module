@@ -1,0 +1,49 @@
+local transf = require "transf"
+local vec3 = require "vec3"
+
+function data()
+
+return { 
+	availability = {
+		yearFrom = 1920,
+		yearTo = 0,
+	},
+	cost = {
+		price = 50000,
+	},
+	category = {
+		categories = {"building"},
+	},
+	description = {
+		icon = "ui/construction/station/air/airfield_hangar_small.tga",
+		name = _("Hangar"),
+		description = _("Used to buy/sell small aircraft."),
+	},
+	type = "hangar_1",
+	order = {
+		value = 1000,
+	},
+	
+	updateFn = function(result, transform, tag)
+		result.models[#result.models + 1] = { 
+			
+			id = "station/air/airfield/hangar.mdl",
+			transf = transform,
+			tag = tag
+		}
+	end,
+	
+	getModelsFn = function()
+		
+		local result = {
+			{ 
+				id = "station/air/airfield/hangar.mdl",
+				transf = transf.scale(vec3.new(1, 1, 1)),
+			}
+		}
+		
+		return result
+	end
+}
+
+end

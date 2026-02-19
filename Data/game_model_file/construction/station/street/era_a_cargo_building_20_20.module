@@ -1,0 +1,141 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+local colliderutil = require "colliderutil"
+local constructionutil = require "constructionutil"
+local modulesutil = require "modulesutil"
+
+local cargoCapacity = 75
+local passengerCapacity = 0
+
+--Begin Generated
+local generatedData = {
+	["era_a_cargo_building_20_20"] = {
+		models = {
+			["asset/ground/barrel_steel.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 8.54600, -18.27500, 0.63200, 1.00000, },
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 9.24000, -19.18000, 0.63200, 1.00000, },
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 8.70000, -17.38000, 0.63200, 1.00000, ignore = { 2, 50 }, },
+			},
+			["asset/ground/barrel_wood.mdl"] = {
+				{ 0.79864, -0.60181, 0.00000, 0.00000, 0.60181, 0.79864, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -9.03000, -18.84000, 0.62000, 1.00000, },
+				{ 0.79864, -0.60181, 0.00000, 0.00000, 0.60181, 0.79864, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -8.76000, -17.54000, 0.62000, 1.00000, },
+			},
+			["asset/ground/container_waste2.mdl"] = {
+				{ -1.00000, 0.00000, -0.00000, 0.00000, -0.00000, -1.00000, 0.00000, 0.00000, -0.00000, 0.00000, 1.00000, 0.00000, 5.86000, -6.75000, 0.63000, 1.00000, },
+			},
+			["asset/industry/cardboard_box_01.mdl"] = {
+				{ 0.76828, 0.64011, 0.00000, 0.00000, -0.64011, 0.76828, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 7.59000, -6.23000, 0.62500, 1.00000, ignore = { 3, 75 }, },
+			},
+			["asset/industry/cardboard_box_02.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 3.52000, -6.17000, 0.62000, 1.00000, ignore = { 6, 50 }, },
+			},
+			["asset/industry/pallet_01.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 7.25000, -2.61000, 0.63200, 1.00000, },
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 7.25000, -2.61000, 0.77600, 1.00000, },
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 7.25000, -2.61000, 0.92000, 1.00000, },
+				{ 0.99692, -0.07846, 0.00000, 0.00000, 0.07846, 0.99692, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 7.25000, -2.61000, 1.06400, 1.00000, },
+				{ 0.74649, -0.08726, -0.65965, 0.00000, 0.10846, 0.99406, -0.00876, 0.00000, 0.65650, -0.06501, 0.75152, 0.00000, 7.86400, -2.75000, 0.95800, 1.00000, ignore = { 5, 75 }, },
+			},
+			["station/air/asset/pylon_c.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -9.24000, -0.92000, 0.63300, 1.00000, ignore = { 4, 50 }, },
+			},
+			["station/rail/asset/cargo_lamps.mdl"] = {
+				{ -0.00000, -1.00000, 0.00000, 0.00000, 1.00000, -0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -7.93000, -1.32000, 0.63200, 1.00000, },
+				{ -0.00000, -1.00000, 0.00000, 0.00000, 1.00000, -0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 7.94000, -1.32000, 0.63200, 1.00000, },
+			},
+			["station/rail/asset/cargo_pallet_jack.mdl"] = {
+				{ 0.55630, -0.83098, 0.00000, 0.00000, 0.83098, 0.55630, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 9.14000, -3.22000, 0.63400, 1.00000, },
+			},
+			["station/rail/asset/cargo_speakers.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -6.80000, -5.48000, 0.61000, 1.00000, },
+			},
+			["station/road/streetstation_sidebuilding_era_a_cargo_s2.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, -0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -0.01650, -10.00000, 0.00000, 1.00000, },
+			},
+		},
+	},
+}
+--End Generated
+
+function data()
+
+return { 
+	cost = {
+		price = 80000,
+	},
+	category = {
+		categories = { "cargo", },
+	},
+	description = {
+		name = _("Large cargo building"),
+		description = _("Building for storage of many cargo items. Provides capacity for 75 cargo items."),
+		icon = "ui/construction/station/street/era_a_cargo_building_20_20.tga"
+	}, 
+	availability = {
+		yearFrom = 0,
+		yearTo = 0
+	},
+	type = "street_terminal_entrance_exit",
+	order = {
+		value = 15,
+	},
+	metadata = {
+		cargo = true,
+		building = true,
+		moreCapacity = {
+			cargo = cargoCapacity - 6,
+			passenger = passengerCapacity
+		}
+	},
+	
+	updateFn = function(result, transform, tag, slotId, addModelFn, params)
+		
+		constructionutil.addModelsAndGroups(params, generatedData["era_a_cargo_building_20_20"], result, tag, transform)
+
+		modulesutil.addPoolEdges(result, true, {
+			{ 21, 0 }
+		}, #result.models - 22)
+
+		local terrain_faces = {
+			{
+				type = "EQUAL",
+				faces = { { { -10.5, 0, 0, 1 }, { -10.5, -20.5, 0, 1 }, { 10.5, -20.5, 0, 1 }, { 10.5, 0, 0, 1 } } },
+				slopeLow = 0.3,
+				slopeHigh = 0.6,
+				optional = false,
+			}
+		}
+		modulesutil.TransformAlignmentFaces(transform, terrain_faces)
+		table.insert(result.terrainAlignmentLists, terrain_faces[1])
+		
+		table.insert(result.groundFaces, {  
+			face = terrain_faces[1].faces[1],
+			modes = {
+				{
+					type = "FILL",               
+					key = "industry_floor_high_priority.gtex.lua"
+				},
+				{
+					type = "STROKE",
+					key = "pedestrian_connection_border.lua"
+				},
+			},
+			loop = true, 
+		})
+ 
+		return result
+    end	,
+	getModelsFn = function()
+		
+		local result = {
+			{ 
+				id = "station/road/streetstation_sidebuilding_era_a_cargo_s2.mdl",
+				transf = { 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000 },
+			}
+		}
+		
+		return result
+	end
+}
+
+end

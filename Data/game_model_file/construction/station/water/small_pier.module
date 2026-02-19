@@ -1,0 +1,128 @@
+local transf = require "transf"
+local vec2 = require "vec2"
+local vec3 = require "vec3"
+local modulesutil = require "modulesutil"
+local constructionutil = require "constructionutil"
+
+function data()
+
+return { 
+	cost = {
+		price = 50000,
+	},
+	category = {
+		categories = { "landing", },
+	},
+	description = {
+		name = _("Small landing"),
+		description = _("Landing for small ships."),
+		icon = "ui/construction/station/water/mooring_50m.tga"
+	}, 
+	availability = {
+		yearFrom = 1850,
+		yearTo = 0,
+	},
+	type = "water_pier_50_12",
+	order = {
+		value = 1200,
+	},
+	metadata = {
+		pier = true,
+		skipWaterCollision = true,
+	},
+	
+	updateFn = function(result, transform, tag, slotId, addModelFn, params)
+		local coordI, coordJ, facing = result.DemangleId(slotId)
+		local size = {4, 1}
+		local zOffs = 1.0
+
+		local bounds, center, range = result.MakeBoundsAndCenter(slotId, size, coordI, coordJ, facing)
+		center.z = center.z + 4.0;
+		
+		table.insert(result.InvokeLater, function() 
+			local mod = result.GetAnchorModule(coordI, coordJ, facing)
+			if not mod then return end
+			if mod.pier == nil then mod.pier = {} end
+			result.GetAnchorModule(coordI, coordJ, facing).pier[facing % 4] = slotId
+		end)
+		
+		result.addModuleData[slotId] = function(transform, addModelFn)
+			local dual = ""
+			local mod = result.GetAnchorModule(coordI, coordJ, facing, 2)
+			if not mod or not mod.metadata.pier then
+				dual = "_dual"
+			end
+			local v = ""
+			
+			local blockedF = false
+			local blockedL = false
+			local blockedR = false
+			-- Hardcoded, TODO: dehardcode
+			local coord
+			if facing == 36 then coord = {coordI, coordJ - 1 } -- ok
+			elseif facing == 37 then coord = {coordI + 1, coordJ} -- ok
+			elseif facing == 38 then coord = {coordI, coordJ + 1} -- ok
+			elseif facing == 39 then coord = {coordI - 1, coordJ} end
+			if result.coord2slotId[coord[1]] ~= nil and result.coord2slotId[coord[1]][coord[2]] ~= nil then
+				blockedF = true
+			end
+			if blockedF then
+				if facing == 36 then coord = {coordI - 3, coordJ }
+				elseif facing == 37 then coord = {coordI, coordJ - 3}
+				elseif facing == 38 then coord = {coordI + 2, coordJ}
+				elseif facing == 39 then coord = {coordI, coordJ + 2} end
+				if result.coord2slotId[coord[1]] ~= nil and result.coord2slotId[coord[1]][coord[2]] ~= nil then
+					--addModelFn("station/water/era_a/tn_inout.mdl", transf.mul(transf.mul(transf.transl(center), transform), transf.rotZTransl(math.pi, vec3.new(40.0, 0.0, 0.0))))
+					blockedL = true
+				end
+				if facing == 36 then coord = {coordI+ 2, coordJ }
+				elseif facing == 37 then coord = {coordI, coordJ + 2}
+				elseif facing == 38 then coord = {coordI - 3, coordJ}
+				elseif facing == 39 then coord = {coordI, coordJ - 3} end
+				if result.coord2slotId[coord[1]] ~= nil and result.coord2slotId[coord[1]][coord[2]] ~= nil then
+					--addModelFn("station/water/era_a/tn_inout.mdl", transf.mul(transf.mul(transf.transl(center), transform), transf.rotZTransl(math.pi, vec3.new(-50.0, 0.0, 0.0))))
+					blockedR = true
+				end
+			end
+			if blockedF then
+				if blockedR then v = "_r" 
+				elseif blockedL then v = "_l" end
+			end
+			
+			local mod = result.GetAnchorModule(coordI, coordJ, facing)
+			if mod and mod.metadata.cargo then
+				local id = addModelFn("station/water/era_a/tn_small_pier" .. dual .. v .. ".mdl", transf.mul(transf.transl(center), transform))
+				table.insert(result.cargoTerminal, result.nterminals)
+				table.insert(result.terminalGroups, { terminals = { {id - 1, 0} }, tag = 1000 * coordI + coordJ })
+				result.addTerminalConfig(slotId, true, #result.cargoTerminal)
+				result.nterminals = result.nterminals + 1
+			elseif mod and mod.metadata.passenger then
+				local id = addModelFn("station/water/era_a/tn_small_pier_passenger" .. dual .. v .. ".mdl", transf.mul(transf.transl(center), transform))
+				table.insert(result.passengerTerminal, result.nterminals)
+				table.insert(result.terminalGroups, { terminals = { {id - 1, 0} }, tag = 1000 * coordI + coordJ })
+				result.addTerminalConfig(slotId, false, #result.passengerTerminal)
+				result.nterminals = result.nterminals + 1
+				
+			end
+			
+			
+			center = vec3.add(center, vec3.new(0.0, 0.0, zOffs))
+		end
+
+		result.AddFace(bounds, nil, 0, false)
+	end,
+	
+	getModelsFn = function(params)
+		
+		local result = {
+			{ 
+				id = "station/water/all_eras/terminal_50_12.mdl",
+				transf = transf.transl(vec3.new(0,0,-8)),
+			},
+		}
+		
+		return result
+	end
+}
+
+end

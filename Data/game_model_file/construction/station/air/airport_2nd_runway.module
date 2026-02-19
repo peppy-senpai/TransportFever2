@@ -1,0 +1,35 @@
+local transf = require "transf"
+local vec3 = require "vec3"
+
+function data()
+
+return { 
+	availability = {
+		yearFrom = 1980,
+		yearTo = 0,
+	},
+	category = {
+		categories = {"misc"},
+	},
+	cost = {
+		price = 5000000,
+	},
+	description = {
+		icon = "ui/construction/station/air/2nd_runway.tga",
+		name = _("Runway"),
+		description = _("Adds a second runway to the airport, which allows building a second taxiway."),
+	},
+	type = "2nd_runway",
+	order = {
+		value = 0,
+	},
+	
+	updateFn = function(result, transform, tag)
+		
+	end,
+	getModelsFn = function()
+		return {}
+	end
+}
+
+end

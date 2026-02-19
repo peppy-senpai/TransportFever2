@@ -1,0 +1,1301 @@
+local vec3 = require "vec3"
+local vec2 = require "vec2"
+local transf = require "transf"
+local constructionutil = require "constructionutil"
+local paramsutil = require "paramsutil"
+local colliderutil = require "colliderutil"
+local modulesutil = require "modulesutil"
+
+function data()
+
+local function makeDynamicTemplate(type, desc) 
+	return {	
+		type = "DYNAMIC",
+		constructionType = type,
+		description = desc,
+		data = {
+			params = {
+				-- {
+					-- key = "type",
+					-- name = _("Type"),
+					-- values = { _("Passenger"), _("Cargo") },
+					-- defaultIndex = 0,
+				-- },
+				{
+					key = "size",
+					name = _("Size"),
+					values = { _("Small"), _("Large") },
+					defaultIndex = 0,
+				},
+				{
+					key = "terminals",
+					name = _("Terminals"),
+					values = { _("1"), _("2"), _("4") },
+					defaultIndex = 0,
+				},
+			},
+		}
+	}
+end
+
+return { 
+	type = "HARBOR",
+	description = {
+		name = _("Passenger/cargo harbor"),
+		description = _("Modular harbor for passenger and cargo ships."),
+		icon = "ui/construction/station/water/harbor.tga"
+	},
+	availability = {
+		yearFrom = 1850,
+	},
+	constructionTemplates = {
+		makeDynamicTemplate("HARBOR", {
+			name = _("Passenger harbor"),
+			description = _("Modular harbor for passenger ships."),
+			icon = "ui/construction/station/water/harbor.tga"
+		}),
+		makeDynamicTemplate("HARBOR_CARGO", {
+			name = _("Cargo harbor"),
+			description = _("Modular harbor for cargo ships."),
+			icon = "ui/construction/station/water/harbor_cargo.tga"
+		}),
+	},
+	order = 1000,
+	soundConfig = {
+		soundSet = { name = "harbor_cargo" }
+	},
+	createTemplateFn = function(params)
+		local result = {}
+	
+		local MangleId = function(coordAndFace) 
+			return 1000000 * (coordAndFace[1] + 100) + 100 * (coordAndFace[2] + 100) + coordAndFace[3]
+		end
+			
+		-- ["50_12"] { 0, 1, 2, 3 }
+		-- ["50_12_flip"] { 4, 5, 6, 7 }
+		-- ["100_25"] { 8, 9, 10, 11 }
+		-- ["100_25_flip"] { 12, 13, 14, 15 }
+		-- ["100_50"] { 16, 17, 18, 19 }
+		-- ["100_50_flip"] { 20, 21, 22, 23 }
+		-- ["50_50"] { 24, 25, 26, 27 }
+		-- ["50_50_flip"] { 28, 29, 30, 31 }
+		-- ["50_12_pier"] { 36, 37, 38, 39 }
+		-- ["100_12_pier"] { 44, 45, 46, 47 }
+		-- ["12_12"] { 48, 49, 50, 51 }
+		
+		-- local cargo = params.type == 1
+		local cargo = params.templateIndex == 1
+		local big = params.size == 1
+		local terminals = math.pow(2, params.terminals)
+		
+		local platform = "station/water/passenger_dock_50_12.module"
+		local pier = "station/water/small_pier.module"
+		if big then
+			if cargo then
+				platform = "station/water/cargo_dock_100_25.module"
+			else
+				platform = "station/water/passenger_dock_100_25.module"
+			end
+			pier = "station/water/medium_pier.module"
+		else 
+			if cargo then
+				platform = "station/water/cargo_dock_50_12.module"
+			end
+		end
+		
+		--result[MangleId({0, 0, 0})] = "station/water/passenger_dock_50_12.module"
+		result[MangleId({1,1,50})] = "station/water/pedestrian_entrance.module"
+		result[MangleId({0,1,50})] = "station/water/pedestrian_entrance.module"
+		result[MangleId({-1,1,50})] = "station/water/pedestrian_entrance.module"
+		result[MangleId({-2,1,50})] = "station/water/pedestrian_entrance.module"
+		
+		if cargo then
+			result[MangleId({0, 0, 28})] = "station/water/cargo_dock_50_50.module"
+		else
+			result[MangleId({0, 0, 28})] = "station/water/passenger_dock_50_50.module"
+		end
+		
+		if big then
+			if terminals == 1 then
+				result[MangleId({0, -4, 12})] = platform
+				result[MangleId({0, -6, 44})] = pier
+			end
+			if terminals == 2 then
+				result[MangleId({0,-4,8})] = platform
+								
+				result[MangleId({-2,-7,47})] = pier
+				result[MangleId({1,-7,45})] =  pier
+			end
+			if terminals == 4 then
+				result[MangleId({2,-6,8})] = platform
+				result[MangleId({3,-4,11})] = platform
+				result[MangleId({-2,-6,8})] = platform
+
+				result[MangleId({0,-9,47})] = pier
+				result[MangleId({-4,-9,47})] = pier
+				result[MangleId({3,-9,45})] = pier
+				result[MangleId({-1,-9,45})] = pier
+			end
+		else 
+			if terminals == 1 then
+				result[MangleId({0, -4, 4})] = platform
+				result[MangleId({0, -5, 36})] = pier
+			end
+			if terminals >= 2 then
+				result[MangleId({-2,-4,0})] = platform
+				result[MangleId({1,-4,0})] = platform
+				
+				result[MangleId({-1,-5,37})] = pier
+				result[MangleId({0,-5,39})] = pier
+				
+				if terminals >= 4 then
+					result[MangleId({-3,-5,39})] = pier
+					result[MangleId({2,-5,37})] = pier
+				end
+			end
+		end
+		
+		
+		return result
+	end,
+	updateFn = function(params)
+		local gridSize = vec2.new(12.5, 12.5)
+		local result = { }
+		
+		result.models = { }
+		result.stations = {}
+		result.terminalGroups = {}
+		result.nterminals = 0
+		result.cargoTerminal = {}
+		result.passengerTerminal = {}
+		
+		result.slots = {
+
+		}
+		
+		result.labelText = {}
+		
+		result.slot2terminalInfo = {} -- slot 2 terminalinfo
+		result.addTerminalConfig = function( slotId, cargo, nterminal) 
+			result.slot2terminalInfo[slotId] = { cargo = cargo, terminal = nterminal}
+		end
+		
+		result.slotConfig = {
+			["water_pier_50_12"] = {
+				maxModules = -8-2,
+				message = _("Build a small dock"),
+			},
+			["water_pier_100_12"] = {
+				maxModules = -8-2,
+				message = _("Build a large dock"),
+			},
+		}
+		result.callInvalidModules = true
+		
+		local colliderZ = 8
+		local colliderHalfSizeZ = 8
+		
+		local maxWidth = 30 -- 824 meter box sides
+		local maxHeight = 30
+		
+		local gridSize = vec2.new(12.5, 12.5)
+
+		local minI = 100
+		local maxI = -100
+		local minJ = 100
+		local maxJ = -100
+	
+		local slotDef = {
+			["50_12"] = {
+				facing = { 0, 1, 2, 3 }, -- down, right, up, left
+				offset = { gridSize.y * 0.8, -gridSize.x * 0.8, -gridSize.y * 0.8, gridSize.x * 0.8},
+				angle = { math.pi / 2, math.pi, math.pi / 2 * 3, 0},
+				shift = { 0, 0, 0, 0 },
+				type = "water_module_50_12",
+				spacing = {{ 48, 0, 5, 5,  }, { 48, 0, 5, 5,  }, { 48, 0, 5, 5,  }, { 48, 0, 5, 5, }},
+				side = { 1, 1, 1, 1},
+				shape = 1,
+			},
+			["50_12_flip"] = {
+				facing = { 4, 5, 6, 7 }, -- down, right, up, left
+				offset = { gridSize.y * 0.3, -gridSize.x * 0.3, -gridSize.y * 0.3, gridSize.x * 0.3},
+				angle = { math.pi, math.pi / 2 * 3, 0, math.pi / 2},
+				shift = { -gridSize.x * 0.5, -gridSize.y * 0.5, -gridSize.x * 0.5, -gridSize.y * 0.5 },
+				type = "water_module_50_12",
+				spacing = {{ 24, 24, 3, 5 }, { 24, 24, 3, 5 }, { 24, 24, 3, 5 }, { 24, 24, 3, 5 }},
+				shape = 3,
+			},
+			
+			["100_25"] = {
+				facing = { 8, 9, 10, 11 }, -- down, right, up, left
+				offset = { gridSize.y * 0.8, -gridSize.x * 0.8, -gridSize.y * 0.8, gridSize.x * 0.8},
+				angle = { math.pi / 2, math.pi, math.pi / 2 * 3, 0},
+				shift = { -gridSize.x * 0.5, -gridSize.y * 0.5, -gridSize.x * 0.5, -gridSize.y * 0.5 },
+				type = "water_module_100_25",
+				spacing = {{ 97, 0, 12, 12,  }, { 97, 0, 12, 12,  }, { 97, 0, 12, 12,  }, { 97, 0, 12, 12, }},
+				side = { 2, 2, 2, 2},
+				shape = 1,
+			},
+			["100_25_flip"] = {
+				facing = { 12, 13, 14, 15 }, -- down, right, up, left
+				offset = { gridSize.y * 0.3, -gridSize.x * 0.3, -gridSize.y * 0.3, gridSize.x * 0.3},
+				angle = { math.pi, math.pi / 2 * 3, 0, math.pi / 2},
+				shift = { -gridSize.x * 0.5, -gridSize.y * 0.5, -gridSize.x * 0.5, -gridSize.y * 0.5 },
+				type = "water_module_100_25",
+				spacing = {{ 48, 48, 3, 19 }, { 48, 48, 3, 19 }, { 48, 48, 3, 19 }, { 48, 48, 3, 19 }},
+				shape = 3,
+			},
+			
+			["100_50"] = {
+				facing = { 16, 17, 18, 19 }, -- down, right, up, left
+				offset = { gridSize.y * 0.8, -gridSize.x * 0.8, -gridSize.y * 0.8, gridSize.x * 0.8},
+				angle = { math.pi / 2, math.pi, math.pi / 2 * 3, 0},
+				shift = { -gridSize.x * 0.5, -gridSize.y * 0.5, -gridSize.x * 0.5, -gridSize.y * 0.5 },
+				type = "water_module_100_50",
+				spacing = {{ 97, 0, 24, 24,  }, { 97, 0, 24, 24,  }, { 97, 0, 24, 24,  }, {97, 0, 24, 24, }},
+				shape = 1,
+			},
+			["100_50_flip"] = {
+				facing = { 20, 21, 22, 23 }, -- down, right, up, left
+				offset = { gridSize.y * 0.3, -gridSize.x * 0.3, -gridSize.y * 0.3, gridSize.x * 0.3},
+				angle = { math.pi, math.pi / 2 * 3, 0, math.pi / 2},
+				shift = { -gridSize.x * 0.5, -gridSize.y * 0.5, -gridSize.x * 0.5, -gridSize.y * 0.5 },
+				type = "water_module_100_50",
+				spacing = {{ 49, 49, 3, 44 }, { 49, 49, 3, 44 }, { 49, 49, 3, 44 }, { 49, 49, 3, 44 }},
+				shape = 3,
+			},
+			
+			["50_50"] = {
+				facing = { 24, 25, 26, 27 }, -- down, right, up, left
+				offset = { gridSize.y * 0.8, -gridSize.x * 0.8, -gridSize.y * 0.8, gridSize.x * 0.8},
+				angle = { math.pi / 2, math.pi, math.pi / 2 * 3, 0},
+				shift = { -gridSize.x * 0.5, -gridSize.y * 0.5, -gridSize.x * 0.5, -gridSize.y * 0.5 },
+				type = "water_module_50_50",
+				spacing = {{ 46, 0, 23, 23,  }, { 46, 0, 23, 23,  }, { 46, 0, 23, 23,  }, { 46, 0, 23, 23, }},
+				shape = 1,
+			},
+			["50_50_flip"] = {
+				facing = { 28, 29, 30, 31 }, -- down, right, up, left
+				offset = { gridSize.y * 0.3, -gridSize.x * 0.3, -gridSize.y * 0.3, gridSize.x * 0.3},
+				angle = { math.pi, math.pi / 2 * 3, 0, math.pi / 2},
+				shift = { -gridSize.x * 0.5, -gridSize.y * 0.5, -gridSize.x * 0.5, -gridSize.y * 0.5 },
+				type = "water_module_50_50",
+				spacing = {{ 23, 23, 3, 44 }, { 23, 23, 3, 44 }, { 23, 23, 3, 44 }, { 23, 23, 3, 44 }},
+				shape = 3,
+			},
+			-- range 32 to 35 would be an unflipped pier
+			["50_12_pier"] = {
+				facing = { 36, 37, 38, 39 }, -- down, right, up, left
+				offset = { gridSize.y * 0.3, -gridSize.x * 0.3, -gridSize.y * 0.3, gridSize.x * 0.3},
+				angle = { math.pi, math.pi / 2 * 3, 0, math.pi / 2},
+				shift = { -gridSize.x * 0.5, -gridSize.y * 0.5, -gridSize.x * 0.5, -gridSize.y * 0.5 },
+				type = "water_pier_50_12",
+				spacing = {{ 24, 24, 3, 5 }, { 24, 24, 3, 5 }, { 24, 24, 3, 5 }, { 24, 24, 3, 5 }},
+			},
+			-- range 40 to 43 would be an unflipped pier
+			["100_12_pier"] = {
+				facing = { 44, 45, 46, 47 }, -- down, right, up, left
+				offset = { gridSize.y * 0.3, -gridSize.x * 0.3, -gridSize.y * 0.3, gridSize.x * 0.3},
+				angle = { math.pi, math.pi / 2 * 3, 0, math.pi / 2},
+				shift = { -gridSize.x * 0.5, -gridSize.y * 0.5, -gridSize.x * 0.5, -gridSize.y * 0.5 },
+				type = "water_pier_100_12",
+				spacing = {{ 48, 48, 3, 5 }, { 48, 48, 3, 5 }, { 48, 48, 3, 5 }, { 48, 48, 3, 5 }},
+			},
+			["12_12"] = {
+				facing = { 48, 49, 50, 51 }, -- pedestrian entrance
+				offset = { gridSize.y * 0.8, -gridSize.x * 0.8, -gridSize.y * 0.8, gridSize.x * 0.8},
+				angle = { math.pi / 2, math.pi, math.pi / 2 * 3, 0},
+				shift = { 0, 0, 0, 0 },
+				type = "pedestrian_entrance",
+				spacing = {{ 12, 0, 5, 5,  }, { 12, 0, 5, 5,  }, { 12, 0, 5, 5,  }, { 12, 0, 5, 5, }},
+				shape = 1,
+			},
+		}
+		
+		
+		local AddSlot = nil
+		
+		result.InvokeLater = {}
+		local MakeCache = function(result)
+			result.slotId2bounds = {}
+			result.coord2slotId = {}
+			result.addModuleData = {}
+			result.addModuleDataPart2 = {}
+			result.terminateConstructionHook = function()
+				for k, invoke in pairs(result.InvokeLater) do
+					invoke()
+				end
+				
+				-- for i = minI - 1, maxI + 1 do
+					-- for j = minJ - 1, maxJ + 1 do
+						-- if result.coord2slotId[i] == nil or result.coord2slotId[i][j] == nil then
+							-- if i == minI - 1 and j == maxI + 1 then
+								-- table.insert(result.models, {
+									-- id = "station/water/era_a/tn_entry.mdl",
+									-- transf = transf.transl(vec3.new((i + 0.5) * gridSize.x, (j + 0.5) * gridSize.y, 0.0)),
+								-- })
+							-- else
+								-- local tf =  transf.transl(vec3.new((i + 0.5) * gridSize.x, (j + 0.5) * gridSize.y, 0.0))
+								-- table.insert(result.models, {
+									-- id = "station/water/era_a/tn_clique.mdl",
+									-- transf = tf,
+								-- })
+							-- end
+						-- end
+						-- if result.coord2slotId[i] == nil or result.coord2slotId[i][j] == nil 
+							-- or params.modules[result.coord2slotId[i][j].slotId] == nil or params.modules[result.coord2slotId[i][j].slotId].metadata.path then
+							-- local tf =  transf.transl(vec3.new((i + 0.5) * gridSize.x, (j + 0.5) * gridSize.y, 0.0))
+							-- table.insert(result.slots, {
+								-- id = result.MangleId({i, j, 48}),
+								-- transf = tf,
+								-- type = "water_waypoint",
+								-- spacing = {6, 6, 6, 6},
+							-- })
+						-- end
+					-- end
+				-- end
+				local function Process(data)
+					for slotId, fn in pairs(data) do
+						local slot = result.slots[slotId]
+						--print(slotId)
+						for a, k in pairs(result.slots) do
+							if slotId == k.id then
+								slot = k
+							end
+						end
+						
+						if slot == nil then 
+							local coordI, coordJ, facing = result.DemangleId(slotId)
+							if facing < 36 or facing > 47 then -- Don't add piers
+								slot = AddSlot(slotId)
+							end
+							-- print("error: no slot" .. slotId)
+						end
+						if slot ~= nil then 
+							local transform = slot.transf
+							local tag = "__module_" .. slotId
+							local eye = transf.scale(vec3.new(1,1,1))
+							local function addModelFn(name, mtransf)
+								result.models[#result.models + 1] = { 
+									id = name,
+									transf = mtransf,
+									tag = tag
+								}
+								return #result.models
+							end
+							fn(transform, addModelFn)
+						end
+					end
+				end
+				
+				Process(result.addModuleData)
+
+				local passCap = 0
+				local cargoCap = 0
+				passCap, cargoCap = modulesutil.getStationPoolCapacities(params.modules, result)
+
+				if #result.cargoTerminal > 0 then 
+					table.insert(result.stations, { 
+						terminals = result.cargoTerminal, 
+						tag = 0, 
+						pool = { 
+							edges = modulesutil.getStationPoolEdges(result, true),
+							moreCapacity = cargoCap
+						} 
+					})
+				end
+
+				if #result.passengerTerminal > 0 then 
+					table.insert(result.stations, { 
+						terminals = result.passengerTerminal, 
+						tag = 1, 
+						pool = { 
+							edges = modulesutil.getStationPoolEdges(result, false),
+							moreCapacity = passCap
+						} 
+					})
+				end
+				result.hasCargoStation = #result.cargoTerminal > 0
+				
+				Process(result.addModuleDataPart2)
+				
+				if #result.models == 0 then
+					table.insert(result.models, { 
+						id = "asset/icon/marker_exclamation.mdl",
+						transf = transf.transl(vec3.new(.0, .0, .0)),
+					})
+					result.terrainAlignmentLists = {
+						{ 
+							type = "LESS", faces = { {
+								{0.1, -0.1,  0.0, 1.0},
+								{0.1, 0.1,  0.0, 1.0},
+								{-0.1, 0.1,  0.0, 1.0},
+								{-0.1, -0.1,  0.0, 1.0},
+							} } 
+						}
+					}
+				end
+			end
+		end
+		MakeCache(result)
+		
+		result.MangleId = function(coordAndFace) 
+			return 1000000 * (coordAndFace[1] + 100) + 100 * (coordAndFace[2] + 100) + coordAndFace[3]
+		end
+		result.DemangleId = function(id)
+			local facing = id % 100
+			id = math.floor((id - facing) / 100 + 0.5)
+			local coordJ = id % 10000
+			id = math.floor((id - coordJ) / 10000 + 0.5)
+			local coordI = id
+			return coordI - 100, coordJ - 100, facing
+		end
+		
+		AddSlot = function(slotId) 
+			local slotType
+			local coordI, coordJ, facing = result.DemangleId(slotId)
+			for k, p in pairs(slotDef) do
+				for k2, f in  pairs(p.facing) do
+					if f == facing then
+						slotType = k
+						break
+					end
+				end
+			end
+			if not slotType then return end
+			
+			local slotC = slotDef[slotType]
+			
+			local t = facing % 4 + 1
+			
+			local ofs = slotC.offset[t]
+			local shf = slotC.shift[t]
+			
+			local rot = slotC.angle[t]
+			local shape = slotC.shape
+			local mtransf
+			
+			if t == 1 or t == 3 then
+				mtransf = transf.rotZTransl(rot, vec3.new((coordI + .5) * gridSize.x + shf, (coordJ + .5) * gridSize.y + ofs * 0.5, .0))
+			else
+				mtransf = transf.rotZTransl(rot, vec3.new((coordI + .5) * gridSize.x + ofs * 0.5, (coordJ + .5) * gridSize.y + shf, .0))
+			end
+			
+			local slotC = slotDef[slotType]
+			
+			table.insert(result.slots, {
+				id = slotId,
+				transf = mtransf,
+				type =  slotC.type,
+				height = 5.0,
+				spacing = slotC.spacing[t],
+				shape = shape,
+			})
+			
+			return result.slots[#result.slots]
+		end
+		
+		result.MakeBoundsAndCenter = function(slotId, size, coordI, coordJ, facing)
+			local bounds
+			local center = vec3.new(0.0, 0.0, 0.0)
+			
+			-- 12.5 m no flip
+			if facing % 8 == 0 then -- expand down
+				bounds = {
+					{coordI - math.floor(size[2] / 2), coordJ - size[1] + 1},
+					{coordI + math.floor((size[2] + 1) / 2) - 1, coordJ},
+				}
+				center = vec3.new(0.0, - size[1] / 2 * gridSize.y + gridSize.y * 0.1, 0.0) -- use offset + gridSize.y * 0.5
+			elseif facing % 8 == 1 then -- expand right
+				bounds = {
+					{coordI, coordJ - math.floor(size[2] / 2)},
+					{coordI + size[1] - 1, coordJ + math.floor((size[2] + 1) / 2) - 1},
+				}
+				center = vec3.new(size[1] / 2 * gridSize.x - gridSize.y * 0.1, 0.0, 0.0)
+			elseif facing % 8 == 2 then -- expand up
+				bounds = {
+					{coordI - math.floor(size[2] / 2), coordJ},
+					{coordI + math.floor((size[2] + 1) / 2) - 1, coordJ + size[1] - 1},
+				}
+				center = vec3.new(0.0, size[1] / 2 * gridSize.y - gridSize.y * 0.1, 0.0)
+			elseif facing % 8 == 3 then -- expand left
+				bounds = {
+					{coordI - size[1] + 1, coordJ - math.floor(size[2] / 2)},
+					{coordI, coordJ + math.floor((size[2] + 1) / 2) - 1},
+				}
+				center = vec3.new(- size[1] / 2 * gridSize.x + gridSize.y * 0.1, 0.0, 0.0)
+			-- 12.5 m and flip
+			elseif facing % 8 == 4 then -- expand down
+				bounds = {
+					{coordI - math.floor(size[1] / 2), coordJ - size[2] + 1},
+					{coordI + math.floor((size[1] + 1) / 2) - 1, coordJ},
+				}
+				center = vec3.new(0.0, - size[2] / 2 * gridSize.y + gridSize.y * 0.35, 0.0) -- use offset + gridSize.y * 0.5
+			elseif facing % 8 == 5 then -- expand right
+				bounds = {
+					{coordI, coordJ - math.floor(size[1] / 2)},
+					{coordI + size[2] - 1, coordJ + math.floor((size[1] + 1) / 2) - 1},
+				}
+				center = vec3.new(size[2] / 2 * gridSize.x - gridSize.y * 0.35, 0.0, 0.0)
+			elseif facing % 8 == 6 then -- expand up
+				bounds = {
+					{coordI - math.floor(size[1] / 2), coordJ},
+					{coordI + math.floor((size[1] + 1) / 2) - 1, coordJ + size[2] - 1},
+				}
+				center = vec3.new(0.0, size[2] / 2 * gridSize.y - gridSize.y * 0.35, 0.0)
+			elseif facing % 8 == 7 then -- expand left
+				bounds = {
+					{coordI - size[2] + 1, coordJ - math.floor(size[1] / 2)},
+					{coordI, coordJ + math.floor((size[1] + 1) / 2) - 1},
+				}
+				center = vec3.new(- size[2] / 2 * gridSize.x + gridSize.x * 0.35, 0.0, 0.0)
+			else
+			end
+			
+			local allowAll = false
+			local range
+			if allowAll then
+				range = {
+					[12] = { 
+						{bounds[1][1], bounds[2][1], 1},
+						{bounds[1][2], bounds[2][2], 1},
+					},
+					[25] = { 
+						{bounds[1][1], bounds[2][1] + 1, 1},
+						{bounds[1][2], bounds[2][2] + 1, 1},
+					},
+					[50] = { 
+						{bounds[1][1] - 1, bounds[2][1] + 2, 1},
+						{bounds[1][2] - 1, bounds[2][2] + 2, 1},
+					},
+					[100] = { 
+						{bounds[1][1] - 2, bounds[2][1] + 3, 1},
+						{bounds[1][2] - 2, bounds[2][2] + 3, 1},
+					},
+					 -- piers
+					[-50] = { 
+						{bounds[1][1] + 2, bounds[2][1] + 1, 4},
+						{bounds[1][2] + 2, bounds[2][2] + 1, 4},
+					},
+					 -- piers
+					[-100] = { 
+						{bounds[1][1] + 4, bounds[2][1] + 1, 8},
+						{bounds[1][2] + 4, bounds[2][2] + 1, 8},
+					},
+					-- entrance
+					[-12] = { 
+						{bounds[1][1], bounds[2][1] + 1, 1},
+						{bounds[1][2], bounds[2][2] + 1, 1},
+					},
+				}
+			else
+				local small50a = bounds[2][1] - bounds[1][1] <= 2
+				local small50b = bounds[2][2] - bounds[1][2] <= 2
+				local small100a = bounds[2][1] - bounds[1][1] <= 4
+				local small100b = bounds[2][2] - bounds[1][2] <= 4
+				
+				local mida = math.floor((bounds[2][1] + bounds[1][1]) / 2)
+				local midb = math.floor((bounds[2][2] + bounds[1][2]) / 2)
+				range = {
+					[12] = { 
+						{bounds[1][1], bounds[2][1] + 0, 1},
+						{bounds[1][2], bounds[2][2] + 0, 1},
+					},
+					[25] = { 
+						{bounds[1][1] + 1, bounds[2][1] + 0, 1},
+						{bounds[1][2] + 1, bounds[2][2] + 0, 1},
+					},
+					[50] = { 
+						small50a and {bounds[1][1] + 1, bounds[2][1] + 0, 1} or {bounds[1][1] + 2, bounds[2][1] + 0, 4},
+						small50b and {bounds[1][2] + 1, bounds[2][2] + 0, 1} or {bounds[1][2] + 2, bounds[2][2] + 0, 4},
+					},
+					[100] = { 
+						small100a and {mida + 1, bounds[2][1] + 0, 4} or {bounds[1][1] + 4, bounds[2][1] + 1, 8},
+						small100b and {midb + 1, bounds[2][2] + 0, 4} or {bounds[1][2] + 4, bounds[2][2] + 1, 8},
+					},
+					-- piers
+					[-50] = { 
+						{bounds[1][1] + 2, bounds[2][1] + 1, 4},
+						{bounds[1][2] + 2, bounds[2][2] + 1, 4},
+					},
+					-- piers
+					[-100] = { 
+						{bounds[1][1] + 4, bounds[2][1] + 1, 8},
+						{bounds[1][2] + 4, bounds[2][2] + 1, 8},
+					},
+					-- entrance
+					[-12] = { 
+						{bounds[1][1], bounds[2][1] + 1, 1},
+						{bounds[1][2], bounds[2][2] + 1, 1},
+					},
+				}
+			end
+		
+			result.slotId2bounds[slotId] = bounds
+			for i = bounds[1][1], bounds[2][1] do
+				if result.coord2slotId[i] == nil then result.coord2slotId[i] = {} end
+				for j = bounds[1][2], bounds[2][2] do
+					result.coord2slotId[i][j] = { slotId = slotId, fence = {}, facing = facing }
+					minI = math.min(minI, i)
+					maxI = math.max(maxI, i)
+					minJ = math.min(minJ, j)
+					maxJ = math.max(maxJ, j)
+				end
+			end
+			
+			return bounds, center, range
+		end
+
+		local function isInBounds(coordAndFace)
+			return coordAndFace[1] > -maxWidth  and coordAndFace[1] < maxWidth and coordAndFace[2] > -maxHeight and coordAndFace[2] < maxHeight
+		end
+
+		result.MakeSlots = function(bounds, range, slotType, zOffs)
+			local allowAll = false
+
+			local slotC = slotDef[slotType]
+			
+			local slotType = slotC.type
+			
+			local jrange = {bounds[1][2] - 1, bounds[2][2] + 1}
+			for j = 1, 2 do -- bottom/top slots
+				local t = j == 1 and 1 or 3
+				local rot = slotC.angle[t] -- bottom or top
+				local ofs = slotC.offset[t]
+				local shf = slotC.shift[t]
+				for i = range[1][1], range[1][2], range[1][3] do
+					--print("a " .. i .. " " .. j)
+					
+					local mtransf = transf.rotZTransl(rot, vec3.new((i + .5) * gridSize.x + shf, (jrange[j] + .5) * gridSize.y + ofs * 0.5, zOffs or .0))
+					local coordAndFace = {i, jrange[j], slotC.facing[t]}
+					
+					if isInBounds(coordAndFace) then
+						-- print(MangleId(coordAndFace))
+						table.insert(result.slots, {
+							id = result.MangleId(coordAndFace),
+							transf = mtransf,
+							type = slotType,
+							height = 5.0,
+							spacing = slotC.spacing[t],
+							shape = slotC.shape,
+						})
+					end
+				end
+				
+				if not allowAll and slotC.side then
+					local jrange2 = {bounds[2][2], bounds[1][2]}
+					if jrange2[1] - jrange2[2] < range[1][2] - range[1][1] then
+						local i = range[1][1] - slotC.side[t]
+						local mtransf = transf.rotZTransl(rot, vec3.new((i + .5) * gridSize.x + shf, (jrange2[j] + .5) * gridSize.y + ofs * 0.5, zOffs or .0))
+						local coordAndFace = {i, jrange2[j], slotC.facing[t]}
+						if isInBounds(coordAndFace) then
+							-- print(MangleId(coordAndFace))
+							table.insert(result.slots, {
+								id = result.MangleId(coordAndFace),
+								transf = mtransf,
+								type = slotType,
+								height = 5.0,
+								spacing = slotC.spacing[t],
+								shape = slotC.shape,
+							})
+						end
+						
+						local i = range[1][2] + slotC.side[t]
+						local mtransf = transf.rotZTransl(rot, vec3.new((i + .5) * gridSize.x + shf, (jrange2[j] + .5) * gridSize.y + ofs * 0.5, zOffs or .0))
+						local coordAndFace = {i, jrange2[j], slotC.facing[t]}
+						if isInBounds(coordAndFace) then
+							-- print(MangleId(coordAndFace))
+							table.insert(result.slots, {
+								id = result.MangleId(coordAndFace),
+								transf = mtransf,
+								type = slotType,
+								height = 5.0,
+								spacing = slotC.spacing[t],
+								shape = slotC.shape,
+							})
+						end
+					end
+				end
+			end
+			local irange = {bounds[1][1] - 1, bounds[2][1] + 1}
+			for i = 1, 2 do -- left/right slots
+				local t = i == 1 and 4 or 2
+				local rot = slotC.angle[t]
+				local ofs = slotC.offset[t]
+				local shf = slotC.shift[t]
+				for j = range[2][1], range[2][2], range[2][3] do
+					local mtransf = transf.rotZTransl(rot, vec3.new((irange[i] + .5) * gridSize.x + ofs * 0.5, (j + .5) * gridSize.y + shf, zOffs or .0))
+					local coordAndFace = {irange[i], j, slotC.facing[t]}
+					if isInBounds(coordAndFace) then
+						-- print(MangleId(coordAndFace))
+						table.insert(result.slots, {
+							id = result.MangleId(coordAndFace),
+							transf = mtransf,
+							type = slotType,
+							height = 5.0,
+							spacing = slotC.spacing[t],
+							shape = slotC.shape,
+						})
+					end
+				end
+				
+				if not allowAll and slotC.side then
+					local irange2 = {bounds[2][1], bounds[1][1]}
+					if irange2[1] - irange2[2] < range[2][2] - range[2][1] then
+						local j = range[2][1] - slotC.side[t]
+						local mtransf = transf.rotZTransl(rot, vec3.new((irange2[i] + .5) * gridSize.x + ofs * 0.5, (j + .5) * gridSize.y + shf, zOffs or .0))
+						local coordAndFace = {irange2[i], j, slotC.facing[t]}
+						if isInBounds(coordAndFace) then
+							-- print(MangleId(coordAndFace))
+							table.insert(result.slots, {
+								id = result.MangleId(coordAndFace),
+								transf = mtransf,
+								type = slotType,
+								height = 5.0,
+								spacing = slotC.spacing[t],
+								shape = slotC.shape,
+							})
+						end
+						local j = range[2][2] + slotC.side[t]
+						local mtransf = transf.rotZTransl(rot, vec3.new((irange2[i] + .5) * gridSize.x + ofs * 0.5, (j + .5) * gridSize.y + shf, zOffs or .0))
+						local coordAndFace = {irange2[i], j, slotC.facing[t]}
+						if isInBounds(coordAndFace) then
+							-- print(MangleId(coordAndFace))
+							table.insert(result.slots, {
+								id = result.MangleId(coordAndFace),
+								transf = mtransf,
+								type = slotType,
+								height = 5.0,
+								spacing = slotC.spacing[t],
+								shape = slotC.shape,
+							})
+						end
+					end
+				end
+			end
+		end
+		
+		result.IsFlipped = function(facing)
+			if facing % 8 == 3 or facing % 8 == 1 or facing % 8 == 4 or facing % 8 == 6 then return false else return true end
+		end
+		
+		result.SetFence = function(i, j, f, val)
+			if result.coord2slotId[i] == nil then result.coord2slotId[i] = {} end
+			if result.coord2slotId[i][j] == nil then result.coord2slotId[i][j] = { fence = {} } end
+			result.coord2slotId[i][j].fence[f] = val
+		end
+		result.GetFence = function(i, j, f)
+			if result.coord2slotId[i] == nil then return 0 end
+			if result.coord2slotId[i][j] == nil or result.coord2slotId[i][j].fence[f] == nil then return 0 end
+			return result.coord2slotId[i][j].fence[f]
+		end
+		
+		result.ApplyConfig = function(bounds, center, transform, modelConfig, addModelFn, connect, facing, variant, fn) 
+			local connect2 = {}
+			if facing % 8 == 3 then -- no rot
+				connect2.right = connect.right
+				connect2.left = connect.left
+				connect2.top = connect.bottom
+				connect2.bottom = connect.top
+			elseif facing % 8 == 0 then -- pi / 2
+				connect2.bottom = connect.left
+				connect2.top = connect.right
+				connect2.left = connect.bottom
+				connect2.right = connect.top
+			elseif facing % 8 == 1 then -- pi 
+				connect2.top = connect.top
+				connect2.bottom = connect.bottom
+				connect2.right = connect.left
+				connect2.left = connect.right
+			elseif facing % 8 == 2 then -- pi / 2 * 3
+				connect2.top = connect.left
+				connect2.bottom = connect.right
+				connect2.right = connect.bottom
+				connect2.left = connect.top
+			elseif facing % 8 == 4 then -- no rot
+				connect2.right = connect.left
+				connect2.left = connect.right
+				connect2.top = connect.top
+				connect2.bottom = connect.bottom
+			elseif facing % 8 == 6 then -- pi / 2
+				connect2.right = connect.right
+				connect2.left = connect.left
+				connect2.top = connect.bottom
+				connect2.bottom = connect.top
+			elseif facing % 8 == 7 then -- pi 
+				connect2.left = connect.bottom
+				connect2.right = connect.top
+				connect2.bottom = connect.left
+				connect2.top = connect.right
+			elseif facing % 8 == 5 then -- pi / 2 * 3
+				connect2.top = connect.left
+				connect2.bottom = connect.right
+				connect2.right = connect.bottom
+				connect2.left = connect.top
+			end
+		
+			local tf = transf.mul(transf.transl(center), transform)
+			local tf2
+			if variant ~= nil then
+				tf2 = transf.mul(transf.mul(transf.transl(center), transform), transf.rotZTransl(variant % 2 == 1 and math.pi or 0, vec3.new(0.0,0.0,0.0)))
+			end
+			
+			addModelFn(modelConfig.main, tf)
+			for k, addon in pairs(modelConfig.addons) do
+				if variant ~= nil then
+					addModelFn(addon, tf2)
+				else
+					addModelFn(addon, tf)
+				end
+			end
+			if variant ~= nil then
+				if fn then fn(tf2) end
+			else 
+				if fn then fn(tf) end
+			end
+			
+			local endl = connect2.left and modelConfig.con_l or modelConfig.end_l
+			for k, conn in pairs(endl) do
+				addModelFn(conn, tf)
+			end
+			if variant ~= nil then
+				endl = variant % 2 == 0 and (connect2.left and modelConfig.flip_con_l or modelConfig.flip_end_l)
+								or (connect2.left and modelConfig.flip_con_r or modelConfig.flip_end_r)
+				if endl then
+					for k, conn in pairs(endl) do
+						addModelFn(conn, tf2)
+					end
+				end
+			end
+			
+			local endr = connect2.right and modelConfig.con_r or modelConfig.end_r
+			for k, conn in pairs(endr) do
+				addModelFn(conn, tf)
+			end
+			if variant ~= nil then
+				endr = variant % 2 == 0 and (connect2.right and modelConfig.flip_con_r or modelConfig.flip_end_r)
+								or (connect2.right and modelConfig.flip_con_l or modelConfig.flip_end_l)
+				if endr then
+					for k, conn in pairs(endr) do
+						addModelFn(conn, tf2)
+					end
+				end
+			end
+			
+			local endt = connect2.top and modelConfig.con_t or modelConfig.end_t
+			for k, conn in pairs(endt) do
+				addModelFn(conn, tf)
+			end
+			if variant ~= nil then
+				endt = variant % 2 == 0 and (connect2.top and modelConfig.flip_con_t or modelConfig.flip_end_t)
+								or (connect2.top and modelConfig.flip_con_b or modelConfig.flip_end_b)
+				if endt then
+					for k, conn in pairs(endt) do
+						addModelFn(conn, tf2)
+					end
+				end
+			end
+			
+			local endb = connect2.bottom and modelConfig.con_b or modelConfig.end_b
+			for k, conn in pairs(endb) do
+				addModelFn(conn, tf)
+			end
+			if variant ~= nil then
+				endb = variant % 2 == 0 and (connect2.bottom and modelConfig.flip_con_b or modelConfig.flip_end_b)
+								or (connect2.bottom and modelConfig.flip_con_t or modelConfig.flip_end_t)
+				if endb then
+					for k, conn in pairs(endb) do
+						addModelFn(conn, tf2)
+					end
+				end
+			end
+			
+			if modelConfig.fence then
+				local corner_offset = 6.25
+				
+				local fun = function(slotInfo, I, i, j)
+					
+					local ftype = result.GetFence(i, j - 1, 2) 
+					if ftype ~= 0 then
+						local point = vec3.new((i + 0.5) * gridSize.x, (j + 0) * gridSize.y, 0.0)
+						local tfc = transf.rotZTransl(math.pi, point)
+						local pointl = vec3.new((i + 0.5) * gridSize.x - corner_offset, (j + 0) * gridSize.y, 0.0)
+						local tfcl = transf.rotZTransl(math.pi / 2, pointl)
+						local pointr = vec3.new((i + 0.5) * gridSize.x + corner_offset, (j + 0) * gridSize.y, 0.0)
+						local tfcr = transf.rotZTransl(-math.pi / 2 * 3, pointr)
+				
+						addModelFn(modelConfig.fence.main, tfc)
+						
+						local ftype_right_top = result.GetFence(i + 1, j - 1, 2)
+						local ftype_right_left = result.GetFence(i + 1, j, 3)
+						local ftype_this_right = result.GetFence(i, j - 1, 1)
+						if ftype_right_top == ftype then
+							addModelFn(modelConfig.fence.con_l, tfc)
+						elseif ftype_this_right == ftype then
+							addModelFn(modelConfig.fence.corner_in, transf.rotZTransl(math.pi / 2, pointr))
+						elseif ftype_right_left ~= ftype and (connect.right or connect.fenceRight) then
+							addModelFn(modelConfig.fence.end_l, tfc)
+						end
+						
+						local ftype_left_top = result.GetFence(i - 1, j - 1, 2)
+						local ftype_left_right = result.GetFence(i - 1, j, 1)
+						local ftype_this_left = result.GetFence(i, j - 1, 3)
+						if ftype_left_top == ftype then
+							addModelFn(modelConfig.fence.con_r, tfc)
+						elseif ftype_this_left == ftype then
+							addModelFn(modelConfig.fence.corner_in, transf.rotZTransl(math.pi, pointl))
+						elseif ftype_left_right ~= ftype and (connect.left or connect.fenceLeft) then
+							addModelFn(modelConfig.fence.end_r, tfc)
+						end
+					else
+						-- left outer corner
+						if result.GetFence(i, j, 3) == modelConfig.fence.ftype and result.GetFence(i - 1, j - 1, 2) == modelConfig.fence.ftype then
+							local pointl = vec3.new((i + 0.5) * gridSize.x - corner_offset, (j + 0) * gridSize.y, 0.0)
+							addModelFn(modelConfig.fence.corner_out, transf.rotZTransl(0, pointl))
+						end
+						-- right outer corner
+						if result.GetFence(i, j, 1) == modelConfig.fence.ftype and result.GetFence(i + 1, j - 1, 2) == modelConfig.fence.ftype then
+							local pointr = vec3.new((i + 0.5) * gridSize.x + corner_offset, (j + 0) * gridSize.y, 0.0)
+							addModelFn(modelConfig.fence.corner_out, transf.rotZTransl(-math.pi / 2, pointr))
+						end
+						
+					end
+				end
+				result.ForEachTop(bounds, function(slotInfo, mod, I, i, j) fun(slotInfo, I, i, j) end, function(I, i, j) fun(nil, I, i, j) end)
+				
+				local fun = function(slotInfo, I, i, j)
+
+					local ftype = result.GetFence(i, j + 1, 0) 
+					if ftype ~= 0 then
+						local point = vec3.new((i + 0.5) * gridSize.x, (j + 1) * gridSize.y, 0.0)
+						local tfc = transf.transl(point)
+						local pointl = vec3.new((i + 0.5) * gridSize.x - corner_offset, (j + 1) * gridSize.y, 0.0)
+						local tfcl = transf.rotZTransl(math.pi / 2, pointl)
+						local pointr = vec3.new((i + 0.5) * gridSize.x + corner_offset, (j + 1) * gridSize.y, 0.0)
+						local tfcr = transf.rotZTransl(math.pi, pointr)
+				
+						addModelFn(modelConfig.fence.main, tfc)
+
+						-- right conn
+						local ftype_right_top = result.GetFence(i + 1, j + 1, 0)
+						local ftype_right_left = result.GetFence(i + 1, j, 3)
+						local ftype_this_right = result.GetFence(i, j + 1, 1)
+						if ftype_right_top == ftype then
+							addModelFn(modelConfig.fence.con_r, tfc)
+						elseif ftype_this_right == ftype then
+							addModelFn(modelConfig.fence.corner_in, transf.rotZTransl(0, pointr))
+						elseif ftype_right_left ~= ftype and (connect.right or connect.fenceRight) then
+							addModelFn(modelConfig.fence.end_r, tfc)
+						end
+						
+						-- left conn
+						local ftype_left_top = result.GetFence(i - 1, j + 1, 0)
+						local ftype_left_right = result.GetFence(i - 1, j, 1)
+						local ftype_this_left = result.GetFence(i, j + 1, 3)
+						if ftype_left_top == ftype then
+							addModelFn(modelConfig.fence.con_l, tfc)
+						elseif ftype_this_left == ftype then
+							addModelFn(modelConfig.fence.corner_in, transf.rotZTransl(-math.pi / 2, pointl))
+						elseif ftype_left_right ~= ftype and (connect.left or connect.fenceLeft) then
+							addModelFn(modelConfig.fence.end_l, tfc)
+						end
+					else
+						-- left outer corner
+						if result.GetFence(i, j, 3) == modelConfig.fence.ftype and result.GetFence(i - 1, j + 1, 0) == modelConfig.fence.ftype then
+							local pointl = vec3.new((i + 0.5) * gridSize.x - corner_offset, (j + 1) * gridSize.y, 0.0)
+							addModelFn(modelConfig.fence.corner_out, transf.rotZTransl(math.pi / 2, pointl))
+						end
+						-- right outer corner
+						if result.GetFence(i, j, 1) == modelConfig.fence.ftype and result.GetFence(i + 1, j + 1, 0) == modelConfig.fence.ftype then
+							local pointr = vec3.new((i + 0.5) * gridSize.x + corner_offset, (j + 1) * gridSize.y, 0.0)
+							addModelFn(modelConfig.fence.corner_out, transf.rotZTransl(math.pi, pointr))
+						end
+					end
+				end
+				result.ForEachBottom(bounds, function(slotInfo, mod, I, i, j) fun(slotInfo, I, i, j) end, function(I, i, j) fun(nil, I, i, j) end)
+				
+				
+				local fun = function(slotInfo, I, i, j)
+				
+					local ftype = result.GetFence(i + 1, j, 3) 
+					if ftype ~= 0 then
+						local point = vec3.new((i + 1) * gridSize.x, (j + 0.5) * gridSize.y, 0.0)
+						local tfc = transf.rotZTransl(math.pi / 2 * 3, point)
+						local pointl = vec3.new((i + 0.5) * gridSize.x - corner_offset, (j + 1) * gridSize.y, 0.0)
+						local tfcl = transf.rotZTransl(math.pi / 2, pointl)
+						local pointr = vec3.new((i + 0.5) * gridSize.x + corner_offset, (j + 1) * gridSize.y, 0.0)
+						local tfcr = transf.rotZTransl(math.pi, pointr)
+						
+						addModelFn(modelConfig.fence.main, tfc)
+						
+						-- top conn
+						local ftype_right_top = result.GetFence(i + 1, j + 1, 3)
+						local ftype_right_left = result.GetFence(i, j + 1, 0)
+						local ftype_this_right = result.GetFence(i + 1, j, 2)
+						if ftype_right_top == ftype then
+							addModelFn(modelConfig.fence.con_l, tfc)
+						elseif ftype_this_right == ftype then
+							--addModelFn(modelConfig.fence.corner_in, transf.rotZTransl(0, pointr))
+						elseif ftype_right_left ~= ftype and (connect.top or connect.fenceTop) then
+							addModelFn(modelConfig.fence.end_l, tfc)
+						end
+						
+						-- bottom conn
+						local ftype_left_top = result.GetFence(i + 1, j - 1, 3)
+						local ftype_left_right = result.GetFence(i, j - 1, 2)
+						local ftype_this_left = result.GetFence(i + 1, j, 0)
+						if ftype_left_top == ftype then
+							addModelFn(modelConfig.fence.con_r, tfc)
+						elseif ftype_this_left == ftype then
+							--addModelFn(modelConfig.fence.corner_in, transf.rotZTransl(-math.pi / 2, pointl))
+						elseif ftype_left_right ~= ftype and (connect.bottom or connect.fenceBottom) then
+							addModelFn(modelConfig.fence.end_r, tfc)
+						end
+					else
+						-- top/left outer corner
+						if result.GetFence(i, j, 2) == modelConfig.fence.ftype and result.GetFence(i + 1, j + 1, 3) == modelConfig.fence.ftype then
+							local pointl = vec3.new((i + 1) * gridSize.x, (j + 0.5) * gridSize.y + corner_offset, 0.0)
+							addModelFn(modelConfig.fence.corner_out, transf.rotZTransl(0, pointl))
+						end
+						-- bottom/left outer corner
+						if result.GetFence(i, j, 0) == modelConfig.fence.ftype and result.GetFence(i + 1, j - 1, 3) == modelConfig.fence.ftype then
+							local pointr = vec3.new((i + 1) * gridSize.x, (j + 0.5) * gridSize.y - corner_offset, 0.0)
+							addModelFn(modelConfig.fence.corner_out, transf.rotZTransl(math.pi / 2, pointr))
+						end
+					end
+				end
+				result.ForEachLeft(bounds, function(slotInfo, mod, I, i, j) fun(slotInfo, I, i, j) end, function(I, i, j) fun(nil, I, i, j) end)
+				
+				local fun = function(slotInfo, I, i, j)	
+
+					local ftype = result.GetFence(i - 1, j, 1) 
+					if ftype ~= 0 then
+						local point = vec3.new((i + 0) * gridSize.x, (j + 0.5) * gridSize.y, 0.0)
+						local tfc = transf.rotZTransl(math.pi / 2, point)
+						local pointl = vec3.new((i + 0.5) * gridSize.x - corner_offset, (j + 1) * gridSize.y, 0.0)
+						local tfcl = transf.rotZTransl(math.pi / 2, pointl)
+						local pointr = vec3.new((i + 0.5) * gridSize.x + corner_offset, (j + 1) * gridSize.y, 0.0)
+						local tfcr = transf.rotZTransl(math.pi, pointr)
+						
+						addModelFn(modelConfig.fence.main, tfc)
+						
+						-- top conn
+						local ftype_right_top = result.GetFence(i - 1, j + 1, 1)
+						local ftype_right_left = result.GetFence(i, j + 1, 0)
+						local ftype_this_right = result.GetFence(i - 1, j, 2)
+						if ftype_right_top == ftype then
+							addModelFn(modelConfig.fence.con_r, tfc)
+						elseif ftype_this_right == ftype then
+							--addModelFn(modelConfig.fence.corner_in, transf.rotZTransl(0, pointr))
+						elseif ftype_right_left ~= ftype and (connect.top or connect.fenceTop) then
+							addModelFn(modelConfig.fence.end_r, tfc)
+						end
+						
+						-- bottom conn
+						local ftype_left_top = result.GetFence(i - 1, j - 1, 1)
+						local ftype_left_right = result.GetFence(i, j - 1, 2)
+						local ftype_this_left = result.GetFence(i - 1, j, 0)
+						if ftype_left_top == ftype then
+							addModelFn(modelConfig.fence.con_l, tfc)
+						elseif ftype_this_left == ftype then
+							--addModelFn(modelConfig.fence.corner_in, transf.rotZTransl(-math.pi / 2, pointl))
+						elseif ftype_left_right ~= ftype and (connect.bottom or connect.fenceBottom) then
+							addModelFn(modelConfig.fence.end_l, tfc)
+						end
+					else
+						-- top/left outer corner
+						if result.GetFence(i, j, 2) == modelConfig.fence.ftype and result.GetFence(i - 1, j + 1, 1) == modelConfig.fence.ftype then
+							local pointl = vec3.new((i + 0) * gridSize.x, (j + 0.5) * gridSize.y + corner_offset, 0.0)
+							addModelFn(modelConfig.fence.corner_out, transf.rotZTransl(math.pi / 2 * 3, pointl))
+						end
+						-- bottom/left outer corner
+						if result.GetFence(i, j, 0) == modelConfig.fence.ftype and result.GetFence(i - 1, j - 1, 1) == modelConfig.fence.ftype then
+							local pointr = vec3.new((i + 0) * gridSize.x, (j + 0.5) * gridSize.y - corner_offset, 0.0)
+							addModelFn(modelConfig.fence.corner_out, transf.rotZTransl(math.pi, pointr))
+						end
+					end
+				end
+				result.ForEachRight(bounds, function(slotInfo, mod, I, i, j) fun(slotInfo, I, i, j) end, function(I, i, j) fun(nil, I, i, j) end)
+					
+			end
+		end
+		
+		result.ForEachTop = function(bounds, fn, negfn)
+			local I = 1
+			local j = bounds[2][2] + 1
+			for i = bounds[1][1], bounds[2][1] do
+				if result.coord2slotId[i] ~= nil and result.coord2slotId[i][j] ~= nil then
+					local slotId = result.coord2slotId[i][j].slotId
+					if params.modules[slotId] ~= nil then
+						if fn then fn(result.coord2slotId[i][j], params.modules[slotId], I, i, j) end
+					else
+						if negfn then negfn(I, i, j) end
+					end
+				else
+					if negfn then negfn(I, i, j) end
+				end
+				I = I + 1
+			end
+		end
+		result.ForEachBottom = function(bounds, fn, negfn)
+			local I = 1
+			local j = bounds[1][2] - 1
+			for i = bounds[1][1], bounds[2][1] do
+				if result.coord2slotId[i] ~= nil and result.coord2slotId[i][j] ~= nil then
+					local slotId = result.coord2slotId[i][j].slotId
+					if params.modules[slotId] ~= nil then
+						if fn then fn(result.coord2slotId[i][j], params.modules[slotId], I, i, j) end
+					else
+						if negfn then negfn(I, i, j) end
+					end
+				else
+					if negfn then negfn(I, i, j) end
+				end
+				I = I + 1
+			end
+		end
+		result.ForEachRight = function(bounds, fn, negfn)
+			local I = 1
+			local i = bounds[2][1] + 1
+			for j = bounds[1][2], bounds[2][2] do
+				if result.coord2slotId[i] ~= nil and result.coord2slotId[i][j] ~= nil then
+					local slotId = result.coord2slotId[i][j].slotId
+					if params.modules[slotId] ~= nil then
+						if fn then fn(result.coord2slotId[i][j], params.modules[slotId], I, i, j) end
+					else
+						if negfn then negfn(I, i, j) end
+					end
+				else
+					if negfn then negfn(I, i, j) end
+				end
+				I = I + 1
+			end
+		end
+		result.ForEachLeft = function(bounds, fn, negfn)
+			local I = 1
+			local i = bounds[1][1] - 1
+			for j = bounds[1][2], bounds[2][2] do
+				if result.coord2slotId[i] ~= nil and result.coord2slotId[i][j] ~= nil then
+					local slotId = result.coord2slotId[i][j].slotId
+					if params.modules[slotId] ~= nil then
+						if fn then fn(result.coord2slotId[i][j], params.modules[slotId], I, i, j) end
+					else
+						if negfn then negfn(I, i, j) end
+					end
+				else
+					if negfn then negfn(I, i, j) end
+				end
+				I = I + 1
+			end
+		end
+		
+		result.GetAnchorModuleSlotId = function(coordI, coordJ, facing, offset)
+			local oi = 0
+			local oj = 0
+			if facing % 4 == 0 then oj = 1 * (offset or 1) end
+			if facing % 4 == 1 then oi = -1 * (offset or 1) end
+			if facing % 4 == 2 then oj = -1 * (offset or 1) end
+			if facing % 4 == 3 then oi = 1 * (offset or 1) end
+			local i = coordI + oi
+			local j = coordJ + oj
+			
+			if not result.coord2slotId[i] then return nil end
+			if not result.coord2slotId[i][j] then return nil end
+		
+			return result.coord2slotId[i][j].slotId
+		end
+		result.GetAnchorModule = function(coordI, coordJ, facing, offset)
+			return params.modules[result.GetAnchorModuleSlotId(coordI, coordJ, facing, offset)]
+		end
+		
+		result.terrainAlignmentLists = {}
+		result.colliders = {}
+		result.groundFaces = {}
+		
+		result.AddFace = function(bounds, depth, hMax, doTex)
+			local faces = { 
+				{ 
+						{ (bounds[1][1]) * gridSize.x, (bounds[1][2]) * gridSize.y, depth}, 
+						{ (bounds[2][1] + 1) * gridSize.x, (bounds[1][2]) * gridSize.y, depth},   
+						{ (bounds[2][1] + 1) * gridSize.x, (bounds[2][2] + 1) * gridSize.y, depth},  
+						{ (bounds[1][1]) * gridSize.x, (bounds[2][2] + 1) * gridSize.y, depth},  
+				},
+			}
+			local faces2 = { 
+				{ 
+						{ (bounds[1][1]) * gridSize.x, (bounds[1][2]) * gridSize.y, hMax}, 
+						{ (bounds[2][1] + 1) * gridSize.x, (bounds[1][2]) * gridSize.y, hMax},   
+						{ (bounds[2][1] + 1) * gridSize.x, (bounds[2][2] + 1) * gridSize.y, hMax},  
+						{ (bounds[1][1]) * gridSize.x, (bounds[2][2] + 1) * gridSize.y, hMax},  
+				},
+			}
+			if depth ~= nil then
+				table.insert(result.terrainAlignmentLists, {
+					type = "GREATER",
+					faces = faces,
+					slopeLow = 0.9,
+					slopeHigh = 0.9
+				})
+			end
+			if hMax ~= nil then
+				table.insert(result.terrainAlignmentLists, {
+					type = "LESS",
+					faces = faces2,
+					slopeLow = 1.2,
+					slopeHigh = 1.2
+				})
+			end
+			
+			table.insert(result.colliders, { 
+				type = "BOX",
+				transf = transf.transl(vec3.new((bounds[1][1] + bounds[2][1] + 1) * gridSize.x / 2.0, (bounds[1][2] + bounds[2][2] + 1) * gridSize.y / 2.0, colliderZ)),
+				params = {
+					halfExtents = {(bounds[2][1] + 1 - bounds[1][1]) * gridSize.x / 2.0, (bounds[2][2] + 1 - bounds[1][2]) * gridSize.y / 2.0, colliderHalfSizeZ},
+				}
+			})
+			if doTex == nil or doTex == true then
+				table.insert(result.groundFaces, {  
+					face =  faces[1],
+					modes = {
+						{
+							type = "FILL",
+							key = "industry_floor.lua"
+						},
+					}
+				})
+			end
+		end
+		
+		local atLeastOne = false
+		for _ in pairs(params.modules) do
+			atLeastOne = true
+			break
+		end
+		if not atLeastOne then
+			--result.MakeSlots({{-1, 1}, {0, 2}}, {{0,0,1}, {1,1,1}}, "50_50")
+			result.MakeSlots({{-1, 1}, {0, 0}}, {{0,0,1}, {1,1,1}}, "50_50_flip")
+		end
+					
+		result.cost = 0
+		
+		local function PrintLayout(params)
+			print("LIST MODULES")
+			for k, v in pairs(params.modules) do
+				--print("Module " .. k)
+				--print("-" .. v.name)
+				local dm1, dm2, dm3 = result.DemangleId(k)
+				print("result[MangleId({" .. dm1 .. "," .. dm2 .. "," .. dm3 .. "})] = \"" .. v.name .. "\"")
+			end
+		end
+		--PrintLayout(params)
+
+		result.snapPoint = {
+			transf = transf.rotZTransl(math.pi, vec3.new(0, 10, 0)),
+			coast = true,
+		}
+
+		return result
+	end
+}
+
+end

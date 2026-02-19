@@ -1,0 +1,649 @@
+local vec2 = require "vec2"
+local vec3 = require "vec3"
+local transf = require "transf"
+local constructionutil = require "constructionutil"
+local paramsutil = require "paramsutil"
+local colliderutil = require "colliderutil"
+local modulesutil = require "modulesutil"
+		
+		
+--Begin Generated
+local generatedData = {
+	["runway_layout"] = {
+		models = {
+			["station/air/airfield/airfield_decal_cracks_a.mdl"] = {
+				{ 1.44889, 0.00000, 0.00000, 0.00000, 0.00000, 1.44889, 0.00000, 0.00000, 0.00000, 0.00000, 1.44889, 0.00000, -183.75000, 30.00000, 0.00000, 1.00000, },
+				{ 1.44889, 0.00000, 0.00000, 0.00000, 0.00000, 1.44889, 0.00000, 0.00000, 0.00000, 0.00000, 1.44889, 0.00000, 7.85000, 30.05000, 0.00000, 1.00000, },
+				{ -1.44889, 0.00000, 0.00000, 0.00000, -0.00000, -1.44889, 0.00000, 0.00000, 0.00000, 0.00000, 1.44889, 0.00000, -151.60001, 31.05000, 0.00000, 1.00000, },
+				{ -1.44889, 0.00000, 0.00000, 0.00000, -0.00000, -1.44889, 0.00000, 0.00000, 0.00000, 0.00000, 1.44889, 0.00000, 40.30000, 31.65000, 0.00000, 1.00000, },
+				{ -1.44889, 0.00000, 0.00000, 0.00000, -0.00000, -1.44889, 0.00000, 0.00000, 0.00000, 0.00000, 1.44889, 0.00000, 132.39999, 29.05000, 0.00000, 1.00000, },
+				{ -1.44889, 0.00000, 0.00000, 0.00000, -0.00000, -1.44889, 0.00000, 0.00000, 0.00000, 0.00000, 1.44889, 0.00000, -189.05000, 14.85000, 0.00000, 1.00000, },
+				{ 1.44889, -0.00000, 0.00000, 0.00000, 0.00000, 1.44889, 0.00000, 0.00000, 0.00000, 0.00000, 1.44889, 0.00000, -135.55000, 8.85000, 0.00000, 1.00000, },
+				{ 1.49235, -0.00000, 0.00000, 0.00000, 0.00000, 1.49235, 0.00000, 0.00000, 0.00000, 0.00000, 1.49235, 0.00000, -66.40000, 17.65000, 0.00000, 1.00000, },
+			},
+			["station/air/airfield/airfield_decal_cracks_c.mdl"] = {
+				{ 1.50000, 0.00000, 0.00000, 0.00000, 0.00000, 1.50000, 0.00000, 0.00000, 0.00000, 0.00000, 1.50000, 0.00000, 145.80000, 28.63000, 0.00000, 1.00000, },
+				{ -2.00250, 0.00000, 0.00000, 0.00000, -0.00000, -2.00250, 0.00000, 0.00000, 0.00000, 0.00000, 2.00250, 0.00000, 172.39999, 24.93000, 0.00000, 1.00000, },
+				{ 1.50000, 0.00000, 0.00000, 0.00000, 0.00000, 1.50000, 0.00000, 0.00000, 0.00000, 0.00000, 1.50000, 0.00000, -110.30000, 32.78000, 0.00000, 1.00000, },
+				{ 1.84680, 0.00000, 0.00000, 0.00000, 0.00000, 1.84680, 0.00000, 0.00000, 0.00000, 0.00000, 1.84680, 0.00000, -167.70000, 32.63000, 0.00000, 1.00000, },
+				{ 1.84680, 0.00000, 0.00000, 0.00000, 0.00000, 1.84680, 0.00000, 0.00000, 0.00000, 0.00000, 1.84680, 0.00000, 24.10000, 32.68000, 0.00000, 1.00000, },
+				{ -1.84680, -0.00000, 0.00000, 0.00000, 0.00000, -1.84680, 0.00000, 0.00000, 0.00000, 0.00000, 1.84680, 0.00000, 61.14000, 8.23000, 0.00000, 1.00000, },
+				{ -1.76370, 0.00000, 0.00000, 0.00000, -0.00000, -1.76370, 0.00000, 0.00000, 0.00000, 0.00000, 1.76370, 0.00000, -120.00000, 8.23000, 0.00000, 1.00000, },
+				{ 1.80063, 0.00000, 0.00000, 0.00000, 0.00000, 1.80063, 0.00000, 0.00000, 0.00000, 0.00000, 1.80063, 0.00000, -189.20000, 32.78000, 0.00000, 1.00000, },
+			},
+			["station/air/airfield/airfield_decal_cracks_d.mdl"] = {
+				{ -0.00000, -1.00000, 0.00000, 0.00000, 1.00000, -0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 23.04000, 24.66000, 0.00000, 1.00000, },
+				{ 0.00000, 0.76020, 0.00000, 0.00000, -0.76020, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.76020, 0.00000, 20.42000, 24.52000, 0.00000, 1.00000, },
+			},
+			["station/air/airfield/airfield_decal_patches_a.mdl"] = {
+				{ 0.93480, 0.00000, 0.00000, 0.00000, 0.00000, 0.80180, 0.00000, 0.00000, 0.00000, 0.00000, 0.80180, 0.00000, 34.69000, 14.27000, 0.00000, 1.00000, },
+				{ 0.93480, 0.00000, 0.00000, 0.00000, 0.00000, 0.80180, 0.00000, 0.00000, 0.00000, 0.00000, 0.80180, 0.00000, 157.34000, 14.32000, 0.00000, 1.00000, },
+				{ 0.92420, 0.00000, 0.00000, 0.00000, 0.00000, 0.78671, 0.00000, 0.00000, 0.00000, 0.00000, 0.78671, 0.00000, -29.37000, 30.85000, 0.00000, 1.00000, },
+			},
+			["station/air/airfield/airfield_decal_patches_b.mdl"] = {
+				{ 0.58140, 0.00000, 0.00000, 0.00000, 0.00000, 0.58140, 0.00000, 0.00000, 0.00000, 0.00000, 0.58140, 0.00000, -45.19000, 16.66000, 0.00000, 1.00000, },
+				{ -0.61047, 0.00000, 0.00000, 0.00000, -0.00000, -0.61047, 0.00000, 0.00000, 0.00000, 0.00000, 0.61047, 0.00000, -141.28999, 32.21000, 0.00000, 1.00000, },
+				{ 0.61047, -0.00000, 0.00000, 0.00000, 0.00000, 0.61047, 0.00000, 0.00000, 0.00000, 0.00000, 0.61047, 0.00000, -194.69000, 8.68000, 0.00000, 1.00000, },
+			},
+			["station/air/airfield/airfield_decal_patches_c.mdl"] = {
+				{ 0.59500, 0.00000, 0.00000, 0.00000, 0.00000, 0.59500, 0.00000, 0.00000, 0.00000, 0.00000, 0.59500, 0.00000, -23.75000, 20.45000, 0.00000, 1.00000, },
+			},
+			["station/air/airfield/airfield_decal_patches_d.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 80.40000, 18.50000, 0.00000, 1.00000, },
+			},
+			["station/air/airfield/airfield_decal_patches_e.mdl"] = {
+				{ 1.10000, 0.00000, 0.00000, 0.00000, 0.00000, 1.10000, 0.00000, 0.00000, 0.00000, 0.00000, 1.10000, 0.00000, 133.10001, 10.20000, 0.00000, 1.00000, },
+				{ 0.01554, 0.89026, 0.00000, 0.00000, -0.89026, 0.01554, 0.00000, 0.00000, 0.00000, 0.00000, 0.89040, 0.00000, 195.80000, 24.60000, 0.00000, 1.00000, },
+			},
+			["station/air/airfield/airfield_decal_patches_f.mdl"] = {
+				{ -0.00000, 0.84500, 0.00000, 0.00000, -0.84500, -0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.84500, 0.00000, -82.46000, 30.93000, 0.00000, 1.00000, },
+				{ -0.00000, -0.95770, 0.00000, 0.00000, 0.95770, -0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.95770, 0.00000, -146.59999, 14.20000, 0.00000, 1.00000, },
+			},
+			["station/air/airfield/airfield_runway.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 20.50000, 0.00000, 1.00000, },
+			},
+			["station/air/airfield/airfield_runway_markings.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 20.50000, 0.00000, 1.00000, },
+			},
+			["station/air/airfield/airfield_runway_medium_lane.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 20.50000, 0.00000, 1.00000, },
+			},
+		},
+	},
+}
+--End Generated
+
+		
+function data()
+
+local airportOffset = 10000000
+-- Starting slot id of each type of slot (can be non-consecutive)
+local mainBuildingSlotId = airportOffset + 1000
+local hangarSlotId = airportOffset + 2000
+local towerSlotId = airportOffset + 4000
+local cargo_stockSlotId = airportOffset + 5000
+local terminalSlotId = airportOffset + 70000
+
+return { 
+	type = "AIRPORT",
+	description = {
+		name = _("Airfield"),
+		description = _("Airfield with one runway for small aircraft."),
+		icon = "ui/construction/station/air/airport_1920.tga"
+	},
+	availability = {
+		yearFrom = 1920,
+	},
+	order = 1000,
+	soundConfig = {
+		soundSet = { name = "airport_1920" }
+	},
+	-- Add prefabs (cargo, passengers and empty airports)
+	constructionTemplates = {
+		{
+			type = "DYNAMIC",
+			constructionType = "AIRPORT",
+			description = {
+				name = _("Passenger airfield"),
+				description = _("Airfield with one runway for small passenger aircraft."),
+				icon = "ui/construction/station/air/airfield.tga"
+			}, 
+			data = {
+				params = {
+					{
+						key = "hangar",
+						name = _("Hangar"),
+						values = { _("Yes"), _("No") },
+						defaultIndex = 0,
+					},
+					{
+						key = "terminals",
+						name = _("Terminals"),
+						values = { _("1"), _("2"), _("3") },
+						defaultIndex = 0,
+					}
+				},
+			}
+		},
+		{
+			type = "DYNAMIC",
+			constructionType = "AIRPORT_CARGO",
+			description = {
+				name = _("Cargo airfield"),
+				description = _("Airfield with one runway for small cargo aircraft."),
+				icon = "ui/construction/station/air/airfield_cargo.tga"
+			}, 
+			data = {
+				params = {
+					{
+						key = "hangar",
+						name = _("Hangar"),
+						values = { _("Yes"), _("No") },
+						defaultIndex = 0,
+					},
+					{
+						key = "terminals",
+						name = _("Terminals"),
+						values = { _("1"), _("2"), _("3") },
+						defaultIndex = 0,
+					}
+				},
+			}
+		},
+		-- {
+			-- type =  "STATIC",
+			-- description = {
+				-- name = _("Airfield (empty)"),
+				-- description = _("Airport with one dirt runway for small aircraft (empty variant). This construction has no premade module."),
+				-- icon = "ui/construction/station/air/airport_1920_empty.tga"
+			-- }, 
+			-- data = {
+				-- initialModules =	{		
+					-- [mainBuildingSlotId + 0  ] = "station/air/airfield_main_building.module",
+					-- [terminalSlotId     + 2  ] = "station/air/airfield_passenger_terminal.module",
+					-- [hangarSlotId       + 4  ] = "station/air/airfield_hangar.module",
+				-- }
+				-- initialModules =	{		
+					-- [mainBuildingSlotId + 0  ] = "station/air/airfield_main_building.module",
+					-- [terminalSlotId     + 2  ] = "station/air/airfield_cargo_terminal.module",
+					-- [hangarSlotId       + 4  ] = "station/air/airfield_hangar.module",
+				-- }
+				-- initialModules =	{
+				-- }
+			-- }
+		-- }
+	},
+	params = {},
+	createTemplateFn = function(params)
+		local result = {}
+		local cargo = params.templateIndex == 1
+		local hangar = params.hangar == 0
+		local terminals = params.terminals and params.terminals + 1 or 1
+		
+		result[mainBuildingSlotId + 0  ] = "station/air/airfield_main_building.module"
+		if cargo then
+			result[terminalSlotId     + 2  ] = "station/air/airfield_cargo_terminal.module"
+		else
+			result[terminalSlotId     + 2  ] = "station/air/airfield_passenger_terminal.module"
+		end
+		if terminals > 1 then
+			if cargo then
+				result[terminalSlotId     + 4  ] = "station/air/airfield_cargo_terminal.module"
+			else
+				result[terminalSlotId     + 4  ] = "station/air/airfield_passenger_terminal.module"
+			end
+		end
+		if terminals > 2 then
+			if cargo then
+				result[terminalSlotId     + 6  ] = "station/air/airfield_cargo_terminal.module"
+			else
+				result[terminalSlotId     + 6  ] = "station/air/airfield_passenger_terminal.module"
+			end
+		end
+		
+		if hangar then result[hangarSlotId       + 2 + terminals * 2  ] = "station/air/airfield_hangar.module" end
+		
+		return result
+	end,
+	updateFn = function(params)
+		local result = { }
+
+		local runway_street = "airport/airport_runway_small.lua"		
+		local taxiway_street = "airport/airport_taxiway_old_grass.lua"
+
+		result.models = { }
+		result.terminalGroups = { }
+
+		local fence = { }
+		local fence_face = { }
+		local edges = { }
+		local runway = { }
+		local taxiway = { }
+		local terrain_faces = { }	
+		local apron_face = { }
+		
+		local defSpace = 25
+		local defNumSlots = 10
+		local slotStartXCoord = -125
+		local slotsYCoord = -83
+		
+		local lowerBorder = -68
+		local upperBorder = 42
+		local leftSide = -200
+		local rightSide = 200
+		local centerX = 0
+		local midPoint = (rightSide + leftSide) / 2
+		local halfSize = (rightSide - leftSide) / 2
+		
+		local minK = 1000
+		local maxK = -1000
+		-- Main passengers connection at "slotsYCoord" + 10 (done mostly by models)
+		
+		if not params.modules then params.modules = { } end
+		result.slots = { }
+		
+		-- Main collider
+		result.colliders = {
+			colliderutil.createBox({ midPoint, -13, 10 }, { halfSize, 54, 20 })
+		}
+		-- Alignment for runway/taxi
+		terrain_faces = { { 
+			{leftSide, lowerBorder, 0}, {rightSide, lowerBorder, 0}, {rightSide, upperBorder, 0}, {leftSide, upperBorder, 0}
+		} }
+		-- Alignment for landing/takeoff
+		local landing_faces = { { {-200, 50, 0}, {-700, 50 + 43, 43}, {-700, -10 - 43, 43}, {-200, -10, 0} } }
+		local takeoff_faces = { { {200, -10, 0}, {700, -10 - 43, 134}, {700, 50 + 43, 134}, {200, 50, 0} } }
+		
+		-- Ground grass (main)
+		local field_face = terrain_faces[1]
+		
+		-- Slots edge connections and data
+		result.edgeObjects = { }
+		
+		-- Set maximal number of slots, and message
+		result.slotConfig = {
+			-- tower = {
+				-- maxModules = 6,
+				-- message = _(" ")
+			-- },
+			-- main_building = {
+				-- maxModules = 1,
+				-- message = _(" ")
+			-- },
+			-- hangar = {
+				-- maxModules = 2,
+				-- message = _("Main building missing.")
+			-- },
+			-- terminal = {
+				-- maxModules = 3,
+				-- message = _("Main building missing.")
+			-- },
+		}
+		
+		-- Data for automatic creation of stations
+		local slot2node = { }
+		-- Data for automatic creation of colliders, terrain alignments and ground faces
+		local autoMaker = { }
+		
+		-----------------------
+		--- ADD STREETS AND RUNWAYS
+		-----------------------
+		-- Runway
+		runway[#runway + 1] = { { -180.0, 21.00,  0.0 },  { 20.0, 0.0, 0.00 } }
+		runway[#runway + 1] = { { -160.0, 21.00,  0.0 },  { 20.0, 0.0, 0.00 } }
+
+		runway[#runway + 1] = { { -160.0, 21.00,  0.0 },  { 320.0, 0.0, 0.00 } }
+		runway[#runway + 1] = { { 160.0, 21.00,  0.0 },  { 320.0, 0.0, 0.00 } }
+
+		runway[#runway + 1] = { { 160.0, 21.00,  0.0 },  {  20.0, 0.0, 0.00 } }
+		runway[#runway + 1] = { { 180.0, 21.00,  0.0 },  {  20.0, 0.0, 0.00 } }
+		
+		runway[#runway + 1] = { { -199.0, 21.00,  0.0 },  { 19.0, 0.0, 0.00 } }
+		runway[#runway + 1] = { { -180.0, 21.00,  0.0 },  { 19.0, 0.0, 0.00 } }
+		
+		runway[#runway + 1] = { { 180.0, 21.00,  0.0 },  { 19.0, 0.0, 0.00 } }
+		runway[#runway + 1] = { { 199.0, 21.00,  0.0 },  { 19.0, 0.0, 0.00 } }
+		
+		-- Add Taxiway from runway
+		taxiway[#taxiway + 1] = { { 180.0, 21.00,  0.0 },  { 0.0, -20.0, 0.00 } }
+		taxiway[#taxiway + 1] = { { 180.0, 0.00,  0.0 },  { 0.0, -20.0, 0.00 } }
+
+		taxiway[#taxiway + 1] = { { 180.0, 0.00,  0.0 },  { 0.0, -47.1, 0.00 } }
+		taxiway[#taxiway + 1] = { { 150.0, -20.00,  0.0 },  { -47.1, 0.0, 0.00 } }
+		
+		-- Add taxiway to runway
+		taxiway[#taxiway + 1] = { {-150.0, -20.00,  0.0 },  { -47.1, 0.0, 0.00 } }
+		taxiway[#taxiway + 1] = { {-180.0, 0.00,  0.0 },  { 0.0, 47.1, 0.00 } }
+
+		taxiway[#taxiway + 1] = { {-180.0, 0.00,  0.0 },  { 0.0, 20.0, 0.00 } }
+		taxiway[#taxiway + 1] = { {-180.0, 21.00,  0.0 },  { 0.0, 20.0, 0.00 } }
+		
+		result.edgeObjects[#result.edgeObjects + 1] = {
+			edge = #runway  / 2 + #taxiway / 2 - 2,
+			param = 0.9,
+			left = false,
+			model = "station/air/asset/signal_runway_old.mdl"
+		}
+		result.edgeObjects[#result.edgeObjects + 1] = {
+			edge = #runway  / 2 + 1,
+			param = 0.1,
+			left = false,
+			model = "station/air/asset/signal_runway_old.mdl"
+		}
+		
+		result.models[#result.models + 1] = {
+			id = "station/air/asset/windsock.mdl",
+			transf = transf.rotZYXTransl(transf.degToRad(0.0, 0.0, 0.0),  vec3.new( 140, 0, 0))
+		}	
+		
+		-----------------------
+		--- ADD ALL SLOTS
+		-----------------------
+		-- Specify addons to module (for automaker)
+		local colliderAlignmentAndGroundTexture = {
+			collider = "box",
+			alignment = true,
+		}
+		
+		-- Add taxyway and signals in front of slots
+		for k = -1, defNumSlots do
+			taxiway[#taxiway + 1] = { { defSpace * (k+1) - 125, -20,  0.0 },  { -defSpace, 0.0, 0.00 } }
+			taxiway[#taxiway + 1] = { { defSpace * k     - 125, -20,  0.0 },  { -defSpace, 0.0, 0.00 } }
+			
+			if params.modules[hangarSlotId + k + 1] == nil and params.modules[terminalSlotId + k + 1] == nil and k < defNumSlots then
+				result.edgeObjects[#result.edgeObjects + 1] = {
+					edge = #runway  / 2 + #taxiway / 2,
+					param = 0.95,
+					left = false,
+					model = "station/air/asset/signal_runway_old.mdl"
+				}
+			end
+		end
+		
+		-- Add all slots for main building
+		for k = 0, defNumSlots do
+			local center = vec3.new(defSpace * k - 125, slotsYCoord, 0)
+		
+			result.slots[#result.slots + 1] = {
+				id = mainBuildingSlotId + k,
+				transf = transf.rotZYXTransl(transf.degToRad(0.0, 0.0, 0.0), center),
+				type = "main_building",
+				spacing = { defSpace, defSpace, defSpace, defSpace-10 },
+				height = 15,
+			}
+			
+			-- If slot not empty, generate alignment, texture and collision
+			if params.modules[mainBuildingSlotId + k] ~= nil then
+				autoMaker[#result.slots] = colliderAlignmentAndGroundTexture
+				
+				minK = math.min(minK, k)
+				maxK = math.max(maxK, k)
+			end
+		end
+		-- Add all slots for hangar
+		for k = 0, defNumSlots do
+			local center = vec3.new(defSpace * k - 125, slotsYCoord, 0)
+			
+			result.slots[#result.slots + 1] = {
+				id = hangarSlotId + k,
+				transf = transf.rotZYXTransl(transf.degToRad(0.0, 0.0, 0.0), center),
+				type = "hangar",
+				spacing = { defSpace, defSpace, defSpace, defSpace-10 },
+				height = 15,
+			}
+			
+			-- If slot not empty, generate alignment, texture, collision and taxi connection
+			if params.modules[hangarSlotId + k] ~= nil then
+				autoMaker[#result.slots] = colliderAlignmentAndGroundTexture
+				
+				taxiway[#taxiway + 1] = { { defSpace * k - 125, -20,  0.0 },  { 0, -40.0, 0 } }
+				taxiway[#taxiway + 1] = { { defSpace * k - 125, slotsYCoord + 15,  0.0 },  { 0, -40.0, 0 } }
+
+				minK = math.min(minK, k)
+				maxK = math.max(maxK, k)
+			end
+		end
+		
+		-- Add all slots for terminal
+		for k = 0, defNumSlots do
+			local center = vec3.new(defSpace * k - 125, slotsYCoord, 0)
+			
+			result.slots[#result.slots + 1] = {
+				id = terminalSlotId + k,
+				transf = transf.rotZYXTransl(transf.degToRad(0.0, 0.0, 0.0), center),
+				type = "terminal",
+				spacing = { defSpace, defSpace, defSpace, defSpace-10 },
+				height = 15,
+			}
+			-- If slot not empty, generate alignment, texture, collision, taxi and apron
+			if params.modules[terminalSlotId + k] ~= nil then
+				autoMaker[#result.slots] = colliderAlignmentAndGroundTexture
+				
+				taxiway[#taxiway + 1] = { { defSpace * k - 125, -40,  0.0 },  { 0, 20.0, 0 } }
+				taxiway[#taxiway + 1] = { { defSpace * k - 125, -20,  0.0 },  { 0, 20.0, 0 } }
+				
+				taxiway[#taxiway + 1] = { { defSpace * k - 125, -50,  0.0 },  { 0, 10.0, 0 } }
+				taxiway[#taxiway + 1] = { { defSpace * k - 125, -40,  0.0 },  { 0, 10.0, 0 } }
+				
+				taxiway[#taxiway + 1] = { { defSpace * k - 125, slotsYCoord + 15,  0.0 },  { 0, 15.0, 0 } }
+				taxiway[#taxiway + 1] = { { defSpace * k - 125, -50,  0.0 },  { 0, 15.0, 0 } }
+				
+				minK = math.min(minK, k)
+				maxK = math.max(maxK, k)
+			end
+			
+			-- Do not add runways past this point (only add edges with bigger ids)
+			-- Table mapping terminals to taxiway node
+			slot2node[terminalSlotId + k] = { override = #runway + #taxiway - 1}
+		end
+		-- Add all slots for tower
+		-- for k = 0, defNumSlots*2+3 do
+			-- local center = vec3.new(defSpace/2 * k - 143.75, -60, 0)
+		
+			-- result.slots[#result.slots + 1] = {
+				-- id = towerSlotId + k,
+				-- transf = transf.rotZYXTransl(transf.degToRad(0.0, 0.0, 0.0), center),
+				-- type = "tower",
+				-- spacing = { defSpace/4, defSpace/4, defSpace/4, defSpace/4}
+			-- }
+			
+			-- -- If slot not empty, generate alignment, texture and collision
+			-- if params.modules[towerSlotId + k] ~= nil then
+				-- autoMaker[#result.slots] = colliderAlignmentAndGroundTexture
+			-- end
+		-- end
+		-- Add all slots for cargo_stock
+		-- for k = 0, defNumSlots+1  do
+			-- local center = vec3.new(defSpace * k - 137.5, -70, 0)
+			
+			-- result.slots[#result.slots + 1] = {
+				-- id = cargo_stockSlotId + k,
+				-- transf = transf.rotZYXTransl(transf.degToRad(0.0, 0.0, 0.0), center),
+				-- type = "cargo_stock",
+				-- spacing = { defSpace/2, defSpace/2, defSpace, defSpace-10 }
+			-- }
+			
+			-- -- If slot not empty, generate alignment, texture and collision
+			-- if params.modules[cargo_stockSlotId + k] ~= nil then
+				-- autoMaker[#result.slots] = colliderAlignmentAndGroundTexture
+			-- end
+		-- end
+		
+		-- Fill in gaps with apron
+		for k = minK, maxK do
+			if params.modules[cargo_stockSlotId + k] == nil and params.modules[cargo_stockSlotId + k + 1] == nil 
+				and params.modules[terminalSlotId + k] == nil and params.modules[terminalSlotId + k + 1] == nil 
+				and params.modules[hangarSlotId + k] == nil and params.modules[hangarSlotId + k + 1] == nil
+				and params.modules[mainBuildingSlotId + k] == nil and params.modules[mainBuildingSlotId + k + 1] == nil then
+		
+				result.models[#result.models + 1] = {
+					id = "station/air/airfield/apron.mdl",
+					transf = transf.rotZYXTransl(transf.degToRad(0.0, 0.0, 0.0),  vec3.new( defSpace * k + slotStartXCoord + defSpace/2, slotsYCoord, 0))
+				}	
+			end
+		end
+			
+		-- Runways/Aprons/Taxiways
+		result.edgeLists = {
+			{
+				type = "STREET",
+				params = { type = runway_street },
+				edges = runway,
+				snapNodes = { },
+				alignTerrain = false
+			}, {
+				type = "STREET",
+				params = { type = taxiway_street },
+				edges = taxiway,
+				snapNodes = { },
+				alignTerrain = false
+			}
+		}
+		
+		-- Specify runways
+		result.runways = {
+			{
+				type = "LANDING",
+				node = 4,
+				edges = { 1 }
+			},
+			{
+				type = "TAKEOFF",
+				node = 2,
+				edges = { 1 }
+			}
+		}
+		
+		-- Add all alignments
+		result.terrainAlignmentLists = {
+			{
+				type = "EQUAL",
+				faces = terrain_faces,
+				slopeLow = 0.275,
+				slopeHigh = 0.6
+			},
+			{
+				type = "LESS",
+				faces = landing_faces,
+				slopeLow = 0.275,
+				slopeHigh = 0.6
+			},
+			{
+				type = "LESS",
+				faces = takeoff_faces,
+				slopeLow = 0.275,
+				slopeHigh = 0.6
+			}
+		}
+
+		-- Add all ground textures
+		result.groundFaces = {
+			{  
+				face = field_face,
+				modes = {
+					{
+						type = "FILL",
+						key = "airfield.lua",
+						texCoords = { {.0, .0}, {1.0, .0}, {1.0, 1.0}, {0.0, 1.0} }
+					}
+				}
+			},
+		}
+		local function Reverse (arr)
+			local i, j = 1, #arr
+
+			while i < j do
+				arr[i], arr[j] = arr[j], arr[i]
+
+				i = i + 1
+				j = j - 1
+			end
+		end
+		
+		local fenceLength = 2.5
+		local offsetX = -125
+		local fence_face = { terrain_faces[1][1] }
+		for k = 0, defNumSlots do
+			local mainBuilding = params.modules[mainBuildingSlotId + k]
+			local hangar = params.modules[hangarSlotId + k]
+			local terminal = params.modules[terminalSlotId + k]
+		
+			if mainBuilding or hangar or terminal then
+				local offset1 = (k - 1 >= minK and k - 1 < maxK) and -10 or 0
+				local offset2 = (k + 1 >= minK and k + 1 < maxK) and -10 or 0
+				if params.modules[mainBuildingSlotId + k - 2] == nil
+					and params.modules[hangarSlotId + k - 2] == nil 
+					and params.modules[terminalSlotId + k - 2] == nil then
+					fence_face[#fence_face + 1] = { defSpace * (k-1) + offsetX, lowerBorder + offset1, 0}
+				end
+				if mainBuilding then
+					fence_face[#fence_face + 1] = { defSpace * (k-1) + offsetX, lowerBorder - 2*defSpace + 30, 0 }
+					fence_face[#fence_face + 1] = { defSpace * (k-1) + offsetX + 7, lowerBorder - 2*defSpace + 30, 0 }
+					constructionutil.makeFence(fence_face, "station/air/asset/fence_wood.mdl", fenceLength, false, result.models, true)	
+					fence_face = { }
+					fence_face[#fence_face + 1] = { defSpace * (k+1) + offsetX - 7, lowerBorder - 2*defSpace + 30, 0 }
+					fence_face[#fence_face + 1] = { defSpace * (k+1) + offsetX,      lowerBorder - 2*defSpace + 30, 0 }
+				elseif hangar or (terminal and terminal.metadata.cargo) then
+					fence_face[#fence_face + 1] = { defSpace * (k-1) + offsetX, lowerBorder - 2*defSpace + 10, 0 }
+					fence_face[#fence_face + 1] = { defSpace * (k+1) + offsetX, lowerBorder - 2*defSpace + 10, 0 }
+				elseif terminal then
+					fence_face[#fence_face + 1] = { defSpace * (k-1) + offsetX, lowerBorder - 2*defSpace + 30, 0 }
+					fence_face[#fence_face + 1] = { defSpace * (k-1) + offsetX + 7, lowerBorder - 2*defSpace + 30, 0 }
+					fence_face[#fence_face + 1] = { defSpace * (k-1) + offsetX + 7, lowerBorder - 2*defSpace + 10, 0 }
+					fence_face[#fence_face + 1] = { defSpace * (k+1) + offsetX - 7, lowerBorder - 2*defSpace + 10, 0 }
+					fence_face[#fence_face + 1] = { defSpace * (k+1) + offsetX - 7, lowerBorder - 2*defSpace + 30, 0 }
+					fence_face[#fence_face + 1] = { defSpace * (k+1) + offsetX,      lowerBorder - 2*defSpace + 30, 0 }
+				end
+				if params.modules[mainBuildingSlotId + k + 2] == nil 
+					and params.modules[hangarSlotId + k + 2] == nil 
+					and params.modules[terminalSlotId + k + 2] == nil then
+					fence_face[#fence_face + 1] = { defSpace * (k+1) + offsetX, lowerBorder + offset2, 0}
+				end
+			end
+		end
+		fence_face[#fence_face + 1] = terrain_faces[1][2]
+		fence_face[#fence_face + 1] = terrain_faces[1][3]
+		fence_face[#fence_face + 1] = terrain_faces[1][4]
+		fence_face[#fence_face + 1] = terrain_faces[1][1]
+		constructionutil.makeFence(fence_face, "station/air/asset/fence_wood.mdl", fenceLength, false, result.models, true)	
+		
+		modulesutil.makeAutoExtras(result, autoMaker)
+		
+		local left = minK * defSpace + offsetX
+		local right = maxK * defSpace + offsetX
+		local center = (right + left) / 2
+		local size = right - left
+		if left < right then
+			result.colliders[#result.colliders + 1] = colliderutil.createBox({ center, lowerBorder - 5, -1 }, { size / 2, 5, 2 })
+			terrain_faces[#terrain_faces + 1] = { {left, lowerBorder - 10, 0}, {right, lowerBorder - 10, 0}, {right, lowerBorder, 0}, {left, lowerBorder, 0} }
+			local offs = -5
+			local faces = { {left, lowerBorder - 10, 0}, {right, lowerBorder - 10, 0}, {right, lowerBorder + offs, 0}, {left, lowerBorder + offs, 0} }
+			-- block
+			result.groundFaces[#result.groundFaces + 1] = {  
+					face = faces,
+					modes = {
+						{
+							type = "FILL",
+							key = "airfield_tarmac.lua"
+						}
+					}
+				}
+		end
+	
+		-- Auto make stations
+		result.stations = { }
+		modulesutil.makeAutoTerminals(result.slots, params.modules, {terminal = true}, #result.models, slot2node, result)
+			
+		constructionutil.addModelsAndGroups(params, generatedData["runway_layout"], result, nil,  transf.transl(vec3.new(.0, .0, .0)))
+		
+		result.cost = 2000000
+
+		result.terminateConstructionHook = function()
+			modulesutil.addAutoSnap(params, result)
+		end
+		
+		return result
+	end	
+}
+
+end

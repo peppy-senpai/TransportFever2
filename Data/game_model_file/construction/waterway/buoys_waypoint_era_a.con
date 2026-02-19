@@ -1,0 +1,75 @@
+function data()
+
+return {
+	type = "WATER_WAYPOINT",
+	description = {
+		name = _("Buoy"),
+		description = _("Used for rerouting a line. Can be added to a line like a station.")
+	},
+	availability = {
+		yearFrom = 0,
+		yearTo = 1890
+	},
+	buildMode = "MULTI",
+	order = 105,
+	skipCollision = true,
+	autoRemovable = false,
+	snapping = { water = true },
+	updateFn = function(params)
+		local result = { }
+
+		local runway_street = "water/ship_street.lua"
+		local runway = { }
+
+		-- Runway
+		runway[#runway + 1] = { { -1.5, 0, -2, }, { 3, 0, 0, } }
+		runway[#runway + 1] = { { 1.5, 0, -2, },  { 3, 0, 0, } }
+
+		-- Runways
+		result.edgeLists = {
+			{
+				type = "STREET",
+				params = { type = runway_street },
+				edges = runway,
+				snapNodes = { },
+				alignTerrain = false
+			}
+		}
+
+		-- Specify runways
+		result.runways = {
+			{
+				type = "LANDING",
+				node = 0,
+				edges = { 0 }
+			},
+			{
+				type = "TAKEOFF",
+				node = 1,
+				edges = { 0 }
+			},
+		}
+
+		result.edgeObjects = {
+			{
+			  edge = 0,
+			  param = .5,
+			  left = false,
+			  model = "waterway/era_a/era_a_buoy.mdl"
+			},
+		  }
+
+		result.models = { }
+
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+
+		result.cost = 3000
+
+		return result
+	end
+}
+
+end

@@ -1,0 +1,185 @@
+local transf = require "transf"
+local vec2 = require "vec2"
+local vec3 = require "vec3"
+local modulesutil = require "modulesutil"
+local constructionutil = require "constructionutil"
+local harbourstationutil = require "modules/harbourstationutil"
+
+function data()
+
+local modelConfig = {
+	main = "station/water/era_a/platform_100.mdl",
+	addons = { "station/water/era_a/main_building_s2.mdl", "station/water/era_a/main_building_s2_network_person.mdl"},
+	flip_con_l = { "station/water/era_a/main_building_s2_con_l.mdl" },
+	flip_con_r = { "station/water/era_a/main_building_s2_con_r.mdl" },
+	con_l = { "station/water/era_a/platform_100_con_l.mdl" },
+	con_r = { "station/water/era_a/platform_100_con_r.mdl" },
+	con_t = {},
+	con_b = {},
+	flip_end_l = { "station/water/era_a/main_building_s2_end_l.mdl" },
+	flip_end_r = { "station/water/era_a/main_building_s2_end_r.mdl" },
+	end_l = { "station/water/era_a/platform_100_end_l.mdl" },
+	end_r = { "station/water/era_a/platform_100_end_r.mdl" },
+	end_t = {},
+	end_b = {},
+	fence = {
+		main = "station/water/era_a/safeguard_metal.mdl",
+		con_l = "station/water/era_a/safeguard_metal_con_l.mdl",
+		con_r = "station/water/era_a/safeguard_metal_con_r.mdl",
+		end_l = "station/water/era_a/safeguard_metal_end_l.mdl",
+		end_r = "station/water/era_a/safeguard_metal_end_r.mdl",
+		corner_in = "station/water/era_a/safeguard_metal_corner_in.mdl",
+		corner_out = "station/water/era_a/safeguard_metal_corner_out.mdl",
+		ftype = 2
+	}
+}
+
+return { 
+	cost = {
+		price = 500000,
+	},
+	category = {
+		categories = { "passenger", },
+	},
+	description = {
+		name = _("Main building"),
+		description = _("Main building for passenger harbors."),
+		icon = "ui/construction/station/water/passenger_dock_100_50.tga"
+	}, 
+	availability = {
+		yearFrom = -1,
+		yearTo = -1
+	},
+	type = "water_module_100_50",
+	order = {
+		value = 300,
+	},
+	metadata = {
+		platform = true,
+		passenger = true,
+		type = 1,
+		subtype = 2
+	},
+	
+	updateFn = function(result, transformInvalid, tag, slotId, addModelFnInvalid, params)
+		local coordI, coordJ, facing = result.DemangleId(slotId)
+		local size = {8, 4}
+
+		local bounds, center, range = result.MakeBoundsAndCenter(slotId, size, coordI, coordJ, facing)
+
+		local connect = {
+			left = false,
+			right = false,
+			bottom = false,
+			top = false,
+		}
+		
+		local FacingAndVariantToDir = function(facing, variant) 
+			local dir = 0
+			if facing % 8 < 4 then
+				dir = facing
+			else
+				dir = facing + 1
+			end
+			return variant % 2 == 0 and dir % 4 or (dir + 2) % 4
+		end
+		
+		table.insert(result.InvokeLater, function()
+			local l, r, b, t
+			local hole = false
+			result.ForEachLeft(bounds, function(slotInfo, mod, I, i, j)
+				if l == nil then
+					l = mod
+				end
+				if mod.metadata.platform and mod.metadata.passenger 
+						and mod.metadata.type == 1 and mod.metadata.subtype == 2 and mod == l 
+						and FacingAndVariantToDir(result.coord2slotId[i][j].facing, mod.variant) == FacingAndVariantToDir(facing, params.modules[slotId].variant) then
+					connect.left = true
+				else 
+					hole = true
+					connect.left = false
+				end
+				result.SetFence(i + 1, j, 3, 0)
+			end, function(I, i, j) result.SetFence(i + 1, j, 3, modelConfig.fence.ftype) connect.left = false hole = true end)
+			if hole then connect.left = false end
+			
+			hole = false
+			result.ForEachRight(bounds, function(slotInfo, mod, I, i, j) 
+				if r == nil then
+					r = mod
+				end
+				if mod.metadata.platform and mod.metadata.passenger 
+						and mod.metadata.type == 1 and mod.metadata.subtype == 2 and mod == r 
+						and FacingAndVariantToDir(result.coord2slotId[i][j].facing, mod.variant) == FacingAndVariantToDir(facing, params.modules[slotId].variant) then
+					connect.right = true 
+				else 
+					hole = true
+					connect.right = false
+				end
+				result.SetFence(i - 1, j, 1, 0)
+			end, function(I, i, j) result.SetFence(i - 1, j, 1, modelConfig.fence.ftype) connect.right = false hole = true end)
+			if hole then connect.right = false end
+			
+			hole = false
+			result.ForEachTop(bounds, function(slotInfo, mod, I, i, j)
+				if t == nil then
+					t = mod
+				end
+				if mod.metadata.platform and mod.metadata.passenger 
+						and mod.metadata.type == 1 and mod.metadata.subtype == 2 and mod == t 
+						and FacingAndVariantToDir(result.coord2slotId[i][j].facing, mod.variant) == FacingAndVariantToDir(facing, params.modules[slotId].variant) then
+					connect.top = true
+				else 
+					hole = true
+					connect.top = false
+				end
+				result.SetFence(i, j - 1, 2, 0)
+			end, function(I, i, j) result.SetFence(i, j - 1, 2, modelConfig.fence.ftype) connect.top = false hole = true end)
+			if hole then connect.top = false end
+			
+			hole = false
+			result.ForEachBottom(bounds, function(slotInfo, mod, I, i, j) 
+				if b == nil then
+					b = mod
+				end
+				if mod.metadata.platform and mod.metadata.passenger 
+						and mod.metadata.type == 1 and mod.metadata.subtype == 2 and mod == b 
+						and FacingAndVariantToDir(result.coord2slotId[i][j].facing, mod.variant) == FacingAndVariantToDir(facing, params.modules[slotId].variant) then
+					connect.bottom = true 
+				else 
+					hole = true
+					connect.bottom = false
+				end
+				result.SetFence(i, j + 1, 0, 0)
+			end, function(I, i, j) result.SetFence(i, j + 1, 0, modelConfig.fence.ftype) connect.bottom = false hole = true end)
+			if hole then connect.bottom = false end
+			
+			result.coord2slotId[coordI][coordJ].connect = connect
+		end)
+		
+		result.addModuleData[slotId] = function(transform, addModelFn)
+		
+			local variant = params.modules[slotId].variant
+			
+			result.ApplyConfig(bounds, center, transform, modelConfig, addModelFn, connect, facing, variant)
+		end
+		
+		result.AddFace(bounds, nil, -0.3)
+		
+		result.MakeSlots(bounds, range[12], "12_12")
+		result.MakeSlots(bounds, range[12], "50_12")
+		result.MakeSlots(bounds, range[50], "50_12_flip")
+		result.MakeSlots(bounds, range[25], "100_25")
+		result.MakeSlots(bounds, range[100], "100_25_flip")
+		result.MakeSlots(bounds, range[50], "100_50")
+		result.MakeSlots(bounds, range[100], "100_50_flip")
+		result.MakeSlots(bounds, range[50], "50_50")
+		result.MakeSlots(bounds, range[50], "50_50_flip")
+	end,
+	
+	getModelsFn = function(params)
+		return harbourstationutil.MakePreview(modelConfig, params.variant)
+	end
+}
+
+end

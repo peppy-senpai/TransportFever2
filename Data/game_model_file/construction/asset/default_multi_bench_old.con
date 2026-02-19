@@ -1,0 +1,36 @@
+local constructionutil = require "constructionutil"
+
+function data()
+
+return { 
+	type = "ASSET_DEFAULT",
+	description = {
+		name = _("Bench"),			
+		description = _("A bench.")
+	},
+	availability = {
+		yearTo = 1925
+	},
+	buildMode = "MULTI",
+	categories = { "misc" },
+	order = 100,
+	skipCollision = false,
+	autoRemovable = false,
+	updateFn = function(params)
+		local result = { }
+
+		result.models = { {
+			id = "asset/bench_old.mdl",
+			transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 }),
+		} }
+
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+
+		return result
+	end
+}
+
+end

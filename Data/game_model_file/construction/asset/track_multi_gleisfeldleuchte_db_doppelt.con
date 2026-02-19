@@ -1,0 +1,34 @@
+function data()
+
+return { 
+	type = "ASSET_TRACK",
+	description = {
+		name = _("Miscellaneous"),			
+		description = _("Double track field lighting")
+	},
+	availability = {
+		yearFrom = -1,
+		yearTo = -1,
+	},
+	buildMode = "MULTI",
+	order = 104,
+	skipCollision = true,
+	autoRemovable = false,
+	updateFn = function(params)
+		local result = { }
+
+		result.models = { {
+			id = "asset/track_multi_gleisfeldleuchte_db_doppelt.mdl",
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 }
+		} }
+
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+
+		return result
+	end
+}
+
+end

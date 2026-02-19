@@ -1,0 +1,104 @@
+local vec3 = require "vec3"
+local vec2 = require "vec2"
+local transf = require "transf"
+
+function data()
+
+return {
+	type = "NONE",
+	description = {
+		name = _("Headquarter"),
+		description = _("Build your own Headquarter")
+	},
+	availability = {
+		yearFrom = 1825
+	},
+	categories = { "misc" },
+	order = 100,
+	skipCollision = false,
+	autoRemovable = false,
+	updateFn = function(params)
+		local fillKey = "industry_gravel_small_01"
+		local result = { }
+		local groundFace = { }
+
+		local size = 15
+		local offset = 13
+		local modelTransf = transf.transl(vec3.new(0.0, offset, 0.0))
+
+		local height = 0
+
+		local terrainFaces = { }
+		terrainFaces[#terrainFaces + 1] = { {size, -size, 0}, {size, size, 0}, {-size, size, 0}, {-size, -size, 0}, }
+		result.groundFaces = { }
+		result.models = { }
+		result.colliders = { }
+
+		if params.size >= 5 then
+			result.models = { {
+				id = "headquarter/headquarter_era_c_05.mdl",
+				transf = modelTransf,
+			} }
+			fillKey = "headquarter_era_c_05.lua"
+			height = 71
+		elseif params.size >= 4 then
+			result.models = { {
+				id = "headquarter/headquarter_era_b_04.mdl",
+				transf = modelTransf,
+			} }
+			fillKey = "headquarter_era_b_04.lua"
+			height = 28
+		elseif params.size >= 3 then
+			result.models = { {
+				id = "headquarter/headquarter_era_b_03.mdl",
+				transf = modelTransf,
+			} }
+			fillKey = "headquarter_era_b_03.lua"
+			height = 16
+		elseif params.size >= 2 then
+			result.models = { {
+				id = "headquarter/headquarter_era_a_02.mdl",
+				transf = modelTransf,
+			} }
+			fillKey = "headquarter_era_a_02.lua"
+			height = 11
+		else
+			result.models = { {
+				id = "headquarter/headquarter_era_a_01.mdl",
+				transf = modelTransf,
+			} }
+			fillKey = "headquarter_era_a_01.lua"
+			height = 7
+		end
+
+		result.colliders = {
+			{
+				type = "BOX",
+				transf = transf.transl(vec3.new(0.0, 0.0, height/2)),
+				params = {
+					halfExtents = {size, size, height/2},
+				}
+			}
+		}
+
+		table.insert(result.groundFaces, {
+			face = { {size, -size}, {size, size}, {-size, size}, {-size, -size} },
+			modes = {
+				{ type = "FILL", key = fillKey },
+				{ type = "STROKE", key = "headquarter_border.lua" }
+			},
+		})
+
+		result.terrainAlignmentLists = {
+			{
+				type = "EQUAL",
+				faces = terrainFaces,
+				slopeLow = .35
+			}
+		}
+
+		return result
+	end
+}
+
+end

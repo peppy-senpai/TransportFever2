@@ -1,0 +1,86 @@
+local transf = require "transf"
+local vec3 = require "vec3"
+local modulesutil = require "modulesutil"
+local constructionutil = require "constructionutil"
+
+function data()
+
+return { 
+	cost = {
+		price = 25000,
+	},
+	category = {
+		categories = { "street access", },
+	},
+	description = {
+		name = _("Station exit"),
+		description = _("Street connection that can be used as an exit only."),
+		icon = "ui/construction/station/street/platform_exit.tga"
+	}, 
+	availability = {
+		yearFrom = 0,
+		yearTo = 0
+	},
+	type = "street_terminal_exit",
+	order = {
+		value = 5,
+	},
+	metadata = {
+	},
+	
+	updateFn = function(result, transform, tag, slotId, addModelFn, params)
+	local coordI, coordJ, variant = result.DemangleId(slotId)
+	
+		local tng = modulesutil.mul(transform, {0.0, -20.0, 0.0, 0.0})
+		table.insert(result.edgeLists, {
+				type = "STREET",
+				params = {
+					type = params.year > 1920 and "street_station/entrance_one_way_new.lua" or "street_station/entrance_one_way_old.lua",
+					tramTrackType = params.tramTrack == 0 and "NO" or params.tramTrack == 1 and "YES" or "ELECTRIC",
+				},
+				edges = {
+					{ modulesutil.mul(transform, {-2.5, 0, 0, 1}), tng },
+					{ modulesutil.mul(transform, {-2.5, -20, 0, 1}), tng },
+				},
+				snapNodes = { 1 }
+		})
+		
+		local a = modulesutil.mul(transform, {-5.0, -10.0, 0.0, 1.0})
+		local b = modulesutil.mul(transform, {-5.0, 5.0, 0.0, 1.0})
+		local c = modulesutil.mul(transform, {0.0, 5.0, 0.0, 1.0})
+		local d = modulesutil.mul(transform, {0.0, -10.0, 0.0, 1.0})
+		table.insert(result.groundFaces, {  
+				face =  { a, b, c, d },
+				modes = {
+					{
+						type = "FILL",
+						key = "industry_floor_high_priority.gtex.lua"
+					},
+				}
+		})
+		
+		result.snapPoint = {
+			transf = transf.mul(transform, transf.transl(vec3.new(0, -15 + 2, 0, 1))),
+			baseEdges = {"STREET"},
+		}
+
+		result.MakeEntrance(addModelFn, coordI, coordJ, variant, true, false)
+		
+		addModelFn("station/road/streetstation/" .. result.erastr .. "entr_cross_1w.mdl", transf.transl(vec3.new(-2.5, 5.0, 0.0)))
+	end,
+	
+	getModelsFn = function()
+		local result = { }
+		
+		-- local result = {
+			-- { 
+				-- id = "station/road/streetstation/era_a/cargo_pltfrm_r_rep.mdl",
+				-- transf = transf.transl(vec3.new(.0, .0, .0)),
+			-- },
+		-- }
+		
+		return result
+	end
+}
+
+end

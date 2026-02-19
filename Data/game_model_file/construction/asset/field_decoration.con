@@ -1,0 +1,194 @@
+local transf = require "transf"
+local vec3 = require "vec3"
+
+function data()
+
+local sizes = { 20, 40, 80, 160 }
+local sizesStr = { "20", "40", "80", "160" }
+
+local noYes = { _("no"), _("yes") }
+
+local fillMaterials = { "shared/wheat.gtex.lua", "shared/soil.gtex.lua", "shared/corn.gtex.lua" }
+
+local function makeParams()
+	return {
+		{
+			key = "type",
+			name = "type",
+			values = { "wheat", "soil", "corn" },
+		},
+		{
+			key = "sizeX",
+			name = "sizeX",
+			values = sizesStr,
+		},
+		{
+			key = "sizeY",
+			name = "sizeY",
+			values = sizesStr,
+		},
+		{
+			key = "path1",
+			name = "path1",
+			values = noYes,
+		},
+		{
+			key = "path2",
+			name = "path2",
+			values = noYes,
+		},
+		{
+			key = "path3",
+			name = "path3",
+			values = noYes,
+		},
+		{
+			key = "path4",
+			name = "path4",
+			values = noYes,
+		},
+	}
+end
+
+
+return { 
+	type = "ASSET_DEFAULT",
+	description = {
+		name = _("Field Decoration"),			
+		description = _("Field Decoration")
+	},
+	availability = {
+		yearFrom = 1825
+	},
+	categories = { "misc" },
+	order = 110,
+	skipCollision = false,
+	autoRemovable = true,
+	params = makeParams(),
+	
+	updateFn = function(params)
+	
+		math.randomseed(params.seed)
+
+		local size
+		if params.fieldSize ~= nil then
+			size = params.size
+		else
+			size = { sizes[params.sizeX + 1], sizes[params.sizeY + 1] }
+		end
+
+		local halfExtend = { size[1] / 2, size[2] / 2 }
+
+		local extend = {
+			halfExtend[1], -halfExtend[1],
+			halfExtend[2], -halfExtend[2],
+		}
+
+		local pathDist = 6
+
+		local fieldExtend = {
+			halfExtend[1] - pathDist, -halfExtend[1] + pathDist,
+			halfExtend[2] - pathDist, -halfExtend[2] + pathDist,
+		}
+
+		local result = { }
+		result.models = {
+			{
+				id = "station/air/asset/invisible.mdl",
+				transf = { 
+					halfExtend[1], 0, 0, 0, 
+					0, halfExtend[2], 0, 0, 
+					0, 0, 1, 0, 
+					0, 0, 0, 1 
+				},
+			}
+		}
+
+		local face = {
+			{ extend[1], extend[4], 0, 0 },
+			{ extend[1], extend[3], 0, 0 },
+			{ extend[2], extend[3], 0, 0 },
+			{ extend[2], extend[4], 0, 0 },
+		}
+
+		local fieldFace = {
+			{ fieldExtend[1], fieldExtend[4], 0, 0 },
+			{ fieldExtend[1], fieldExtend[3], 0, 0 },
+			{ fieldExtend[2], fieldExtend[3], 0, 0 },
+			{ fieldExtend[2], fieldExtend[4], 0, 0 },
+		}
+		
+		local fillMat = fillMaterials[params.type + 1]
+		result.groundFaces = { 
+			{
+				face = fieldFace,
+				modes = {
+					{ type = "FILL", key = fillMat },
+					{ type = "STROKE_OUTER", key = "shared/field_border.gtex.lua" }
+				},
+			},
+		}
+
+		
+		if params.path1 ~= 0 then
+			result.groundFaces[#result.groundFaces + 1] = {
+				face = {
+					{ extend[1], extend[4], 0, 0 },
+					{ extend[1], extend[3], 0, 0 },
+				},
+				modes = {
+					{ type = "STROKE", key = "shared/path.gtex.lua" }
+				},
+				loop = false,
+			}
+		end
+		if params.path2 ~= 0 then
+			result.groundFaces[#result.groundFaces + 1] = {
+				face = {
+					{ extend[2], extend[4], 0, 0 },
+					{ extend[2], extend[3], 0, 0 },
+				},
+				modes = {
+					{ type = "STROKE", key = "shared/path.gtex.lua" }
+				},
+				loop = false,
+			}
+		end
+		if params.path3 ~= 0 then
+			result.groundFaces[#result.groundFaces + 1] = {
+				face = {
+					{ extend[1], extend[3], 0, 0 },
+					{ extend[2], extend[3], 0, 0 },
+				},
+				modes = {
+					{ type = "STROKE", key = "shared/path.gtex.lua" }
+				},
+				loop = false,
+			}
+		end
+		if params.path4 ~= 0 then
+			result.groundFaces[#result.groundFaces + 1] = {
+				face = {
+					{ extend[1], extend[4], 0, 0 },
+					{ extend[2], extend[4], 0, 0 },
+				},
+				modes = {
+					{ type = "STROKE", key = "shared/path.gtex.lua" }
+				},
+				loop = false,
+			}
+		end
+		
+		--[[
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces = { groundFace },
+		} }
+		]]--
+		
+		
+		return result
+	end
+}
+
+end

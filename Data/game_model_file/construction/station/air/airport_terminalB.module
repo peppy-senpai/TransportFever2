@@ -1,0 +1,32 @@
+function data()
+
+return { 
+	availability = {
+		yearFrom = 1980,
+		yearTo = 0,
+	},
+	cost = {
+		price = 5000000,
+	},
+	category = {
+		categories = {"misc"},
+	},
+	description = {
+		icon = "ui/construction/station/air/airport_terminalB.tga",
+		name = _("Taxiway"),
+		description = _("Adds a second taxiway to the airport, which allows to add more buildings."),
+	},
+	type = "terminal_B",
+	order = {
+		value = 20,
+	},
+	
+	updateFn = function(result, transform, tag)
+		
+	end,
+	getModelsFn = function()
+		return {}
+	end
+}
+
+end

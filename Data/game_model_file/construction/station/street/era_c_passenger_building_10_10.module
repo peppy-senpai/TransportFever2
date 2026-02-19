@@ -1,0 +1,135 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+local colliderutil = require "colliderutil"
+local constructionutil = require "constructionutil"
+local modulesutil = require "modulesutil"
+
+local cargoCapacity = 0
+local passengerCapacity = 20
+
+--Begin Generated
+local generatedData = {
+	["era_c_passenger_building_10_10"] = {
+		models = {
+			["asset/roof/era_b_lamp_b_01.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.99905, 0.04362, 0.00000, 0.00000, -0.04362, 0.99905, 0.00000, 1.99692, -3.46852, 3.91741, 1.00000, },
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.99905, 0.04362, 0.00000, 0.00000, -0.04362, 0.99905, 0.00000, -2.01444, -3.46902, 3.91741, 1.00000, },
+			},
+			["station/rail/asset/era_a_street_pillar.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -4.65350, -9.64726, 0.27530, 1.00000, },
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -2.27350, -9.64726, 0.27530, 1.00000, },
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00650, -9.64726, 0.27530, 1.00000, },
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 2.28650, -9.64726, 0.27530, 1.00000, },
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 4.65250, -9.64726, 0.27530, 1.00000, },
+			},
+			["station/road/streetstation/asset/bench_era_c_l_1.mdl"] = {
+				{ -0.00000, -1.00000, 0.00000, 0.00000, 1.00000, -0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -0.71577, -5.94500, 0.46400, 1.00000, },
+				{ -0.00000, -1.00000, 0.00000, 0.00000, 1.00000, -0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -4.23577, -5.94500, 0.45500, 1.00000, },
+			},
+			["station/road/streetstation/asset/bench_era_c_r_1.mdl"] = {
+				{ -0.00000, -1.00000, 0.00000, 0.00000, 1.00000, -0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -0.71577, -5.92077, 0.46400, 1.00000, },
+				{ -0.00000, -1.00000, 0.00000, 0.00000, 1.00000, -0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -4.23577, -5.92077, 0.45500, 1.00000, },
+			},
+			["station/road/streetstation/asset/bus_stop_sign_era_c_1.mdl"] = {
+				{ -1.00000, -0.00000, -0.00000, 0.00000, 0.00000, -1.00000, -0.00000, 0.00000, -0.00000, -0.00000, 1.00000, 0.00000, -4.18000, -0.38000, 0.26000, 1.00000, },
+			},
+			["station/road/streetstation/asset/com_small_era_c_1.mdl"] = {
+				{ -0.00000, -1.00000, 0.00000, 0.00000, 1.00000, -0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 4.45000, -1.06000, 0.29000, 1.00000, },
+			},
+			["station/road/streetstation/asset/com_small_era_c_2.mdl"] = {
+				{ -0.00000, -1.00000, 0.00000, 0.00000, 1.00000, -0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -3.23000, -6.53000, 0.45000, 1.00000, },
+			},
+			["station/road/streetstation/asset/tickets_era_c_1.mdl"] = {
+				{ -0.00000, 1.00000, 0.00000, 0.00000, -1.00000, -0.00000, -0.00000, 0.00000, -0.00000, -0.00000, 1.00000, 0.00000, -2.82000, -5.00000, 0.46500, 1.00000, },
+			},
+			["station/road/streetstation_sidebuilding_era_c_s1.mdl"] = {
+				{ 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, -5.00000, 0.00000, 1.00000, },
+			},
+			["street/street_asset_mix/trash_standing_c.mdl"] = {
+				{ 0.77715, 0.62932, 0.00000, 0.00000, -0.62932, 0.77715, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, -3.02000, -3.88000, 0.46500, 1.00000, },
+			},
+		},
+	},
+}
+--End Generated
+
+function data()
+
+return { 
+	cost = {
+		price = 80000,
+	},
+	category = {
+		categories = { "passenger", },
+	},
+	description = {
+		name = _("Small passenger building"),
+		description = _("Building for waiting passengers. Provides capacity for 20 passengers."),
+		icon = "ui/construction/station/street/era_c_passenger_building_10_10.tga"
+	}, 
+	availability = {
+		yearFrom = 1980,
+	},
+	type = "street_terminal_entrance",
+	order = {
+		value = 10,
+	},
+	metadata = {
+		building = true,
+		cargo = true,
+		moreCapacity = {
+			cargo = cargoCapacity,
+			passenger = passengerCapacity - 12
+		}
+	},
+	
+	updateFn = function(result, transform, tag, slotId, addModelFn, params)
+		modulesutil.addPoolEdges(result, false, {
+			{ 15, 0 }
+		}, #result.models)
+
+		constructionutil.addModelsAndGroups(params, generatedData["era_c_passenger_building_10_10"], result, tag, transform)
+
+		local terrain_faces = {
+			{
+				type = "EQUAL",
+				faces = { { { -5.5, 0, 0, 1 }, { -5.5, -10.5, 0, 1 }, { 5.5, -10.5, 0, 1 }, { 5.5, 0, 0, 1 } } }, 
+				slopeLow = 0.3,
+				slopeHigh = 0.6,
+				optional = false,
+			}
+		}
+		modulesutil.TransformAlignmentFaces(transform, terrain_faces)
+		table.insert(result.terrainAlignmentLists, terrain_faces[1])
+		
+		table.insert(result.groundFaces, {  
+			face = terrain_faces[1].faces[1],
+			modes = {
+				{
+					type = "FILL",               
+					key = "industry_floor_high_priority.gtex.lua"
+				},
+				{
+					type = "STROKE",
+					key = "pedestrian_connection_border.lua"
+				},
+			},
+			loop = true, 
+		})
+ 
+		return result
+    end	,
+	getModelsFn = function()
+		
+		local result = {
+			{ 
+				id = "station/road/streetstation_sidebuilding_era_c_s1.mdl",
+				transf = { 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000, 0.00000, 0.00000, 0.00000, 0.00000, 1.00000 },
+			}
+		}
+		
+		return result
+	end	
+}
+
+end

@@ -1,0 +1,36 @@
+local constructionutil = require "constructionutil"
+
+function data()
+
+return { 
+	type = "ASSET_DEFAULT",
+	description = {
+		name = _("Lamp"),			
+		description = _("A lamp.")
+	},
+	availability = {
+		
+	},
+	buildMode = "MULTI",
+	categories = { "misc" },
+	order = 105,
+	skipCollision = false,
+	autoRemovable = false,
+	updateFn = function(params)
+		local result = { }
+
+		result.models = { {
+			id = "asset/lamp_old.mdl",
+			transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 }),
+		} }
+
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+
+		return result
+	end
+}
+
+end
