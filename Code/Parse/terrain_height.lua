@@ -3,8 +3,8 @@ local file = io.open("terrain_height.csv", "w")
 if file then
     file:write("x,y,z\n")
 
-x_start, x_end, x_step = -7168, 7168, 30
-y_start, y_end, y_step = -7168, 7168, 30
+x_start, x_end, x_step = -7168, 7168, 28
+y_start, y_end, y_step = -7168, 7168, 28
 
 for y=y_start, y_end, y_step do
     for x=x_start, x_end, x_step do
