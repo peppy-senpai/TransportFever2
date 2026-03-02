@@ -1,0 +1,309 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.035747051239, 0.77409482002258, 1.4931479692459, },
+		bbMin = { -2.049339056015, -0.77409482002258, -0.0083039999008179, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.0425429344177, 0.77409482002258, 0.75072598457336, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/beetle_1948_v2/beetle_1948.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/beetle_1948_v2/beetle_1948_interior_glass.mtl", "vehicle/car/beetle_1948_v2/beetle_1948_glass.mtl", },
+								mesh = "vehicle/car/beetle_1948_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.6149805188179, 0, 1.1419409513474, 1, },
+							},
+							{
+								materials = { "vehicle/car/beetle_1948_v2/beetle_1948_interior_glass.mtl", "vehicle/car/beetle_1948_v2/beetle_1948_glass.mtl", },
+								mesh = "vehicle/car/beetle_1948_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.14345651865005, 0.59146451950073, 1.1301544904709, 1, },
+							},
+							{
+								materials = { "vehicle/car/beetle_1948_v2/beetle_1948_interior_glass.mtl", "vehicle/car/beetle_1948_v2/beetle_1948_glass.mtl", },
+								mesh = "vehicle/car/beetle_1948_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.14345651865005, -0.59146451950073, 1.1301544904709, 1, },
+							},
+							{
+								materials = { "vehicle/car/beetle_1948_v2/beetle_1948_interior_glass.mtl", "vehicle/car/beetle_1948_v2/beetle_1948_glass.mtl", },
+								mesh = "vehicle/car/beetle_1948_v2/glass_left_bck_lod0.msh",
+								name = "glass_left_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.123687505722, 0.21423098444939, 1.1990125179291, 1, },
+							},
+							{
+								materials = { "vehicle/car/beetle_1948_v2/beetle_1948_interior_glass.mtl", "vehicle/car/beetle_1948_v2/beetle_1948_glass.mtl", },
+								mesh = "vehicle/car/beetle_1948_v2/glass_right_bck_lod0.msh",
+								name = "glass_right_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.123687505722, -0.21423098444939, 1.1990125179291, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/beetle_1948_v2/beetle_1948_interior.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/beetle_1948_v2/beetle_1948.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3075132369995, 0.63995397090912, 0.31827658414841, 1, },
+					},
+					{
+						materials = { "vehicle/car/beetle_1948_v2/beetle_1948.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, -8.7422776573476e-08, 0, 8.7422769468049e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, 1.3075132369995, -0.63995397090912, 0.31827658414841, 1, },
+					},
+					{
+						materials = { "vehicle/car/beetle_1948_v2/beetle_1948.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0899221897125, -1.0285889537841e-15, 0.31827658414841, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/breakelights_lod0.msh",
+						name = "breakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/beetle_1948_v2/beetle_1948_lod.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/beetle_1948_v2/beetle_1948_lod.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3075132369995, 0.63995397090912, 0.31827658414841, 1, },
+					},
+					{
+						materials = { "vehicle/car/beetle_1948_v2/beetle_1948_lod.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, 7.8886090522101e-31, -8.7422776573476e-08, 0, 7.6427427076918e-15, -1, 8.7422776573476e-08, 0, 8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 1.3075132369995, -0.63995397090912, 0.31827658414841, 1, },
+					},
+					{
+						materials = { "vehicle/car/beetle_1948_v2/beetle_1948_lod.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0899221897125, -1.0285889537841e-15, 0.31827658414841, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/breakelights_lod1.msh",
+						name = "breakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 8.7422776573476e-08, -1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, -1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 210,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/beetle_1948_v2/beetle_1948_lod.mtl", },
+						mesh = "vehicle/car/beetle_1948_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 210,
+			visibleTo = 600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1947,
+			yearTo = 1985,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.41960781812668, 0.41558140516281, 0.35296422243118, },
+				},
+				{
+					{ 0.28968086838722, 0.39607840776443, 0.38433036208153, },
+				},
+				{
+					{ 0.34509801864624, 0.31009975075722, 0.29028832912445, },
+				},
+				{
+					{ 0.76862746477127, 0.61147326231003, 0.18386773765087, },
+				},
+				{
+					{ 0.6980391740799, 0.6980391740799, 0.6980391740799, },
+				},
+				{
+					{ 0.74509799480438, 0.29427567124367, 0.13294887542725, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/beetle_1948_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 14, },
+					blinkLightsRight = { 15, },
+					brakeLights = { 13, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.10000000149012,
+							upright = false,
+						},
+					},
+					headLights = { 12, },
+					steeringParts = { },
+					wheels = { "vehicle/car/beetle_1948_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/beetle_1948_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.10000000149012,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/beetle_1948_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = { },
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 48,
+				tractiveEffort = 6.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 22.219999313354,
+			weight = 0.60000002384186,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 16,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.15600000321865, 0.2419999986887, 0.060000002384186, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

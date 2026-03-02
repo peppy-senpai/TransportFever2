@@ -1,0 +1,663 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.8735823631287, 8.8590049743652, 3.5916881561279, },
+		bbMin = { -6.7203636169434, -8.8590049743652, -0.0033738613128662, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.7969732284546, 8.8590049743652, 1.7975310087204, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_glass.mtl", },
+								mesh = "vehicle/plane/junkers_f_13_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.74544560909271, 0.30395579338074, 2.6699371337891, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_glass.mtl", },
+								mesh = "vehicle/plane/junkers_f_13_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.74544560909271, -0.30395579338074, 2.6699371337891, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_glass.mtl", },
+								mesh = "vehicle/plane/junkers_f_13_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.22992812097073, 0.6779842376709, 2.5233247280121, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_glass.mtl", },
+								mesh = "vehicle/plane/junkers_f_13_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3066893815994, 0.63030731678009, 2.423570394516, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_glass.mtl", },
+								mesh = "vehicle/plane/junkers_f_13_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.22992812097073, -0.6779842376709, 2.5233247280121, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_glass.mtl", },
+								mesh = "vehicle/plane/junkers_f_13_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3066893815994, -0.63030731678009, 2.423570394516, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/aileron_l_lod0.msh",
+						name = "aileron_l",
+						transf = { 0.1898258626461, 0.97715801000595, 0.095542691648006, 0, -0.25659140944481, -0.044555816799402, 0.96549242734909, 0, 0.94769561290741, -0.20779086649418, 0.24227248132229, 0, -0.81230163574219, 6.3078866004944, 1.6280944347382, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/aileron_r_lod0.msh",
+						name = "aileron_r",
+						transf = { -0.18852627277374, 0.97692853212357, -0.1003421023488, 0, -0.26094117760658, 0.048671174794436, 0.96412694454193, 0, 0.94676685333252, 0.20794662833214, 0.24574506282806, 0, -0.81291532516479, -6.4158005714417, 1.6252583265305, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_interior.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/close_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/open_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_glass.mtl", },
+								mesh = "vehicle/plane/junkers_f_13_v2/d1_glass_lft_lod0.msh",
+								name = "d1_glass_lft",
+								transf = { -0.21324484050274, 0.04281285405159, 0.97606003284454, 0, -0.97697132825851, -0.0019108821870759, -0.21336007118225, 0, -0.0072694229893386, -0.99908167123795, 0.042234443128109, 0, 0.27712565660477, 0.0093713086098433, -0.24774697422981, 1, },
+							},
+						},
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { -0.21324506402016, -0.0072693596594036, 0.97697180509567, 0, 0.045949831604958, -0.99894034862518, 0.0025967147666961, 0, 0.97591781616211, 0.045445434749126, 0.21335312724113, 0, -0.47585970163345, 0.68341636657715, 2.2625291347504, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/close_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/open_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_glass.mtl", },
+								mesh = "vehicle/plane/junkers_f_13_v2/d1_glass_rgt_lod0.msh",
+								name = "d1_glass_rgt",
+								transf = { -0.21318313479424, -0.045749984681606, 0.97594082355499, 0, -0.97699201107025, 0.0035084164701402, -0.21324832737446, 0, 0.0063320971094072, -0.99894654750824, -0.045445282012224, 0, 0.27709066867828, -0.0088317599147558, -0.24780559539795, 1, },
+							},
+						},
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { -0.21318306028843, 0.006332112941891, 0.97699165344238, 0, -0.045749932527542, -0.99894672632217, -0.0035083896946162, 0, 0.97594034671783, -0.04544522985816, 0.21324820816517, 0, -0.47585994005203, -0.68341636657715, 2.2625291347504, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/rotor1_lod0.msh",
+						name = "rotor1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6277067661285, 0.0010091960430145, 2.058970451355, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_rotor.mtl", "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/rotor1b_lod0.msh",
+						name = "rotor1b",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5527067184448, 0.0010091960430145, 2.058970451355, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/elevator_lod0.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -5.8461098670959, -4.7683715820313e-07, 2.0409104824066, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.0164432525635, -2.3841857910156e-07, 2.2600474357605, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 0.99984574317932, 0.00078788259997964, 0.017547845840454, 0, 4.848677690461e-07, 0.99899238348007, -0.044881500303745, 0, -0.017565526068211, 0.044874582439661, 0.99883824586868, 0, 0.69263058900833, 1.2426773309708, 0.44597750902176, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/w1_rgt_lod0.msh",
+						name = "w1_rgt",
+						transf = { 0.99918180704117, 0.0018152644624934, -0.040403127670288, 0, -1.2153670070347e-07, 0.99899256229401, 0.044880542904139, 0, 0.040443897247314, -0.044843818992376, 0.99817526340485, 0, 0.69263052940369, -1.2426773309708, 0.44597741961479, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6905999183655, -0.00010015683801612, 1.1971999406815, 1, },
+					},
+					{
+						name = "comp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_glass_lod.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/body_glass_lod1.msh",
+						name = "body_glass",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7476251125336, 0, 1.7803688049316, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/aileron_l_lod1.msh",
+						name = "aileron_l",
+						transf = { 0.1898258626461, 0.97715801000595, 0.095542691648006, 0, -0.25659140944481, -0.044555816799402, 0.96549242734909, 0, 0.94769561290741, -0.20779086649418, 0.24227248132229, 0, -0.81230163574219, 6.3078866004944, 1.6280944347382, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/aileron_r_lod1.msh",
+						name = "aileron_r",
+						transf = { -0.18852627277374, 0.97692853212357, -0.1003421023488, 0, -0.26094117760658, 0.048671174794436, 0.96412694454193, 0, 0.94676685333252, 0.20794662833214, 0.24574506282806, 0, -0.81291532516479, -6.4158005714417, 1.6252583265305, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_interior.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/close_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/open_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_glass_lod.mtl", },
+								mesh = "vehicle/plane/junkers_f_13_v2/d1_glass_lft_lod1.msh",
+								name = "d1_glass_lft",
+								transf = { -0.21324484050274, 0.04281285405159, 0.97606003284454, 0, -0.97697132825851, -0.0019108821870759, -0.21336007118225, 0, -0.0072694229893386, -0.99908167123795, 0.042234443128109, 0, -5.6843417590259e-16, 1.4210854397565e-16, -7.1054271987823e-17, 1, },
+							},
+						},
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { -0.21324506402016, -0.0072693596594036, 0.97697180509567, 0, 0.042812883853912, -0.99908125400543, 0.0019109598360956, 0, 0.9760605096817, 0.042234487831593, 0.21336038410664, 0, -0.47585970163345, 0.68341636657715, 2.2625291347504, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/close_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/open_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/junkers_f_13_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_glass_lod.mtl", },
+								mesh = "vehicle/plane/junkers_f_13_v2/d1_glass_rgt_lod1.msh",
+								name = "d1_glass_rgt",
+								transf = { -0.21318313479424, -0.045749984681606, 0.97594082355499, 0, -0.97699201107025, 0.0035084164701402, -0.21324832737446, 0, 0.0063320971094072, -0.99894654750824, -0.045445282012224, 0, -2.3821391437195e-07, -1.790864700979e-07, -2.9802365020259e-08, 1, },
+							},
+						},
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { -0.21318306028843, 0.006332112941891, 0.97699165344238, 0, -0.045749932527542, -0.99894672632217, -0.0035083896946162, 0, 0.97594034671783, -0.04544522985816, 0.21324820816517, 0, -0.47585994005203, -0.68341636657715, 2.2625291347504, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/rotor1_lod1.msh",
+						name = "rotor1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6277067661285, 0.0010091960430145, 2.058970451355, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_rotor.mtl", "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/rotor1b_lod1.msh",
+						name = "rotor1b",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5527067184448, 0.0010091960430145, 2.058970451355, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/elevator_lod1.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -5.8461098670959, -4.7683715820313e-07, 2.0409104824066, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.0164432525635, -2.3841857910156e-07, 2.2600474357605, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 0.99984574317932, 0.00078788259997964, 0.017547845840454, 0, 4.848677690461e-07, 0.99899238348007, -0.044881500303745, 0, -0.017565526068211, 0.044874582439661, 0.99883824586868, 0, 0.69263058900833, 1.2426773309708, 0.44597750902176, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/w1_rgt_lod1.msh",
+						name = "w1_rgt",
+						transf = { 0.99918180704117, 0.0018152644624934, -0.040403127670288, 0, -1.2153670070347e-07, 0.99899256229401, 0.044880542904139, 0, 0.040443897247314, -0.044843818992376, 0.99817526340485, 0, 0.69263052940369, -1.2426773309708, 0.44597741961479, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6905999183655, -0.00010015683801612, 1.1971999406815, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", "vehicle/plane/junkers_f_13_v2/junkers_f13_interior.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/rotor1_lod2.msh",
+						name = "rotor1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6277067661285, 0.0010091960430145, 2.058970451355, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13_rotor.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/rotor1b_lod2.msh",
+						name = "rotor1b",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5527067184448, 0.0010091960430145, 2.058970451355, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/w1_lft_lod2.msh",
+						name = "w1_lft",
+						transf = { 0.99984574317932, 0.00078788259997964, 0.017547845840454, 0, 4.848677690461e-07, 0.99899238348007, -0.044881500303745, 0, -0.017565526068211, 0.044874582439661, 0.99883824586868, 0, 0.69263058900833, 1.2426773309708, 0.44597750902176, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/w1_rgt_lod2.msh",
+						name = "w1_rgt",
+						transf = { 0.99918180704117, 0.0018152644624934, -0.040403127670288, 0, -1.2153670070347e-07, 0.99899256229401, 0.044880542904139, 0, 0.040443897247314, -0.044843818992376, 0.99817526340485, 0, 0.69263052940369, -1.2426773309708, 0.44597741961479, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_f_13_v2/junkers_f13.mtl", },
+						mesh = "vehicle/plane/junkers_f_13_v2/w2_lod2.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6905999183655, -0.00010015683801612, 1.1971999406815, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		airVehicle = {
+			configs = {
+				{
+					aileronLeft = {
+						ids = { 9, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 10, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.37000000476837, 0.37000000476837, },
+					axles = { "vehicle/plane/junkers_f_13_v2/w1_lft_lod0.msh", "vehicle/plane/junkers_f_13_v2/w1_rgt_lod0.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { 18, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { 16, },
+					propsB = { 17, },
+					rudder = {
+						ids = { 19, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.0099999997764826, },
+					wheels = { "vehicle/plane/junkers_f_13_v2/w2_lod0.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 4, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.37000000476837, 0.37000000476837, },
+					axles = { "vehicle/plane/junkers_f_13_v2/w1_lft_lod1.msh", "vehicle/plane/junkers_f_13_v2/w1_rgt_lod1.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { 12, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { 10, },
+					propsB = { 11, },
+					rudder = {
+						ids = { 13, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.0099999997764826, },
+					wheels = { "vehicle/plane/junkers_f_13_v2/w2_lod1.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { },
+						maxAngle = 0,
+					},
+					aileronRight = {
+						ids = { },
+						maxAngle = 0,
+					},
+					axleRadii = { },
+					axles = { "vehicle/plane/junkers_f_13_v2/w1_lft_lod2.msh", "vehicle/plane/junkers_f_13_v2/w1_rgt_lod2.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { },
+						maxAngle = 0,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { 2, },
+					propsB = { 3, },
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { },
+					wheels = { "vehicle/plane/junkers_f_13_v2/w2_lod2.msh", },
+				},
+			},
+			idleThrust = 0,
+			maxPayload = 0,
+			maxTakeOffWeight = 1800,
+			maxThrust = 3500,
+			timeToFullThrust = 3,
+			topSpeed = 38,
+			type = "SMALL",
+			weight = 1000,
+			wingArea = 34,
+		},
+		availability = {
+			yearFrom = 1920,
+			yearTo = 1950,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_PLANE_JUNKERS_F_13_DESCRIPTION"),
+			name = _("VEHICLE_PLANE_JUNKERS_F_13_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.22745096683502, 0.22745096683502, 0.22745096683502, },
+					frequency = 50,
+					initialAlpha = 0.30000001192093,
+					lifeTime = 0.60000002384186,
+					position = { 1.6879999637604, -0.15000000596046, 3.0639998912811, },
+					size01 = { 0.0099999997764826, 0.80000001192093, },
+					velocity = { -3, 0, 2.75, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "AIR_OUTDOOR",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 23,
+					transf = { 0.97629600763321, 0, 0.21643961966038, 0, 0, 1, 0, 0, -0.21643961966038, 0, 0.97629600763321, 0, 0.50757330656052, 0.31999996304512, 1.5518958568573, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 23,
+					transf = { 0.97629600763321, 0, 0.21643961966038, 0, 0, 1, 0, 0, -0.21643961966038, 0, 0.97629600763321, 0, 0.50757330656052, -0.32800000905991, 1.5518958568573, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 23,
+					transf = { 0.9961946606636, 0, 0.087155729532242, 0, 0, 1, 0, 0, -0.087155729532242, 0, 0.9961946606636, 0, -0.40999999642372, 0.32400000095367, 1.4339998960495, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 23,
+					transf = { 0.9961946606636, 0, 0.087155729532242, 0, 0, 1, 0, 0, -0.087155729532242, 0, 0.9961946606636, 0, -1.3149999380112, 0.26800000667572, 1.4339998960495, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 23,
+					transf = { 0.9961946606636, 0, 0.087155729532242, 0, 0, 1, 0, 0, -0.087155729532242, 0, 0.9961946606636, 0, -0.40999999642372, -0.31999999284744, 1.4339998960495, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 23,
+					transf = { 0.9961946606636, 0, 0.087155729532242, 0, 0, 1, 0, 0, -0.087155729532242, 0, 0.9961946606636, 0, -1.3149999380112, -0.21199998259544, 1.4339998960495, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "aircraft_prop_old",
+			},
+		},
+		transportVehicle = {
+			carrier = "AIR",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 12,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v12",
+		},
+	},
+	version = 1,
+}
+end

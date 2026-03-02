@@ -1,0 +1,395 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.4743120670319, 0.97212725877762, 3.0314476490021, },
+		bbMin = { -4.3399958610535, -0.97212821245193, -0.0050001442432404, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 3.907154083252, 0.97212773561478, 1.5182238817215, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+						mesh = "vehicle/bus/mack_1900_usa_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+								mesh = "vehicle/bus/mack_1900_usa_v2/w1_lft_lod0.msh",
+								name = "w1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.18957984447479, 0.013716340065002, 1, },
+							},
+						},
+						materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+						mesh = "vehicle/bus/mack_1900_usa_v2/w1_lft_steering_lod0.msh",
+						name = "w1_lft_steering",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.7900154590607, 0.6599999666214, 0.48128446936607, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+								mesh = "vehicle/bus/mack_1900_usa_v2/w1_lft_lod0.msh",
+								name = "w1_rgt",
+								transf = { 1, 0, -5.4601404028428e-33, 0, 0, 1, 0, 0, -5.4601404028428e-33, 0, 1, 0, 0, 0.18957984447479, 0.013716340065002, 1, },
+							},
+						},
+						materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+						mesh = "vehicle/bus/mack_1900_usa_v2/w1_lft_steering_lod0.msh",
+						name = "w1_rgt_steering",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 2.7900154590607, -0.6599999666214, 0.48128446936607, 1, },
+					},
+					{
+						materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+						mesh = "vehicle/bus/mack_1900_usa_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2550001144409, 0, 0.49499997496605, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/mack_1900_usa_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+						mesh = "vehicle/bus/mack_1900_usa_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+								mesh = "vehicle/bus/mack_1900_usa_v2/w1_lft_lod1.msh",
+								name = "w1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.18957984447479, 0.013716340065002, 1, },
+							},
+						},
+						materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+						mesh = "vehicle/bus/mack_1900_usa_v2/w1_lft_steering_lod1.msh",
+						name = "w1_lft_steering",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.7900154590607, 0.6599999666214, 0.48128446936607, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+								mesh = "vehicle/bus/mack_1900_usa_v2/w1_lft_lod1.msh",
+								name = "w1_rgt",
+								transf = { 1, 0, -5.4601404028428e-33, 0, 0, 1, 0, 0, -5.4601404028428e-33, 0, 1, 0, 0, 0.18957984447479, 0.013716340065002, 1, },
+							},
+						},
+						materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+						mesh = "vehicle/bus/mack_1900_usa_v2/w1_lft_steering_lod1.msh",
+						name = "w1_rgt_steering",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 2.7900154590607, -0.6599999666214, 0.48128446936607, 1, },
+					},
+					{
+						materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+						mesh = "vehicle/bus/mack_1900_usa_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2550001144409, 0, 0.49499997496605, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/mack_1900_usa_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/mack_1900_usa_v2/mack_1900.mtl", },
+						mesh = "vehicle/bus/mack_1900_usa_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1000,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1900,
+			yearTo = 1952,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_BUS_MACK_1900_USA_DESCRIPTION"),
+			name = _("VEHICLE_BUS_MACK_1900_USA_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 40,
+					initialAlpha = 0.5,
+					lifeTime = 1,
+					position = { -3.9619996547699, -0.5120000243187, 0.79999995231628, },
+					size01 = { 0.050000000745058, 0.80000001192093, },
+					velocity = { -3.7999999523163, -1.6599999666214, -0.1594255566597, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/bus/mack_1900_usa_v2/w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 7, },
+					steeringParts = { 2, 4, },
+					wheels = { "vehicle/bus/mack_1900_usa_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/bus/mack_1900_usa_v2/w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 7, },
+					steeringParts = { 2, 4, },
+					wheels = { "vehicle/bus/mack_1900_usa_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -2.25,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 24,
+				tractiveEffort = 6,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "bus_old",
+			},
+			topSpeed = 6.9400000572205,
+			weight = 4,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2259999513626, -0.27600002288818, 0.94199997186661, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2460000514984, 0.44999998807907, 0.94999998807907, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.40099996328354, 0.38999998569489, 0.94999998807907, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.44100001454353, 0.38999998569489, 0.97199994325638, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3559998273849, 0.38999998569489, 1.0140000581741, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2060000896454, 0.38999998569489, 1.0360000133514, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0759999752045, 0.38999998569489, 1.0720000267029, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.9089999198914, 0.38999998569489, 1.1059999465942, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.40099996328354, -0.375, 0.94999998807907, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.44100001454353, -0.375, 0.97199994325638, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3559998273849, -0.375, 1.0140000581741, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2060000896454, -0.375, 1.0360000133514, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0759999752045, -0.375, 1.0720000267029, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.9089999198914, -0.375, 1.1059999465942, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1.5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v04",
+		},
+	},
+	version = 1,
+}
+end

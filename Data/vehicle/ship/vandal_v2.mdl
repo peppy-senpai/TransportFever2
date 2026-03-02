@@ -1,0 +1,267 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 34.317096710205, 4.9713640213013, 15.320709228516, },
+		bbMin = { -33.005905151367, -4.9713625907898, -1.7936719655991, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 33.661499023438, 4.971363067627, 8.5571908950806, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal_floor.mtl", "vehicle/ship/vandal/ship_tms_vandal_strip.mtl", "vehicle/ship/vandal/ship_tms_vandal.mtl", "vehicle/ship/vandal/ship_tms_vandal_hull.mtl", "vehicle/ship/vandal/ship_tms_vandal_walls_white.mtl", },
+						mesh = "vehicle/ship/vandal/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal.mtl", },
+						mesh = "vehicle/ship/vandal/rudder1_lod0.msh",
+						name = "rudder1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -29.54514503479, -1.4086420536041, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal.mtl", },
+						mesh = "vehicle/ship/vandal/rudder2_lod0.msh",
+						name = "rudder2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -29.54514503479, 1.3640840053558, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal.mtl", },
+						mesh = "vehicle/ship/vandal/turbine1_lod0.msh",
+						name = "turbine1",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -29.143026351929, 2.4417753219604, -0.56224000453949, 1, },
+					},
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal.mtl", },
+						mesh = "vehicle/ship/vandal/turbine2_lod0.msh",
+						name = "turbine2",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -29.143026351929, -2.4882130622864, -0.56224000453949, 1, },
+					},
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal.mtl", },
+						mesh = "vehicle/ship/vandal/turbine3_lod0.msh",
+						name = "turbine3",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -29.143026351929, 0.011785998940468, -0.53899800777435, 1, },
+					},
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal_logo.mtl", },
+						mesh = "vehicle/ship/vandal/body_logo_lod0.msh",
+						name = "body_logo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 450,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal_hull.mtl", "vehicle/ship/vandal/ship_tms_vandal.mtl", "vehicle/ship/vandal/ship_tms_vandal_floor.mtl", "vehicle/ship/vandal/ship_tms_vandal_walls_white.mtl", },
+						mesh = "vehicle/ship/vandal/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal.mtl", },
+						mesh = "vehicle/ship/vandal/rudder1_lod1.msh",
+						name = "rudder1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -29.54514503479, -1.4086420536041, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal.mtl", },
+						mesh = "vehicle/ship/vandal/rudder2_lod1.msh",
+						name = "rudder2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -29.54514503479, 1.3640840053558, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal.mtl", },
+						mesh = "vehicle/ship/vandal/turbine1_lod1.msh",
+						name = "turbine1",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -29.143026351929, 2.4417753219604, -0.56224000453949, 1, },
+					},
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal.mtl", },
+						mesh = "vehicle/ship/vandal/turbine2_lod1.msh",
+						name = "turbine2",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -29.143026351929, -2.4882130622864, -0.56224000453949, 1, },
+					},
+					{
+						materials = { "vehicle/ship/vandal/ship_tms_vandal.mtl", },
+						mesh = "vehicle/ship/vandal/turbine3_lod1.msh",
+						name = "turbine3",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -29.143026351929, 0.011785998940468, -0.53899800777435, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 450,
+			visibleTo = 7140,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1900,
+			yearTo = 1960,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			description = _("VEHICLE_SHIP_VANDAL_V2_DESCRIPTION"),
+			name = _("VEHICLE_SHIP_VANDAL_V2_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCosts = -1,
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "ship_diesel_old",
+			},
+		},
+		transportVehicle = {
+			carrier = "WATER",
+			compartments = {
+				{
+					{
+						{
+							capacity = 260,
+							type = "CRUDE",
+						},
+					},
+					{
+						{
+							capacity = 260,
+							type = "OIL",
+						},
+					},
+					{
+						{
+							capacity = 260,
+							type = "FUEL",
+						},
+					},
+				},
+				{
+					{
+						{
+							capacity = 260,
+							type = "CRUDE",
+						},
+					},
+					{
+						{
+							capacity = 260,
+							type = "OIL",
+						},
+					},
+					{
+						{
+							capacity = 260,
+							type = "FUEL",
+						},
+					},
+				},
+			},
+			loadSpeed = 60,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		waterVehicle = {
+			area = 12,
+			availPower = 1000000,
+			configs = {
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 4, 5, 6, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 2,3 },
+						maxAngle = 30,
+					},
+				},
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 4, 5, 6, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 2,3},
+						maxAngle = 0,
+					},
+				},
+			},
+			maxRpm = 100,
+			topSpeed = 7.22222222222,
+			type = "BIG",
+			waterLine = {
+				{ -30.22610, 0.00000, 0.00000 }, 
+				{ -29.30849, -0.93912, 0.00000 }, 
+				{ -29.24162, -1.67161, 0.00000 }, 
+				{ -29.09622, -2.09476, 0.00000 }, 
+				{ -28.91139, -2.33222, 0.00000 }, 
+				{ -28.83747, -2.49741, 0.00000 }, 
+				{ -28.71415, -2.68760, 0.00000 }, 
+				{ -28.55640, -2.82313, 0.00000 }, 
+				{ -28.90141, -2.81426, 0.00000 }, 
+				{ -28.91337, -2.98690, 0.00000 }, 
+				{ -28.34805, -2.99892, 0.00000 }, 
+				{ -27.92452, -3.30709, 0.00000 }, 
+				{ -27.75291, -3.51709, 0.00000 }, 
+				{ -27.15677, -3.81859, 0.00000 }, 
+				{ -26.54316, -4.05284, 0.00000 }, 
+				{ -26.13047, -4.16089, 0.00000 }, 
+				{ -24.47600, -4.40525, 0.00000 }, 
+				{ -23.01387, -4.57772, 0.00000 }, 
+				{ -20.04107, -4.83032, 0.00000 }, 
+				{ -15.82329, -4.92891, 0.00000 }, 
+				{ -4.42020, -4.94114, 0.00000 }, 
+				{ 3.11533, -4.94387, 0.00000 }, 
+				{ 19.36827, -4.92915, 0.00000 }, 
+				{ 20.14179, -4.91274, 0.00000 }, 
+				{ 24.59213, -4.57926, 0.00000 }, 
+				{ 25.77417, -4.35045, 0.00000 }, 
+				{ 28.26963, -3.81407, 0.00000 }, 
+				{ 28.62916, -3.70844, 0.00000 }, 
+				{ 30.31410, -3.09354, 0.00000 }, 
+				{ 32.19882, -1.83868, 0.00000 }, 
+				{ 33.09985, -0.87951, 0.00000 }, 
+				{ 33.37565, 0.00000, 0.00000 }, 
+			},
+			weight = 700000,
+		},
+	},
+	version = 1,
+}
+end

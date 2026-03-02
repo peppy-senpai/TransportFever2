@@ -1,0 +1,2398 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 15.992697715759, 13.961700439453, 8.1918649673462, },
+		bbMin = { -17.025596618652, -13.961700439453, -0.0062405169010162, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 16.509147644043, 13.961700439453, 4.0990529060364, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_interior_glass.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_glass.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.659498214722, 0.46648699045181, 2.8909199237823, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_glass.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_interior_glass.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/glass2_left_frt_lod0.msh",
+								name = "glass2_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.98484992981, 0.98242396116257, 2.8883259296417, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_glass.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_interior_glass.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.659498214722, -0.46648699045181, 2.8909199237823, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_interior_glass.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_glass.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/glass2_right_frt_lod0.msh",
+								name = "glass2_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.98484992981, -0.98242396116257, 2.8883259296417, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_interior.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/aileron_lft_lod0.msh",
+						name = "aileron_lft",
+						transf = { 0.0071624927222729, 0.99752086400986, 0.070004694163799, 0, -0.00050263822777197, -0.070002891123295, 0.99754667282104, 0, 0.99997425079346, -0.0071801077574492, -3.060002251587e-09, 0, -0.24627244472504, 11.920000076294, 4.1781039237976, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/aileron_rgt_lod0.msh",
+						name = "aileron_rgt",
+						transf = { -0.0071624424308538, 0.99752086400986, -0.070004694163799, 0, -0.00050263467710465, 0.070002891123295, 0.99754667282104, 0, 0.99997425079346, 0.0071800574660301, -3.060002251587e-09, 0, -0.24627244472504, -11.920000076294, 4.1781039237976, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -0.91902631521225, 5.6274136010832e-17, -0.39419597387314, 0, -0.39419597387314, 2.4137540555881e-17, 0.91902631521225, 0, -14.474737167358, 0, 4.7399997711182, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/elevator_lod0.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1.6155444579905e-15, 9.8923574279184e-32, 1, 0, 1, -6.1232342629258e-17, 1.6155444579905e-15, 0, -15.597030639648, 0, 7.7715082168579, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3966746330261, 4.3441829681396, 3.3108906745911, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, -0, 0.86602538824081, 0.5, 0, 0, -0.5, 0.86602538824081, 0, 4.3966746330261, -4.3441829681396, 3.3108906745911, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_rotor.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor_b1_lft_lod0.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3966746330261, 4.3441829681396, 3.3108906745911, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_rotor.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor_b1_lft_lod0.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, -0, 0.86602538824081, 0.5, 0, 0, -0.5, 0.86602538824081, 0, 4.3966746330261, -4.3441829681396, 3.3108906745911, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/flaps/flap1_loc_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap1_lft_lod0.msh",
+										name = "flap1_lft",
+										transf = { 1, 5.0803066642402e-08, -2.6033515621027e-11, 0, -5.0803066642402e-08, 1, -5.5346934146883e-08, 0, 2.6030701899549e-11, 5.5346934146883e-08, 1, 0, 5.6843417590259e-16, 0, -1.7763567996956e-17, 1, },
+									},
+								},
+								name = "flap1_loc_lft",
+								transf = { -9.1839837068619e-08, 0.99999970197678, 0.00065048132091761, 0, -0.00014801419456489, -0.00065048132091761, 0.99999970197678, 0, 1, -4.4406514021489e-09, 0.00014801422366872, 0, -0.11377643048763, 2.5402503013611, 3.7171647548676, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/flaps/flap2_loc_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										children = {
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap_holder1_lft_lod0.msh",
+												name = "flap_holder1_lft",
+												transf = { -0.025376155972481, 0.0015163673087955, -0.99967682361603, 0, -0.99789726734161, 0.059622269123793, 0.025421423837543, 0, 0.059641547501087, 0.99821984767914, 1.9464425804472e-07, 0, -7.9213194847107, -3.4150404930115, 0.23764762282372, 1, },
+											},
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap_holder2_lft_lod0.msh",
+												name = "flap_holder2_lft",
+												transf = { -0.025376155972481, 0.0015163673087955, -0.99967682361603, 0, -0.99789726734161, 0.059622269123793, 0.025421423837543, 0, 0.059641547501087, 0.99821984767914, 1.9464425804472e-07, 0, -7.9213194847107, -3.4150404930115, 0.23764762282372, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap2_lft_lod0.msh",
+										name = "flap2_lft",
+										transf = { 1, -3.759296518524e-08, -1.2038658958602e-08, 0, 3.759296518524e-08, 1, 1.1798078958236e-07, 0, 1.203865451771e-08, -1.1798078958236e-07, 1, 0, 1.1368683518052e-15, 0, 0, 1, },
+									},
+								},
+								name = "flap2_loc_lft",
+								transf = { 0.025376211851835, 0.99789726734161, 0.05964158475399, 0, -0.0015164904762059, -0.059622298926115, 0.99821984767914, 0, 0.99967682361603, -0.025421483442187, 3.1352089990833e-07, 0, -0.041736625134945, 7.7070908546448, 3.8814010620117, 1, },
+							},
+						},
+						name = "flap_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/flaps/flap1_loc_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap1_rgt_lod0.msh",
+										name = "flap1_rgt",
+										transf = { 1, -5.0796657546925e-08, -3.8798877305402e-11, 0, 5.0796657546925e-08, 1, 4.6832415279141e-08, 0, 3.8796497264793e-11, -4.6832415279141e-08, 1, 0, -5.6843417590259e-16, 1.1368683518052e-15, -1.7763567996956e-17, 1, },
+									},
+								},
+								name = "flap1_loc_rgt",
+								transf = { -1.0419251239568e-08, 0.99999970197678, -0.00065048132091761, 0, -0.00014811643632129, 0.00065048132091761, 0.99999970197678, 0, 1, 1.0676622963501e-07, 0.00014811640721746, 0, -0.11377643048763, -2.5402503013611, 3.7171647548676, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/flaps/flap2_loc_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										children = {
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap_holder1_rgt_lod0.msh",
+												name = "flap_holder1_rgt",
+												transf = { -0.025376155972481, -0.0015163673087955, 0.99967682361603, 0, 0.99789726734161, 0.059622269123793, 0.025421423837543, 0, -0.059641547501087, 0.99821984767914, 1.9464425804472e-07, 0, 7.9213194847107, -3.4150404930115, 0.23764762282372, 1, },
+											},
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap_holder2_rgt_lod0.msh",
+												name = "flap_holder2_rgt",
+												transf = { -0.025376155972481, -0.0015163673087955, 0.99967682361603, 0, 0.99789726734161, 0.059622269123793, 0.025421423837543, 0, -0.059641547501087, 0.99821984767914, 1.9464425804472e-07, 0, 7.9213194847107, -3.4150404930115, 0.23764762282372, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap2_rgt_lod0.msh",
+										name = "flap2_rgt",
+										transf = { 1, -5.00433472439e-08, -2.4885284943821e-08, 0, 5.00433472439e-08, 1, 6.0227897336063e-08, 0, 2.488527961475e-08, -6.0227897336063e-08, 1, 0, -1.1368683518052e-15, 5.6843417590259e-16, 0, 1, },
+									},
+								},
+								name = "flap2_loc_rgt",
+								transf = { -0.025376113131642, 0.99789726734161, -0.059641495347023, 0, -0.0015164267970249, 0.059622213244438, 0.99821984767914, 0, 0.99967682361603, 0.025421380996704, 2.5807301540226e-07, 0, -0.041736625134945, -7.7070908546448, 3.8814010620117, 1, },
+							},
+						},
+						name = "flap_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_left_frt_lod0.msh",
+								name = "gear_d1_left_frt",
+								transf = { 0.98925286531448, 8.6483233019408e-08, 0.14621496200562, 0, -8.7422776573476e-08, 1, 2.0874254805844e-16, 0, -0.14621496200562, -1.2782518155063e-08, 0.98925286531448, 0, 15.085715293884, 0.30506554245949, 1.1486166715622, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_left_frt_lod0.msh",
+								name = "gear_d2_left_frt",
+								transf = { 0.99882531166077, -8.7320081831876e-08, 0.048455987125635, 0, -0.031146977096796, -0.76604443788528, 0.64203256368637, 0, 0.037119388580322, -0.64278763532639, -0.76514458656311, 0, 14.484612464905, 0.17641693353653, 1.0713106393814, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_right_frt_lod0.msh",
+								name = "gear_d1_right_frt",
+								transf = { 0.98925286531448, 7.8171181776997e-18, 0.14621496200562, 0, -7.7331064059663e-18, 1, -1.142979558862e-18, 0, -0.14621496200562, -4.4291150191458e-26, 0.98925286531448, 0, 15.085715293884, -0.30506554245949, 1.1486166715622, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_right_frt_lod0.msh",
+								name = "gear_d2_right_frt",
+								transf = { 0.99882531166077, -1.2143064331838e-17, 0.048455987125635, 0, 0.031146910041571, -0.76604443788528, -0.64203256368637, 0, 0.037119444459677, 0.64278763532639, -0.76514458656311, 0, 14.484612464905, -0.17641693353653, 1.0713106393814, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										children = {
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/w1_frt_lod0.msh",
+												name = "w1_frt",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.086297728121281, 1.4113088475654e-08, -0.34585857391357, 1, },
+											},
+											{
+												materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/landinglights_gear_frt_lod0.msh",
+												name = "landinglights_gear_frt",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.303297996521, 1.2250442438244e-08, -0.97185856103897, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_w1_steering_frt_lod0.msh",
+										name = "gear_w1_steering_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5371899533347e-07, 2.207403149157e-08, -0.3851415514946, 1, },
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_frt_lod0.msh",
+								name = "gear1_frt",
+								transf = { 1, 2.4651903288157e-32, 0, 0, -2.4651903288157e-32, 1, 0, 0, 0, 0, 1, 0, 14.303297042847, -3.4324475706171e-08, 1.3570001125336, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_left_lft_lod0.msh",
+								name = "gear_d1_left_lft",
+								transf = { -1, 8.7422776573476e-08, -1.2246468525852e-16, 0, -1.8176212535082e-08, -0.20791164040565, -0.97814762592316, 0, -8.5512382952402e-08, -0.97814762592316, 0.20791164040565, 0, 1.0675001144409, 4.7750134468079, 2.3683803081512, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_left_lft_lod0.msh",
+								name = "gear_d2_left_lft",
+								transf = { -1, 8.7422776573476e-08, -1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, -1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -0.83000004291534, 4.8328828811646, 2.51708984375, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_right_lft_lod0.msh",
+								name = "gear_d1_right_lft",
+								transf = { 1, 8.7422776573476e-08, 2.4492937051703e-16, 0, -1.8176212535082e-08, 0.20791164040565, -0.97814762592316, 0, -8.5512382952402e-08, 0.97814762592316, 0.20791164040565, 0, 1.0675001144409, 3.9133567810059, 2.3683803081512, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_right_lft_lod0.msh",
+								name = "gear_d2_right_lft",
+								transf = { 1, 8.7422776573476e-08, 2.4492937051703e-16, 0, -8.7422776573476e-08, 1, -2.1412406537821e-23, 0, -2.4492937051703e-16, 9.0282846795696e-31, 1, 0, -0.83000004291534, 3.8554770946503, 2.51708984375, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_lft_lod0.msh",
+								name = "gear1_lft",
+								transf = { 1, -8.7422776573476e-08, -1.0706201691189e-23, 0, 8.7422776573476e-08, 1, -4.6757982037009e-31, 0, 1.0706201691189e-23, -4.6838606843543e-31, 1, 0, 1.4490991830826, 4.3099999427795, 2.4278268814087, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_rotation_loc_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_rotation_loc_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_c2_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_c2_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												animations = {
+													close_wheels = {
+														params = {
+															id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_c1_lft.ani",
+														},
+														type = "FILE_REF",
+													},
+													open_wheels = {
+														params = {
+															id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_c1_lft.ani",
+														},
+														type = "FILE_REF",
+													},
+												},
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_c1_lft_lod0.msh",
+												name = "gear1_c1_lft",
+												transf = { -0.47587352991104, -5.820289317171e-08, -0.87951374053955, 0, 9.7088779682508e-08, -1, 1.3644939400592e-08, 0, -0.87951374053955, -7.8897656408117e-08, 0.47587352991104, 0, 0.10191762447357, 5.9604698954274e-10, 0.33060392737389, 1, },
+											},
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_lft_lod0.msh",
+												name = "w2_lft",
+												transf = { 0.9902680516243, -1.3234889800848e-23, 0.13917309045792, 0, 0, 1, 3.3087224502121e-24, 0, -0.13917309045792, -2.2050837584873e-24, 0.9902680516243, 0, -4.4267766497796e-05, -5.7220457705398e-08, -6.417002168746e-06, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_c2_lft_lod0.msh",
+										name = "gear1_c2_lft",
+										transf = { -0.9902680516243, 8.6571979807104e-08, -0.13917309045792, 0, -8.7422776573476e-08, -1, -1.2246465878874e-16, 0, -0.13917309045792, 1.2166899487909e-08, 0.9902680516243, 0, 1.3564896583557, 5.9604698954274e-10, -1.9528266191483, 1, },
+									},
+								},
+								name = "gear_rotation_loc_lft",
+								transf = { -1, -1.5099578831723e-07, 1.2246468525852e-16, 0, 1.5099578831723e-07, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 1.4490991830826, 4.3099999427795, 2.4278268814087, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_left_rgt_lod0.msh",
+								name = "gear_d1_left_rgt",
+								transf = { -1, 8.7422776573476e-08, -2.5461833555521e-17, 0, -1.8176212535082e-08, -0.20791164040565, -0.97814762592316, 0, -8.5512382952402e-08, -0.97814762592316, 0.20791164040565, 0, 1.0675001144409, -3.9133567810059, 2.3683803081512, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_left_rgt_lod0.msh",
+								name = "gear_d2_left_rgt",
+								transf = { -1, 8.7422776573476e-08, -1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, -1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -0.83000004291534, -3.8554770946503, 2.51708984375, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_right_rgt_lod0.msh",
+								name = "gear_d1_right_rgt",
+								transf = { 1, 0, 0, 0, 0, 0.20791164040565, -0.97814762592316, 0, 0, 0.97814762592316, 0.20791164040565, 0, 1.0675001144409, -4.7750134468079, 2.3683803081512, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_right_rgt_lod0.msh",
+								name = "gear_d2_right_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.83000004291534, -4.8328828811646, 2.51708984375, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_rgt_lod0.msh",
+								name = "gear1_rgt",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 1.4490991830826, -4.3099999427795, 2.4278268814087, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_rotation_loc_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_rotation_loc_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_c2_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_c2_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												animations = {
+													close_wheels = {
+														params = {
+															id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_c1_rgt.ani",
+														},
+														type = "FILE_REF",
+													},
+													open_wheels = {
+														params = {
+															id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_c1_rgt.ani",
+														},
+														type = "FILE_REF",
+													},
+												},
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_c1_rgt_lod0.msh",
+												name = "gear1_c1_rgt",
+												transf = { -0.47587352991104, -5.820289317171e-08, -0.87951374053955, 0, 9.7088779682508e-08, -1, 1.3644939400592e-08, 0, -0.87951374053955, -7.8897656408117e-08, 0.47587352991104, 0, 0.10191762447357, 5.9604698954274e-10, 0.33060392737389, 1, },
+											},
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_rgt_lod0.msh",
+												name = "w2_rgt",
+												transf = { 0.9902680516243, 0, 0.13917309045792, 0, 3.8507474716386e-26, 1, 1.0670333517031e-25, 0, -0.13917309045792, 4.5962589629854e-41, 0.9902680516243, 0, -4.4267766497796e-05, -5.7220457705398e-08, -6.417002168746e-06, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_c2_rgt_lod0.msh",
+										name = "gear1_c2_rgt",
+										transf = { -0.9902680516243, 8.6571979807104e-08, -0.13917309045792, 0, -8.7422776573476e-08, -1, -1.2246467202363e-16, 0, -0.13917309045792, 1.2166899487909e-08, 0.9902680516243, 0, 1.3564896583557, 5.9604698954274e-10, -1.9528266191483, 1, },
+									},
+								},
+								name = "gear_rotation_loc_rgt",
+								transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 1.4490991830826, -4.3099999427795, 2.4278268814087, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_door.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.997499465942, 1.1863808631897, 1.5622659921646, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_door.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d2_lft_lod0.msh",
+						name = "d2_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7799997329712, 0.96630108356476, 3.2565100193024, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_glass.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d2_glass_rgt_lod0.msh",
+								name = "d2_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3841857910156e-07, -0.14704173803329, 0.29838359355927, 1, },
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_door.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d2_rgt_lod0.msh",
+						name = "d2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.0315003395081, -1.1647782325745, 2.4093861579895, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_left/d1_c1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_left/d1_c1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_right/d1_c1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_door.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d1_c1_lft_lod0.msh",
+						name = "d1_c1_lft",
+						transf = { 0.99986112117767, 0.016276756301522, -0.0035742556210607, 0, 0.016664575785398, -0.97659295797348, 0.21444928646088, 0, -5.4094101642477e-08, -0.21447908878326, -0.97672855854034, 0, 11.355999946594, 1.2977896928787, 2.0750000476837, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_left/d1_c2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_left/d1_c2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_right/d1_c2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_door.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d1_c2_lft_lod0.msh",
+						name = "d1_c2_lft",
+						transf = { 6.1232342629258e-17, -1, 0, 0, 5.8343921633243e-15, 3.5725344542535e-31, -1, 0, 1, 6.1232342629258e-17, 5.8343921633243e-15, 0, 11.258490562439, 1.1096504926682, 2.3233170509338, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_left/d1_c3_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_left/d1_c3_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_right/d1_c3_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_door.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d1_c4_lft_lod0.msh",
+								name = "d1_c4_lft",
+								transf = { 4.36514859814e-08, 0.99862951040268, 0.052335806190968, 0, 1, -4.3711388286738e-08, 0, 0, 2.2876709415698e-09, 0.052335806190968, -0.99862951040268, 0, 0, -0.03603570908308, -0.77700531482697, 1, },
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_door.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d1_c3_lft_lod0.msh",
+						name = "d1_c3_lft",
+						transf = { 1, 0, 0, 0, 0, 0.98162710666656, -0.19080899655819, 0, 0, 0.19080899655819, 0.98162710666656, 0, 11.28159236908, 1.109107375145, 2.9126100540161, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/landinglights_lod0.msh",
+						name = "landinglights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/beaconlights_lod0.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/positionlights_lod0.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/strobelights_lod0.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_interior_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/aileron_lft_lod1.msh",
+						name = "aileron_lft",
+						transf = { 0.0071624885313213, 0.99752086400986, 0.070004656910896, 0, -0.00050273473607376, -0.070002846419811, 0.99754667282104, 0, 0.99997425079346, -0.0071801105514169, 9.3806015399878e-08, 0, -0.24627244472504, 11.920000076294, 4.1781039237976, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/aileron_rgt_lod1.msh",
+						name = "aileron_rgt",
+						transf = { -0.0071624359115958, 0.99752086400986, -0.070004656910896, 0, -0.00050268822815269, 0.070002861320972, 0.99754667282104, 0, 0.99997425079346, 0.0071800546720624, 5.1025690339657e-08, 0, -0.24627244472504, -11.920000076294, 4.1781039237976, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -0.91902643442154, 5.6274142628277e-17, -0.39419582486153, 0, -0.39419582486153, 2.4137533938436e-17, 0.91902643442154, 0, -14.474737167358, 0, 4.7399997711182, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/elevator_lod1.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1.1924881526681e-08, 7.3018838931907e-25, 1, 0, 1, -6.1232342629258e-17, 1.1924881526681e-08, 0, -15.597030639648, 0, 7.7715082168579, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3966746330261, 4.3441829681396, 3.307731628418, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, -0, 0.86602538824081, 0.5, 0, 0, -0.5, 0.86602538824081, 0, 4.3966746330261, -4.3441829681396, 3.3108906745911, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_rotor.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor_b1_lft_lod1.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3966746330261, 4.3441829681396, 3.307731628418, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_rotor.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor_b1_lft_lod1.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, -0, 0.86602538824081, 0.5, 0, 0, -0.5, 0.86602538824081, 0, 4.3966746330261, -4.3441829681396, 3.3108906745911, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/flaps/flap1_loc_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap1_lft_lod1.msh",
+										name = "flap1_lft",
+										transf = { -4.3711388286738e-08, -0.00014801419456489, 1, 0, 0.99999970197678, -0.00065044953953475, -5.25643848448e-08, 0, 0.00065044953953475, 0.99999970197678, 0.00014801419456489, 0, 1.527863702222e-07, 3.050778616398e-07, -9.4915737491874e-09, 1, },
+									},
+								},
+								name = "flap1_loc_lft",
+								transf = { -9.1839837068619e-08, 0.99999970197678, 0.00065048132091761, 0, -0.00014801419456489, -0.00065048132091761, 0.99999970197678, 0, 1, -4.4406514021489e-09, 0.00014801422366872, 0, -0.11377642303705, 2.5402503013611, 3.717164516449, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/flaps/flap2_loc_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										children = {
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap_holder1_lft_lod1.msh",
+												name = "flap_holder1_lft",
+												transf = { 0.02537614479661, -0.001516371499747, 0.99967682361603, 0, 0.99789726734161, -0.059622287750244, -0.025421410799026, 0, 0.059641566127539, 0.99821984767914, 1.9914325832815e-07, 0, -7.9213190078735, -3.4150400161743, 0.2376492023468, 1, },
+											},
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap_holder2_lft_lod1.msh",
+												name = "flap_holder2_lft",
+												transf = { 0.02537614479661, -0.001516371499747, 0.99967682361603, 0, 0.99789726734161, -0.059622287750244, -0.025421410799026, 0, 0.059641566127539, 0.99821984767914, 1.9914325832815e-07, 0, -7.9213190078735, -3.4150400161743, 0.2376492023468, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap2_lft_lod1.msh",
+										name = "flap2_lft",
+										transf = { 1, -3.759296518524e-08, -1.2038658958602e-08, 0, 3.759296518524e-08, 1, 1.1798078958236e-07, 0, 1.203865451771e-08, -1.1798078958236e-07, 1, 0, 2.2737367036103e-15, 0, 3.5527135993912e-17, 1, },
+									},
+								},
+								name = "flap2_loc_lft",
+								transf = { 0.025376211851835, 0.99789726734161, 0.05964158475399, 0, -0.0015164904762059, -0.059622298926115, 0.99821984767914, 0, 0.99967682361603, -0.025421483442187, 3.1352089990833e-07, 0, -0.041736625134945, 7.7070908546448, 3.8814010620117, 1, },
+							},
+						},
+						name = "flap_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/flaps/flap1_loc_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap1_rgt_lod1.msh",
+										name = "flap1_rgt",
+										transf = { -4.3711388286738e-08, -0.00014811643632129, 1, 0, 0.99999970197678, 0.00065048132091761, 1.4005834714226e-07, 0, -0.00065048132091761, 0.99999970197678, 0.00014811637811363, 0, -1.527863702222e-07, 3.050778616398e-07, -9.4915577619759e-09, 1, },
+									},
+								},
+								name = "flap1_loc_rgt",
+								transf = { -1.0419251239568e-08, 0.99999970197678, -0.00065048132091761, 0, -0.00014811643632129, 0.00065048132091761, 0.99999970197678, 0, 1, 1.0676622963501e-07, 0.00014811640721746, 0, -0.11377642303705, -2.5402503013611, 3.717164516449, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/flaps/flap2_loc_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										children = {
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap_holder1_rgt_lod1.msh",
+												name = "flap_holder1_rgt",
+												transf = { -0.025376113131642, -0.0015163678908721, 0.99967682361603, 0, 0.99789726734161, 0.059622317552567, 0.025421377271414, 0, -0.059641599655151, 0.99821984767914, 1.9662968497869e-07, 0, 7.9213190078735, -3.4150385856628, 0.23764653503895, 1, },
+											},
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap_holder2_rgt_lod1.msh",
+												name = "flap_holder2_rgt",
+												transf = { -0.025376113131642, -0.0015163678908721, 0.99967682361603, 0, 0.99789726734161, 0.059622317552567, 0.025421377271414, 0, -0.059641599655151, 0.99821984767914, 1.9662968497869e-07, 0, 7.9213190078735, -3.4150385856628, 0.23764653503895, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/flap2_rgt_lod1.msh",
+										name = "flap2_rgt",
+										transf = { 1, -5.00433472439e-08, -2.4885284943821e-08, 0, 5.00433472439e-08, 1, 6.0227897336063e-08, 0, 2.488527961475e-08, -6.0227897336063e-08, 1, 0, 0, 0, -3.5527135993912e-17, 1, },
+									},
+								},
+								name = "flap2_loc_rgt",
+								transf = { -0.025376113131642, 0.99789726734161, -0.059641495347023, 0, -0.0015164267970249, 0.059622213244438, 0.99821984767914, 0, 0.99967682361603, 0.025421380996704, 2.5807301540226e-07, 0, -0.041736625134945, -7.7070908546448, 3.8814010620117, 1, },
+							},
+						},
+						name = "flap_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_left_frt_lod1.msh",
+								name = "gear_d1_left_frt",
+								transf = { 0.98925286531448, 8.6483233019408e-08, 0.14621496200562, 0, -8.7422776573476e-08, 1, 2.0874252158866e-16, 0, -0.14621496200562, -1.2782518155063e-08, 0.98925286531448, 0, 15.085715293884, 0.30506554245949, 1.1486166715622, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_left_frt_lod1.msh",
+								name = "gear_d2_left_frt",
+								transf = { 0.99882531166077, -8.7320081831876e-08, 0.048455987125635, 0, -0.031146977096796, -0.76604443788528, 0.64203256368637, 0, 0.037119388580322, -0.64278763532639, -0.76514458656311, 0, 14.484612464905, 0.17641693353653, 1.0713106393814, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_right_frt_lod1.msh",
+								name = "gear_d1_right_frt",
+								transf = { 0.98925286531448, 7.8171181776997e-18, 0.14621496200562, 0, -7.7331064059663e-18, 1, -1.142979558862e-18, 0, -0.14621496200562, -4.4291150191458e-26, 0.98925286531448, 0, 15.085715293884, -0.30506554245949, 1.1486166715622, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_right_frt_lod1.msh",
+								name = "gear_d2_right_frt",
+								transf = { 0.99882531166077, -1.3877787807814e-17, 0.048455987125635, 0, 0.031146910041571, -0.76604443788528, -0.64203256368637, 0, 0.037119444459677, 0.64278763532639, -0.76514458656311, 0, 14.484612464905, -0.17641693353653, 1.0713106393814, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										children = {
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/w1_frt_lod1.msh",
+												name = "w1_frt",
+												transf = { 1, -2.0688630397445e-38, 0, 0, 2.0688630397445e-38, 1, 0, 0, 0, 0, 1, 0, -8.6300001144409, 7.3583820243625e-13, -34.58585357666, 1, },
+											},
+											{
+												materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/landinglights_gear_frt_lod1.msh",
+												name = "landinglights_gear_frt",
+												transf = { 1, -2.0688630397445e-38, 0, 0, 2.0688630397445e-38, 1, 0, 0, 0, 0, 1, 0, -1430.3298339844, 1.2250451391083e-06, -97.185844421387, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_w1_steering_frt_lod1.msh",
+										name = "gear_w1_steering_frt",
+										transf = { 0.0099999997764826, 2.4651902737144e-34, 0, 0, -2.4651902737144e-34, 0.0099999997764826, 7.1054271987823e-17, 0, 0, -7.1054271987823e-17, 0.0099999997764826, 0, 1.2207030977152e-06, 2.2074040373354e-08, -0.38514152169228, 1, },
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_frt_lod1.msh",
+								name = "gear1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 14.303297042847, -3.4324482811599e-08, 1.3570001125336, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_left_lft_lod1.msh",
+								name = "gear_d1_left_lft",
+								transf = { -1, 8.6004462218625e-08, -8.7422776573476e-08, 0, 6.7631056310802e-08, -0.20791161060333, -0.97814762592316, 0, -1.0230126434863e-07, -0.97814762592316, 0.20791161060333, 0, 1.0675001144409, 4.7750134468079, 2.3683803081512, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_left_lft_lod1.msh",
+								name = "gear_d2_left_lft",
+								transf = { -1, 8.6356401141074e-08, 8.7422776573476e-08, 0, -8.6356394035647e-08, -1, 8.7422790784331e-08, 0, 8.7422790784331e-08, 8.7422776573476e-08, 1, 0, -0.83000004291534, 4.8328828811646, 2.51708984375, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_right_lft_lod1.msh",
+								name = "gear_d1_right_lft",
+								transf = { 1, 8.7422776573476e-08, 2.4492939698681e-16, 0, -1.8176212535082e-08, 0.20791164040565, -0.97814762592316, 0, -8.5512382952402e-08, 0.97814762592316, 0.20791164040565, 0, 1.0675001144409, 3.9133567810059, 2.3683803081512, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_right_lft_lod1.msh",
+								name = "gear_d2_right_lft",
+								transf = { 1, 8.7422776573476e-08, 2.4492937051703e-16, 0, -8.7422776573476e-08, 1, -2.1412406537821e-23, 0, -2.4492937051703e-16, 9.0282846795696e-31, 1, 0, -0.83000004291534, 3.8554768562317, 2.51708984375, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_lft_lod1.msh",
+								name = "gear1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4490990638733, 4.3099999427795, 2.4278268814087, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_rotation_loc_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_rotation_loc_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_c2_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_c2_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												animations = {
+													close_wheels = {
+														params = {
+															id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_c1_lft.ani",
+														},
+														type = "FILE_REF",
+													},
+													open_wheels = {
+														params = {
+															id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_c1_lft.ani",
+														},
+														type = "FILE_REF",
+													},
+												},
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_c1_lft_lod1.msh",
+												name = "gear1_c1_lft",
+												transf = { -0.59364700317383, -9.7226902084913e-08, -0.80472546815872, 0, 1.7922864969933e-07, -1, -1.1397230714749e-08, 0, -0.80472546815872, -1.5099578831723e-07, 0.59364700317383, 0, 0.1469369828701, 3.0517577442879e-07, 0.31320232152939, 1, },
+											},
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_lft_lod1.msh",
+												name = "w2_lft",
+												transf = { 1, 0, -8.2962977645442e-31, 0, 0, 1, 1.577721810442e-30, 0, 2.3258139384692e-30, -1.577721810442e-30, 1, 0, -4.4736862037098e-05, 3.0517577442879e-07, -1.5258788721439e-07, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_c2_lft_lod1.msh",
+										name = "gear1_c2_lft",
+										transf = { -1, 1.5220035720631e-07, -8.7422776573476e-08, 0, -1.5220038562802e-07, -1, 8.7422769468049e-08, 0, -8.7422769468049e-08, 8.7422776573476e-08, 1, 0, 1.3564896583557, 4.0389335254076e-07, -1.9528266191483, 1, },
+									},
+								},
+								name = "gear_rotation_loc_lft",
+								transf = { -1, -1.5220035720631e-07, -8.7422776573476e-08, 0, 1.5220035720631e-07, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, 1.4490990638733, 4.3099999427795, 2.4278268814087, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_left_rgt_lod1.msh",
+								name = "gear_d1_left_rgt",
+								transf = { -1, 8.6004462218625e-08, -8.7422776573476e-08, 0, 6.7631056310802e-08, -0.20791161060333, -0.97814762592316, 0, -1.0230126434863e-07, -0.97814762592316, 0.20791161060333, 0, 1.0675001144409, -3.9133567810059, 2.3683803081512, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_left_rgt_lod1.msh",
+								name = "gear_d2_left_rgt",
+								transf = { -1, 8.6356401141074e-08, 8.7422776573476e-08, 0, -8.6356394035647e-08, -1, 8.7422790784331e-08, 0, 8.7422790784331e-08, 8.7422776573476e-08, 1, 0, -0.83000004291534, -3.8554768562317, 2.5170893669128, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d1_right_rgt_lod1.msh",
+								name = "gear_d1_right_rgt",
+								transf = { 1, 0, 0, 0, 0, 0.20791164040565, -0.97814762592316, 0, 0, 0.97814762592316, 0.20791164040565, 0, 1.0675001144409, -4.7750134468079, 2.3683803081512, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_d2_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_d2_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_d2_right_rgt_lod1.msh",
+								name = "gear_d2_right_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.83000004291534, -4.8328828811646, 2.5170893669128, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_rgt_lod1.msh",
+								name = "gear1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4490990638733, -4.3099999427795, 2.4278268814087, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_rotation_loc_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_rotation_loc_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_c2_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_c2_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												animations = {
+													close_wheels = {
+														params = {
+															id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_c1_rgt.ani",
+														},
+														type = "FILE_REF",
+													},
+													open_wheels = {
+														params = {
+															id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_c1_rgt.ani",
+														},
+														type = "FILE_REF",
+													},
+												},
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_c1_rgt_lod1.msh",
+												name = "gear1_c1_rgt",
+												transf = { -0.59364700317383, -6.039728361884e-08, -0.80472546815872, 0, 1.573648376052e-07, -1, -4.1034972753096e-08, 0, -0.80472546815872, -1.5099578831723e-07, 0.59364700317383, 0, 0.1469369828701, 0, 0.31320232152939, 1, },
+											},
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_rgt_lod1.msh",
+												name = "w2_rgt",
+												transf = { 1, 0, 2.1432335227921e-30, 0, 0, 1, -1.577721810442e-30, 0, 5.6551133619189e-31, 0, 1, 0, -4.4727323256666e-05, 0, -2.2888183082159e-07, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_c2_rgt_lod1.msh",
+										name = "gear1_c2_rgt",
+										transf = { -1, 8.6356401141074e-08, -8.7422776573476e-08, 0, -8.6356408246502e-08, -1, 8.7422769468049e-08, 0, -8.7422769468049e-08, 8.7422776573476e-08, 1, 0, 1.3564898967743, -1.1714158887344e-07, -1.9528266191483, 1, },
+									},
+								},
+								name = "gear_rotation_loc_rgt",
+								transf = { -1, -8.6356401141074e-08, -8.7422776573476e-08, 0, 8.6356394035647e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, 1.4490990638733, -4.3099999427795, 2.4278268814087, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.997499465942, 1.1863808631897, 1.5622659921646, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d2_lft_lod1.msh",
+						name = "d2_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7799997329712, 0.96630108356476, 3.2565100193024, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d2_rgt_lod1.msh",
+						name = "d2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.0315003395081, -1.1647782325745, 2.4093861579895, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_left/d1_c1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_left/d1_c1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_right/d1_c1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d1_c1_lft_lod1.msh",
+						name = "d1_c1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.355999946594, 1.2977896928787, 2.0750000476837, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_left/d1_c2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_left/d1_c2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_right/d1_c2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d1_c2_lft_lod1.msh",
+						name = "d1_c2_lft",
+						transf = { 6.1232342629258e-17, -1, 0, 0, -4.3711388286738e-08, -2.6765504227972e-24, -1, 0, 1, 6.1232342629258e-17, -4.3711388286738e-08, 0, 11.258489608765, 1.1096503734589, 2.3233170509338, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_left/d1_c3_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_left/d1_c3_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_right/d1_c3_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d1_c4_lft_lod1.msh",
+								name = "d1_c4_lft",
+								transf = { 1, 0, 0, 0, 0, 0.98162710666656, 0.19080899655819, 0, 0, -0.19080899655819, 0.98162710666656, 0, 1.2207030977152e-06, -0.036035802215338, -0.77700501680374, 1, },
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d1_c3_lft_lod1.msh",
+						name = "d1_c3_lft",
+						transf = { 1, 0, 0, 0, 0, 0.98162710666656, -0.19080899655819, 0, 0, 0.19080899655819, 0.98162710666656, 0, 11.281591415405, 1.109107375145, 2.9126100540161, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/landinglights_lod1.msh",
+						name = "landinglights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/beaconlights_lod1.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/positionlights_lod1.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/strobelights_lod1.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor1_lft_lod2.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3966746330261, 4.3441829681396, 3.307731628418, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor1_lft_lod2.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, -0, 0.86602538824081, 0.5, 0, 0, -0.5, 0.86602538824081, 0, 4.3966746330261, -4.3441829681396, 3.3108906745911, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_rotor.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor_b1_lft_lod2.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3966746330261, 4.3441829681396, 3.307731628418, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_rotor.mtl", "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/rotor_b1_lft_lod2.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, -0, 0.86602538824081, 0.5, 0, 0, -0.5, 0.86602538824081, 0, 4.3966746330261, -4.3441829681396, 3.3108906745911, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										children = {
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/w1_frt_lod2.msh",
+												name = "w1_frt",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.086297608911991, 1.4113092028367e-08, -0.345858335495, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear_w1_steering_frt_lod2.msh",
+										name = "gear_w1_steering_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2207030977152e-06, 2.2074040373354e-08, -0.38514152169228, 1, },
+									},
+								},
+								materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+								mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_frt_lod2.msh",
+								name = "gear1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 14.303297042847, -3.4324482811599e-08, 1.3570001125336, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_rotation_loc_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_rotation_loc_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_c2_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_c2_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_lft_lod2.msh",
+												name = "w2_lft",
+												transf = { 0.9902680516243, -6.3573018849183e-08, 0.13917309045792, 0, 6.2954327972875e-08, 1, 8.8476541648674e-09, 0, -0.13917309045792, -2.6469779601697e-23, 0.9902680516243, 0, -4.4280248403084e-05, 3.0517861659973e-07, -6.377270892699e-06, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_c2_lft_lod2.msh",
+										name = "gear1_c2_lft",
+										transf = { -0.9902680516243, 8.7764831846471e-08, -0.13917317986488, 0, -7.4743802258581e-08, -1, -9.8786500757342e-08, 0, -0.13917317986488, -8.7422776573476e-08, 0.9902680516243, 0, 1.3564896583557, 4.0389335254076e-07, -1.9528266191483, 1, },
+									},
+								},
+								name = "gear_rotation_loc_lft",
+								transf = { -1, -1.5220035720631e-07, -8.7422776573476e-08, 0, 1.5220035720631e-07, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, 1.4490990638733, 4.3099999427795, 2.4278268814087, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear_rotation_loc_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear_rotation_loc_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_wheels/gear1_c2_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_wheels/gear1_c2_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+												mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_rgt_lod2.msh",
+												name = "w2_rgt",
+												transf = { 0.9902680516243, -1.3234889800848e-23, 0.13917309045792, 0, 9.9261673506363e-24, 1, 1.0587911840679e-22, 0, -0.13917309045792, -5.2939559203394e-23, 0.9902680516243, 0, -4.4260188587941e-05, 0, -6.4514947553107e-06, 1, },
+											},
+										},
+										materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+										mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/gear1_c2_rgt_lod2.msh",
+										name = "gear1_c2_rgt",
+										transf = { -0.9902680516243, 8.5515985404072e-08, -0.13917317986488, 0, -7.2516840532444e-08, -1, -9.8473520893094e-08, 0, -0.13917317986488, -8.7422776573476e-08, 0.9902680516243, 0, 1.3564898967743, -1.1714158887344e-07, -1.9528266191483, 1, },
+									},
+								},
+								name = "gear_rotation_loc_rgt",
+								transf = { -1, -8.6356401141074e-08, -8.7422776573476e-08, 0, 8.6356394035647e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, 1.4490990638733, -4.3099999427795, 2.4278268814087, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/close_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bombardier_dhc_8_402pf_v2/open_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bombardier_dhc_8_402pf_v2/bombardier_dhc_8_lod.mtl", },
+						mesh = "vehicle/plane/bombardier_dhc_8_402pf_v2/d2_lft_lod2.msh",
+						name = "d2_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7799997329712, 0.96630108356476, 3.2565100193024, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		airVehicle = {
+			configs = {
+				{
+					aileronLeft = {
+						ids = { 8, },
+						maxAngle = 0,
+					},
+					aileronRight = {
+						ids = { 9, },
+						maxAngle = 0,
+					},
+					axleRadii = { 0.47999998927116, 0.47999998927116, },
+					axles = { "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_lft_lod0.msh", "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_rgt_lod0.msh", },
+					beaconLights = { 68, },
+					elevator = {
+						ids = { 11, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 18,
+					},
+					landingLight = { 38, 67, },
+					props = { 12, 13, },
+					propsB = { 14, 15, },
+					rudder = {
+						ids = { 10, },
+						maxAngle = 30,
+					},
+					steeringParts = { 36, },
+					strobeLights = { 70, },
+					wheelRadii = { 0.31999999284744, },
+					wheels = { "vehicle/plane/bombardier_dhc_8_402pf_v2/w1_frt_lod0.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 4, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.47999998927116, 0.47999998927116, },
+					axles = { "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_lft_lod1.msh", "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_rgt_lod1.msh", },
+					beaconLights = { 62, },
+					elevator = {
+						ids = { 6, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 18,
+					},
+					landingLight = { 33, 61, },
+					props = { 7, 8, },
+					propsB = { 9, 10, },
+					rudder = {
+						ids = { 5, },
+						maxAngle = 30,
+					},
+					steeringParts = { 31, },
+					strobeLights = { 64, },
+					wheelRadii = { 0.31999999284744, },
+					wheels = { "vehicle/plane/bombardier_dhc_8_402pf_v2/w1_frt_lod1.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { },
+						maxAngle = 0,
+					},
+					aileronRight = {
+						ids = { },
+						maxAngle = 0,
+					},
+					axleRadii = { 0.47999998927116, 0.47999998927116, },
+					axles = { "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_lft_lod2.msh", "vehicle/plane/bombardier_dhc_8_402pf_v2/w2_rgt_lod2.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { },
+						maxAngle = 0,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { 2, 3, },
+					propsB = { 4, 5, },
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.31999999284744, },
+					wheels = { "vehicle/plane/bombardier_dhc_8_402pf_v2/w1_frt_lod2.msh", },
+				},
+			},
+			idleThrust = 0,
+			maxPayload = 0,
+			maxTakeOffWeight = 30481,
+			maxThrust = 160000,
+			timeToFullThrust = 3,
+			topSpeed = 180,
+			type = "BIG",
+			weight = 17819,
+			wingArea = 64,
+		},
+		availability = {
+			yearFrom = 2000,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_PLANE_BOMBARDIER_DHC_8_402PF_DESCRIPTION"),
+			name = _("VEHICLE_PLANE_BOMBARDIER_DHC_8_402PF_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 42369,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0, 0, 0, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.30000001192093,
+					position = { -2.0557067394257, -4.34397315979, 3.2638561725616, },
+					size01 = { 0.40000000596046, 2, },
+					velocity = { -4, 0.0048523237928748, 0, },
+					velocityDampingFactor = 5,
+				},
+				{
+					child = 1,
+					color = { 0, 0, 0, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.30000001192093,
+					position = { -2.0134606361389, 4.3502011299133, 3.2640700340271, },
+					size01 = { 0.40000000596046, 2, },
+					velocity = { -4, 0.0048523237928748, 0, },
+					velocityDampingFactor = 5,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "AIR",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 71,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.929999351501, -0.52899998426437, 1.7300000190735, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 71,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.929999351501, 0.5009999871254, 1.7300000190735, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "aircraft_prop_modern",
+			},
+		},
+		transportVehicle = {
+			carrier = "AIR",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 10.101599693298, 0.89300000667572, 3.256500005722, },
+										bbMin = { -7.1999998092651, -0.89300000667572, 1.5625, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v06",
+		},
+	},
+	version = 1,
+}
+end

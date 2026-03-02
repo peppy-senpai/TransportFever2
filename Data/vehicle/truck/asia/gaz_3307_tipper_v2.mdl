@@ -1,0 +1,474 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.8740999698639, 1.3358999490738, 2.3313000202179, },
+		bbMin = { -3.118499994278, -1.3358999490738, 0.0006999671459198, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.9962999820709, 1.3358999490738, 1.1653000116348, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/gaz_3307.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/universal_body_lod0.msh",
+						name = "universal_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/gaz_3307_v2/gaz_3307_int_glass.mtl", "vehicle/truck/gaz_3307_v2/gaz_3307_glass.mtl", },
+								mesh = "vehicle/truck/gaz_3307_universal_v2/universal_glass1_left_frt_lod0.msh",
+								name = "universal_glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3379499912262, 0.4220999777317, 1.9326997995377, 1, },
+							},
+							{
+								materials = { "vehicle/truck/gaz_3307_v2/gaz_3307_int_glass.mtl", "vehicle/truck/gaz_3307_v2/gaz_3307_glass.mtl", },
+								mesh = "vehicle/truck/gaz_3307_universal_v2/universal_glass1_right_frt_lod0.msh",
+								name = "universal_glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3369998931885, -0.42294996976852, 1.9326997995377, 1, },
+							},
+							{
+								materials = { "vehicle/truck/gaz_3307_v2/gaz_3307_int_glass.mtl", "vehicle/truck/gaz_3307_v2/gaz_3307_glass.mtl", },
+								mesh = "vehicle/truck/gaz_3307_universal_v2/universal_glass1_lft_lod0.msh",
+								name = "universal_glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.91449993848801, 0.90789997577667, 1.8841999769211, 1, },
+							},
+							{
+								materials = { "vehicle/truck/gaz_3307_v2/gaz_3307_int_glass.mtl", "vehicle/truck/gaz_3307_v2/gaz_3307_glass.mtl", },
+								mesh = "vehicle/truck/gaz_3307_universal_v2/universal_glass1_rgt_lod0.msh",
+								name = "universal_glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.91449993848801, -0.90885001420975, 1.8841999769211, 1, },
+							},
+							{
+								materials = { "vehicle/truck/gaz_3307_v2/gaz_3307_int_glass.mtl", "vehicle/truck/gaz_3307_v2/gaz_3307_glass.mtl", },
+								mesh = "vehicle/truck/gaz_3307_universal_v2/universal_glass1_left_bck_lod0.msh",
+								name = "universal_glass1_left_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.32575130462646, 0.36419996619225, 1.9839998483658, 1, },
+							},
+							{
+								materials = { "vehicle/truck/gaz_3307_v2/gaz_3307_int_glass.mtl", "vehicle/truck/gaz_3307_v2/gaz_3307_glass.mtl", },
+								mesh = "vehicle/truck/gaz_3307_universal_v2/universal_glass1_right_bck_lod0.msh",
+								name = "universal_glass1_right_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.32597035169601, -0.37319999933243, 1.9839998483658, 1, },
+							},
+						},
+						name = "universal_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/gaz_3307_int.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/universal_interior_lod0.msh",
+						name = "universal_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/gaz_3307.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/universal_w1_lft_lod0.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9354997873306, 0.72608000040054, 0.47235000133514, 1, },
+					},
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/gaz_3307.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/universal_w1_rgt_lod0.msh",
+						name = "universal_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9354000091553, -0.72608000040054, 0.47235000133514, 1, },
+					},
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/gaz_3307.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/universal_w2_lod0.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8370499610901, 0.00050002336502075, 0.47235000133514, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_headlights_lod0.msh",
+						name = "tipper_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_brakelights_lod0.msh",
+						name = "tipper_brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_blinklights_lft_lod0.msh",
+						name = "tipper_blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_blinklights_rgt_lod0.msh",
+						name = "tipper_blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/gaz_3307_v2/trailers.mtl", },
+								mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_d1_lod0.msh",
+								name = "tipper_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.32390284538269, -0.0010999728692695, 0.82842701673508, 1, },
+							},
+						},
+						materials = { "vehicle/truck/gaz_3307_v2/trailers.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_body_cargo_lod0.msh",
+						name = "tipper_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7592172622681, -4.2352866103101e-08, 0.96892058849335, 1, },
+					},
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/trailers.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_frame_lod0.msh",
+						name = "tipper_frame",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/trailers.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_g_lod0.msh",
+						name = "tipper_g",
+						transf = { 0.88292741775513, 0.23825711011887, -0.40456476807594, 0, 0.41656628251076, -2.4374156055273e-05, 0.90910530090332, 0, 0.2165909409523, -0.97120207548141, -0.099271394312382, 0, -2.0520832538605, 0.00010000694601331, 0.94054263830185, 1, },
+					},
+					{
+						name = "tipper_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/gaz_3307_lod.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/universal_body_lod1.msh",
+						name = "universal_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/gaz_3307.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/universal_w1_lft_lod1.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9354996681213, 0.72608000040054, 0.47235000133514, 1, },
+					},
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/gaz_3307.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/universal_w1_rgt_lod1.msh",
+						name = "universal_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9354000091553, -0.72608000040054, 0.47235000133514, 1, },
+					},
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/gaz_3307.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/universal_w2_lod1.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8370499610901, 0.00050002336502075, 0.47235000133514, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/universal_headlights_lod1.msh",
+						name = "universal_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_brakelights_lod1.msh",
+						name = "tipper_brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/tipper_blinklights_lft_lod1.msh",
+						name = "tipper_blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/gaz_3307_universal_v2/tipper_blinklights_rgt_lod1.msh",
+						name = "tipper_blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/gaz_3307_v2/trailers.mtl", },
+								mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_d1_lod1.msh",
+								name = "tipper_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0831201076508, -0.0011000152444467, 1.7973475456238, 1, },
+							},
+						},
+						materials = { "vehicle/truck/gaz_3307_v2/trailers.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_body_cargo_lod1.msh",
+						name = "tipper_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/trailers.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_frame_lod1.msh",
+						name = "tipper_frame",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/trailers.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_g_lod1.msh",
+						name = "tipper_g",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0520832538605, 0.00010000694601331, 0.9405425786972, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/gaz_3307_v2/trailers.mtl", "vehicle/truck/gaz_3307_v2/gaz_3307.mtl", "vehicle/truck/gaz_3307_v2/gaz_3307_lod.mtl", },
+						mesh = "vehicle/truck/gaz_3307_tipper_v2/tipper_body_lod2.msh",
+						name = "tipper_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1989,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_GAZ_3307_TIPPER_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_GAZ_3307_TIPPER_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 40,
+					initialAlpha = 0.5,
+					lifeTime = 1,
+					position = { -0.8222553730011, 0.38293051719666, 0.50070005655289, },
+					size01 = { 0.050000000745058, 0.80000001192093, },
+					velocity = { -3.2000000476837, 6.8299999237061, -0.66633826494217, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/gaz_3307_universal_v2/universal_w2_lod0.msh", },
+					blinkLightsLeft = { 15, },
+					blinkLightsRight = { 16, },
+					brakeLights = { 14, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 13, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/gaz_3307_universal_v2/universal_w1_lft_lod0.msh", "vehicle/truck/gaz_3307_universal_v2/universal_w1_rgt_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/gaz_3307_universal_v2/universal_w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/gaz_3307_universal_v2/universal_w1_lft_lod1.msh", "vehicle/truck/gaz_3307_universal_v2/universal_w1_rgt_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -1.8300000429153,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 125,
+				tractiveEffort = 60,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 25,
+			weight = 10,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 21,
+					transf = { 0.9681476354599, 0, -0.25038000941277, 0, 0, 1, 0, 0, 0.25038000941277, 0, 0.9681476354599, 0, 0.54000002145767, 0.4040000140667, 0.81800001859665, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 76,
+									cargoBay = {
+										bbMax = { 2.8252999782562, 1.0989999771118, 1, },
+										bbMin = { -0.26100000739098, -1.0989999771118, 0.31900000572205, },
+										cargoFormat = "",
+										childId = 17,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 76,
+									cargoBay = {
+										bbMax = { 2.8252999782562, 1.0989999771118, 1, },
+										bbMin = { -0.26100000739098, -1.0989999771118, 0.31900000572205, },
+										cargoFormat = "",
+										childId = 17,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 76,
+									cargoBay = {
+										bbMax = { 2.8252999782562, 1.0989999771118, 1, },
+										bbMin = { -0.26100000739098, -1.0989999771118, 0.31900000572205, },
+										cargoFormat = "",
+										childId = 17,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 76,
+									cargoBay = {
+										bbMax = { 2.8252999782562, 1.0989999771118, 1, },
+										bbMin = { -0.26100000739098, -1.0989999771118, 0.31900000572205, },
+										cargoFormat = "",
+										childId = 17,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

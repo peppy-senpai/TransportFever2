@@ -1,0 +1,334 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.3314399719238, 0.99346458911896, 1.488499879837, },
+		bbMin = { -2.3375601768494, -0.99346458911896, -0.0095000267028809, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.3345000743866, 0.99346458911896, 0.74899995326996, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_interior_glass.mtl", "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_glass.mtl", },
+								mesh = "vehicle/car/subaru_legacy_kombi_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.67555046081543, 0, 1.1492544412613, 1, },
+							},
+							{
+								materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_interior_glass.mtl", "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_glass.mtl", },
+								mesh = "vehicle/car/subaru_legacy_kombi_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2333375364542, 0.67571842670441, 1.1611688137054, 1, },
+							},
+							{
+								materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_interior_glass.mtl", "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_glass.mtl", },
+								mesh = "vehicle/car/subaru_legacy_kombi_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.63791567087173, 0.65450537204742, 1.1893763542175, 1, },
+							},
+							{
+								materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_interior_glass.mtl", "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_glass.mtl", },
+								mesh = "vehicle/car/subaru_legacy_kombi_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4152497053146, 0.64960038661957, 1.1744406223297, 1, },
+							},
+							{
+								materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_interior_glass.mtl", "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_glass.mtl", },
+								mesh = "vehicle/car/subaru_legacy_kombi_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2333375364542, -0.67571842670441, 1.1611688137054, 1, },
+							},
+							{
+								materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_interior_glass.mtl", "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_glass.mtl", },
+								mesh = "vehicle/car/subaru_legacy_kombi_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.63791567087173, -0.65450537204742, 1.1893763542175, 1, },
+							},
+							{
+								materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_interior_glass.mtl", "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_glass.mtl", },
+								mesh = "vehicle/car/subaru_legacy_kombi_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4152497053146, -0.64960038661957, 1.1744406223297, 1, },
+							},
+							{
+								materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_interior_glass.mtl", "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_glass.mtl", },
+								mesh = "vehicle/car/subaru_legacy_kombi_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9615970849991, 2.9802322387695e-08, 1.1887948513031, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_interior.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3580000400543, 0.75100004673004, 0.3129999935627, 1, },
+					},
+					{
+						materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -1.5099578831723e-07, -1.2246468525852e-16, 0, 1.5099578831723e-07, -1, -1.2246465878874e-16, 0, -1.2246465878874e-16, -1.2246468525852e-16, 1, 0, 1.3580000400543, -0.75100004673004, 0.3129999935627, 1, },
+					},
+					{
+						materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2979999780655, 0, 0.3129999935627, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_lod.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_lod.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3580000400543, 0.75100004673004, 0.3129999935627, 1, },
+					},
+					{
+						materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_lod.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, 1.2246468525852e-16, 1.5099578831723e-07, 0, 2.2677265813331e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 1.3580000400543, -0.75100004673004, 0.3129999935627, 1, },
+					},
+					{
+						materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_lod.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2979999780655, 2.9802322387695e-08, 0.31300002336502, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/subaru_legacy_kombi_v2/subaru_legacy_kombi_lod.mtl", },
+						mesh = "vehicle/car/subaru_legacy_kombi_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2005,
+			yearTo = 0,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.58470588922501, 0.58470594882965, 0.60000002384186, },
+				},
+				{
+					{ 0.14509803056717, 0.14509803056717, 0.14509803056717, },
+				},
+				{
+					{ 0.18435983359814, 0.20387338101864, 0.29019606113434, },
+				},
+				{
+					{ 0.50584709644318, 0.46981927752495, 0.50980389118195, },
+				},
+				{
+					{ 0.55294120311737, 0.37666073441505, 0.15287198126316, },
+				},
+				{
+					{ 0.097993068397045, 0.23137253522873, 0.15287314355373, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/subaru_legacy_kombi_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 17, },
+					blinkLightsRight = { 18, },
+					brakeLights = { 16, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 15, },
+					steeringParts = { },
+					wheels = { "vehicle/car/subaru_legacy_kombi_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/subaru_legacy_kombi_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/subaru_legacy_kombi_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 101,
+				tractiveEffort = 6.9000000953674,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 27.777778625488,
+			weight = 1.6599999666214,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 19,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.1330000013113, 0.34000000357628, 0.053000006824732, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

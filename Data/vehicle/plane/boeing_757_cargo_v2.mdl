@@ -1,0 +1,2398 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 25.06880569458, 19.045032501221, 13.699810028076, },
+		bbMin = { -22.42822265625, -19.045032501221, 0.0017915666103363, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 23.748514175415, 19.045032501221, 6.8490090370178, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/body_lod0.msh",
+						name = "body",
+						transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 11.098062515259, -1.8616808652878, 4.8733320236206, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_glass.mtl", "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_interior_glass.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 23.383256912231, 0.43212488293648, 4.8019671440125, 1, },
+							},
+							{
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_interior_glass.mtl", "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_glass.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/glass2_left_frt_lod0.msh",
+								name = "glass2_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 22.931652069092, 1.0919219255447, 4.7723546028137, 1, },
+							},
+							{
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_glass.mtl", "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_interior_glass.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/glass3_left_frt_lod0.msh",
+								name = "glass3_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 22.436479568481, 1.2819364070892, 4.7723546028137, 1, },
+							},
+							{
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_interior_glass.mtl", "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_glass.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 23.383256912231, -0.43212500214577, 4.8019671440125, 1, },
+							},
+							{
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_glass.mtl", "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_interior_glass.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/glass2_right_frt_lod0.msh",
+								name = "glass2_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 22.931652069092, -1.091922044754, 4.7723546028137, 1, },
+							},
+							{
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_interior_glass.mtl", "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_glass.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/glass3_right_frt_lod0.msh",
+								name = "glass3_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 22.436479568481, -1.2819362878799, 4.7723546028137, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_interior.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/aileron_lft_lod0.msh",
+						name = "aileron_lft",
+						transf = { -0.29804787039757, 0.95176815986633, 0.072834730148315, 0, 0.015651896595955, -0.071419470012188, 0.99732351303101, 0, 0.95442253351212, 0.29839015007019, 0.0063894423656166, 0, -3.076874256134, 16.397436141968, 4.2995200157166, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/aileron_rgt_lod0.msh",
+						name = "aileron_rgt",
+						transf = { 0.29804790019989, 0.95176810026169, -0.072834730148315, 0, 0.015651900321245, 0.071419470012188, 0.99732351303101, 0, 0.95442253351212, -0.29839015007019, 0.0063894423656166, 0, -3.076874256134, -16.397436141968, 4.2995200157166, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 0.87688165903091, -3.8950711314101e-06, 0.48070624470711, 0, 4.4360931497067e-06, 1, 1.0697975838525e-08, 0, -0.48070624470711, 2.1230766833469e-06, 0.87688165903091, 0, -19.56717300415, -2.499999709471e-06, 9.7760801315308, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/elevator_lft_lod0.msh",
+						name = "elevator_lft",
+						transf = { -0.33660861849785, 0.93484735488892, 0.11293836683035, 0, 0.014370089396834, -0.11482360959053, 0.99328196048737, 0, 0.94153499603271, 0.33597019314766, 0.025216778740287, 0, -19.980291366577, 4.2923464775085, 5.0503940582275, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/elevator_rgt_lod0.msh",
+						name = "elevator_rgt",
+						transf = { 0.33660864830017, 0.93484735488892, -0.11293836683035, 0, 0.014370093122125, 0.11482360959053, 0.99328196048737, 0, 0.94153499603271, -0.33597022294998, 0.025216778740287, 0, -19.980291366577, -4.2923464775085, 5.0503940582275, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9875378608704, 6.51243019104, 2.1190369129181, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9875378608704, -6.51243019104, 2.1190369129181, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/flaps/flap_holder1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/flap_holder1_lft_lod0.msh",
+								name = "flap_holder1_lft",
+								transf = { -4.3558912921071e-08, 0.99651169776917, 0.083453103899956, 0, -1, -4.3711388286738e-08, -6.7294630224651e-17, 0, 3.6478511322713e-09, -0.083453103899956, 0.99651169776917, 0, -0.32171720266342, 10.940665245056, 3.713187456131, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/flaps/flap1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/flap1_lft_lod0.msh",
+								name = "flap1_lft",
+								transf = { -4.3711388286738e-08, 1, 5.3531008455944e-24, 0, -1, -4.3711388286738e-08, -1.1073197927048e-31, 0, 1.2325950468584e-31, -5.3531008455944e-24, 1, 0, 0.28122451901436, 4.1630759239197, 3.0779061317444, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/flaps/flap2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/flap2_lft_lod0.msh",
+								name = "flap2_lft",
+								transf = { -4.3558912921071e-08, 0.99651169776917, 0.083453103899956, 0, -1, -4.3711388286738e-08, -6.7294630224651e-17, 0, 3.6478511322713e-09, -0.083453103899956, 0.99651169776917, 0, -0.32171720266342, 10.940665245056, 3.713187456131, 1, },
+							},
+						},
+						name = "flap_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/flaps/flap_holder1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/flap_holder1_rgt_lod0.msh",
+								name = "flap_holder1_rgt",
+								transf = { 7.5234538599034e-08, 0.99651169776917, -0.083453103899956, 0, -1, 7.5497894158616e-08, -1.2336235489415e-16, 0, 6.3005338724054e-09, 0.083453103899956, 0.99651169776917, 0, -0.32171720266342, -10.940665245056, 3.713187456131, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/flaps/flap1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/flap1_rgt_lod0.msh",
+								name = "flap1_rgt",
+								transf = { 7.5497894158616e-08, 1, 1.2246468525852e-16, 0, -1, 7.5497894158616e-08, -1.2246467202363e-16, 0, -1.2246468525852e-16, -1.2246467202363e-16, 1, 0, 0.28122451901436, -4.1630759239197, 3.0779061317444, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/flaps/flap2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/flap2_rgt_lod0.msh",
+								name = "flap2_rgt",
+								transf = { 7.5234538599034e-08, 0.99651169776917, -0.083453103899956, 0, -1, 7.5497894158616e-08, -1.2336235489415e-16, 0, 6.3005338724054e-09, 0.083453103899956, 0.99651169776917, 0, -0.32171720266342, -10.940665245056, 3.713187456131, 1, },
+							},
+						},
+						name = "flap_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_left_frt_lod0.msh",
+								name = "gear_d1_left_frt",
+								transf = { -0.99994146823883, 0.010777648538351, -0.00094336352776736, 0, -0.008383615873754, -0.71679651737213, 0.69723200798035, 0, 0.006838321685791, 0.69719904661179, 0.71684491634369, 0, 20.317554473877, 0.43169701099396, 2.4805538654327, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_right_frt_lod0.msh",
+								name = "gear_d1_right_frt",
+								transf = { 0.99994146823883, 0.01077769510448, 0.00094336352776736, 0, -0.0083836494013667, 0.71679651737213, 0.69723200798035, 0, 0.0068383547477424, -0.69719904661179, 0.71684491634369, 0, 20.317554473877, -0.43169701099396, 2.4805538654327, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/w1_frt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/w1_frt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w1_frt_lod0.msh",
+										name = "w1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.028005599975586, 0, -2.5871841907501, 1, },
+									},
+									{
+										materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/landinglights_gear_frt_lod0.msh",
+										name = "landinglights_gear_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.50034201145172, 0, -1, 1, },
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_w1_steering_frt_lod0.msh",
+								name = "gear_w1_steering_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 19.109399795532, 0, 3.3751440048218, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_left_lft_lod0.msh",
+								name = "gear_d1_left_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.00983502343297, 3.9128847122192, 3.1551115512848, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_right_lft_lod0.msh",
+								name = "gear_d1_right_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0046266126446426, 0.16247500479221, 2.1467819213867, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_c1_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_c1_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_c1_lft_lod0.msh",
+										name = "gear_g1_c1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.1331570148468, 0, -2.2197613716125, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w2_lft_lod0.msh",
+										name = "w2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.62061810493469, 0, -2.8930418491364, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w3_lft_lod0.msh",
+										name = "w3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.59021711349487, 0, -2.8930418491364, 1, },
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_lft_lod0.msh",
+								name = "gear_g1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0014350223354995, 3.695739030838, 3.3936836719513, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_left_rgt_lod0.msh",
+								name = "gear_d1_left_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -0.0046266126446426, -0.16247500479221, 2.1467819213867, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_right_rgt_lod0.msh",
+								name = "gear_d1_right_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 0.00983502343297, -3.9128847122192, 3.1551115512848, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_c1_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_c1_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_c1_rgt_lod0.msh",
+										name = "gear_g1_c1_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, -0.1331570148468, 5.6843417590259e-16, -2.2197613716125, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w2_rgt_lod0.msh",
+										name = "w2_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, -0.62061810493469, 5.6843417590259e-16, -2.8930418491364, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w3_rgt_lod0.msh",
+										name = "w3_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, 0.59021711349487, 5.6843417590259e-16, -2.8930418491364, 1, },
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_rgt_lod0.msh",
+								name = "gear_g1_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -0.0014350223354995, -3.695739030838, 3.3936836719513, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 20.317554473877, 1.8393949270248, 4.3187041282654, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/close_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/open_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/d2_lft_lod0.msh",
+						name = "d2_lft",
+						transf = { 1, 1.7860525503011e-08, -1.8331142937343e-16, 0, -1.0197521937982e-08, 0.5709530711174, 0.82098263502121, 0, 1.4663181779895e-08, -0.82098263502121, 0.5709530711174, 0, 15.189692497253, 0.73474889993668, 6.2148008346558, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 20.317554473877, -1.8393949270248, 4.3187041282654, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/landinglights_lod0.msh",
+						name = "landinglights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/beaconlights_lod0.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/positionlights_lod0.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/strobelights_lod0.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_interior_lod.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/aileron_lft_lod1.msh",
+						name = "aileron_lft",
+						transf = { -0.29804787039757, 0.95176815986633, 0.072834730148315, 0, 0.015651896595955, -0.071419470012188, 0.99732351303101, 0, 0.95442253351212, 0.29839015007019, 0.0063894423656166, 0, -3.076874256134, 16.397436141968, 4.2995200157166, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/aileron_rgt_lod1.msh",
+						name = "aileron_rgt",
+						transf = { 0.29804790019989, 0.95176810026169, -0.072834730148315, 0, 0.015651900321245, 0.071419470012188, 0.99732351303101, 0, 0.95442253351212, -0.29839015007019, 0.0063894423656166, 0, -3.076874256134, -16.397436141968, 4.2995200157166, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 0.87688165903091, -3.8950711314101e-06, 0.48070624470711, 0, 4.4360931497067e-06, 1, 1.0697975838525e-08, 0, -0.48070624470711, 2.1230766833469e-06, 0.87688165903091, 0, -19.56717300415, -2.499999709471e-06, 9.7760801315308, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/elevator_lft_lod1.msh",
+						name = "elevator_lft",
+						transf = { -0.33660861849785, 0.93484735488892, 0.11293836683035, 0, 0.014370089396834, -0.11482360959053, 0.99328196048737, 0, 0.94153499603271, 0.33597019314766, 0.025216778740287, 0, -19.980291366577, 4.2923464775085, 5.0503940582275, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/elevator_rgt_lod1.msh",
+						name = "elevator_rgt",
+						transf = { 0.33660864830017, 0.93484735488892, -0.11293836683035, 0, 0.014370093122125, 0.11482360959053, 0.99328196048737, 0, 0.94153499603271, -0.33597022294998, 0.025216778740287, 0, -19.980291366577, -4.2923464775085, 5.0503940582275, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9875378608704, 6.51243019104, 2.1190369129181, 1, },
+					},
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9875378608704, -6.51243019104, 2.1190369129181, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/flaps/flap1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/flap1_lft_lod1.msh",
+								name = "flap1_lft",
+								transf = { -4.3711388286738e-08, 1, 5.3531008455944e-24, 0, -1, -4.3711388286738e-08, -1.1073197927048e-31, 0, 1.2325950468584e-31, -5.3531008455944e-24, 1, 0, 0.28122451901436, 4.1630759239197, 3.0779061317444, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/flaps/flap2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/flap2_lft_lod1.msh",
+								name = "flap2_lft",
+								transf = { -4.3558912921071e-08, 0.99651169776917, 0.083453103899956, 0, -1, -4.3711388286738e-08, -6.7294630224651e-17, 0, 3.6478511322713e-09, -0.083453103899956, 0.99651169776917, 0, -0.32171720266342, 10.940665245056, 3.713187456131, 1, },
+							},
+						},
+						name = "flap_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/flaps/flap1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/flap1_rgt_lod1.msh",
+								name = "flap1_rgt",
+								transf = { 7.5497894158616e-08, 1, 1.2246468525852e-16, 0, -1, 7.5497894158616e-08, -1.2246467202363e-16, 0, -1.2246468525852e-16, -1.2246467202363e-16, 1, 0, 0.28122451901436, -4.1630759239197, 3.0779061317444, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/flaps/flap2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/flap2_rgt_lod1.msh",
+								name = "flap2_rgt",
+								transf = { 7.5234538599034e-08, 0.99651169776917, -0.083453103899956, 0, -1, 7.5497894158616e-08, -1.2336235489415e-16, 0, 6.3005338724054e-09, 0.083453103899956, 0.99651169776917, 0, -0.32171720266342, -10.940665245056, 3.713187456131, 1, },
+							},
+						},
+						name = "flap_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_left_frt_lod1.msh",
+								name = "gear_d1_left_frt",
+								transf = { -0.99994146823883, 0.010777648538351, -0.00094336352776736, 0, -0.008383615873754, -0.71679651737213, 0.69723200798035, 0, 0.006838321685791, 0.69719904661179, 0.71684491634369, 0, 20.317554473877, 0.43169701099396, 2.4805538654327, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_right_frt_lod1.msh",
+								name = "gear_d1_right_frt",
+								transf = { 0.99994146823883, 0.01077769510448, 0.00094336352776736, 0, -0.0083836494013667, 0.71679651737213, 0.69723200798035, 0, 0.0068383547477424, -0.69719904661179, 0.71684491634369, 0, 20.317554473877, -0.43169701099396, 2.4805538654327, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/w1_frt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/w1_frt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w1_frt_lod1.msh",
+										name = "w1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.028347104787827, 0, -2.5871841907501, 1, },
+									},
+									{
+										materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/landinglights_gear_frt_lod1.msh",
+										name = "landinglights_gear_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.50034153461456, 0, -1, 1, },
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_w1_steering_frt_lod1.msh",
+								name = "gear_w1_steering_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 19.10938835144, 0, 3.3751440048218, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_left_lft_lod1.msh",
+								name = "gear_d1_left_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.00983502343297, 3.9128847122192, 3.1551115512848, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_right_lft_lod1.msh",
+								name = "gear_d1_right_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0046266126446426, 0.16247500479221, 2.1467819213867, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_c1_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_c1_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_c1_lft_lod1.msh",
+										name = "gear_g1_c1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.1331570148468, 0, -2.2197613716125, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w2_lft_lod1.msh",
+										name = "w2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.62061810493469, 0, -2.8930418491364, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w3_lft_lod1.msh",
+										name = "w3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.59021711349487, 0, -2.8930418491364, 1, },
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_lft_lod1.msh",
+								name = "gear_g1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0014350223354995, 3.695739030838, 3.3936836719513, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_left_rgt_lod1.msh",
+								name = "gear_d1_left_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -0.0046266126446426, -0.16247500479221, 2.1467819213867, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_d1_right_rgt_lod1.msh",
+								name = "gear_d1_right_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 0.00983502343297, -3.9128847122192, 3.1551115512848, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_c1_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_c1_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_c1_rgt_lod1.msh",
+										name = "gear_g1_c1_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, -0.1331570148468, 5.6843417590259e-16, -2.2197613716125, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w2_rgt_lod1.msh",
+										name = "w2_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, -0.62061810493469, 5.6843417590259e-16, -2.8930418491364, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w3_rgt_lod1.msh",
+										name = "w3_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, 0.59021711349487, 5.6843417590259e-16, -2.8930418491364, 1, },
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_rgt_lod1.msh",
+								name = "gear_g1_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -0.0014350223354995, -3.695739030838, 3.3936836719513, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 20.317554473877, 1.8393949270248, 4.3187041282654, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/close_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/open_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/d2_lft_lod1.msh",
+						name = "d2_lft",
+						transf = { 1, 1.7860525503011e-08, -1.8331142937343e-16, 0, -1.0197521937982e-08, 0.5709530711174, 0.82098263502121, 0, 1.4663181779895e-08, -0.82098263502121, 0.5709530711174, 0, 15.189692497253, 0.73474889993668, 6.2148008346558, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/boeing_757_cargo_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { -1, -7.8886090522101e-31, 8.7422776573476e-08, 0, 7.6427427076918e-15, -1, 8.7422776573476e-08, 0, 8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 20.317554473877, -1.8393949270248, 4.3187041282654, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/landinglights_lod1.msh",
+						name = "landinglights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/beaconlights_lod1.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/positionlights_lod1.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/strobelights_lod1.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+						mesh = "vehicle/plane/boeing_757_cargo_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/w1_frt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/w1_frt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w1_frt_lod2.msh",
+										name = "w1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.028347104787827, 0, -2.5871841907501, 1, },
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_w1_steering_frt_lod2.msh",
+								name = "gear_w1_steering_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 19.10938835144, 0, 3.3751440048218, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_c1_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_c1_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_c1_lft_lod2.msh",
+										name = "gear_g1_c1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.1331570148468, 0, -2.2197613716125, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w2_lft_lod2.msh",
+										name = "w2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.62061810493469, 0, -2.8930418491364, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w3_lft_lod2.msh",
+										name = "w3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.59021711349487, 0, -2.8930418491364, 1, },
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_lft_lod2.msh",
+								name = "gear_g1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0014350223354995, 3.695739030838, 3.3936836719513, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/close_wheels/gear_g1_c1_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/boeing_757_cargo_v2/open_wheels/gear_g1_c1_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_c1_rgt_lod2.msh",
+										name = "gear_g1_c1_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, -0.1331570148468, 5.6843417590259e-16, -2.2197613716125, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w2_rgt_lod2.msh",
+										name = "w2_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, -0.62061810493469, 5.6843417590259e-16, -2.8930418491364, 1, },
+									},
+									{
+										materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", },
+										mesh = "vehicle/plane/boeing_757_cargo_v2/w3_rgt_lod2.msh",
+										name = "w3_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, 0.59021711349487, 5.6843417590259e-16, -2.8930418491364, 1, },
+									},
+								},
+								materials = { "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_lod.mtl", "vehicle/plane/boeing_757_cargo_v2/boeing_757_cargo_additional.mtl", },
+								mesh = "vehicle/plane/boeing_757_cargo_v2/gear_g1_rgt_lod2.msh",
+								name = "gear_g1_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -0.0014350223354995, -3.695739030838, 3.3936836719513, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		airVehicle = {
+			configs = {
+				{
+					aileronLeft = {
+						ids = { 10, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 11, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.5, 0.5, 0.5, 0.5, },
+					axles = { "vehicle/plane/boeing_757_cargo_v2/w2_lft_lod0.msh", "vehicle/plane/boeing_757_cargo_v2/w3_lft_lod0.msh", "vehicle/plane/boeing_757_cargo_v2/w2_rgt_lod0.msh", "vehicle/plane/boeing_757_cargo_v2/w3_rgt_lod0.msh", },
+					beaconLights = { 49, },
+					elevator = {
+						ids = { 13, 14, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 30,
+					},
+					landingLight = { 48, },
+					props = { 15, 16, },
+					propsB = { },
+					rudder = {
+						ids = { 12, },
+						maxAngle = 30,
+					},
+					steeringParts = { 28, },
+					strobeLights = { },
+					wheelRadii = { 0.38999998569489, },
+					wheels = { "vehicle/plane/boeing_757_cargo_v2/w1_frt_lod0.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 4, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.5, 0.5, 0.5, 0.5, },
+					axles = { "vehicle/plane/boeing_757_cargo_v2/w2_lft_lod1.msh", "vehicle/plane/boeing_757_cargo_v2/w3_lft_lod1.msh", "vehicle/plane/boeing_757_cargo_v2/w2_rgt_lod1.msh", "vehicle/plane/boeing_757_cargo_v2/w3_rgt_lod1.msh", },
+					beaconLights = { 40, },
+					elevator = {
+						ids = { 6, 7, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 30,
+					},
+					landingLight = { 39, },
+					props = { 8, 9, },
+					propsB = { },
+					rudder = {
+						ids = { 5, },
+						maxAngle = 30,
+					},
+					steeringParts = { 19, },
+					strobeLights = { },
+					wheelRadii = { 0.38999998569489, },
+					wheels = { "vehicle/plane/boeing_757_cargo_v2/w1_frt_lod1.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { },
+						maxAngle = 0,
+					},
+					aileronRight = {
+						ids = { },
+						maxAngle = 0,
+					},
+					axleRadii = { 0.5, 0.5, 0.5, 0.5, },
+					axles = { "vehicle/plane/boeing_757_cargo_v2/w2_lft_lod2.msh", "vehicle/plane/boeing_757_cargo_v2/w3_lft_lod2.msh", "vehicle/plane/boeing_757_cargo_v2/w2_rgt_lod2.msh", "vehicle/plane/boeing_757_cargo_v2/w3_rgt_lod2.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { },
+						maxAngle = 0,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { },
+					propsB = { },
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.38999998569489, },
+					wheels = { "vehicle/plane/boeing_757_cargo_v2/w1_frt_lod2.msh", },
+				},
+			},
+			idleThrust = 18000,
+			maxPayload = 0,
+			maxTakeOffWeight = 115700,
+			maxThrust = 360000,
+			timeToFullThrust = 3,
+			topSpeed = 248,
+			type = "BIG",
+			weight = 57800,
+			wingArea = 181,
+		},
+		availability = {
+			yearFrom = 1984,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_PLANE_BOEING_757_CARGO_DESCRIPTION"),
+			name = _("VEHICLE_PLANE_BOEING_757_CARGO_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 42369,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "AIR",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 52,
+					transf = { 1, -1.8571629750155e-22, 1.7221280371791e-21, 0, 1.8571629750155e-22, 1, 1.7205356741103e-21, 0, -1.7221280371791e-21, -1.7205356741103e-21, 1, 0, 22.446229934692, 0.68355107307434, 3.4381990432739, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 52,
+					transf = { 1, -1.8571629750155e-22, 1.7221280371791e-21, 0, 1.8571629750155e-22, 1, 1.7205356741103e-21, 0, -1.7221280371791e-21, -1.7205356741103e-21, 1, 0, 22.446229934692, -0.66675186157227, 3.4381990432739, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "aircraft_jet_modern",
+			},
+		},
+		transportVehicle = {
+			carrier = "AIR",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { -2.9525001049042, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -13.557499885559, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 7.6525001525879, 0.99000000953674, 5.8559999465942, },
+										bbMin = { -2.9525001049042, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									cargoBay = {
+										bbMax = { 18.257499694824, 0.99000000953674, 5.8559999465942, },
+										bbMin = { 7.6525001525879, -0.99000000953674, 3.8800001144409, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 6,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

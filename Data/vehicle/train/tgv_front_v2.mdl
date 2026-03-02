@@ -1,0 +1,424 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 11.424251556396, 1.5182499885559, 5.914999961853, },
+		bbMin = { -11.063147544861, -1.5182499885559, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 11.458249092102, 1.5182499885559, 2.969349861145, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/tgv_v2/tgv_1.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/front_body_lod0.msh",
+						name = "front_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1_glass.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_glass1_left_frt_lod0.msh",
+								name = "front_glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.546898841858, 0.57684808969498, 1.8006501197815, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_interior_glass.mtl", "vehicle/train/tgv_v2/tgv_1_glass.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_glass2_left_frt_lod0.msh",
+								name = "front_glass2_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.1112213134766, 0.5850738286972, 3.0035500526428, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_interior_glass.mtl", "vehicle/train/tgv_v2/tgv_1_glass.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_glass3_left_frt_lod0.msh",
+								name = "front_glass3_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.5821499824524, 1.2424743175507, 3.0035500526428, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_interior_glass.mtl", "vehicle/train/tgv_v2/tgv_1_glass.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_glass4_left_frt_lod0.msh",
+								name = "front_glass4_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.8320755958557, 1.3645988702774, 3.0035500526428, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1_glass.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_glass1_right_frt_lod0.msh",
+								name = "front_glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.546898841858, -0.57675182819366, 1.8006501197815, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_interior_glass.mtl", "vehicle/train/tgv_v2/tgv_1_glass.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_glass2_right_frt_lod0.msh",
+								name = "front_glass2_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.1112213134766, -0.58500134944916, 3.0035500526428, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_interior_glass.mtl", "vehicle/train/tgv_v2/tgv_1_glass.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_glass3_right_frt_lod0.msh",
+								name = "front_glass3_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.5821499824524, -1.2425262928009, 3.0035500526428, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_interior_glass.mtl", "vehicle/train/tgv_v2/tgv_1_glass.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_glass4_right_frt_lod0.msh",
+								name = "front_glass4_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.8320755958557, -1.3645511865616, 3.0035500526428, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1_glass.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_glass5_top_frt_lod0.msh",
+								name = "front_glass5_top_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.5541000366211, -1.0132789611816e-06, 3.7729001045227, 1, },
+							},
+						},
+						name = "front_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/tgv_v2/tgv_interior.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/front_interior_lod0.msh",
+						name = "front_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.00025177001953125, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_b1_lod0.msh",
+								name = "front_b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_w1_lod0.msh",
+								name = "front_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4988479614258, 0, 0.4852499961853, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_w1_lod0.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.499551653862, 0, 0.4852499961853, 1, },
+							},
+						},
+						name = "front_b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.1092529296875, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_b1_lod0.msh",
+								name = "front_b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_w1_lod0.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.49880027771, 0, 0.4852499961853, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_w1_lod0.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4997005462646, 0, 0.4852499961853, 1, },
+							},
+						},
+						name = "front_b2_grp",
+						transf = { 1, 1.2246468525852e-16, 0, 0, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, 0, -8.0105094909668, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/headlights_fwd_lod0.msh",
+						name = "headlights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00033187866210938, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/taillights_fwd_lod0.msh",
+						name = "taillights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00033187866210938, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/headlights_bwd_lod0.msh",
+						name = "headlights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00033187866210938, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/taillights_bwd_lod0.msh",
+						name = "taillights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00033187866210938, 0, 0, 1, },
+					},
+					{
+						name = "front_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/tgv_v2/tgv_1_lod.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/front_body_lod1.msh",
+						name = "front_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/tgv_v2/tgv_interior_lod.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/front_interior_lod1.msh",
+						name = "front_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.00025177001953125, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1_lod.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_b1_lod1.msh",
+								name = "front_b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1_lod.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_w1_lod1.msh",
+								name = "front_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4988479614258, 0, 0.4852499961853, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1_lod.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_w1_lod1.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.499551653862, 0, 0.4852499961853, 1, },
+							},
+						},
+						name = "front_b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.1092529296875, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1_lod.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_b1_lod1.msh",
+								name = "front_b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1_lod.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_w1_lod1.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.49880027771, 0, 0.4852499961853, 1, },
+							},
+							{
+								materials = { "vehicle/train/tgv_v2/tgv_1_lod.mtl", },
+								mesh = "vehicle/train/tgv_front_v2/front_w1_lod1.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4997005462646, 0, 0.4852499961853, 1, },
+							},
+						},
+						name = "front_b2_grp",
+						transf = { 1, 1.2246468525852e-16, 0, 0, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, 0, -8.0105094909668, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/headlights_fwd_lod1.msh",
+						name = "headlights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00033187866210938, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/taillights_fwd_lod1.msh",
+						name = "taillights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00033187866210938, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/headlights_bwd_lod1.msh",
+						name = "headlights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00033187866210938, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/taillights_bwd_lod1.msh",
+						name = "taillights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00033187866210938, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/tgv_v2/tgv_1_lod.mtl", },
+						mesh = "vehicle/train/tgv_front_v2/front_body_lod2.msh",
+						name = "front_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1981,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/tgv_front_v2/front_w1_lod0.msh", },
+					backBackwardParts = { 24, },
+					backForwardParts = { 22, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 23, },
+					frontForwardParts = { 21, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/tgv_front_v2/front_w1_lod1.msh", },
+					backBackwardParts = { 14, },
+					backForwardParts = { 12, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 13, },
+					frontForwardParts = { 11, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 6.1100001335144,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -8.0100002288818,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 3225,
+					tractiveEffort = 350,
+					type = "ELECTRIC",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/train_electric_modern/horn_21_intercity125.wav",
+				name = "train_electric_modern",
+			},
+			topSpeed = 83.330001831055,
+			weight = 70,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.3759994506836, 0.72199994325638, 1.5329999923706, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = true,
+			reversible = true,
+		},
+		versioning = {
+			__version = "_v07",
+		},
+	},
+	version = 1,
+}
+end

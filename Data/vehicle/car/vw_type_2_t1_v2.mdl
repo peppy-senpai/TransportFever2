@@ -1,0 +1,322 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.1627855300903, 0.92428660392761, 1.8969686031342, },
+		bbMin = { -2.1193196773529, -0.92428654432297, -0.0090000033378601, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.1410527229309, 0.92428660392761, 0.95298433303833, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_interior_glass.mtl", "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1.mtl", },
+								mesh = "vehicle/car/vw_type_2_t1_v2/glass_left_frt_lod0.msh",
+								name = "glass_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6964448690414, 0.31688499450684, 1.4758205413818, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_glass.mtl", "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_interior_glass.mtl", },
+								mesh = "vehicle/car/vw_type_2_t1_v2/glass_right_frt_lod0.msh",
+								name = "glass_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6964448690414, -0.31688499450684, 1.4758205413818, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_interior_glass.mtl", "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1.mtl", },
+								mesh = "vehicle/car/vw_type_2_t1_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5159715414047, 0.64212286472321, 1.4758014678955, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_interior_glass.mtl", "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1.mtl", },
+								mesh = "vehicle/car/vw_type_2_t1_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0917562246323, 0.70543259382248, 1.4757958650589, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_interior_glass.mtl", "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1.mtl", },
+								mesh = "vehicle/car/vw_type_2_t1_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5159715414047, -0.64212286472321, 1.4758014678955, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_interior_glass.mtl", "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1.mtl", },
+								mesh = "vehicle/car/vw_type_2_t1_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0917562246323, -0.70543259382248, 1.4757958650589, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_interior.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1459999084473, 0.68000000715256, 0.31499999761581, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -1.5099578831723e-07, 1.2246468525852e-16, 0, 1.5099578831723e-07, -1, -1.2246469849341e-16, 0, 1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 1.1459999084473, -0.68000000715256, 0.31499999761581, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2640001773834, 1.162190084126e-16, 0.31499999761581, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/breaklights_lod0.msh",
+						name = "breaklights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_lod.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_lod.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1459999084473, 0.68000000715256, 0.31499999761581, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_lod.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -1.5099578831723e-07, -1.5099578831723e-07, 0, 1.5099577410638e-07, -1, 1.5099581673894e-07, 0, -1.5099581673894e-07, 1.5099578831723e-07, 1, 0, 1.1459999084473, -0.68000000715256, 0.31499999761581, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_lod.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2640001773834, 1.162190084126e-16, 0.31499999761581, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/headLights_lod1.msh",
+						name = "headLights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/breakLights_lod1.msh",
+						name = "breakLights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/vw_type_2_t1_v2/vw_typ_2_t1_lod.mtl", },
+						mesh = "vehicle/car/vw_type_2_t1_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 650,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1950,
+			yearTo = 2000,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.30980390310287, 0.089903868734837, 0.10570921003819, },
+				},
+				{
+					{ 0.73725485801697, 0.55678111314774, 0, },
+				},
+				{
+					{ 0.62745094299316, 0.25098034739494, 0, },
+				},
+				{
+					{ 0.18392924964428, 0.31372547149658, 0.27451619505882, },
+				},
+				{
+					{ 0.16055361926556, 0.32152527570724, 0.45490193367004, },
+				},
+				{
+					{ 0.34509801864624, 0.31753459572792, 0.2781083881855, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/vw_type_2_t1_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 15, },
+					blinkLightsRight = { 16, },
+					brakeLights = { 14, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 13, },
+					steeringParts = { },
+					wheels = { "vehicle/car/vw_type_2_t1_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/vw_type_2_t1_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/vw_type_2_t1_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 18,
+				tractiveEffort = 6.9000000953674,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 22.219999313354,
+			weight = 0.86000001430511,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 17,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1154999732971, 0.31046000123024, 0.391999989748, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

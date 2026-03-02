@@ -1,0 +1,303 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.3981521129608, 0.90505802631378, 1.6629929542542, },
+		bbMin = { -2.2514359951019, -0.90505802631378, -0.006542980670929, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.3247940540314, 0.90505802631378, 0.83476793766022, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/avant_v2/avant.mtl", },
+						mesh = "vehicle/car/avant_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/avant_v2/avant_interior_glass.mtl", "vehicle/car/avant_v2/avant_glass.mtl", },
+								mesh = "vehicle/car/avant_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.51999700069427, 0, 1.2950210571289, 1, },
+							},
+							{
+								materials = { "vehicle/car/avant_v2/avant_interior_glass.mtl", "vehicle/car/avant_v2/avant_glass.mtl", },
+								mesh = "vehicle/car/avant_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.40870195627213, 0.68231350183487, 1.2554960250854, 1, },
+							},
+							{
+								materials = { "vehicle/car/avant_v2/avant_interior_glass.mtl", "vehicle/car/avant_v2/avant_glass.mtl", },
+								mesh = "vehicle/car/avant_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.40870195627213, -0.68231350183487, 1.2554960250854, 1, },
+							},
+							{
+								materials = { "vehicle/car/avant_v2/avant_interior_glass.mtl", "vehicle/car/avant_v2/avant_glass.mtl", },
+								mesh = "vehicle/car/avant_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5065895318985, -2.9802322387695e-08, 1.2511096000671, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/avant_v2/avant_interior.mtl", },
+						mesh = "vehicle/car/avant_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/avant_v2/avant.mtl", },
+						mesh = "vehicle/car/avant_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7602155208588, 0.74125194549561, 0.35941329598427, 1, },
+					},
+					{
+						materials = { "vehicle/car/avant_v2/avant.mtl", },
+						mesh = "vehicle/car/avant_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, -1.577721810442e-30, -1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 1.7602155208588, -0.74125194549561, 0.35941326618195, 1, },
+					},
+					{
+						materials = { "vehicle/car/avant_v2/avant.mtl", },
+						mesh = "vehicle/car/avant_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3856508731842, 4.2665595492403e-17, 0.35941329598427, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/avant_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/avant_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/avant_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/avant_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 110,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/avant_v2/avant_lod.mtl", },
+						mesh = "vehicle/car/avant_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/avant_v2/avant_lod.mtl", },
+						mesh = "vehicle/car/avant_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7602155208588, 0.74125194549561, 0.35941329598427, 1, },
+					},
+					{
+						materials = { "vehicle/car/avant_v2/avant_lod.mtl", },
+						mesh = "vehicle/car/avant_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, -1.577721810442e-30, -1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 1.7602155208588, -0.74125194549561, 0.35941326618195, 1, },
+					},
+					{
+						materials = { "vehicle/car/avant_v2/avant_lod.mtl", },
+						mesh = "vehicle/car/avant_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3856508731842, 4.2665595492403e-17, 0.35941329598427, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/avant_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/avant_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/avant_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/avant_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 110,
+			visibleTo = 240,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/avant_v2/avant_lod.mtl", },
+						mesh = "vehicle/car/avant_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 240,
+			visibleTo = 600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1900,
+			yearTo = 1963,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.74117648601532, 0.69846647977829, 0.61183393001556, },
+				},
+				{
+					{ 0.55686271190643, 0.19189918041229, 0.098269887268543, },
+				},
+				{
+					{ 0.34929642081261, 0.40012684464455, 0.44313722848892, },
+				},
+				{
+					{ 0.3141176700592, 0.47462862730026, 0.60000002384186, },
+				},
+				{
+					{ 0.23528185486794, 0.33333331346512, 0.22745095193386, },
+				},
+				{
+					{ 0.29411762952805, 0.14532870054245, 0.18438576161861, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/avant_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 13, },
+					blinkLightsRight = { 14, },
+					brakeLights = { 12, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 11, },
+					steeringParts = { },
+					wheels = { "vehicle/car/avant_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/avant_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/avant_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = { },
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 50,
+				tractiveEffort = 6.9000000953674,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_old",
+			},
+			topSpeed = 13.890000343323,
+			weight = 1.6000000238419,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 15,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.019999999552965, 0.33000001311302, 0.0099999997764826, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,615 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 7.7696981430054, 1.4992716312408, 4.0141348838806, },
+		bbMin = { -7.803822517395, -1.4992681741714, -0.027899384498596, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 7.7867603302002, 1.4992699623108, 2.021017074585, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3_glass.mtl", },
+										mesh = "vehicle/train/br53_preus_g3_v2/glass1_frt_lod0.msh",
+										name = "glass1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9672293663025, 9.5367431640625e-07, 2.1406965255737, 1, },
+									},
+									{
+										materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3_glass.mtl", },
+										mesh = "vehicle/train/br53_preus_g3_v2/glass1_left_frt_lod0.msh",
+										name = "glass1_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.37002086639404, 0.40551206469536, 2.8573763370514, 1, },
+									},
+									{
+										materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3_glass.mtl", },
+										mesh = "vehicle/train/br53_preus_g3_v2/glass2_left_frt_lod0.msh",
+										name = "glass2_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.37002086639404, 0.99248105287552, 2.6163721084595, 1, },
+									},
+									{
+										materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3_glass.mtl", },
+										mesh = "vehicle/train/br53_preus_g3_v2/glass1_right_frt_lod0.msh",
+										name = "glass1_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.37002086639404, -0.40251186490059, 2.8573763370514, 1, },
+									},
+									{
+										materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3_glass.mtl", },
+										mesh = "vehicle/train/br53_preus_g3_v2/glass2_right_frt_lod0.msh",
+										name = "glass2_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.37002071738243, -0.99018925428391, 2.6163430213928, 1, },
+									},
+									{
+										materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3_glass.mtl", },
+										mesh = "vehicle/train/br53_preus_g3_v2/glass1_lft_lod0.msh",
+										name = "glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.02974246442318, 1.3627758026123, 2.5694377422333, 1, },
+									},
+									{
+										materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3_glass.mtl", },
+										mesh = "vehicle/train/br53_preus_g3_v2/glass2_lft_lod0.msh",
+										name = "glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.56894963979721, 1.3235676288605, 2.568900346756, 1, },
+									},
+									{
+										materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3_glass.mtl", },
+										mesh = "vehicle/train/br53_preus_g3_v2/glass1_rgt_lod0.msh",
+										name = "glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.02974246442318, -1.3627760410309, 2.5694377422333, 1, },
+									},
+									{
+										materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3_glass.mtl", },
+										mesh = "vehicle/train/br53_preus_g3_v2/glass2_rgt_lod0.msh",
+										name = "glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.5689497590065, -1.3235677480698, 2.568900346756, 1, },
+									},
+								},
+								name = "front_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3_transparent.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_body_tr_lod0.msh",
+								name = "front_body_tr",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_w1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_w1_lod0.msh",
+								name = "front_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0682210922241, 0, 0.63577091693878, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_w2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_w1_lod0.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0681872367859, 0, 0.63577091693878, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_w1_lod0.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6682398319244, 0, 0.63577091693878, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_r1_lod0.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0681881904602, 0, 0.63577091693878, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_r2_lod0.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0681872367859, 0, 0.34833177924156, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_r3_lod0.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0681872367859, 0, 0.34833177924156, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_headlights_fwd_lod0.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/back_coal_lod0.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.327917098999, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/back_w1_lod0.msh",
+								name = "back_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5859754085541, 0, 0.51077091693878, 1, },
+							},
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/back_w1_lod0.msh",
+								name = "back_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.035013072192669, 0, 0.51077091693878, 1, },
+							},
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/back_w1_lod0.msh",
+								name = "back_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5157395601273, 0, 0.51077091693878, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.327917098999, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3_glass_lod.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_glass_lod1.msh",
+								name = "front_glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_w1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_w1_lod1.msh",
+								name = "front_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0682210922241, 0, 0.63577091693878, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_w2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_w1_lod1.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0681872367859, 0, 0.63577091693878, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_w1_lod1.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6682398319244, 0, 0.63577091693878, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_r1_lod1.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0681881904602, 0, 0.63577091693878, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_r2_lod1.msh",
+								name = "front_r2",
+								transf = { 1, 0, -4.878847104095e-09, 0, 0, 1, 0, 0, 4.878847104095e-09, 0, 1, 0, 3.0681872367859, 0, 0.34833174943924, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/br53_preus_g3_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_r3_lod1.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0681872367859, 0, 0.34833177924156, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_headlights_fwd_lod1.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/back_coal_lod1.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.327917098999, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/back_w1_lod1.msh",
+								name = "back_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5859754085541, 0, 0.51077091693878, 1, },
+							},
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/back_w1_lod1.msh",
+								name = "back_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.035013072192669, 0, 0.51077091693878, 1, },
+							},
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/back_w1_lod1.msh",
+								name = "back_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5157395601273, 0, 0.51077091693878, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.327917098999, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/front_body_lod2.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/br53_preus_g3_v2/br53_preus_g3.mtl", },
+								mesh = "vehicle/train/br53_preus_g3_v2/back_body_lod2.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.327917098999, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1875,
+			yearTo = 1927,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_BR53_PREUS_G3_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_BR53_PREUS_G3_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.40000000596046, 0.40000000596046, 0.40000000596046, },
+					frequency = 30,
+					initialAlpha = 1,
+					lifeTime = 15,
+					position = { 6.210000038147, 0, 4.164999961853, },
+					size01 = { 0.80000001192093, 10, },
+					velocity = { 0, 0, 7, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.69999998807907, 0.69999998807907, 0.69999998807907, },
+					frequency = 16,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 5.6387996673584, 0.80800050497055, 0.62999999523163, },
+					size01 = { 0.15000000596046, 3, },
+					velocity = { 0, 3, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.69999998807907, 0.69999998807907, 0.69999998807907, },
+					frequency = 16,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 5.6387996673584, -0.86080002784729, 0.62999999523163, },
+					size01 = { 0.15000000596046, 3, },
+					velocity = { 0, -3, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/br53_preus_g3_v2/front_w1_lod0.msh", "vehicle/train/br53_preus_g3_v2/back_w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 20, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/br53_preus_g3_v2/front_w1_lod1.msh", "vehicle/train/br53_preus_g3_v2/back_w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 10, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 5.0700001716614,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = 1.6699999570847,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -2.7400000095367,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -5.8400001525879,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 200,
+					tractiveEffort = 50,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "",
+				name = "train_steam_old",
+			},
+			topSpeed = 13.890000343323,
+			weight = 38,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 21,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.69499999284744, 0.029999999329448, 1.1150000095367, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v12",
+		},
+	},
+	version = 1,
+}
+end

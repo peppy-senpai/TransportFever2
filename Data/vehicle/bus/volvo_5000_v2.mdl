@@ -1,0 +1,952 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 6.145920753479, 1.5270127058029, 3.0073757171631, },
+		bbMin = { -5.8037424087524, -1.3961884975433, -0.0079185962677002, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 5.9748315811157, 1.4616005420685, 1.5076471567154, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass1_frt_lod0.msh",
+								name = "glass1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.6122498512268, 0, 2.542546749115, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.5807347297668, 0.61781394481659, 1.6797840595245, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.5807347297668, -0.61781394481659, 1.6797840595245, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7620120048523, 1.2092108726501, 1.892822265625, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2715504169464, 1.2097012996674, 1.8372241258621, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7397185564041, 1.2097012996674, 1.8372241258621, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30318731069565, 1.2097012996674, 1.8372241258621, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass5_lft_lod0.msh",
+								name = "glass5_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1103125810623, 1.2097012996674, 1.8372241258621, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass6_lft_lod0.msh",
+								name = "glass6_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6486537456512, 1.2083666324615, 1.9484204053879, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass7_lft_lod0.msh",
+								name = "glass7_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0976095199585, 1.2083666324615, 1.9484204053879, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2789373397827, -1.2092108726501, 1.9853359460831, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7397185564041, -1.2092108726501, 1.8372241258621, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1266274452209, -1.2092108726501, 1.8372241258621, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6375000476837, -1.2083666324615, 1.9484204053879, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass5_rgt_lod0.msh",
+								name = "glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0976037979126, -1.2083666324615, 1.9484204053879, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass6_rgt_lod0.msh",
+								name = "glass6_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.1907181739807, -1.2083666324615, 1.9484204053879, 1, },
+							},
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/glass1_bck_lod0.msh",
+								name = "glass1_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7424926757813, -0.35740491747856, 2.0883119106293, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_interior.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.140928030014, 1.0849999189377, 0.48922571539879, 1, },
+					},
+					{
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 3.140928030014, -1.0849999189377, 0.48922571539879, 1, },
+					},
+					{
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5920720100403, 0, 0.48922571539879, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/d1_glass_rgt_lod0.msh",
+								name = "d1_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.28900289535522, -0.029212594032288, 1.3795462846756, 1, },
+							},
+						},
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3392496109009, -1.1699999570847, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/d2_glass_rgt_lod0.msh",
+								name = "d2_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.28886318206787, -0.029212594032288, 1.3795462846756, 1, },
+							},
+						},
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000.mtl", "vehicle/bus/volvo_5000_v2/volvo_5000_interior.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/d2_rgt_lod0.msh",
+						name = "d2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.1028747558594, -1.1699999570847, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/close_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/open_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/d3_glass_rgt_lod0.msh",
+								name = "d3_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.30317389965057, -0.0096858739852905, 1.3775370121002, 1, },
+							},
+						},
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/d3_rgt_lod0.msh",
+						name = "d3_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.95199978351593, -1.1799999475479, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/close_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/open_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_glass.mtl", },
+								mesh = "vehicle/bus/volvo_5000_v2/d4_glass_rgt_lod0.msh",
+								name = "d4_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30331987142563, -0.0096858739852905, 1.3775370121002, 1, },
+							},
+						},
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/d4_rgt_lod0.msh",
+						name = "d4_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.34562513232231, -1.1799999475479, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_brake_lights.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_lod.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_interior_lod.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_lod.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.140928030014, 1.0849999189377, 0.48922571539879, 1, },
+					},
+					{
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_lod.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 3.140928030014, -1.0849999189377, 0.48922571539879, 1, },
+					},
+					{
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_lod.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5920720100403, 0, 0.48922571539879, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_lod.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3392496109009, -1.1699999570847, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_lod.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/d2_rgt_lod1.msh",
+						name = "d2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.1028747558594, -1.1699999570847, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/close_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/open_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_lod.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/d3_rgt_lod1.msh",
+						name = "d3_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.95199978351593, -1.1799999475479, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/close_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/volvo_5000_v2/open_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_lod.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/d4_rgt_lod1.msh",
+						name = "d4_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.34562513232231, -1.1799999475479, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_brake_lights.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/volvo_5000_v2/volvo_5000_lod.mtl", },
+						mesh = "vehicle/bus/volvo_5000_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 1140,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1997,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_BUS_VOLVO_5000_DESCRIPTION"),
+			name = _("VEHICLE_BUS_VOLVO_5000_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 0.76805937290192, 0.87058824300766, 0.23557092249393, },
+					filter = "NONE",
+					fitting = "CUT",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 177, 21.599998474121, },
+					transf = { -7.5497896823151e-10, 0.0099999997764826, -6.6002362349607e-17, 0, -2.5146290306068e-24, 6.6002362349607e-17, 0.0099999997764826, 0, 0.0099999997764826, 7.5497896823151e-10, -2.5146290306068e-24, 0, 5.5749998092651, -0.88200002908707, 2.3989999294281, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 0.76805937290192, 0.87058824300766, 0.23557092249393, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 119.40000152588, 21, },
+					transf = { 0.0099999997764826, 4.371138451198e-10, -1.224646687149e-18, 0, 2.0331498923429e-17, -4.3711387287537e-10, 0.0099999997764826, 0, 4.371138451198e-10, -0.0099999997764826, -4.3711387287537e-10, 0, 2.5699999332428, -1.1840000152588, 2.4000000953674, 1, },
+					type = "NEXT_STOP",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 0.76805937290192, 0.87058824300766, 0.23557092249393, },
+					filter = "NUMBER",
+					fitting = "CUT",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 70, 18.5, },
+					transf = { 1.947071837094e-09, -0.0099999997764826, -4.6090360694695e-11, 0, 0.00061048503266647, 7.2861425226556e-11, 0.0099813463166356, 0, -0.0099813463166356, -1.9462536027248e-09, 0.00061048503266647, 0, -5.691999912262, 0.05799999460578, 2.3900001049042, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 0,
+					color = { 0.12941175699234, 0.12941175699234, 0.12941175699234, },
+					frequency = 40,
+					initialAlpha = 0.5,
+					lifeTime = 1,
+					position = { -4.4759984016418, 1.1699999570847, 0.21199998259544, },
+					size01 = { 0.10000000149012, 0.89999997615814, },
+					velocity = { 0, 4, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/bus/volvo_5000_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 34, },
+					blinkLightsRight = { 35, },
+					brakeLights = { 33, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 32, },
+					steeringParts = { },
+					wheels = { "vehicle/bus/volvo_5000_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/bus/volvo_5000_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 12, },
+					blinkLightsRight = { 13, },
+					brakeLights = { 11, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 10, },
+					steeringParts = { },
+					wheels = { "vehicle/bus/volvo_5000_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -2.5999999046326,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 120,
+				tractiveEffort = 15,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "vehicle/truck_modern/horn.wav",
+				name = "bus_modern",
+			},
+			topSpeed = 27.780000686646,
+			weight = 10,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5679998397827, 0.66699993610382, 0.60000002384186, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -2.9619996547699, -0.87459152936935, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.88999998569489, 0.43299996852875, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.539999961853, 0.43299996852875, 0.68500000238419, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.539999961853, -0.86254149675369, 0.68500000238419, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 0.97029566764832, 0.24192190170288, 0, 0, -0.24192190170288, 0.97029566764832, 0, 0, 0, 0, 1, 0, -0.92399996519089, -0.88599997758865, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.059999998658895, 0.43299996852875, 0.3759999871254, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.625, 0.43299996852875, 0.3759999871254, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3036477565765, 0.43299996852875, 0.3759999871254, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9886476993561, 0.43299996852875, 0.3759999871254, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 0.97437000274658, 0.22495102882385, 0, 0, -0.22495102882385, 0.97437000274658, 0, 0, 0, 0, 1, 0, 3.4700000286102, -0.90599995851517, 0.78199994564056, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 2.2031233310699, -0.89584231376648, 0.3759999871254, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 1.3031235933304, -0.89584231376648, 0.3759999871254, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 0.069756507873535, -0.99756407737732, 0, 0, 0.99756407737732, 0.069756507873535, 0, 0, 0, 0, 1, 0, 3.7849998474121, 0.85199993848801, 0.57400000095367, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3259999752045, 0.43299996852875, 0.79599994421005, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3259999752045, -0.86254149675369, 0.79599994421005, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8829998970032, 0.43299996852875, 0.88956809043884, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8829998970032, -0.86254149675369, 0.88956809043884, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.563000202179, -0.86254149675369, 0.88956809043884, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.563000202179, 0.43299996852875, 0.88956809043884, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2999997138977, -0.43299996852875, 0.85999995470047, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2999997138977, -0.88300001621246, 0.85999995470047, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.539999961853, 0.88300001621246, 0.68500000238419, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.539999961853, -0.41254150867462, 0.68500000238419, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 0.9914448261261, -0.13052619993687, 0, 0, 0.13052619993687, 0.9914448261261, 0, 0, 0, 0, 1, 0, -0.94199997186661, -0.44800001382828, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.059999998658895, 0.88300001621246, 0.3759999871254, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.625, 0.88300001621246, 0.3759999871254, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3036477565765, 0.88300001621246, 0.3759999871254, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 0.9681476354599, -0.25038000941277, 0, 0, 0.25038000941277, 0.9681476354599, 0, 0, 0, 0, 1, 0, 1.9886476993561, 0.88300001621246, 0.3759999871254, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 1.7531234025955, -0.89584231376648, 0.3759999871254, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3259999752045, 0.88300001621246, 0.79599994421005, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3259999752045, -0.41254150867462, 0.79599994421005, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8829998970032, 0.88300001621246, 0.88956809043884, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8829998970032, -0.41254150867462, 0.88956809043884, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.563000202179, -0.41254150867462, 0.88956809043884, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.563000202179, 0.88300001621246, 0.88956809043884, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2999997138977, 0.017000000923872, 0.85999995470047, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -2.9619996547699, 0.8709499835968, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -2.9619996547699, -0.42459151148796, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -2.9619996547699, 0.42094999551773, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 36,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.88999998569489, 0.88300001621246, 0.63999998569489, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 68,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 3,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v07",
+		},
+	},
+	version = 1,
+}
+end

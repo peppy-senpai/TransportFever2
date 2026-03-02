@@ -1,0 +1,361 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 10.969586372375, 1.7629950046539, 5.8337268829346, },
+		bbMin = { -10.581721305847, -1.7629950046539, -0.06322717666626, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 10.775653839111, 1.7629950046539, 2.9484770298004, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/speedance_express_v2/speedance.mtl", "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+						mesh = "vehicle/train/speedance_express_front_v2/front_body_lod0.msh",
+						name = "front_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.19393248856068, 7.105427357601e-15, 0.049699995666742, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_interior_glass.mtl", "vehicle/train/speedance_express_v2/speedance_glass.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_glass_left_frt_lod0.msh",
+								name = "front_glass_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.756742477417, 0.54441326856613, 3.2566664218903, 1, },
+							},
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_interior_glass.mtl", "vehicle/train/speedance_express_v2/speedance_glass.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_glass_right_frt_lod0.msh",
+								name = "front_glass_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.756742477417, -0.54441326856613, 3.2566664218903, 1, },
+							},
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_interior_glass.mtl", "vehicle/train/speedance_express_v2/speedance_glass.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_glass_lft_lod0.msh",
+								name = "front_glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.6724052429199, 1.4851626157761, 3.444625377655, 1, },
+							},
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_interior_glass.mtl", "vehicle/train/speedance_express_v2/speedance_glass.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_glass_rgt_lod0.msh",
+								name = "front_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.6854043006897, -1.4923231601715, 3.4496395587921, 1, },
+							},
+						},
+						name = "front_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/speedance_express_v2/speedance_interior.mtl", },
+						mesh = "vehicle/train/speedance_express_front_v2/front_interior_lod0.msh",
+						name = "front_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.19393248856068, 7.105427357601e-15, 0.049699995666742, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_b1_lod0.msh",
+								name = "front_b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_w1_lod0.msh",
+								name = "front_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4317644834518, -7.4130519363519e-15, 0.51490539312363, 1, },
+							},
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_w1_lod0.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4317644834518, -1.6792123247455e-15, 0.51490545272827, 1, },
+							},
+						},
+						name = "front_b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3839392662048, 7.105427357601e-15, 1.1102230246252e-16, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_b1_lod0.msh",
+								name = "front_b2",
+								transf = { 1, 0, 5.5397757069146e-24, 0, 2.6469779601697e-23, 1, -2.6469779601697e-23, 0, -2.0930003894782e-23, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_w1_lod0.msh",
+								name = "front_w3",
+								transf = { 1, 0, 5.5397757069146e-24, 0, 2.6469779601697e-23, 1, -2.6469779601697e-23, 0, -2.0930003894782e-23, 0, 1, 0, 1.4317644834518, -7.4130519363519e-15, 0.51490539312363, 1, },
+							},
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_w1_lod0.msh",
+								name = "front_w4",
+								transf = { 1, 0, 5.5397757069146e-24, 0, 2.6469779601697e-23, 1, -2.6469779601697e-23, 0, -2.0930003894782e-23, 0, 1, 0, -1.4317644834518, -1.6792123247455e-15, 0.51490545272827, 1, },
+							},
+						},
+						name = "front_b2_grp",
+						transf = { -1, -8.7422776573476e-08, -8.7422776573476e-08, 0, 8.7422769468049e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, -5.2831802368164, 7.105427357601e-15, 1.1102230246252e-16, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/speedance_express_front_v2/front_headlights_fwd_lod0.msh",
+						name = "front_headlights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/speedance_express_front_v2/front_taillights_fwd_lod0.msh",
+						name = "front_taillights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.99500000476837, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/speedance_express_front_v2/front_headlights_bwd_lod0.msh",
+						name = "front_headlights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/speedance_express_front_v2/front_taillights_bwd_lod0.msh",
+						name = "front_taillights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.99500000476837, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "front_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/speedance_express_v2/speedance_lod.mtl", "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+						mesh = "vehicle/train/speedance_express_front_v2/front_body_lod1.msh",
+						name = "front_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.19393248856068, 7.105427357601e-15, 0.049699995666742, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_b1_lod1.msh",
+								name = "front_b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_w1_lod1.msh",
+								name = "front_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4317644834518, -7.4130519363519e-15, 0.51490539312363, 1, },
+							},
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_w1_lod1.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4317644834518, -1.6792123247455e-15, 0.51490545272827, 1, },
+							},
+						},
+						name = "front_b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3839392662048, 7.105427357601e-15, 1.1102230246252e-16, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_b1_lod1.msh",
+								name = "front_b2",
+								transf = { -1, 8.7422776573476e-08, -8.7422776573476e-08, 0, -8.7422776573476e-08, -1, 8.7422769468049e-08, 0, -8.7422769468049e-08, 8.7422776573476e-08, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_w1_lod1.msh",
+								name = "front_w3",
+								transf = { -1, 8.7422776573476e-08, -8.7422776573476e-08, 0, -8.7422776573476e-08, -1, 8.7422769468049e-08, 0, -8.7422769468049e-08, 8.7422776573476e-08, 1, 0, -1.4317644834518, 1.2516885306013e-07, 0.51490539312363, 1, },
+							},
+							{
+								materials = { "vehicle/train/speedance_express_v2/speedance_detail.mtl", },
+								mesh = "vehicle/train/speedance_express_front_v2/front_w1_lod1.msh",
+								name = "front_w4",
+								transf = { -1, 8.7422776573476e-08, -8.7422776573476e-08, 0, -8.7422776573476e-08, -1, 8.7422769468049e-08, 0, -8.7422769468049e-08, 8.7422776573476e-08, 1, 0, 1.4317646026611, -1.2516883884928e-07, 0.51490539312363, 1, },
+							},
+						},
+						name = "front_b2_grp",
+						transf = { -1, -8.7422776573476e-08, -8.7422776573476e-08, 0, 8.7422769468049e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, -5.2831802368164, 7.105427357601e-15, 1.1102230246252e-16, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/speedance_express_front_v2/front_headlights_fwd_lod1.msh",
+						name = "front_headlights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/speedance_express_front_v2/front_taillights_fwd_lod1.msh",
+						name = "front_taillights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.99500000476837, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/speedance_express_front_v2/front_headlights_bwd_lod1.msh",
+						name = "front_headlights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/speedance_express_front_v2/front_taillights_bwd_lod1.msh",
+						name = "front_taillights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.99500000476837, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2000,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/speedance_express_front_v2/front_w1_lod0.msh", },
+					backBackwardParts = { 19, },
+					backForwardParts = { 17, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { 18, },
+					frontForwardParts = { 16, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/speedance_express_front_v2/front_w1_lod1.msh", },
+					backBackwardParts = { 13, },
+					backForwardParts = { 11, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 2,
+							offset = 0,
+							position = 5.3600001335144,
+							upright = false,
+						},
+						{
+							group = 6,
+							offset = 0,
+							position = -5.2800002098083,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { 12, },
+					frontForwardParts = { 10, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 4600,
+					tractiveEffort = 220,
+					type = "ELECTRIC",
+				},
+			},
+			soundSet = {
+				horn = "",
+				name = "train_electric_modern",
+			},
+			topSpeed = 66.669998168945,
+			weight = 93,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 20,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.8695487976074, 0.66690754890442, 1.8971803188324, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = true,
+			reversible = true,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

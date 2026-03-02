@@ -1,0 +1,310 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.5784783363342, 1.0451121330261, 1.3949999809265, },
+		bbMin = { -3.2400000095367, -1.0451121330261, -0.0074999928474426, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.9092392921448, 1.0451121330261, 0.70124995708466, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_interior_glass.mtl", "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_glass.mtl", },
+								mesh = "vehicle/car/cadillac_s62_deville_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.64036977291107, 0, 1.1321067810059, 1, },
+							},
+							{
+								materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_interior_glass.mtl", "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_glass.mtl", },
+								mesh = "vehicle/car/cadillac_s62_deville_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.59232288599014, 0.76857781410217, 1.123887181282, 1, },
+							},
+							{
+								materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_interior_glass.mtl", "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_glass.mtl", },
+								mesh = "vehicle/car/cadillac_s62_deville_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.59232288599014, -0.76857715845108, 1.123887181282, 1, },
+							},
+							{
+								materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_interior_glass.mtl", "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_glass.mtl", },
+								mesh = "vehicle/car/cadillac_s62_deville_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2439713478088, 0, 1.1295224428177, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_interior.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { -1, -1.5099578831723e-07, 1.2246468525852e-16, 0, 1.5099578831723e-07, -1, -1.2246469849341e-16, 0, 1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 1.6550000905991, 0.75782418251038, 0.35999998450279, 1, },
+					},
+					{
+						materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6550000905991, -0.75782418251038, 0.35999998450279, 1, },
+					},
+					{
+						materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.664999961853, 0, 0.35999998450279, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_lod.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_lod.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.6550000905991, 0.75782418251038, 0.35999998450279, 1, },
+					},
+					{
+						materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_lod.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6550000905991, -0.75782418251038, 0.35999998450279, 1, },
+					},
+					{
+						materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_lod.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.664999961853, 0, 0.35999998450279, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/cadillac_s62_deville_v2/cadillac_s62_deville_lod.mtl", },
+						mesh = "vehicle/car/cadillac_s62_deville_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1959,
+			yearTo = 1995,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.78823530673981, 0.78823530673981, 0.78823530673981, },
+				},
+				{
+					{ 0.37296423316002, 0.55294120311737, 0.50213515758514, },
+				},
+				{
+					{ 0.37254899740219, 0.062821984291077, 0.078308403491974, },
+				},
+				{
+					{ 0.20748172700405, 0.44697254896164, 0.47450977563858, },
+				},
+				{
+					{ 0.58431375026703, 0.38839676976204, 0.46676358580589, },
+				},
+				{
+					{ 0.098039209842682, 0.098039209842682, 0.098039209842682, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/cadillac_s62_deville_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 13, },
+					blinkLightsRight = { 14, },
+					brakeLights = { 12, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 11, },
+					steeringParts = { },
+					wheels = { "vehicle/car/cadillac_s62_deville_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/cadillac_s62_deville_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/cadillac_s62_deville_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 227,
+				tractiveEffort = 6.9000000953674,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_old",
+			},
+			topSpeed = 22.219999313354,
+			weight = 2.2000000476837,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 15,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.14399999380112, 0.51499998569489, -0.0020000147633255, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

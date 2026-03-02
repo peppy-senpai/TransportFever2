@@ -1,0 +1,1270 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 12.272880554199, 1.5401395559311, 4.143138885498, },
+		bbMin = { -12.272880554199, -1.5401395559311, -0.014174371957779, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 12.272880554199, 1.5401395559311, 2.0786566734314, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+						mesh = "vehicle/waggon/pullman_1900_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.866250038147, -0.014999999664724, 2.3142499923706, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.3449993133545, 1.4407300949097, 2.3674998283386, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.4809994697571, 1.4407300949097, 2.3674998283386, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6179995536804, 1.4407300949097, 2.3674998283386, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.7674999237061, 1.4407300949097, 2.3674998283386, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass5_lft_lod0.msh",
+								name = "glass5_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89699995517731, 1.4407300949097, 2.3674998283386, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass6_lft_lod0.msh",
+								name = "glass6_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89200001955032, 1.4407300949097, 2.3674998283386, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass7_lft_lod0.msh",
+								name = "glass7_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7579998970032, 1.4407300949097, 2.3674998283386, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass8_lft_lod0.msh",
+								name = "glass8_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6110000610352, 1.4407300949097, 2.3674998283386, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass9_lft_lod0.msh",
+								name = "glass9_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4699997901917, 1.4407300949097, 2.3674998283386, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass10_lft_lod0.msh",
+								name = "glass10_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.3290004730225, 1.4407300949097, 2.3674998283386, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.3320007324219, -1.4407300949097, 2.3624999523163, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.4739999771118, -1.4407300949097, 2.3624999523163, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6020002365112, -1.4407300949097, 2.3624999523163, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, -1.4407300949097, 2.3624999523163, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass5_rgt_lod0.msh",
+								name = "glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.8870000243187, -1.4407300949097, 2.3624999523163, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass6_rgt_lod0.msh",
+								name = "glass6_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89700001478195, -1.4407300949097, 2.3624999523163, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass7_rgt_lod0.msh",
+								name = "glass7_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7629997730255, -1.4407300949097, 2.3624999523163, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass8_rgt_lod0.msh",
+								name = "glass8_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6209998130798, -1.4407300949097, 2.3624999523163, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass9_rgt_lod0.msh",
+								name = "glass9_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.481999874115, -1.4407300949097, 2.3624999523163, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass10_rgt_lod0.msh",
+								name = "glass10_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.3479986190796, -1.4407300949097, 2.3624999523163, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", "vehicle/waggon/pullman_1900_v2/pullman_1900_interior_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.866250038147, 0.017500005662441, 2.3285000324249, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_interior.mtl", },
+						mesh = "vehicle/waggon/pullman_1900_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/b1_lod0.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod0.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6743633747101, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod0.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2737367036103e-15, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod0.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6743633747101, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.2059965133667, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/b1_lod0.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod0.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6743633747101, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod0.msh",
+								name = "w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2737367036103e-15, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod0.msh",
+								name = "w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6743633747101, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.2059965133667, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/d1_glass_lft_lod0.msh",
+								name = "d1_glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.36545842885971, 0, 2.2000000476837, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+						mesh = "vehicle/waggon/pullman_1900_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.589457511902, 1.3822017908096, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_all_doors/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_all_doors/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/d2_glass_lft_lod0.msh",
+								name = "d2_glass_lft",
+								transf = { 1, 0, -5.460135627397e-33, 0, 0, 1, 0, 0, -5.460135627397e-33, 0, 1, 0, -0.36045843362808, 0, 2.1979997158051, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+						mesh = "vehicle/waggon/pullman_1900_v2/d1_lft_lod0.msh",
+						name = "d2_lft",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, -11.589457511902, 1.3822017908096, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/d1_glass_rgt_lod0.msh",
+								name = "d1_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.36345842480659, 0, 2.1925001144409, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+						mesh = "vehicle/waggon/pullman_1900_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.589457511902, -1.3822017908096, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_all_doors/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_all_doors/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_glass.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/d2_glass_rgt_lod0.msh",
+								name = "d2_glass_rgt",
+								transf = { 1, 0, -5.460135627397e-33, 0, 0, 1, 0, 0, -5.460135627397e-33, 0, 1, 0, -0.36445847153664, 0, 2.1930000782013, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900.mtl", },
+						mesh = "vehicle/waggon/pullman_1900_v2/d1_rgt_lod0.msh",
+						name = "d2_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, -11.589457511902, -1.3822017908096, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+						mesh = "vehicle/waggon/pullman_1900_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/b1_lod1.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod1.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6743633747101, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod1.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2737367036103e-15, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod1.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6743633747101, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.2059965133667, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/b1_lod1.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod1.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6743633747101, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod1.msh",
+								name = "w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2737367036103e-15, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+								mesh = "vehicle/waggon/pullman_1900_v2/w1_lod1.msh",
+								name = "w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6743633747101, -2.4758761467715e-17, 0.45151737332344, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.2059965133667, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+						mesh = "vehicle/waggon/pullman_1900_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.589457511902, 1.3822017908096, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_all_doors/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_all_doors/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+						mesh = "vehicle/waggon/pullman_1900_v2/d1_lft_lod1.msh",
+						name = "d2_lft",
+						transf = { -1, -8.7422776573476e-08, -8.7422776573476e-08, 0, 8.7422769468049e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, -11.589457511902, 1.3822017908096, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+						mesh = "vehicle/waggon/pullman_1900_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.589457511902, -1.3822017908096, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_all_doors/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_all_doors/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/pullman_1900_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/pullman_1900_v2/pullman_1900_lod.mtl", },
+						mesh = "vehicle/waggon/pullman_1900_v2/d1_rgt_lod1.msh",
+						name = "d2_rgt",
+						transf = { -1, -8.7422776573476e-08, -8.7422776573476e-08, 0, 8.7422769468049e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, -11.589457511902, -1.3822017908096, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1900,
+			yearTo = 1965,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_WAGGON_PULLMAN_1900_DESCRIPTION"),
+			name = _("VEHICLE_WAGGON_PULLMAN_1900_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/waggon/pullman_1900_v2/w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/pullman_1900_v2/w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "waggon_old",
+			},
+			topSpeed = 30.559999465942,
+			weight = 40,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.7369999885559, -1.0649387836456, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8920001983643, -1.0649387836456, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0529999732971, -1.0649387836456, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2200000286102, -1.0649387836456, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3459999859333, -1.0649387836456, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4099999666214, -1.0649387836456, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.260999917984, -1.0649387836456, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.1170001029968, -1.0649387836456, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.9499998092651, -1.0649387836456, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.7889995574951, -1.0649387836456, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 8.7930002212524, 0.99608516693115, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 6.9479999542236, 0.99608516693115, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 5.1090002059937, 0.99608516693115, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 3.2760000228882, 0.99608516693115, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 1.4019999504089, 0.99608516693115, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -0.35400000214577, 0.99608516693115, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -2.2049999237061, 0.99608516693115, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -4.0609998703003, 0.99608516693115, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -5.8940000534058, 0.99608516693115, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -7.7329998016357, 0.99608516693115, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.7369999885559, 0.59906113147736, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8920001983643, 0.59906113147736, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0529999732971, 0.59906113147736, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2200000286102, 0.59906113147736, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3459999859333, 0.59906113147736, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4099999666214, 0.59906113147736, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.260999917984, 0.59906113147736, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.1170001029968, 0.59906113147736, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.9499998092651, 0.59906113147736, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.7889995574951, 0.59906113147736, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 8.7930002212524, -0.66791474819183, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 6.9479999542236, -0.66791474819183, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 5.1090002059937, -0.66791474819183, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 3.2760000228882, -0.66791474819183, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 1.4019999504089, -0.66791474819183, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -0.35400000214577, -0.66791474819183, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -2.2049999237061, -0.66791474819183, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -4.0609998703003, -0.66791474819183, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -5.8940000534058, -0.66791474819183, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -7.7329998016357, -0.66791474819183, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.7369999885559, -0.6299147605896, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8920001983643, -0.6299147605896, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0529999732971, -0.6299147605896, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2200000286102, -0.6299147605896, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3459999859333, -0.6299147605896, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4099999666214, -0.6299147605896, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.260999917984, -0.6299147605896, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.1170001029968, -0.6299147605896, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.9499998092651, -0.6299147605896, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.7889995574951, -0.6299147605896, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 8.7930002212524, 0.56106114387512, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 6.9479999542236, 0.56106114387512, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 5.1090002059937, 0.56106114387512, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 3.2760000228882, 0.56106114387512, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 1.4019999504089, 0.56106114387512, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -0.35400000214577, 0.56106114387512, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -2.2049999237061, 0.56106114387512, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -4.0609998703003, 0.56106114387512, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -5.8940000534058, 0.56106114387512, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -7.7329998016357, 0.56106114387512, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.7369999885559, 1.0340851545334, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8920001983643, 1.0340851545334, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0529999732971, 1.0340851545334, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2200000286102, 1.0340851545334, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3459999859333, 1.0340851545334, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4099999666214, 1.0340851545334, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.260999917984, 1.0340851545334, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.1170001029968, 1.0340851545334, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.9499998092651, 1.0340851545334, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.7889995574951, 1.0340851545334, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 8.7930002212524, -1.1029388904572, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 6.9479999542236, -1.1029388904572, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 5.1090002059937, -1.1029388904572, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 3.2760000228882, -1.1029388904572, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 1.4019999504089, -1.1029388904572, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -0.35400000214577, -1.1029388904572, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -2.2049999237061, -1.1029388904572, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -4.0609998703003, -1.1029388904572, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -5.8940000534058, -1.1029388904572, 1.2619999647141, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -7.7329998016357, -1.1029388904572, 1.2619999647141, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 80,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,423 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 35.714298248291, 4.7685995101929, 6.3151993751526, },
+		bbMin = { -34.278400421143, -4.7685995101929, -2.5999999046326, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 34.996349334717, 4.7685995101929, 4.4575996398926, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/viola_v3/ship_tms_viola_deck.mtl", "vehicle/ship/viola_v3/ship_tms_viola_hull.mtl", "vehicle/ship/viola_v3/ship_tms_viola_deck2.mtl", "vehicle/ship/viola_v3/ship_tms_viola_strip2.mtl", "vehicle/ship/viola_v3/ship_tms_viola_strip.mtl", "vehicle/ship/viola_v3/ship_tms_viola_unique.mtl", "vehicle/ship/viola_v3/ship_tms_viola_unique_texts.mtl", },
+						mesh = "vehicle/ship/viola_v3/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.506898880005, 0.66749995946884, 4.7205495834351, 1, },
+							},
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass2_left_frt_lod0.msh",
+								name = "glass2_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.506898880005, 2.0823998451233, 4.7205495834351, 1, },
+							},
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.506898880005, -0.66749995946884, 4.7205495834351, 1, },
+							},
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass2_right_frt_lod0.msh",
+								name = "glass2_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.506898880005, -2.0823998451233, 4.7205495834351, 1, },
+							},
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.970299720764, 2.6511998176575, 4.7205495834351, 1, },
+							},
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -17.261449813843, 2.6526498794556, 4.7205495834351, 1, },
+							},
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.970299720764, -2.6511998176575, 4.7205495834351, 1, },
+							},
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -17.261449813843, -2.6526498794556, 4.7205495834351, 1, },
+							},
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass1_left_bck_lod0.msh",
+								name = "glass1_left_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -17.868049621582, 0.66749995946884, 4.7205495834351, 1, },
+							},
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass2_left_bck_lod0.msh",
+								name = "glass2_left_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -17.868049621582, 2.0823998451233, 4.7205495834351, 1, },
+							},
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass1_right_bck_lod0.msh",
+								name = "glass1_right_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -17.868049621582, -0.66749995946884, 4.7205495834351, 1, },
+							},
+							{
+								materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_glass.mtl", },
+								mesh = "vehicle/ship/viola_v3/glass2_right_bck_lod0.msh",
+								name = "glass2_right_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -17.868049621582, -2.0823998451233, 4.7205495834351, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_interior.mtl", },
+						mesh = "vehicle/ship/viola_v3/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 350,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/viola_v3/ship_tms_viola_strip.mtl", "vehicle/ship/viola_v3/ship_tms_viola_strip2.mtl", "vehicle/ship/viola_v3/ship_tms_viola_deck.mtl", "vehicle/ship/viola_v3/ship_tms_viola_unique_lod.mtl", "vehicle/ship/viola_v3/ship_tms_viola_unique.mtl", "vehicle/ship/viola_v3/ship_tms_viola_deck2.mtl", "vehicle/ship/viola_v3/ship_tms_viola_hull.mtl", "vehicle/ship/viola_v3/ship_tms_viola_unique_texts.mtl", },
+						mesh = "vehicle/ship/viola_v3/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/viola_v3/ship_tms_viola_unique_interior_lod.mtl", },
+						mesh = "vehicle/ship/viola_v3/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 350,
+			visibleTo = 5680,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1950,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_SHIP_VIOLA_V2_DESCRIPTION"),
+			name = _("VEHICLE_SHIP_VIOLA_V2_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.20000000298023, 0.20000000298023, 0.20000000298023, },
+					frequency = 50,
+					initialAlpha = 0.050000000745058,
+					lifeTime = 6,
+					position = { -26.795099258423, 0, 5.1423001289368, },
+					size01 = { 1.2999999523163, 5, },
+					velocity = { -1.5, 0, 8, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "WATER",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 16,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -16.409999847412, -1.0779999494553, 3.4200000762939, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "ship_diesel_modern",
+			},
+		},
+		transportVehicle = {
+			carrier = "WATER",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 240,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 100,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+		waterVehicle = {
+			area = 15,
+			availPower = 2000000,
+			configs = {
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+				},
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+				},
+			},
+			maxRpm = 0,
+			topSpeed = 8.3333330154419,
+			type = "BIG",
+			waterLine = {
+				{ -33.782020568848, 0, },
+				{ -33.629760742188, -0.30368000268936, },
+				{ -33.172981262207, -0.98277997970581, },
+				{ -32.424701690674, -1.8019000291824, },
+				{ -31.397899627686, -2.5255000591278, },
+				{ -30.213310241699, -3.1252501010895, },
+				{ -28.991540908813, -3.5729200839996, },
+				{ -27.712900161743, -3.9192700386047, },
+				{ -26.357759475708, -4.2153000831604, },
+				{ -24.899379730225, -4.4482998847961, },
+				{ -23.311100006104, -4.6055998802185, },
+				{ -21.676000595093, -4.7042999267578, },
+				{ -20.102699279785, -4.7249999046326, },
+				{ 14.123600006104, -4.7249999046326, },
+				{ 23.040300369263, -4.7218999862671, },
+				{ 24.321399688721, -4.7168998718262, },
+				{ 25.686599731445, -4.6925001144409, },
+				{ 26.688800811768, -4.6262001991272, },
+				{ 27.677299499512, -4.4921998977661, },
+				{ 28.627870559692, -4.3074998855591, },
+				{ 29.5452709198, -4.0890998840332, },
+				{ 30.441120147705, -3.7950000762939, },
+				{ 31.294389724731, -3.3831000328064, },
+				{ 32.14282989502, -2.8522000312805, },
+				{ 32.79940032959, -2.2011001110077, },
+				{ 33.361888885498, -1.4959000349045, },
+				{ 33.778579711914, -0.80290001630783, },
+				{ 33.990749359131, -0.40281000733376, },
+				{ 34.077690124512, -0.25870001316071, },
+				{ 34.159660339355, 0, },
+			},
+			weight = 1100000,
+		},
+	},
+	version = 1,
+}
+end

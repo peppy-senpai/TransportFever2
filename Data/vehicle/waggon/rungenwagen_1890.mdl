@@ -1,0 +1,235 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.7000179290771, 1.5136979818344, 3.4331810474396, },
+		bbMin = { -5.7000179290771, -1.5136979818344, -0.50028097629547, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/waggon_rungenwagen_1890.mtl", },
+						mesh = "vehicle/waggon/rungenwagen_1890/lod_0_body.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/waggon_rungenwagen_1890.mtl", },
+						mesh = "vehicle/waggon/rungenwagen_1890/lod_0_w1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9695999622345, 0, 0.44020000100136, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/waggon_rungenwagen_1890.mtl", },
+						mesh = "vehicle/waggon/rungenwagen_1890/lod_0_w1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9695999622345, 0, 0.44020000100136, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/waggon_rungenwagen_1890_logo.mtl", },
+						mesh = "vehicle/waggon/rungenwagen_1890/lod_0_logo_body.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/waggon_rungenwagen_1890.mtl", },
+						mesh = "vehicle/waggon/rungenwagen_1890/lod_1_body.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/waggon_rungenwagen_1890.mtl", },
+						mesh = "vehicle/waggon/rungenwagen_1890/lod_1_w1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9695999622345, 0, 0.44020000100136, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/waggon_rungenwagen_1890.mtl", },
+						mesh = "vehicle/waggon/rungenwagen_1890/lod_1_w1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9695999622345, 0, 0.44020000100136, 1, },
+					},
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 210,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/waggon_rungenwagen_1890.mtl", },
+						mesh = "vehicle/waggon/rungenwagen_1890/lod_2_body.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/waggon_rungenwagen_1890.mtl", },
+						mesh = "vehicle/waggon/rungenwagen_1890/lod_2_w1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9695999622345, 0, 0.44020000100136, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/waggon_rungenwagen_1890.mtl", },
+						mesh = "vehicle/waggon/rungenwagen_1890/lod_2_w1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9695999622345, 0, 0.44020000100136, 1, },
+					},
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 210,
+			visibleTo = 1170,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1900,
+			yearTo = 2000,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			description = _("VEHICLE_WAGGON_RUNGENWAGEN_1890_DESCRIPTION"),
+			name = _("VEHICLE_WAGGON_RUNGENWAGEN_1890_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 32873,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/waggon/rungenwagen_1890/lod_0_w1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/rungenwagen_1890/lod_1_w1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/rungenwagen_1890/lod_2_w1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "waggon_freight_old",
+			},
+			topSpeed = 22.2222222222,
+			weight = 10,
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartments = {
+				{
+					{
+						{
+							capacity = 32,
+							cargoBay = {
+								bbMax = { 5.0001792907715, 1.3136979341507, 2.2000000476837, },
+								bbMin = { -5.0001792907715, -1.3136979341507, 1.1434, },
+								cargoFormat = "",
+								childId = 0,
+								gridSize = { },
+								sizePolicy = "STRETCH_HEIGHT_SCALEY",
+								type = "DISCRETE",
+							},
+							type = "LOGS",
+						},
+					},
+					{
+						{
+							capacity = 32,
+							cargoBay = {
+								bbMax = { 5.0001792907715, 1.3136979341507, 2.2000000476837, },
+								bbMin = { -5.0001792907715, -1.3136979341507, 1.1434, },
+								cargoFormat = "",
+								childId = 0,
+								gridSize = { },
+								sizePolicy = "BEST_FIT",
+								type = "DISCRETE",
+							},
+							type = "STEEL",
+						},
+					},
+					{
+						{
+							capacity = 32,
+							cargoBay = {
+								bbMax = { 5.0001792907715, 1.3136979341507, 2.2000000476837, },
+								bbMin = { -5.0001792907715, -1.3136979341507, 1.1434, },
+								cargoFormat = "",
+								childId = 0,
+								gridSize = { },
+								sizePolicy = "STRETCH",
+								type = "DISCRETE",
+							},
+							type = "PLANKS",
+						},
+					},
+					{
+						{
+							capacity = 32,
+							cargoBay = {
+								bbMax = { 5.0001792907715, 1.3136979341507, 2.2000000476837, },
+								bbMin = { -5.0001792907715, -1.3136979341507, 1.1434, },
+								cargoFormat = "",
+								childId = 0,
+								gridSize = { },
+								sizePolicy = "STRETCH",
+								type = "DISCRETE",
+							},
+							type = "CONSTRUCTION_MATERIALS",
+						},
+					},
+				},
+			},
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+	},
+	version = 1,
+}
+end

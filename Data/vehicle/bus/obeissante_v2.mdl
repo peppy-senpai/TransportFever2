@@ -1,0 +1,474 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.598370552063, 0.90295696258545, 3.4759101867676, },
+		bbMin = { -2.5534899234772, -0.90295696258545, -0.0034904479980469, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.5759301185608, 0.90295696258545, 1.7397003173828, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+								mesh = "vehicle/bus/obeissante_v2/w1_lft_lod0.msh",
+								name = "w1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6624412536621e-07, 0.0010374188423157, 0.54488605260849, 1, },
+							},
+						},
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/w1_lft_steering_lod0.msh",
+						name = "w1_lft_steering",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3894200325012, 0.66076099872589, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+								mesh = "vehicle/bus/obeissante_v2/w1_lft_lod0.msh",
+								name = "w1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6624412536621e-07, -0.0010374226840213, 0.54488605260849, 1, },
+							},
+						},
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/w1_rgt_steering_lod0.msh",
+						name = "w1_rgt_steering",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3894200325012, -0.66076099872589, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.93678486347198, 1.4901161193848e-07, 0.70005476474762, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/close_doors_left/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/close_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/open_doors_left/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/open_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/d1_lod0.msh",
+						name = "d1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1784150600433, -0.5871719121933, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/close_doors_left/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/close_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/open_doors_left/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/open_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/d2_lod0.msh",
+						name = "d2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1784150600433, 0.58717304468155, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 180,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+								mesh = "vehicle/bus/obeissante_v2/w1_lft_lod1.msh",
+								name = "w1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6624412536621e-07, 0.0010374188423157, 0.54488605260849, 1, },
+							},
+						},
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/w1_lft_steering_lod1.msh",
+						name = "w1_lft_steering",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3894200325012, 0.66076099872589, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+								mesh = "vehicle/bus/obeissante_v2/w1_lft_lod1.msh",
+								name = "w1_rgt",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -5.6624412536621e-07, -0.0010374226840213, 0.54488605260849, 1, },
+							},
+						},
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/w1_rgt_steering_lod1.msh",
+						name = "w1_rgt_steering",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3894200325012, -0.66076099872589, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.93678486347198, -0.0047174990177155, 0.70005476474762, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/close_doors_left/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/close_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/open_doors_left/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/open_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/d1_lod1.msh",
+						name = "d1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1784150600433, -0.5871719121933, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/close_doors_left/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/close_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/open_doors_left/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/obeissante_v2/open_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/d2_lod1.msh",
+						name = "d2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1784150600433, 0.58717304468155, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 180,
+			visibleTo = 320,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/obeissante_v2/obeissante.mtl", },
+						mesh = "vehicle/bus/obeissante_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 320,
+			visibleTo = 820,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1870,
+			yearTo = 1924,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_BUS_OBEISSANTE_DESCRIPTION"),
+			name = _("VEHICLE_BUS_OBEISSANTE_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.40000000596046, 0.40000000596046, 0.40000000596046, },
+					frequency = 50,
+					initialAlpha = 0.40000000596046,
+					lifeTime = 6,
+					position = { -1.1399999856949, 0, 3.3599998950958, },
+					size01 = { 0.10000000149012, 4, },
+					velocity = { 0, 0, 2.5, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/bus/obeissante_v2/w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 9, },
+					steeringParts = { 2, 4, },
+					wheels = { "vehicle/bus/obeissante_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/bus/obeissante_v2/w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 9, },
+					steeringParts = { 2, 4, },
+					wheels = { "vehicle/bus/obeissante_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -0.93999999761581,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 4,
+				tractiveEffort = 5,
+				type = "STEAM",
+			},
+			soundSet = {
+				horn = "",
+				name = "bus_old",
+			},
+			topSpeed = 4.7199997901917,
+			weight = 2,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 10,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4512091875076, -0.017691414803267, 1.3326189517975, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 10,
+					transf = { -4.3711388286738e-08, 1, 5.3531008455944e-24, 0, -1, -4.3711388286738e-08, -1.1073197927048e-31, 0, 1.2325951644078e-31, -5.3531008455944e-24, 1, 0, -0.15786142647266, -0.52565467357635, 1.3397895097733, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 10,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -0.15786142647266, 0.53943186998367, 1.3397895097733, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 10,
+					transf = { -4.3711388286738e-08, 1, 5.3531008455944e-24, 0, -1, -4.3711388286738e-08, -1.1073197927048e-31, 0, 1.2325951644078e-31, -5.3531008455944e-24, 1, 0, 0.42964953184128, -0.52565467357635, 1.3397895097733, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 10,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0.42964953184128, 0.53943186998367, 1.3397895097733, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 10,
+					transf = { -4.3711388286738e-08, 1, 5.3531008455944e-24, 0, -1, -4.3711388286738e-08, -1.1073197927048e-31, 0, 1.2325951644078e-31, -5.3531008455944e-24, 1, 0, 1.0169275999069, -0.52565467357635, 1.3397895097733, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 10,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 1.0169275999069, 0.53943186998367, 1.3397895097733, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v07",
+		},
+	},
+	version = 1,
+}
+end

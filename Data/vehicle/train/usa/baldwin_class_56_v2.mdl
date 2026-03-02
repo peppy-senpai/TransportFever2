@@ -1,0 +1,632 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 6.5150480270386, 1.3219599723816, 4.4000430107117, },
+		bbMin = { -10.965400695801, -1.3219599723816, -0.031010746955872, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 8.7402248382568, 1.3219599723816, 2.2155268192291, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_glass.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_glass1_left_frt_lod0.msh",
+										name = "front_glass1_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6420086622238, 0.47292742133141, 3.0010621547699, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_glass.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_glass2_left_frt_lod0.msh",
+										name = "front_glass2_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6420086622238, 0.96398800611496, 2.7755270004272, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_glass.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_glass1_right_frt_lod0.msh",
+										name = "front_glass1_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6420086622238, -0.47292742133141, 3.0010621547699, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_glass.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_glass2_right_frt_lod0.msh",
+										name = "front_glass2_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6420086622238, -0.96398800611496, 2.7755270004272, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_glass.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_glass1_lft_lod0.msh",
+										name = "front_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1377377510071, 1.2008347511292, 2.8299887180328, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_glass.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_glass2_lft_lod0.msh",
+										name = "front_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9373617172241, 1.2008347511292, 2.8299887180328, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_glass.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1377377510071, -1.2013347148895, 2.8299887180328, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_glass.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9373617172241, -1.2013347148895, 2.8299887180328, 1, },
+									},
+								},
+								name = "front_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_b1_lod0.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_w1_lod0.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.93465912342072, 4.3502616245523e-17, 0.33351057767868, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.3238084316254, 0, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_w2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_w2_lod0.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0270636081696, 9.0990015611599e-16, 0.51585501432419, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_w2_lod0.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.62055885791779, 5.4576805069009e-16, 0.51585501432419, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_w2_lod0.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.45358201861382, 5.4576805069009e-16, 0.51585501432419, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_w6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_w2_lod0.msh",
+								name = "front_w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8863085508347, 9.0990015611599e-16, 0.51585501432419, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_r1_lod0.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2253103256226, 0, 0.49278250336647, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_r2_lod0.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.62053287029266, 0, 0.21701665222645, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_r3_lod0.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.66817855834961, 0, 0.22323778271675, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_headlights_fwd_lod0.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 1.6292067073209e-07, 0, 0, -1.6292067073209e-07, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_b1_lod0.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_w1_lod0.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.66455382108688, -1.5359474749178e-16, 0.34733301401138, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_w1_lod0.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.66455382108688, 8.3475411280544e-18, 0.34733301401138, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.005167722702, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_b1_lod0.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_w1_lod0.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.66455382108688, -1.5359474749178e-16, 0.34733301401138, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_w1_lod0.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.66455382108688, -1.602727949526e-16, 0.34733301401138, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0278809070587, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.4139957427979, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_lod.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_lod.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_b1_lod1.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_lod.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/front_w1_lod1.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.93465912342072, 4.3502616245523e-17, 0.33351057767868, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.3238084316254, 0, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_w2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_lod.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_w2_lod1.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0270636081696, 9.0990015611599e-16, 0.51585501432419, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_lod.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_w2_lod1.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.62055885791779, 5.4576805069009e-16, 0.51585501432419, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_lod.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_w2_lod1.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.45358201861382, 5.4576805069009e-16, 0.51585501432419, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_w6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_lod.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_w2_lod1.msh",
+								name = "front_w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8863085508347, 9.0990015611599e-16, 0.51585501432419, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_lod.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_r1_lod1.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2253103256226, 0, 0.49278250336647, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_lod.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_r2_lod1.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.62053287029266, 0, 0.21701665222645, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/baldwin_class_56_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_lod.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_r3_lod1.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.66817855834961, 0, 0.22323778271675, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/front_headlights_fwd_lod1.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+								mesh = "vehicle/train/baldwin_class_56_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 1.6292067073209e-07, 0, 0, -1.6292067073209e-07, 1, 0, 0, 6.0041675567627, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_b1_lod1.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3841857910156e-07, 6.0041675567627, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_w1_lod1.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.66455388069153, 0.024167537689209, 0.34733301401138, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_w1_lod1.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.66455382108688, -0.00083255767822266, 0.34733301401138, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.005167722702, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_b1_lod1.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 6.0041675567627, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_w1_lod1.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.66455382108688, -0.016004085540771, 0.34733301401138, 1, },
+									},
+									{
+										materials = { "vehicle/train/baldwin_class_56_v2/baldwin_class_56_coalcar.mtl", },
+										mesh = "vehicle/train/baldwin_class_56_v2/back_w1_lod1.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.66455382108688, -4.7683715820313e-07, 0.34733301401138, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0278809070587, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.4139957427979, -6.0041675567627, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1871,
+			yearTo = 1922,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_BALDWIN_CLASS_56_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_BALDWIN_CLASS_56_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 20,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 2.831122636795, 1.0205655097961, 0.49278250336647, },
+					size01 = { 0.15000000596046, 3, },
+					velocity = { 0, 3, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 20,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 2.831122636795, -1.0381549596786, 0.49278250336647, },
+					size01 = { 0.15000000596046, 3, },
+					velocity = { 0, -3, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.39999997615814, 0.39999997615814, 0.39999997615814, },
+					frequency = 45,
+					initialAlpha = 1,
+					lifeTime = 15,
+					position = { 3.3068745136261, 0, 4.4000430107117, },
+					size01 = { 0.80000001192093, 10, },
+					velocity = { 0, 0, 9, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/baldwin_class_56_v2/front_w1_lod0.msh", "vehicle/train/baldwin_class_56_v2/front_w2_lod0.msh", "vehicle/train/baldwin_class_56_v2/back_w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 22, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/baldwin_class_56_v2/front_w1_lod1.msh", "vehicle/train/baldwin_class_56_v2/front_w2_lod1.msh", "vehicle/train/baldwin_class_56_v2/back_w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 13, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 284,
+					tractiveEffort = 70,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/train_steam_old/steam_horn_2.wav",
+				name = "train_steam_old",
+			},
+			topSpeed = 16.670000076294,
+			weight = 50,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 23,
+					transf = { 0.9681476354599, -0.25038000941277, 0, 0, 0.25038000941277, 0.9681476354599, 0, 0, 0, 0, 1, 0, -2.75, -0.68999999761581, 1.414999961853, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

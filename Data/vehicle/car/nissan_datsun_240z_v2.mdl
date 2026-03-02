@@ -1,0 +1,322 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.0330672264099, 0.8562473654747, 1.2701119184494, },
+		bbMin = { -2.1219220161438, -0.83859807252884, -0.0097739398479462, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.0774946212769, 0.84742271900177, 0.63994294404984, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_interior_glass.mtl", "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_glass.mtl", },
+								mesh = "vehicle/car/nissan_datsun_240z_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.036721006035805, -1.4901161193848e-07, 1.0520589351654, 1, },
+							},
+							{
+								materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_interior_glass.mtl", "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_glass.mtl", },
+								mesh = "vehicle/car/nissan_datsun_240z_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37490481138229, 0.63712954521179, 1.0192694664001, 1, },
+							},
+							{
+								materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_interior_glass.mtl", "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_glass.mtl", },
+								mesh = "vehicle/car/nissan_datsun_240z_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1387238502502, 0.60308873653412, 1.0100705623627, 1, },
+							},
+							{
+								materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_interior_glass.mtl", "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_glass.mtl", },
+								mesh = "vehicle/car/nissan_datsun_240z_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37490501999855, -0.63712966442108, 1.0192692279816, 1, },
+							},
+							{
+								materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_interior_glass.mtl", "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_glass.mtl", },
+								mesh = "vehicle/car/nissan_datsun_240z_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1387240886688, -0.60308861732483, 1.0100704431534, 1, },
+							},
+							{
+								materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_interior_glass.mtl", "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_glass.mtl", },
+								mesh = "vehicle/car/nissan_datsun_240z_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3385102748871, -2.9802322387695e-08, 1.0531275272369, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_interior.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1345356702805, 0.70159214735031, 0.30956330895424, 1, },
+					},
+					{
+						materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, -1.4641020129602e-07, 3.155443620884e-30, 0, -1.4641020129602e-07, -1, 1.5099578831723e-07, 0, -2.2107326142244e-14, -1.5099578831723e-07, -1, 0, 1.1345354318619, -0.70159238576889, 0.30956330895424, 1, },
+					},
+					{
+						materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1344219446182, 1.6609095609965e-07, 0.30956330895424, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/breaklights_lod0.msh",
+						name = "breaklights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_lod.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_lod.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1345356702805, 0.70159214735031, 0.30956330895424, 1, },
+					},
+					{
+						materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_lod.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, -1.4641020129602e-07, 3.155443620884e-30, 0, -1.4641020129602e-07, -1, 1.5099578831723e-07, 0, -2.2107326142244e-14, -1.5099578831723e-07, -1, 0, 1.1345354318619, -0.70159238576889, 0.30956330895424, 1, },
+					},
+					{
+						materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_lod.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1344219446182, 1.6609095609965e-07, 0.30956330895424, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/breaklights_lod1.msh",
+						name = "breaklights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/nissan_datsun_240z_v2/nissan_datsun_240z_lod.mtl", },
+						mesh = "vehicle/car/nissan_datsun_240z_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1969,
+			yearTo = 2000,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.69411766529083, 0.69411766529083, 0.69411766529083, },
+				},
+				{
+					{ 0.1098039150238, 0.1098039150238, 0.1098039150238, },
+				},
+				{
+					{ 0.20771627128124, 0.2705882191658, 0.015916952863336, },
+				},
+				{
+					{ 0.0079969232901931, 0.26248237490654, 0.40784311294556, },
+				},
+				{
+					{ 0.54136073589325, 0.63137257099152, 0.38377550244331, },
+				},
+				{
+					{ 0.47058820724487, 0.1171856969595, 0.19191555678844, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/nissan_datsun_240z_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 15, },
+					blinkLightsRight = { 16, },
+					brakeLights = { 14, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 13, },
+					steeringParts = { },
+					wheels = { "vehicle/car/nissan_datsun_240z_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/nissan_datsun_240z_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/nissan_datsun_240z_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 113,
+				tractiveEffort = 8.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 22.222221374512,
+			weight = 1.0440000295639,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 17,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.4549999833107, 0.34000000357628, -0.10699999332428, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

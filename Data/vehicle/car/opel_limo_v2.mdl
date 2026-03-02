@@ -1,0 +1,322 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.1401500701904, 1.0184999704361, 1.7285099029541, },
+		bbMin = { -2.126430273056, -1.0184998512268, 5.9992074966431e-05, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.1332902908325, 1.0184998512268, 0.86422497034073, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/opel_limo_v2/car_opel_limo.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/opel_limo_v2/car_opel_limo_glass.mtl", "vehicle/car/opel_limo_v2/car_opel_limo_interior_glass.mtl", },
+								mesh = "vehicle/car/opel_limo_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.62536495923996, 8.9406967163086e-08, 1.1428765058517, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_limo_v2/car_opel_limo_interior_glass.mtl", "vehicle/car/opel_limo_v2/car_opel_limo_glass.mtl", },
+								mesh = "vehicle/car/opel_limo_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.20851749181747, 0.6559089422226, 1.0879969596863, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_limo_v2/car_opel_limo_interior_glass.mtl", "vehicle/car/opel_limo_v2/car_opel_limo_glass.mtl", },
+								mesh = "vehicle/car/opel_limo_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.73518013954163, 0.65496003627777, 1.1081445217133, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_limo_v2/car_opel_limo_interior_glass.mtl", "vehicle/car/opel_limo_v2/car_opel_limo_glass.mtl", },
+								mesh = "vehicle/car/opel_limo_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.20851749181747, -0.6559089422226, 1.0814435482025, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_limo_v2/car_opel_limo_interior_glass.mtl", "vehicle/car/opel_limo_v2/car_opel_limo_glass.mtl", },
+								mesh = "vehicle/car/opel_limo_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.73518013954163, -0.65496003627777, 1.1081445217133, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_limo_v2/car_opel_limo_interior_glass.mtl", "vehicle/car/opel_limo_v2/car_opel_limo_glass.mtl", },
+								mesh = "vehicle/car/opel_limo_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3388715982437, 0, 1.1823790073395, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_limo_v2/car_opel_limo_interior.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 0.99999839067459, 0, 0.0017453283071518, 0, 0, 1, 0, 0, -0.0017453283071518, 0, 0.99999839067459, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_limo_v2/car_opel_limo.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.3319998979568, 0.66036301851273, 0.30300003290176, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_limo_v2/car_opel_limo.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3319998979568, -0.66036301851273, 0.30300003290176, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_limo_v2/car_opel_limo.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2879601716995, 0, 0.30300003290176, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/opel_limo_v2/car_opel_limo_lod.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_limo_v2/car_opel_limo_lod.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 1.3319998979568, 0.66036301851273, 0.30300003290176, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_limo_v2/car_opel_limo_lod.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3319998979568, -0.66036301851273, 0.30300003290176, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_limo_v2/car_opel_limo_lod.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2879602909088, 0.66036283969879, 0.30300009250641, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/opel_limo_v2/car_opel_limo_lod.mtl", },
+						mesh = "vehicle/car/opel_limo_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1998,
+			yearTo = 0,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.61960780620575, 0.40788319706917, 0.038877349346876, },
+				},
+				{
+					{ 0.61176466941833, 0.13224922120571, 0.050380617380142, },
+				},
+				{
+					{ 0.082352928817272, 0.2391666918993, 0.24705880880356, },
+				},
+				{
+					{ 0.18820452690125, 0.35683509707451, 0.45490193367004, },
+				},
+				{
+					{ 0.39607840776443, 0.22366784512997, 0.13746251165867, },
+				},
+				{
+					{ 0.27448672056198, 0.28627449274063, 0.28228384256363, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/opel_limo_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 15, },
+					blinkLightsRight = { 16, },
+					brakeLights = { 14, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.25,
+							upright = false,
+						},
+					},
+					headLights = { 13, },
+					steeringParts = { },
+					wheels = { "vehicle/car/opel_limo_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/opel_limo_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.25,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/opel_limo_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.25,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 70,
+				tractiveEffort = 10.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 27.777778625488,
+			weight = 1.1000000238419,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 17,
+					transf = { 1, 0, -2.168404344971e-19, 0, 0, 1, 0, 0, 2.168404344971e-19, 0, 1, 0, 0.1255287528038, 0.35199999809265, -0.018000420182943, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,1462 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 20.004037857056, 1.6444404125214, 5.0015997886658, },
+		bbMin = { -20.165832519531, -1.6444381475449, 0.26389998197556, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 20.236339569092, 1.7087584733963, 2.5492963790894, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+								mesh = "vehicle/train/bigboy_v2/front_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_transparent.mtl", },
+								mesh = "vehicle/train/bigboy_v2/front_body_tr_lod0.msh",
+								name = "front_body_tr",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.407642364502, -5.9604644775391e-07, 3.0119829177856, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass_left_frt_lod0.msh",
+										name = "front_glass_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.4157314300537, 1.3606476783752, 3.7173323631287, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass_right_frt_lod0.msh",
+										name = "front_glass_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.4198169708252, -1.360647559166, 3.7173323631287, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass1_lft_lod0.msh",
+										name = "front_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.0384197235107, 1.6507527828217, 3.5738518238068, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass2_lft_lod0.msh",
+										name = "front_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.398868560791, 1.5558362007141, 3.5626389980316, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass3_lft_lod0.msh",
+										name = "front_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.9089279174805, 1.5558362007141, 3.5626389980316, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass4_lft_lod0.msh",
+										name = "front_glass4_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.420139312744, 1.5558359622955, 3.5626389980316, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.0384197235107, -1.6507521867752, 3.5552308559418, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.398868560791, -1.5551315546036, 3.5626389980316, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass3_rgt_lod0.msh",
+										name = "front_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.9089279174805, -1.5551316738129, 3.5626389980316, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass4_rgt_lod0.msh",
+										name = "front_glass4_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.420139312744, -1.5551317930222, 3.5626389980316, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass_left_bck_lod0.msh",
+										name = "front_glass_left_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.033905029297, 0.37127810716629, 3.4295043945313, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_glass.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_glass_right_bck_lod0.msh",
+										name = "front_glass_right_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.991359710693, -0.35796308517456, 3.4295043945313, 1, },
+									},
+								},
+								name = "front_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_interior.mtl", },
+								mesh = "vehicle/train/bigboy_v2/front_interior_lod0.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8119812011719e-05, 2.537714317441e-05, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_b1_lod0.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										children = {
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_b1_c1_lod0.msh",
+												name = "front_b1_c1",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+											},
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_w1_lod0.msh",
+												name = "front_w1",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0995979309082, -0.012874841690063, 0.44857859611511, 1, },
+											},
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_w1_lod0.msh",
+												name = "front_w2",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.140082359314, -0.012874841690063, 0.44857859611511, 1, },
+											},
+										},
+										name = "front_b1_c1_grp",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3593425750732, 0.012877606786788, 0, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w3.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod0.msh",
+										name = "front_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8467407226563, 0.00041302712634206, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w4.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod0.msh",
+										name = "front_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.029796600341797, 0.00041302712634206, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w5.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w5_lod0.msh",
+										name = "front_w5",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8736419677734, 0.00043983245268464, 0.85620588064194, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w6.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod0.msh",
+										name = "front_w6",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6725664138794, 0.00041302712634206, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r1_lod0.msh",
+										name = "front_r1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6382631063461, 1.2391444670357e-06, 0.88499999046326, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r2.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r2_lod0.msh",
+										name = "front_r2",
+										transf = { 1, -2.1453795684412e-10, -4.6446579915482e-09, 0, 2.1453795684412e-10, 1, 2.1627684018699e-11, 0, 4.6446579915482e-09, -2.1627685753423e-11, 1, 0, -1.8717368841171, 0.016344809904695, 0.40500003099442, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r3.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r3_lod0.msh",
+										name = "front_r3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8769431114197, 0.016305411234498, 0.41440096497536, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r4.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r4_lod0.msh",
+										name = "front_r4",
+										transf = { 1, 1.3157664398022e-06, 3.6938576641887e-08, 0, -1.3157664398022e-06, 1, 9.195667161066e-08, 0, -3.6938455849622e-08, -9.1956721348652e-08, 1, 0, -1.7527368068695, 0.016663691028953, 0.86400002241135, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r5.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r5_lod0.msh",
+										name = "front_r5",
+										transf = { 1, 2.756848616059e-08, 6.0650791056105e-08, 0, -2.756849148966e-08, 1, 9.1956749770361e-08, 0, -6.0650791056105e-08, -9.1956749770361e-08, 1, 0, -0.090736903250217, 0.016668314114213, 1.4519999027252, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r6_lod0.msh",
+										name = "front_r6",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1586990356445, 0.016668463125825, 1.4827439785004, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r7_lod0.msh",
+										name = "front_r7",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9659194946289, 0.016668343916535, 1.5623993873596, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r8.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r8_lod0.msh",
+										name = "front_r8",
+										transf = { 1, 0, 1.8981799243534e-08, 0, 0, 1, 0, 0, -1.8981799243534e-08, 0, 1, 0, 2.4089317321777, 0.016862271353602, 1.5228997468948, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r9.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r9_lod0.msh",
+										name = "front_r9",
+										transf = { 1, 0, 4.7865800212321e-08, 0, 0, 1, 0, 0, -4.7865800212321e-08, 0, 1, 0, 2.3482632637024, 2.1686043965019e-06, 0.40000003576279, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r10_lod0.msh",
+										name = "front_r10",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.46335983276367, 0.022041821852326, 1.6456875801086, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r11_lod0.msh",
+										name = "front_r11",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.65689468383789, 0.016668224707246, 1.8389029502869, 1, },
+									},
+									{
+										materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_headlights_fwd_lod0.msh",
+										name = "front_headlights_fwd",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3355693817139, 0, 1.720892906189, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.378719329834, -1.8116651290256e-06, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_b2_lod0.msh",
+										name = "front_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										children = {
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_b2_c1_lod0.msh",
+												name = "front_b2_c1",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+											},
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_w11_lod0.msh",
+												name = "front_w11",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.59354305267334, 0.00010121543891728, -0.42717978358269, 1, },
+											},
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_w11_lod0.msh",
+												name = "front_w12",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0232701301575, 0.00010121543891728, -0.42717978358269, 1, },
+											},
+										},
+										name = "front_b2_c1_grp",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7895908355713, -9.91910637822e-05, 0.92081558704376, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w7.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod0.msh",
+										name = "front_w7",
+										transf = { 0.25881907343864, 0, -0.96592575311661, 0, 0, 1, 0, 0, 0.96592575311661, 0, 0.25881907343864, 0, 1.8653526306152, 0.00041294380207546, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w8.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod0.msh",
+										name = "front_w8",
+										transf = { 0.25881907343864, 0, -0.96592575311661, 0, 0, 1, 0, 0, 0.96592575311661, 0, 0.25881907343864, 0, -0.011184930801392, 0.00041294380207546, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w9.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w5_lod0.msh",
+										name = "front_w9",
+										transf = { 0.25881907343864, 0, -0.96592575311661, 0, 0, 1, 0, 0, 0.96592575311661, 0, 0.25881907343864, 0, -1.855030298233, 0.00043974912841804, 0.85620588064194, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w10.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod0.msh",
+										name = "front_w10",
+										transf = { 0.25881907343864, 0, -0.96592575311661, 0, 0, 1, 0, 0, 0.96592575311661, 0, 0.25881907343864, 0, -3.653954744339, 0.00041294380207546, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r12.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r12_lod0.msh",
+										name = "front_r12",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2372506856918, 1.0724913863669e-06, 0.88499999046326, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r13.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r2_lod0.msh",
+										name = "front_r13",
+										transf = { 0.99555766582489, 3.7634377804352e-05, -0.094153925776482, 0, 3.6022900076205e-06, 0.99999988079071, 0.00043780077248812, 0, 0.094153933227062, -0.00043619505595416, 0.9955575466156, 0, -2.2906889915466, 0.016344726085663, 0.73878020048141, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r14.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r3_lod0.msh",
+										name = "front_r14",
+										transf = { 1, 0, -2.4492937051703e-16, 0, 0, 1, 0, 0, 2.4492937051703e-16, 0, 1, 0, -2.2829556465149, 0.016305327415466, 0.74624234437943, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r15.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r4_lod0.msh",
+										name = "front_r15",
+										transf = { 0.99818444252014, 1.2556865840452e-06, 0.0602309666574, 0, -1.2652316172534e-06, 1, 1.2033649454679e-07, 0, -0.0602309666574, -1.9632415160231e-07, 0.99818444252014, 0, -1.8165293931961, 0.016663614660501, 0.74263298511505, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r16.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r5_lod0.msh",
+										name = "front_r16",
+										transf = { 0.9721896648407, -1.4549942761732e-07, -0.23419466614723, 0, 1.0344077594482e-07, 1, -1.9187184818747e-07, 0, 0.23419466614723, 1.6231057031746e-07, 0.9721896648407, 0, -0.072921946644783, 0.016668230295181, 1.4517102241516, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r6_lod0.msh",
+										name = "front_r17",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1760733127594, 0.016668379306793, 1.4827439785004, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r7_lod0.msh",
+										name = "front_r18",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9832937717438, 0.016668260097504, 1.5623993873596, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r19.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r8_lod0.msh",
+										name = "front_r19",
+										transf = { 0.92436957359314, 0, -0.38149806857109, 0, 0, 1, 0, 0, 0.38149806857109, 0, 0.92436957359314, 0, 2.4264574050903, 0.016862189397216, 1.5236628055573, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r20.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r9_lod0.msh",
+										name = "front_r20",
+										transf = { 0.98618221282959, 0, 0.16566427052021, 0, 0, 1, 0, 0, -0.16566427052021, 0, 0.98618221282959, 0, 1.9400608539581, 2.0857703475485e-06, 0.51625549793243, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r10_lod0.msh",
+										name = "front_r21",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.48073408007622, 0.022041738033295, 1.6456875801086, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r11_lod0.msh",
+										name = "front_r22",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.67426896095276, 0.016668140888214, 1.8389029502869, 1, },
+									},
+								},
+								name = "front_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3986549377441, -1.7283384750044e-06, 0, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0480175018311, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/back_b1_lod0.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/back_w13_lod0.msh",
+										name = "back_w13",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0988011360168, -4.3670956074493e-05, 0.49363577365875, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/back_w13_lod0.msh",
+										name = "back_w14",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0944805145264, -4.3670956074493e-05, 0.49363577365875, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8700873851776, 4.3417316192063e-05, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_w13_lod0.msh",
+								name = "back_w15",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0820341110229, -2.5364181510668e-07, 0.49363577365875, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_w13_lod0.msh",
+								name = "back_w16",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.43058013916016, -2.5364181510668e-07, 0.49363577365875, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_w13_lod0.msh",
+								name = "back_w17",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.938346862793, -2.5364181510668e-07, 0.49363577365875, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_w13_lod0.msh",
+								name = "back_w18",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4525537490845, -2.5364181510668e-07, 0.49363577365875, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_w13_lod0.msh",
+								name = "back_w19",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.9637746810913, -2.5364181510668e-07, 0.49363577365875, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_coal_lod0.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00018787384033203, 0.028705524280667, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_taillights_fwd_lod0.msh",
+								name = "back_taillights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00018787384033203, -2.3613397388544e-06, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.811812400818, 5.496746098288e-07, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+								mesh = "vehicle/train/bigboy_v2/front_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+								mesh = "vehicle/train/bigboy_v2/front_body_tr_lod1.msh",
+								name = "front_body_tr",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.407642364502, -5.9604644775391e-07, 3.0119829177856, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_glass_lod.mtl", },
+								mesh = "vehicle/train/bigboy_v2/front_glass_lod1.msh",
+								name = "front_glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.7080688476563, 3.5809352993965e-07, 3.4920613765717, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+								mesh = "vehicle/train/bigboy_v2/front_interior_lod1.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8119812011719e-05, 2.537714317441e-05, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_b1_lod1.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										children = {
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_b1_c1_lod1.msh",
+												name = "front_b1_c1",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+											},
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_w1_lod1.msh",
+												name = "front_w1",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0995979309082, -0.012874841690063, 0.44857859611511, 1, },
+											},
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_w1_lod1.msh",
+												name = "front_w2",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.140082359314, -0.012874841690063, 0.44857859611511, 1, },
+											},
+										},
+										name = "front_b1_c1_grp",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3593425750732, 0.012877606786788, 0, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w3.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod1.msh",
+										name = "front_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8467407226563, 0.00041302712634206, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w4.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod1.msh",
+										name = "front_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.029796600341797, 0.00041302712634206, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w5.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w5_lod1.msh",
+										name = "front_w5",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8736419677734, 0.00043983245268464, 0.85620588064194, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w6.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod1.msh",
+										name = "front_w6",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6725664138794, 0.00041302712634206, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r1_lod1.msh",
+										name = "front_r1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6382631063461, 1.2391444670357e-06, 0.88499999046326, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r2.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r2_lod1.msh",
+										name = "front_r2",
+										transf = { 1, -2.1453795684412e-10, -4.6446579915482e-09, 0, 2.1453795684412e-10, 1, 2.1627684018699e-11, 0, 4.6446579915482e-09, -2.1627685753423e-11, 1, 0, -1.8717368841171, 0.016344809904695, 0.40500003099442, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r3.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r3_lod1.msh",
+										name = "front_r3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8769431114197, 0.016305411234498, 0.41440096497536, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r4.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r4_lod1.msh",
+										name = "front_r4",
+										transf = { 1, 1.3157664398022e-06, 3.6938576641887e-08, 0, -1.3157664398022e-06, 1, 9.195667161066e-08, 0, -3.6938455849622e-08, -9.1956721348652e-08, 1, 0, -1.7527368068695, 0.016663691028953, 0.86400002241135, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r5.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r5_lod1.msh",
+										name = "front_r5",
+										transf = { 1, 2.756848616059e-08, 6.0650791056105e-08, 0, -2.756849148966e-08, 1, 9.1956749770361e-08, 0, -6.0650791056105e-08, -9.1956749770361e-08, 1, 0, -0.090736903250217, 0.016668314114213, 1.4519999027252, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r6_lod1.msh",
+										name = "front_r6",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1586990356445, 0.016668463125825, 1.4827439785004, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r7_lod1.msh",
+										name = "front_r7",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9659194946289, 0.016668343916535, 1.5623993873596, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r8.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r8_lod1.msh",
+										name = "front_r8",
+										transf = { 1, 0, 1.8981799243534e-08, 0, 0, 1, 0, 0, -1.8981799243534e-08, 0, 1, 0, 2.4089317321777, 0.016862271353602, 1.5228997468948, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r9.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r9_lod1.msh",
+										name = "front_r9",
+										transf = { 1, 0, 4.7865800212321e-08, 0, 0, 1, 0, 0, -4.7865800212321e-08, 0, 1, 0, 2.3482632637024, 2.1686043965019e-06, 0.40000003576279, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r10_lod1.msh",
+										name = "front_r10",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.46335983276367, 0.022041821852326, 1.6456875801086, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r11_lod1.msh",
+										name = "front_r11",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.65689468383789, 0.016668224707246, 1.8389029502869, 1, },
+									},
+									{
+										materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_headlights_fwd_lod1.msh",
+										name = "front_headlights_fwd",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3355693817139, 0, 1.720892906189, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.378719329834, -1.8116651290256e-06, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_b2_lod1.msh",
+										name = "front_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										children = {
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_b2_c1_lod1.msh",
+												name = "front_b2_c1",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+											},
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_w11_lod1.msh",
+												name = "front_w11",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.59354305267334, 0.00010121543891728, -0.42717978358269, 1, },
+											},
+											{
+												materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+												mesh = "vehicle/train/bigboy_v2/front_w11_lod1.msh",
+												name = "front_w12",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0232701301575, 0.00010121543891728, -0.42717978358269, 1, },
+											},
+										},
+										name = "front_b2_c1_grp",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7895908355713, -9.91910637822e-05, 0.92081558704376, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w7.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod1.msh",
+										name = "front_w7",
+										transf = { 0.25881907343864, 0, -0.96592575311661, 0, 0, 1, 0, 0, 0.96592575311661, 0, 0.25881907343864, 0, 1.8653526306152, 0.00041294380207546, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w8.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod1.msh",
+										name = "front_w8",
+										transf = { 0.25881907343864, 0, -0.96592575311661, 0, 0, 1, 0, 0, 0.96592575311661, 0, 0.25881907343864, 0, -0.011184930801392, 0.00041294380207546, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w9.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w5_lod1.msh",
+										name = "front_w9",
+										transf = { 0.25881907343864, 0, -0.96592575311661, 0, 0, 1, 0, 0, 0.96592575311661, 0, 0.25881907343864, 0, -1.855030298233, 0.00043974912841804, 0.85620588064194, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_w10.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_w3_lod1.msh",
+										name = "front_w10",
+										transf = { 0.25881907343864, 0, -0.96592575311661, 0, 0, 1, 0, 0, 0.96592575311661, 0, 0.25881907343864, 0, -3.653954744339, 0.00041294380207546, 0.85620582103729, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r12.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r12_lod1.msh",
+										name = "front_r12",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2372506856918, 1.0724913863669e-06, 0.88499999046326, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r13.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r2_lod1.msh",
+										name = "front_r13",
+										transf = { 0.99555766582489, 3.7634377804352e-05, -0.094153925776482, 0, 3.6022900076205e-06, 0.99999988079071, 0.00043780077248812, 0, 0.094153933227062, -0.00043619505595416, 0.9955575466156, 0, -2.2906889915466, 0.016344726085663, 0.73878020048141, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r14.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r3_lod1.msh",
+										name = "front_r14",
+										transf = { 1, 0, -2.4492937051703e-16, 0, 0, 1, 0, 0, 2.4492937051703e-16, 0, 1, 0, -2.2829556465149, 0.016305327415466, 0.74624234437943, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r15.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r4_lod1.msh",
+										name = "front_r15",
+										transf = { 0.99818444252014, 1.2556865840452e-06, 0.0602309666574, 0, -1.2652316172534e-06, 1, 1.2033649454679e-07, 0, -0.0602309666574, -1.9632415160231e-07, 0.99818444252014, 0, -1.8165293931961, 0.016663614660501, 0.74263298511505, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r16.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r5_lod1.msh",
+										name = "front_r16",
+										transf = { 0.9721896648407, -1.4549942761732e-07, -0.23419466614723, 0, 1.0344077594482e-07, 1, -1.9187184818747e-07, 0, 0.23419466614723, 1.6231057031746e-07, 0.9721896648407, 0, -0.072921946644783, 0.016668230295181, 1.4517102241516, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r6_lod1.msh",
+										name = "front_r17",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1760733127594, 0.016668379306793, 1.4827439785004, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r7_lod1.msh",
+										name = "front_r18",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9832937717438, 0.016668260097504, 1.5623993873596, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r19.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r8_lod1.msh",
+										name = "front_r19",
+										transf = { 0.92436957359314, 0, -0.38149806857109, 0, 0, 1, 0, 0, 0.38149806857109, 0, 0.92436957359314, 0, 2.4264574050903, 0.016862189397216, 1.5236628055573, 1, },
+									},
+									{
+										animations = {
+											wheels = {
+												params = {
+													id = "vehicle/train/bigboy_v2/wheels/front_r20.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r9_lod1.msh",
+										name = "front_r20",
+										transf = { 0.98618221282959, 0, 0.16566427052021, 0, 0, 1, 0, 0, -0.16566427052021, 0, 0.98618221282959, 0, 1.9400608539581, 2.0857703475485e-06, 0.51625549793243, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r10_lod1.msh",
+										name = "front_r21",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.48073408007622, 0.022041738033295, 1.6456875801086, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+										mesh = "vehicle/train/bigboy_v2/front_r11_lod1.msh",
+										name = "front_r22",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.67426896095276, 0.016668140888214, 1.8389029502869, 1, },
+									},
+								},
+								name = "front_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3986549377441, -1.7283384750044e-06, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0480175018311, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/back_b1_lod1.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/back_w13_lod1.msh",
+										name = "back_w13",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0988011360168, -4.3670956074493e-05, 0.49363577365875, 1, },
+									},
+									{
+										materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+										mesh = "vehicle/train/bigboy_v2/back_w13_lod1.msh",
+										name = "back_w14",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0944805145264, -4.3670956074493e-05, 0.49363577365875, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8700873851776, 4.3417316192063e-05, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_w13_lod1.msh",
+								name = "back_w15",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0820341110229, -2.5364181510668e-07, 0.49363577365875, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_w13_lod1.msh",
+								name = "back_w16",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.43058013916016, -2.5364181510668e-07, 0.49363577365875, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_w13_lod1.msh",
+								name = "back_w17",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.938346862793, -2.5364181510668e-07, 0.49363577365875, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_w13_lod1.msh",
+								name = "back_w18",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4525537490845, -2.5364181510668e-07, 0.49363577365875, 1, },
+							},
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_w13_lod1.msh",
+								name = "back_w19",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.9637746810913, -2.5364181510668e-07, 0.49363577365875, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_coal_lod1.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00018787384033203, 0.028705524280667, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_taillights_fwd_lod1.msh",
+								name = "back_taillights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00018787384033203, -2.3613397388544e-06, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.811812400818, 5.496746098288e-07, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_steam.mtl", },
+								mesh = "vehicle/train/bigboy_v2/front_body_lod2.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0480175018311, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/bigboy_v2/bigboy_tender.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_body_lod2.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/bigboy_v2/back_coal_lod2.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00018787384033203, 0.028705524280667, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.811812400818, 5.496746098288e-07, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1944,
+			yearTo = 1994,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_BIGBOY_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_BIGBOY_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 5,
+					position = { 1.5219826698303, 1.1900000572205, 0.46500000357628, },
+					size01 = { 0.25, 6, },
+					velocity = { 0, 0.86602598428726, -0.49999892711639, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 5,
+					position = { 1.5219826698303, -1.1759999990463, 0.46500000357628, },
+					size01 = { 0.25, 6, },
+					velocity = { 0, -0.86602598428726, -0.49999892711639, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.30000001192093, 0.30000001192093, 0.30000001192093, },
+					frequency = 80,
+					initialAlpha = 1,
+					lifeTime = 14,
+					position = { 8.7169828414917, 0, 4.6999998092651, },
+					size01 = { 0.80000001192093, 12, },
+					velocity = { 0, 0, 6, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.30000001192093, 0.30000001192093, 0.30000001192093, },
+					frequency = 80,
+					initialAlpha = 1,
+					lifeTime = 14,
+					position = { 9.6919822692871, 0, 4.6999998092651, },
+					size01 = { 0.80000001192093, 12, },
+					velocity = { 0, 0, 6, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 5,
+					position = { 11.301981925964, 1.1900000572205, 0.46500000357628, },
+					size01 = { 0.25, 6, },
+					velocity = { 0, 0.86602598428726, -0.49999892711639, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 5,
+					position = { 11.301981925964, -1.1759999990463, 0.46500000357628, },
+					size01 = { 0.25, 6, },
+					velocity = { 0, -0.86602598428726, -0.49999892711639, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/bigboy_v2/front_w1_lod0.msh", "vehicle/train/bigboy_v2/front_w3_lod0.msh", "vehicle/train/bigboy_v2/front_w5_lod0.msh", "vehicle/train/bigboy_v2/front_w11_lod0.msh", "vehicle/train/bigboy_v2/back_w13_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 74, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 39, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/bigboy_v2/front_w1_lod1.msh", "vehicle/train/bigboy_v2/front_w3_lod1.msh", "vehicle/train/bigboy_v2/front_w5_lod1.msh", "vehicle/train/bigboy_v2/front_w11_lod1.msh", "vehicle/train/bigboy_v2/back_w13_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 61, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 27, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 17.959999084473,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -4.1399998664856,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -7.8099999427795,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -17.799999237061,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 4560,
+					tractiveEffort = 602,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/train_steam_old/steam_horn_2.wav",
+				name = "train_steam_modern",
+			},
+			topSpeed = 36.110000610352,
+			weight = 567,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 61,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.9860172271729, -1.2480000257492, 2.6819996833801, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v08",
+		},
+	},
+	version = 1,
+}
+end

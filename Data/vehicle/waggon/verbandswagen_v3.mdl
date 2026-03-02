@@ -1,0 +1,872 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 4.8280997276306, 1.5516003370285, 4.2800002098083, },
+		bbMin = { -4.8780999183655, -1.5515999794006, -0.041527688503265, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.853099822998, 1.5516002178192, 2.1607639789581, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/w1_lod0.msh",
+						name = "w1",
+						transf = { 0.026176994666457, 0, 0.99965733289719, 0, 0, 1, 0, 0, -0.99965733289719, 0, 0.026176994666457, 0, 2.3099999427795, -5.9604644775391e-08, 0.46109998226166, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/w1_lod0.msh",
+						name = "w2",
+						transf = { 0.90777742862701, 0, 0.41945204138756, 0, 0, 1, 0, 0, -0.41945204138756, 0, 0.90777742862701, 0, -2.3099999427795, -5.9604644775391e-08, 0.46109998226166, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/close_doors_left/d_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/open_doors_left/d_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_left/d_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_left/d_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g1_lft_lod0.msh",
+								name = "d_g1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.93120002746582, 1.4690003395081, 1.6150000095367, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_left/d_g2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_left/d_g2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g2_lft_lod0.msh",
+								name = "d_g2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0659999847412, 1.4221003055573, 1.2590999603271, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_left/d_g3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_left/d_g3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g3_lft_lod0.msh",
+								name = "d_g3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.70999997854233, 1.4221003055573, 1.2590999603271, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/d_lft_lod0.msh",
+						name = "d_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/close_doors_right/d_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/open_doors_right/d_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_right/d_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_right/d_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g1_rgt_lod0.msh",
+								name = "d_g1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.57099997997284, -1.4689998626709, 1.6150000095367, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_right/d_g2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_right/d_g2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g2_rgt_lod0.msh",
+								name = "d_g2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0700000524521, -1.4221000671387, 1.2590999603271, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_right/d_g3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_right/d_g3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g3_rgt_lod0.msh",
+								name = "d_g3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.7059999704361, -1.4221000671387, 1.2590999603271, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/d_rgt_lod0.msh",
+						name = "d_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen_glass.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2639498710632, 0.60619986057281, 3.63765001297, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen_glass.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2639498710632, -0.60619986057281, 3.63765001297, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen_glass.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5580010414124, 0, 3.8083999156952, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 120,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/w1_lod1.msh",
+						name = "w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3099999427795, -5.9604644775391e-08, 0.46109998226166, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/w1_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3099999427795, -5.9604644775391e-08, 0.46109998226166, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/close_doors_left/d_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/open_doors_left/d_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_left/d_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_left/d_g1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g1_lft_lod1.msh",
+								name = "d_g1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.93120002746582, 1.4690003395081, 1.6150000095367, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_left/d_g2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_left/d_g2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g2_lft_lod1.msh",
+								name = "d_g2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0659999847412, 1.4221003055573, 1.2590999603271, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_left/d_g3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_left/d_g3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g3_lft_lod1.msh",
+								name = "d_g3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.70999997854233, 1.4221003055573, 1.2590999603271, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/d_lft_lod1.msh",
+						name = "d_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/close_doors_right/d_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/verbandswagen_v2/open_doors_right/d_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_right/d_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_right/d_g1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g1_rgt_lod1.msh",
+								name = "d_g1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.57099997997284, -1.4689998626709, 1.6150000095367, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_right/d_g2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_right/d_g2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g2_rgt_lod1.msh",
+								name = "d_g2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0700000524521, -1.4221000671387, 1.2590999603271, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_all_doors/d_g3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/close_doors_right/d_g3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_all_doors/d_g3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/waggon/verbandswagen_v2/open_doors_right/d_g3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/d_g3_rgt_lod1.msh",
+								name = "d_g3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.7059999704361, -1.4221000671387, 1.2590999603271, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/d_rgt_lod1.msh",
+						name = "d_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen_glass_lod.mtl", },
+								mesh = "vehicle/waggon/verbandswagen_v2/glass_lod1.msh",
+								name = "glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 120,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/verbandswagen_v2/verbandswagen.mtl", },
+						mesh = "vehicle/waggon/verbandswagen_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 1300,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1900,
+			yearTo = 2000,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_WAGGON_VERBANDSWAGEN_V2_DESCRIPTION"),
+			name = _("VEHICLE_WAGGON_VERBANDSWAGEN_V2_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 32873,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/waggon/verbandswagen_v2/w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/verbandswagen_v2/w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 2.3099999427795,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -2.3099999427795,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "waggon_freight_old",
+			},
+			topSpeed = 22.219999313354,
+			weight = 11,
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 3.9500000476837, 1.3532999753952, 3.2000000476837, },
+										bbMin = { -3.8499999046326, -1.3532999753952, 1.1921000480652, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 3.9500000476837, 1.3532999753952, 3.2000000476837, },
+										bbMin = { -3.8499999046326, -1.3532999753952, 1.1921000480652, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 3.9500000476837, 1.3532999753952, 3.2000000476837, },
+										bbMin = { -3.8499999046326, -1.3532999753952, 1.1921000480652, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 3.9500000476837, 1.3532999753952, 3.2000000476837, },
+										bbMin = { -3.8499999046326, -1.3532999753952, 1.1921000480652, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 3.9500000476837, 1.3532999753952, 3.2000000476837, },
+										bbMin = { -3.8499999046326, -1.3532999753952, 1.1921000480652, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v10",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,364 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.0350117683411, 1.3343449831009, 2.5309290885925, },
+		bbMin = { -5.0350117683411, -1.3343449831009, 0.52256101369858, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 5.0350117683411, 1.3343449831009, 1.0041840076447, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1.5267450809479, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/freight_shared_1.mtl", "vehicle/waggon/gondola_and_stake_car_1850.mtl", },
+						mesh = "vehicle/waggon/gondola_1850/lod_0_body.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_0_b1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_0_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.75739997625351, 0, 0.4311999976635, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_0_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.75739997625351, 0, 0.4311999976635, 1, },
+							},
+						},
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8796000480652, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_0_b1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_0_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.75739997625351, 0, 0.4311999976635, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_0_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.75739997625351, 0, 0.4311999976635, 1, },
+							},
+						},
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8796000480652, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/gondola_and_stake_car_1850_logo.mtl", },
+						mesh = "vehicle/waggon/gondola_1850/lod_0_logo_body.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 110,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/freight_shared_1.mtl", "vehicle/waggon/gondola_and_stake_car_1850.mtl", },
+						mesh = "vehicle/waggon/gondola_1850/lod_1_body.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_1_b1.msh",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -5.7600002288818, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -5, 0, 0.4311999976635, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -6.5, 0, 0.4311999976635, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_1_b1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.75739997625351, 0, 0.4311999976635, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_1_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.75739997625351, 0, 0.4311999976635, 1, },
+							},
+						},
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8796000480652, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/gondola_and_stake_car_1850_logo.mtl", },
+						mesh = "vehicle/waggon/gondola_1850/lod_0_logo_body.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 110,
+			visibleTo = 350,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/gondola_and_stake_car_1850.mtl", },
+						mesh = "vehicle/waggon/gondola_1850/lod_2_body.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_2_b1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_2_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.75739997625351, 0, 0.4311999976635, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_2_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.75739997625351, 0, 0.4311999976635, 1, },
+							},
+						},
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8796000480652, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_2_b1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_2_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.75739997625351, 0, 0.4311999976635, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/freight_shared_1.mtl", },
+								mesh = "vehicle/waggon/boxcar_1850/lod_2_w1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.75739997625351, 0, 0.4311999976635, 1, },
+							},
+						},
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8796000480652, 0, 0, 1, },
+					},
+				},
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 350,
+			visibleTo = 1010,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1850,
+			yearTo = 1950,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_WAGGON_GONDOLA_1850_DESCRIPTION"),
+			name = _("VEHICLE_WAGGON_GONDOLA_1850_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/waggon/boxcar_1850/lod_0_w1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/boxcar_1850/lod_1_w1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/boxcar_1850/lod_2_w1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "waggon_freight_old",
+			},
+			topSpeed = 13.888889312744,
+			weight = 10,
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 4.4000000953674, 1.1200000047684, 2.0999999046326, },
+										bbMin = { -4.4000000953674, -1.1200000047684, 1.2000000476837, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 4.4000000953674, 1.1200000047684, 2.0999999046326, },
+										bbMin = { -4.4000000953674, -1.1200000047684, 1.2000000476837, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 4.4000000953674, 1.1200000047684, 2.0999999046326, },
+										bbMin = { -4.4000000953674, -1.1200000047684, 1.2000000476837, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 4.4000000953674, 1.1200000047684, 2.0999999046326, },
+										bbMin = { -4.4000000953674, -1.1200000047684, 1.2000000476837, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+	},
+	version = 1,
+}
+end

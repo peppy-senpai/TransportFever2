@@ -1,0 +1,440 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.3864948749542, 1.2725360393524, 2.552619934082, },
+		bbMin = { -3.3795607089996, -1.2725360393524, -0.0054839849472046, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 3.3830277919769, 1.2725360393524, 1.2790520191193, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_body_lod0.msh",
+						name = "universal_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us_interior_glass.mtl", "vehicle/truck/studebaker_us6_v2/studebaker_us_glass.mtl", },
+								mesh = "vehicle/truck/studebaker_us_universal_v2/universal_glass1_left_frt_lod0.msh",
+								name = "universal_glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.614723443985, 0.30597400665283, 2.004408121109, 1, },
+							},
+							{
+								materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us_interior_glass.mtl", "vehicle/truck/studebaker_us6_v2/studebaker_us_glass.mtl", },
+								mesh = "vehicle/truck/studebaker_us_universal_v2/universal_glass1_right_frt_lod0.msh",
+								name = "universal_glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.614723443985, -0.30597400665283, 2.004408121109, 1, },
+							},
+							{
+								materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us_interior_glass.mtl", "vehicle/truck/studebaker_us6_v2/studebaker_us_glass.mtl", },
+								mesh = "vehicle/truck/studebaker_us_universal_v2/universal_glass1_lft_lod0.msh",
+								name = "universal_glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2969934940338, 0.6456915140152, 2.004408121109, 1, },
+							},
+							{
+								materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us_interior_glass.mtl", "vehicle/truck/studebaker_us6_v2/studebaker_us_glass.mtl", },
+								mesh = "vehicle/truck/studebaker_us_universal_v2/universal_glass1_rgt_lod0.msh",
+								name = "universal_glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2969934940338, -0.64569199085236, 2.004408121109, 1, },
+							},
+							{
+								materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us_interior_glass.mtl", "vehicle/truck/studebaker_us6_v2/studebaker_us_glass.mtl", },
+								mesh = "vehicle/truck/studebaker_us_universal_v2/universal_glass1_bck_lod0.msh",
+								name = "universal_glass1_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.6615999341011, 0, 1.9588339328766, 1, },
+							},
+						},
+						name = "u10_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us_tipper.mtl", },
+						mesh = "vehicle/truck/studebaker_us_u10_v2/u10_body_cargo_lod0.msh",
+						name = "u10_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us_interior.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_interior_lod0.msh",
+						name = "universal_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_w1_lft_lod0.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6873097419739, 0.74863302707672, 0.50426524877548, 1, },
+					},
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_w1_rgt_lod0.msh",
+						name = "universal_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6873097419739, -0.74863302707672, 0.50426524877548, 1, },
+					},
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_w2_lod0.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.96449428796768, -1.1444177447058e-15, 0.50395327806473, 1, },
+					},
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_w3_lod0.msh",
+						name = "universal_w3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2092628479004, -1.1444177447058e-15, 0.50395327806473, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/studebaker_us_u10_v2/u10_headlights_lod0.msh",
+						name = "u10_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+						mesh = "vehicle/truck/studebaker_us_u10_v2/u10_brakelights_lod0.msh",
+						name = "u10_brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_blinklights_lft_lod0.msh",
+						name = "universal_blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_blinklights_rgt_lod0.msh",
+						name = "universal_blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "u10_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us_lod.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_body_lod1.msh",
+						name = "universal_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us_tipper.mtl", },
+						mesh = "vehicle/truck/studebaker_us_u10_v2/u10_body_cargo_lod1.msh",
+						name = "u10_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_w1_lft_lod1.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6873097419739, 0.74863320589066, 0.50515902042389, 1, },
+					},
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_w1_rgt_lod1.msh",
+						name = "universal_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6873097419739, -0.7486332654953, 0.50515902042389, 1, },
+					},
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_w2_lod1.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.9634724855423, 0, 0.50483548641205, 1, },
+					},
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_w3_lod1.msh",
+						name = "universal_w3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2082409858704, 0, 0.50483548641205, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_headlights_lod1.msh",
+						name = "universal_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+						mesh = "vehicle/truck/studebaker_us_u10_v2/u10_brakelights_lod1.msh",
+						name = "u10_brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_blinklights_lft_lod1.msh",
+						name = "universal_blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/studebaker_us_universal_v2/universal_blinklights_rgt_lod1.msh",
+						name = "universal_blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/studebaker_us6_v2/studebaker_us_tipper.mtl", "vehicle/truck/studebaker_us6_v2/studebaker_us_lod.mtl", },
+						mesh = "vehicle/truck/studebaker_us_u10_v2/u10_body_lod2.msh",
+						name = "u10_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1945,
+			yearTo = 1995,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_STUDEBAKER_US6_U10_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_STUDEBAKER_US6_U10_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 18263,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.10176084935665, 0.10196077823639, 0.10196077823639, },
+					frequency = 40,
+					initialAlpha = 0.69999998807907,
+					lifeTime = 1,
+					position = { 0.61599999666214, -0.99599999189377, 0.55699998140335, },
+					size01 = { 0.079999998211861, 0.80000001192093, },
+					velocity = { -2.4300000667572, -3.8499999046326, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/studebaker_us_universal_v2/universal_w2_lod0.msh", "vehicle/truck/studebaker_us_universal_v2/universal_w3_lod0.msh", },
+					blinkLightsLeft = { 16, },
+					blinkLightsRight = { 17, },
+					brakeLights = { 15, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 14, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/studebaker_us_universal_v2/universal_w1_lft_lod0.msh", "vehicle/truck/studebaker_us_universal_v2/universal_w1_rgt_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/studebaker_us_universal_v2/universal_w2_lod1.msh", "vehicle/truck/studebaker_us_universal_v2/universal_w3_lod1.msh", },
+					blinkLightsLeft = { 9, },
+					blinkLightsRight = { 10, },
+					brakeLights = { 8, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 7, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/studebaker_us_universal_v2/universal_w1_lft_lod1.msh", "vehicle/truck/studebaker_us_universal_v2/universal_w1_rgt_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -1.5800000429153,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 80,
+				tractiveEffort = 12,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 16.670000076294,
+			weight = 5,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 18,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0363627672195, 0.33323562145233, 0.82236456871033, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 64,
+									cargoBay = {
+										bbMax = { 0.10000000149012, 1.1000000238419, 1.5499999523163, },
+										bbMin = { -3.2999999523163, -1.1000000238419, 1.1100000143051, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 64,
+									cargoBay = {
+										bbMax = { 0.10000000149012, 1.1000000238419, 1.5499999523163, },
+										bbMin = { -3.2999999523163, -1.1000000238419, 1.1100000143051, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 64,
+									cargoBay = {
+										bbMax = { 0.10000000149012, 1.1000000238419, 1.5499999523163, },
+										bbMin = { -3.2999999523163, -1.1000000238419, 1.1100000143051, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 64,
+									cargoBay = {
+										bbMax = { 0.10000000149012, 1.1000000238419, 1.5499999523163, },
+										bbMin = { -3.2999999523163, -1.1000000238419, 1.1100000143051, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 3,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

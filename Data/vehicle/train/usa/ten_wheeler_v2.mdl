@@ -1,0 +1,741 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 9.6981382369995, 1.6444404125214, 5.0015997886658, },
+		bbMin = { -9.4067363739014, -1.6444381475449, 0.26389998197556, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 9.7279796600342, 1.6487499475479, 2.3722317218781, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_glass1_left_frt_lod0.msh",
+										name = "front_glass1_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4089407920837, 0.67799991369247, 3.8489997386932, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_glass2_left_frt_lod0.msh",
+										name = "front_glass2_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4089407920837, 1.2200000286102, 3.3949999809265, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_glass1_right_frt_lod0.msh",
+										name = "front_glass1_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4089412689209, -0.63599997758865, 3.8489997386932, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_glass2_right_frt_lod0.msh",
+										name = "front_glass2_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4089412689209, -1.1899999380112, 3.4064998626709, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_glass1_lft_lod0.msh",
+										name = "front_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8805999755859, 1.523209810257, 3.3994996547699, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_glass2_lft_lod0.msh",
+										name = "front_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6730999946594, 1.5232734680176, 3.3994996547699, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_glass3_lft_lod0.msh",
+										name = "front_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.4360995292664, 1.5233336687088, 3.3994996547699, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_top_glass1_lft_lod0.msh",
+										name = "front_top_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.1680998802185, 0.58706843852997, 4.438000202179, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_top_glass2_lft_lod0.msh",
+										name = "front_top_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.590099811554, 0.58706855773926, 4.438000202179, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_top_glass3_lft_lod0.msh",
+										name = "front_top_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0096001625061, 0.58706867694855, 4.438000202179, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9031000137329, -1.5188317298889, 3.4235000610352, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6971001625061, -1.5188314914703, 3.4235000610352, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_glass3_rgt_lod0.msh",
+										name = "front_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.4681000709534, -1.5188314914703, 3.4235000610352, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_top_glass1_rgt_lod0.msh",
+										name = "front_top_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.1580998897552, -0.58723151683807, 4.4454998970032, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_top_glass2_rgt_lod0.msh",
+										name = "front_top_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5805997848511, -0.58723145723343, 4.4454998970032, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_glass.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_glass.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/front_top_glass3_rgt_lod0.msh",
+										name = "front_top_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0060997009277, -0.58723139762878, 4.4454998970032, 1, },
+									},
+								},
+								name = "front_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_interior.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_interior_lod0.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_w1_lod0.msh",
+								name = "front_w1",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 4.6550583839417, 0, 0.44809997081757, 1, },
+							},
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_w1_lod0.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 2.5138647556305, 0, 0.4480998814106, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_w3_lod0.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0777587890625, 0, 0.80709999799728, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_w3_lod0.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.74055099487305, 0, 0.80709987878799, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_w3_lod0.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7455263137817, 0, 0.80709987878799, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_r1_lod0.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 2.0908589363098, 0, 0.79999995231628, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_r2_lod0.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, -0.74049991369247, 0, 0.37544998526573, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_r3_lod0.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, -0.74049991369247, 0, 0.37545001506805, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_headlights_lod0.msh",
+								name = "front_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8440999984741, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/coal_128.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/back_coal_lod0.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_b1_lod0.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_w1_lod0.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.92219984531403, -2.9652768667669e-24, 0.44809997081757, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_w1_lod0.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.92374092340469, -2.9652762751213e-24, 0.4480998814106, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 1.5197590589523, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_b2_lod0.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_w1_lod0.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.92220032215118, -2.9652758806908e-24, 0.44809982180595, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_w1_lod0.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.92374056577682, -2.9652752890451e-24, 0.44809973239899, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, -2.0692899227142, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0082001686096, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_interior_lod1.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_w1_lod1.msh",
+								name = "front_w1",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 4.6550583839417, 0, 0.44809997081757, 1, },
+							},
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_w1_lod1.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 2.5138647556305, 0, 0.4480998814106, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_w3_lod1.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 1.0777587890625, 0, 0.80709999799728, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_w3_lod1.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.74055099487305, 0, 0.80709987878799, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_w3_lod1.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, -2.7455263137817, 0, 0.80709987878799, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_r1_lod1.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 2.0908589363098, 0, 0.79999995231628, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_r2_lod1.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, -0.74049991369247, 0, 0.37544998526573, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/ten_wheeler_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_r3_lod1.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, -0.74049991369247, 0, 0.37545001506805, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_headlights_lod1.msh",
+								name = "front_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8440999984741, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/coal_128.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/back_coal_lod1.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_b1_lod1.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_w1_lod1.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.92219984531403, -2.9652768667669e-24, 0.44809997081757, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_w1_lod1.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.92374092340469, -2.9652762751213e-24, 0.4480998814106, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 1.5197590589523, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_b2_lod1.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0692899227142, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_w1_lod1.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.92220032215118, -2.9652758806908e-24, 0.44809982180595, 1, },
+									},
+									{
+										materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+										mesh = "vehicle/train/ten_wheeler_v2/back_w1_lod1.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.92374056577682, -2.9652752890451e-24, 0.44809973239899, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, -2.0692899227142, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0082001686096, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", "vehicle/train/ten_wheeler_v2/ten_wheeler_interior_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/front_body_lod2.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8440999984741, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/ten_wheeler_v2/ten_wheeler_lod.mtl", },
+								mesh = "vehicle/train/ten_wheeler_v2/back_body_lod2.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0082001686096, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1896,
+			yearTo = 1946,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_TEN_WHEELER_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_TEN_WHEELER_NAME"),
+		},
+		emission = {
+			idleEmission = 73.573333740234,
+			powerEmission = 0,
+			speedEmission = 0.80000001192093,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 2,
+					color = { 0.69999998807907, 0.69999998807907, 0.69999998807907, },
+					frequency = 18,
+					initialAlpha = 1,
+					lifeTime = 2,
+					position = { 2.9109089374542, -1.1503366231918, 0.74686604738235, },
+					size01 = { 0.15000000596046, 4, },
+					velocity = { -2.2446448802948, -3.2660145759583, -0.54288107156754, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.69999998807907, 0.69999998807907, 0.69999998807907, },
+					frequency = 18,
+					initialAlpha = 1,
+					lifeTime = 2,
+					position = { 2.9153969287872, 1.1517255306244, 0.75003033876419, },
+					size01 = { 0.15000000596046, 4, },
+					velocity = { -1.8731791973114, 3.492847442627, -0.53964531421661, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.44999998807907, 0.44999998807907, 0.44999998807907, },
+					frequency = 45,
+					initialAlpha = 1,
+					lifeTime = 12,
+					position = { 3.6482591629028, 0.00016348785720766, 4.710000038147, },
+					size01 = { 0.5, 15, },
+					velocity = { 0, 0, 6, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/ten_wheeler_v2/front_w1_lod0.msh", "vehicle/train/ten_wheeler_v2/front_w3_lod0.msh", "vehicle/train/ten_wheeler_v2/back_w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 29, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/ten_wheeler_v2/front_w1_lod1.msh", "vehicle/train/ten_wheeler_v2/front_w3_lod1.msh", "vehicle/train/ten_wheeler_v2/back_w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 12, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.4499998092651,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = 1.0900000333786,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -3.4800000190735,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -7.0799999237061,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 550,
+					tractiveEffort = 160,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/train_steam_old/steam_horn_20.wav",
+				name = "train_steam_modern",
+			},
+			topSpeed = 27.777778625488,
+			weight = 120,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 30,
+					transf = { 0.92387944459915, -0.38268342614174, -2.5323864867985e-24, 0, 0.38268342614174, 0.92387944459915, 6.1137213192694e-24, 0, 1.4352634384769e-31, -6.6174449004242e-24, 1, 0, -3.2991087436676, -1.0248366594315, 1.9079999923706, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,334 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.2802958488464, 0.86996632814407, 1.48000395298, },
+		bbMin = { -1.9241808652878, -0.86996638774872, -0.0010735392570496, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.1022384166718, 0.86996638774872, 0.74053871631622, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_interior_glass.mtl", "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_glass.mtl", },
+								mesh = "vehicle/car/opel_kadett_e_caravan_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.72615361213684, -1.1920928955078e-07, 1.1665215492249, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_interior_glass.mtl", "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_glass.mtl", },
+								mesh = "vehicle/car/opel_kadett_e_caravan_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.48790103197098, 0.65516668558121, 1.14177775383, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_interior_glass.mtl", "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_glass.mtl", },
+								mesh = "vehicle/car/opel_kadett_e_caravan_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.43803241848946, 0.65672194957733, 1.1451418399811, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_interior_glass.mtl", "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_glass.mtl", },
+								mesh = "vehicle/car/opel_kadett_e_caravan_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.257640838623, 0.62460339069366, 1.1524884700775, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_interior_glass.mtl", "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_glass.mtl", },
+								mesh = "vehicle/car/opel_kadett_e_caravan_v2/glass1_grt_lod0.msh",
+								name = "glass1_grt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.48790091276169, -0.65516674518585, 1.14177775383, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_interior_glass.mtl", "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_glass.mtl", },
+								mesh = "vehicle/car/opel_kadett_e_caravan_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.43803241848946, -0.65672171115875, 1.1451418399811, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_interior_glass.mtl", "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_glass.mtl", },
+								mesh = "vehicle/car/opel_kadett_e_caravan_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.257640838623, -0.62460309267044, 1.1524883508682, 1, },
+							},
+							{
+								materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_interior_glass.mtl", "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_glass.mtl", },
+								mesh = "vehicle/car/opel_kadett_e_caravan_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7559467554092, 3.2782554626465e-07, 1.164608001709, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_interior.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5020000934601, 0.69884830713272, 0.28399977087975, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, 8.7422776573476e-08, -1.5099578831723e-07, 0, -8.7422797889758e-08, -1, 1.5099578831723e-07, 0, -1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 1.5020000934601, -0.69884842634201, 0.28399977087975, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.97318363189697, 1.9858521227434e-07, 0.28400009870529, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_lod.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_lod.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5020000934601, 0.69884830713272, 0.28399977087975, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_lod.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, 8.7422776573476e-08, -1.5099578831723e-07, 0, -8.7422797889758e-08, -1, 1.5099578831723e-07, 0, -1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 1.5020000934601, -0.69884842634201, 0.28399977087975, 1, },
+					},
+					{
+						materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan_lod.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.97318363189697, 1.9858521227434e-07, 0.28400009870529, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/opel_kadett_e_caravan_v2/opel_kadett_e_caravan.mtl", },
+						mesh = "vehicle/car/opel_kadett_e_caravan_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1984,
+			yearTo = 0,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.59607839584351, 0.19209770858288, 0.14142252504826, },
+				},
+				{
+					{ 0.16442903876305, 0.24309109151363, 0.25882351398468, },
+				},
+				{
+					{ 0.14117646217346, 0.14117646217346, 0.14117646217346, },
+				},
+				{
+					{ 0.23529410362244, 0.12133794277906, 0.20003893971443, },
+				},
+				{
+					{ 0.32542860507965, 0.43921566009521, 0.29453286528587, },
+				},
+				{
+					{ 0.6980391740799, 0.45480605959892, 0.10539024323225, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/opel_kadett_e_caravan_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 17, },
+					blinkLightsRight = { 18, },
+					brakeLights = { 16, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 15, },
+					steeringParts = { },
+					wheels = { "vehicle/car/opel_kadett_e_caravan_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/opel_kadett_e_caravan_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/opel_kadett_e_caravan_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 41,
+				tractiveEffort = 6.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 27.777778625488,
+			weight = 0.81999999284744,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 19,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.26100000739098, 0.34299999475479, 0.051000002771616, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

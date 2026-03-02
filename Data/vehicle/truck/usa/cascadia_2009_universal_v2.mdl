@@ -1,0 +1,650 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 4.4591951370239, 1.4049793481827, 4.5593819618225, },
+		bbMin = { -16.510318756104, -1.4049793481827, 0.0012958645820618, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 10.484756469727, 1.4049793481827, 2.2790429592133, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_body_lod0.msh",
+								name = "universal_front_body",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_interior_glass.mtl", "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_glass.mtl", },
+										mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_glass1_left_frt_lod0.msh",
+										name = "universal_glass1_left_frt",
+										transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 2.3456981182098, 0.49022695422173, 2.3616001605988, 1, },
+									},
+									{
+										materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_interior_glass.mtl", "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_glass.mtl", },
+										mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_glass1_right_frt_lod0.msh",
+										name = "universal_glass1_right_frt",
+										transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 2.3456981182098, -0.46044301986694, 2.3616001605988, 1, },
+									},
+									{
+										materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_interior_glass.mtl", "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_glass.mtl", },
+										mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_glass1_lft_lod0.msh",
+										name = "universal_glass1_lft",
+										transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 1.6778734922409, 0.97056347131729, 2.1917910575867, 1, },
+									},
+									{
+										materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_interior_glass.mtl", "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_glass.mtl", },
+										mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_glass2_lft_lod0.msh",
+										name = "universal_glass2_lft",
+										transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0.13116998970509, 1.1615810394287, 2.2130498886108, 1, },
+									},
+									{
+										materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_interior_glass.mtl", "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_glass.mtl", },
+										mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_glass1_rgt_lod0.msh",
+										name = "universal_glass1_rgt",
+										transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 1.6778734922409, -0.97041350603104, 2.1917910575867, 1, },
+									},
+									{
+										materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_interior_glass.mtl", "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_glass.mtl", },
+										mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_glass2_rgt_lod0.msh",
+										name = "universal_glass2_rgt",
+										transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0.13166999816895, -1.1614810228348, 2.2127499580383, 1, },
+									},
+								},
+								name = "universal_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_interior.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_interior_lod0.msh",
+								name = "universal_front_interior",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_w1_lft_lod0.msh",
+								name = "universal_front_w1_lft",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 3.2106630802155, 1.1248517036438, 0.55716997385025, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_w1_lft_lod0.msh",
+								name = "universal_front_w1_rgt",
+								transf = { -1.2599999904633, -1.1015269762993e-07, 0, 0, 1.1015269762993e-07, -1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 3.2106630802155, -1.1248517036438, 0.55716997385025, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_w2_lod0.msh",
+								name = "universal_front_w2",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, -2.6111779212952, 1.3530843112619e-16, 0.56217002868652, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_w2_lod0.msh",
+								name = "universal_front_w3",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, -3.9264767169952, 1.7347234759768e-16, 0.56217002868652, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_headlights_lod0.msh",
+								name = "universal_front_headlights",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_blinklights_lft_lod0.msh",
+								name = "universal_front_blinklights_lft",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_blinklights_rgt_lod0.msh",
+								name = "universal_front_blinklights_rgt",
+								transf = { -1.2599999904633, 1.1015269762993e-07, -1.5430550077875e-16, 0, -1.1015269762993e-07, -1.2599999904633, -1.5430550077875e-16, 0, -1.5430551401364e-16, -1.5430548754386e-16, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "universal_front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "universal_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_body_lod0.msh",
+								name = "universal_back_body",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_w1_lod0.msh",
+								name = "universal_back_w1",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, -10.890501022339, 1.6098233857065e-15, 0.55716997385025, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_w1_lod0.msh",
+								name = "universal_back_w2",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, -12.241591453552, 1.6757428777936e-15, 0.55716997385025, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_headlights_lod0.msh",
+								name = "universal_back_headlights",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_brakelights_lod0.msh",
+								name = "universal_back_brakelights",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_blinklights_lft_lod0.msh",
+								name = "universal_back_blinklights_lft",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_blinklights_rgt_lod0.msh",
+								name = "universal_back_blinklights_rgt",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "universal_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2142691612244, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 192.24147033691,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_lod.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_body_lod1.msh",
+								name = "universal_front_body",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_lod.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_w1_lft_lod1.msh",
+								name = "universal_front_w1_lft",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 3.210000038147, 1.1248517036438, 0.55699998140335, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_lod.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_w1_lft_lod1.msh",
+								name = "universal_front_w1_rgt",
+								transf = { -1.2599999904633, -1.1015269762993e-07, 0, 0, 1.1015269762993e-07, -1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 3.210000038147, -1.1248517036438, 0.55699998140335, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_lod.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_w2_lod1.msh",
+								name = "universal_front_w2",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, -2.6110000610352, 0, 0.56199997663498, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_lod.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_w2_lod1.msh",
+								name = "universal_front_w3",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, -3.9270000457764, 0, 0.56099998950958, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_headlights_lod1.msh",
+								name = "universal_front_headlights",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_blinklights_lft_lod1.msh",
+								name = "universal_front_blinklights_lft",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_blinklights_rgt_lod1.msh",
+								name = "universal_front_blinklights_rgt",
+								transf = { -1.2599999904633, 1.1015269762993e-07, -1.5430550077875e-16, 0, -1.1015269762993e-07, -1.2599999904633, -1.5430550077875e-16, 0, -1.5430551401364e-16, -1.5430548754386e-16, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "universal_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_lod.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_body_lod1.msh",
+								name = "universal_back_body",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_lod.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_w1_lod1.msh",
+								name = "universal_back_w1",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, -10.890730857849, 0, 0.55699998140335, 1, },
+							},
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_lod.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_w2_lod1.msh",
+								name = "universal_back_w2",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, -12.241730690002, 0, 0.55900001525879, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_headlights_lod1.msh",
+								name = "universal_back_headlights",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_brakelights_lod1.msh",
+								name = "universal_back_brakelights",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_blinklights_lft_lod1.msh",
+								name = "universal_back_blinklights_lft",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_blinklights_rgt_lod1.msh",
+								name = "universal_back_blinklights_rgt",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "universal_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2142691612244, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 192.24147033691,
+			visibleTo = 576.72442626953,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_lod.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_front_body_lod2.msh",
+								name = "universal_front_body",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "universal_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/cascadia_2009_v2/freightliner_cascadia_lod.mtl", },
+								mesh = "vehicle/truck/cascadia_2009_universal_v2/universal_back_body_lod2.msh",
+								name = "universal_back_body",
+								transf = { 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1.2599999904633, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "universal_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2142691612244, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 576.72442626953,
+			visibleTo = 1730.1733398438,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1995,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_CASCADIA_2009_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_CASCADIA_2009_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 2,
+					color = { 0.14117646217346, 0.14117646217346, 0.14117646217346, },
+					frequency = 80,
+					initialAlpha = 0.5,
+					lifeTime = 1.5,
+					position = { -0.50885593891144, -0.76596355438232, 3.5599021911621, },
+					size01 = { 0.019999999552965, 1, },
+					velocity = { -2.5499999523163, -1.4500000476837, 0.5, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/cascadia_2009_universal_v2/universal_front_w2_lod0.msh", "vehicle/truck/cascadia_2009_universal_v2/universal_back_w1_lod0.msh", },
+					blinkLightsLeft = { 16, 25, },
+					blinkLightsRight = { 17, 26, },
+					brakeLights = { 24, },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 19,
+							offset = 0,
+							position = -3.25,
+							upright = false,
+						},
+					},
+					headLights = { 15, 23, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/cascadia_2009_universal_v2/universal_front_w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/cascadia_2009_universal_v2/universal_front_w2_lod1.msh", "vehicle/truck/cascadia_2009_universal_v2/universal_back_w1_lod1.msh", },
+					blinkLightsLeft = { 8, 16, },
+					blinkLightsRight = { 9, 17, },
+					brakeLights = { 15, },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 10,
+							offset = 0,
+							position = -3.25,
+							upright = false,
+						},
+					},
+					headLights = { 7, 14, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/cascadia_2009_universal_v2/universal_front_w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -3.25,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -13.760000228882,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 405,
+				tractiveEffort = 60,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 27.777778625488,
+			weight = 15,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 18,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 1.6900000572205, 0.58999997377396, 1.0900000333786, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v2",
+		},
+	},
+	version = 1,
+}
+end

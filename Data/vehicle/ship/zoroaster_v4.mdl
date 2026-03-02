@@ -1,0 +1,309 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 28.226379394531, 4.1293997764587, 15.505813598633, },
+		bbMin = { -27.828042984009, -4.1293997764587, -3, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 28.027210235596, 4.1293997764587, 9.2529067993164, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/zoroaster_v3/zoro_strip2.mtl", "vehicle/ship/zoroaster_v3/zoro_deck_floor.mtl", "vehicle/ship/zoroaster_v3/zoro_hull.mtl", "vehicle/ship/zoroaster_v3/zoro_unique.mtl", "vehicle/ship/zoroaster_v3/zoro_strip.mtl", },
+						mesh = "vehicle/ship/zoroaster_v3/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/zoroaster_v3/zoro_special_transparent.mtl", },
+						mesh = "vehicle/ship/zoroaster_v3/body_glass_tr_lod0.msh",
+						name = "body_glass_tr",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/zoroaster_v3/zoro_hull.mtl", },
+						mesh = "vehicle/ship/zoroaster_v3/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -24.908884048462, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/zoroaster_v3/zoro_hull.mtl", },
+						mesh = "vehicle/ship/zoroaster_v3/propeller_lft_lod0.msh",
+						name = "propeller_lft",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -16.204370498657, 2.0042519569397, -1.8470940589905, 1, },
+					},
+					{
+						materials = { "vehicle/ship/zoroaster_v3/zoro_hull.mtl", },
+						mesh = "vehicle/ship/zoroaster_v3/propeller_rgt_lod0.msh",
+						name = "propeller_rgt",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -16.204370498657, -2.0042519569397, -1.8470940589905, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 500,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/zoroaster_v3/zoro_hull.mtl", "vehicle/ship/zoroaster_v3/zoro_unique.mtl", "vehicle/ship/zoroaster_v3/zoro_strip.mtl", "vehicle/ship/zoroaster_v3/zoro_deck_floor.mtl", "vehicle/ship/zoroaster_v3/zoro_strip2.mtl", },
+						mesh = "vehicle/ship/zoroaster_v3/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/zoroaster_v3/zoro_special_transparent.mtl", },
+						mesh = "vehicle/ship/zoroaster_v3/body_glass_tr_lod1.msh",
+						name = "body_glass_tr",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/zoroaster_v3/zoro_hull.mtl", },
+						mesh = "vehicle/ship/zoroaster_v3/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -24.908884048462, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/zoroaster_v3/zoro_unique.mtl", },
+						mesh = "vehicle/ship/zoroaster_v3/propeller_lft_lod1.msh",
+						name = "propeller_lft",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -16.204370498657, 2.0042519569397, -1.8470940589905, 1, },
+					},
+					{
+						materials = { "vehicle/ship/zoroaster_v3/zoro_unique.mtl", },
+						mesh = "vehicle/ship/zoroaster_v3/propeller_rgt_lod1.msh",
+						name = "propeller_rgt",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -16.204370498657, -2.0042519569397, -1.8470940589905, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 7660,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1850,
+			yearTo = 1910,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_SHIP_ZOROASTER_V2_DESCRIPTION"),
+			name = _("VEHICLE_SHIP_ZOROASTER_V2_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.20000000298023, 0.20000000298023, 0.20000000298023, },
+					frequency = 80,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 15,
+					position = { -8.9589004516602, 0, 9.8641996383667, },
+					size01 = { 1.1000000238419, 6, },
+					velocity = { -1, 0, 8, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "ship_steamer",
+			},
+		},
+		transportVehicle = {
+			carrier = "WATER",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 180,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 180,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 180,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 180,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 180,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 180,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 20,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+		waterVehicle = {
+			area = 10,
+			availPower = 400000,
+			configs = {
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 4, 5, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 3, },
+						maxAngle = 60,
+					},
+				},
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 4, 5, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 3, },
+						maxAngle = 60,
+					},
+				},
+			},
+			maxRpm = 300,
+			topSpeed = 6.111111164093,
+			type = "BIG",
+			waterLine = {
+				{ -24.861839294434, 0, },
+				{ -24.861839294434, -0.13348999619484, },
+				{ -24.463190078735, -0.35199999809265, },
+				{ -24.165819168091, -0.82459998130798, },
+				{ -23.982830047607, -1.0326399803162, },
+				{ -23.615440368652, -1.5846999883652, },
+				{ -23.566919326782, -1.6289800405502, },
+				{ -22.707799911499, -2.2272100448608, },
+				{ -22.616949081421, -2.273540019989, },
+				{ -22.545579910278, -2.2966599464417, },
+				{ -21.472110748291, -2.7084500789642, },
+				{ -20.630380630493, -2.9981598854065, },
+				{ -20.052370071411, -3.1334199905396, },
+				{ -19.385980606079, -3.3290998935699, },
+				{ -18.494869232178, -3.484659910202, },
+				{ -18.013029098511, -3.5939099788666, },
+				{ -16.851320266724, -3.7371699810028, },
+				{ -16.510879516602, -3.7872200012207, },
+				{ -14.872559547424, -3.9180700778961, },
+				{ -13.054249763489, -4.0032000541687, },
+				{ -11.041540145874, -4.0507597923279, },
+				{ -8.8877296447754, -4.0753998756409, },
+				{ -6.6451101303101, -4.0906400680542, },
+				{ -2.4508299827576, -4.0999999046326, },
+				{ -0.16774000227451, -4.0999999046326, },
+				{ 4.3984599113464, -4.0999999046326, },
+				{ 6.6815500259399, -4.0999999046326, },
+				{ 8.8409795761108, -4.0814099311829, },
+				{ 10.753060340881, -4.0256600379944, },
+				{ 12.587120056152, -3.9302399158478, },
+				{ 14.512470245361, -3.792690038681, },
+				{ 16.498670578003, -3.6026699542999, },
+				{ 18.515270233154, -3.3021399974823, },
+				{ 20.465690612793, -2.9230000972748, },
+				{ 21.318380355835, -2.7087199687958, },
+				{ 22.257869720459, -2.4281899929047, },
+				{ 23.38178062439, -2.0309998989105, },
+				{ 24.082040786743, -1.7650400400162, },
+				{ 24.46017074585, -1.5974999666214, },
+				{ 26.176370620728, -0.88103002309799, },
+				{ 27.368949890137, -0.41576999425888, },
+				{ 28.201360702515, -0.15618999302387, },
+				{ 28.201360702515, 0, },
+			},
+			weight = 350000,
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,3302 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 17.076763153076, 1.3514050245285, 4.8319897651672, },
+		bbMin = { -17.080188751221, -1.3514052629471, -0.012608826160431, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 17.078475952148, 1.3514051437378, 2.4222993850708, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass1_frt_lod0.msh",
+										name = "front_glass1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.9487550258636, -0.00015193223953247, 2.121199131012, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass1_lft_lod0.msh",
+										name = "front_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5847294330597, 0.97931051254272, 2.0546772480011, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass2_lft_lod0.msh",
+										name = "front_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.171359539032, 1.2353959083557, 1.9248516559601, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass3_lft_lod0.msh",
+										name = "front_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.39980840682983, 1.2827988862991, 1.8720061779022, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass4_lft_lod0.msh",
+										name = "front_glass4_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.988329410553, 1.2827990055084, 1.8720066547394, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5847277641296, -0.97961485385895, 2.0546772480011, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.171361207962, -1.2357003688812, 1.9248517751694, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass3_rgt_lod0.msh",
+										name = "front_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.39980888366699, -1.283102273941, 1.8720058202744, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass4_rgt_lod0.msh",
+										name = "front_glass4_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.988329410553, -1.2831020355225, 1.8720062971115, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass1_interior_lod0.msh",
+										name = "front_glass1_interior",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.4377202987671, 0.00099997222423553, 1.5629999637604, 1, },
+									},
+								},
+								name = "front_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_interior_lod0.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8187655210495, 0, 3.7158203597398e-11, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_b1_lod0.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod0.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86576461791992, -2.1257138844294e-17, 0.34713652729988, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod0.msh",
+										name = "front_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86807250976563, -2.0796352920988e-17, 0.3396053314209, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1519622802734, 0, 3.1030258224041e-11, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/front_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/front_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/front_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/front_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_d1_glass_lft_lod0.msh",
+										name = "front_d1_glass_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5367431640625e-07, 5.9604644775391e-08, 5.9604644775391e-08, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_d1_lft_lod0.msh",
+								name = "front_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8023394346237, 1.2672748565674, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/front_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/front_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/front_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/front_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_d2_glass_lft_lod0.msh",
+										name = "front_d2_glass_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5367431640625e-07, 5.9604644775391e-08, 1.7881393432617e-07, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_d2_lft_lod0.msh",
+								name = "front_d2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.99880409240723, 1.2672748565674, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/front_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/front_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/front_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/front_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_d1_glass_rgt_lod0.msh",
+										name = "front_d1_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5367431640625e-07, 0, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_d1_rgt_lod0.msh",
+								name = "front_d1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8013648986816, -1.267276763916, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/front_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/front_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/front_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/front_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_d2_glass_rgt_lod0.msh",
+										name = "front_d2_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5367431640625e-07, 0, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_d2_rgt_lod0.msh",
+								name = "front_d2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.99782943725586, -1.267276763916, 1.5031625032425, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_headlights_lod0.msh",
+								name = "front_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.45578956604, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_blinklights_lod0.msh",
+								name = "front_blinklights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.45578956604, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_blinklights_turn_lft_lod0.msh",
+								name = "front_blinklights_turn_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.45578956604, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_blinklights_turn_rgt_lod0.msh",
+								name = "front_blinklights_turn_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.45578956604, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.546329498291, 0, -3.7158203597398e-11, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_body_lod0.msh",
+								name = "middle1_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle1_glass1_lft_lod0.msh",
+										name = "middle1_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9073486328125e-06, 1.2828059196472, 1.8680074214935, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle1_glass1_rgt_lod0.msh",
+										name = "middle1_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4305114746094e-06, -1.2831007242203, 1.8680073022842, 1, },
+									},
+								},
+								name = "middle1_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_interior_lod0.msh",
+								name = "middle1_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle1_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle1_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle1_d1_glass_lft_lod0.msh",
+										name = "middle1_d1_glass_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5367431640625e-07, 5.9604644775391e-08, 5.9604644775391e-08, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d1_lft_lod0.msh",
+								name = "middle1_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1541647911072, 1.2672752141953, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle1_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle1_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle1_d2_glass_lft_lod0.msh",
+										name = "middle1_d2_glass_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3113021850586e-06, -5.9604644775391e-08, 1.7881393432617e-07, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d2_lft_lod0.msh",
+								name = "middle1_d2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3506330251694, 1.2672752141953, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle1_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle1_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle1_d3_glass_lft_lod0.msh",
+										name = "middle1_d3_glass_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5367431640625e-07, 5.9604644775391e-08, 5.9604644775391e-08, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d3_lft_lod0.msh",
+								name = "middle1_d3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3515152931213, 1.2672755718231, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle1_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle1_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle1_d4_glass_lft_lod0.msh",
+										name = "middle1_d4_glass_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3113021850586e-06, -5.9604644775391e-08, 1.7881393432617e-07, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d4_lft_lod0.msh",
+								name = "middle1_d4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1550469398499, 1.2672753334045, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle1_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle1_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle1_d1_glass_rgt_lod0.msh",
+										name = "middle1_d1_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1920928955078e-06, 5.9604644775391e-08, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d1_rgt_lod0.msh",
+								name = "middle1_d1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1531913280487, -1.2672755718231, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle1_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle1_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle1_d2_glass_rgt_lod0.msh",
+										name = "middle1_d2_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5367431640625e-07, 0, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d2_rgt_lod0.msh",
+								name = "middle1_d2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3496518135071, -1.2672755718231, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle1_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle1_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle1_d3_glass_rgt_lod0.msh",
+										name = "middle1_d3_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.352490067482, 1.2672753334045, -1.5031625032425, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d3_rgt_lod0.msh",
+								name = "middle1_d3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.352490067482, -1.2672753334045, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle1_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle1_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle1_d4_glass_rgt_lod0.msh",
+										name = "middle1_d4_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1560292243958, 1.2672752141953, -1.5031625032425, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d4_rgt_lod0.msh",
+								name = "middle1_d4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1560292243958, -1.2672752141953, 1.5031625032425, 1, },
+							},
+							{
+								name = "middle1_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "middle1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.7003998756409, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle2_body_lod0.msh",
+								name = "middle2_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle2_glass1_lft_lod0.msh",
+										name = "middle2_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.7904999256134, 1.2828011512756, 1.8867580890656, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle2_glass2_lft_lod0.msh",
+										name = "middle2_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.80250000953674, 1.2828013896942, 1.8867580890656, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle2_glass1_rgt_lod0.msh",
+										name = "middle2_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.7904999256134, -1.2830998897552, 1.8867580890656, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle2_glass2_rgt_lod0.msh",
+										name = "middle2_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.80250000953674, -1.283099770546, 1.8867580890656, 1, },
+									},
+								},
+								name = "middle2_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle2_interior_lod0.msh",
+								name = "middle2_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.020660400390625, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_b1_lod0.msh",
+										name = "middle2_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod0.msh",
+										name = "middle2_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86576461791992, 4.7683715820313e-07, 0.3396053314209, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod0.msh",
+										name = "middle2_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86807250976563, 4.7683715820313e-07, 0.3396053314209, 1, },
+									},
+								},
+								name = "middle2_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.021426200866699, 0, 0, 1, },
+							},
+							{
+								name = "middle2_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "middle2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_body_lod0.msh",
+								name = "middle3_body",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle3_glass1_rgt_lod0.msh",
+										name = "middle3_glass1_rgt",
+										transf = { 1, -2.0214560696288e-30, -2.5286865319378e-24, 0, 4.9303801874336e-31, 1, 0, 0, -2.5286865319378e-24, 0, 1, 0, -1.9669532775879e-06, 1.2828059196472, 1.8680074214935, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle3_glass1_lft_lod0.msh",
+										name = "middle3_glass1_lft",
+										transf = { 1, -2.0214560696288e-30, -2.5286865319378e-24, 0, 4.9303801874336e-31, 1, 0, 0, -2.5286865319378e-24, 0, 1, 0, -1.4901161193848e-06, -1.2831007242203, 1.8680073022842, 1, },
+									},
+								},
+								name = "middle3_glass_grp",
+								transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 3.7443942346727e-06, 0.00028899952303618, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_interior_lod0.msh",
+								name = "middle3_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9073486328125e-06, 0, 0, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle3_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle3_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle3_d1_glass_lft_lod0.msh",
+										name = "middle3_d1_glass_lft",
+										transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 9.4297587338588e-07, 9.5816403700155e-08, 1.1920928955078e-07, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d1_lft_lod0.msh",
+								name = "middle3_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1543035507202, 1.2672758102417, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle3_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle3_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle3_d2_glass_lft_lod0.msh",
+										name = "middle3_d2_glass_lft",
+										transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, -8.1536109064473e-07, 9.5816403700155e-08, 2.3841857910156e-07, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d2_lft_lod0.msh",
+								name = "middle3_d2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3507642745972, 1.2672758102417, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle3_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle3_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle3_d3_glass_lft_lod0.msh",
+										name = "middle3_d3_glass_lft",
+										transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 1.2111967180317e-06, 9.5816410805583e-08, 1.1920928955078e-07, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d3_lft_lod0.msh",
+								name = "middle3_d3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3513916730881, 1.2672758102417, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle3_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle3_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle3_d4_glass_lft_lod0.msh",
+										name = "middle3_d4_glass_lft",
+										transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, -7.2595412348164e-07, 9.5816410805583e-08, 2.3841857910156e-07, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d4_lft_lod0.msh",
+								name = "middle3_d4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1549310684204, 1.2672758102417, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle3_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle3_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle3_d1_glass_rgt_lod0.msh",
+										name = "middle3_d1_glass_rgt",
+										transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 9.4297587338588e-07, 3.6211762477478e-08, 5.9604644775391e-08, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d1_rgt_lod0.msh",
+								name = "middle3_d1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1533212661743, -1.2672748565674, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle3_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle3_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle3_d2_glass_rgt_lod0.msh",
+										name = "middle3_d2_glass_rgt",
+										transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, -8.1536109064473e-07, 3.6211762477478e-08, 5.9604644775391e-08, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d2_rgt_lod0.msh",
+								name = "middle3_d2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3497895002365, -1.2672748565674, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle3_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle3_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle3_d3_glass_rgt_lod0.msh",
+										name = "middle3_d3_glass_rgt",
+										transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 9.7277813893015e-07, 3.6211762477478e-08, 5.9604644775391e-08, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d3_rgt_lod0.msh",
+								name = "middle3_d3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3523740768433, -1.2672748565674, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle3_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle3_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/middle3_d4_glass_rgt_lod0.msh",
+										name = "middle3_d4_glass_rgt",
+										transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, -1.2027912816848e-06, 3.6211762477478e-08, 5.9604644775391e-08, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d4_rgt_lod0.msh",
+								name = "middle3_d4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1559057235718, -1.2672748565674, 1.5031621456146, 1, },
+							},
+							{
+								name = "middle3_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "middle3_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6532273292542, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass1_frt_lod0.msh",
+										name = "front_glass1_frt_2",
+										transf = { 1, -1.1832913578315e-30, 2.5286865319378e-24, 0, -3.6484816866472e-30, 1, 0, 0, -2.3941092280898e-23, 2.6469779601697e-23, 1, 0, 3.9487550258636, -0.00015193223953247, 2.121199131012, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass1_lft_lod0.msh",
+										name = "front_glass1_lft_2",
+										transf = { 1, -1.1832913578315e-30, 2.5286865319378e-24, 0, -3.6484816866472e-30, 1, 0, 0, -2.3941092280898e-23, 2.6469779601697e-23, 1, 0, 3.5847294330597, 0.97931051254272, 2.0546772480011, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass2_lft_lod0.msh",
+										name = "front_glass2_lft_2",
+										transf = { 1, -1.1832913578315e-30, 2.5286865319378e-24, 0, -3.6484816866472e-30, 1, 0, 0, -2.3941092280898e-23, 2.6469779601697e-23, 1, 0, 3.171359539032, 1.2353959083557, 1.9248516559601, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass3_lft_lod0.msh",
+										name = "front_glass3_lft_2",
+										transf = { 1, -1.1832913578315e-30, 2.5286865319378e-24, 0, -3.6484816866472e-30, 1, 0, 0, -2.3941092280898e-23, 2.6469779601697e-23, 1, 0, -0.39980840682983, 1.2827988862991, 1.8720061779022, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass4_lft_lod0.msh",
+										name = "front_glass4_lft_2",
+										transf = { 1, -1.1832913578315e-30, 2.5286865319378e-24, 0, -3.6484816866472e-30, 1, 0, 0, -2.3941092280898e-23, 2.6469779601697e-23, 1, 0, -1.988329410553, 1.2827990055084, 1.8720066547394, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt_2",
+										transf = { 1, -1.1832913578315e-30, 2.5286865319378e-24, 0, -3.6484816866472e-30, 1, 0, 0, -2.3941092280898e-23, 2.6469779601697e-23, 1, 0, 3.5847277641296, -0.97961485385895, 2.0546772480011, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt_2",
+										transf = { 1, -1.1832913578315e-30, 2.5286865319378e-24, 0, -3.6484816866472e-30, 1, 0, 0, -2.3941092280898e-23, 2.6469779601697e-23, 1, 0, 3.171361207962, -1.2357003688812, 1.9248517751694, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass3_rgt_lod0.msh",
+										name = "front_glass3_rgt_2",
+										transf = { 1, -1.1832913578315e-30, 2.5286865319378e-24, 0, -3.6484816866472e-30, 1, 0, 0, -2.3941092280898e-23, 2.6469779601697e-23, 1, 0, -0.39980888366699, -1.283102273941, 1.8720058202744, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass4_rgt_lod0.msh",
+										name = "front_glass4_rgt_2",
+										transf = { 1, -1.1832913578315e-30, 2.5286865319378e-24, 0, -3.6484816866472e-30, 1, 0, 0, -2.3941092280898e-23, 2.6469779601697e-23, 1, 0, -1.988329410553, -1.2831020355225, 1.8720062971115, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/front_glass1_interior_lod0.msh",
+										name = "front_glass1_interior_2",
+										transf = { 1, -1.1832913578315e-30, 2.5286865319378e-24, 0, -3.6484816866472e-30, 1, 0, 0, -2.3941092280898e-23, 2.6469779601697e-23, 1, 0, 2.4377202987671, 0.00099997222423553, 1.5629999637604, 1, },
+									},
+								},
+								name = "back_glass_grp",
+								transf = { -1, -1.2246468525852e-16, -8.7422776573476e-08, 0, -7.5202778371448e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, -1.3683182942259e-07, -3.2033034358392e-07, 7.2858385991026e-17, 1, },
+							},
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_interior_lod0.msh",
+								name = "back_interior",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -1.8187618255615, -9.6385573133961e-17, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_b1_lod0.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod0.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86807250976563, 0, 0.33960509300232, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod0.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86576461791992, -5.715778328072e-18, 0.33960509300232, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1519622802734, -1.5080574592916e-17, 0, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/back_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/back_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/back_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/back_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_d1_glass_lft_lod0.msh",
+										name = "back_d1_glass_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5367431640625e-07, 5.9604644775391e-08, 1.1920928955078e-07, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_d1_lft_lod0.msh",
+								name = "back_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.99876594543457, 1.267276763916, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/back_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/back_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/back_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/back_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_d2_glass_lft_lod0.msh",
+										name = "back_d2_glass_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5367431640625e-07, 5.9604644775391e-08, 5.9604644775391e-08, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_d2_lft_lod0.msh",
+								name = "back_d2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8023012876511, 1.267276763916, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/back_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/back_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/back_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/back_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_d1_glass_rgt_lod0.msh",
+										name = "back_d1_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5367431640625e-07, 5.9604644775391e-08, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_d1_rgt_lod0.msh",
+								name = "back_d1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.99974632263184, -1.2672748565674, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/back_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/back_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/back_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/back_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door_glass.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_glass.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_d2_glass_rgt_lod0.msh",
+										name = "back_d2_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5367431640625e-07, 0, 5.9604644775391e-08, 1, },
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body.mtl", "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_door.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_d2_rgt_lod0.msh",
+								name = "back_d2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8032778501511, -1.2672748565674, 1.5031621456146, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_headlights_lod0.msh",
+								name = "back_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2498440742493, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_brake_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_brakelights_lod0.msh",
+								name = "back_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2498440742493, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_blinklights_lod0.msh",
+								name = "back_blinklights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2498440742493, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_blinklights_turn_lft_lod0.msh",
+								name = "back_blinklights_turn_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2498440742493, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_blinklights_turn_rgt_lod0.msh",
+								name = "back_blinklights_turn_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.3380680084229, -6.5055518480919e-17, 1.0624444484711, 1, },
+							},
+							{
+								name = "back_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.54975605011, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_interior_lod1.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8187655210495, 0, 3.7158203597398e-11, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_b1_lod1.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod1.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86576461791992, -2.1257138844294e-17, 0.34713652729988, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod1.msh",
+										name = "front_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86807250976563, -2.0796352920988e-17, 0.3396053314209, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1519622802734, 0, 3.1030258224041e-11, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/front_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/front_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/front_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/front_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_d1_lft_lod1.msh",
+								name = "front_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8023394346237, 1.2672748565674, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/front_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/front_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/front_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/front_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_d2_lft_lod1.msh",
+								name = "front_d2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.99880409240723, 1.2672748565674, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/front_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/front_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/front_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/front_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_d1_rgt_lod1.msh",
+								name = "front_d1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8013648986816, -1.267276763916, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/front_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/front_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/front_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/front_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_d2_rgt_lod1.msh",
+								name = "front_d2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.99782943725586, -1.267276763916, 1.5031625032425, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_headlights_lod1.msh",
+								name = "front_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.45578956604, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_blinklights_lod1.msh",
+								name = "front_blinklights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.45578956604, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_blinklights_turn_lft_lod1.msh",
+								name = "front_blinklights_turn_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.45578956604, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/front_blinklights_turn_rgt_lod1.msh",
+								name = "front_blinklights_turn_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.45578956604, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.546329498291, 0, -3.7158203597398e-11, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_body_lod1.msh",
+								name = "middle1_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_interior_lod1.msh",
+								name = "middle1_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle1_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle1_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d1_lft_lod1.msh",
+								name = "middle1_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1541647911072, 1.2672752141953, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle1_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle1_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d2_lft_lod1.msh",
+								name = "middle1_d2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3506330251694, 1.2672752141953, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle1_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle1_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d3_lft_lod1.msh",
+								name = "middle1_d3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3515152931213, 1.2672755718231, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle1_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle1_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d4_lft_lod1.msh",
+								name = "middle1_d4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1550469398499, 1.2672753334045, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle1_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle1_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d1_rgt_lod1.msh",
+								name = "middle1_d1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1531913280487, -1.2672755718231, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle1_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle1_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d2_rgt_lod1.msh",
+								name = "middle1_d2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3496518135071, -1.2672755718231, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle1_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle1_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d3_rgt_lod1.msh",
+								name = "middle1_d3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.352490067482, -1.2672753334045, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle1_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle1_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle1_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle1_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_d4_rgt_lod1.msh",
+								name = "middle1_d4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1560292243958, -1.2672752141953, 1.5031625032425, 1, },
+							},
+						},
+						name = "middle1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.7003998756409, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle2_body_lod1.msh",
+								name = "middle2_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle2_interior_lod1.msh",
+								name = "middle2_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.020660400390625, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_b1_lod1.msh",
+										name = "middle2_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod1.msh",
+										name = "middle2_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86576461791992, 4.7683715820313e-07, 0.3396053314209, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod1.msh",
+										name = "middle2_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86807250976563, 4.7683715820313e-07, 0.3396053314209, 1, },
+									},
+								},
+								name = "middle2_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.021426200866699, 0, 0, 1, },
+							},
+						},
+						name = "middle2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_body_lod1.msh",
+								name = "middle3_body",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_interior_lod1.msh",
+								name = "middle3_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9073486328125e-06, 0, 0, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle3_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle3_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d1_lft_lod1.msh",
+								name = "middle3_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1543035507202, 1.2672758102417, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle3_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle3_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d2_lft_lod1.msh",
+								name = "middle3_d2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3507642745972, 1.2672758102417, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle3_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle3_d3_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d3_lft_lod1.msh",
+								name = "middle3_d3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3513916730881, 1.2672758102417, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/middle3_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/middle3_d4_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d4_lft_lod1.msh",
+								name = "middle3_d4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1549310684204, 1.2672758102417, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle3_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle3_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d1_rgt_lod1.msh",
+								name = "middle3_d1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1533212661743, -1.2672748565674, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle3_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle3_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d2_rgt_lod1.msh",
+								name = "middle3_d2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3497895002365, -1.2672748565674, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle3_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle3_d3_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d3_rgt_lod1.msh",
+								name = "middle3_d3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3523740768433, -1.2672748565674, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/middle3_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/middle3_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/middle3_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/middle3_d4_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle3_d4_rgt_lod1.msh",
+								name = "middle3_d4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1559057235718, -1.2672748565674, 1.5031621456146, 1, },
+							},
+						},
+						name = "middle3_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6532273292542, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_interior_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_interior_lod1.msh",
+								name = "back_interior",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -1.8187618255615, -9.6385573133961e-17, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_b1_lod1.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod1.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86576461791992, 4.7683715820313e-07, 0.3396053314209, 1, },
+									},
+									{
+										materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+										mesh = "vehicle/tram/caf_urbos3_v2/back_w1_lod1.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86807250976563, 4.7683715820313e-07, 0.3396053314209, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1519622802734, -1.5080574592916e-17, 0, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/back_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/back_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/back_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/back_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_d1_lft_lod1.msh",
+								name = "back_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.99876594543457, 1.267276763916, 1.5031621456146, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/back_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_left/back_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/back_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_left/back_d2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_d2_lft_lod1.msh",
+								name = "back_d2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8023012876511, 1.267276763916, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/back_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/back_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/back_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/back_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_d1_rgt_lod1.msh",
+								name = "back_d1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.99974632263184, -1.2672748565674, 1.5031625032425, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_all_doors/back_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/close_doors_right/back_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_all_doors/back_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/caf_urbos3_v2/open_doors_right/back_d2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_d2_rgt_lod1.msh",
+								name = "back_d2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8032778501511, -1.2672748565674, 1.5031621456146, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_headlights_lod1.msh",
+								name = "back_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2498440742493, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_brake_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_brakelights_lod1.msh",
+								name = "back_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2498440742493, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_blinklights_lod1.msh",
+								name = "back_blinklights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2498440742493, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_blinklights_turn_lft_lod1.msh",
+								name = "back_blinklights_turn_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2498440742493, -5.3861131050006e-17, 0.87963712215424, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_blinklights_turn_rgt_lod1.msh",
+								name = "back_blinklights_turn_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.3380680084229, -6.5055518480919e-17, 1.0624444484711, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.54975605011, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_body_lod2.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 12.546329498291, 0, -3.7158203597398e-11, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_body_lod2.msh",
+								name = "middle1_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "middle1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.7003998756409, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle2_body_lod2.msh",
+								name = "middle2_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "middle2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/middle1_body_lod2.msh",
+								name = "middle3_body",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "middle3_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6532273292542, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/caf_urbos3_v2/caf_urbos3_body_lod.mtl", },
+								mesh = "vehicle/tram/caf_urbos3_v2/back_body_lod2.msh",
+								name = "back_body",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.54975605011, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2018,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAM_CAF_URBOS3_DESCRIPTION"),
+			name = _("VEHICLE_TRAM_CAF_URBOS3_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "back_body",
+					color = { 0.96862745285034, 0.57687145471573, 0.12915031611919, },
+					filter = "NONE",
+					fitting = "CUT",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 123.99997711182, 18.199310302734, },
+					transf = { 7.5497896823151e-10, 0.0099999997764826, 6.3553067320947e-17, 0, 1.2612751731922e-08, -1.015789333039e-15, 0.0099999997764826, 0, 0.0099999997764826, -7.5497896823151e-10, -1.2612751731922e-08, 0, 3.5645287036896, -0.62999999523163, 2.6320068836212, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "front_body",
+					color = { 0.96862745285034, 0.57687145471573, 0.12915031611919, },
+					filter = "NONE",
+					fitting = "CUT",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 123.80000305176, 18.200002670288, },
+					transf = { -7.5497896823151e-10, 0.0099999997764826, -1.1399865712516e-16, 0, -4.2351646416082e-24, 1.1399865712516e-16, 0.0099999997764826, 0, 0.0099999997764826, 7.5497896823151e-10, -4.4998625796201e-24, 0, 3.5639998912811, -0.62799996137619, 2.6319999694824, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 25568,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/tram/caf_urbos3_v2/back_w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 117, },
+					blinkLightsLeft0 = { 29, 120, },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { 30, 121, },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { 28, 119, },
+					blinkingLights1 = { },
+					brakeLights = { 118, },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 32,
+							offset = 0,
+							position = 8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 32,
+							offset = 0,
+							position = 2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 55,
+							offset = 0,
+							position = 2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 55,
+							offset = 0,
+							position = -2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 68,
+							offset = 0,
+							position = -2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 68,
+							offset = 0,
+							position = -8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 91,
+							offset = 0,
+							position = -8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = 15,
+							upright = false,
+						},
+						{
+							group = 91,
+							offset = 0,
+							position = -15,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { 27, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/tram/caf_urbos3_v2/back_w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 56, },
+					blinkLightsLeft0 = { 14, 59, },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { 15, 60, },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { 13, 58, },
+					blinkingLights1 = { },
+					brakeLights = { 57, },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 16,
+							offset = 0,
+							position = 8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 16,
+							offset = 0,
+							position = 2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 27,
+							offset = 0,
+							position = 2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 27,
+							offset = 0,
+							position = -2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 34,
+							offset = 0,
+							position = -2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 34,
+							offset = 0,
+							position = -8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 45,
+							offset = 0,
+							position = -8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = 15,
+							upright = false,
+						},
+						{
+							group = 45,
+							offset = 0,
+							position = -15,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { 12, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = 8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = 2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 5,
+							offset = 0,
+							position = 2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 5,
+							offset = 0,
+							position = -2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 7,
+							offset = 0,
+							position = -2.4319999217987,
+							upright = false,
+						},
+						{
+							group = 7,
+							offset = 0,
+							position = -8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 9,
+							offset = 0,
+							position = -8.9399995803833,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = 15,
+							upright = false,
+						},
+						{
+							group = 9,
+							offset = 0,
+							position = -15,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 800,
+					tractiveEffort = 80,
+					type = "ELECTRIC",
+				},
+			},
+			soundSet = {
+				horn = "",
+				name = "tram_modern",
+			},
+			topSpeed = 19.440000534058,
+			weight = 35,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRAM",
+			seats = {
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 90,
+					transf = { 0.34202009439468, -0.93969261646271, 3.6704438998701e-17, 0, 0.93969261646271, 0.34202009439468, -8.0617849680031e-17, 0, 6.3202342741225e-17, 6.2063817963552e-17, 1, 0, 2.0332274436951, 0.20499999821186, 0.34000000357628, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 90,
+					transf = { -0.87630665302277, -0.48175367712975, -9.4042269720272e-17, 0, 0.48175367712975, -0.87630665302277, -1.2976231085048e-16, 0, -1.9896390340697e-17, -1.5901679067561e-16, 1, 0, -0.23177243769169, 0.79499995708466, 0.34000000357628, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 90,
+					transf = { 0.34202009439468, -0.93969261646271, 3.6704438998701e-17, 0, 0.93969261646271, 0.34202009439468, -8.0617849680031e-17, 0, 6.3202342741225e-17, 6.2063817963552e-17, 1, 0, -0.8517724275589, 0.79499995708466, 0.34000000357628, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 90,
+					transf = { 1, 0, 0, 0, 0, 1, -9.5526125241607e-32, 0, 0, 9.5526125241607e-32, 1, 0, -0.096772439777851, 0.089999996125698, 0.34000000357628, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 90,
+					transf = { 1, 1.7484555314695e-07, 1.2246468525852e-16, 0, -1.7484555314695e-07, 1, -1.2246468525852e-16, 0, -1.224647117283e-16, 1.2246465878874e-16, 1, 0, 0.33822757005692, 0.93500000238419, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 90,
+					transf = { 1.3907092011323e-07, 1, 1.2246468525852e-16, 0, -1, 1.3907092011323e-07, -1.2246468525852e-16, 0, -1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 0.21822755038738, -0.93999999761581, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 90,
+					transf = { 1.3907092011323e-07, 1, 1.2246468525852e-16, 0, -1, 1.3907092011323e-07, -1.2246468525852e-16, 0, -1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -0.66677242517471, -0.93999999761581, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 90,
+					transf = { 1, 1.7484555314695e-07, 1.2246468525852e-16, 0, -1.7484555314695e-07, 1, -1.2246468525852e-16, 0, -1.224647117283e-16, 1.2246465878874e-16, 1, 0, 0.33822757005692, 0.50499999523163, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 90,
+					transf = { 1.3907092011323e-07, 1, 1.2246468525852e-16, 0, -1, 1.3907092011323e-07, -1.2246468525852e-16, 0, -1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 0.64822751283646, -0.93999999761581, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 90,
+					transf = { 1.3907092011323e-07, 1, 1.2246468525852e-16, 0, -1, 1.3907092011323e-07, -1.2246468525852e-16, 0, -1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -0.23677243292332, -0.93999999761581, 0.38499999046326, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 31,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.207670211792, 0, 0.71399998664856, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { 0.93667221069336, -0.35020738840103, 0, 0, 0.35020738840103, 0.93667221069336, 0, 0, 0, 0, 1, 0, 1.918670296669, 0.52499997615814, 0.34999999403954, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { -0.99888980388641, 0.047106377780437, 1.6521676744705e-16, 0, -0.047106377780437, -0.99888980388641, -1.089403748875e-16, 0, 1.5990156952858e-16, -1.1660221141189e-16, 1, 0, 2.0836701393127, -0.28499999642372, 0.34999999403954, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { -0.19594615697861, -0.98061460256577, 1.2232872323559e-16, 0, 0.98061460256577, -0.19594615697861, -1.1669580855256e-16, 0, 1.3840346304568e-16, 9.7091244223253e-17, 1, 0, -0.28632977604866, -0.0099999997764826, 0.34999999403954, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.033670239150524, 0.92099994421005, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -0.56132978200912, 0.4889999628067, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { -1, -8.7422776573476e-08, 1.1829179067876e-16, 0, 8.7422776573476e-08, -1, -1.5416086990301e-16, 0, 1.1829180391365e-16, -1.5416085666812e-16, 1, 0, -2.2913298606873, -0.50599998235703, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { -1, -8.7422776573476e-08, 1.1829179067876e-16, 0, 8.7422776573476e-08, -1, -1.5416086990301e-16, 0, 1.1829180391365e-16, -1.5416085666812e-16, 1, 0, -2.2913298606873, -0.93599998950958, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.033670239150524, -0.93699997663498, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { -1, -8.7422776573476e-08, 1.1829179067876e-16, 0, 8.7422776573476e-08, -1, -1.5416086990301e-16, 0, 1.1829180391365e-16, -1.5416085666812e-16, 1, 0, -2.2913298606873, 0.91999995708466, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.033670239150524, -0.50300002098083, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7063295841217, -0.50300002098083, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -0.56132978200912, -0.50300002098083, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { -1, -8.7422776573476e-08, 1.1829179067876e-16, 0, 8.7422776573476e-08, -1, -1.5416086990301e-16, 0, 1.1829180391365e-16, -1.5416085666812e-16, 1, 0, -2.2913298606873, 0.48599997162819, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7063295841217, 0.4889999628067, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 31,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.033670239150524, 0.4889999628067, 0.38499999046326, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { 0.51204282045364, -0.85895985364914, 5.4950706587751e-17, 0, 0.85895985364914, 0.51204282045364, -8.9281812207805e-17, 0, 4.8552385140315e-17, 9.2916562933371e-17, 1, 0, 0.66999995708466, 0.064999997615814, 0.34000000357628, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { 1, -1.1331077372776e-15, 1.2246468525852e-16, 0, 1.1331077372776e-15, 1, -1.2246468525852e-16, 0, -1.2246468525852e-16, 1.2246468525852e-16, 1, 0, 1.1849999427795, -0.50599998235703, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -1.1449999809265, -0.50599998235703, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 0.6599999666214, -0.50599998235703, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { 1, 1.7484555314695e-07, 1.2246468525852e-16, 0, -1.7484555314695e-07, 1, -1.2246468525852e-16, 0, -1.224647117283e-16, 1.2246465878874e-16, 1, 0, -0.5799999833107, -0.50599998235703, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { 1, -1.1331077372776e-15, 1.2246468525852e-16, 0, 1.1331077372776e-15, 1, -1.2246468525852e-16, 0, -1.2246468525852e-16, 1.2246468525852e-16, 1, 0, 1.1849999427795, -0.93599998950958, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -1.1449999809265, -0.93599998950958, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { 1, -1.1331077372776e-15, 1.2246468525852e-16, 0, 1.1331077372776e-15, 1, -1.2246468525852e-16, 0, -1.2246468525852e-16, 1.2246468525852e-16, 1, 0, 1.1849999427795, 0.91999995708466, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -1.1449999809265, 0.91999995708466, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { 1, -1.1331077372776e-15, 1.2246468525852e-16, 0, 1.1331077372776e-15, 1, -1.2246468525852e-16, 0, -1.2246468525852e-16, 1.2246468525852e-16, 1, 0, 1.1849999427795, 0.48599997162819, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -1.1449999809265, 0.48599997162819, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 0.6599999666214, 0.48599997162819, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 67,
+					transf = { 1, 1.7484555314695e-07, 1.2246468525852e-16, 0, -1.7484555314695e-07, 1, -1.2246468525852e-16, 0, -1.224647117283e-16, 1.2246465878874e-16, 1, 0, -0.5799999833107, 0.48599997162819, 0.38499999046326, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { 0.51204282045364, -0.85895985364914, 5.4950706587751e-17, 0, 0.85895985364914, 0.51204282045364, -8.9281812207805e-17, 0, 4.8552385140315e-17, 9.2916562933371e-17, 1, 0, -2.1503999233246, -0.20999999344349, 0.34000000357628, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { 0.98095518350601, -0.19423434138298, 1.052727817829e-16, 0, 0.19423434138298, 0.98095518350601, -1.6061792117394e-16, 0, -7.2070374034838e-17, 1.7800656790389e-16, 1, 0, 2.0395998954773, 0.3299999833107, 0.34000000357628, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0595999956131, 0.44999998807907, 0.34000000357628, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { -0.98228716850281, 0.18738129734993, -2.4694599714577e-16, 0, -0.18738129734993, -0.98228716850281, -3.257547366517e-16, 0, -3.0361223661929e-16, -2.7371165594385e-16, 1, 0, -1.0803999900818, 0.62000000476837, 0.34000000357628, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { -1, -8.7422776573476e-08, -1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246467202363e-16, 0, -1.2246467202363e-16, -1.2246468525852e-16, 1, 0, 0.5246000289917, -0.50599998235703, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { 1, 1.7484555314695e-07, 1.2246468525852e-16, 0, -1.7484555314695e-07, 1, -1.2246468525852e-16, 0, -1.224647117283e-16, 1.2246465878874e-16, 1, 0, -0.5203999876976, -0.50599998235703, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 0.5246000289917, -0.93599998950958, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { 1, 1.7484555314695e-07, 1.2246468525852e-16, 0, -1.7484555314695e-07, 1, -1.2246468525852e-16, 0, -1.224647117283e-16, 1.2246465878874e-16, 1, 0, -0.5203999876976, -0.93599998950958, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 0.5246000289917, 0.91999995708466, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { 1, 1.7484555314695e-07, 1.2246468525852e-16, 0, -1.7484555314695e-07, 1, -1.2246468525852e-16, 0, -1.224647117283e-16, 1.2246465878874e-16, 1, 0, -0.5203999876976, 0.91999995708466, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, 0.5246000289917, 0.48599997162819, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 54,
+					transf = { 1, 1.7484555314695e-07, 1.2246468525852e-16, 0, -1.7484555314695e-07, 1, -1.2246468525852e-16, 0, -1.224647117283e-16, 1.2246465878874e-16, 1, 0, -0.5203999876976, 0.48599997162819, 0.38499999046326, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { 0.51204282045364, -0.85895985364914, 5.4950706587751e-17, 0, 0.85895985364914, 0.51204282045364, -8.9281812207805e-17, 0, 4.8552385140315e-17, 9.2916562933371e-17, 1, 0, 1.7997558116913, 0.064999997615814, 0.34000000357628, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { 0.99649280309677, 0.083677843213081, 1.0694024554891e-16, 0, -0.083677843213081, 0.99649280309677, -1.9044249387724e-16, 0, -1.2250101503102e-16, 1.8082607588751e-16, 1, 0, -2.0652441978455, -0.59500002861023, 0.34000000357628, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { 0.99649280309677, 0.083677843213081, 1.0694024554891e-16, 0, -0.083677843213081, 0.99649280309677, -1.9044249387724e-16, 0, -1.2250101503102e-16, 1.8082607588751e-16, 1, 0, -2.0452439785004, 0.099999994039536, 0.34000000357628, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { 0.34202015399933, -0.93969261646271, 3.6704445616146e-17, 0, 0.93969261646271, 0.34202015399933, -8.0617856297476e-17, 0, 6.3202342741225e-17, 6.2063824580997e-17, 1, 0, -2.040244102478, 0.76999998092651, 0.34000000357628, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { 1, -1.9984014443253e-15, 0, 0, 1.9984014443253e-15, 1, -1.2246468525852e-16, 0, 2.4473359802199e-31, 1.2246468525852e-16, 1, 0, 2.3047556877136, -0.52999997138977, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -2.4492937051703e-16, 0, 1.224647117283e-16, -2.4492937051703e-16, 1, 0, 0.0097558023408055, 0.53750002384186, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -2.4492937051703e-16, 0, 1.224647117283e-16, -2.4492937051703e-16, 1, 0, 1.749755859375, 0.53750002384186, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { 1, 1.7484555314695e-07, -2.3253857293871e-31, 0, -1.7484555314695e-07, 1, -2.4651903288157e-32, 0, 2.3253857293871e-31, 2.4651944430459e-32, 1, 0, 0.58975577354431, -0.51249998807907, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { 1, -1.9984014443253e-15, 0, 0, 1.9984014443253e-15, 1, -1.2246468525852e-16, 0, 2.4473359802199e-31, 1.2246468525852e-16, 1, 0, 2.3047556877136, 0.91499996185303, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -2.4492937051703e-16, 0, 1.224647117283e-16, -2.4492937051703e-16, 1, 0, 0.0097558023408055, -0.90749996900558, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { 1, -1.9984014443253e-15, 0, 0, 1.9984014443253e-15, 1, -1.2246468525852e-16, 0, 2.4473359802199e-31, 1.2246468525852e-16, 1, 0, 2.3047556877136, -0.95999997854233, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -2.4492937051703e-16, 0, 1.224647117283e-16, -2.4492937051703e-16, 1, 0, 0.0097558023408055, 0.96749997138977, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { 1, -1.9984014443253e-15, 0, 0, 1.9984014443253e-15, 1, -1.2246468525852e-16, 0, 2.4473359802199e-31, 1.2246468525852e-16, 1, 0, 2.3047556877136, 0.48499998450279, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -2.4492937051703e-16, 0, 1.224647117283e-16, -2.4492937051703e-16, 1, 0, 0.0097558023408055, -0.47749999165535, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -2.4492937051703e-16, 0, 1.224647117283e-16, -2.4492937051703e-16, 1, 0, 1.749755859375, -0.47749999165535, 0.38499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 122,
+					transf = { 1, 1.7484555314695e-07, -2.3253857293871e-31, 0, -1.7484555314695e-07, 1, -2.4651903288157e-32, 0, 2.3253857293871e-31, 2.4651944430459e-32, 1, 0, 0.58975577354431, 0.50249999761581, 0.38499999046326, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "TRAM",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 172,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,935 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.6651747226715, 11.54261302948, 5.313316822052, },
+		bbMin = { -11.88117313385, -11.54261302948, 0.00074994564056396, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 7.7731738090515, 11.54261302948, 2.6562833786011, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_glass.mtl", },
+								mesh = "vehicle/plane/vickers_victoria_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.7815773487091, 0.21435487270355, 3.5274820327759, 1, },
+							},
+							{
+								materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_glass.mtl", },
+								mesh = "vehicle/plane/vickers_victoria_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.7815773487091, -0.21435487270355, 3.5274820327759, 1, },
+							},
+							{
+								materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_interior_glass.mtl", "vehicle/plane/vickers_victoria_v2/vikers_victoria_glass.mtl", },
+								mesh = "vehicle/plane/vickers_victoria_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.67308735847473, 0.73302692174911, 2.6602425575256, 1, },
+							},
+							{
+								materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_interior_glass.mtl", "vehicle/plane/vickers_victoria_v2/vikers_victoria_glass.mtl", },
+								mesh = "vehicle/plane/vickers_victoria_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9025003910065, 0.74134868383408, 2.6199550628662, 1, },
+							},
+							{
+								materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_interior_glass.mtl", "vehicle/plane/vickers_victoria_v2/vikers_victoria_glass.mtl", },
+								mesh = "vehicle/plane/vickers_victoria_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.67308735847473, -0.73302692174911, 2.6602425575256, 1, },
+							},
+							{
+								materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_interior_glass.mtl", "vehicle/plane/vickers_victoria_v2/vikers_victoria_glass.mtl", },
+								mesh = "vehicle/plane/vickers_victoria_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9025003910065, -0.74134862422943, 2.6199550628662, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria_interior.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/aileron_top_lft_lod0.msh",
+						name = "aileron_top_lft",
+						transf = { -0.10430464893579, 0.99239253997803, 0.065403074026108, 0, 0.0068364846520126, -0.065044790506363, 0.99785894155502, 0, 0.99452191591263, 0.10452845692635, -2.8588580391897e-09, 0, -2.0290956497192, 7.8161635398865, 4.7885084152222, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/aileron_bottom_lft_lod0.msh",
+						name = "aileron_bottom_lft",
+						transf = { -0.10430464893579, 0.99239253997803, 0.065403074026108, 0, 0.0068364846520126, -0.065044790506363, 0.99785894155502, 0, 0.99452191591263, 0.10452845692635, -2.8588580391897e-09, 0, -2.0457355976105, 7.9759554862976, 1.799920797348, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/aileron_top_rgt_lod0.msh",
+						name = "aileron_top_rgt",
+						transf = { 0.10430461168289, 0.99239253997803, -0.065403074026108, 0, 0.0068364823237062, 0.065044790506363, 0.99785894155502, 0, 0.99452191591263, -0.10452841967344, -2.858859593502e-09, 0, -2.0290956497192, -7.8161635398865, 4.7885084152222, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/aileron_bottom_rgt_lod0.msh",
+						name = "aileron_bottom_rgt",
+						transf = { 0.10430461168289, 0.99239253997803, -0.065403074026108, 0, 0.0068364823237062, 0.065044790506363, 0.99785894155502, 0, 0.99452191591263, -0.10452841967344, -2.858859593502e-09, 0, -2.0457355976105, -7.9759554862976, 1.799920797348, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rudder_lft_lod0.msh",
+						name = "rudder_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.120006561279, 1.8297173976898, 3.2992541790009, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rudder_rgt_lod0.msh",
+						name = "rudder_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, -10.120005607605, -1.8297173976898, 3.2992541790009, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/elevator_top_lod0.msh",
+						name = "elevator_top",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -5.3903029534742e-15, 3.3006085215722e-31, 1, 0, 1, -6.1232342629258e-17, 5.3903029534742e-15, 0, -10.423999786377, 0, 4.0983581542969, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/elevator_btm_lod0.msh",
+						name = "elevator_btm",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -5.3903029534742e-15, 3.3006085215722e-31, 1, 0, 1, -6.1232342629258e-17, 5.3903029534742e-15, 0, -10.373999595642, 0, 2.4850001335144, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3179997205734, 2.5264999866486, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3179997205734, -2.5264999866486, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria_rotor.mtl", "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor_b1_lft_lod0.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6009998321533, 2.5264999866486, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria_rotor.mtl", "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor_b1_lft_lod0.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6009998321533, -2.5266191959381, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/w1_lod0.msh",
+						name = "w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2191314381389e-08, -0.15119498968124, 0.51499998569489, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 0.28999999165535, 0, 0, 0, 0, 0.13774999976158, 0, 0, 0, 0, 0.28999999165535, 0, -10.723198890686, 3.3306690738755e-16, 1.7411999702454, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/vickers_victoria_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/vickers_victoria_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0449998378754, 0.77499997615814, 2.2735848426819, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/vickers_victoria_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/vickers_victoria_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, -3.0449998378754, -0.77499997615814, 2.2735848426819, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_interior_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/aileron_top_lft_lod1.msh",
+						name = "aileron_top_lft",
+						transf = { -0.10430485755205, 0.99239253997803, 0.065403118729591, 0, 0.065372653305531, -0.058778364211321, 0.99612826108932, 0, 0.9923945069313, 0.10817658901215, -0.058744464069605, 0, -2.0290956497192, 7.8161635398865, 4.7885084152222, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/aileron_bottom_lft_lod1.msh",
+						name = "aileron_bottom_lft",
+						transf = { -0.10430485755205, 0.99239253997803, 0.065403118729591, 0, 0.065372653305531, -0.058778364211321, 0.99612826108932, 0, 0.9923945069313, 0.10817658901215, -0.058744464069605, 0, -2.0457355976105, 7.9759554862976, 1.799920797348, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/aileron_top_rgt_lod1.msh",
+						name = "aileron_top_rgt",
+						transf = { 0.1043047606945, 0.99239253997803, -0.065403118729591, 0, 0.065372653305531, 0.058778364211321, 0.99612826108932, 0, 0.9923945069313, -0.10817650705576, -0.058744464069605, 0, -2.0290956497192, -7.8161635398865, 4.7885084152222, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/aileron_bottom_rgt_lod1.msh",
+						name = "aileron_bottom_rgt",
+						transf = { 0.1043047606945, 0.99239253997803, -0.065403118729591, 0, 0.065372653305531, 0.058778364211321, 0.99612826108932, 0, 0.9923945069313, -0.10817650705576, -0.058744464069605, 0, -2.0457355976105, -7.9759554862976, 1.799920797348, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rudder_lft_lod1.msh",
+						name = "rudder_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.120006561279, 1.8297173976898, 3.2992541790009, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rudder_rgt_lod1.msh",
+						name = "rudder_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.120005607605, -1.8297173976898, 3.2992541790009, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/elevator_top_lod1.msh",
+						name = "elevator_top",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -10.423999786377, 0, 4.0983581542969, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/elevator_btm_lod1.msh",
+						name = "elevator_btm",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1.6155444579905e-15, 9.8923574279184e-32, 1, 0, 1, -6.1232342629258e-17, 1.6155444579905e-15, 0, -10.373999595642, 0, 2.4850001335144, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3179997205734, 2.5264999866486, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3179997205734, -2.5264999866486, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria_rotor.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor_b1_lft_lod1.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6009998321533, 2.5264999866486, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria_rotor.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor_b1_lft_lod1.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6009998321533, -2.5266191959381, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/w1_lod1.msh",
+						name = "w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2191314381389e-08, -0.15119498968124, 0.51499998569489, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.723198890686, 3.3306690738755e-16, 1.7411999702454, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/vickers_victoria_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/vickers_victoria_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0449998378754, 0.77499997615814, 2.2735848426819, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/vickers_victoria_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/vickers_victoria_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { -1, -1.5099578831723e-07, 1.2246468525852e-16, 0, 1.5099578831723e-07, -1, -1.2246469849341e-16, 0, 1.2246469849341e-16, -1.2246468525852e-16, 1, 0, -3.0449998378754, -0.77499997615814, 2.2735848426819, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor1_lft_lod2.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1.0000010728836, 0, 0, 0, 0, 1, 0, 1.317999958992, 2.5264999866486, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor1_lft_lod2.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1.0000010728836, 0, 0, 0, 0, 1, 0, 1.317999958992, -2.5264999866486, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria_rotor.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor_b1_lft_lod2.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6009998321533, 2.5264999866486, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vickers_victoria_rotor.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/rotor_b1_lft_lod2.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6009998321533, -2.5266191959381, 2.7349998950958, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/w1_ctr_lod2.msh",
+						name = "w1_ctr",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2191314381389e-08, -0.15119498968124, 0.51499998569489, 1, },
+					},
+					{
+						materials = { "vehicle/plane/vickers_victoria_v2/vikers_victoria_lod.mtl", },
+						mesh = "vehicle/plane/vickers_victoria_v2/w2_bck_lod2.msh",
+						name = "w2_bck",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.723198890686, 3.3306690738755e-16, 1.7411999702454, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		airVehicle = {
+			configs = {
+				{
+					aileronLeft = {
+						ids = { 10, 11, },
+						maxAngle = 20,
+					},
+					aileronRight = {
+						ids = { 12, 13, },
+						maxAngle = 20,
+					},
+					axleRadii = { 0.50999999046326, },
+					axles = { "vehicle/plane/vickers_victoria_v2/w1_lod0.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { 16, 17, },
+						maxAngle = 20,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 30,
+					},
+					landingLight = { },
+					props = { 18, 19, },
+					propsB = { 20, 21, },
+					rudder = {
+						ids = { 14, 15, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.0099999997764826, },
+					wheels = { "vehicle/plane/vickers_victoria_v2/w2_lod0.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 3, 4, },
+						maxAngle = 20,
+					},
+					aileronRight = {
+						ids = { 5, 6, },
+						maxAngle = 20,
+					},
+					axleRadii = { 0.50999999046326, },
+					axles = { "vehicle/plane/vickers_victoria_v2/w1_lod1.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { 9, 10, },
+						maxAngle = 20,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 30,
+					},
+					landingLight = { },
+					props = { 11, 12, },
+					propsB = { 13, 14, },
+					rudder = {
+						ids = { 7, 8, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.0099999997764826, },
+					wheels = { "vehicle/plane/vickers_victoria_v2/w2_lod1.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { },
+						maxAngle = 0,
+					},
+					aileronRight = {
+						ids = { },
+						maxAngle = 0,
+					},
+					axleRadii = { 0.50999999046326, },
+					axles = { "vehicle/plane/vickers_victoria_v2/w1_ctr_lod2.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { },
+						maxAngle = 0,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { 2, 3, },
+					propsB = { 4, 5, },
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.0099999997764826, },
+					wheels = { "vehicle/plane/vickers_victoria_v2/w2_bck_lod2.msh", },
+				},
+			},
+			idleThrust = 0,
+			maxPayload = 0,
+			maxTakeOffWeight = 8073,
+			maxThrust = 12000,
+			timeToFullThrust = 2,
+			topSpeed = 41.669998168945,
+			type = "SMALL",
+			weight = 4559,
+			wingArea = 202,
+		},
+		availability = {
+			yearFrom = 1922,
+			yearTo = 1960,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_PLANE_VICKERS_VICTORIA_DESCRIPTION"),
+			name = _("VEHICLE_PLANE_VICKERS_VICTORIA_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.22745096683502, 0.22745096683502, 0.22745096683502, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.60000002384186,
+					position = { -1.6759548187256, 3.2274758815765, 2.7056112289429, },
+					size01 = { 0.0099999997764826, 2, },
+					velocity = { -3, 0, 0, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.22745096683502, 0.22745096683502, 0.22745096683502, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.60000002384186,
+					position = { -1.6759548187256, 1.8314757347107, 2.7056112289429, },
+					size01 = { 0.0099999997764826, 2, },
+					velocity = { -3, 0, 0, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.22745096683502, 0.22745096683502, 0.22745096683502, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.60000002384186,
+					position = { -1.6759548187256, -1.832524061203, 2.7056112289429, },
+					size01 = { 0.0099999997764826, 2, },
+					velocity = { -3, 0, 0, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.22745096683502, 0.22745096683502, 0.22745096683502, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.60000002384186,
+					position = { -1.6759548187256, -3.2285242080688, 2.7056112289429, },
+					size01 = { 0.0099999997764826, 2, },
+					velocity = { -3, 0, 0, },
+					velocityDampingFactor = 4,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "AIR_OUTDOOR",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 26,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.4809999465942, 0.21199998259544, 2.3619999885559, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "aircraft_prop_old",
+			},
+		},
+		transportVehicle = {
+			carrier = "AIR",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									cargoBay = {
+										bbMax = { 1.5462000370026, 0.54000002145767, 2.7160000801086, },
+										bbMin = { -4, -0.54000002145767, 1.6599999666214, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,499 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 10.573366165161, 1.4836177825928, 5.867226600647, },
+		bbMin = { -11.617460250854, -1.4836585521698, -0.0359126329422, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 11.095413208008, 1.4836381673813, 2.9515695571899, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/eurodual_v2/eurodual.mtl", },
+						mesh = "vehicle/train/eurodual_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_glass.mtl", "vehicle/train/eurodual_v2/eurodual_interior_glass.mtl", },
+								mesh = "vehicle/train/eurodual_v2/glass1_frt_lod0.msh",
+								name = "glass1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.5247020721436, -2.1904706954956e-05, 3.1182267665863, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_glass.mtl", "vehicle/train/eurodual_v2/eurodual_interior_glass.mtl", },
+								mesh = "vehicle/train/eurodual_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.3107738494873, 1.3095071315765, 2.7776086330414, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_glass.mtl", "vehicle/train/eurodual_v2/eurodual_interior_glass.mtl", },
+								mesh = "vehicle/train/eurodual_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.0180311203003, 1.3838593959808, 2.7756917476654, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_glass.mtl", "vehicle/train/eurodual_v2/eurodual_interior_glass.mtl", },
+								mesh = "vehicle/train/eurodual_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.0559539794922, 1.3843705654144, 2.775691986084, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_glass.mtl", "vehicle/train/eurodual_v2/eurodual_interior_glass.mtl", },
+								mesh = "vehicle/train/eurodual_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.354870796204, 1.310090303421, 2.7776074409485, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_glass.mtl", "vehicle/train/eurodual_v2/eurodual_interior_glass.mtl", },
+								mesh = "vehicle/train/eurodual_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.3107738494873, -1.3095507621765, 2.7776100635529, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_glass.mtl", "vehicle/train/eurodual_v2/eurodual_interior_glass.mtl", },
+								mesh = "vehicle/train/eurodual_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.0180311203003, -1.3839025497437, 2.775691986084, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_glass.mtl", "vehicle/train/eurodual_v2/eurodual_interior_glass.mtl", },
+								mesh = "vehicle/train/eurodual_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.0559539794922, -1.3844076395035, 2.7756924629211, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_glass.mtl", "vehicle/train/eurodual_v2/eurodual_interior_glass.mtl", },
+								mesh = "vehicle/train/eurodual_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.354868888855, -1.3101272583008, 2.7776076793671, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_glass.mtl", "vehicle/train/eurodual_v2/eurodual_interior_glass.mtl", },
+								mesh = "vehicle/train/eurodual_v2/glass1_bck_lod0.msh",
+								name = "glass1_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.568797111511, -1.8537044525146e-05, 3.118227481842, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/eurodual_v2/eurodual_transparent.mtl", },
+						mesh = "vehicle/train/eurodual_v2/body_tr_lod0.msh",
+						name = "body_tr",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/eurodual_v2/eurodual_interior.mtl", },
+						mesh = "vehicle/train/eurodual_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual.mtl", },
+								mesh = "vehicle/train/eurodual_v2/b1_lod0.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w1_lod0.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7365659475327, -2.0529958419502e-05, 0.52469033002853, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w1_lod0.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.8018989673437e-07, -2.0529958419502e-05, 0.52469033002853, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w1_lod0.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7377103567123, -2.0053121261299e-05, 0.52469009160995, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.1278624534607, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual.mtl", },
+								mesh = "vehicle/train/eurodual_v2/b2_lod0.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w1_lod0.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7377103567123, -1.9576284103096e-05, 0.52468985319138, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w1_lod0.msh",
+								name = "w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7832725158514e-07, -1.9099446944892e-05, 0.5246896147728, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w1_lod0.msh",
+								name = "w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7365670204163, -1.9099446944892e-05, 0.5246896147728, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.1719570159912, 0, 0, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/eurodual_v2/forever/g1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/eurodual_v2/eurodual_interior.mtl", },
+						mesh = "vehicle/train/eurodual_v2/g1_lod0.msh",
+						name = "g1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6202440261841, -2.02915398404e-05, 3.7824242115021, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/eurodual_v2/forever/g2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/eurodual_v2/eurodual_interior.mtl", },
+						mesh = "vehicle/train/eurodual_v2/g2_lod0.msh",
+						name = "g2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1222743988037, -2.02915398404e-05, 3.7824242115021, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/eurodual_v2/headlights_fwd_lod0.msh",
+						name = "headlights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.195140838623, 0.015483970753849, 1.8802524805069, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/eurodual_v2/brakelights_fwd_lod0.msh",
+						name = "brakelights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.236646652222, -1.1472255265771e-16, 1.8735613822937, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/eurodual_v2/headlights_bwd_lod0.msh",
+						name = "headlights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.239488601685, -1.1472255265771e-16, 1.8735613822937, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/eurodual_v2/brakelights_bwd_lod0.msh",
+						name = "brakelights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.197982788086, 0.015483970753849, 1.8802524805069, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/eurodual_v2/eurodual_lod.mtl", },
+						mesh = "vehicle/train/eurodual_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/eurodual_v2/eurodual_interior_lod.mtl", },
+						mesh = "vehicle/train/eurodual_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_lod.mtl", },
+								mesh = "vehicle/train/eurodual_v2/b1_lod1.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_lod.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w4_lod1.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7365659475327, -2.0529958419502e-05, 0.52469033002853, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_lod.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w4_lod1.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.8018989673437e-07, -2.0529958419502e-05, 0.52469033002853, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_lod.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w4_lod1.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7377103567123, -2.0053121261299e-05, 0.52469009160995, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.1278624534607, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_lod.mtl", },
+								mesh = "vehicle/train/eurodual_v2/b2_lod1.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_lod.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w4_lod1.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7377103567123, -1.9576284103096e-05, 0.52468985319138, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_lod.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w4_lod1.msh",
+								name = "w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7832725158514e-07, -1.9099446944892e-05, 0.5246896147728, 1, },
+							},
+							{
+								materials = { "vehicle/train/eurodual_v2/eurodual_lod.mtl", },
+								mesh = "vehicle/train/eurodual_v2/w4_lod1.msh",
+								name = "w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7365670204163, -1.9099446944892e-05, 0.5246896147728, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.1719570159912, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/eurodual_v2/headlights_fwd_lod1.msh",
+						name = "headlights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.195140838623, 0.015483970753849, 1.8802524805069, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/eurodual_v2/brakelights_fwd_lod1.msh",
+						name = "brakelights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.236646652222, -1.1472255265771e-16, 1.8735613822937, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/eurodual_v2/headlights_bwd_lod1.msh",
+						name = "headlights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.239488601685, -1.1472255265771e-16, 1.8735613822937, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/eurodual_v2/brakelights_bwd_lod1.msh",
+						name = "brakelights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.197982788086, 0.015483970753849, 1.8802524805069, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/eurodual_v2/eurodual_lod.mtl", },
+						mesh = "vehicle/train/eurodual_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2018,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_EURODUAL_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_EURODUAL_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/eurodual_v2/w1_lod0.msh", },
+					backBackwardParts = { 30, },
+					backForwardParts = { 28, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 29, },
+					frontForwardParts = { 27, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/eurodual_v2/w4_lod1.msh", },
+					backBackwardParts = { 16, },
+					backForwardParts = { 14, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 15, },
+					frontForwardParts = { 13, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 6.1279001235962,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -7.1719999313354,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 7000,
+					tractiveEffort = 500,
+					type = "ELECTRIC",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/train_electric_modern/horn_21_intercity125.wav",
+				name = "train_electric_modern",
+			},
+			topSpeed = 44.439998626709,
+			weight = 91,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 31,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.7239999771118, 0, 1.6779999732971, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = false,
+					group = 31,
+					transf = { -1, -1.5099580252809e-07, 1.2246468525852e-16, 0, 1.5099580252809e-07, -1, -1.2246468525852e-16, 0, 1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -9.7496728897095, 0, 1.6779999732971, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = true,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

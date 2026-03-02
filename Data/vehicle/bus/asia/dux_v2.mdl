@@ -1,0 +1,425 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.1040060520172, 1.0247225761414, 2.8144845962524, },
+		bbMin = { -2.318425655365, -1.0247231721878, -0.014823734760284, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.2112159729004, 1.0247228145599, 1.414654135704, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/dux_v2/dux.mtl", },
+						mesh = "vehicle/bus/dux_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.3259256920483e-07, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/dux_v2/dux_glass.mtl", },
+								mesh = "vehicle/bus/dux_v2/glass1_frt_lod0.msh",
+								name = "glass1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.12692032754421, 2.9802322387695e-07, 1.9628694057465, 1, },
+							},
+							{
+								materials = { "vehicle/bus/dux_v2/dux_glass.mtl", },
+								mesh = "vehicle/bus/dux_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.32646322250366, 0.80750930309296, 1.8659826517105, 1, },
+							},
+							{
+								materials = { "vehicle/bus/dux_v2/dux_glass.mtl", },
+								mesh = "vehicle/bus/dux_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0673131942749, 0.80750912427902, 1.8659826517105, 1, },
+							},
+							{
+								materials = { "vehicle/bus/dux_v2/dux_glass.mtl", },
+								mesh = "vehicle/bus/dux_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8081634044647, 0.80750912427902, 1.8659826517105, 1, },
+							},
+							{
+								materials = { "vehicle/bus/dux_v2/dux_glass.mtl", },
+								mesh = "vehicle/bus/dux_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.32646322250366, -0.8075088262558, 1.8659826517105, 1, },
+							},
+							{
+								materials = { "vehicle/bus/dux_v2/dux_glass.mtl", },
+								mesh = "vehicle/bus/dux_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0673131942749, -0.80750876665115, 1.8659826517105, 1, },
+							},
+							{
+								materials = { "vehicle/bus/dux_v2/dux_glass.mtl", },
+								mesh = "vehicle/bus/dux_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8081634044647, -0.80750876665115, 1.8659826517105, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/dux_v2/dux_interior.mtl", },
+						mesh = "vehicle/bus/dux_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.3259256920483e-07, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/dux_v2/dux.mtl", },
+								mesh = "vehicle/bus/dux_v2/w1_lod0.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.13618659973145, -1.1920928955078e-07, -0.33512145280838, 1, },
+							},
+						},
+						materials = { "vehicle/bus/dux_v2/dux.mtl", },
+						mesh = "vehicle/bus/dux_v2/b1_lod0.msh",
+						name = "b1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3308696746826, -6.5430640461273e-08, 0.86722058057785, 1, },
+					},
+					{
+						materials = { "vehicle/bus/dux_v2/dux.mtl", },
+						mesh = "vehicle/bus/dux_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4670571088791, -1.8463993001205e-07, 0.53209918737411, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/dux_v2/close_doors_right/d1_bck.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/dux_v2/open_doors_right/d1_bck.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/bus/dux_v2/dux_glass.mtl", "vehicle/bus/dux_v2/dux_door_glass.mtl", },
+								mesh = "vehicle/bus/dux_v2/d1_glass_bck_lod0.msh",
+								name = "d1_glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.018439054489136, 0.32821291685104, 1.9628694057465, 1, },
+							},
+						},
+						materials = { "vehicle/bus/dux_v2/dux.mtl", "vehicle/bus/dux_v2/dux_door.mtl", },
+						mesh = "vehicle/bus/dux_v2/d1_bck_lod0.msh",
+						name = "d1_bck",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2799999713898, -0.32821273803711, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/dux_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.3259256920483e-07, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/dux_v2/dux_lod.mtl", },
+						mesh = "vehicle/bus/dux_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.3259256920483e-07, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/dux_v2/dux_interior_lod.mtl", },
+						mesh = "vehicle/bus/dux_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.3259256920483e-07, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/dux_v2/dux_lod.mtl", },
+								mesh = "vehicle/bus/dux_v2/w1_lod1.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.13618659973145, -1.1920928955078e-07, -0.33512145280838, 1, },
+							},
+						},
+						materials = { "vehicle/bus/dux_v2/dux_lod.mtl", },
+						mesh = "vehicle/bus/dux_v2/b1_lod1.msh",
+						name = "b1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3308696746826, -6.5430640461273e-08, 0.86722058057785, 1, },
+					},
+					{
+						materials = { "vehicle/bus/dux_v2/dux_lod.mtl", },
+						mesh = "vehicle/bus/dux_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4670571088791, -1.8463993001205e-07, 0.53209918737411, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/dux_v2/close_doors_right/d1_bck.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/dux_v2/open_doors_right/d1_bck.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/dux_v2/dux_lod.mtl", },
+						mesh = "vehicle/bus/dux_v2/d1_bck_lod1.msh",
+						name = "d1_bck",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2799999713898, -0.32821273803711, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/dux_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.3259256920483e-07, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/dux_v2/dux_lod.mtl", },
+						mesh = "vehicle/bus/dux_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.3259256920483e-07, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1902,
+			yearTo = 1932,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_BUS_DUX_DESCRIPTION"),
+			name = _("VEHICLE_BUS_DUX_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/bus/dux_v2/w1_lod0.msh", "vehicle/bus/dux_v2/w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 16, },
+					steeringParts = { },
+					wheels = { },
+				},
+				{
+					axles = { "vehicle/bus/dux_v2/w1_lod1.msh", "vehicle/bus/dux_v2/w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 7, },
+					steeringParts = { },
+					wheels = { },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -1.4670571088791,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 20,
+				tractiveEffort = 10,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "bus_old",
+			},
+			topSpeed = 8.3333330154419,
+			weight = 2,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 17,
+					transf = { 0.99357181787491, 0, -0.11320319771767, 0, 0, 1, 0, 0, 0.11320319771767, 0, 0.99357181787491, 0, 0.75800001621246, -0.37000000476837, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 17,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -0.18600000441074, 0.48599997162819, 0.67400002479553, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 17,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -0.27799999713898, -0.45100000500679, 0.67400002479553, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 17,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -0.72399991750717, 0.48599997162819, 0.67400002479553, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 17,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -0.81599998474121, -0.45100000500679, 0.67400002479553, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 17,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -1.2380000352859, 0.48599997162819, 0.67400002479553, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 17,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -1.3299999237061, -0.45100000500679, 0.67400002479553, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 17,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -1.7819999456406, 0.48599997162819, 0.67400002479553, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 17,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -1.87399995327, -0.45100000500679, 0.67400002479553, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

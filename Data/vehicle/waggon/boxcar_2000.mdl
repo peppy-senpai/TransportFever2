@@ -1,0 +1,470 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 11.668399810791, 1.5187871456146, 4.2631998062134, },
+		bbMin = { -11.668394088745, -1.5185998678207, -0.01938983798027, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 11.668396949768, 1.518693447113, 2.1412947177887, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+						mesh = "vehicle/waggon/boxcar_2000/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/close_all_doors/schiebewand_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/close_doors_left/schiebewand_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/open_all_doors/schiebewand_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/open_doors_left/schiebewand_l.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+						mesh = "vehicle/waggon/boxcar_2000/schiebewand_l_lod0.msh",
+						name = "schiebewand_l",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/close_all_doors/schiebewand_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/close_doors_right/schiebewand_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/open_all_doors/schiebewand_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/open_doors_right/schiebewand_r.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+						mesh = "vehicle/waggon/boxcar_2000/schiebewand_r_lod0.msh",
+						name = "schiebewand_r",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+						mesh = "vehicle/waggon/boxcar_2000/zwischenwand_lod0.msh",
+						name = "zwischenwand",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.31499999761581, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/bogie_1_lod0.msh",
+								name = "bogie_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/w1_lod0.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.9103889465332, 0, 0.46646749973297, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/w2_lod0.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.91269302368164, 0, 0.46646749973297, 1, },
+							},
+						},
+						name = "b1_group",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.8568000793457, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/bogie_2_lod0.msh",
+								name = "bogie_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/w3_lod0.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.91174358129501, 1.3617500371765e-07, 0.46646749973297, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/w4_lod0.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.91640758514404, -1.3658245734405e-07, 0.46646749973297, 1, },
+							},
+						},
+						name = "b2_group",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.8565654754639, 9.0677931439131e-06, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 209.02449035645,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+						mesh = "vehicle/waggon/boxcar_2000/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/close_all_doors/schiebewand_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/close_doors_left/schiebewand_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/open_all_doors/schiebewand_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/open_doors_left/schiebewand_l.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+						mesh = "vehicle/waggon/boxcar_2000/schiebewand_l_lod1.msh",
+						name = "schiebewand_l",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/close_all_doors/schiebewand_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/close_doors_right/schiebewand_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/open_all_doors/schiebewand_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/boxcar_2000/open_doors_right/schiebewand_r.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+						mesh = "vehicle/waggon/boxcar_2000/schiebewand_r_lod1.msh",
+						name = "schiebewand_r",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+						mesh = "vehicle/waggon/boxcar_2000/zwischenwand_lod1.msh",
+						name = "zwischenwand",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.31499999761581, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/bogie_1_lod1.msh",
+								name = "bogie_1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5701580341001e-12, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/w1_lod1.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.9103889465332, -9.0677931439131e-06, 0.46646749973297, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/w2_lod1.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.91269302368164, -9.0677931439131e-06, 0.46646749973297, 1, },
+							},
+						},
+						name = "b1_group",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.8568000793457, 9.0677931439131e-06, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/bogie_2_lod1.msh",
+								name = "bogie_2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/w3_lod1.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.91174358129501, 1.3617500371765e-07, 0.46646749973297, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+								mesh = "vehicle/waggon/boxcar_2000/w4_lod1.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.91640758514404, -1.3658245734405e-07, 0.46646749973297, 1, },
+							},
+						},
+						name = "b2_group",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.8565654754639, 9.0677931439131e-06, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 209.02449035645,
+			visibleTo = 627.07348632813,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/boxcar_2000/sliding_wall_wagon.mtl", },
+						mesh = "vehicle/waggon/boxcar_2000/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 627.07348632813,
+			visibleTo = 1881.2204589844,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2000,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			description = _("VEHICLE_WAGGON_BOXCAR_2000_DESCRIPTION"),
+			name = _("VEHICLE_WAGGON_BOXCAR_2000_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/waggon/boxcar_2000/w1_lod0.msh", "vehicle/waggon/boxcar_2000/w2_lod0.msh", "vehicle/waggon/boxcar_2000/w3_lod0.msh", "vehicle/waggon/boxcar_2000/w4_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/boxcar_2000/w1_lod1.msh", "vehicle/waggon/boxcar_2000/w2_lod1.msh", "vehicle/waggon/boxcar_2000/w3_lod1.msh", "vehicle/waggon/boxcar_2000/w4_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = {  },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 8.8568000793457,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -8.8565654754639,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "waggon_freight_old",
+			},
+			topSpeed = 44.4444444444,
+			weight = 25,
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartments = {
+				{
+					{
+						{
+							capacity = 80,
+							cargoBay = {
+								bbMax = { 11.045000076294, 1.3630000352859, 3.2999999523163, },
+								bbMin = { -11.045000076294, -1.3630000352859, 1.190299987793, },
+								cargoFormat = "SMALL",
+								childId = 1,
+								gridSize = { 12, 2, },
+								sizePolicy = "STRETCH",
+								type = "DISCRETE",
+							},
+							type = "PLASTIC",
+						},
+					},
+					{
+						{
+							capacity = 80,
+							cargoBay = {
+								bbMax = { 11.045000076294, 1.3630000352859, 3.2999999523163, },
+								bbMin = { -11.045000076294, -1.3630000352859, 1.190299987793, },
+								cargoFormat = "SMALL",
+								childId = 1,
+								gridSize = { 12, 2, },
+								sizePolicy = "STRETCH",
+								type = "DISCRETE",
+							},
+							type = "FOOD",
+						},
+					},
+					{
+						{
+							capacity = 80,
+							cargoBay = {
+								bbMax = { 11.045000076294, 1.3630000352859, 3.2999999523163, },
+								bbMin = { -11.045000076294, -1.3630000352859, 1.190299987793, },
+								cargoFormat = "SMALL",
+								childId = 1,
+								gridSize = { 12, 2, },
+								sizePolicy = "STRETCH",
+								type = "DISCRETE",
+							},
+							type = "TOOLS",
+						},
+					},
+					{
+						{
+							capacity = 80,
+							cargoBay = {
+								bbMax = { 11.045000076294, 1.3630000352859, 3.2999999523163, },
+								bbMin = { -11.045000076294, -1.3630000352859, 1.190299987793, },
+								cargoFormat = "SMALL",
+								childId = 1,
+								gridSize = { 12, 2, },
+								sizePolicy = "STRETCH",
+								type = "DISCRETE",
+							},
+							type = "MACHINES",
+						},
+					},
+					{
+						{
+							capacity = 80,
+							cargoBay = {
+								bbMax = { 11.045000076294, 1.3630000352859, 3.2999999523163, },
+								bbMin = { -11.045000076294, -1.3630000352859, 1.190299987793, },
+								cargoFormat = "SMALL",
+								childId = 1,
+								gridSize = { 12, 2, },
+								sizePolicy = "STRETCH",
+								type = "DISCRETE",
+							},
+							type = "GOODS",
+						},
+					},
+				},
+			},
+			loadSpeed = 4,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+	},
+	version = 1,
+}
+end

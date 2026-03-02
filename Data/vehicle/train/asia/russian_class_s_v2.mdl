@@ -1,0 +1,875 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 10.680428504944, 1.5750511884689, 5.0881586074829, },
+		bbMin = { -10.680426597595, -1.5750497579575, -0.035803735256195, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 10.68042755127, 1.5750504732132, 2.5619812011719, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", "vehicle/train/russian_class_s_v2/russian_class_s_interior_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/front_glass1_left_frt_lod0.msh",
+										name = "front_glass1_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.68247580528259, 0.49499997496605, 4.1624999046326, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", "vehicle/train/russian_class_s_v2/russian_class_s_interior_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/front_glass2_left_frt_lod0.msh",
+										name = "front_glass2_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.68247616291046, 1.1875, 3.5649998188019, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", "vehicle/train/russian_class_s_v2/russian_class_s_interior_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/front_glass1_right_frt_lod0.msh",
+										name = "front_glass1_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.68247604370117, -0.50749999284744, 4.1624999046326, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", "vehicle/train/russian_class_s_v2/russian_class_s_interior_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/front_glass2_right_frt_lod0.msh",
+										name = "front_glass2_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.68247586488724, -1.1875, 3.5649998188019, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", "vehicle/train/russian_class_s_v2/russian_class_s_interior_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/front_glass1_lft_lod0.msh",
+										name = "front_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.26667124032974, 1.4727801084518, 3.495500087738, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", "vehicle/train/russian_class_s_v2/russian_class_s_interior_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/front_glass2_lft_lod0.msh",
+										name = "front_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.3933287858963, 1.4727801084518, 3.495500087738, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", "vehicle/train/russian_class_s_v2/russian_class_s_interior_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/front_glass3_lft_lod0.msh",
+										name = "front_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0663287639618, 1.4727804660797, 3.495500087738, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", "vehicle/train/russian_class_s_v2/russian_class_s_interior_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/front_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.26667124032974, -1.4727997779846, 3.495500087738, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", "vehicle/train/russian_class_s_v2/russian_class_s_interior_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/front_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.3933287858963, -1.4727996587753, 3.495500087738, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", "vehicle/train/russian_class_s_v2/russian_class_s_interior_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/front_glass3_rgt_lod0.msh",
+										name = "front_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0663287639618, -1.472799539566, 3.495500087738, 1, },
+									},
+								},
+								name = "front_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_interior.mtl", "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_interior_lod0.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_w1_lod0.msh",
+								name = "front_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.3934354782104, -6.8446251270948e-12, 0.53094077110291, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_w2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_w2_lod0.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7107043266296, -6.0382081279453e-11, 0.90704321861267, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_w3_lod0.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6992788314819, -6.0382081279453e-11, 0.90704321861267, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_w4_lod0.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6610848903656, -4.6447758833557e-12, 0.90704154968262, 1, },
+							},
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_w5_lod0.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.47676676511765, -2.0598540234618e-11, 0.63340991735458, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r1_lod0.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.8762345314026, -2.3223877682055e-11, 0.87502926588058, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r2_lod0.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6981644630432, -6.0382081279453e-11, 0.57102155685425, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r3_lod0.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.661084651947, -6.7486571886377e-11, 0.57102179527283, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r4_lod0.msh",
+								name = "front_r4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.8755097389221, -6.0382081279453e-11, 0.95514744520187, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r5_lod0.msh",
+								name = "front_r5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.9027991294861, 2.4597162414514e-12, 1.5268893241882, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r6_lod0.msh",
+								name = "front_r6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1861395835876, -2.3223877682055e-11, 0.63017022609711, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r7.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r7_lod0.msh",
+								name = "front_r7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1976847648621, -2.3223877682055e-11, 1.535563826561, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r9.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r9_lod0.msh",
+								name = "front_r9",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1956691741943, -2.3223877682055e-11, 1.4271891117096, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_headlights_fwd_lod0.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.050828751176596, 2.3223877682055e-11, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_glass_lft_lod0.msh",
+										name = "back_glass_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5335257053375, 1.47922539711, 3.4824998378754, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_glass.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_glass_rgt_lod0.msh",
+										name = "back_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5335257053375, -1.4792417287827, 3.4824998378754, 1, },
+									},
+								},
+								name = "back_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_interior.mtl", "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/back_interior_lod0.msh",
+								name = "back_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.2218546867371, -6.4704352986666e-12, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/back_coal_lod0.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0061078071594238, -2.9695169934119e-11, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_b1_lod0.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_w1_lod0.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89649486541748, 7.3606051809172e-13, 0.53094094991684, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_w1_lod0.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89725518226624, -1.8509700716596e-11, 0.53094124794006, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2194149494171, -1.4825630306747e-11, -2.7716211270512e-11, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_b2_lod0.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_w1_lod0.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89649432897568, 4.5524427977339e-11, 0.53094160556793, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_w1_lod0.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89725965261459, 8.3062792755051e-11, 0.53094166517258, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7245097160339, -7.3267919509235e-11, 2.3376411917297e-11, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1710257530212, 2.9694312980721e-11, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_interior_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_interior_lod1.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7683714754498e-09, 2.2204459996195e-18, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_w1_lod1.msh",
+								name = "front_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.3934354782104, -6.8457613709716e-12, 0.53094077110291, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_w2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_w2_lod1.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7107043266296, -6.039359290444e-11, 0.90704321861267, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_w3_lod1.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6992788314819, -6.039359290444e-11, 0.90704321861267, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_w4_lod1.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.661084651947, -4.6506709074079e-12, 0.90704154968262, 1, },
+							},
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_w5_lod1.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.47676676511765, -2.0609054393605e-11, 0.63340991735458, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r1_lod1.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.8762345314026, -2.32269845718e-11, 0.87502926588058, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r2_lod1.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6981644630432, -6.0385578481981e-11, 0.5710214972496, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r3_lod1.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.661084651947, -6.7488729882381e-11, 0.57102179527283, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r4_lod1.msh",
+								name = "front_r4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.8755097389221, -6.0384676425773e-11, 0.95514744520187, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r5_lod1.msh",
+								name = "front_r5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.9027991294861, 2.4366396487313e-12, 1.5268893241882, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r6_lod1.msh",
+								name = "front_r6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1861395835876, -2.3226115475339e-11, 0.63017022609711, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r7.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r7_lod1.msh",
+								name = "front_r7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1976847648621, -2.3229331652663e-11, 1.535563826561, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_s_v2/wheels/front_r9.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_r9_lod1.msh",
+								name = "front_r9",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1956686973572, -2.3238041699236e-11, 1.4271891117096, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_headlights_fwd_lod1.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7683714754498e-09, 2.2204459996195e-18, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.050828751176596, 2.3223877682055e-11, 1.9852334257538e-25, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_interior_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/back_interior_lod1.msh",
+								name = "back_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.2218542098999, -6.4704352986666e-12, -2.2987611697086e-26, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/back_coal_lod1.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0061083980835974, -2.9695169934119e-11, -3.1254400359111e-25, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_b1_lod1.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0517577442879e-07, 1.1102229998097e-18, -2.2204459996195e-18, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_w1_lod1.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89649504423141, 7.295408309578e-13, 0.53094094991684, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_w1_lod1.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89725464582443, -1.8515366323468e-11, 0.53094124794006, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2194151878357, -1.4825630306747e-11, -2.7716206066342e-11, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_b2_lod1.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, -4.440891999239e-18, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_w1_lod1.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89649474620819, 4.5518033786607e-11, 0.53094160556793, 1, },
+									},
+									{
+										materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+										mesh = "vehicle/train/russian_class_s_v2/back_w1_lod1.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89725947380066, 8.305969800837e-11, 0.53094166517258, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7245092391968, -7.3267919509235e-11, 2.3376411917297e-11, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1710257530212, 2.9694312980721e-11, 2.6469779010051e-25, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/front_body_lod2.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7683714754498e-09, 2.2204459996195e-18, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.050828751176596, 2.3223877682055e-11, 1.9852334257538e-25, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/russian_class_s_v2/russian_class_s_lod.mtl", },
+								mesh = "vehicle/train/russian_class_s_v2/back_body_lod2.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1035154885758e-07, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1710257530212, 2.9694312980721e-11, 2.6469779010051e-25, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1910,
+			yearTo = 1960,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_RUSSIAN_CLASS_S_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_RUSSIAN_CLASS_S_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 15,
+					initialAlpha = 1,
+					lifeTime = 2,
+					position = { 7.7359881401062, -1.1480000019073, 0.87300002574921, },
+					size01 = { 0.30000001192093, 5, },
+					velocity = { -2.8099999427795, -4.0799999237061, -0.68000000715256, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 15,
+					initialAlpha = 1,
+					lifeTime = 2,
+					position = { 7.7389879226685, 1.1544998884201, 0.87550002336502, },
+					size01 = { 0.30000001192093, 5, },
+					velocity = { -2.3399999141693, 4.3699998855591, -0.6700000166893, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.45098036527634, 0.45098036527634, 0.45098036527634, },
+					frequency = 50,
+					initialAlpha = 1,
+					lifeTime = 12,
+					position = { 8.3945407867432, 0, 4.9271359443665, },
+					size01 = { 0.5, 17, },
+					velocity = { 0, 0, 10, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/russian_class_s_v2/front_w1_lod0.msh", "vehicle/train/russian_class_s_v2/front_w2_lod0.msh", "vehicle/train/russian_class_s_v2/front_w3_lod0.msh", "vehicle/train/russian_class_s_v2/front_w4_lod0.msh", "vehicle/train/russian_class_s_v2/front_w5_lod0.msh", "vehicle/train/russian_class_s_v2/back_w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 28, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/russian_class_s_v2/front_w1_lod1.msh", "vehicle/train/russian_class_s_v2/front_w2_lod1.msh", "vehicle/train/russian_class_s_v2/front_w3_lod1.msh", "vehicle/train/russian_class_s_v2/front_w4_lod1.msh", "vehicle/train/russian_class_s_v2/front_w5_lod1.msh", "vehicle/train/russian_class_s_v2/back_w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 17, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 9.4399995803833,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = 0.52999997138977,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -3.960000038147,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -7.9200000762939,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 880,
+					tractiveEffort = 140,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "",
+				name = "train_steam_old",
+			},
+			topSpeed = 31.940000534058,
+			weight = 76,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 29,
+					transf = { 0.99254614114761, 0.12186934053898, 0, 0, -0.12186934053898, 0.99254614114761, 0, 0, 0, -0, 1, 0, -1.0828287601471, -1.154000043869, 2.4100000858307, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

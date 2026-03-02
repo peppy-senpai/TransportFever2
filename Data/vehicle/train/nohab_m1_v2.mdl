@@ -1,0 +1,699 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 9.7753057479858, 1.7945308685303, 4.5895771980286, },
+		bbMin = { -9.7732343673706, -1.7907246351242, -0.020466923713684, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 9.7742700576782, 1.7926278114319, 2.3050220012665, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_body_lod0.msh",
+						name = "m1_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_interior_glass.mtl", "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass1_left_frt_lod0.msh",
+								name = "m1_glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.7573943138123, 0.72350597381592, 3.73024559021, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_interior_glass.mtl", "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass1_right_frt_lod0.msh",
+								name = "m1_glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.7573952674866, -0.72375321388245, 3.7299330234528, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", "vehicle/train/nohab_v2/nohab_interior_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass1_lft_lod0.msh",
+								name = "m1_glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1153192520142, 1.4759864807129, 3.2045888900757, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_interior_glass.mtl", "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass2_lft_lod0.msh",
+								name = "m1_glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.2025246620178, 1.4331722259521, 3.2262992858887, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass1_bottom_lft_lod0.msh",
+								name = "m1_glass1_bottom_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0749998092651, 1.5277996063232, 2.6849999427795, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass2_bottom_lft_lod0.msh",
+								name = "m1_glass2_bottom_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4524999856949, 1.5277996063232, 2.6849999427795, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass3_bottom_lft_lod0.msh",
+								name = "m1_glass3_bottom_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.625, 1.5277996063232, 2.6849999427795, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass4_bottom_lft_lod0.msh",
+								name = "m1_glass4_bottom_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0974998474121, 1.5277996063232, 2.6849999427795, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass1_top_lft_lod0.msh",
+								name = "m1_glass1_top_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7810204029083, 1.5277993679047, 3.2239744663239, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass2_top_lft_lod0.msh",
+								name = "m1_glass2_top_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.24500004947186, 1.5277993679047, 3.2239744663239, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass3_top_lft_lod0.msh",
+								name = "m1_glass3_top_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0260257720947, 1.5277993679047, 3.2239744663239, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_interior_glass.mtl", "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass3_lft_lod0.msh",
+								name = "m1_glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2174997329712, 1.4329812526703, 3.2300000190735, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", "vehicle/train/nohab_v2/nohab_interior_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass4_lft_lod0.msh",
+								name = "m1_glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.1185693740845, 1.4757949113846, 3.2045886516571, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", "vehicle/train/nohab_v2/nohab_interior_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass1_rgt_lod0.msh",
+								name = "m1_glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1153182983398, -1.4761338233948, 3.2045886516571, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_interior_glass.mtl", "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass2_rgt_lod0.msh",
+								name = "m1_glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.2049999237061, -1.4333202838898, 3.2300000190735, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass1_top_rgt_lod0.msh",
+								name = "m1_glass1_top_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7810213565826, -1.5280457735062, 3.2239744663239, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass2_top_rgt_lod0.msh",
+								name = "m1_glass2_top_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.24500004947186, -1.5280458927155, 3.2239744663239, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass3_top_rgt_lod0.msh",
+								name = "m1_glass3_top_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0260262489319, -1.528046131134, 3.2239744663239, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass1_bottom_rgt_lod0.msh",
+								name = "m1_glass1_bottom_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0749998092651, -1.5280458927155, 2.6849999427795, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass2_bottom_rgt_lod0.msh",
+								name = "m1_glass2_bottom_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4524999856949, -1.5280458927155, 2.6849999427795, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass3_bottom_rgt_lod0.msh",
+								name = "m1_glass3_bottom_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.625, -1.5280458927155, 2.6849999427795, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass4_bottom_rgt_lod0.msh",
+								name = "m1_glass4_bottom_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0974998474121, -1.528046131134, 2.6849999427795, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_interior_glass.mtl", "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass3_rgt_lod0.msh",
+								name = "m1_glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2174997329712, -1.4335113763809, 3.2300000190735, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_glass.mtl", "vehicle/train/nohab_v2/nohab_interior_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass4_rgt_lod0.msh",
+								name = "m1_glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.1185703277588, -1.4763251543045, 3.2045888900757, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_interior_glass.mtl", "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass1_left_bck_lod0.msh",
+								name = "m1_glass1_left_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.7590255737305, 0.7234138250351, 3.7279329299927, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_interior_glass.mtl", "vehicle/train/nohab_v2/nohab_glass.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_glass1_right_bck_lod0.msh",
+								name = "m1_glass1_right_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.7590255737305, -0.72384488582611, 3.7276830673218, 1, },
+							},
+						},
+						name = "m1_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/nohab_v2/nohab_interior.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_interior_lod0.msh",
+						name = "m1_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_b1_lod0.msh",
+								name = "m1_b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod0.msh",
+								name = "m1_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0884099006653, 0.017824351787567, 0.57963633537292, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod0.msh",
+								name = "m1_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.0028271675109863, 0.017824351787567, 0.57963633537292, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod0.msh",
+								name = "m1_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0905001163483, 0.017824351787567, 0.57963633537292, 1, },
+							},
+						},
+						name = "m1_b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3174252510071, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_b1_lod0.msh",
+								name = "m1_b2",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod0.msh",
+								name = "m1_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0905003547668, -0.017824662849307, 0.57963633537292, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod0.msh",
+								name = "m1_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0028271675109863, -0.017824351787567, 0.57963633537292, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod0.msh",
+								name = "m1_w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0884099006653, -0.017824038863182, 0.57963633537292, 1, },
+							},
+						},
+						name = "m1_b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.3196086883545, 0.0015540363965556, 6.5909902535743e-11, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/nohab_m1_v2/forever/m1_g1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_g1_lft_lod0.msh",
+						name = "m1_g1_lft",
+						transf = { -4.1075271184354e-08, 0.34202012419701, 0.93969255685806, 0, 1.4950176208117e-08, 0.93969255685806, -0.34202012419701, 0, -1, -2.7755575615629e-17, -4.3711388286738e-08, 0, 1.7851002216339, 0.66895765066147, 4.1420211791992, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/nohab_m1_v2/forever/m1_g2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_g1_lft_lod0.msh",
+						name = "m1_g2_lft",
+						transf = { -4.1075271184354e-08, 0.34202012419701, 0.93969255685806, 0, 1.4950176208117e-08, 0.93969255685806, -0.34202012419701, 0, -1, 5.5511151231258e-17, -4.3711388286738e-08, 0, -0.22112242877483, 0.66895765066147, 4.1420211791992, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/nohab_m1_v2/forever/m1_g1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_g1_lft_lod0.msh",
+						name = "m1_g1_rgt",
+						transf = { -4.1075271184354e-08, -0.34202012419701, 0.93969255685806, 0, -1.4950176208117e-08, 0.93969255685806, 0.34202012419701, 0, -1, -5.5511151231258e-17, -4.3711388286738e-08, 0, 1.7808774709702, -0.6690000295639, 4.1420211791992, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/nohab_m1_v2/forever/m1_g2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/nohab_v2/nohab.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_g1_lft_lod0.msh",
+						name = "m1_g2_rgt",
+						transf = { -4.1075271184354e-08, -0.34202012419701, 0.93969255685806, 0, -1.4950176208117e-08, 0.93969255685806, 0.34202012419701, 0, -1, -5.5511151231258e-17, -4.3711388286738e-08, 0, -0.22112242877483, -0.6690000295639, 4.1420211791992, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_headlights_fwd_lod0.msh",
+						name = "m1_headlights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_taillights_fwd_lod0.msh",
+						name = "m1_taillights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_headlights_bwd_lod0.msh",
+						name = "m1_headlights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_taillights_bwd_lod0.msh",
+						name = "m1_taillights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "m1_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_body_lod1.msh",
+						name = "m1_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/nohab_v2/nohab_interior_lod.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_interior_lod1.msh",
+						name = "m1_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_b1_lod1.msh",
+								name = "m1_b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod1.msh",
+								name = "m1_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0884099006653, 0.017824351787567, 0.57963633537292, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod1.msh",
+								name = "m1_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.0028271675109863, 0.017824351787567, 0.57963633537292, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod1.msh",
+								name = "m1_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0905001163483, 0.017824351787567, 0.57963633537292, 1, },
+							},
+						},
+						name = "m1_b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3174252510071, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_b1_lod1.msh",
+								name = "m1_b2",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod1.msh",
+								name = "m1_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0905003547668, -0.017824662849307, 0.57963633537292, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod1.msh",
+								name = "m1_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0028271675109863, -0.017824351787567, 0.57963633537292, 1, },
+							},
+							{
+								materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+								mesh = "vehicle/train/nohab_m1_v2/m1_w1_lod1.msh",
+								name = "m1_w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0884099006653, -0.017824038863182, 0.57963633537292, 1, },
+							},
+						},
+						name = "m1_b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.3196086883545, 0.0015540363965556, 6.5909902535743e-11, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/nohab_m1_v2/forever/m1_g1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_g1_lft_lod1.msh",
+						name = "m1_g1_lft",
+						transf = { -4.1075271184354e-08, 0.34202012419701, 0.93969255685806, 0, 1.4950176208117e-08, 0.93969255685806, -0.34202012419701, 0, -1, -2.7755575615629e-17, -4.3711388286738e-08, 0, 1.7851002216339, 0.66895765066147, 4.1420211791992, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/nohab_m1_v2/forever/m1_g2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_g1_lft_lod1.msh",
+						name = "m1_g2_lft",
+						transf = { -4.1075271184354e-08, 0.34202012419701, 0.93969255685806, 0, 1.4950176208117e-08, 0.93969255685806, -0.34202012419701, 0, -1, -2.7755575615629e-17, -4.3711388286738e-08, 0, -0.22889977693558, 0.66895765066147, 4.1420211791992, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/nohab_m1_v2/forever/m1_g1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_g1_lft_lod1.msh",
+						name = "m1_g1_rgt",
+						transf = { -4.1075271184354e-08, -0.34202012419701, 0.93969255685806, 0, -1.4950176208117e-08, 0.93969255685806, 0.34202012419701, 0, -1, -5.5511151231258e-17, -4.3711388286738e-08, 0, 1.7808774709702, -0.6690000295639, 4.1420211791992, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/nohab_m1_v2/forever/m1_g2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_g1_lft_lod1.msh",
+						name = "m1_g2_rgt",
+						transf = { -4.1075271184354e-08, -0.34202012419701, 0.93969255685806, 0, -1.4950176208117e-08, 0.93969255685806, 0.34202012419701, 0, -1, -5.5511151231258e-17, -4.3711388286738e-08, 0, -0.22112242877483, -0.6690000295639, 4.1420211791992, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_headlights_fwd_lod1.msh",
+						name = "m1_headlights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_taillights_fwd_lod1.msh",
+						name = "m1_taillights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_headlights_bwd_lod1.msh",
+						name = "m1_headlights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_taillights_bwd_lod1.msh",
+						name = "m1_taillights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/nohab_v2/nohab_lod.mtl", },
+						mesh = "vehicle/train/nohab_m1_v2/m1_body_lod2.msh",
+						name = "m1_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1954,
+			yearTo = 2010,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_NOHAB_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_NOHAB_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.45098036527634, 0.45098036527634, 0.45098036527634, },
+					frequency = 70,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 1.2000000476837,
+					position = { 0.48499998450279, 0, 4.4299998283386, },
+					size01 = { 0.10000000149012, 3, },
+					velocity = { 0, 0, 5, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.45098036527634, 0.45098036527634, 0.45098036527634, },
+					frequency = 70,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 1.2000000476837,
+					position = { 1.0750000476837, 0, 4.4299998283386, },
+					size01 = { 0.10000000149012, 3, },
+					velocity = { 0, 0, 5, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/nohab_m1_v2/m1_w1_lod0.msh", },
+					backBackwardParts = { 47, },
+					backForwardParts = { 45, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 46, },
+					frontForwardParts = { 44, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/nohab_m1_v2/m1_w1_lod1.msh", },
+					backBackwardParts = { 20, },
+					backForwardParts = { 18, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 19, },
+					frontForwardParts = { 17, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 5.3000001907349,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -5.3000001907349,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 1450,
+					tractiveEffort = 200,
+					type = "DIESEL",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/train_diesel/horn_13_freight.wav",
+				name = "train_diesel",
+			},
+			topSpeed = 33.330001831055,
+			weight = 108,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 48,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7999997138977, -0.91799998283386, 2.3800001144409, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = false,
+					group = 48,
+					transf = { -1, 8.7422776573476e-08, -8.7422776573476e-08, 0, -8.7422783678903e-08, -1, 8.7422769468049e-08, 0, -8.7422769468049e-08, 8.7422776573476e-08, 1, 0, -6.8060002326965, 0.94199997186661, 2.3800001144409, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = true,
+		},
+		versioning = {
+			__version = "_v15",
+		},
+	},
+	version = 1,
+}
+end

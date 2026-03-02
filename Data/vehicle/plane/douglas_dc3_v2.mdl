@@ -1,0 +1,1194 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.9152231216431, 15.018905639648, 5.1487112045288, },
+		bbMin = { -14.845393180847, -15.01908493042, -2.4585931301117, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 10.380308151245, 15.018995285034, 3.8036522865295, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6063594818115, 0.28229579329491, 1.6780904531479, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass2_left_frt_lod0.msh",
+								name = "glass2_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.2627592086792, 0.67350828647614, 1.674271941185, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass3_left_frt_lod0.msh",
+								name = "glass3_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.951119184494, 0.86948299407959, 1.4634149074554, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6063594818115, -0.28241509199142, 1.6780904531479, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass2_right_frt_lod0.msh",
+								name = "glass2_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.2628574371338, -0.673748254776, 1.6739258766174, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass3_right_frt_lod0.msh",
+								name = "glass3_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.9511668682098, -0.86948299407959, 1.462824344635, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.94494289159775, 1.1659058332443, 1.3358470201492, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7552738189697, 1.1984045505524, 1.3358470201492, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.8212466239929, 1.1937415599823, 1.3337824344635, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.94494289159775, -1.165887594223, 1.3350394964218, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7552089691162, -1.1984279155731, 1.3350394964218, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior_glass.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_glass.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.8212184906006, -1.1937860250473, 1.3321775197983, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/aileron_lft_lod0.msh",
+						name = "aileron_lft",
+						transf = { -0.055286202579737, 0.99024891853333, 0.12786859273911, 0, 0.052996415644884, -0.12497363984585, 0.99074363708496, 0, 0.99706304073334, 0.06155102699995, -0.045570325106382, 0, -3.191148519516, 10.258760452271, 0.66050827503204, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/aileron_rgt_lod0.msh",
+						name = "aileron_rgt",
+						transf = { 0.055234473198652, 0.99042493104935, -0.12652067840099, 0, 0.052990719676018, 0.1236277744174, 0.99091279506683, 0, 0.99706619977951, -0.061436962336302, -0.045654814690351, 0, -3.1906132698059, -10.257739067078, 0.64654672145844, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.949268341064, -0.001358617679216, 4.0396618843079, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/elevator_lod0.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -13.406656265259, 0, 1.5291930437088, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0100932121277, 2.9691243171692, 0.011195000261068, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0102484226227, -2.9669053554535, 0.011195999570191, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_rotor.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor_b1_lft_lod0.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0020496845245, 2.9691340923309, 0.015235999599099, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_rotor.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor_b1_lft_lod0.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0020496845245, -2.9668951034546, 0.011195063591003, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/flaps/flap1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/flap1_lft_lod0.msh",
+						name = "flap1_lft",
+						transf = { -0.080165430903435, 0.98725527524948, 0.13747890293598, 0, -0.058576103299856, -0.14235036075115, 0.98808157444, 0, 0.99505895376205, 0.0711570084095, 0.069241151213646, 0, -2.8760159015656, 5.2532258033752, -0.0578901655972, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/flaps/flap1_ctr.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/flap1_ctr_lod0.msh",
+						name = "flap1_ctr",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -2.760794878006, 0, -0.3090298473835, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/flaps/flap1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/flap1_rgt_lod0.msh",
+						name = "flap1_rgt",
+						transf = { 0.080118544399738, 0.98817998170853, -0.13069494068623, 0, -0.065658897161484, 0.13606357574463, 0.98852187395096, 0, 0.99462044239044, -0.070617653429508, 0.075784035027027, 0, -2.8758664131165, -5.2525644302368, -0.062366165220737, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/close_wheels/gear1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/open_wheels/gear1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/douglas_dc3_v2/close_wheels/gear1_c1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/douglas_dc3_v2/open_wheels/gear1_c1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/gear1_c1_lod0.msh",
+								name = "gear1_c1",
+								transf = { 1, 0, 1.3556968082839e-33, 0, 0, 1, 0, 0, 1.3556968082839e-33, 0, 1, 0, 1.9481039047241, -3.2815467215884e-16, -1.4976450204849, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/w1_lft_lod0.msh",
+								name = "w1_lft",
+								transf = { 1, -2.1757056366274e-16, 9.6277152916713e-17, 0, 2.1757056366274e-16, 1, 6.2883726004159e-17, 0, -9.6277152916713e-17, -6.2883726004159e-17, 1, 0, 1.9479353427887, 2.9867508411407, -1.4932485818863, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/w1_rgt_lod0.msh",
+								name = "w1_rgt",
+								transf = { 1, -2.1757056366274e-16, 9.6277152916713e-17, 0, 2.1757056366274e-16, 1, 6.2883726004159e-17, 0, -9.6277152916713e-17, -6.2883726004159e-17, 1, 0, 1.9480909109116, -2.9821336269379, -1.4973104000092, 1, },
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/gear1_lod0.msh",
+						name = "gear1",
+						transf = { 1, 2.1757056366274e-16, -9.6277152916713e-17, 0, -2.1757056366274e-16, 1, -6.2883726004159e-17, 0, 9.6277152916713e-17, 6.2883726004159e-17, 1, 0, -1.9394266605377, -1.5178830414797e-18, -0.37037792801857, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.962580680847, 0, 0.37106069922447, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_door.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4882626533508, 1.2115429639816, 0.92320197820663, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3.mtl", "vehicle/plane/douglas_dc3_v2/dc_3_door.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/d2_rgt_lod0.msh",
+						name = "d2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4881997108459, -1.2117710113525, 0.92320197820663, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/landinglights_lod0.msh",
+						name = "landinglights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/beaconlights_lod0.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/positionlights_lod0.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/strobelights_lod0.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_interior.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/aileron_lft_lod1.msh",
+						name = "aileron_lft",
+						transf = { -0.055286202579737, 0.99024891853333, 0.12786859273911, 0, 0.052996415644884, -0.12497363984585, 0.99074363708496, 0, 0.99706304073334, 0.06155102699995, -0.045570325106382, 0, -3.191148519516, 10.258760452271, 0.66050827503204, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/aileron_rgt_lod1.msh",
+						name = "aileron_rgt",
+						transf = { 0.055234473198652, 0.99042493104935, -0.12652067840099, 0, 0.052990719676018, 0.1236277744174, 0.99091279506683, 0, 0.99706619977951, -0.061436962336302, -0.045654814690351, 0, -3.1906132698059, -10.257739067078, 0.64654672145844, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.949268341064, -0.001358617679216, 4.0396618843079, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/elevator_lod1.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -13.406656265259, 0, 1.5291930437088, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0100932121277, 2.9691243171692, 0.015235999599099, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0102484226227, -2.9669053554535, 0.011195999570191, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_rotor.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor_b1_lft_lod1.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0020496845245, 2.9691340923309, 0.015235999599099, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_rotor.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor_b1_lft_lod1.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0020496845245, -2.9668951034546, 0.011195063591003, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/flaps/flap1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/flap1_lft_lod1.msh",
+						name = "flap1_lft",
+						transf = { -0.080165430903435, 0.98725527524948, 0.13747890293598, 0, -0.058576103299856, -0.14235036075115, 0.98808157444, 0, 0.99505895376205, 0.0711570084095, 0.069241151213646, 0, -2.8760159015656, 5.2532258033752, -0.0578901655972, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/flaps/flap1_ctr.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/flap1_ctr_lod1.msh",
+						name = "flap1_ctr",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -2.760794878006, 0, -0.3090298473835, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/flaps/flap1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/flap1_rgt_lod1.msh",
+						name = "flap1_rgt",
+						transf = { 0.080118544399738, 0.98817998170853, -0.13069494068623, 0, -0.065658897161484, 0.13606357574463, 0.98852187395096, 0, 0.99462044239044, -0.070617653429508, 0.075784035027027, 0, -2.8758664131165, -5.2525644302368, -0.062366165220737, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/close_wheels/gear1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/open_wheels/gear1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/gear1_c1_lod1.msh",
+								name = "gear1_c1",
+								transf = { 1, 0, 1.3556968082839e-33, 0, 0, 1, 0, 0, 1.3556968082839e-33, 0, 1, 0, 1.9481039047241, -3.2815467215884e-16, -1.4976450204849, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/w1_lft_lod1.msh",
+								name = "w1_lft",
+								transf = { 1, -2.1757056366274e-16, 9.6277152916713e-17, 0, 2.1757056366274e-16, 1, 6.2883726004159e-17, 0, -9.6277152916713e-17, -6.2883726004159e-17, 1, 0, 1.9479353427887, 2.9867508411407, -1.4932485818863, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/w1_rgt_lod1.msh",
+								name = "w1_rgt",
+								transf = { 1, -2.1757056366274e-16, 9.6277152916713e-17, 0, 2.1757056366274e-16, 1, 6.2883726004159e-17, 0, -9.6277152916713e-17, -6.2883726004159e-17, 1, 0, 1.9480909109116, -2.9821336269379, -1.4973104000092, 1, },
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/gear1_lod1.msh",
+						name = "gear1",
+						transf = { 1, 2.1757056366274e-16, -9.6277152916713e-17, 0, -2.1757056366274e-16, 1, -6.2883726004159e-17, 0, 9.6277152916713e-17, 6.2883726004159e-17, 1, 0, -1.9394266605377, -1.5178830414797e-18, -0.37037792801857, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.962580680847, 0, 0.37106069922447, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4882626533508, 1.2115429639816, 0.92320197820663, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/d2_rgt_lod1.msh",
+						name = "d2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4881997108459, -1.2117710113525, 0.92320197820663, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/landinglights_lod1.msh",
+						name = "landinglights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/beaconlights_lod1.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/positionlights_lod1.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/strobelights_lod1.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0099999997764826, 0, -0.0049999998882413, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/aileron_lft_lod2.msh",
+						name = "aileron_lft",
+						transf = { -0.055286202579737, 0.99024891853333, 0.12786859273911, 0, 0.052996415644884, -0.12497363984585, 0.99074363708496, 0, 0.99706304073334, 0.06155102699995, -0.045570325106382, 0, -3.191148519516, 10.258760452271, 0.66050827503204, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/aileron_rgt_lod2.msh",
+						name = "aileron_rgt",
+						transf = { 0.055234473198652, 0.99042493104935, -0.12652067840099, 0, 0.052990719676018, 0.1236277744174, 0.99091279506683, 0, 0.99706619977951, -0.061436962336302, -0.045654814690351, 0, -3.1906132698059, -10.257739067078, 0.64654672145844, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rudder_lod2.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.949268341064, -0.001358617679216, 4.0396618843079, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/elevator_lod2.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -13.406656265259, 0, 1.5291930437088, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor1_lft_lod2.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0100932121277, 2.9691243171692, 0.015235999599099, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor1_lft_lod2.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0100932121277, -2.9098989963531, 0.015235999599099, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_rotor.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor_b1_lft_lod2.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0020496845245, 2.9691340923309, 0.015235999599099, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_rotor.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/rotor_b1_lft_lod2.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0020496845245, -2.9668951034546, 0.011195063591003, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/flaps/flap1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/flap1_lft_lod2.msh",
+						name = "flap1_lft",
+						transf = { -0.080165430903435, 0.98725527524948, 0.13747890293598, 0, -0.058576103299856, -0.14235036075115, 0.98808157444, 0, 0.99505895376205, 0.0711570084095, 0.069241151213646, 0, -2.8760159015656, 5.2532258033752, -0.0578901655972, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/flaps/flap1_ctr.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/flap1_ctr_lod2.msh",
+						name = "flap1_ctr",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -2.760794878006, 0, -0.3090298473835, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/flaps/flap1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/flap1_rgt_lod2.msh",
+						name = "flap1_rgt",
+						transf = { 0.080118544399738, 0.98817998170853, -0.13069494068623, 0, -0.065658897161484, 0.13606357574463, 0.98852187395096, 0, 0.99462044239044, -0.070617653429508, 0.075784035027027, 0, -2.8758664131165, -5.2525644302368, -0.062366165220737, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/close_wheels/gear1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/open_wheels/gear1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/gear1_c1_lod2.msh",
+								name = "gear1_c1",
+								transf = { 1, 0, 1.3556968082839e-33, 0, 0, 1, 0, 0, 1.3556968082839e-33, 0, 1, 0, 1.9481039047241, -3.2815467215884e-16, -1.4976450204849, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/w1_lft_lod2.msh",
+								name = "w1_lft",
+								transf = { 1, -2.1757056366274e-16, 9.6277152916713e-17, 0, 2.1757056366274e-16, 1, 6.2883726004159e-17, 0, -9.6277152916713e-17, -6.2883726004159e-17, 1, 0, 1.9479353427887, 2.9867508411407, -1.4932485818863, 1, },
+							},
+							{
+								materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+								mesh = "vehicle/plane/douglas_dc3_v2/w1_rgt_lod2.msh",
+								name = "w1_rgt",
+								transf = { 1, -2.1757056366274e-16, 9.6277152916713e-17, 0, 2.1757056366274e-16, 1, 6.2883726004159e-17, 0, -9.6277152916713e-17, -6.2883726004159e-17, 1, 0, 1.9480909109116, -2.9821336269379, -1.4973104000092, 1, },
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/gear1_lod2.msh",
+						name = "gear1",
+						transf = { 1, 2.1757056366274e-16, -9.6277152916713e-17, 0, -2.1757056366274e-16, 1, -6.2883726004159e-17, 0, 9.6277152916713e-17, 6.2883726004159e-17, 1, 0, -1.9394266605377, -1.5178830414797e-18, -0.37037792801857, 1, },
+					},
+					{
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/w2_lod2.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.962580680847, 0, 0.37106069922447, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/d1_lft_lod2.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4882626533508, 1.2115429639816, 0.92320197820663, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/douglas_dc3_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/douglas_dc3_v2/dc_3_lod.mtl", },
+						mesh = "vehicle/plane/douglas_dc3_v2/d2_rgt_lod2.msh",
+						name = "d2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, -2.7755575615629e-17, 0, 0, 2.7755575615629e-17, 1, 0, -6.4881997108459, -1.2117710113525, 0.92320197820663, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		airVehicle = {
+			configs = {
+				{
+					aileronLeft = {
+						ids = { 15, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 16, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.58999997377396, 0.58999997377396, },
+					axles = { "vehicle/plane/douglas_dc3_v2/w1_lft_lod0.msh", "vehicle/plane/douglas_dc3_v2/w1_rgt_lod0.msh", },
+					beaconLights = { 34, },
+					elevator = {
+						ids = { 18, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 30,
+					},
+					landingLight = { 33, },
+					props = { 19, 20, },
+					propsB = { 21, 22, },
+					rudder = {
+						ids = { 17, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { 36, },
+					wheelRadii = { 0.28999999165535, },
+					wheels = { "vehicle/plane/douglas_dc3_v2/w2_lod0.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 2, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.58999997377396, 0.58999997377396, },
+					axles = { "vehicle/plane/douglas_dc3_v2/w1_lft_lod1.msh", "vehicle/plane/douglas_dc3_v2/w1_rgt_lod1.msh", },
+					beaconLights = { 21, },
+					elevator = {
+						ids = { 5, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 30,
+					},
+					landingLight = { 20, },
+					props = { 6, 7, },
+					propsB = { 8, 9, },
+					rudder = {
+						ids = { 4, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { 23, },
+					wheelRadii = { 0.28999999165535, },
+					wheels = { "vehicle/plane/douglas_dc3_v2/w2_lod1.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 2, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.58999997377396, 0.58999997377396, },
+					axles = { "vehicle/plane/douglas_dc3_v2/w1_lft_lod2.msh", "vehicle/plane/douglas_dc3_v2/w1_rgt_lod2.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { 5, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 30,
+					},
+					landingLight = { },
+					props = { 6, 7, },
+					propsB = { 8, 9, },
+					rudder = {
+						ids = { 4, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.28999999165535, },
+					wheels = { "vehicle/plane/douglas_dc3_v2/w2_lod2.msh", },
+				},
+			},
+			idleThrust = 0,
+			maxPayload = 0,
+			maxTakeOffWeight = 11400,
+			maxThrust = 25000,
+			timeToFullThrust = 3,
+			topSpeed = 92,
+			type = "SMALL",
+			weight = 7700,
+			wingArea = 91,
+		},
+		availability = {
+			yearFrom = 1935,
+			yearTo = 1970,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_PLANE_DOUGLAS_DC3_DESCRIPTION"),
+			name = _("VEHICLE_PLANE_DOUGLAS_DC3_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.5,
+					position = { 2.4119999408722, 3.5799999237061, -0.23299998044968, },
+					size01 = { 0.050000000745058, 2, },
+					velocity = { -2.3499999046326, 3.0999999046326, -0.64999997615814, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.5,
+					position = { 2.4119999408722, 2.3440001010895, -0.23299998044968, },
+					size01 = { 0.050000000745058, 2, },
+					velocity = { -2.3499999046326, -3.0999999046326, -1.2000000476837, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.5,
+					position = { 2.4119999408722, -2.3499999046326, -0.23299998044968, },
+					size01 = { 0.050000000745058, 2, },
+					velocity = { -2.3499999046326, 3.0999999046326, -1.2000000476837, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.5,
+					position = { 2.4119999408722, -3.5859999656677, -0.23299998044968, },
+					size01 = { 0.050000000745058, 2, },
+					velocity = { -2.3499999046326, -3.0999999046326, -0.64999997615814, },
+					velocityDampingFactor = 4,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "AIR",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.789999961853, 0.39599996805191, 0.43999999761581, 1, },
+				},
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.789999961853, -0.39599996805191, 0.43999999761581, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.64399999380112, 0.21600000560284, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4619998931885, 0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4619998931885, 0.21600000560284, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.64399999380112, 0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.15800000727177, 0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.15800000727177, 0.21600000560284, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.9559999704361, 0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.9559999704361, 0.21600000560284, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7539999485016, 0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7539999485016, 0.21600000560284, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.555999994278, 0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.555999994278, 0.21600000560284, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.367999792099, 0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.367999792099, 0.21600000560284, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1500000953674, 0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1500000953674, 0.21600000560284, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.9580001831055, 0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.9580001831055, 0.21600000560284, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7779998779297, 0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7779998779297, 0.21600000560284, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4619998931885, -0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.64200001955032, -0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.1879999935627, -0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.95300000905991, -0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7730000019073, -0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5729997158051, -0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3829998970032, -0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1680002212524, -0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.9730000495911, -0.75400000810623, 0.39799997210503, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 38,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7779998779297, -0.75400000810623, 0.39799997210503, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "aircraft_prop_modern",
+			},
+		},
+		transportVehicle = {
+			carrier = "AIR",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 40,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

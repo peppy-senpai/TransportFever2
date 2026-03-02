@@ -1,0 +1,478 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.0914430618286, 0.91586691141129, 2.771430015564, },
+		bbMin = { -1.6361500024796, -0.91586691141129, -0.010277986526489, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.8637964725494, 0.91586691141129, 1.3908540010452, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer.mtl", },
+						mesh = "vehicle/bus/landauer_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/landauer_v2/landauer_glass.mtl", },
+								mesh = "vehicle/bus/landauer_v2/glass1_frt_lod0.msh",
+								name = "glass1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.77854114770889, 0, 2.1239547729492, 1, },
+							},
+							{
+								materials = { "vehicle/bus/landauer_v2/landauer_glass.mtl", },
+								mesh = "vehicle/bus/landauer_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4743410050869, 0.62483096122742, 1.9571850299835, 1, },
+							},
+							{
+								materials = { "vehicle/bus/landauer_v2/landauer_glass.mtl", },
+								mesh = "vehicle/bus/landauer_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.48902150988579, 0.62746846675873, 1.9571748971939, 1, },
+							},
+							{
+								materials = { "vehicle/bus/landauer_v2/landauer_glass.mtl", },
+								mesh = "vehicle/bus/landauer_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4743410050869, -0.62483096122742, 1.9571850299835, 1, },
+							},
+							{
+								materials = { "vehicle/bus/landauer_v2/landauer_glass.mtl", },
+								mesh = "vehicle/bus/landauer_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.48902150988579, -0.62746846675873, 1.9571748971939, 1, },
+							},
+							{
+								materials = { "vehicle/bus/landauer_v2/landauer_glass.mtl", },
+								mesh = "vehicle/bus/landauer_v2/glass1_bck_lod0.msh",
+								name = "glass1_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.81057590246201, 0, 2.123960018158, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer_interior.mtl", },
+						mesh = "vehicle/bus/landauer_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer.mtl", },
+						mesh = "vehicle/bus/landauer_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3686798810959, 0.72595691680908, 0.50012201070786, 1, },
+					},
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer.mtl", },
+						mesh = "vehicle/bus/landauer_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.3686798810959, -0.72595691680908, 0.50012201070786, 1, },
+					},
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer.mtl", },
+						mesh = "vehicle/bus/landauer_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.94814991950989, 0, 0.63969498872757, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/landauer_v2/landauer_glass.mtl", },
+								mesh = "vehicle/bus/landauer_v2/d1_glass_lft_lod0.msh",
+								name = "d1_glass_lft",
+								transf = { -1, 2.2799731530911e-14, 1.5099578831723e-07, 0, -1.8571601982251e-22, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -0.30729800462723, 0.095365464687347, 1.9571349620819, 1, },
+							},
+						},
+						materials = { "vehicle/bus/landauer_v2/landauer.mtl", },
+						mesh = "vehicle/bus/landauer_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -0.31600001454353, 0.74599999189377, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/landauer_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/landauer_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/bus/landauer_v2/landauer_glass.mtl", },
+								mesh = "vehicle/bus/landauer_v2/d1_glass_rgt_lod0.msh",
+								name = "d1_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30729800462723, 0.095365464687347, 1.9571349620819, 1, },
+							},
+						},
+						materials = { "vehicle/bus/landauer_v2/landauer.mtl", },
+						mesh = "vehicle/bus/landauer_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.31600001454353, -0.74599999189377, 0, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/bus/landauer_v2/wheels/g1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/landauer_v2/landauer.mtl", },
+						mesh = "vehicle/bus/landauer_v2/g1_lod0.msh",
+						name = "g1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1528980731964, 0.073504149913788, 0.8987979888916, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/bus/landauer_v2/wheels/g2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/landauer_v2/landauer.mtl", },
+						mesh = "vehicle/bus/landauer_v2/g2_lod0.msh",
+						name = "g2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.27877509593964, -0.085570551455021, 0.6279000043869, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/landauer_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 40,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer_lod.mtl", },
+						mesh = "vehicle/bus/landauer_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer_interior_lod.mtl", },
+						mesh = "vehicle/bus/landauer_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer_lod.mtl", },
+						mesh = "vehicle/bus/landauer_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3686798810959, 0.72595691680908, 0.50012201070786, 1, },
+					},
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer_lod.mtl", },
+						mesh = "vehicle/bus/landauer_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.3686798810959, -0.72595691680908, 0.50012201070786, 1, },
+					},
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer_lod.mtl", },
+						mesh = "vehicle/bus/landauer_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.94814991950989, 0, 0.63969498872757, 1, },
+					},
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer_lod.mtl", },
+						mesh = "vehicle/bus/landauer_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -0.31600001454353, 0.74599999189377, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/landauer_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/landauer_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/landauer_v2/landauer_lod.mtl", },
+						mesh = "vehicle/bus/landauer_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.31600001454353, -0.74599999189377, 0, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/bus/landauer_v2/wheels/g1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/landauer_v2/landauer_lod.mtl", },
+						mesh = "vehicle/bus/landauer_v2/g1_lod1.msh",
+						name = "g1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1528980731964, 0.073504149913788, 0.8987979888916, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/bus/landauer_v2/wheels/g2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/landauer_v2/landauer_lod.mtl", },
+						mesh = "vehicle/bus/landauer_v2/g2_lod1.msh",
+						name = "g2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.27877509593964, -0.085570551455021, 0.6279000043869, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/landauer_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 40,
+			visibleTo = 200,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/landauer_v2/landauer_lod.mtl", },
+						mesh = "vehicle/bus/landauer_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 200,
+			visibleTo = 700,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1891,
+			yearTo = 1942,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_BUS_LANDAUER_DESCRIPTION"),
+			name = _("VEHICLE_BUS_LANDAUER_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 0,
+					color = { 0.48235291242599, 0.48235291242599, 0.48235291242599, },
+					frequency = 20,
+					initialAlpha = 1,
+					lifeTime = 10,
+					position = { -0.84449994564056, -0.56849998235703, 1.3700000047684, },
+					size01 = { 0.10000000149012, 0.40000000596046, },
+					velocity = { -0.57701522111893, -0.79414933919907, 0.19073623418808, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/bus/landauer_v2/w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 19, },
+					steeringParts = { },
+					wheels = { "vehicle/bus/landauer_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/bus/landauer_v2/w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 10, },
+					steeringParts = { },
+					wheels = { "vehicle/bus/landauer_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -0.94999998807907,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 10,
+				tractiveEffort = 8,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "bus_old",
+			},
+			topSpeed = 5.5599999427795,
+			weight = 2,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 20,
+					transf = { 0.99691730737686, 0, -0.078459098935127, 0, 0, 1, 0, 0, 0.078459098935127, 0, 0.99691730737686, 0, 0.93699997663498, 0.30899995565414, 1.0039999485016, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { 0.99756407737732, 0, -0.069756470620632, 0, 0, 1, 0, 0, 0.069756470620632, 0, 0.99756407737732, 0, -0.53500002622604, 0.31999999284744, 1.0199999809265, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { 0.99448889493942, 0.078267976641655, -0.069756470620632, 0, -0.078459098935127, 0.99691730737686, 2.4205654147735e-10, 0, 0.069541439414024, 0.0054730293340981, 0.99756407737732, 0, -0.53500002622604, -0.24499998986721, 1.0199999809265, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { -0.98785579204559, 0.13883408904076, -0.069756418466568, 0, -0.13917309045792, -0.99026799201965, -1.0339159928208e-07, 0, -0.06907756626606, 0.0097081148996949, 0.99756407737732, 0, 0.50999999046326, -0.33499997854233, 1.0199999809265, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { -0.9911515712738, 0.11292745172977, -0.069756411015987, 0, -0.11320320516825, -0.99357181787491, 2.4097355222352e-08, 0, -0.069308005273342, 0.0078966738656163, 0.99756407737732, 0, 0.50999999046326, 0.21699997782707, 1.0199999809265, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v07",
+		},
+	},
+	version = 1,
+}
+end

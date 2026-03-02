@@ -1,0 +1,911 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.2710099220276, 1.2517701387405, 2.7318797111511, },
+		bbMin = { -5.087299823761, -1.2504299879074, -0.0019284188747406, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 5.1791548728943, 1.251100063324, 1.3669040203094, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass1_frt_lod0.msh",
+								name = "glass1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9194707870483, 0, 2.4832899570465, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass1_left_lft_lod0.msh",
+								name = "glass1_left_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.873019695282, 0.54649394750595, 1.852659702301, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass1_right_rgt_lod0.msh",
+								name = "glass1_right_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.8731145858765, -0.54724860191345, 1.852659702301, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.1507058143616, 1.0752152204514, 1.8789249658585, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.760999917984, 1.0751564502716, 1.8789713382721, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4749997854233, 1.0744781494141, 1.8789855241776, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.17515000700951, 1.0742070674896, 1.8790007829666, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass5_lft_lod0.msh",
+								name = "glass5_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1100000143051, 1.0739318132401, 1.8790162801743, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass6_lft_lod0.msh",
+								name = "glass6_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3723700046539, 1.073667049408, 1.8790311813354, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass7_lft_lod0.msh",
+								name = "glass7_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6625304222107, 1.0735293626785, 1.8790389299393, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8110647201538, -1.0753828287125, 1.8790389299393, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4909420013428, -1.0756882429123, 2.0484988689423, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.20864999294281, -1.0760338306427, 1.8790389299393, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3723700046539, -1.0750342607498, 1.8790389299393, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass5_rgt_lod0.msh",
+								name = "glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6713094711304, -1.0746943950653, 1.8790389299393, 1, },
+							},
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", "vehicle/bus/man_sl_192_v2/man_sl_192_interior_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/glass1_bck_lod0.msh",
+								name = "glass1_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0362854003906, 4.500150680542e-06, 2.0166590213776, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_interior.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.7541556358337, 0.930848300457, 0.4703357219696, 1, },
+					},
+					{
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 2.7541556358337, -0.930848300457, 0.4703357219696, 1, },
+					},
+					{
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3387351036072, 1.7881393432617e-07, 0.47691377997398, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/d1_glass_rgt_lod0.msh",
+								name = "d1_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.31051275134087, 0.041939616203308, 1.5644370317459, 1, },
+							},
+						},
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7531924247742, -1.1135497093201, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/d2_glass_rgt_lod0.msh",
+								name = "d2_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.31050512194633, 0.041939552873373, 1.5655899047852, 1, },
+							},
+						},
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/d2_rgt_lod0.msh",
+						name = "d2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5111546516418, -1.1135497093201, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/close_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/open_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/d3_glass_rgt_lod0.msh",
+								name = "d3_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.31050986051559, 0.039799630641937, 1.5534956455231, 1, },
+							},
+						},
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/d3_rgt_lod0.msh",
+						name = "d3_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.48270010948181, -1.1135497093201, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/close_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/open_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_glass.mtl", },
+								mesh = "vehicle/bus/man_sl_192_v2/d4_glass_rgt_lod0.msh",
+								name = "d4_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.31050825119019, 0.039799630641937, 1.5535999536514, 1, },
+							},
+						},
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/d4_rgt_lod0.msh",
+						name = "d4_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.724738240242, -1.1135497093201, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_brake_lights.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 120,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_lod.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_interior_lod.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_lod.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.7541556358337, 0.930848300457, 0.4703357219696, 1, },
+					},
+					{
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_lod.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 2.7541556358337, -0.930848300457, 0.4703357219696, 1, },
+					},
+					{
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_lod.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3387351036072, 1.7881393432617e-07, 0.47691377997398, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_lod.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7531924247742, -1.1135497093201, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_lod.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/d2_rgt_lod1.msh",
+						name = "d2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5111546516418, -1.1135497093201, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/close_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/open_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_lod.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/d3_rgt_lod1.msh",
+						name = "d3_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.48270010948181, -1.1135497093201, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/close_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/man_sl_192_v2/open_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_lod.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/d4_rgt_lod1.msh",
+						name = "d4_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.724738240242, -1.1135497093201, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_brake_lights.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 120,
+			visibleTo = 220,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/man_sl_192_v2/man_sl_192_lod.mtl", },
+						mesh = "vehicle/bus/man_sl_192_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 220,
+			visibleTo = 990,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1970,
+			yearTo = 2020,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_BUS_MAN_SL_192_DESCRIPTION"),
+			name = _("VEHICLE_BUS_MAN_SL_192_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 0.76805937290192, 0.87058824300766, 0.23557092249393, },
+					filter = "NONE",
+					fitting = "CUT",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 95.200004577637, 18.10000038147, },
+					transf = { -4.3711387287537e-10, 0.0099999997764826, -6.6002355732162e-17, 0, 4.3711387287537e-10, 8.5109208795622e-17, 0.0099999997764826, 0, 0.0099999997764826, 4.3711387287537e-10, -4.3711387287537e-10, 0, 4.9050002098083, -0.47200000286102, 2.3800001144409, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 0.76805937290192, 0.87058824300766, 0.23557092249393, },
+					filter = "NUMBER",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 23.700000762939, 18.700000762939, },
+					transf = { 1.947071837094e-09, -0.0099999997764826, -9.2458257507154e-26, 0, -4.3711387287537e-10, -8.5109208795622e-17, 0.0099999997764826, 0, -0.0099999997764826, -1.947071837094e-09, -4.3711387287537e-10, 0, -5.0199999809265, 0.14000000059605, 2.3800001144409, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 0.76872092485428, 0.87058824300766, 0.23557092249393, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 107.20000457764, 22.200000762939, },
+					transf = { 0.0099999997764826, 4.371138451198e-10, -1.224646687149e-18, 0, 2.0331498923429e-17, -4.3711387287537e-10, 0.0099999997764826, 0, 4.371138451198e-10, -0.0099999997764826, -4.3711387287537e-10, 0, 0.96399998664856, -1.0540000200272, 2.4300000667572, 1, },
+					type = "NEXT_STOP",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 40,
+					initialAlpha = 0.5,
+					lifeTime = 1,
+					position = { -4.6364183425903, 1.0233217477798, 0.30526965856552, },
+					size01 = { 0.10000000149012, 0.80000001192093, },
+					velocity = { -1.6900000572205, 3.960000038147, -0.15643489360809, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/bus/man_sl_192_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 33, },
+					blinkLightsRight = { 34, },
+					brakeLights = { 32, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 31, },
+					steeringParts = { },
+					wheels = { "vehicle/bus/man_sl_192_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/bus/man_sl_192_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 12, },
+					blinkLightsRight = { 13, },
+					brakeLights = { 11, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 10, },
+					steeringParts = { },
+					wheels = { "vehicle/bus/man_sl_192_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -2.3399999141693,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 141,
+				tractiveEffort = 20,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "vehicle/truck_modern/horn.wav",
+				name = "bus_modern",
+			},
+			topSpeed = 22.219999313354,
+			weight = 16,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0556344985962, 0.6129549741745, 0.56812351942062, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4923225641251, -0.74428856372833, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4923225641251, 0.37421941757202, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.039537191391, 0.37421941757202, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8098602294922, -0.74428856372833, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2990272045135, -0.74428856372833, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8098602294922, 0.37421941757202, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2990272045135, 0.37421941757202, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5824880599976, -0.65728849172592, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5824880599976, 0.23921942710876, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.098830878734589, -0.74428856372833, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.098830878734589, 0.37421941757202, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.69269543886185, -0.74428856372833, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.69269543886185, 0.37421941757202, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.056693315506, -0.74428856372833, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { -1, 8.7422776573476e-08, 1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246467202363e-16, -1.2246469849341e-16, 1, 0, 2.4254674911499, -0.36068594455719, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { -1, 8.7422776573476e-08, 1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246467202363e-16, -1.2246469849341e-16, 1, 0, 2.4254674911499, 0.72282201051712, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { -1, 8.7422776573476e-08, 1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246467202363e-16, -1.2246469849341e-16, 1, 0, -2.8767154216766, -0.36068594455719, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { -1, 8.7422776573476e-08, 1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246467202363e-16, -1.2246469849341e-16, 1, 0, -2.8767154216766, 0.72282201051712, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4923225641251, -0.33385729789734, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4923225641251, 0.74965065717697, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.039537191391, 0.74965065717697, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8098602294922, -0.33385729789734, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2990272045135, -0.33385729789734, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8098602294922, 0.74965065717697, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2990272045135, 0.74965065717697, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5824880599976, -0.24685730040073, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5824880599976, 0.64965069293976, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.098830878734589, -0.33385729789734, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.098830878734589, 0.74965065717697, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.69269543886185, -0.33385729789734, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.69269543886185, 0.74965065717697, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { -1, 8.7422776573476e-08, 1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246467202363e-16, -1.2246469849341e-16, 1, 0, 2.4254674911499, -0.77111721038818, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { -1, 8.7422776573476e-08, 1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246467202363e-16, -1.2246469849341e-16, 1, 0, 2.4254674911499, 0.34739077091217, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { -1, 8.7422776573476e-08, 1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246467202363e-16, -1.2246469849341e-16, 1, 0, -2.8767154216766, -0.77111721038818, 0.64009612798691, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 35,
+					transf = { -1, 8.7422776573476e-08, 1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246467202363e-16, -1.2246469849341e-16, 1, 0, -2.8767154216766, 0.34739077091217, 0.64009612798691, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 64,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 3,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v07",
+		},
+	},
+	version = 1,
+}
+end

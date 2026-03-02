@@ -1,0 +1,334 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.2810583114624, 0.9125462770462, 1.4025658369064, },
+		bbMin = { -2.2712368965149, -0.9125462770462, -0.0026616454124451, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.2761476039886, 0.9125462770462, 0.70261371135712, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/vw_santana_1985_v2/vw_santana.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_interior_glass.mtl", "vehicle/car/vw_santana_1985_v2/vw_santana_glass.mtl", },
+								mesh = "vehicle/car/vw_santana_1985_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.7191566824913, 0.00013342499732971, 1.1322928667068, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_interior_glass.mtl", "vehicle/car/vw_santana_1985_v2/vw_santana_glass.mtl", },
+								mesh = "vehicle/car/vw_santana_1985_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.39774751663208, 0.68851894140244, 1.1159168481827, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_interior_glass.mtl", "vehicle/car/vw_santana_1985_v2/vw_santana_glass.mtl", },
+								mesh = "vehicle/car/vw_santana_1985_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.51445782184601, 0.68852978944778, 1.118320941925, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_interior_glass.mtl", "vehicle/car/vw_santana_1985_v2/vw_santana_glass.mtl", },
+								mesh = "vehicle/car/vw_santana_1985_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.136580824852, 0.69295156002045, 1.1194121837616, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_glass.mtl", "vehicle/car/vw_santana_1985_v2/vw_santana_interior_glass.mtl", },
+								mesh = "vehicle/car/vw_santana_1985_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.087811857461929, -0.074892610311508, 1.1183896064758, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_interior_glass.mtl", "vehicle/car/vw_santana_1985_v2/vw_santana_glass.mtl", },
+								mesh = "vehicle/car/vw_santana_1985_v2/glass2_grt_lod0.msh",
+								name = "glass2_grt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.47774821519852, -0.68822461366653, 1.1183211803436, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_interior_glass.mtl", "vehicle/car/vw_santana_1985_v2/vw_santana_glass.mtl", },
+								mesh = "vehicle/car/vw_santana_1985_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1365805864334, -0.69264656305313, 1.1194123029709, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_interior_glass.mtl", "vehicle/car/vw_santana_1985_v2/vw_santana_glass.mtl", },
+								mesh = "vehicle/car/vw_santana_1985_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.293518781662, 0.00030314922332764, 1.184686422348, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_interior.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_santana_1985_v2/vw_santana.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4235469102859, 0.67974644899368, 0.29070970416069, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_santana_1985_v2/vw_santana.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.4235469102859, -0.67974644899368, 0.29070970416069, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_santana_1985_v2/vw_santana.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1636737585068, -1.7881393432617e-06, 0.2907095849514, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_lod.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_lod.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4235469102859, 0.67974644899368, 0.29070970416069, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_lod.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.4235469102859, -0.67974644899368, 0.29070970416069, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_lod.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1636737585068, -1.7881393432617e-06, 0.2907095849514, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/vw_santana_1985_v2/vw_santana_lod.mtl", },
+						mesh = "vehicle/car/vw_santana_1985_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1985,
+			yearTo = 0,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.60000002384186, 0.52145594358444, 0.42705884575844, },
+				},
+				{
+					{ 0.28627449274063, 0.086458869278431, 0.066797383129597, },
+				},
+				{
+					{ 0.40751245617867, 0.44313722848892, 0.40758669376373, },
+				},
+				{
+					{ 0.4424375295639, 0.48589271306992, 0.63921570777893, },
+				},
+				{
+					{ 0.41176468133926, 0.15335546433926, 0.090426750481129, },
+				},
+				{
+					{ 0.7843137383461, 0.7843137383461, 0.7843137383461, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/vw_santana_1985_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 18, },
+					blinkLightsRight = { 17, },
+					brakeLights = { 16, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 15, },
+					steeringParts = { },
+					wheels = { "vehicle/car/vw_santana_1985_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/vw_santana_1985_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 8, },
+					blinkLightsRight = { 7, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/vw_santana_1985_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 37,
+				tractiveEffort = 6.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 27.777778625488,
+			weight = 0.79000002145767,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 19,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.43999999761581, 0.34999999403954, 0, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

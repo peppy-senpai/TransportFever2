@@ -1,0 +1,1434 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 10.013353347778, 1.3711491823196, 4.8397650718689, },
+		bbMin = { -10.013348579407, -1.3712447881699, 2.5629997253418e-05, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 10.01335144043, 1.3711969852448, 2.4198696613312, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_glass1_left_frt_lod0.msh",
+										name = "front_glass1_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.7606768608093, 0.47829180955887, 2.0683624744415, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_glass1_right_frt_lod0.msh",
+										name = "front_glass1_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.760675907135, -0.47829866409302, 2.0683624744415, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_glass1_lft_lod0.msh",
+										name = "front_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0734448432922, 1.1229735612869, 1.9670702219009, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_glass2_lft_lod0.msh",
+										name = "front_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.00110912323, 1.206538438797, 2.052797794342, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_glass3_lft_lod0.msh",
+										name = "front_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8644506931305, 1.2065387964249, 2.0527982711792, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_glass4_lft_lod0.msh",
+										name = "front_glass4_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4328904151917, 1.2065386772156, 2.0527992248535, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0734438896179, -1.122980594635, 1.9670705795288, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8644495010376, -1.2065402269363, 2.0527982711792, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_glass3_rgt_lod0.msh",
+										name = "front_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.432889342308, -1.2065391540527, 2.0527992248535, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_glass1_right_ctr_lod0.msh",
+										name = "front_glass1_right_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5486660003662, -0.34755882620811, 1.7077810764313, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_glass1_left_ctr_lod0.msh",
+										name = "front_glass1_left_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5144739151001, 0.29102391004562, 1.9709913730621, 1, },
+									},
+								},
+								name = "front_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_interior_lod0.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_b1_lod0.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_w1_lod0.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.8853759765625, 2.0356674212962e-07, 0.33001708984375, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_w1_lod0.msh",
+										name = "front_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.84161376953125, -4.989851731807e-08, 0.33001708984375, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2058715820313, -1.4434481272474e-06, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/close_doors_right/front_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/open_doors_right/front_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/front_d1_glass_lod0.msh",
+										name = "front_d1_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3841857910156e-07, 5.9604644775391e-08, 1.4507726430893, 1, },
+									},
+								},
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_d1_lod0.msh",
+								name = "front_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0330810546875, -1.1962329149246, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_headlights_lod0.msh",
+								name = "front_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7561340332031, -3.9488077163696e-07, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_blinklights_lft_lod0.msh",
+								name = "front_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7561340332031, -3.9488077163696e-07, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_blinklights_rgt_lod0.msh",
+								name = "front_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7561340332031, -3.9488077163696e-07, 0, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7561264038086, -4.8560395953245e-05, 8.5830688476563e-06, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_body_lod0.msh",
+								name = "middle1_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_glass1_lft_lod0.msh",
+										name = "middle1_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6109306812286, 1.1966279745102, 1.6027032136917, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_glass2_lft_lod0.msh",
+										name = "middle1_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8425447940826, 1.1966279745102, 1.602703332901, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_glass3_lft_lod0.msh",
+										name = "middle1_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.716921210289, 1.2108418941498, 1.7994157075882, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_glass4_lft_lod0.msh",
+										name = "middle1_glass4_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.716921210289, 1.2108418941498, 1.7994157075882, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_glass5_lft_lod0.msh",
+										name = "middle1_glass5_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8425288200378, 1.1966356039047, 1.6027026176453, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_glass6_lft_lod0.msh",
+										name = "middle1_glass6_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6109306812286, 1.1966279745102, 1.6027038097382, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_glass1_rgt_lod0.msh",
+										name = "middle1_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.716921210289, -1.2108418941498, 1.7994157075882, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_glass2_rgt_lod0.msh",
+										name = "middle1_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.716921210289, -1.2108418941498, 1.7994157075882, 1, },
+									},
+								},
+								name = "middle1_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_interior_lod0.msh",
+								name = "middle1_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/close_doors_right/middle1_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/open_doors_right/middle1_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_d1_glass_lod0.msh",
+										name = "middle1_d1_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5762786865234e-07, 1.9863364286721e-08, 1.6027032136917, 1, },
+									},
+								},
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_d1_lod0.msh",
+								name = "middle1_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6109313964844, -1.1966291666031, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/close_doors_right/middle1_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/open_doors_right/middle1_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_d2_glass_lod0.msh",
+										name = "middle1_d2_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3841857910156e-07, -9.934592526406e-08, 1.602703332901, 1, },
+									},
+								},
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_d2_lod0.msh",
+								name = "middle1_d2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8425445556641, -1.1966291666031, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/close_doors_right/middle1_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/open_doors_right/middle1_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_d3_glass_lod0.msh",
+										name = "middle1_d3_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3644180297852e-07, -3.974128048867e-08, 1.6027026176453, 1, },
+									},
+								},
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_d3_lod0.msh",
+								name = "middle1_d3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8425445556641, -1.1966291666031, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/close_doors_right/middle1_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/open_doors_right/middle1_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/middle1_d4_glass_lod0.msh",
+										name = "middle1_d4_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7683715820313e-07, -3.974128048867e-08, 1.6027038097382, 1, },
+									},
+								},
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_d4_lod0.msh",
+								name = "middle1_d4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6109313964844, -1.1966291666031, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_blinklights_lft_lod0.msh",
+								name = "middle1_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_blinklights_rgt_lod0.msh",
+								name = "middle1_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "middle1_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "middle1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.62939453125e-06, -4.8955276724882e-05, 8.5830688476563e-06, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass1_lft_lod0.msh",
+										name = "back_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4328923225403, 1.2065395116806, 2.0527818202972, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass2_lft_lod0.msh",
+										name = "back_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8644523620605, 1.2065408229828, 2.0527811050415, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass3_lft_lod0.msh",
+										name = "back_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0330867767334, 1.1962293386459, 1.6263346672058, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass4_lft_lod0.msh",
+										name = "back_glass4_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0734367370605, 1.1229814291, 1.9075698852539, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass1_rgt_lod0.msh",
+										name = "back_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.432893037796, -1.2065383195877, 2.0527822971344, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass2_rgt_lod0.msh",
+										name = "back_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8644435405731, -1.2065382003784, 2.0527813434601, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass3_rgt_lod0.msh",
+										name = "back_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0011014938354, -1.2065377235413, 2.0527808666229, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass4_rgt_lod0.msh",
+										name = "back_glass4_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0734376907349, -1.1229726076126, 1.907569527626, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass1_left_bck_lod0.msh",
+										name = "back_glass1_left_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7606687545776, 0.47829976677895, 2.0683455467224, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", "vehicle/tram/skoda_10t_v2/skoda_10t_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass1_right_bck_lod0.msh",
+										name = "back_glass1_right_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7606692314148, -0.47828882932663, 2.0683455467224, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass1_left_ctr_lod0.msh",
+										name = "back_glass1_left_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5486783981323, 0.34755781292915, 1.7077641487122, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_glass.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_glass1_right_ctr_lod0.msh",
+										name = "back_glass1_right_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5144863128662, -0.31097659468651, 1.9449743032455, 1, },
+									},
+								},
+								name = "back_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_b1_lod0.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_w1_lod0.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.84161376953125, 2.0356674212962e-07, 0.33001708984375, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_w1_lod0.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.8853759765625, -4.989851731807e-08, 0.33001708984375, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2077152729034, -2.9131333576515e-06, -1.7046928405762e-05, 1, },
+							},
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/back_interior_lod0.msh",
+								name = "back_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2636184692383e-05, -1.6922931536101e-06, -1.7046928405762e-05, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/back_headlights_lod0.msh",
+								name = "back_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7561213970184, -1.8645660020411e-06, -1.7046928405762e-05, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_brake_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/back_brakelights_lod0.msh",
+								name = "back_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7561213970184, -1.8645660020411e-06, -1.7046928405762e-05, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/back_blinklights_lft_lod0.msh",
+								name = "back_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7561213970184, -1.8645660020411e-06, -1.7046928405762e-05, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/back_blinklights_rgt_lod0.msh",
+								name = "back_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7561213970184, -1.8645660020411e-06, -1.7046928405762e-05, 1, },
+							},
+							{
+								name = "back_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7561213970184, 0, 1.9318065643311, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.756129026413, -4.7090710722841e-05, 2.5629997253418e-05, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_interior_lod1.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_b1_lod1.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_w2_lod1.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.8853759765625, 2.0356674212962e-07, 0.33001708984375, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_w2_lod1.msh",
+										name = "front_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.84161376953125, -4.989851731807e-08, 0.33001708984375, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2058715820313, -1.4434481272474e-06, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/close_doors_right/front_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/open_doors_right/front_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_d1_lod1.msh",
+								name = "front_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0330810546875, -1.1962329149246, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_headlights_lod1.msh",
+								name = "front_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7561340332031, -3.9488077163696e-07, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_blinklights_lft_lod1.msh",
+								name = "front_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7561340332031, -3.9488077163696e-07, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_blinklights_rgt_lod1.msh",
+								name = "front_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7561340332031, -3.9488077163696e-07, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7561264038086, -4.8560395953245e-05, 8.5830688476563e-06, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_body_lod1.msh",
+								name = "middle1_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_interior_lod1.msh",
+								name = "middle1_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/close_doors_right/middle1_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/open_doors_right/middle1_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_d1_lod1.msh",
+								name = "middle1_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6109313964844, -1.1966291666031, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/close_doors_right/middle1_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/open_doors_right/middle1_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_d2_lod1.msh",
+								name = "middle1_d2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8425445556641, -1.1966291666031, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/close_doors_right/middle1_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/open_doors_right/middle1_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_d3_lod1.msh",
+								name = "middle1_d3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8425445556641, -1.1966291666031, 0, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/close_doors_right/middle1_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/skoda_10t_v2/open_doors_right/middle1_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_d4_lod1.msh",
+								name = "middle1_d4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6109313964844, -1.1966291666031, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_blinklights_lft_lod1.msh",
+								name = "middle1_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle1_blinklights_rgt_lod1.msh",
+								name = "middle1_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "middle1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.62939453125e-06, -4.8955276724882e-05, 8.5830688476563e-06, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_interior_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/back_interior_lod1.msh",
+								name = "back_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2636184692383e-05, -1.6922931536101e-06, -1.7046928405762e-05, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_b1_lod1.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_w2_lod1.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.84161376953125, 2.0356674212962e-07, 0.33001708984375, 1, },
+									},
+									{
+										materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+										mesh = "vehicle/tram/skoda_10t_v2/back_w2_lod1.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.8853759765625, -4.989851731807e-08, 0.33001708984375, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2077152729034, -2.9131333576515e-06, -1.7046928405762e-05, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/back_headlights_lod1.msh",
+								name = "back_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7561213970184, -1.8645660020411e-06, -1.7046928405762e-05, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_brake_lights.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/back_brakelights_lod1.msh",
+								name = "back_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7561213970184, -1.8645660020411e-06, -1.7046928405762e-05, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.756129026413, -4.7090710722841e-05, 2.5629997253418e-05, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/front_body_lod2.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7561264038086, -4.8560395953245e-05, 8.5830688476563e-06, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/middle_1_body_lod2.msh",
+								name = "middle_1_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "middle1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.62939453125e-06, -4.8955276724882e-05, 8.5830688476563e-06, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/skoda_10t_v2/skoda_10t_lod.mtl", },
+								mesh = "vehicle/tram/skoda_10t_v2/back_body_lod2.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.756129026413, -4.7090710722841e-05, 2.5629997253418e-05, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2000,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAM_SKODA_10T_DESCRIPTION"),
+			name = _("VEHICLE_TRAM_SKODA_10T_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "front_body",
+					color = { 0.76805937290192, 0.87058824300766, 0.23557092249393, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 171.19999694824, 21.399997711182, },
+					transf = { -4.3711387287537e-10, 0.0099999997764826, -6.6002355732162e-17, 0, 4.3711387287537e-10, 8.5109208795622e-17, 0.0099999997764826, 0, 0.0099999997764826, 4.3711387287537e-10, -4.3711387287537e-10, 0, 5.414999961853, -0.8529999256134, 2.5299999713898, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "back_body",
+					color = { 0.76805937290192, 0.87058824300766, 0.23557092249393, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 171.80000305176, 21.199998855591, },
+					transf = { -4.3711387287537e-10, -0.0099999997764826, -6.6002355732162e-17, 0, -1.6292067694934e-09, 5.2125390141876e-18, 0.0099999997764826, 0, -0.0099999997764826, 4.3711387287537e-10, -1.6292067694934e-09, 0, -5.4188709259033, 0.86299991607666, 2.5299999713898, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/tram/skoda_10t_v2/back_w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { 23, 46, 71, },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { 24, 47, 72, },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { 70, },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 3.75,
+							upright = false,
+						},
+						{
+							group = 26,
+							offset = 0,
+							position = 3.75,
+							upright = false,
+						},
+						{
+							group = 26,
+							offset = 0,
+							position = -3.75,
+							upright = false,
+						},
+						{
+							group = 49,
+							offset = 0,
+							position = -3.75,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { 22, 69, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/tram/skoda_10t_v2/back_w2_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { 10, 19, },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { 11, 20, },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { 29, },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 3.75,
+							upright = false,
+						},
+						{
+							group = 12,
+							offset = 0,
+							position = 3.75,
+							upright = false,
+						},
+						{
+							group = 12,
+							offset = 0,
+							position = -3.75,
+							upright = false,
+						},
+						{
+							group = 21,
+							offset = 0,
+							position = -3.75,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { 9, 28, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 3.7400000095367,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = 3.7400000095367,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -3.7699999809265,
+							upright = false,
+						},
+						{
+							group = 5,
+							offset = 0,
+							position = -3.7699999809265,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = 5.9400000572205,
+							upright = false,
+						},
+						{
+							group = 5,
+							offset = 0,
+							position = -5.9800000190735,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 360,
+					tractiveEffort = 100,
+					type = "ELECTRIC",
+				},
+			},
+			soundSet = {
+				horn = "",
+				name = "tram_modern",
+			},
+			topSpeed = 19.440000534058,
+			weight = 28.799999237061,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRAM",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0320000648499, 0.21499998867512, 0.81999999284744, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { -0.99823981523514, 0.059306219220161, 1.1524939557037e-17, 0, -0.059306219220161, -0.99823981523514, -2.4438586653247e-16, 0, -2.9889480738792e-18, -2.4463920879304e-16, 1, 0, 4.2618737220764, 0.27004855871201, 0.84099143743515, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 0.30236992239952, -0.95319068431854, 1.1524939557037e-17, 0, 0.95319068431854, 0.30236992239952, -2.4438586653247e-16, 0, 2.2946154304855e-16, 8.48803974033e-17, 1, 0, 3.7268736362457, -0.1999514400959, 0.7629913687706, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { -0.24868980050087, -0.96858310699463, 1.1524939557037e-17, 0, 0.96858310699463, -0.24868980050087, -2.4438586653247e-16, 0, 2.3957413705692e-16, -4.9613406403314e-17, 1, 0, 1.8468734025955, -0.35995143651962, 0.7629913687706, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 0.97850888967514, 0.20620435476303, 1.1524939557037e-17, 0, -0.20620435476303, 0.97850888967514, -2.4438586653247e-16, 0, -6.1670688796907e-17, 2.3675727605126e-16, 1, 0, 1.1258735656738, 0.39804854989052, 0.7629913687706, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6558736562729, 0.35904857516289, 0.82599139213562, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.1158735752106, 0.86904859542847, 0.82599139213562, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3598735332489, 0.86904859542847, 0.82599139213562, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6558736562729, 0.86904859542847, 0.82599139213562, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.1158735752106, 0.35904857516289, 0.82599139213562, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3598735332489, 0.35904857516289, 0.82599139213562, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.94787359237671, 0.87504857778549, 0.82599139213562, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86387360095978, -0.83295142650604, 0.82599139213562, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6158735752106, -0.83295142650604, 0.82599139213562, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3038735389709, -0.83295142650604, 0.82599139213562, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { -0.9993908405304, 0.034899450838566, 0, 0, -0.034899450838566, -0.9993908405304, 0, 0, 0, 0, 1, 0, 3.2318735122681, -0.83295142650604, 0.82599139213562, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8178737163544, 0.86904859542847, 0.82599139213562, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { -0.58778518438339, -0.80901700258255, 1.1524939557037e-17, 0, 0.80901700258255, -0.58778518438339, -2.4438586653247e-16, 0, 2.0448649866607e-16, -1.3432252448026e-16, 1, 0, 3.0340075492859, 0.72204893827438, 0.34299144148827, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { 0.8461931347847, -0.53287625312805, 1.1524939557037e-17, 0, 0.53287625312805, 0.8461931347847, -2.4438586653247e-16, 0, 1.2047509750965e-16, 2.1293902721183e-16, 1, 0, 1.605007648468, 0.56004893779755, 0.34299144148827, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { 0.068015195429325, 0.99768429994583, 1.1524939557037e-17, 0, -0.99768429994583, 0.068015195429325, -2.4438586653247e-16, 0, -2.4460381869771e-16, 5.1237010571703e-18, 1, 0, 0.90200757980347, 0.76304894685745, 0.34299144148827, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { 0.034899495542049, -0.9993908405304, 1.1524939557037e-17, 0, 0.9993908405304, 0.034899495542049, -2.4438586653247e-16, 0, 2.4383476572116e-16, 2.0046859457204e-17, 1, 0, 1.6590075492859, -0.48695105314255, 0.34299144148827, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { -0.83388584852219, -0.55193692445755, 1.1524939557037e-17, 0, 0.55193692445755, -0.83388584852219, -2.4438586653247e-16, 0, 1.4449606515616e-16, -1.9742887456576e-16, 1, 0, 3.3100075721741, -0.29095104336739, 0.34299144148827, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { -0.30070579051971, -0.95371693372726, 1.1524939557037e-17, 0, 0.95371693372726, -0.30070579051971, -2.4438586653247e-16, 0, 2.3654056796566e-16, -6.2496711356603e-17, 1, 0, 0.94500762224197, -0.50095105171204, 0.34299144148827, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { 0.54463905096054, -0.83867055177689, 1.1524939557037e-17, 0, 0.83867055177689, 0.54463905096054, -2.4438586653247e-16, 0, 1.9868229803923e-16, 1.4276772089707e-16, 1, 0, -0.8789923787117, -0.84895104169846, 0.34299144148827, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { -0.95266139507294, -0.30403316020966, 1.1524939557037e-17, 0, 0.30403316020966, -0.95266139507294, -2.4438586653247e-16, 0, 8.528077267211e-17, -2.293130211152e-16, 1, 0, -1.4889924526215, -0.67895102500916, 0.34299144148827, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { 0.19252173602581, 0.98129272460938, 1.1524939557037e-17, 0, -0.98129272460938, 0.19252173602581, -2.4438586653247e-16, 0, -2.4203286194456e-16, 3.5740254115652e-17, 1, 0, -0.58399242162704, -0.16395105421543, 0.34299144148827, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { 0.19252173602581, 0.98129272460938, 1.1524939557037e-17, 0, -0.98129272460938, 0.19252173602581, -2.4438586653247e-16, 0, -2.4203286194456e-16, 3.5740254115652e-17, 1, 0, -1.9289923906326, 0.73404896259308, 0.34299144148827, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { 0.87035566568375, -0.4924236536026, 1.1524939557037e-17, 0, 0.4924236536026, 0.87035566568375, -2.4438586653247e-16, 0, 1.1031058964603e-16, 2.183777595917e-16, 1, 0, -2.9299921989441, 0.5820489525795, 0.34299144148827, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { 0.3338069319725, -0.94264143705368, 1.1524939557037e-17, 0, 0.94264143705368, 0.3338069319725, -2.4438586653247e-16, 0, 2.2652114758149e-16, 9.2441589208198e-17, 1, 0, -2.838992357254, -0.65395104885101, 0.34299144148827, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.25399234890938, 0.35904896259308, 0.38599142432213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.25399234890938, 0.85304898023605, 0.38599142432213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { -0.999935567379, 0.01134451571852, 0, 0, -0.01134451571852, -0.999935567379, 0, 0, 0, 0, 1, 0, -0.86399227380753, 0.85304898023605, 0.38599142432213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { -0.999935567379, 0.01134451571852, 0, 0, -0.01134451571852, -0.999935567379, 0, 0, 0, 0, 1, 0, -0.86399227380753, 0.39804896712303, 0.38599142432213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 48,
+					transf = { -0.999935567379, 0.01134451571852, 0, 0, -0.01134451571852, -0.999935567379, 0, 0, 0, 0, 1, 0, 0.21000763773918, -0.90795093774796, 0.38599142432213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.99965733289719, -0.026176949962974, 0, 0, 0.026176949962974, -0.99965733289719, 0, 0, 0, 0, 1, 0, -4.6299924850464, 0.78004711866379, -1.0978323221207, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.99965733289719, -0.026176949962974, 0, 0, 0.026176949962974, -0.99965733289719, 0, 0, 0, 0, 1, 0, -5.3459920883179, 0.78004711866379, -1.0978323221207, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.99965733289719, -0.026176949962974, 0, 0, 0.026176949962974, -0.99965733289719, 0, 0, 0, 0, 1, 0, -6.0699925422668, 0.78004711866379, -1.0978323221207, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { 0.9998477101326, 0.017452405765653, 0, 0, -0.017452405765653, 0.9998477101326, 0, 0, 0, 0, 1, 0, -7.0139923095703, 0.78004711866379, -1.0978323221207, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.99992537498474, -0.01221689209342, 0, 0, 0.01221689209342, -0.99992537498474, 0, 0, 0, 0, 1, 0, -7.5889921188354, -0.88495290279388, -1.0728323459625, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.99992537498474, -0.01221689209342, 0, 0, 0.01221689209342, -0.99992537498474, 0, 0, 0, 0, 1, 0, -6.8309922218323, -0.88495290279388, -1.0728323459625, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.99992537498474, -0.01221689209342, 0, 0, 0.01221689209342, -0.99992537498474, 0, 0, 0, 0, 1, 0, -6.0989923477173, -0.88495290279388, -1.0728323459625, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.99992537498474, -0.01221689209342, 0, 0, 0.01221689209342, -0.99992537498474, 0, 0, 0, 0, 1, 0, -5.3749923706055, -0.88495290279388, -1.0728323459625, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.99992537498474, -0.01221689209342, 0, 0, 0.01221689209342, -0.99992537498474, 0, 0, 0, 0, 1, 0, -6.8309922218323, -0.37295287847519, -1.0728323459625, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.99992537498474, -0.01221689209342, 0, 0, 0.01221689209342, -0.99992537498474, 0, 0, 0, 0, 1, 0, -6.0989923477173, -0.37295287847519, -1.0728323459625, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.99992537498474, -0.01221689209342, 0, 0, 0.01221689209342, -0.99992537498474, 0, 0, 0, 0, 1, 0, -5.3749923706055, -0.37295287847519, -1.0728323459625, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.99992537498474, -0.01221689209342, 0, 0, 0.01221689209342, -0.99992537498474, 0, 0, 0, 0, 1, 0, -4.6709923744202, -0.88095289468765, -1.0728323459625, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { 0.98822838068008, -0.1529857814312, 7.1982931117924e-17, 0, 0.1529857814312, 0.98822838068008, -2.2154068649586e-16, 0, -3.72429964432e-17, 2.2994517239165e-16, 1, 0, -8.0179920196533, 0.31304708123207, -1.1558322906494, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.10452838987112, -0.99452191591263, 7.1982931117924e-17, 0, 0.99452191591263, -0.10452838987112, -2.2154068649586e-16, 0, 2.2785133341581e-16, 4.8431309059694e-17, 1, 0, -4.787992477417, -0.35695287585258, -1.1558322906494, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 73,
+					transf = { -0.1287954300642, 0.99167120456696, 7.1982931117924e-17, 0, -0.99167120456696, -0.1287954300642, -2.2154068649586e-16, 0, -2.1042442461945e-16, -9.9916827021285e-17, 1, 0, -5.3479924201965, 0.31304708123207, -1.1558322906494, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "TRAM",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 100,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v07",
+		},
+	},
+	version = 1,
+}
+end

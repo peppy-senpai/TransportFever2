@@ -1,0 +1,778 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 34.635528564453, 4.9272999763489, 11.673585891724, },
+		bbMin = { -34.687675476074, -4.9272999763489, -2.366863489151, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 34.661602020264, 4.9272999763489, 7.020224571228, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/gms_axalp_v2/ship_gms_axalp_deck.mtl", "vehicle/ship/gms_axalp_v2/ship_gms_axalp_hull.mtl", "vehicle/ship/gms_axalp_v2/ship_gms_axalp_strip.mtl", "vehicle/ship/gms_axalp_v2/ship_gms_axalp_main.mtl", "vehicle/ship/gms_axalp_v2/ship_gms_axalp_special.mtl", },
+						mesh = "vehicle/ship/gms_axalp_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/gms_axalp_v2/ship_gms_axalp_main.mtl", },
+						mesh = "vehicle/ship/gms_axalp_v2/propeller_lft_lod0.msh",
+						name = "propeller_lft",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -30.608390808105, 1.4094899892807, -1.0805144309998, 1, },
+					},
+					{
+						materials = { "vehicle/ship/gms_axalp_v2/ship_gms_axalp_main.mtl", },
+						mesh = "vehicle/ship/gms_axalp_v2/propeller_rgt_lod0.msh",
+						name = "propeller_rgt",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -30.608390808105, -1.4094889163971, -1.0805144309998, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/gms_axalp_v2/ship_gms_axalp_main.mtl", "vehicle/ship/gms_axalp_v2/ship_gms_axalp_deck.mtl", "vehicle/ship/gms_axalp_v2/ship_gms_axalp_hull.mtl", "vehicle/ship/gms_axalp_v2/ship_gms_axalp_strip.mtl", },
+						mesh = "vehicle/ship/gms_axalp_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/gms_axalp_v2/ship_gms_axalp_main.mtl", },
+						mesh = "vehicle/ship/gms_axalp_v2/propeller_lft_lod1.msh",
+						name = "propeller_lft",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -30.608390808105, 1.4094899892807, -1.0805144309998, 1, },
+					},
+					{
+						materials = { "vehicle/ship/gms_axalp_v2/ship_gms_axalp_main.mtl", },
+						mesh = "vehicle/ship/gms_axalp_v2/propeller_rgt_lod1.msh",
+						name = "propeller_rgt",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -30.608390808105, -1.4094889163971, -1.0805144309998, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 6430,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1950,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_SHIP_GMS_AXALP_V3_DESCRIPTION"),
+			name = _("VEHICLE_SHIP_GMS_AXALP_V3_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.19980007410049, 0.19980007410049, 0.25098037719727, },
+					frequency = 60,
+					initialAlpha = 0.15000000596046,
+					lifeTime = 4,
+					position = { -28.87300491333, -0.41195899248123, 4.7523641586304, },
+					size01 = { 0.40000000596046, 2, },
+					velocity = { -2, 0, 6, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.19980007410049, 0.19980007410049, 0.25098037719727, },
+					frequency = 60,
+					initialAlpha = 0.15000000596046,
+					lifeTime = 4,
+					position = { -27.914449691772, -0.41195899248123, 5.0660943984985, },
+					size01 = { 0.40000000596046, 2, },
+					velocity = { -2, 0, 6, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "WATER",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 4,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.545000076294, 0.41700002551079, 3.3120000362396, 1, },
+				},
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 4,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -23.489999771118, -0.8299999833107, 3.3120000362396, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "ship_diesel_modern",
+			},
+		},
+		transportVehicle = {
+			carrier = "WATER",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 220,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 60,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v02",
+		},
+		waterVehicle = {
+			area = 10,
+			availPower = 1300000,
+			configs = {
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 2, 3, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+				},
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 2, 3, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+				},
+			},
+			maxRpm = 150,
+			topSpeed = 8.3333330154419,
+			type = "BIG",
+			waterLine = {
+				{ -33.034000396729, 0, },
+				{ -33.032859802246, -0.22574999928474, },
+				{ -32.95032119751, -0.61404001712799, },
+				{ -32.846519470215, -0.89516001939774, },
+				{ -32.706409454346, -1.1624000072479, },
+				{ -32.445430755615, -1.4318000078201, },
+				{ -32.140350341797, -1.6296600103378, },
+				{ -31.649509429932, -1.8818700313568, },
+				{ -31.560020446777, -1.9293299913406, },
+				{ -29.983940124512, -2.8566401004791, },
+				{ -28.682270050049, -3.4332699775696, },
+				{ -27.045890808105, -3.7929999828339, },
+				{ -24.185819625854, -4.2663397789001, },
+				{ -23.864919662476, -4.3073701858521, },
+				{ -18.609800338745, -4.5142998695374, },
+				{ -14.241809844971, -4.6272401809692, },
+				{ -0.3374499976635, -4.6295499801636, },
+				{ 1.588809967041, -4.6426100730896, },
+				{ 10.962559700012, -4.6304998397827, },
+				{ 22.995420455933, -4.5758500099182, },
+				{ 23.760400772095, -4.5254797935486, },
+				{ 24.570589065552, -4.4353699684143, },
+				{ 25.655010223389, -4.2502598762512, },
+				{ 27.177480697632, -3.9167098999023, },
+				{ 28.903799057007, -3.4121699333191, },
+				{ 30.555479049683, -2.7115700244904, },
+				{ 31.964069366455, -1.8447599411011, },
+				{ 32.997261047363, -0.97517997026443, },
+				{ 33.58602142334, -0.51898002624512, },
+				{ 33.820999145508, -0.31286999583244, },
+				{ 34.071109771729, -0.063380002975464, },
+				{ 34.153011322021, -0.082659997045994, },
+				{ 34.172618865967, 0, },
+			},
+			weight = 800000,
+		},
+	},
+	version = 1,
+}
+end

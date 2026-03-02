@@ -1,0 +1,484 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 8.8013753890991, 1.8600019216537, 4.9611654281616, },
+		bbMin = { -8.8872003555298, -1.8499979972839, 0.26389998197556, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 8.9929103851318, 1.8585807085037, 2.5192134380341, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/china_df5_v2/china_df5.mtl", },
+						mesh = "vehicle/train/china_df5_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_glass.mtl", "vehicle/train/china_df5_v2/china_df5_interior_glass.mtl", },
+								mesh = "vehicle/train/china_df5_v2/glass_left_frt_lod0.msh",
+								name = "glass_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5262875556946, 1.3645503520966, 3.4130001068115, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_glass.mtl", "vehicle/train/china_df5_v2/china_df5_interior_glass.mtl", },
+								mesh = "vehicle/train/china_df5_v2/glass_right_frt_lod0.msh",
+								name = "glass_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5262880325317, -1.3560456037521, 3.4130001068115, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_glass.mtl", "vehicle/train/china_df5_v2/china_df5_interior_glass.mtl", },
+								mesh = "vehicle/train/china_df5_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2878379821777, 1.5956864356995, 3.3488523960114, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_glass.mtl", "vehicle/train/china_df5_v2/china_df5_interior_glass.mtl", },
+								mesh = "vehicle/train/china_df5_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5875954627991, -1.5939033031464, 3.3463525772095, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_glass.mtl", "vehicle/train/china_df5_v2/china_df5_interior_glass.mtl", },
+								mesh = "vehicle/train/china_df5_v2/glass_left_bck_lod0.msh",
+								name = "glass_left_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.3894424438477, 1.3600095510483, 3.3774998188019, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_glass.mtl", "vehicle/train/china_df5_v2/china_df5_interior_glass.mtl", },
+								mesh = "vehicle/train/china_df5_v2/glass_right_bck_lod0.msh",
+								name = "glass_right_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.3894400596619, -1.3672437667847, 3.3774998188019, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/china_df5_v2/china_df5_interior.mtl", },
+						mesh = "vehicle/train/china_df5_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5.mtl", },
+								mesh = "vehicle/train/china_df5_v2/b1_lod0.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod0.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7869448661804, -3.5226275940659e-05, 0.53564393520355, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod0.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7220458984375e-06, 5.4687504524864e-12, 0.53564381599426, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod0.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7869553565979, 5.4687504524864e-12, 0.53564381599426, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6528973579407, -1.8017578748419e-11, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5.mtl", },
+								mesh = "vehicle/train/china_df5_v2/b2_lod0.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.77999997138977, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod0.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7869554758072, 5.4687504524864e-12, 0.53564357757568, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod0.msh",
+								name = "w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.7220458984375e-06, -5.7373043815812e-11, 0.53564357757568, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod0.msh",
+								name = "w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7869443893433, -5.7373043815812e-11, 0.53564345836639, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.737560749054, 1.9140624848979e-11, -3.7158203597398e-11, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/china_df5_v2/forever/g.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/china_df5_v2/china_df5.mtl", },
+						mesh = "vehicle/train/china_df5_v2/g_lod0.msh",
+						name = "g",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.312518119812, 0, 4.4881873130798, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/china_df5_v2/headlights_fwd_lod0.msh",
+						name = "headlights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/china_df5_v2/taillights_fwd_lod0.msh",
+						name = "taillights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/china_df5_v2/taillights_bwd_lod0.msh",
+						name = "taillights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/china_df5_v2/headlights_bwd_lod0.msh",
+						name = "headlights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/china_df5_v2/china_df5_lod.mtl", },
+						mesh = "vehicle/train/china_df5_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/china_df5_v2/china_df5_interior_lod.mtl", },
+						mesh = "vehicle/train/china_df5_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_lod.mtl", },
+								mesh = "vehicle/train/china_df5_v2/b1_lod1.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -4.440891999239e-18, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_lod.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod1.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.786945104599, -3.5226275940659e-05, 0.53564393520355, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_lod.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod1.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7983397709904e-06, 5.457820827226e-12, 0.53564381599426, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_lod.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod1.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7869552373886, 5.457820827226e-12, 0.53564381599426, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6528973579407, -1.8017578748419e-11, -1.3234889505026e-25, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_lod.mtl", },
+								mesh = "vehicle/train/china_df5_v2/b2_lod1.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.77999997138977, 0, -6.6613379988584e-18, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_lod.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod1.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7869552373886, 5.445661716702e-12, 0.53564357757568, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_lod.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod1.msh",
+								name = "w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.7983397709904e-06, -5.7398148733956e-11, 0.53564357757568, 1, },
+							},
+							{
+								materials = { "vehicle/train/china_df5_v2/china_df5_lod.mtl", },
+								mesh = "vehicle/train/china_df5_v2/w1_lod1.msh",
+								name = "w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.177403450012, -3.5226312320447e-05, 0.53564393520355, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.737560749054, 1.9140624848979e-11, -3.7158203597398e-11, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/china_df5_v2/forever/g.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/china_df5_v2/china_df5_lod.mtl", },
+						mesh = "vehicle/train/china_df5_v2/g_lod1.msh",
+						name = "g",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.312518119812, 0, 4.4881873130798, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/china_df5_v2/headlights_fwd_lod1.msh",
+						name = "headlights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/china_df5_v2/taillights_fwd_lod1.msh",
+						name = "taillights_fwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/china_df5_v2/headlights_bwd_lod1.msh",
+						name = "headlights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_red_lights.mtl", },
+						mesh = "vehicle/train/china_df5_v2/taillights_bwd_lod1.msh",
+						name = "taillights_bwd",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/china_df5_v2/china_df5_lod.mtl", },
+						mesh = "vehicle/train/china_df5_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1976,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_CHINA_DF5_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_CHINA_DF5_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.44675120711327, 0.44675123691559, 0.54901957511902, },
+					frequency = 70,
+					initialAlpha = 0.10000000149012,
+					lifeTime = 1.5,
+					position = { 2.7400000095367, -0.21499998867512, 4.8399996757507, },
+					size01 = { 0.15000000596046, 3, },
+					velocity = { 0, 0, 6, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/china_df5_v2/w1_lod0.msh", },
+					backBackwardParts = { 23, },
+					backForwardParts = { 22, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 24, },
+					frontForwardParts = { 21, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/china_df5_v2/w1_lod1.msh", },
+					backBackwardParts = { 15, },
+					backForwardParts = { 16, },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 17, },
+					frontForwardParts = { 14, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 4.6500000953674,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -4.7300000190735,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 1200,
+					tractiveEffort = 325,
+					type = "DIESEL",
+				},
+			},
+			soundSet = {
+				horn = "",
+				name = "train_diesel",
+			},
+			topSpeed = 22.219999313354,
+			weight = 138,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 25,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.539999961853, 1.2799999713898, 2.1280000209808, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = false,
+					group = 25,
+					transf = { -0.98628562688828, -0.16504754126072, 1.2078515127301e-16, 0, 0.16504754126072, -0.98628562688828, -1.4267716778105e-16, 0, 1.4267715454616e-16, -1.207851645079e-16, 1, 0, -5.4180002212524, -1.2000000476837, 2.1280000209808, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = true,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

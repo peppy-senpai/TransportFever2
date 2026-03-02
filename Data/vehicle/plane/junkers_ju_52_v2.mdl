@@ -1,0 +1,1809 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 4.8545098304749, 14.555858612061, 6.7835912704468, },
+		bbMin = { -13.766800880432, -14.555858612061, -0.007519543170929, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 9.3106555938721, 14.555858612061, 3.3955554962158, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5039849281311, 0.19874750077724, 4.0118050575256, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass2_left_frt_lod0.msh",
+								name = "glass2_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2763948440552, 0.61313897371292, 3.9298751354218, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass3_left_frt_lod0.msh",
+								name = "glass3_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8293244838715, 0.79106199741364, 3.9405891895294, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5039849281311, -0.19874949753284, 4.0118050575256, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass2_right_frt_lod0.msh",
+								name = "glass2_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2763948440552, -0.61313998699188, 3.9298751354218, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass3_right_frt_lod0.msh",
+								name = "glass3_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8293244838715, -0.79106152057648, 3.9405891895294, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass1_top_center_frt_lod0.msh",
+								name = "glass1_top_center_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8755298852921, 0, 4.3833904266357, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass1_top_right_frt_lod0.msh",
+								name = "glass1_top_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.861364364624, -0.58167999982834, 4.3410053253174, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass1_top_left_frt_lod0.msh",
+								name = "glass1_top_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.861364364624, 0.58167946338654, 4.3410053253174, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30140501260757, 0.83536100387573, 3.6704442501068, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4790949821472, 0.8353374004364, 3.6760094165802, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.2424998283386, 0.8318464756012, 3.6812038421631, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7770481109619, 0.80158948898315, 3.6876244544983, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30140501260757, -0.8353625535965, 3.6704442501068, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4790949821472, -0.83533895015717, 3.6760094165802, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7593545913696, -0.83532947301865, 3.6812038421631, 1, },
+							},
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7770481109619, -0.80159145593643, 3.6876244544983, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/aileron_lft_lod0.msh",
+						name = "aileron_lft",
+						transf = { 0.12809970974922, 0.986721098423, 0.099859349429607, 0, -0.013898481614888, -0.098892956972122, 0.99500101804733, 0, 0.99166387319565, -0.12884724140167, 0.0010457669850439, 0, -2.8527801036835, 6.5015258789063, 2.4774940013885, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/aileron_rgt_lod0.msh",
+						name = "aileron_rgt",
+						transf = { -0.12809987366199, 0.986721098423, -0.099859349429607, 0, -0.013898497447371, 0.098892942070961, 0.99500101804733, 0, 0.99166387319565, 0.12884739041328, 0.0010457669850439, 0, -2.8527801036835, -6.5015258789063, 2.4774940013885, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.584830284119, 0, 4.1476898193359, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/elevator_lod0.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -5.3903029534742e-15, 3.3006085215722e-31, 1, 0, 1, -6.1232342629258e-17, 5.3903029534742e-15, 0, -12.16049861908, 0, 4.3925099372864, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor1_frt_lod0.msh",
+						name = "rotor1_frt",
+						transf = { 1, 0, -4.3711388286738e-08, 0, 0, 1, 0, 0, 4.3711388286738e-08, 0, 1, 0, 4.605758190155, 0, 2.9649999141693, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor1_frt_lod0.msh",
+						name = "rotor2_lft",
+						transf = { 0.99705272912979, 0.076719000935555, -3.2483892908886e-08, 0, -0.057013351470232, 0.74095457792282, -0.66913056373596, 0, -0.051335006952286, 0.66715848445892, 0.74314481019974, 0, 2.422287940979, 4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor1_frt_lod0.msh",
+						name = "rotor2_rgt",
+						transf = { 0.99705272912979, -0.076718986034393, -1.5664763708401e-08, 0, 0.027493644505739, 0.3573117852211, 0.93358039855957, 0, -0.071623340249062, -0.9308288693428, 0.35836797952652, 0, 2.422287940979, -4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor_b1_frt_lod0.msh",
+						name = "rotor_b1_frt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.605758190155, 0, 2.9649999141693, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor_b1_frt_lod0.msh",
+						name = "rotor_b2_lft",
+						transf = { 0.99705272912979, 0.076719030737877, -6.9388939039072e-18, 0, -0.057013351470232, 0.74095457792282, -0.66913056373596, 0, -0.051335051655769, 0.66715848445892, 0.74314481019974, 0, 2.422287940979, 4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor_b1_frt_lod0.msh",
+						name = "rotor_b2_rgt",
+						transf = { 0.99705272912979, -0.076719030737877, 0, 0, 0.027493644505739, 0.3573117852211, 0.93358039855957, 0, -0.071623384952545, -0.9308288693428, 0.35836797952652, 0, 2.422287940979, -4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/flaps/flap1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/flap1_lft_lod0.msh",
+						name = "flap1_lft",
+						transf = { 0.98913478851318, -0.1462761759758, -0.014684098772705, 0, 0.14701136946678, 0.98418819904327, 0.098798781633377, 0, 8.1630959769541e-09, -0.099884040653706, 0.99499905109406, 0, -3.4768147468567, 1.7686344385147, 2.030059337616, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/flaps/flap1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/flap1_rgt_lod0.msh",
+						name = "flap1_rgt",
+						transf = { 0.98913478851318, 0.14627625048161, -0.014684098772705, 0, -0.14701144397259, 0.98418819904327, -0.098798781633377, 0, 7.2115485805213e-10, 0.099884040653706, 0.99499905109406, 0, -3.4768147468567, -1.7686344385147, 2.030059337616, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 0.99968779087067, -0.02483581751585, 0.0027332550380379, 0, -0.024968670681119, -0.99705439805984, 0.072519198060036, 0, -0.00092413031961769, 0.07256481051445, 0.99736320972443, 0, -1.9073485901799e-08, 1.994567990303, 0.66958367824554, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/w1_rgt_lod0.msh",
+						name = "w1_rgt",
+						transf = { 0.94555479288101, -0.02384208701551, 0.32458850741386, 0, 5.6213434618257e-06, 0.99731439352036, 0.073239639401436, 0, -0.32546296715736, -0.069250255823135, 0.94301551580429, 0, -1.9073485901799e-08, -1.994567990303, 0.66958367824554, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/w2_bck_lod0.msh",
+								name = "w2_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37271016836166, -5.2041704279304e-18, -0.43478986620903, 1, },
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/gear_w2_steering_bck_lod0.msh",
+						name = "gear_w2_steering_bck",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.080288887024, 5.2041704279304e-18, 3.6417896747589, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_glass.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_door_glass.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/d1_lft_glass_lod0.msh",
+								name = "d1_lft_glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.44364950060844, -0.027156442403793, 0.33718943595886, 1, },
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_door.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1100001335144, 0.85766190290451, 3.3493099212646, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_doors_cargo/d1_top_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_doors_cargo/d1_top_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_door.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/d1_top_rgt_lod0.msh",
+						name = "d1_top_rgt",
+						transf = { 0.99989324808121, -0.014612880535424, 6.4453913330132e-21, 0, 0.014612880535424, 0.99989324808121, -8.8170556679796e-19, 0, 6.4395562361824e-21, 8.8170567019553e-19, 1, 0, -4.1100001335144, -0.85765999555588, 4.0386190414429, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_doors_cargo/d1_bottom_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_doors_cargo/d1_bottom_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_door.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/d1_bottom_rgt_lod0.msh",
+						name = "d1_bottom_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1100001335144, -0.85765999555588, 2.6599998474121, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_wheels/landinglights_body_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							flaps = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/flaps/landinglights_body_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_wheels/landinglights_body_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/landinglights_lft_lod0.msh",
+								name = "landinglights_lft",
+								transf = { 1, 0, -9.7578195523695e-18, 0, 1.7347234759768e-18, 1, -2.7755575615629e-17, 0, 1.9081958235745e-17, 5.5511151231258e-17, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/landinglights_body_lft_lod0.msh",
+						name = "landinglights_body_lft",
+						transf = { 0.89802128076553, 0.0083011901006103, -0.059066031128168, 0, 1.5612510870201e-18, 0.89124125242233, 0.12525577843189, 0, 0.059646509587765, -0.12498040497303, 0.88928180932999, 0, -0.98872196674347, 8.6985368728638, 2.6419546604156, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_wheels/landinglights_body_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							flaps = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/flaps/landinglights_body_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_wheels/landinglights_body_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/landinglights_rgt_lod0.msh",
+								name = "landinglights_rgt",
+								transf = { 1, 2.0643208040635e-16, -2.5587169616297e-17, 0, -2.0469735693037e-16, 1, -2.7755575615629e-17, 0, 1.647987302178e-17, 0, 1, 0, 1.4210854397565e-16, 7.9580786743944e-15, -5.6843417590259e-16, 1, },
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/landinglights_body_rgt_lod0.msh",
+						name = "landinglights_body_rgt",
+						transf = { -0.89802128076553, 0.0083010541275144, 0.059066031128168, 0, 1.3457366776493e-07, -0.89124125242233, 0.12525577843189, 0, 0.059646490961313, 0.12498041987419, 0.88928180932999, 0, -0.98872196674347, -8.6985368728638, 2.6419546604156, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/beaconlights_lod0.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/positionslights_lod0.msh",
+						name = "positionslights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/strobelights_lod0.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/seat_p_01_lod0.msh",
+								name = "seat_p_01",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.22499980032444, -0.48699995875359, 2.5449998378754, 1, },
+							},
+						},
+						name = "comp1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/seat_p_02_lod0.msh",
+								name = "seat_p_02",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6999998092651, -0.48699995875359, 2.5449998378754, 1, },
+							},
+						},
+						name = "comp2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_interior.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/aileron_lft_lod1.msh",
+						name = "aileron_lft",
+						transf = { 0.12809960544109, 0.986721098423, 0.099859222769737, 0, -0.013898452743888, -0.098892822861671, 0.99500101804733, 0, 0.99166387319565, -0.12884712219238, 0.0010457650059834, 0, -2.8527801036835, 6.5015258789063, 2.4774940013885, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/aileron_rgt_lod1.msh",
+						name = "aileron_rgt",
+						transf = { -0.12810003757477, 0.986721098423, -0.09985938668251, 0, -0.013898602686822, 0.098892964422703, 0.99500101804733, 0, 0.991663813591, 0.12884756922722, 0.0010458511533216, 0, -2.8527801036835, -6.5015258789063, 2.4774940013885, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.584830284119, 0, 4.1476898193359, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/elevator_lod1.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -12.160497665405, 0, 4.3925099372864, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor1_frt_lod1.msh",
+						name = "rotor1_frt",
+						transf = { 1, 0, -4.3711402497593e-08, 0, 0, 1, 0, 0, 4.3711402497593e-08, 0, 1, 0, 4.605758190155, 0, 2.9649999141693, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor1_frt_lod1.msh",
+						name = "rotor2_lft",
+						transf = { 0.99705272912979, 0.076719030737877, -4.3582577546886e-08, 0, -0.057013373821974, 0.74095457792282, -0.66913056373596, 0, -0.051335018128157, 0.66715848445892, 0.74314481019974, 0, 2.422287940979, 4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor1_frt_lod1.msh",
+						name = "rotor2_rgt",
+						transf = { 0.99705272912979, -0.076719030737877, -4.3582577546886e-08, 0, 0.027493683621287, 0.3573117852211, 0.93358039855957, 0, -0.071623370051384, -0.9308288693428, 0.35836797952652, 0, 2.422287940979, -4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor_b1_frt_lod1.msh",
+						name = "rotor_b1_frt",
+						transf = { 0.99999988079071, 0, -2.5305826767408e-08, 0, 0, 0.99999988079071, 0, 0, 2.5305826767408e-08, 0, 0.99999988079071, 0, 4.605758190155, 0, 2.9649999141693, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor_b1_frt_lod1.msh",
+						name = "rotor_b2_lft",
+						transf = { 0.9970526099205, 0.076719023287296, -2.5231244649149e-08, 0, -0.057013355195522, 0.74095451831818, -0.66913056373596, 0, -0.051335029304028, 0.66715848445892, 0.74314475059509, 0, 2.422287940979, 4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor_b1_frt_lod1.msh",
+						name = "rotor_b2_rgt",
+						transf = { 0.9970526099205, -0.076719023287296, -2.5231244649149e-08, 0, 0.027493663132191, 0.35731169581413, 0.93358027935028, 0, -0.071623370051384, -0.9308288693428, 0.3583679497242, 0, 2.422287940979, -4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/flaps/flap1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/flap1_lft_lod1.msh",
+						name = "flap1_lft",
+						transf = { 0.98913478851318, -0.14627625048161, -0.014684106223285, 0, 0.14701144397259, 0.98418819904327, 0.098798833787441, 0, 1.9225021574698e-09, -0.09988409280777, 0.99499893188477, 0, -3.4768147468567, 1.7686344385147, 2.030059337616, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/flaps/flap1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/flap1_rgt_lod1.msh",
+						name = "flap1_rgt",
+						transf = { 0.98913478851318, 0.14627632498741, -0.014684106223285, 0, -0.14701151847839, 0.98418819904327, -0.098798833787441, 0, -5.5186224479087e-09, 0.09988409280777, 0.99499893188477, 0, -3.4768147468567, -1.7686344385147, 2.030059337616, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 0.99968779087067, -0.024835836142302, 0.0027330117300153, 0, -0.024968668818474, -0.99705427885056, 0.072519198060036, 0, -0.00092388625489548, 0.072564803063869, 0.99736320972443, 0, -1.9073485901799e-08, 1.994567990303, 0.66958367824554, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/w1_rgt_lod1.msh",
+						name = "w1_rgt",
+						transf = { 0.94555479288101, -0.023842085152864, 0.32458850741386, 0, 5.6166918511735e-06, 0.99731439352036, 0.073239631950855, 0, -0.32546296715736, -0.069250255823135, 0.94301551580429, 0, -1.9073485901799e-08, -1.994567990303, 0.66958367824554, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/w2_bck_lod1.msh",
+								name = "w2_bck",
+								transf = { 0.99999988079071, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.37270927429199, -5.2041704279304e-18, -0.43479010462761, 1, },
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/gear_w2_steering_bck_lod1.msh",
+						name = "gear_w2_steering_bck",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.080288887024, 5.2041704279304e-18, 3.6417894363403, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1100001335144, 0.85766190290451, 3.3493099212646, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_doors_cargo/d1_top_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_doors_cargo/d1_top_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/d1_top_rgt_lod1.msh",
+						name = "d1_top_rgt",
+						transf = { 0.99989324808121, -0.014612880535424, 6.4457823050996e-21, 0, 0.014612880535424, 0.99989324808121, -8.8170567019553e-19, 0, 6.4391648601992e-21, 8.8170567019553e-19, 1, 0, -4.1100001335144, -0.85765999555588, 4.0386190414429, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_doors_cargo/d1_bottom_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_doors_cargo/d1_bottom_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/d1_bottom_rgt_lod1.msh",
+						name = "d1_bottom_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1100001335144, -0.85765999555588, 2.6599998474121, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_wheels/landinglights_body_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							flaps = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/flaps/landinglights_body_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_wheels/landinglights_body_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/landinglights_lft_lod1.msh",
+								name = "landinglights_lft",
+								transf = { 1, -4.5495940526052e-07, -7.6484866440296e-08, 0, 4.5495940526052e-07, 1, 1.4777984169712e-08, 0, 7.6484852229441e-08, -1.4778017920491e-08, 0.99999988079071, 0, 1.0430812835693e-07, 7.7486038208008e-07, -1.0430812835693e-07, 1, },
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/landinglights_body_lft_lod1.msh",
+						name = "landinglights_body_lft",
+						transf = { 0.89802128076553, 0.0083011891692877, -0.059066027402878, 0, -3.4447994456954e-10, 0.89124125242233, 0.12525577843189, 0, 0.059646502137184, -0.12498040497303, 0.88928180932999, 0, -0.98872196674347, 8.6985368728638, 2.5579545497894, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_wheels/landinglights_body_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							flaps = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/flaps/landinglights_body_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_wheels/landinglights_body_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/junkers_ju_52_v2/landinglights_rgt_lod1.msh",
+								name = "landinglights_rgt",
+								transf = { 1, 1.2144134586833e-08, -2.1420417439799e-08, 0, -1.2144135475012e-08, 1, -3.0294732056291e-08, 0, 2.1420420992513e-08, 3.0294735609004e-08, 1.0000001192093, 0, -9.685754776001e-08, -3.3899328855114e-07, -1.9371509552002e-07, 1, },
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/landinglights_body_rgt_lod1.msh",
+						name = "landinglights_body_rgt",
+						transf = { -0.89802128076553, 0.0083009181544185, 0.059066031128168, 0, 2.6978091227647e-07, -0.89124125242233, 0.12525577843189, 0, 0.059646472334862, 0.12498042732477, 0.88928180932999, 0, -0.98872196674347, -8.6985368728638, 2.5659544467926, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/beaconlights_lod1.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/positionslights_lod1.msh",
+						name = "positionslights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/strobelights_lod1.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.584830284119, 0, 4.1476898193359, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor1_frt_lod2.msh",
+						name = "rotor1_frt",
+						transf = { 1, 0, -4.3711388286738e-08, 0, 0, 1, 0, 0, 4.3711388286738e-08, 0, 1, 0, 4.605758190155, 0, 2.9649999141693, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor1_frt_lod2.msh",
+						name = "rotor2_lft",
+						transf = { 0.99705272912979, 0.076719030737877, -4.3582559783317e-08, 0, -0.057013373821974, 0.74095457792282, -0.66913056373596, 0, -0.051335018128157, 0.66715848445892, 0.74314481019974, 0, 2.422287940979, 4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor1_frt_lod2.msh",
+						name = "rotor2_rgt",
+						transf = { 0.99705272912979, -0.076719030737877, -4.3582559783317e-08, 0, 0.027493683621287, 0.3573117852211, 0.93358039855957, 0, -0.071623370051384, -0.9308288693428, 0.35836797952652, 0, 2.422287940979, -4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor_b1_frt_lod2.msh",
+						name = "rotor_b1_frt",
+						transf = { 0.99999988079071, 0, -2.5305826767408e-08, 0, 0, 0.99999988079071, 0, 0, 2.5305826767408e-08, 0, 0.99999988079071, 0, 4.605758190155, 0, 2.9649999141693, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor_b1_frt_lod2.msh",
+						name = "rotor_b2_lft",
+						transf = { 0.9970526099205, 0.076719023287296, -2.5231244649149e-08, 0, -0.057013355195522, 0.74095451831818, -0.66913056373596, 0, -0.051335029304028, 0.66715848445892, 0.74314475059509, 0, 2.422287940979, 4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_rotor.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/rotor_b1_frt_lod2.msh",
+						name = "rotor_b2_rgt",
+						transf = { 0.9970526099205, -0.076719023287296, -2.5231244649149e-08, 0, 0.027493663132191, 0.35731169581413, 0.93358027935028, 0, -0.071623370051384, -0.9308288693428, 0.3583679497242, 0, 2.422287940979, -4.0523281097412, 2.4749979972839, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/w1_lft_lod2.msh",
+						name = "w1_lft",
+						transf = { 0.99968779087067, -0.024835832417011, 0.0027330117300153, 0, -0.024968661367893, -0.99705421924591, 0.072519160807133, 0, -0.00092388724442571, 0.072564773261547, 0.99736320972443, 0, -1.9073485901799e-08, 1.994567990303, 0.66958367824554, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/w1_rgt_lod2.msh",
+						name = "w1_rgt",
+						transf = { 0.94555479288101, -0.023842083290219, 0.32458850741386, 0, 5.6149351621571e-06, 0.99731439352036, 0.073239631950855, 0, -0.32546296715736, -0.069250255823135, 0.94301551580429, 0, -1.9073485901799e-08, -1.994567990303, 0.66958367824554, 1, },
+					},
+					{
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/w2_bck_lod2.msh",
+						name = "w2_bck",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.453008651733, -5.2041704279304e-18, 3.2070000171661, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/d1_lft_lod2.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1100001335144, 0.85766190290451, 3.3493099212646, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_doors_cargo/d1_top_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_doors_cargo/d1_top_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/d1_top_rgt_lod2.msh",
+						name = "d1_top_rgt",
+						transf = { 0.99989324808121, -0.014612880535424, 6.4457831128932e-21, 0, 0.014612880535424, 0.99989324808121, -8.8170567019553e-19, 0, 6.4391636485088e-21, 8.8170567019553e-19, 1, 0, -4.1100001335144, -0.85765999555588, 4.0386190414429, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/close_doors_cargo/d1_bottom_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/junkers_ju_52_v2/open_doors_cargo/d1_bottom_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/junkers_ju_52_v2/junker_ju52_main_lod.mtl", },
+						mesh = "vehicle/plane/junkers_ju_52_v2/d1_bottom_rgt_lod2.msh",
+						name = "d1_bottom_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1100001335144, -0.85765999555588, 2.6599998474121, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		airVehicle = {
+			configs = {
+				{
+					aileronLeft = {
+						ids = { 21, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 22, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.66000002622604, },
+					axles = { "vehicle/plane/junkers_ju_52_v2/w1_lft_lod0.msh", "vehicle/plane/junkers_ju_52_v2/w1_rgt_lod0.msh", },
+					beaconLights = { 45, },
+					elevator = {
+						ids = { 24, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { 31, 32, },
+						maxAngle = 30,
+					},
+					landingLight = { 42, 44, },
+					props = { 25, 26, 27, },
+					propsB = { 28, 29, 30, },
+					rudder = {
+						ids = { 23, },
+						maxAngle = 30,
+					},
+					steeringParts = { 35, },
+					strobeLights = { 47, },
+					wheelRadii = { 0.28999999165535, },
+					wheels = { "vehicle/plane/junkers_ju_52_v2/w2_bck_lod0.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 4, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.66000002622604, },
+					axles = { "vehicle/plane/junkers_ju_52_v2/w1_lft_lod1.msh", "vehicle/plane/junkers_ju_52_v2/w1_rgt_lod1.msh", },
+					beaconLights = { 26, },
+					elevator = {
+						ids = { 6, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { 13, 14, },
+						maxAngle = 30,
+					},
+					landingLight = { 23, 25, },
+					props = { 7, 8, 9, },
+					propsB = { 10, 11, 12, },
+					rudder = {
+						ids = { 5, },
+						maxAngle = 30,
+					},
+					steeringParts = { 17, },
+					strobeLights = { 28, },
+					wheelRadii = { 0.28999999165535, },
+					wheels = { "vehicle/plane/junkers_ju_52_v2/w2_bck_lod1.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { },
+						maxAngle = 0,
+					},
+					aileronRight = {
+						ids = { },
+						maxAngle = 0,
+					},
+					axleRadii = { },
+					axles = { "vehicle/plane/junkers_ju_52_v2/w1_lft_lod2.msh", "vehicle/plane/junkers_ju_52_v2/w1_rgt_lod2.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { },
+						maxAngle = 0,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { },
+					propsB = { },
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { },
+					wheels = { "vehicle/plane/junkers_ju_52_v2/w2_bck_lod2.msh", },
+				},
+			},
+			idleThrust = 0,
+			maxPayload = 0,
+			maxTakeOffWeight = 10500,
+			maxThrust = 15000,
+			timeToFullThrust = 3,
+			topSpeed = 55.560001373291,
+			type = "SMALL",
+			weight = 5720,
+			wingArea = 110,
+		},
+		availability = {
+			yearFrom = 1933,
+			yearTo = 1982,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_PLANE_JUNKERS_JU_52_DESCRIPTION"),
+			name = _("VEHICLE_PLANE_JUNKERS_JU_52_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -9.9999997473788e-06,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 42369,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.077970005571842, 0.078431367874146, 0.078431367874146, },
+					frequency = 100,
+					initialAlpha = 0.30000001192093,
+					lifeTime = 0.80000001192093,
+					position = { 0.55121779441833, 4.5660147666931, 2.8666298389435, },
+					size01 = { 0.10000000149012, 1.5, },
+					velocity = { -3, 0, 0.85000002384186, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.077970005571842, 0.078431367874146, 0.078431367874146, },
+					frequency = 100,
+					initialAlpha = 0.30000001192093,
+					lifeTime = 0.80000001192093,
+					position = { 0.55121779441833, -4.553985118866, 2.8666298389435, },
+					size01 = { 0.10000000149012, 1.5, },
+					velocity = { -3, 0, 0.85000002384186, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.077970005571842, 0.078431367874146, 0.078431367874146, },
+					frequency = 100,
+					initialAlpha = 0.30000001192093,
+					lifeTime = 0.80000001192093,
+					position = { 2.6019999980927, -0.95760762691498, 2.6582686901093, },
+					size01 = { 0.10000000149012, 1.5, },
+					velocity = { -3, -2.2000000476837, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.078431367874146, 0.078431367874146, 0.078431367874146, },
+					frequency = 100,
+					initialAlpha = 0.30000001192093,
+					lifeTime = 0.80000001192093,
+					position = { 2.6070001125336, 0.93739223480225, 2.6582686901093, },
+					size01 = { 0.10000000149012, 1.5, },
+					velocity = { -3, 2.2000000476837, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "AIR",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 48,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7099999189377, 0.52200001478195, 2.8499999046326, 1, },
+				},
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 48,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7099999189377, -0.55599999427795, 2.8499999046326, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 51,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8399999141693, 0.47499999403954, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 51,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8399999141693, -0.50999999046326, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 51,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7400000095367, 0.47499999403954, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 51,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7400000095367, -0.50999999046326, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 51,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6300001144409, -0.50999999046326, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 49,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.76999998092651, 0.47499999403954, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 49,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.76999998092651, -0.50999999046326, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 49,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.12999999523163, 0.47499999403954, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 49,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.12999999523163, -0.50999999046326, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 49,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0199999809265, 0.47499999403954, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 49,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0199999809265, -0.50999999046326, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 49,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9199999570847, 0.47499999403954, 2.5299999713898, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 49,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9199999570847, -0.50999999046326, 2.5299999713898, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "aircraft_prop_modern",
+			},
+		},
+		transportVehicle = {
+			carrier = "AIR",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { 0, 1, 2, 3, 4, 5, 6, 7, },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { -2.3306999206543, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -5.039999961853, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { 8, 9, 10, 11, 12, },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									cargoBay = {
+										bbMax = { 1.2000000476837, 0.74000000953674, 4.0234999656677, },
+										bbMin = { -2.3306999206543, -0.74000000953674, 2.5485000610352, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { "comp_a", "comp_b", },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

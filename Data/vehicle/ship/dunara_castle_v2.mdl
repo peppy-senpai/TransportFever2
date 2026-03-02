@@ -1,0 +1,1436 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 27.167798995972, 4.4981999397278, 15.499889373779, },
+		bbMin = { -29.447099685669, -4.4981999397278, -2.8420000076294, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 28.30744934082, 4.4981999397278, 9.1709442138672, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/dunara_castle/dunara_castle2.mtl", "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -25.321701049805, -3.2182512654799e-08, -0.73625004291534, 1, },
+					},
+					{
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/screw_lod0.msh",
+						name = "screw",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -24.243801116943, -6.4799948518157e-08, -1.482449889183, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d4_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_left/d4_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d4_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_left/d4_l.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d4_l_lod0.msh",
+						name = "d4_l",
+						transf = { 0.99999988079071, 0.00041188421892002, 5.0580063543748e-05, 0, -0.00041318265721202, 0.99957567453384, 0.029125137254596, 0, -3.8562418922083e-05, -0.029125152155757, 0.99957573413849, 0, -10.536599159241, 4.1957001686096, 2.2031495571136, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d3_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_left/d3_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d3_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_left/d3_l.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d3_l_lod0.msh",
+						name = "d3_l",
+						transf = { 1, 2.1959220248391e-05, -1.7884201952256e-05, 0, -2.1697489501094e-05, 0.99989473819733, 0.014505651779473, 0, 1.8200853446615e-05, -0.014505651779473, 0.99989473819733, 0, -6.9672994613647, 4.195650100708, 2.2027997970581, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d2_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_left/d2_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d2_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_left/d2_l.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d2_l_lod0.msh",
+						name = "d2_l",
+						transf = { 0.99956703186035, -0.026270451024175, -0.013253234326839, 0, 0.026370000094175, 0.99962484836578, 0.0073932460509241, 0, 0.013054038397968, -0.007739532738924, 0.99988484382629, 0, 10.055700302124, 4.1010003089905, 2.3269999027252, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d1_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_left/d1_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d1_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_left/d1_l.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d1_l_lod0.msh",
+						name = "d1_l",
+						transf = { 0.99577176570892, -0.087909325957298, -0.026654347777367, 0, 0.087663404643536, 0.99609726667404, -0.010260594077408, 0, 0.027452325448394, 0.0078805992379785, 0.99959206581116, 0, 13.820448875427, 3.8971998691559, 2.4432499408722, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d1_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_right/d1_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d1_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_right/d1_r.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d1_r_lod0.msh",
+						name = "d1_r",
+						transf = { 0.99576997756958, 0.087923437356949, -0.026674905791879, 0, -0.087677262723446, 0.99609607458115, 0.010264540091157, 0, 0.027473261579871, -0.0078823389485478, 0.99959141016006, 0, 13.820448875427, -3.8620998859406, 2.4432501792908, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d2_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_right/d2_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d2_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_right/d2_r.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d2_r_lod0.msh",
+						name = "d2_r",
+						transf = { 0.99954360723495, -0.027095416560769, 0.013353367336094, 0, 0.027195014059544, 0.99960321187973, -0.0073344227857888, 0, -0.013149338774383, 0.0076942211017013, 0.99988394975662, 0, 10.055700302124, -4.065899848938, 2.3270001411438, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d3_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_right/d3_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d3_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_right/d3_r.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d3_r_lod0.msh",
+						name = "d3_r",
+						transf = { 0.99999970197678, -0.00080284179421142, 5.569545464823e-05, 0, 0.00080356519902125, 0.9998944401741, -0.014505615457892, 0, -4.4043859816156e-05, 0.014505656436086, 0.99989473819733, 0, -6.9673004150391, -4.1604495048523, 2.2028002738953, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d4_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_right/d4_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d4_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_right/d4_r.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d4_r_lod0.msh",
+						name = "d4_r",
+						transf = { 0.99999988079071, -0.00041307913488708, -1.6432772099506e-05, 0, 0.00041242674342357, 0.99957716464996, -0.02907326631248, 0, 2.843538277375e-05, 0.029073256999254, 0.99957722425461, 0, -10.536600112915, -4.1604995727539, 2.2031500339508, 1, },
+					},
+					{
+						name = "comp_a",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_b",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", "vehicle/ship/dunara_castle/dunara_castle2.mtl", },
+						mesh = "vehicle/ship/dunara_castle/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -25.321701049805, -3.2182512654799e-08, -0.73625004291534, 1, },
+					},
+					{
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/screw_lod1.msh",
+						name = "screw",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -24.243801116943, 0, -1.482449889183, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d4_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_left/d4_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d4_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_left/d4_l.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d4_l_lod1.msh",
+						name = "d4_l",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.536599159241, 4.1957001686096, 2.2031495571136, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d3_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_left/d3_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d3_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_left/d3_l.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d3_l_lod1.msh",
+						name = "d3_l",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.9672994613647, 4.195650100708, 2.2027997970581, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d2_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_left/d2_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d2_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_left/d2_l.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d2_l_lod1.msh",
+						name = "d2_l",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.055700302124, 4.1010003089905, 2.3269999027252, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d1_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_left/d1_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d1_l.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_left/d1_l.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d1_l_lod1.msh",
+						name = "d1_l",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.820448875427, 3.8971998691559, 2.4432499408722, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d1_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_right/d1_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d1_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_right/d1_r.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d1_r_lod1.msh",
+						name = "d1_r",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.820448875427, -3.8620998859406, 2.4432501792908, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d2_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_right/d2_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d2_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_right/d2_r.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d2_r_lod1.msh",
+						name = "d2_r",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.055700302124, -4.065899848938, 2.3270001411438, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d3_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_right/d3_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d3_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_right/d3_r.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d3_r_lod1.msh",
+						name = "d3_r",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.9673004150391, -4.1604495048523, 2.2028002738953, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_all_doors/d4_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/close_doors_right/d4_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_all_doors/d4_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/ship/dunara_castle/open_doors_right/d4_r.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", },
+						mesh = "vehicle/ship/dunara_castle/d4_r_lod1.msh",
+						name = "d4_r",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.536600112915, -4.1604995727539, 2.2031500339508, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/dunara_castle/dunara_castle1.mtl", "vehicle/ship/dunara_castle/dunara_castle2.mtl", },
+						mesh = "vehicle/ship/dunara_castle/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 4000,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1875,
+			yearTo = 1940,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			description = _("VEHICLE_SHIP_DUNARA_CASTLE_DESCRIPTION"),
+			name = _("VEHICLE_SHIP_DUNARA_CASTLE_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.15, 0.15, 0.15, },
+					frequency = 80,
+					initialAlpha = 0.2,
+					lifeTime = 10,
+					position = { 1.4144998788834, 0, 11.860699653625, },
+					size01 = { 0.2, 4, },
+					velocity = { -0.26452735066414, 0, 1.9824291467667, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "WATER",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 1,
+					transf = { 0.99756407737732, 0.069756470620632, 0, 0, -0.069756470620632, 0.99756407737732, 0, 0, 0, 0, 1, 0, 7.6539993286133, 0, 6.0659995079041, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { -0.96858310699463, 0.24868988990784, 1.2234796676536e-16, 0, -0.24868988990784, -0.96858310699463, -1.0551046055138e-16, 0, 9.2264790932794e-17, -1.3262237053644e-16, 1, 0, 19.068681716919, 0.30760177969933, 4.4847774505615, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { -0.99433791637421, -0.10626416653395, 1.1694843612908e-16, 0, 0.10626416653395, -0.99433791637421, -9.3360514076851e-17, 0, 1.2620714151728e-16, -8.0404463551772e-17, 1, 0, 19.121620178223, -0.28590732812881, 4.4847774505615, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { -0.99433791637421, -0.10626416653395, 1.1694843612908e-16, 0, 0.10626416653395, -0.99433791637421, -9.3360514076851e-17, 0, 1.2620714151728e-16, -8.0404463551772e-17, 1, 0, 10.808837890625, -0.63312327861786, 1.9232131242752, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { -0.99556195735931, 0.094108253717422, 1.229492542788e-16, 0, -0.094108253717422, -0.99556195735931, -1.342077515159e-16, 0, 1.0977354428769e-16, -1.4518267800414e-16, 1, 0, 10.682475090027, 0.66702854633331, 1.9223984479904, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.097582921385765, 0.99522739648819, 1.3314787507087e-16, 0, -0.99522739648819, 0.097582921385765, -1.0985872403845e-16, 0, -1.2232737327683e-16, -1.2179207492395e-16, 1, 0, 11.080568313599, 1.0038701295853, 1.9144970178604, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.097582921385765, 0.99522739648819, 1.3314787507087e-16, 0, -0.99522739648819, 0.097582921385765, -1.0985872403845e-16, 0, -1.2232737327683e-16, -1.2179207492395e-16, 1, 0, 12.657509803772, 0.87971073389053, 1.9144970178604, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.097582921385765, 0.99522739648819, 1.3314787507087e-16, 0, -0.99522739648819, 0.097582921385765, -1.0985872403845e-16, 0, -1.2232737327683e-16, -1.2179207492395e-16, 1, 0, 11.854764938354, 1.0010570287704, 1.9144970178604, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { -0.14435604214668, -0.98952573537827, -6.4108652278355e-18, 0, 0.98952573537827, -0.14435604214668, -6.2722681176726e-19, 0, -3.0478992198831e-19, -6.4342607906907e-18, 1, 0, 11.262892723083, -1.0698894262314, 1.9144970178604, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { -0.14435604214668, -0.98952573537827, -6.4108652278355e-18, 0, 0.98952573537827, -0.14435604214668, -6.2722681176726e-19, 0, -3.0478992198831e-19, -6.4342607906907e-18, 1, 0, 11.878352165222, -1.0715053081512, 1.9144970178604, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.073238082230091, -0.99731451272964, -1.7656830265073e-17, 0, 0.99731451272964, 0.073238082230091, -1.1273868941226e-18, 0, 2.4175116475977e-18, -1.7526845449255e-17, 1, 0, 12.638298034668, -1.0150421857834, 1.9144970178604, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.52991926670074, 0.84804809093475, 0, 0, -0.84804809093475, 0.52991926670074, 0, 0, 0, 0, 1, 0, 20.722694396973, 1.5564037561417, 4.3334698677063, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.16504757106304, 0.98628562688828, 0, 0, -0.98628562688828, 0.16504757106304, 0, 0, 0, 0, 1, 0, 19.651418685913, 1.8250068426132, 4.2624645233154, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.16504757106304, 0.98628562688828, 0, 0, -0.98628562688828, 0.16504757106304, 0, 0, 0, 0, 1, 0, 16.245145797729, -2.561105966568, 4.0518698692322, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.99376791715622, -0.1114689335227, 0, 0, 0.1114689335227, 0.99376791715622, 0, 0, 0, 0, 1, 0, 15.823449134827, -1.7729157209396, 4.0518698692322, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.99376791715622, -0.1114689335227, 0, 0, 0.1114689335227, 0.99376791715622, 0, 0, 0, 0, 1, 0, 14.686370849609, -0.73253983259201, 4.0310015678406, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.99376791715622, -0.1114689335227, 0, 0, 0.1114689335227, 0.99376791715622, 0, 0, 0, 0, 1, 0, 9.2241334915161, 2.2518298625946, 3.8080062866211, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.99376791715622, -0.1114689335227, 0, 0, 0.1114689335227, 0.99376791715622, 0, 0, 0, 0, 1, 0, 8.6827030181885, -3.1436202526093, 3.8080062866211, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.30236992239952, 0.95319068431854, 0, 0, -0.95319068431854, 0.30236992239952, 0, 0, 0, 0, 1, 0, 6.8463163375854, 3.258663892746, 3.7145261764526, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 12,
+					transf = { 0.16780105233192, -0.98582088947296, -1.3728191201418e-16, 0, 0.98582088947296, 0.16780105233192, -1.5775784825308e-16, 0, 1.7855704667538e-16, -1.0886344047309e-16, 1, 0, 5.96426820755, -3.7154400348663, 3.7145261764526, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.073238141834736, -0.997314453125, -1.7656830265073e-17, 0, 0.997314453125, 0.073238141834736, -1.1273868941226e-18, 0, 2.4175126815735e-18, -1.7526845449255e-17, 1, 0, -8.812370300293, -0.96232235431671, 1.8125182390213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.047106392681599, 0.99888980388641, 9.9564242939545e-17, 0, -0.99888980388641, -0.047106392681599, 1.1226954524246e-16, 0, 1.1683502635838e-16, -9.4165102732514e-17, 1, 0, -8.7515754699707, 1.0415953397751, 1.8125182390213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.073238141834736, -0.997314453125, -1.7656830265073e-17, 0, 0.997314453125, 0.073238141834736, -1.1273868941226e-18, 0, 2.4175126815735e-18, -1.7526845449255e-17, 1, 0, -9.4838724136353, -0.96232235431671, 1.8125182390213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.047106392681599, 0.99888980388641, 9.9564242939545e-17, 0, -0.99888980388641, -0.047106392681599, 1.1226954524246e-16, 0, 1.1683502635838e-16, -9.4165102732514e-17, 1, 0, -8.0803031921387, 1.0240174531937, 1.8125182390213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.073238141834736, -0.997314453125, -1.7656830265073e-17, 0, 0.997314453125, 0.073238141834736, -1.1273868941226e-18, 0, 2.4175126815735e-18, -1.7526845449255e-17, 1, 0, -8.0516119003296, -0.96232235431671, 1.8125182390213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.047106392681599, 0.99888980388641, 9.9564242939545e-17, 0, -0.99888980388641, -0.047106392681599, 1.1226954524246e-16, 0, 1.1683502635838e-16, -9.4165102732514e-17, 1, 0, -9.5120735168457, 1.0615096092224, 1.8125182390213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.97922283411026, 0.20278729498386, 8.9446745404503e-17, 0, -0.20278729498386, -0.97922283411026, -2.1079293771824e-18, 0, 8.7160835090435e-17, -2.020279623756e-17, 1, 0, -9.8288164138794, 0.36692243814468, 1.8125182390213, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.97922283411026, 0.20278729498386, 8.9446745404503e-17, 0, -0.20278729498386, -0.97922283411026, -2.1079293771824e-18, 0, 8.7160835090435e-17, -2.020279623756e-17, 1, 0, -20.069158554077, -0.962173640728, 3.9718904495239, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.97922283411026, 0.20278729498386, 8.9446745404503e-17, 0, -0.20278729498386, -0.97922283411026, -2.1079293771824e-18, 0, 8.7160835090435e-17, -2.020279623756e-17, 1, 0, -20.069158554077, -1.5708947181702, 3.9718904495239, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.99317061901093, 0.11667075008154, 1.1992021151985e-16, 0, -0.11667075008154, -0.99317061901093, -9.763039392907e-17, 0, 1.0771062201443e-16, -1.1095482437687e-16, 1, 0, -20.069158554077, 0.98148834705353, 3.9718904495239, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.99317061901093, 0.11667075008154, 1.1992021151985e-16, 0, -0.11667075008154, -0.99317061901093, -9.763039392907e-17, 0, 1.0771062201443e-16, -1.1095482437687e-16, 1, 0, -20.069158554077, 1.6127531528473, 3.9718904495239, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.16780123114586, -0.98582082986832, -1.3728191201418e-16, 0, 0.98582082986832, 0.16780123114586, -1.5775784825308e-16, 0, 1.7855704667538e-16, -1.0886340738587e-16, 1, 0, -21.909713745117, -3.4828577041626, 3.8280131816864, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.16780123114586, -0.98582082986832, -1.3728191201418e-16, 0, 0.98582082986832, 0.16780123114586, -1.5775784825308e-16, 0, 1.7855704667538e-16, -1.0886340738587e-16, 1, 0, -20.890197753906, -3.0582940578461, 3.8280131816864, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.16745699942112, 0.98587936162949, -3.706124831901e-17, 0, -0.98587936162949, 0.16745699942112, -5.7572187532719e-17, 0, -5.0553063726839e-17, 4.6178787063871e-17, 1, 0, -20.899362564087, 2.9710342884064, 3.8280131816864, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.29470756649971, 0.95558750629425, -3.706124831901e-17, 0, -0.95558750629425, 0.29470756649971, -5.7572187532719e-17, 0, -4.4093031296984e-17, 5.2382221450268e-17, 1, 0, -21.806434631348, 2.9710342884064, 3.8280131816864, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.29470756649971, 0.95558750629425, -3.706124831901e-17, 0, -0.95558750629425, 0.29470756649971, -5.7572187532719e-17, 0, -4.4093031296984e-17, 5.2382221450268e-17, 1, 0, -26.644342422485, 2.405876159668, 4.0697355270386, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.91954731941223, -0.39297914505005, -2.6669904370376e-16, 0, 0.39297914505005, 0.91954731941223, -1.41789516957e-16, 0, 3.0096271756027e-16, 2.557500675257e-17, 1, 0, -27.444610595703, 1.3858742713928, 4.0902256965637, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.9794345498085, -0.20176173746586, -2.6669904370376e-16, 0, 0.20176173746586, 0.9794345498085, -1.41789516957e-16, 0, 2.8982198437261e-16, 8.5063899150389e-17, 1, 0, -27.419166564941, 0.38156372308731, 4.0902256965637, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.53935873508453, -0.84207606315613, -1.7593795462802e-16, 0, 0.84207606315613, -0.53935873508453, -3.648602096534e-16, 0, 2.1234640855121e-16, -3.4494368573659e-16, 1, 0, -26.559818267822, -2.3471145629883, 4.0706210136414, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.53935873508453, -0.84207606315613, -1.7593795462802e-16, 0, 0.84207606315613, -0.53935873508453, -3.648602096534e-16, 0, 2.1234640855121e-16, -3.4494368573659e-16, 1, 0, -25.464881896973, -2.7961928844452, 4.0051398277283, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.15022559463978, -0.98865169286728, -1.7593795462802e-16, 0, 0.98865169286728, -0.15022559463978, -3.648602096534e-16, 0, 3.3428933474911e-16, -2.2875270882059e-16, 1, 0, -23.501600265503, -0.95013004541397, 3.9999568462372, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.15022559463978, -0.98865169286728, -1.7593795462802e-16, 0, 0.98865169286728, -0.15022559463978, -3.648602096534e-16, 0, 3.3428933474911e-16, -2.2875270882059e-16, 1, 0, -17.281812667847, -3.702849149704, 3.6562633514404, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.15022559463978, -0.98865169286728, -1.7593795462802e-16, 0, 0.98865169286728, -0.15022559463978, -3.648602096534e-16, 0, 3.3428933474911e-16, -2.2875270882059e-16, 1, 0, -16.30389213562, -3.702849149704, 3.6562633514404, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.15022559463978, -0.98865169286728, -1.7593795462802e-16, 0, 0.98865169286728, -0.15022559463978, -3.648602096534e-16, 0, 3.3428933474911e-16, -2.2875270882059e-16, 1, 0, -16.276357650757, 3.885819196701, 3.6562633514404, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.015009241178632, 0.99988728761673, -1.7593795462802e-16, 0, -0.99988728761673, -0.015009241178632, -3.648602096534e-16, 0, -3.6745983317786e-16, 1.7044186223575e-16, 1, 0, -16.142642974854, 2.7378447055817, 3.6562633514404, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.015009241178632, 0.99988728761673, -1.7593795462802e-16, 0, -0.99988728761673, -0.015009241178632, -3.648602096534e-16, 0, -3.6745983317786e-16, 1.7044186223575e-16, 1, 0, -8.1359901428223, 3.6381785869598, 1.5656558275223, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.38493973016739, 0.92294174432755, -1.7593795462802e-16, 0, -0.92294174432755, 0.38493973016739, -3.648602096534e-16, 0, -2.6901922576496e-16, 3.0282968405514e-16, 1, 0, -9.3645467758179, 3.6381785869598, 1.5656558275223, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { -0.76761281490326, -0.64091384410858, -6.6052403467944e-17, 0, 0.64091384410858, -0.76761281490326, -4.6342930137648e-16, 0, 2.4631556640499e-16, -3.9806816282028e-16, 1, 0, -22.651968002319, -1.3167948722839, 3.927342414856, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 13,
+					transf = { 0.9906051158905, 0.13675300776958, -1.3683028463461e-16, 0, -0.13675300776958, 0.9906051158905, -3.7731169985715e-16, 0, 8.3946272263711e-17, 3.9247888356893e-16, 1, 0, -23.068790435791, -2.226854801178, 3.9126100540161, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "ship_steamer",
+			},
+		},
+		transportVehicle = {
+			carrier = "WATER",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 200,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			loadSpeed = 50,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		waterVehicle = {
+			area = 11,
+			availPower = 450000,
+			configs = {
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 3, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 2, },
+						maxAngle = 30,
+					},
+				},
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 3, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 2, },
+						maxAngle = 30,
+					},
+				},
+			},
+			maxRpm = 250,
+			topSpeed = 6.94444444444,
+			type = "BIG",
+			waterLine = {
+				{ 27.133859634399, 0, },
+				{ 27.133859634399, 0.075419999659061, },
+				{ 26.635820388794, 0.07133000344038, },
+				{ 24.634780883789, 0.93239998817444, },
+				{ 23.259719848633, 1.4614800214767, },
+				{ 21.648309707642, 2.031280040741, },
+				{ 18.18231010437, 2.9967000484467, },
+				{ 16.336149215698, 3.4288098812103, },
+				{ 14.276309967041, 3.8028099536896, },
+				{ 11.908060073853, 4.1174302101135, },
+				{ 9.5468397140503, 4.2066202163696, },
+				{ 6.3206601142883, 4.2586398124695, },
+				{ 1.4905500411987, 4.3179798126221, },
+				{ 1.0677900314331, 4.3169298171997, },
+				{ -1.5689699649811, 4.3118000030518, },
+				{ -3.8050498962402, 4.3141598701477, },
+				{ -6.5016398429871, 4.3137202262878, },
+				{ -10.698510169983, 4.3169798851013, },
+				{ -11.010270118713, 4.3172101974487, },
+				{ -13.342000007629, 4.2847199440002, },
+				{ -14.902700424194, 4.0562000274658, },
+				{ -16.009090423584, 3.7898199558258, },
+				{ -17.236909866333, 3.4499499797821, },
+				{ -18.032230377197, 3.1884400844574, },
+				{ -19.199600219727, 2.750629901886, },
+				{ -19.919069290161, 2.3991000652313, },
+				{ -21.177200317383, 1.7229399681091, },
+				{ -21.957500457764, 1.3307800292969, },
+				{ -22.81109046936, 0.90454000234604, },
+				{ -23.390050888062, 0.63981002569199, },
+				{ -24.022039413452, 0.27733999490738, },
+				{ -25.044830322266, 0.020320000126958, },
+				{ -25.200519561768, 0.019370000809431, },
+				{ -25.200000762939, 0, },
+			},
+			weight = 177000,
+		},
+	},
+	version = 1,
+}
+end

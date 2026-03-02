@@ -1,0 +1,1211 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 6.8319640159607, 1.1325520277023, 5.1290926933289, },
+		bbMin = { -6.6281609535217, -1.2138179540634, -0.0012109875679016, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 6.7300624847412, 1.1731849908829, 2.5651519298553, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass1_front_frt_lod0.msh",
+								name = "glass1_front_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.4511179924011, 0, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.3568301200867, 0.6384761929512, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.3439755439758, -0.63059890270233, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.6830410957336, 0.9814385175705, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9049453735352, 1.0416759252548, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0354156494141, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.3459150791168, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass5_lft_lod0.msh",
+								name = "glass5_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6640772819519, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass6_lft_lod0.msh",
+								name = "glass6_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9783893823624, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass7_lft_lod0.msh",
+								name = "glass7_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2864215373993, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass8_lft_lod0.msh",
+								name = "glass8_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.60248947143555, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass9_lft_lod0.msh",
+								name = "glass9_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.083949506282806, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass10_lft_lod0.msh",
+								name = "glass10_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.72063797712326, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass11_lft_lod0.msh",
+								name = "glass11_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3541855812073, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass12_lft_lod0.msh",
+								name = "glass12_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.013343334198, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass13_lft_lod0.msh",
+								name = "glass13_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7053112983704, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass14_lft_lod0.msh",
+								name = "glass14_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3909993171692, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass15_lft_lod0.msh",
+								name = "glass15_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0728378295898, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass16_lft_lod0.msh",
+								name = "glass16_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.7638831138611, 1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass17_lft_lod0.msh",
+								name = "glass17_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5538792610168, 0.97702038288116, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0369610786438, -1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.3449935913086, -1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6593043804169, -1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9774663448334, -1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass5_rgt_lod0.msh",
+								name = "glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2864215373993, -1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass6_rgt_lod0.msh",
+								name = "glass6_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3339333534241, -1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass7_rgt_lod0.msh",
+								name = "glass7_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.013343334198, -1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass8_rgt_lod0.msh",
+								name = "glass8_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7053112983704, -1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass9_rgt_lod0.msh",
+								name = "glass9_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3909993171692, -1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass10_rgt_lod0.msh",
+								name = "glass10_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0728378295898, -1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass11_rgt_lod0.msh",
+								name = "glass11_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.7638831138611, -1.0681450366974, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass12_rgt_lod0.msh",
+								name = "glass12_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5538792610168, -0.97702038288116, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass1_left_bck_lod0.msh",
+								name = "glass1_left_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.0832548141479, 0.60580921173096, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass1_right_bck_lod0.msh",
+								name = "glass1_right_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.0832548141479, -0.60580921173096, 1.9876079559326, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/glass1_back_bck_lod0.msh",
+								name = "glass1_back_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2987399101257, 0.0013824999332428, 1.9876079559326, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/b1_lod0.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/w1_lod0.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.72870182991028, 0.0015972498804331, 0.28002220392227, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/w2_lod0.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.72105258703232, 0.0015972498804331, 0.28002220392227, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0907216072083, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/b1_lod0.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/w1_lod0.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.72870278358459, -0.0015972498804331, 0.28002220392227, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/w2_lod0.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.72105169296265, -0.0015972498804331, 0.28002220392227, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4248704910278, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_interior.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d1_glass_rgt_lod0.msh",
+								name = "d1_glass_rgt",
+								transf = { 0.99488067626953, -0.1010562852025, 0, 0, 0.1010562852025, 0.99488067626953, 0, 0, 0, 0, 1, 0, -0.17310111224651, 0.0019395771669224, 1.5353363752365, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+										mesh = "vehicle/tram/peter_witt_streetcar_v2/d1_c1_glass_rgt_lod0.msh",
+										name = "d1_c1_glass_rgt",
+										transf = { 0.99488067626953, -0.1010562852025, 0, 0, 0.1010562852025, 0.99488067626953, 0, 0, 0, 0, 1, 0, -0.17310103774071, 0.0019400812452659, 1.5353363752365, 1, },
+									},
+								},
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d1_c1_rgt_lod0.msh",
+								name = "d1_c1_rgt",
+								transf = { 1, -1.3877787807814e-17, 0, 0, 1.3877787807814e-17, 1, 0, 0, 0, 0, 1, 0, -0.3462005853653, -0.00012039200373692, 0, 1, },
+							},
+						},
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { 0.99488067626953, 0.1010562852025, 0, 0, -0.1010562852025, 0.99488067626953, 0, 0, 0, 0, 1, 0, 6.0570321083069, -0.92895442247391, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d2_glass_rgt_lod0.msh",
+								name = "d2_glass_rgt",
+								transf = { 0.99488067626953, -0.1010562852025, 0, 0, 0.1010562852025, 0.99488067626953, 0, 0, 0, 0, 1, 0, 0.17309907078743, 0.0020604324527085, 1.5353363752365, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d2_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d2_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+										mesh = "vehicle/tram/peter_witt_streetcar_v2/d2_c1_glass_rgt_lod0.msh",
+										name = "d2_c1_glass_rgt",
+										transf = { 0.99488067626953, -0.1010562852025, 0, 0, 0.1010562852025, 0.99488067626953, 0, 0, 0, 0, 1, 0, 0.17309947311878, 0.0020599395502359, 1.5353363752365, 1, },
+									},
+								},
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d2_c1_rgt_lod0.msh",
+								name = "d2_c1_rgt",
+								transf = { 1, -1.3877787807814e-17, 0, 0, 1.3877787807814e-17, 1, 0, 0, 0, 0, 1, 0, 0.34620013833046, 0.00012038087879773, 0, 1, },
+							},
+						},
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/d2_rgt_lod0.msh",
+						name = "d2_rgt",
+						transf = { 0.99488067626953, 0.1010562852025, 0, 0, -0.1010562852025, 0.99488067626953, 0, 0, 0, 0, 1, 0, 4.6793689727783, -1.0693764686584, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d3_glass_rgt_lod0.msh",
+								name = "d3_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.18315799534321, 0.0019999742507935, 1.4613660573959, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d3_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d3_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+										mesh = "vehicle/tram/peter_witt_streetcar_v2/d3_c1_glass_rgt_lod0.msh",
+										name = "d3_c1_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.18315699696541, 0.0019999742507935, 1.4613660573959, 1, },
+									},
+								},
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d3_c1_rgt_lod0.msh",
+								name = "d3_c1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.36631602048874, 0, 0, 1, },
+							},
+						},
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/d3_rgt_lod0.msh",
+						name = "d3_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.71436101198196, -1.062891960144, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d4_glass_rgt_lod0.msh",
+								name = "d4_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.18315747380257, 0.0019999742507935, 1.4613660573959, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d4_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d4_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass.mtl", },
+										mesh = "vehicle/tram/peter_witt_streetcar_v2/d4_c1_glass_rgt_lod0.msh",
+										name = "d4_c1_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.18315750360489, 0.0019999742507935, 1.4613660573959, 1, },
+									},
+								},
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d4_c1_rgt_lod0.msh",
+								name = "d4_c1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36631494760513, 0, 0, 1, },
+							},
+						},
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/d4_rgt_lod0.msh",
+						name = "d4_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.75089997053146, -1.062891960144, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/b1_lod1.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/w1_lod1.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.72870182991028, 0.0015972498804331, 0.28002220392227, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/w2_lod1.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.72105258703232, 0.0015972498804331, 0.28002220392227, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0907216072083, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/b1_lod1.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/w1_lod1.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.72236204147339, 0.0015972498804331, 0.28002220392227, 1, },
+							},
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/w2_lod1.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.72739315032959, 0.0015972498804331, 0.28002220392227, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4185299873352, 5.4665467415583e-18, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass_lod.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/body_glass_lod1.msh",
+						name = "body_glass",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_interior.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass_lod.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d1_glass_rgt_lod1.msh",
+								name = "d1_glass_rgt",
+								transf = { 0.99488067626953, -0.1010562852025, 0, 0, 0.1010562852025, 0.99488067626953, 0, 0, 0, 0, 1, 0, -5.9321475028992, 1.5363001823425, 0, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass_lod.mtl", },
+										mesh = "vehicle/tram/peter_witt_streetcar_v2/d1_c1_glass_lod1.msh",
+										name = "d1_c1_glass",
+										transf = { 1, -1.3877787807814e-17, 0, 0, 1.3877787807814e-17, 1, 0, 0, 0, 0, 1, 0, 0.3462005853653, 0.00012039200373692, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d1_c1_rgt_lod1.msh",
+								name = "d1_c1_rgt",
+								transf = { 1, -1.3877787807814e-17, 0, 0, 1.3877787807814e-17, 1, 0, 0, 0, 0, 1, 0, -0.3462005853653, -0.00012039200373692, 0, 1, },
+							},
+						},
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { 0.99488067626953, 0.1010562852025, 0, 0, -0.1010562852025, 0.99488067626953, 0, 0, 0, 0, 1, 0, 6.0570321083069, -0.92895442247391, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass_lod.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d2_glass_rgt_lod1.msh",
+								name = "d2_glass_rgt",
+								transf = { 0.99488067626953, -0.1010562852025, 0, 0, 0.1010562852025, 0.99488067626953, 0, 0, 0, 0, 1, 0, -4.5473465919495, 1.5367815494537, 0, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d2_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d2_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass_lod.mtl", },
+										mesh = "vehicle/tram/peter_witt_streetcar_v2/d2_c1_glass_lod1.msh",
+										name = "d2_c1_glass",
+										transf = { 1, -1.3877787807814e-17, 0, 0, 1.3877787807814e-17, 1, 0, 0, 0, 0, 1, 0, -0.34620013833046, -0.00012038087879773, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d2_c1_rgt_lod1.msh",
+								name = "d2_c1_rgt",
+								transf = { 1, -1.3877787807814e-17, 0, 0, 1.3877787807814e-17, 1, 0, 0, 0, 0, 1, 0, 0.34620013833046, 0.00012038087879773, 0, 1, },
+							},
+						},
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/d2_rgt_lod1.msh",
+						name = "d2_rgt",
+						transf = { 0.99488067626953, 0.1010562852025, 0, 0, -0.1010562852025, 0.99488067626953, 0, 0, 0, 0, 1, 0, 4.6793689727783, -1.0693764686584, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass_lod.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d3_glass_rgt_lod1.msh",
+								name = "d3_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.71436101198196, 1.062891960144, 0, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d3_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d3_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass_lod.mtl", },
+										mesh = "vehicle/tram/peter_witt_streetcar_v2/d3_c1_glass_lod1.msh",
+										name = "d3_c1_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36631602048874, 0, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d3_c1_rgt_lod1.msh",
+								name = "d3_c1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.36631602048874, 0, 0, 1, },
+							},
+						},
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/d3_rgt_lod1.msh",
+						name = "d3_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.71436101198196, -1.062891960144, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass_lod.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d4_glass_rgt_lod1.msh",
+								name = "d4_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.75089997053146, 1.062891960144, 0, 1, },
+							},
+							{
+								animations = {
+									close_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/close_all_doors/d4_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_all_doors = {
+										params = {
+											id = "vehicle/tram/peter_witt_streetcar_v2/open_all_doors/d4_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass_lod.mtl", },
+										mesh = "vehicle/tram/peter_witt_streetcar_v2/d4_c1_glass_lod1.msh",
+										name = "d4_c1_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.36631494760513, 0, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+								mesh = "vehicle/tram/peter_witt_streetcar_v2/d4_c1_rgt_lod1.msh",
+								name = "d4_c1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.36631494760513, 0, 0, 1, },
+							},
+						},
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/d4_rgt_lod1.msh",
+						name = "d4_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.75089997053146, -1.062891960144, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar.mtl", "vehicle/tram/peter_witt_streetcar_v2/peter_witt_streetcar_glass_lod.mtl", "vehicle/tram/emissive/tram_blink_lights.mtl", },
+						mesh = "vehicle/tram/peter_witt_streetcar_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1917,
+			yearTo = 1967,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAM_PETER_WITT_STREETCAR_DESCRIPTION"),
+			name = _("VEHICLE_TRAM_PETER_WITT_STREETCAR_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 25568,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/tram/peter_witt_streetcar_v2/w1_lod0.msh", "vehicle/tram/peter_witt_streetcar_v2/w2_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 63, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/tram/peter_witt_streetcar_v2/w1_lod1.msh", "vehicle/tram/peter_witt_streetcar_v2/w2_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 28, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 3.0899999141693,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -3.4400000572205,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 40,
+					tractiveEffort = 15,
+					type = "ELECTRIC",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/tram_old/bell3.wav",
+				name = "tram_modern",
+			},
+			topSpeed = 9.7200002670288,
+			weight = 12,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRAM",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 64,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.6391153335571, 0.51137787103653, 0.59873884916306, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 4.1570734977722, 0.65602177381516, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 4.141101360321, -0.65609121322632, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 3.5939984321594, 0.65602177381516, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 3.5780262947083, -0.65609121322632, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 3.0429754257202, 0.62208789587021, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 3.0270035266876, -0.69002509117126, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 2.5115294456482, 0.62208789587021, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 2.4955575466156, -0.69002509117126, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 1.969234585762, 0.62208789587021, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 1.9532625675201, -0.69002509117126, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 1.4359713792801, 0.62208789587021, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 1.4199994802475, -0.69002509117126, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0.91384702920914, 0.62208789587021, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0.35755801200867, 0.62208789587021, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -0.19373419880867, 0.62208789587021, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -0.73113834857941, 0.62208789587021, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3274613618851, 0.51205992698669, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 0.65605902671814, 0.75470954179764, 0, 0, -0.75470954179764, 0.65605902671814, 0, 0, 0, 0, 1, 0, -1.3274613618851, -0.65943175554276, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 0.96363043785095, 0.26723837852478, 0, 0, -0.26723837852478, 0.96363043785095, 0, 0, 0, 0, 1, 0, -2.0456585884094, 0.60058975219727, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 0.96363043785095, 0.26723837852478, 0, 0, -0.26723837852478, 0.96363043785095, 0, 0, 0, 0, 1, 0, -2.0456585884094, -0.57090193033218, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8101441860199, 0.7172572016716, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8101441860199, -0.45423445105553, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 0.99965733289719, 0.026176949962974, 0, 0, -0.026176949962974, 0.99965733289719, 0, 0, 0, 0, 1, 0, -3.4783272743225, 0.56372678279877, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 0.99965733289719, 0.026176949962974, 0, 0, -0.026176949962974, 0.99965733289719, 0, 0, 0, 0, 1, 0, -3.4783272743225, -0.60776484012604, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1870722770691, 0.58296853303909, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1870722770691, -0.58852314949036, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.9323978424072, -0.0092553896829486, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 0.52991926670074, 0.84804809093475, 0, 0, -0.84804809093475, 0.52991926670074, 0, 0, 0, 0, 1, 0, -5.4746308326721, -0.66366851329803, 0.65370869636536, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 64,
+					transf = { 0.71691060066223, -0.69716513156891, 0, 0, 0.69716513156891, 0.71691060066223, 0, 0, 0, 0, 1, 0, -5.4442276954651, 0.61913150548935, 0.65370869636536, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "TRAM",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 80,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 4,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

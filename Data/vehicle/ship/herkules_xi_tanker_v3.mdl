@@ -1,0 +1,554 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 37.20138168335, 4.3129162788391, 11.533282279968, },
+		bbMin = { -37.04275894165, -4.3129086494446, -2.083359003067, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 37.1220703125, 4.3129124641418, 6.8083205223083, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi.mtl", "vehicle/ship/herkules_xi_v3/herkules_xi_hull.mtl", },
+						mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_body_lod0.msh",
+						name = "tanker_body",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -28.001268386841, 1.6350531950593e-07, -8.0654409373437e-08, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_glass.mtl", "vehicle/ship/herkules_xi_v3/herkules_xi_interior_glass.mtl", },
+								mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_glass_left_frt_lod0.msh",
+								name = "tanker_glass_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20.345859527588, 1.2530778646469, 6.8228178024292, 1, },
+							},
+							{
+								materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_glass.mtl", "vehicle/ship/herkules_xi_v3/herkules_xi_interior_glass.mtl", },
+								mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_glass_center_frt_lod0.msh",
+								name = "tanker_glass_center_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20.293647766113, -0.00047022104263306, 6.8228178024292, 1, },
+							},
+							{
+								materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_glass.mtl", "vehicle/ship/herkules_xi_v3/herkules_xi_interior_glass.mtl", },
+								mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_glass_right_frt_lod0.msh",
+								name = "tanker_glass_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20.345851898193, -1.2525359392166, 6.8228178024292, 1, },
+							},
+							{
+								materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_glass.mtl", "vehicle/ship/herkules_xi_v3/herkules_xi_interior_glass.mtl", },
+								mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_glass_lft_lod0.msh",
+								name = "tanker_glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -21.858497619629, 1.7823551893234, 6.8228178024292, 1, },
+							},
+							{
+								materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_glass.mtl", "vehicle/ship/herkules_xi_v3/herkules_xi_interior_glass.mtl", },
+								mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_glass_rgt_lod0.msh",
+								name = "tanker_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -21.858497619629, -1.7822878360748, 6.8228178024292, 1, },
+							},
+							{
+								materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_glass.mtl", "vehicle/ship/herkules_xi_v3/herkules_xi_interior_glass.mtl", },
+								mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_glass_left_bck_lod0.msh",
+								name = "tanker_glass_left_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.248420715332, 1.1209625005722, 6.7844033241272, 1, },
+							},
+							{
+								materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_glass.mtl", "vehicle/ship/herkules_xi_v3/herkules_xi_interior_glass.mtl", },
+								mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_glass_center_bck_lod0.msh",
+								name = "tanker_glass_center_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.981899261475, -5.4001808166504e-05, 6.783607006073, 1, },
+							},
+							{
+								materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_glass.mtl", "vehicle/ship/herkules_xi_v3/herkules_xi_interior_glass.mtl", },
+								mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_glass_right_bck_lod0.msh",
+								name = "tanker_glass_right_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.248420715332, -1.1208058595657, 6.7844033241272, 1, },
+							},
+						},
+						name = "tanker_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_interior.mtl", },
+						mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_interior_lod0.msh",
+						name = "tanker_interior",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -28.001268386841, 2.1978805307299e-05, -8.0654409373437e-08, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/ship/herkules_xi_tanker_v3/forever/tanker_g1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi.mtl", },
+						mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_g1_lod0.msh",
+						name = "tanker_g1",
+						transf = { 1, 0, 1.7484555314695e-07, 0, 0, 1, 0, 0, -1.7484555314695e-07, 0, 1, 0, -22.550798416138, 1.9760575294495, 9.4002704620361, 1, },
+					},
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_hull.mtl", },
+						mesh = "vehicle/ship/herkules_xi_universal_v3/universal_rudder_lf_lod0.msh",
+						name = "universal_rudder_lf",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -35.373268127441, 2.2006793022156, -1.2331937551498, 1, },
+					},
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_hull.mtl", "vehicle/ship/herkules_xi_v3/herkules_xi.mtl", },
+						mesh = "vehicle/ship/herkules_xi_universal_v3/universal_rudder_rgt_lod0.msh",
+						name = "universal_rudder_rgt",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -35.373268127441, -2.176100730896, -1.2331937551498, 1, },
+					},
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_hull.mtl", },
+						mesh = "vehicle/ship/herkules_xi_universal_v3/universal_propeller_lft_lod0.msh",
+						name = "universal_propeller_lft",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, 2.560847475965e-22, 0, 2.560847475965e-22, -1.5680669945641e-38, 1, 0, -34.526069641113, 2.1937828063965, -1.2057497501373, 1, },
+					},
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_hull.mtl", },
+						mesh = "vehicle/ship/herkules_xi_universal_v3/universal_propeller_rgt_lod0.msh",
+						name = "universal_propeller_rgt",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, 2.560847475965e-22, 0, 2.560847475965e-22, -1.5680669945641e-38, 1, 0, -34.526069641113, -2.193977355957, -1.2057497501373, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", "vehicle/ship/barges_v2/barges_body.mtl", },
+						mesh = "vehicle/ship/barges_v2/body_single_lod0.msh",
+						name = "body_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6802003383636, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", "vehicle/ship/barges_v2/barges_body.mtl", },
+						mesh = "vehicle/ship/barges_v2/body_single_lod0.msh",
+						name = "body_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 29.450799942017, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", },
+						mesh = "vehicle/ship/barges_v2/tanker_single_lod0.msh",
+						name = "tanker_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6802003383636, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", },
+						mesh = "vehicle/ship/barges_v2/tanker_single_lod0.msh",
+						name = "tanker_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 29.450799942017, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/emissive/ship_all_lights.mtl", },
+						mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_headlights_lod0.msh",
+						name = "tanker_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -27.999799728394, 1.6350531950593e-07, -8.0654409373437e-08, 1, },
+					},
+					{
+						name = "tanker_comp_grp",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -28.001300811768, 1.6350531950593e-07, -1.6135439295795e-07, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_lod.mtl", },
+						mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_body_lod1.msh",
+						name = "tanker_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -28.001268386841, 1.6350531950593e-07, -8.0654409373437e-08, 1, },
+					},
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_interior_lod.mtl", },
+						mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_interior_lod1.msh",
+						name = "tanker_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -28.001268386841, 2.1978805307299e-05, -8.0654409373437e-08, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/ship/herkules_xi_tanker_v3/forever/tanker_g1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_lod.mtl", },
+						mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_g1_lod1.msh",
+						name = "tanker_g1",
+						transf = { 1, 0, 1.7484555314695e-07, 0, 0, 1, 0, 0, -1.7484555314695e-07, 0, 1, 0, -22.550798416138, 1.9760575294495, 9.4002704620361, 1, },
+					},
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_lod.mtl", },
+						mesh = "vehicle/ship/herkules_xi_universal_v3/universal_rudder_lft_lod1.msh",
+						name = "universal_rudder_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -35.373268127441, 2.2006793022156, -1.2331937551498, 1, },
+					},
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_lod.mtl", },
+						mesh = "vehicle/ship/herkules_xi_universal_v3/universal_rudder_rgt_lod1.msh",
+						name = "universal_rudder_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -35.373268127441, -2.176100730896, -1.2331937551498, 1, },
+					},
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_lod.mtl", },
+						mesh = "vehicle/ship/herkules_xi_universal_v3/universal_propeller_lft_lod1.msh",
+						name = "universal_propeller_lft",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, 2.560847475965e-22, 0, 2.560847475965e-22, -1.5680669945641e-38, 1, 0, -34.526069641113, 2.1937828063965, -1.2057497501373, 1, },
+					},
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_lod.mtl", },
+						mesh = "vehicle/ship/herkules_xi_universal_v3/universal_propeller_rgt_lod1.msh",
+						name = "universal_propeller_rgt",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, 2.560847475965e-22, 0, 2.560847475965e-22, -1.5680669945641e-38, 1, 0, -34.526069641113, -2.193977355957, -1.2057497501373, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", "vehicle/ship/barges_v2/barges_body.mtl", },
+						mesh = "vehicle/ship/barges_v2/body_single_lod1.msh",
+						name = "body_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6802003383636, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", "vehicle/ship/barges_v2/barges_body.mtl", },
+						mesh = "vehicle/ship/barges_v2/body_single_lod1.msh",
+						name = "body_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 29.450799942017, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", },
+						mesh = "vehicle/ship/barges_v2/tanker_single_lod1.msh",
+						name = "tanker_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6802003383636, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", },
+						mesh = "vehicle/ship/barges_v2/tanker_single_lod1.msh",
+						name = "tanker_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 29.450799942017, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/emissive/ship_all_lights.mtl", },
+						mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_headlights_lod1.msh",
+						name = "tanker_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -27.999799728394, 1.6350531950593e-07, -8.0654409373437e-08, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/herkules_xi_v3/herkules_xi_lod.mtl", },
+						mesh = "vehicle/ship/herkules_xi_tanker_v3/tanker_body_lod2.msh",
+						name = "tanker_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -28.001268386841, 1.6350531950593e-07, -8.0654409373437e-08, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", "vehicle/ship/barges_v2/barges_body.mtl", },
+						mesh = "vehicle/ship/barges_v2/body_single_lod2.msh",
+						name = "body_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6802003383636, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", "vehicle/ship/barges_v2/barges_body.mtl", },
+						mesh = "vehicle/ship/barges_v2/body_single_lod2.msh",
+						name = "body_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 29.450799942017, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", },
+						mesh = "vehicle/ship/barges_v2/tanker_single_lod2.msh",
+						name = "tanker_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6802003383636, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", },
+						mesh = "vehicle/ship/barges_v2/tanker_single_lod2.msh",
+						name = "tanker_single",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 29.450799942017, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 4000,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1990,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_SHIP_HERKULES_XI_TANKER_DESCRIPTION"),
+			name = _("VEHICLE_SHIP_HERKULES_XI_TANKER_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.20000000298023, 0.20000000298023, 0.25, },
+					frequency = 60,
+					initialAlpha = 0.25,
+					lifeTime = 1.5,
+					position = { -5.1047806739807, 2.4792215824127, 3.5877718925476, },
+					size01 = { 0.20000000298023, 1.5, },
+					velocity = { -0.80000001192093, 0, 2, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.20000000298023, 0.20000000298023, 0.25, },
+					frequency = 60,
+					initialAlpha = 0.25,
+					lifeTime = 1.5,
+					position = { -5.1047806739807, -2.479199886322, 3.5877718925476, },
+					size01 = { 0.20000000298023, 1.5, },
+					velocity = { -0.80000001192093, 0, 2, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "WATER",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 22,
+					transf = { 1, 0, 2.6469778023975e-23, 0, -0, 1, 0, 0, -2.6469778023975e-23, -0, 1, 0, 6.8012986183167, -0.065000161528587, 5.6799998283386, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = true,
+					forward = true,
+					group = 22,
+					transf = { 1, 0, 2.6469778023975e-23, 0, -0, 1, 0, 0, -2.6469778023975e-23, -0, 1, 0, 6.4562993049622, -0.90997874736786, 5.75, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "ship_diesel_modern",
+			},
+		},
+		transportVehicle = {
+			carrier = "WATER",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 700,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 700,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 700,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 700,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 700,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 700,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 100,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v02",
+		},
+		waterVehicle = {
+			area = 11,
+			availPower = 1600000,
+			configs = {
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 15, 16, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 13, 14, },
+						maxAngle = 30,
+					},
+				},
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 6, 7, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 4, 5, },
+						maxAngle = 30,
+					},
+				},
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+				},
+			},
+			maxRpm = 400,
+			topSpeed = 7.777777671814,
+			type = "BIG",
+			waterLine = {
+				{ 36.7041015625, 0, },
+				{ 36.7041015625, 3, },
+				{ 36.661991119385, 3.3599998950958, },
+				{ 36.535739898682, 3.6400001049042, },
+				{ 36.325531005859, 3.8399999141693, },
+				{ 36.031719207764, 3.960000038147, },
+				{ 35.654769897461, 4, },
+				{ 10.628809928894, 4, },
+				{ 10.275150299072, 3.960000038147, },
+				{ 9.9997501373291, 3.8399999141693, },
+				{ 9.8028697967529, 3.6400001049042, },
+				{ 9.6846704483032, 3.3599998950958, },
+				{ 9.6452503204346, 3, },
+				{ 9.6452503204346, 2.3908500671387, },
+				{ 8.9356002807617, 2.4000000953674, },
+				{ 8.9335098266602, 3, },
+				{ 8.8914003372192, 3.3599998950958, },
+				{ 8.7651395797729, 3.6400001049042, },
+				{ 8.5549402236938, 3.8399999141693, },
+				{ 8.2611303329468, 3.960000038147, },
+				{ 7.8841700553894, 4, },
+				{ -17.141780853271, 4, },
+				{ -17.495449066162, 3.960000038147, },
+				{ -17.770839691162, 3.8399999141693, },
+				{ -17.967729568481, 3.6400001049042, },
+				{ -18.085929870605, 3.3599998950958, },
+				{ -18.125350952148, 3, },
+				{ -18.125350952148, 2.3908500671387, },
+				{ -18.489999771118, 2.3849999904633, },
+				{ -18.490039825439, 3.510999917984, },
+				{ -18.526090621948, 3.727560043335, },
+				{ -18.634260177612, 3.8822500705719, },
+				{ -18.814540863037, 3.9750699996948, },
+				{ -19.214040756226, 4.0094499588013, },
+				{ -22.794500350952, 4.2988200187683, },
+				{ -33.190788269043, 4.3129200935364, },
+				{ -36.464469909668, 4.2988200187683, },
+				{ -36.712619781494, 4.2694802284241, },
+				{ -36.886489868164, 4.1724600791931, },
+				{ -36.990608215332, 4.0104398727417, },
+				{ -37.022060394287, 3.7792301177979, },
+				{ -37.022338867188, 1.3297799825668, },
+				{ -36.714340209961, 1.3269100189209, },
+				{ -36.714820861816, 9.9999997473788e-06, },
+			},
+			weight = 1157000,
+		},
+	},
+	version = 1,
+}
+end

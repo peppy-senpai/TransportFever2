@@ -1,0 +1,584 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.6160488128662, 1.5467621088028, 3.5653190612793, },
+		bbMin = { -6.1753554344177, -1.5467640161514, -1.1920928955078e-07, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.8957023620605, 1.5467630624771, 1.7826595306396, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_body_lod0.msh",
+						name = "tipper_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int_glass.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_glass.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_glass1_left_frt_lod0.msh",
+								name = "universal_glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.1209306716919, 0.59798729419708, 2.424578666687, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int_glass.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_glass.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_glass1_right_frt_lod0.msh",
+								name = "universal_glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.1209304332733, -0.58298790454865, 2.424578666687, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int_glass.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_glass.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_glass1_lft_lod0.msh",
+								name = "universal_glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5336208343506, 1.1699728965759, 2.4250245094299, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int_glass.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_glass.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_glass1_rgt_lod0.msh",
+								name = "universal_glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5336203575134, -1.1699738502502, 2.4250245094299, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int_glass.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_glass.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_glass1_bck_lod0.msh",
+								name = "universal_glass1_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2090260982513, 0.0089999735355377, 2.6696362495422, 1, },
+							},
+						},
+						name = "tipper_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_interior_lod0.msh",
+						name = "tipper_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w1_lft_lod0.msh",
+						name = "tipper_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.979478597641, 1.0923010110855, 0.57125234603882, 1, },
+					},
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w1_rgt_lod0.msh",
+						name = "tipper_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9794782400131, -1.0923022031784, 0.57125234603882, 1, },
+					},
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w2_lod0.msh",
+						name = "tipper_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6842250823975, -2.3841857910156e-07, 0.57125234603882, 1, },
+					},
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w3_lod0.msh",
+						name = "tipper_w3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0367484092712, -2.3841857910156e-07, 0.57125234603882, 1, },
+					},
+					{
+						animations = {
+							empty_load = {
+								params = {
+									id = "vehicle/truck/faw_jiefang_j6p_tipper_v2/empty_load/tipper_body_cargo.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									empty_load = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tipper_v2/empty_load/tipper_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_d1_lod0.msh",
+								name = "tipper_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.98291683197021, -2.7939677238464e-08, 1.9521775245667, 1, },
+							},
+						},
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_body_cargo_lod0.msh",
+						name = "tipper_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.818835735321, 5.4948031902313e-07, 1.2585387229919, 1, },
+					},
+					{
+						animations = {
+							empty_load = {
+								params = {
+									id = "vehicle/truck/faw_jiefang_j6p_tipper_v2/empty_load/tipper_cyl1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									empty_load = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tipper_v2/empty_load/tipper_cyl2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_cyl2_lod0.msh",
+								name = "tipper_cyl2",
+								transf = { 1, 0, 3.0092655381051e-36, 0, 2.4651903288157e-32, 1, -2.7105054312138e-20, 0, -3.0092655381051e-36, -2.7105054312138e-20, 1, 0, 1.7881393432617e-07, -1.6378578493459e-07, 0, 1, },
+							},
+							{
+								animations = {
+									empty_load = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tipper_v2/empty_load/tipper_cyl3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_cyl3_lod0.msh",
+								name = "tipper_cyl3",
+								transf = { 1, 0, 3.0092655381051e-36, 0, 2.4651903288157e-32, 1, -2.7105054312138e-20, 0, -3.0092655381051e-36, -2.7105054312138e-20, 1, 0, 1.7881393432617e-07, -1.6378578493459e-07, 0, 1, },
+							},
+							{
+								animations = {
+									empty_load = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tipper_v2/empty_load/tipper_cyl4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_cyl4_lod0.msh",
+								name = "tipper_cyl4",
+								transf = { 1, -2.8129298840054e-27, -1.7484555314695e-07, 0, -4.7391681697767e-27, 1, -2.7105054312138e-20, 0, 1.7484555314695e-07, -1.0706201691189e-23, 1, 0, 3.5762786865234e-07, -2.7624423637462e-07, 0.59870064258575, 1, },
+							},
+						},
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_cyl1_lod0.msh",
+						name = "tipper_cyl1",
+						transf = { 6.1232342629258e-17, -1, 0, 0, 1, 6.1232336011813e-17, 0.00015175782027654, 0, -0.00015175782027654, -9.2924864169032e-21, 1, 0, 0.79043537378311, 1.706755710984e-06, 1.1886001825333, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_headlights_lod0.msh",
+						name = "tipper_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_brakelights_lod0.msh",
+						name = "tipper_brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_blinklights_lft_lod0.msh",
+						name = "tipper_blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_blinklights_rgt_lod0.msh",
+						name = "tipper_blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+					},
+					{
+						name = "tipper_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_body_lod1.msh",
+						name = "tipper_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w1_lft_lod1.msh",
+						name = "tipper_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.979478597641, 1.0923010110855, 0.57125234603882, 1, },
+					},
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w1_rgt_lod1.msh",
+						name = "tipper_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9794782400131, -1.0923022031784, 0.57125234603882, 1, },
+					},
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w2_lod1.msh",
+						name = "tipper_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6842250823975, -2.3841857910156e-07, 0.57125234603882, 1, },
+					},
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w3_lod1.msh",
+						name = "tipper_w3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0367484092712, -2.3841857910156e-07, 0.57125234603882, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_c1_lod1.msh",
+								name = "tipper_c1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.9829158782959, 2.0477801854213e-07, 1.9521775245667, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/w0_lod1.msh",
+								name = "w0",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.6013321876526, 0.68143856525421, 1.172954082489, 1, },
+							},
+						},
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_lod1.msh",
+						name = "tipper",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.818835735321, 5.4948031902313e-07, 1.2585387229919, 1, },
+					},
+					{
+						animations = {
+							empty_load = {
+								params = {
+									id = "vehicle/truck/faw_jiefang_j6p_tipper_v2/empty_load/tipper_cyl1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_c2_g_lod1.msh",
+								name = "tipper_c2_g",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7881393432617e-07, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_c3_g_lod1.msh",
+								name = "tipper_c3_g",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7881393432617e-07, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_c4_g_lod1.msh",
+								name = "tipper_c4_g",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6946774091339e-05, -4.6610832214355e-05, 0.59870064258575, 1, },
+							},
+						},
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_cyl1_lod1.msh",
+						name = "tipper_cyl1",
+						transf = { 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, -2.4492937051703e-16, 0, 2.4492937051703e-16, 1.4997597572212e-32, 1, 0, 0.79043525457382, 1.706755710984e-06, 1.1886001825333, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_headlights_lod1.msh",
+						name = "tipper_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_brakelights_lod1.msh",
+						name = "tipper_brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_blinklights_lft_lod1.msh",
+						name = "tipper_blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_blinklights_rgt_lod1.msh",
+						name = "tipper_blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_body_lod2.msh",
+						name = "tipper_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							empty_load = {
+								params = {
+									id = "vehicle/truck/faw_jiefang_j6p_tipper_v2/empty_load/tipper_body_cargo.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tipper.mtl", },
+						mesh = "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_body_cargo_lod2.msh",
+						name = "tipper_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2014,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_FAW_JIEFANG_J6P_TIPPER_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_FAW_JIEFANG_J6P_TIPPER_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 0,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 50,
+					initialAlpha = 0.80000001192093,
+					lifeTime = 1,
+					position = { 0.0018241576617584, 0.25422877073288, 0.46160849928856, },
+					size01 = { 0.050000000745058, 0.89999997615814, },
+					velocity = { -3.4800000190735, 9, -0.16464626789093, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w2_lod0.msh", "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w3_lod0.msh", },
+					blinkLightsLeft = { 21, },
+					blinkLightsRight = { 22, },
+					brakeLights = { 20, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -1,
+							upright = false,
+						},
+					},
+					headLights = { 19, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w1_lft_lod0.msh", "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w1_rgt_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w2_lod1.msh", "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w3_lod1.msh", },
+					blinkLightsLeft = { 15, },
+					blinkLightsRight = { 16, },
+					brakeLights = { 14, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -1,
+							upright = false,
+						},
+					},
+					headLights = { 13, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w1_lft_lod1.msh", "vehicle/truck/faw_jiefang_j6p_tipper_v2/tipper_w1_rgt_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0.89999997615814,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -3.3399999141693,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 350,
+				tractiveEffort = 50,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 27.777778625488,
+			weight = 12,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 23,
+					transf = { 0.99357181787491, 0, -0.11320321261883, 0, 0, 1, 0, 0, 0.11320321261883, 0, 0.99357181787491, 0, 2.125, 0.76399999856949, 1.3300000429153, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 152,
+									cargoBay = {
+										bbMax = { 5.2458357810974, 1.1319999694824, 1.4914612770081, },
+										bbMin = { -1.2410643100739, -1.1319999694824, 0.2324612736702, },
+										cargoFormat = "",
+										childId = 13,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 152,
+									cargoBay = {
+										bbMax = { 5.2458357810974, 1.1319999694824, 1.4914612770081, },
+										bbMin = { -1.2410643100739, -1.1319999694824, 0.2324612736702, },
+										cargoFormat = "",
+										childId = 13,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 152,
+									cargoBay = {
+										bbMax = { 5.2458357810974, 1.1319999694824, 1.4914612770081, },
+										bbMin = { -1.2410643100739, -1.1319999694824, 0.2324612736702, },
+										cargoFormat = "",
+										childId = 13,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 152,
+									cargoBay = {
+										bbMax = { 5.2458357810974, 1.1319999694824, 1.4914612770081, },
+										bbMin = { -1.2410643100739, -1.1319999694824, 0.2324612736702, },
+										cargoFormat = "",
+										childId = 13,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

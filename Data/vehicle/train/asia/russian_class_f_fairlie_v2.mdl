@@ -1,0 +1,703 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 6.9772996902466, 1.5260000228882, 4.513500213623, },
+		bbMin = { -6.9772996902466, -1.5260000228882, -0.019117176532745, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 6.9772996902466, 1.5260000228882, 2.2663087844849, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+						mesh = "vehicle/train/russian_class_f_fairlie_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_glass.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0072500705719, 1.3948044776917, 2.9784495830536, 1, },
+							},
+							{
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_glass.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, -2.4492937051703e-16, 5.3531016344553e-24, 0, -5.3531008455944e-24, -4.3711388286738e-08, -1, 0, 2.4492937051703e-16, 1, -4.3711388286738e-08, 0, -1.0072499513626, 1.3948044776917, 2.9784495830536, 1, },
+							},
+							{
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_glass.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0072500705719, -1.3948042392731, 2.9784495830536, 1, },
+							},
+							{
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_glass.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0072500705719, -1.3948042392731, 2.9784495830536, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/b1_lod0.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w1_lod0.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2581877708435, 1.4839553197366e-11, 0.53669095039368, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w2_lod0.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.010610580444336, 2.6451492038393e-11, 0.53669089078903, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w3_lod0.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2794179916382, 3.806343087942e-11, 0.53669083118439, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r1_lod0.msh",
+								name = "r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.22194480896, 1.2261199867913e-11, 0.57696413993835, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r2_lod0.msh",
+								name = "r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2077956199646, 1.2261199867913e-11, 0.27917015552521, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r3_lod0.msh",
+								name = "r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.080502986907959, -7.0045466822599e-12, 0.28472897410393, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5748000144958, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/b2_lod0.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w4_lod0.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2794179916382, 7.6789849435752e-13, 0.53669083118439, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w5_lod0.msh",
+								name = "w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.010610580444336, 1.9346999696745e-11, 0.53669089078903, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w6_lod0.msh",
+								name = "w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2581887245178, 4.0248488569761e-11, 0.53669095039368, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r4_lod0.msh",
+								name = "r4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2220306396484, 3.3025360224315e-11, 0.57696413993835, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r5_lod0.msh",
+								name = "r5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2022364139557, 3.3025360224315e-11, 0.80358570814133, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r6_lod0.msh",
+								name = "r6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.086061954498291, 3.7970692562395e-11, 0.78807187080383, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5748000144958, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+						mesh = "vehicle/train/russian_class_f_fairlie_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/b1_lod1.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0517577442879e-07, 0, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w1_lod1.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2581878900528, 1.4834225861571e-11, 0.53669095039368, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w2_lod1.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.010610351338983, 2.6443923439867e-11, 0.53669089078903, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w3_lod1.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2794177532196, 3.8058167728394e-11, 0.53669083118439, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r1_lod1.msh",
+								name = "r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2219445705414, 1.2257938587779e-11, 0.57696413993835, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r2_lod1.msh",
+								name = "r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.207795381546, 1.2260133880337e-11, 0.27917015552521, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r3_lod1.msh",
+								name = "r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.080503232777119, -7.0075304066386e-12, 0.28472897410393, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5748000144958, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/b2_lod1.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0517577442879e-07, 0, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w4_lod1.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2794177532196, 7.6206879348617e-13, 0.53669083118439, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w5_lod1.msh",
+								name = "w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.010610351338983, 1.933849781699e-11, 0.53669089078903, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/w6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/w6_lod1.msh",
+								name = "w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2581890821457, 4.0243228888182e-11, 0.53669095039368, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r4_lod1.msh",
+								name = "r4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2220309972763, 3.3023975914981e-11, 0.57696413993835, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r5_lod1.msh",
+								name = "r5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2022361755371, 3.301407411338e-11, 0.80358570814133, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/russian_class_f_fairlie_v2/wheels/r6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+								mesh = "vehicle/train/russian_class_f_fairlie_v2/r6_lod1.msh",
+								name = "r6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.086062006652355, 3.7961783022622e-11, 0.78807187080383, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5748000144958, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/russian_class_f_fairlie_v2/russian_class_f_fairlie_lod.mtl", },
+						mesh = "vehicle/train/russian_class_f_fairlie_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1884,
+			yearTo = 1934,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_RUSSIAN_CLASS_F_FAIRLIE_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_RUSSIAN_CLASS_F_FAIRLIE_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 15,
+					initialAlpha = 1,
+					lifeTime = 2,
+					position = { -5.3469877243042, 1.0634803771973, 0.57700002193451, },
+					size01 = { 0.20000000298023, 4, },
+					velocity = { 2.2400000095367, 3.2699999809265, -0.54000002145767, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 15,
+					initialAlpha = 1,
+					lifeTime = 2,
+					position = { -5.3469877243042, -1.0595622062683, 0.57700002193451, },
+					size01 = { 0.20000000298023, 4, },
+					velocity = { 1.8700000047684, -3.4900000095367, -0.54000002145767, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.39215683937073, 0.39215683937073, 0.39215683937073, },
+					frequency = 40,
+					initialAlpha = 1,
+					lifeTime = 10,
+					position = { -5.1725997924805, -2.623553793409e-16, 4.527135848999, },
+					size01 = { 0.75, 10, },
+					velocity = { 0, 3.6989064832989e-15, 8, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.39215683937073, 0.39215683937073, 0.39215683937073, },
+					frequency = 40,
+					initialAlpha = 1,
+					lifeTime = 10,
+					position = { 5.1725997924805, -4.0389678347316e-28, 4.527135848999, },
+					size01 = { 0.75, 10, },
+					velocity = { 0, 0, 8, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 15,
+					initialAlpha = 1,
+					lifeTime = 2,
+					position = { 5.3425297737122, 1.0595622062683, 0.57700002193451, },
+					size01 = { 0.20000000298023, 4, },
+					velocity = { -1.8700000047684, 3.4900000095367, -0.54000002145767, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 15,
+					initialAlpha = 1,
+					lifeTime = 2,
+					position = { 5.3425297737122, -1.0634803771973, 0.57700002193451, },
+					size01 = { 0.20000000298023, 4, },
+					velocity = { -2.2400000095367, -3.2699999809265, -0.54000002145767, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/russian_class_f_fairlie_v2/w1_lod0.msh", "vehicle/train/russian_class_f_fairlie_v2/w2_lod0.msh", "vehicle/train/russian_class_f_fairlie_v2/w3_lod0.msh", "vehicle/train/russian_class_f_fairlie_v2/w4_lod0.msh", "vehicle/train/russian_class_f_fairlie_v2/w5_lod0.msh", "vehicle/train/russian_class_f_fairlie_v2/w6_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/russian_class_f_fairlie_v2/w1_lod1.msh", "vehicle/train/russian_class_f_fairlie_v2/w2_lod1.msh", "vehicle/train/russian_class_f_fairlie_v2/w3_lod1.msh", "vehicle/train/russian_class_f_fairlie_v2/w4_lod1.msh", "vehicle/train/russian_class_f_fairlie_v2/w5_lod1.msh", "vehicle/train/russian_class_f_fairlie_v2/w6_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 4.8299999237061,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -4.8299999237061,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 310,
+					tractiveEffort = 130,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/train_steam_old/steam_horn_6.wav",
+				name = "train_steam_old",
+			},
+			topSpeed = 12.5,
+			weight = 90,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 23,
+					transf = { 0.48480954766273, 0.87461966276169, 0, 0, -0.87461966276169, 0.48480954766273, 0, 0, 0, -0, 1, 0, 0.079999998211861, -1.1799999475479, 1.2079999446869, 1, },
+				},
+				{
+					animation = "idle",
+					crew = true,
+					forward = false,
+					group = 23,
+					transf = { -0.57643210887909, -0.8171449303627, 7.05925993269e-17, 0, 0.8171449303627, -0.57643210887909, -2.225360693229e-16, 0, 2.2253609579268e-16, -7.0592566239676e-17, 1, 0, 0.17000000178814, 1.1100000143051, 1.2029999494553, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = true,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

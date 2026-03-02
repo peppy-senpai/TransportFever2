@@ -1,0 +1,881 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 11.096092224121, 1.3853136301041, 4.0876026153564, },
+		bbMin = { -10.323199272156, -1.3853121995926, -0.013968765735626, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 10.709646224976, 1.3853129148483, 2.050785779953, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_glass.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_glass1_left_frt_lod0.msh",
+										name = "front_glass1_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5486688613892, 0.9558739066124, 3.5115246772766, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_glass.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_glass1_right_frt_lod0.msh",
+										name = "front_glass1_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5486688613892, -0.95587551593781, 3.5115246772766, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_glass.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_glass1_lft_lod0.msh",
+										name = "front_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.9326848983765, 1.2578659057617, 3.0717451572418, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_glass.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_glass2_lft_lod0.msh",
+										name = "front_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2632055282593, 1.3097388744354, 3.0614216327667, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_glass.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_glass3_lft_lod0.msh",
+										name = "front_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5953454971313, 1.2578656673431, 3.0717451572418, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_glass.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.9326848983765, -1.2578675746918, 3.0717451572418, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_glass.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2632055282593, -1.3097405433655, 3.0614223480225, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_glass.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_glass3_rgt_lod0.msh",
+										name = "front_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5953454971313, -1.2578675746918, 3.0717449188232, 1, },
+									},
+								},
+								name = "front_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_transparent.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_body_tr_lod0.msh",
+								name = "front_body_tr",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.1540422439575, -1.0430812835693e-06, 4.0725173950195, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_interior_lod0.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_b1_lod0.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_w1_lod0.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.94616889953613, -3.7252902984619e-08, 0.50062602758408, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_w1_lod0.msh",
+										name = "front_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.94511502981186, -3.2037496566772e-07, 0.50062602758408, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.8135852813721, 7.8603625297546e-07, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_w3_lod0.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2556600570679, 3.3900141716003e-07, 1.030445933342, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_w4_lod0.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.057488441467285, 7.4505805969238e-09, 1.0304462909698, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_w3_lod0.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1406834125519, -3.2410025596619e-07, 1.030445933342, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_w6_lod0.msh",
+								name = "front_w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0498309135437, -9.0524554252625e-07, 0.57523167133331, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r1_lod0.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4456377029419, 5.1781535148621e-07, 1.0422390699387, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r2_lod0.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.00031375885009766, 0, 0.71085995435715, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r3_lod0.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.00031375885009766, 0, 0.71085995435715, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r5_lod0.msh",
+								name = "front_r5",
+								transf = { 0.99211466312408, 0, 0.12533323466778, 0, 0, 1, 0, 0, -0.12533323466778, 0, 0.99211466312408, 0, -2.1751043796539, 0.99773651361465, 0.70397156476974, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r6_lod0.msh",
+								name = "front_r6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7659014463425, 2.644956111908e-07, 1.1844416856766, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r7.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r7_lod0.msh",
+								name = "front_r7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7485966682434, 2.644956111908e-07, 1.6545143127441, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r8_lod0.msh",
+								name = "front_r8",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7484940290451, 2.644956111908e-07, 1.6578364372253, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r9.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r9_lod0.msh",
+								name = "front_r9",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8236970901489, 5.774199962616e-07, 1.622189283371, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r10_lod0.msh",
+								name = "front_r10",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2147374153137, 1.8253922462463e-07, 1.6636297702789, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r11.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r11_lod0.msh",
+								name = "front_r11",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4478874206543, 5.1781535148621e-07, 0.82863521575928, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_headlights_fwd_lod0.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.1049489974976, 1.3150274753571e-06, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_tender.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_coal_lod0.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3404558897018, -0.46859133243561, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_tender.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_w1_lod0.msh",
+								name = "back_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5461177825928, 3.7252902984619e-07, 0.63193023204803, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_tender.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_w1_lod0.msh",
+								name = "back_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.92059230804443, 1.2665987014771e-07, 0.63193023204803, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_tender.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_w1_lod0.msh",
+								name = "back_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.70493316650391, -1.1920928955078e-07, 0.63193023204803, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_tender.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_w1_lod0.msh",
+								name = "back_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3304567337036, -3.6135315895081e-07, 0.63193023204803, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_headlights_bwd_lod0.msh",
+								name = "back_headlights_bwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2737646102905, -2.4214386940002e-07, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_interior_lod1.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_b1_lod1.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_w1_lod1.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.94616889953613, -3.7252902984619e-08, 0.50062602758408, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+										mesh = "vehicle/train/lner_flying_scotsman_v2/front_w1_lod1.msh",
+										name = "front_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.94511502981186, -3.2037496566772e-07, 0.50062602758408, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.8135852813721, 7.8603625297546e-07, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_w3_lod1.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2556600570679, 6.7800283432007e-07, 1.030445933342, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_w4_lod1.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.057488441467285, 1.4901161193848e-08, 1.0304462909698, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_w3_lod1.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1406834125519, -6.4820051193237e-07, 1.030445933342, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_w6_lod1.msh",
+								name = "front_w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0498309135437, -9.0524554252625e-07, 0.57523167133331, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r1_lod1.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4456377029419, 1.0356307029724e-06, 1.0422390699387, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r2_lod1.msh",
+								name = "front_r2",
+								transf = { 1, 1.5029510791464e-07, 8.5637164026764e-10, 0, -1.5029510791464e-07, 1, -1.7027156375829e-24, 0, -8.5637164026764e-10, -1.2870846951519e-16, 1, 0, 0.00031375887920149, 4.7095031867339e-18, 0.71085995435715, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r3_lod1.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.00031375885009766, 0, 0.71085995435715, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r5_lod1.msh",
+								name = "front_r5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2157511711121, 0.99773687124252, 0.71085995435715, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r6_lod1.msh",
+								name = "front_r6",
+								transf = { 1, 2.8461283108072e-08, 5.1274500201259e-09, 0, -2.8461283108072e-08, 1, -8.3143394391527e-09, 0, -5.1274500201259e-09, 8.3143394391527e-09, 1, 0, 1.7659015655518, 6.7021761651631e-07, 1.1844416856766, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r7.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r7_lod1.msh",
+								name = "front_r7",
+								transf = { 1, 2.8461283108072e-08, 1.6024381821467e-08, 0, -2.8461283108072e-08, 1, 1.6653122258958e-07, 0, -1.6024378268753e-08, -1.6653122258958e-07, 1, 0, 1.7485966682434, 5.2899122238159e-07, 1.6545143127441, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r8_lod1.msh",
+								name = "front_r8",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7484940290451, 2.644956111908e-07, 1.6578364372253, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r9.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r9_lod1.msh",
+								name = "front_r9",
+								transf = { 1, -2.5371635459237e-08, -2.4408974397261e-08, 0, 2.5371635459237e-08, 1, 6.6465965176121e-08, 0, 2.4408972620904e-08, -6.6465965176121e-08, 1, 0, 3.8236970901489, 1.1548399925232e-06, 1.622189283371, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r10_lod1.msh",
+								name = "front_r10",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2147374153137, 1.8253922462463e-07, 1.6636297702789, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_flying_scotsman_v2/wheels/front_r11.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_r11_lod1.msh",
+								name = "front_r11",
+								transf = { 1, -1.9888680924396e-08, -3.9418985409156e-08, 0, 1.9888682700753e-08, 1, 6.6465965176121e-08, 0, 3.9418985409156e-08, -6.6465965176121e-08, 1, 0, 3.4478874206543, 9.105102662943e-07, 0.82863515615463, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_headlights_fwd_lod1.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.1049489974976, 1.3150274753571e-06, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_coal_lod1.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3404558897018, -0.46859133243561, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_w1_lod1.msh",
+								name = "back_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5461177825928, 3.7252902984619e-07, 0.63193023204803, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_w1_lod1.msh",
+								name = "back_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.92059230804443, 1.2665987014771e-07, 0.63193023204803, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_w1_lod1.msh",
+								name = "back_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.70493316650391, -1.1920928955078e-07, 0.63193023204803, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_w1_lod1.msh",
+								name = "back_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3304567337036, -3.6135315895081e-07, 0.63193023204803, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_headlights_bwd_lod1.msh",
+								name = "back_headlights_bwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2737646102905, -2.4214386940002e-07, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/front_body_lod2.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.1049489974976, 1.3150274753571e-06, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/lner_flying_scotsman_v2/lner_flying_scotsman_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_flying_scotsman_v2/back_body_lod2.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.0099999997764826, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2737646102905, -2.4214386940002e-07, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1925,
+			yearTo = 1975,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_LNER_FLYING_SCOTSMAN_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_LNER_FLYING_SCOTSMAN_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.34901958703995, 0.34901958703995, 0.34901958703995, },
+					frequency = 80,
+					initialAlpha = 1,
+					lifeTime = 14,
+					position = { 4.3650507926941, -1.3150274753571e-06, 4.0500001907349, },
+					size01 = { 0.80000001192093, 10, },
+					velocity = { 0, 8.7427906692028e-08, 10, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.34901958703995, 0.34901958703995, 0.34901958703995, },
+					frequency = 80,
+					initialAlpha = 1,
+					lifeTime = 14,
+					position = { 4.8350510597229, -1.3150274753571e-06, 4.0500001907349, },
+					size01 = { 0.80000001192093, 10, },
+					velocity = { 0, 8.7427906692028e-08, 10, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 5.6600503921509, 1.1419986486435, 0.48699995875359, },
+					size01 = { 0.15000000596046, 3, },
+					velocity = { 3, 0, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 5.6600503921509, -1.1400012969971, 0.48700019717216, },
+					size01 = { 0.15000000596046, 3, },
+					velocity = { 3, 0, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/lner_flying_scotsman_v2/front_w1_lod0.msh", "vehicle/train/lner_flying_scotsman_v2/front_w3_lod0.msh", "vehicle/train/lner_flying_scotsman_v2/front_w4_lod0.msh", "vehicle/train/lner_flying_scotsman_v2/front_w6_lod0.msh", "vehicle/train/lner_flying_scotsman_v2/back_w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 41, },
+					frontForwardParts = { 32, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/lner_flying_scotsman_v2/front_w1_lod1.msh", "vehicle/train/lner_flying_scotsman_v2/front_w3_lod1.msh", "vehicle/train/lner_flying_scotsman_v2/front_w4_lod1.msh", "vehicle/train/lner_flying_scotsman_v2/front_w6_lod1.msh", "vehicle/train/lner_flying_scotsman_v2/back_w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 30, },
+					frontForwardParts = { 22, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 9.8000001907349,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -0.89999997615814,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -3.7000000476837,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -8.6000003814697,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 1655,
+					tractiveEffort = 135,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "",
+				name = "train_steam_modern",
+			},
+			topSpeed = 33.330001831055,
+			weight = 97.800003051758,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 33,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.8649492263794, 0.20499867200851, 1.539999961853, 1, },
+				},
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 33,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5599484443665, -0.84000134468079, 1.7539999485016, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v09",
+		},
+	},
+	version = 1,
+}
+end

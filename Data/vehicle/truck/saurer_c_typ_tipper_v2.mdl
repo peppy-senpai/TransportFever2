@@ -1,0 +1,484 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.9169836044312, 1.068004488945, 2.1207921504974, },
+		bbMin = { -2.6910371780396, -1.0686954259872, -0.017314553260803, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.8040103912354, 1.0683499574661, 1.0690534114838, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_body_lod0.msh",
+						name = "tipper_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6569199942751e-05, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_glass.mtl", "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_interior_glass.mtl", },
+								mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_glass_frt_lod0.msh",
+								name = "universal_glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5197832584381, -0.00069731473922729, 1.6537499427795, 1, },
+							},
+							{
+								materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_glass.mtl", "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_interior_glass.mtl", },
+								mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_glass_lft_lod0.msh",
+								name = "universal_glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0310835838318, 0.64360272884369, 1.6371500492096, 1, },
+							},
+							{
+								materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_glass.mtl", "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_interior_glass.mtl", },
+								mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_glass_rgt_lod0.msh",
+								name = "universal_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0310833454132, -0.64444714784622, 1.6371500492096, 1, },
+							},
+							{
+								materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_glass.mtl", "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_interior_glass.mtl", },
+								mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_glass_bck_lod0.msh",
+								name = "universal_glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.478629976511, -0.00071629881858826, 1.6770000457764, 1, },
+							},
+						},
+						name = "stake_tipper_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_interior.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_interior_lod0.msh",
+						name = "universal_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6569199942751e-05, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+					{
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_w1_lft_lod0.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0150833129883, 0.68659096956253, 0.418850004673, 1, },
+					},
+					{
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_w1_rgt_lod0.msh",
+						name = "universal_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0150833129883, -0.68699711561203, 0.418850004673, 1, },
+					},
+					{
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_w2_lod0.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7374116182327, 6.2309809436556e-06, 0.418850004673, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_headlights_lod0.msh",
+						name = "universal_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6569199942751e-05, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_brakelights_lod0.msh",
+						name = "tipper_brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.0194491147995, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_blinklights_lft_lod0.msh",
+						name = "tipper_blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6569199942751e-05, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_blinklights_rgt_lod0.msh",
+						name = "tipper_blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6569199942751e-05, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+					{
+						animations = {
+							empty_load = {
+								params = {
+									id = "vehicle/truck/saurer_c_typ_tipper_v2/empty_load/tipper_body_cargo.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									empty_load = {
+										params = {
+											id = "vehicle/truck/saurer_c_typ_tipper_v2/empty_load/tipper_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ.mtl", },
+								mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_d1_lod0.msh",
+								name = "tipper_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.23651504516602, 0.00010013580322266, 0.92306697368622, 1, },
+							},
+						},
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_body_cargo_lod0.msh",
+						name = "tipper_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4086847305298, 3.1315394153353e-06, 0.73861449956894, 1, },
+					},
+					{
+						animations = {
+							empty_load = {
+								params = {
+									id = "vehicle/truck/saurer_c_typ_tipper_v2/empty_load/tipper_g.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_g_lod0.msh",
+						name = "tipper_g",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2778137922287, 0, 0.0043096542358398, 1, },
+					},
+					{
+						name = "tipper_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6569199942751e-05, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_lod.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_body_lod1.msh",
+						name = "tipper_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6569199942751e-05, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+					{
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_lod.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_w1_lft_lod1.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0150833129883, 0.68659096956253, 0.418850004673, 1, },
+					},
+					{
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_lod.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_w1_rgt_lod1.msh",
+						name = "universal_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0150833129883, -0.68699711561203, 0.418850004673, 1, },
+					},
+					{
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_lod.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_w2_lod1.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7374116182327, 6.2309809436556e-06, 0.418850004673, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_universal_v2/universal_headlights_lod1.msh",
+						name = "universal_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6569199942751e-05, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_brakelights_lod1.msh",
+						name = "tipper_brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.0194491147995, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_blinklights_lft_lod1.msh",
+						name = "tipper_blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6569199942751e-05, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_blinklights_rgt_lod1.msh",
+						name = "tipper_blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6569199942751e-05, 2.8931208362337e-06, 8.906006487841e-10, 1, },
+					},
+					{
+						animations = {
+							empty_load = {
+								params = {
+									id = "vehicle/truck/saurer_c_typ_tipper_v2/empty_load/tipper_body_cargo.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									empty_load = {
+										params = {
+											id = "vehicle/truck/saurer_c_typ_tipper_v2/empty_load/tipper_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_lod.mtl", },
+								mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_d1_lod1.msh",
+								name = "tipper_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.23651504516602, 0.00010013580322266, 0.92306697368622, 1, },
+							},
+						},
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_lod.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_body_cargo_lod1.msh",
+						name = "tipper_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4086847305298, 3.1315394153353e-06, 0.73861449956894, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/saurer_c_typ_v2/saurer_c_typ_lod.mtl", },
+						mesh = "vehicle/truck/saurer_c_typ_tipper_v2/tipper_body_lod2.msh",
+						name = "tipper_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1942,
+			yearTo = 1995,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_SAURER_C_TYP_TIPPER_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_SAURER_C_TYP_TIPPER_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 25568,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 40,
+					initialAlpha = 0.5,
+					lifeTime = 1,
+					position = { -1.1768200397491, 0.56693881750107, 0.48240429162979, },
+					size01 = { 0.0099999997764826, 0.80000001192093, },
+					velocity = { 0, 4, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/saurer_c_typ_universal_v2/universal_w2_lod0.msh", },
+					blinkLightsLeft = { 13, },
+					blinkLightsRight = { 14, },
+					brakeLights = { 12, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 11, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/saurer_c_typ_universal_v2/universal_w1_lft_lod0.msh", "vehicle/truck/saurer_c_typ_universal_v2/universal_w1_rgt_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/saurer_c_typ_universal_v2/universal_w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/saurer_c_typ_universal_v2/universal_w1_lft_lod1.msh", "vehicle/truck/saurer_c_typ_universal_v2/universal_w1_rgt_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -1.7400000095367,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 64,
+				tractiveEffort = 12,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 16.666666030884,
+			weight = 10,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 18,
+					transf = { 0.98162716627121, 0, -0.19080899655819, 0, 0, 1, 0, 0, 0.19080899655819, 0, 0.98162716627121, 0, 0.68401658535004, -0.28600001335144, 0.5799999833107, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 52,
+									cargoBay = {
+										bbMax = { 0.28999999165535, 0.91500002145767, 1.5499999523163, },
+										bbMin = { -2.5871000289917, -0.91500002145767, 1.0499999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 52,
+									cargoBay = {
+										bbMax = { 0.28999999165535, 0.91500002145767, 1.5499999523163, },
+										bbMin = { -2.5871000289917, -0.91500002145767, 1.0499999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 52,
+									cargoBay = {
+										bbMax = { 0.28999999165535, 0.91500002145767, 1.5499999523163, },
+										bbMin = { -2.5871000289917, -0.91500002145767, 1.0499999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 52,
+									cargoBay = {
+										bbMax = { 0.28999999165535, 0.91500002145767, 1.5499999523163, },
+										bbMin = { -2.5871000289917, -0.91500002145767, 1.0499999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v04",
+		},
+	},
+	version = 1,
+}
+end

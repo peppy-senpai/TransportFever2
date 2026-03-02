@@ -1,0 +1,591 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 4.2660808563232, 1.4711810350418, 3.5781517028809, },
+		bbMin = { -4.2660808563232, -1.4711810350418, -0.047787487506866, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.2660808563232, 1.4711810350418, 1.8129695653915, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_interior_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3422980308533, 1.2982703447342, 2.4908299446106, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_interior_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1349999904633, 1.2982703447342, 2.4908289909363, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_interior_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.017500013113022, 1.2982703447342, 2.4908287525177, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_interior_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1500000953674, 1.2982703447342, 2.4908289909363, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_interior_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/glass5_lft_lod0.msh",
+								name = "glass5_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3397979736328, 1.2982703447342, 2.4908299446106, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_interior_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3422980308533, -1.2982703447342, 2.4908299446106, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_interior_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1349999904633, -1.2982703447342, 2.4908289909363, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_interior_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.017500013113022, -1.2982703447342, 2.4908287525177, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_interior_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1500000953674, -1.2982703447342, 2.4908289909363, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_interior_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/glass5_rgt_lod0.msh",
+								name = "glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3397979736328, -1.2982703447342, 2.4908299446106, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_interior.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/w1_lod0.msh",
+						name = "w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8019000291824, 0, 0.50677227973938, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/w1_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8019000291824, -5.5257426813247e-18, 0.50677227973938, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_all_doors/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_doors_left/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_all_doors/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_doors_left/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_door_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/d1_glass_lod0.msh",
+								name = "d1_glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.40529742836952, 2.3425135612488, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_door.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/d1_lod0.msh",
+						name = "d1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9509358406067, 0.40529742836952, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_all_doors/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_doors_left/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_all_doors/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_doors_left/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_glass.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_door_glass.mtl", },
+								mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/d2_glass_lod0.msh",
+								name = "d2_glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.40529742836952, 2.3450136184692, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865.mtl", "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_door.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/d2_lod0.msh",
+						name = "d2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9509358406067, -0.40529742836952, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_lod.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_lod.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/w1_lod1.msh",
+						name = "w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8019000291824, 0, 0.50677227973938, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_lod.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/w1_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8019000291824, -5.5257426813247e-18, 0.50677227973938, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_all_doors/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_doors_left/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_all_doors/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_doors_left/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_lod.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/d1_lod1.msh",
+						name = "d1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9509358406067, 0.40529742836952, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_all_doors/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_doors_left/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/close_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_all_doors/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_doors_left/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/wagen_bayrisch_1865_v2/open_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_lod.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/d2_lod1.msh",
+						name = "d2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9509358406067, -0.40529742836952, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/wagen_bayrisch_1865_v2/wagen_bayerisch_1865_lod.mtl", },
+						mesh = "vehicle/waggon/wagen_bayrisch_1865_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1862,
+			yearTo = 1890,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_WAGGON_WAGEN_BAYRISCH_1865_DESCRIPTION"),
+			name = _("VEHICLE_WAGGON_WAGEN_BAYRISCH_1865_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/waggon/wagen_bayrisch_1865_v2/w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/wagen_bayrisch_1865_v2/w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 1.7999999523163,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -1.7999999523163,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "waggon_old",
+			},
+			topSpeed = 13.890000343323,
+			weight = 7,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6150000095367, 0.875, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6150000095367, -0.78999996185303, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0800000429153, 0.79999995231628, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.46500000357628, 0.79999995231628, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0050001144409, 0.79999995231628, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { -0.96592581272125, 0.25881913304329, 0, 0, -0.25881913304329, -0.96592581272125, 0, 0, 0, 0, 1, 0, 1.414999961853, 0.88499999046326, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { -0.96592581272125, 0.25881913304329, 0, 0, -0.25881913304329, -0.96592581272125, 0, 0, 0, 0, 1, 0, -0.15000000596046, 0.85999995470047, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { -0.96592581272125, 0.25881913304329, 0, 0, -0.25881913304329, -0.96592581272125, 0, 0, 0, 0, 1, 0, -1.6849999427795, 0.88499999046326, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0800000429153, -0.85499995946884, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.46500000357628, -0.85499995946884, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0050001144409, -0.85499995946884, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { -0.96592581272125, 0.25881913304329, 0, 0, -0.25881913304329, -0.96592581272125, 0, 0, 0, 0, 1, 0, 1.414999961853, -0.76999998092651, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { -0.96592581272125, 0.25881913304329, 0, 0, -0.25881913304329, -0.96592581272125, 0, 0, 0, 0, 1, 0, -0.15000000596046, -0.79499995708466, 1.2300000190735, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 20,
+					transf = { -0.96592581272125, 0.25881913304329, 0, 0, -0.25881913304329, -0.96592581272125, 0, 0, 0, 0, 1, 0, -1.6849999427795, -0.76999998092651, 1.2300000190735, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

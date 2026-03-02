@@ -1,0 +1,537 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.6106669902802, 1.0073376893997, 2.0779242515564, },
+		bbMin = { -2.6144075393677, -1.0073376893997, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.6125373840332, 1.0073376893997, 1.0389621257782, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_body_lod0.msh",
+						name = "tipper_body",
+						transf = { 1, -4.4408920985006e-16, 0, 0, 4.4408920985006e-16, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/ford_m77_v2/ford_m77_glass.mtl", "vehicle/truck/ford_m77_v2/ford_m77_interior_glass.mtl", },
+								mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_glass1_left_frt_lod0.msh",
+								name = "tipper_glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.88552075624466, 0.36860901117325, 1.54114818573, 1, },
+							},
+							{
+								materials = { "vehicle/truck/ford_m77_v2/ford_m77_glass.mtl", "vehicle/truck/ford_m77_v2/ford_m77_interior_glass.mtl", },
+								mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_glass1_right_frt_lod0.msh",
+								name = "tipper_glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.88552075624466, -0.3582389652729, 1.54114818573, 1, },
+							},
+							{
+								materials = { "vehicle/truck/ford_m77_v2/ford_m77_interior_glass.mtl", "vehicle/truck/ford_m77_v2/ford_m77_glass.mtl", },
+								mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_glass1_lft_lod0.msh",
+								name = "tipper_glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.31224909424782, 0.71559321880341, 1.4105994701385, 1, },
+							},
+							{
+								materials = { "vehicle/truck/ford_m77_v2/ford_m77_interior_glass.mtl", "vehicle/truck/ford_m77_v2/ford_m77_glass.mtl", },
+								mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_glass1_rgt_lod0.msh",
+								name = "tipper_glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.31224909424782, -0.70033431053162, 1.4105994701385, 1, },
+							},
+							{
+								materials = { "vehicle/truck/ford_m77_v2/ford_m77_interior_glass.mtl", "vehicle/truck/ford_m77_v2/ford_m77_glass.mtl", },
+								mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_glass1_bck_lod0.msh",
+								name = "tipper_glass1_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.23188550770283, 0.0069135129451752, 1.3640300035477, 1, },
+							},
+						},
+						name = "stake_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77_interior.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_interior_lod0.msh",
+						name = "tipper_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_w1_lft_lod0.msh",
+						name = "tipper_w1_lft",
+						transf = { 1, -4.4408920985006e-16, 0, 0, 4.4408920985006e-16, 1, 0, 0, 0, 0, 1, 0, 1.8648270368576, 0.85227543115616, 0.42948153614998, 1, },
+					},
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_w1_rgt_lod0.msh",
+						name = "tipper_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8648270368576, -0.85227537155151, 0.42948153614998, 1, },
+					},
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_w2_lod0.msh",
+						name = "tipper_w2",
+						transf = { 1, -4.4408920985006e-16, 0, 0, 4.4408920985006e-16, 1, 0, 0, 0, 0, 1, 0, -1.3617250919342, 2.2063849052792e-16, 0.42948153614998, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_headlights_lod0.msh",
+						name = "tipper_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_brakelights_lod0.msh",
+						name = "tipper_brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77.mtl", },
+						mesh = "vehicle/truck/ford_m77_stake_v2/stake_body_cargo_lod0.msh",
+						name = "stake_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "stake_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77_lod.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_body_lod1.msh",
+						name = "tipper_body",
+						transf = { 1, -4.4408920985006e-16, 0, 0, 4.4408920985006e-16, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77_lod.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_w1_lft_lod1.msh",
+						name = "tipper_w1_lft",
+						transf = { 1, -4.4408920985006e-16, 0, 0, 4.4408920985006e-16, 1, 0, 0, 0, 0, 1, 0, 1.8648270368576, 0.85227543115616, 0.42948153614998, 1, },
+					},
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77_lod.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_w1_rgt_lod1.msh",
+						name = "tipper_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8648270368576, -0.85227537155151, 0.42948153614998, 1, },
+					},
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77_lod.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_w2_lod1.msh",
+						name = "tipper_w2",
+						transf = { 1, -4.4408920985006e-16, 0, 0, 4.4408920985006e-16, 1, 0, 0, 0, 0, 1, 0, -1.3617250919342, 2.2063849052792e-16, 0.42948153614998, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_headlights_lod1.msh",
+						name = "tipper_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+						mesh = "vehicle/truck/ford_m77_tipper_v2/tipper_brakelights_lod1.msh",
+						name = "tipper_brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77_lod.mtl", },
+						mesh = "vehicle/truck/ford_m77_stake_v2/railing_body_cargo_lod1.msh",
+						name = "railing_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/ford_m77_v2/ford_m77_lod.mtl", },
+						mesh = "vehicle/truck/ford_m77_stake_v2/stake_body_lod2.msh",
+						name = "stake_body",
+						transf = { 1, -4.4408920985006e-16, 0, 0, 4.4408920985006e-16, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1930,
+			yearTo = 1975,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_FORD_M77_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_FORD_M77_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 18263,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 40,
+					initialAlpha = 0.5,
+					lifeTime = 1,
+					position = { -2.4569118022919, -0.50484728813171, 0.39724776148796, },
+					size01 = { 0.0099999997764826, 0.80000001192093, },
+					velocity = { -4, 0, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/ford_m77_tipper_v2/tipper_w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { 13, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 12, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/ford_m77_tipper_v2/tipper_w1_lft_lod0.msh", "vehicle/truck/ford_m77_tipper_v2/tipper_w1_rgt_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/ford_m77_tipper_v2/tipper_w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/ford_m77_tipper_v2/tipper_w1_lft_lod1.msh", "vehicle/truck/ford_m77_tipper_v2/tipper_w1_rgt_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -1.3600000143051,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 44,
+				tractiveEffort = 9,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 11.109999656677,
+			weight = 2.5,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 15,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.1133169233799, 0.35616317391396, 0.49373802542686, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -0.31999999284744, 0.60000002384186, 2.5, },
+										bbMin = { -2.2000000476837, -0.60000002384186, 0.64499998092651, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -0.31999999284744, 0.60000002384186, 2.5, },
+										bbMin = { -2.2000000476837, -0.60000002384186, 0.64499998092651, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -0.31999999284744, 0.60000002384186, 2.5, },
+										bbMin = { -2.2000000476837, -0.60000002384186, 0.64499998092651, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -0.31999999284744, 0.60000002384186, 2.5, },
+										bbMin = { -2.2000000476837, -0.60000002384186, 0.64499998092651, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -0.31999999284744, 0.60000002384186, 2.5, },
+										bbMin = { -2.2000000476837, -0.60000002384186, 0.64499998092651, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -0.31999999284744, 0.60000002384186, 2.5, },
+										bbMin = { -2.2000000476837, -0.60000002384186, 0.64499998092651, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -0.31999999284744, 0.60000002384186, 2.5, },
+										bbMin = { -2.2000000476837, -0.60000002384186, 0.64499998092651, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -0.31999999284744, 0.60000002384186, 2.5, },
+										bbMin = { -2.2000000476837, -0.60000002384186, 0.64499998092651, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -0.31999999284744, 0.60000002384186, 2.5, },
+										bbMin = { -2.2000000476837, -0.60000002384186, 0.64499998092651, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -0.31999999284744, 0.60000002384186, 2.5, },
+										bbMin = { -2.2000000476837, -0.60000002384186, 0.64499998092651, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -0.31999999284744, 0.60000002384186, 2.5, },
+										bbMin = { -2.2000000476837, -0.60000002384186, 0.64499998092651, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

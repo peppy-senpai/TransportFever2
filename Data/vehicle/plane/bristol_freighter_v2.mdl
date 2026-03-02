@@ -1,0 +1,1622 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.8585014343262, 14.994298934937, 8.158637046814, },
+		bbMin = { -15.205481529236, -14.994297981262, 0.01222950220108, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 10.531991958618, 14.994298934937, 4.0732035636902, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7600402832031, 0.35660377144814, 4.6623568534851, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass2_left_frt_lod0.msh",
+								name = "glass2_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5315413475037, 0.94272404909134, 4.5821809768677, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass3_left_frt_lod0.msh",
+								name = "glass3_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9558780193329, 1.0546112060547, 4.5654268264771, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7600402832031, -0.35660919547081, 4.6623568534851, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass2_right_frt_lod0.msh",
+								name = "glass2_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5315403938293, -0.94272929430008, 4.5821809768677, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass3_right_frt_lod0.msh",
+								name = "glass3_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9558770656586, -1.054615855217, 4.5654273033142, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.95276325941086, 1.3133553266525, 2.2350022792816, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9099078178406, 1.313939332962, 2.4000940322876, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7674221992493, 1.3018696308136, 2.5750448703766, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.829402923584, 0.95923483371735, 3.0101037025452, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.95276260375977, -1.3133579492569, 2.2350022792816, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9099082946777, -1.3139410018921, 2.4000940322876, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7674236297607, -1.3018696308136, 2.5750443935394, 1, },
+							},
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.119478225708, -0.99806767702103, 2.9864985942841, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 0.99862945079803, 0, -0.05233595892787, 0, 0, 1, 0, 0, 0.05233595892787, 0, 0.99862945079803, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/aileron_lft_lod0.msh",
+						name = "aileron_lft",
+						transf = { -0.0042000240646303, 0.99970614910126, 0.023871164768934, 0, -6.1493494740716e-08, -0.023871377110481, 0.99971497058868, 0, 0.99999111890793, 0.0041988254524767, 0.00010032182763098, 0, -3.9170532226563, 11.059999465942, 3.7854826450348, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/aileron_rgt_lod0.msh",
+						name = "aileron_rgt",
+						transf = { 0.0042000245302916, 0.99970614910126, -0.023871164768934, 0, -5.0552028341144e-08, 0.023871377110481, 0.99971497058868, 0, 0.99999111890793, -0.0041988268494606, 0.00010031089914264, 0, -3.9170532226563, -11.059999465942, 3.7854826450348, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 0.99652540683746, 7.3205100648011e-08, 0.083288669586182, 0, -1.4615619647884e-07, 1, 8.697854809725e-07, 0, -0.083288669586182, -8.7893647560122e-07, 0.99652540683746, 0, -13.285847663879, 2.7746224077418e-05, 6.2235918045044, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/elevator_lod0.msh",
+						name = "elevator",
+						transf = { -3.3001180777757e-15, 1, 7.5497894158616e-08, 0, 1.0728440713592e-07, -7.5497894158616e-08, 1, 0, 1, 1.1399865765455e-14, -1.0728440713592e-07, 0, -13.263058662415, 7.6563861739487e-07, 3.1854832172394, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, 2.8807623386383, 3.835289478302, 3.3068633079529, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, -0, 0.88294750452042, 0.46947154402733, 0, 0, -0.46947154402733, 0.88294750452042, 0, 2.8807623386383, -3.835289478302, 3.3068633079529, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_rotor.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor_b1_lft_lod0.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8807623386383, 3.835289478302, 3.3068633079529, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_rotor.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor_b1_lft_lod0.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, -0, 0.88294756412506, 0.46947157382965, 0, 0, -0.46947157382965, 0.88294756412506, 0, 2.8807623386383, -3.835289478302, 3.3068633079529, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/flaps/flap1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/flap1_lod0.msh",
+						name = "flap1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8881709575653, 0, 3.6591210365295, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, -0.0071937749162316, 7.23215009657e-07, 0.6780914068222, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/w1_rgt_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0071937749162316, -7.23215009657e-07, 0.6780914068222, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/w2_bck_lod0.msh",
+								name = "w2_bck",
+								transf = { 0.99500000476837, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, -0.31583857536316, 8.9229234845334e-07, -0.64091968536377, 1, },
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/gear1_lod0.msh",
+						name = "gear1",
+						transf = { 1, 0, 0, 0, 0, 1, -1.3234889800848e-23, 0, 0, 1.3234889800848e-23, 1, 0, -13.96984577179, -1.0587911840679e-22, 2.4895241260529, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/close_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/open_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/landinglights_d1_lft_lod0.msh",
+								name = "landinglights_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, -4.3711388286738e-08, 0, 0, 4.3711388286738e-08, 1, 0, -3.0644426345825, -1.3559992313385, -2.2829203605652, 1, },
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_door.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, 3.0644426345825, 1.3499991893768, 2.2889204025269, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/close_doors_cargo/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/open_doors_cargo/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/landinglights_d1_rgt_lod0.msh",
+								name = "landinglights_d1_rgt",
+								transf = { -1, -1.5099578831723e-07, 8.7422776573476e-08, 0, 1.5099578831723e-07, -1, 1.5099578831723e-07, 0, 8.7422755257194e-08, 1.5099581673894e-07, 1, 0, 3.0644426345825, -1.3459994792938, -2.2829203605652, 1, },
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_door.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 3.0644426345825, -1.3519991636276, 2.2889204025269, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/close_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/open_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_door_glass.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_glass.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/d2_glass_lft_lod0.msh",
+								name = "d2_glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, -4.3711388286738e-08, 0, 0, 4.3711388286738e-08, 1, 0, -0.6796886920929, -0.085732325911522, 0.41115900874138, 1, },
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_door.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/d2_lft_lod0.msh",
+						name = "d2_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, -6.8461666107178, 1.3421094417572, 2.3309364318848, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/positionslights_lod0.msh",
+						name = "positionslights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/strobelights_lod0.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/beaconlights_lod0.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/seats1_lod0.msh",
+								name = "seats1",
+								transf = { -1, 8.7422776573476e-08, -1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, -1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -3.0449998378754, 0.62300002574921, 1.3882516622543, 1, },
+							},
+						},
+						name = "comp1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/seats2_lod0.msh",
+								name = "seats2",
+								transf = { -1, 8.7422776573476e-08, -1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, -1.2246469849341e-16, -1.2246467202363e-16, 1, 0, -0.82499998807907, 0.62300002574921, 1.2673814296722, 1, },
+							},
+						},
+						name = "comp2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/aileron_lft_lod1.msh",
+						name = "aileron_lft",
+						transf = { 6.1232329394369e-17, 0.99999976158142, 0, 0, 0.023871310055256, -1.4616962813842e-18, 0.99971479177475, 0, 0.99971497058868, -6.1214885809611e-17, -0.023871313780546, 0, -3.9170532226563, 11.059999465942, 3.7854826450348, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/aileron_rgt_lod1.msh",
+						name = "aileron_rgt",
+						transf = { 6.1232329394369e-17, 0.99999976158142, 0, 0, -0.0238670501858, 1.4614354092985e-18, 0.99971497058868, 0, 0.99971508979797, -6.1214892427056e-17, 0.02386705391109, 0, -3.9170532226563, -11.059999465942, 3.7854826450348, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 0.99652540683746, 7.3205100648011e-08, 0.083288669586182, 0, -1.461562106897e-07, 1, 8.697854809725e-07, 0, -0.083288669586182, -8.7893647560122e-07, 0.99652540683746, 0, -13.285846710205, 2.7746222258429e-05, 6.2235918045044, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/elevator_lod1.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 1.6292067073209e-07, -9.9760146823763e-24, 1, 0, 1, -6.1232342629258e-17, -1.6292067073209e-07, 0, -13.263058662415, 7.6563861739487e-07, 3.1854829788208, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, 2.8807623386383, 3.835289478302, 3.3068633079529, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, -0, 0.88294756412506, 0.46947157382965, 0, 0, -0.46947157382965, 0.88294756412506, 0, 2.8807623386383, -3.8352897167206, 3.3068633079529, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_rotor.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor_b1_lft_lod1.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8807623386383, 3.835289478302, 3.3068633079529, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_rotor.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor_b1_lft_lod1.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, -0, 0.88294756412506, 0.46947157382965, 0, 0, -0.46947157382965, 0.88294756412506, 0, 2.8807623386383, -3.8352897167206, 3.3068633079529, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/flaps/flap1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/flap1_lod1.msh",
+						name = "flap1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8881709575653, 0, 3.6591210365295, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, -0.0071937749162316, 7.2321495281358e-07, 0.6780914068222, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/w1_rgt_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0071937749162316, -7.2321495281358e-07, 0.6780914068222, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/w2_bck_lod1.msh",
+								name = "w2_bck",
+								transf = { 0.99500000476837, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, -0.31583881378174, 8.9229234845334e-07, -0.64091962575912, 1, },
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/gear1_lod1.msh",
+						name = "gear1",
+						transf = { 1, 0, 0, 0, 0, 1, -1.3234889800848e-23, 0, 0, 1.3234889800848e-23, 1, 0, -13.96984577179, -1.0587911840679e-22, 2.4895241260529, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/close_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/open_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/landinglight_d1_lft_lod1.msh",
+								name = "landinglight_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, -4.3711388286738e-08, 0, 0, 4.3711388286738e-08, 1, 0, -3.0644426345825, -1.3559992313385, -2.2829203605652, 1, },
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, 3.0644426345825, 1.3499991893768, 2.2889204025269, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/close_doors_cargo/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/open_doors_cargo/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/bristol_freighter_v2/landinglight_d1_rgt_lod1.msh",
+								name = "landinglight_d1_rgt",
+								transf = { 1, 1.2246468525852e-16, -1.8491653769406e-23, 0, -1.2246468525852e-16, 1, -4.3711388286738e-08, 0, 6.7705979623474e-37, 4.3711388286738e-08, 1, 0, 3.0644426345825, -1.3559992313385, -2.2829203605652, 1, },
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 3.0644426345825, -1.3499991893768, 2.2889204025269, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/close_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/open_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/d2_lft_lod1.msh",
+						name = "d2_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.8461661338806, 1.3421099185944, 2.3309359550476, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/positionslights_lod1.msh",
+						name = "positionslights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/strobelights_lod1.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/beaconlights_lod1.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_interior_lod.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/interior_lod2.msh",
+						name = "interior",
+						transf = { 0.99999988079071, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.99999988079071, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor1_lft_lod2.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8807623386383, 3.835289478302, 3.3068633079529, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor1_lft_lod2.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, -0, 0.88294756412506, 0.46947157382965, 0, 0, -0.46947157382965, 0.88294756412506, 0, 2.8807623386383, -3.8352897167206, 3.3068633079529, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_rotor.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor_b1_lft_lod2.msh",
+						name = "rotor_b1_lft",
+						transf = { 1, 0, 0, 0, -0, 0.88294756412506, 0.46947157382965, 0, 0, -0.46947157382965, 0.88294756412506, 0, 2.8807623386383, 3.835289478302, 3.3068633079529, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter_rotor.mtl", "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/rotor_b1_lft_lod2.msh",
+						name = "rotor_b1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8807623386383, -3.8352897167206, 3.3068633079529, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/w1_lft_lod2.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, -0.0071937749162316, 7.2321495281358e-07, 0.6780914068222, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/w1_rgt_lod2.msh",
+						name = "w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.0071937749162316, -7.2321495281358e-07, 0.6780914068222, 1, },
+					},
+					{
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/w2_bck_lod2.msh",
+						name = "w2_bck",
+						transf = { 0.99500000476837, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, -14.28563785553, 8.9229234845334e-07, 1.8485999107361, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/close_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/open_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/d1_lft_lod2.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 4.3711388286738e-08, 0, 0, -4.3711388286738e-08, 1, 0, 3.0644426345825, 1.3499991893768, 2.2889204025269, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/close_doors_cargo/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/bristol_freighter_v2/open_doors_cargo/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/bristol_freighter_v2/bristol_freighter.mtl", },
+						mesh = "vehicle/plane/bristol_freighter_v2/d1_rgt_lod2.msh",
+						name = "d1_rgt",
+						transf = { -1, -1.5099578831723e-07, 1.5099578831723e-07, 0, 1.509958309498e-07, -1, 1.5099577410638e-07, 0, 1.5099577410638e-07, 1.5099578831723e-07, 1, 0, 3.0644426345825, -1.3519991636276, 2.2889204025269, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		airVehicle = {
+			configs = {
+				{
+					aileronLeft = {
+						ids = { 18, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 19, },
+						maxAngle = 30,
+					},
+					axleRadii = { },
+					axles = { "vehicle/plane/bristol_freighter_v2/w1_lft_lod0.msh", "vehicle/plane/bristol_freighter_v2/w1_rgt_lod0.msh", },
+					beaconLights = { 39, },
+					elevator = {
+						ids = { 21, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { 26, },
+						maxAngle = 30,
+					},
+					landingLight = { 32, 34, },
+					props = { 22, 23, },
+					propsB = { 24, 25, },
+					rudder = {
+						ids = { 20, },
+						maxAngle = 30,
+					},
+					steeringParts = { 29, },
+					strobeLights = { 38, },
+					wheelRadii = { },
+					wheels = { "vehicle/plane/bristol_freighter_v2/w2_bck_lod0.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 4, },
+						maxAngle = 30,
+					},
+					axleRadii = { },
+					axles = { "vehicle/plane/bristol_freighter_v2/w1_lft_lod1.msh", "vehicle/plane/bristol_freighter_v2/w1_rgt_lod1.msh", },
+					beaconLights = { 23, },
+					elevator = {
+						ids = { 6, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { 11, },
+						maxAngle = 30,
+					},
+					landingLight = { 17, 19, },
+					props = { 7, 8, },
+					propsB = { 9, 10, },
+					rudder = {
+						ids = { 5, },
+						maxAngle = 30,
+					},
+					steeringParts = { 14, },
+					strobeLights = { 22, },
+					wheelRadii = { },
+					wheels = { "vehicle/plane/bristol_freighter_v2/w2_bck_lod1.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { },
+						maxAngle = 0,
+					},
+					aileronRight = {
+						ids = { },
+						maxAngle = 0,
+					},
+					axleRadii = { },
+					axles = { "vehicle/plane/bristol_freighter_v2/w1_lft_lod2.msh", "vehicle/plane/bristol_freighter_v2/w1_rgt_lod2.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { },
+						maxAngle = 0,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { },
+					propsB = { },
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { },
+					wheels = { "vehicle/plane/bristol_freighter_v2/w2_bck_lod2.msh", },
+				},
+			},
+			idleThrust = 0,
+			maxPayload = 0,
+			maxTakeOffWeight = 19980,
+			maxThrust = 40000,
+			timeToFullThrust = 3,
+			topSpeed = 97.220001220703,
+			type = "SMALL",
+			weight = 11780,
+			wingArea = 130,
+		},
+		availability = {
+			yearFrom = 1946,
+			yearTo = 1980,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_PLANE_BRISTOL_FREIGHTER_DESCRIPTION"),
+			name = _("VEHICLE_PLANE_BRISTOL_FREIGHTER_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 42369,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 1.6499999761581, 3.8352999687195, 3.3999998569489, },
+					size01 = { 0.20000000298023, 2, },
+					velocity = { -3.7999999523163, -3.5499999523163, -0.60000002384186, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 1.6499999761581, -3.8352928161621, 3.3999998569489, },
+					size01 = { 0.20000000298023, 2, },
+					velocity = { -3.7999999523163, 3.5499999523163, -0.60000002384186, },
+					velocityDampingFactor = 4,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "AIR",
+			seats = {
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 41,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.1449999809265, 0.61199992895126, 1.4199999570847, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 41,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1449999809265, -0.60299998521805, 1.4359999895096, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 41,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -5.2750000953674, 0.61199992895126, 1.4700000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 41,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -5.2750000953674, -0.60299998521805, 1.4900000095367, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 41,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -6.3649997711182, 0.61199992895126, 1.539999961853, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 41,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.3649997711182, -0.60299998521805, 1.5809998512268, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 41,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -8.8049993515015, 0.44800001382828, 1.5700000524521, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 41,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -8.8049993515015, -0.3629999756813, 1.6299999952316, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 40,
+					transf = { 0.99862951040268, 0, -0.05233595892787, 0, 0, 1, 0, 0, 0.05233595892787, 0, 0.99862951040268, 0, 3.3065664768219, 0.58999997377396, 3.3635573387146, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 40,
+					transf = { 0.99862951040268, 0, -0.05233595892787, 0, 0, 1, 0, 0, 0.05233595892787, 0, 0.99862951040268, 0, 3.3065664768219, -0.5900000333786, 3.3635573387146, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 43,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 1.3849999904633, 0.61199992895126, 1.0800000429153, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 43,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3849999904633, -0.60299998521805, 1.1510000228882, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 43,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.2950000166893, 0.61199992895126, 1.2059999704361, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 43,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.2950000166893, -0.60299998521805, 1.1699999570847, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 43,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.80500000715256, 0.61199992895126, 1.210000038147, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 43,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.80500000715256, -0.60299998521805, 1.2200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 43,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9349999427795, 0.61199992895126, 1.3259998559952, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 43,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -1.9349999427795, -0.60299998521805, 1.2699999809265, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 43,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.0249998569489, 0.61199992895126, 1.4299999475479, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 43,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.0249998569489, -0.60299998521805, 1.3099999427795, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "aircraft_prop_modern",
+			},
+		},
+		transportVehicle = {
+			carrier = "AIR",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { -2.8629999160767, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -8.3071002960205, -0.9200000166893, 1.7999999523163, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 28,
+									cargoBay = {
+										bbMax = { 2.8464999198914, 0.9200000166893, 3.1101999282837, },
+										bbMin = { -2.5629999637604, -0.9200000166893, 1.3000000715256, },
+										cargoFormat = "",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { "comp1_grp", "comp2_grp", },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

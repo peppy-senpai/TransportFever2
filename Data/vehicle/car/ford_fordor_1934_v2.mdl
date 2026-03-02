@@ -1,0 +1,291 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.9786728620529, 0.89206999540329, 1.8434629440308, },
+		bbMin = { -1.9715620279312, -0.89206999540329, -0.029458999633789, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.9751174449921, 0.89206999540329, 0.93646097183228, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_alpha.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_interior_glass.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_glass.mtl", },
+								mesh = "vehicle/car/ford_fordor_1934_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.26995399594307, 0, 1.4883444309235, 1, },
+							},
+							{
+								materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_interior_glass.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_glass.mtl", },
+								mesh = "vehicle/car/ford_fordor_1934_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.13507750630379, 0.60706943273544, 1.4351269006729, 1, },
+							},
+							{
+								materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_interior_glass.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_glass.mtl", },
+								mesh = "vehicle/car/ford_fordor_1934_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.8194580078125, 0.70179402828217, 1.4090664386749, 1, },
+							},
+							{
+								materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_interior_glass.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_glass.mtl", },
+								mesh = "vehicle/car/ford_fordor_1934_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3765094280243, 0.64311093091965, 1.4115844964981, 1, },
+							},
+							{
+								materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_interior_glass.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_glass.mtl", },
+								mesh = "vehicle/car/ford_fordor_1934_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.13507750630379, -0.60706943273544, 1.4351269006729, 1, },
+							},
+							{
+								materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_interior_glass.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_glass.mtl", },
+								mesh = "vehicle/car/ford_fordor_1934_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.8194580078125, -0.70179396867752, 1.4090664386749, 1, },
+							},
+							{
+								materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_interior_glass.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_glass.mtl", },
+								mesh = "vehicle/car/ford_fordor_1934_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3765094280243, -0.64311093091965, 1.4115844964981, 1, },
+							},
+							{
+								materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_interior_glass.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_glass.mtl", },
+								mesh = "vehicle/car/ford_fordor_1934_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7556229829788, 0, 1.4343819618225, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_interior.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_alpha.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 1.432559967041, 0.53944098949432, 0.36741900444031, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_alpha.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, 2.938803139382e-39, -1.5099578831723e-07, 0, -1.8491652191684e-23, 1, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1.2246468525852e-16, -1, 0, 1.432559967041, -0.53944098949432, 0.36741900444031, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934.mtl", "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_alpha.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2823798656464, 0, 0.36741900444031, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_lod.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_lod.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.432559967041, 0.53944098949432, 0.36741900444031, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_lod.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, -1.469401569691e-39, -8.7422776573476e-08, 0, -1.0706201691189e-23, 1, -1.2246468525852e-16, 0, -8.7422776573476e-08, -1.2246468525852e-16, -1, 0, 1.432559967041, -0.53944098949432, 0.36741900444031, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_lod.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2823798656464, 0, 0.36741900444031, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 280,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/ford_fordor_1934_v2/ford_fordor_1934_lod.mtl", },
+						mesh = "vehicle/car/ford_fordor_1934_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 280,
+			visibleTo = 600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1932,
+			yearTo = 1970,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.74509799480438, 0.74509799480438, 0.74509799480438, },
+				},
+				{
+					{ 0.43921566009521, 0.38852286338806, 0.38065358996391, },
+				},
+				{
+					{ 0.12541329860687, 0.27450978755951, 0.27062705159187, },
+				},
+				{
+					{ 0.21960783004761, 0.08999615162611, 0.11362326145172, },
+				},
+				{
+					{ 0.45490193367004, 0.43538185954094, 0.32913491129875, },
+				},
+				{
+					{ 0.10600538551807, 0.33334037661552, 0.47843134403229, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/ford_fordor_1934_v2/w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.10000000149012,
+							upright = false,
+						},
+					},
+					headLights = { 15, },
+					steeringParts = { },
+					wheels = { "vehicle/car/ford_fordor_1934_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/ford_fordor_1934_v2/w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.10000000149012,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/ford_fordor_1934_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = { },
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 44,
+				tractiveEffort = 6.5999999046326,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_old",
+			},
+			topSpeed = 19.440000534058,
+			weight = 1.1000000238419,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 16,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.27799999713898, 0.24499998986721, 0.26800000667572, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

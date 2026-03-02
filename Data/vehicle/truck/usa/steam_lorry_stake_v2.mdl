@@ -1,0 +1,433 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.8326270580292, 1.3858230113983, 2.8961207866669, },
+		bbMin = { -3.481175661087, -1.3540589809418, -0.0023130476474762, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.6569013595581, 1.36994099617, 1.4492169618607, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/steam_lorry_v2/steam_lorry.mtl", },
+						mesh = "vehicle/truck/steam_lorry_stake_v2/stake_body_lod0.msh",
+						name = "stake_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/steam_lorry_v2/steam_lorry.mtl", },
+						mesh = "vehicle/truck/steam_lorry_universal_v2/universal_w1_lod0.msh",
+						name = "universal_w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3525840044022, 0, 0.44661241769791, 1, },
+					},
+					{
+						materials = { "vehicle/truck/steam_lorry_v2/steam_lorry.mtl", },
+						mesh = "vehicle/truck/steam_lorry_universal_v2/universal_w2_lod0.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1208786964417, 0, 0.67116522789001, 1, },
+					},
+					{
+						name = "stake_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/steam_lorry_v2/steam_lorry.mtl", },
+						mesh = "vehicle/truck/steam_lorry_stake_v2/stake_body_lod1.msh",
+						name = "stake_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/steam_lorry_v2/steam_lorry.mtl", },
+						mesh = "vehicle/truck/steam_lorry_universal_v2/universal_w1_lod1.msh",
+						name = "universal_w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3525840044022, 0, 0.44661241769791, 1, },
+					},
+					{
+						materials = { "vehicle/truck/steam_lorry_v2/steam_lorry.mtl", },
+						mesh = "vehicle/truck/steam_lorry_universal_v2/universal_w2_lod1.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1208786964417, 0, 0.67116522789001, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/steam_lorry_v2/steam_lorry.mtl", },
+						mesh = "vehicle/truck/steam_lorry_stake_v2/stake_body_lod2.msh",
+						name = "stake_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1894,
+			yearTo = 1945,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_STEAM_LORRY_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_STEAM_LORRY_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 14610,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.40000000596046, 0.40000000596046, 0.40000000596046, },
+					frequency = 50,
+					initialAlpha = 0.40000000596046,
+					lifeTime = 6,
+					position = { 1.5199999809265, 0, 2.8900001049042, },
+					size01 = { 0.10000000149012, 4, },
+					velocity = { 0, 0, 2.5, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/steam_lorry_universal_v2/universal_w1_lod0.msh", "vehicle/truck/steam_lorry_universal_v2/universal_w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = { },
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+				{
+					axles = { "vehicle/truck/steam_lorry_universal_v2/universal_w1_lod1.msh", "vehicle/truck/steam_lorry_universal_v2/universal_w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = { },
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -2.1199998855591,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 4,
+				tractiveEffort = 5,
+				type = "STEAM",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 6.9400000572205,
+			weight = 1,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 4,
+					transf = { 0.76604443788528, 0.64278757572174, 0, 0, -0.64278757572174, 0.76604443788528, 0, 0, 0, -0, 1, 0, -0.0099999997764826, -0.93999999761581, 0.5, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.47999998927116, 1.2999999523163, 3, },
+										bbMin = { -3, -1.2999999523163, 1.5199999809265, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.47999998927116, 1.2999999523163, 3, },
+										bbMin = { -3, -1.2999999523163, 1.5199999809265, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.47999998927116, 1.2999999523163, 3, },
+										bbMin = { -3, -1.2999999523163, 1.5199999809265, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.47999998927116, 1.2999999523163, 3, },
+										bbMin = { -3, -1.2999999523163, 1.5199999809265, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.47999998927116, 1.2999999523163, 3, },
+										bbMin = { -3, -1.2999999523163, 1.5199999809265, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.47999998927116, 1.2999999523163, 3, },
+										bbMin = { -3, -1.2999999523163, 1.5199999809265, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.47999998927116, 1.2999999523163, 3, },
+										bbMin = { -3, -1.2999999523163, 1.5199999809265, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.47999998927116, 1.2999999523163, 3, },
+										bbMin = { -3, -1.2999999523163, 1.5199999809265, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.47999998927116, 1.2999999523163, 3, },
+										bbMin = { -3, -1.2999999523163, 1.5199999809265, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.47999998927116, 1.2999999523163, 3, },
+										bbMin = { -3, -1.2999999523163, 1.5199999809265, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.47999998927116, 1.2999999523163, 3, },
+										bbMin = { -3, -1.2999999523163, 1.5199999809265, },
+										cargoFormat = "SMALL",
+										childId = 1,
+										gridSize = { },
+										sizePolicy = "NONE",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v02",
+		},
+	},
+	version = 1,
+}
+end

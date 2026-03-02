@@ -1,0 +1,1330 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 7.2308993339539, 1.2963000535965, 4.8053998947144, },
+		bbMin = { -7.8144998550415, -1.2888997793198, 0.0031000077724457, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 7.5226993560791, 1.2925999164581, 2.4011499881744, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass1_frt_lod0.msh",
+								name = "glass1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9643998146057, 0, 2.5103998184204, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9298496246338, 0.45364996790886, 1.9665999412537, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9302501678467, -0.45539999008179, 1.9665999412537, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.5739994049072, 1.0269320011139, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.1979999542236, 1.1273456811905, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.4924998283386, 1.2237873077393, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.4475002288818, 1.2603498697281, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass5_lft_lod0.msh",
+								name = "glass5_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6424999237061, 1.2608644962311, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass6_lft_lod0.msh",
+								name = "glass6_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8450000286102, 1.2611265182495, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass7_lft_lod0.msh",
+								name = "glass7_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0449998378754, 1.2613937854767, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass8_lft_lod0.msh",
+								name = "glass8_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2410000562668, 1.2617104053497, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass9_lft_lod0.msh",
+								name = "glass9_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.21999999880791, 1.2621695995331, 1.9711501598358, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass10_lft_lod0.msh",
+								name = "glass10_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.65594303607941, 1.2625637054443, 1.9711501598358, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass11_lft_lod0.msh",
+								name = "glass11_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6974999904633, 1.2621176242828, 1.9711501598358, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass12_lft_lod0.msh",
+								name = "glass12_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5, 1.2615246772766, 1.9711501598358, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass13_lft_lod0.msh",
+								name = "glass13_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3025000095367, 1.2609317302704, 1.9711501598358, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass14_lft_lod0.msh",
+								name = "glass14_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.102499961853, 1.2603394985199, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass15_lft_lod0.msh",
+								name = "glass15_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.9124999046326, 1.2489490509033, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass16_lft_lod0.msh",
+								name = "glass16_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.0496001243591, 1.0925265550613, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.4475002288818, -1.256054520607, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6424999237061, -1.2564222812653, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8450000286102, -1.2567780017853, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0449998378754, -1.2571482658386, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass5_rgt_lod0.msh",
+								name = "glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2410000562668, -1.2576434612274, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass6_rgt_lod0.msh",
+								name = "glass6_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6974999904633, -1.2575336694717, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass7_rgt_lod0.msh",
+								name = "glass7_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5, -1.2570669651031, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass8_rgt_lod0.msh",
+								name = "glass8_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3070001602173, -1.2287335395813, 1.9799998998642, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass9_rgt_lod0.msh",
+								name = "glass9_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.102499961853, -1.2561341524124, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass10_rgt_lod0.msh",
+								name = "glass10_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.9124999046326, -1.2457206249237, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass11_rgt_lod0.msh",
+								name = "glass11_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.0496001243591, -1.0923620462418, 1.9711500406265, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass1_left_bck_lod0.msh",
+								name = "glass1_left_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.6861362457275, 0.34499999880791, 2.0209999084473, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/glass1_right_bck_lod0.msh",
+								name = "glass1_right_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.685968875885, -0.34950000047684, 2.0209999084473, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/b1_lod0.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/w1_lod0.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89370274543762, 0.00039511919021606, 0.3422500193119, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/w1_lod0.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.93774646520615, 0.00039511919021606, 0.3422500193119, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.494430065155, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/b1_lod0.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4631805419922, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/w1_lod0.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5694777965546, 0.00039511919021606, 0.3422500193119, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/w1_lod0.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.4009275436401, 0.00039511919021606, 0.3422500193119, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d1_glass_rgt_lod0.msh",
+								name = "d1_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.18659472465515, -0.02903887629509, 0.61669999361038, 1, },
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7055945396423, -0.95638066530228, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d2_glass_rgt_lod0.msh",
+								name = "d2_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.18691657483578, 0.032761573791504, 0.61669999361038, 1, },
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d2_rgt_lod0.msh",
+						name = "d2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.9420828819275, -1.0869523286819, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d3_glass_rgt_lod0.msh",
+								name = "d3_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.19426035881042, -0.034317195415497, 0.61669999361038, 1, },
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d3_rgt_lod0.msh",
+						name = "d3_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8612604141235, -1.101337313652, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d4_glass_rgt_lod0.msh",
+								name = "d4_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.19201350212097, 0.033670842647552, 0.61669999361038, 1, },
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d4_rgt_lod0.msh",
+						name = "d4_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.086986541748, -1.2377194166183, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d5_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d5_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d5_glass_rgt_lod0.msh",
+								name = "d5_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.20117348432541, 0.0050641894340515, 0.61669999361038, 1, },
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d5_rgt_lod0.msh",
+						name = "d5_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.60717350244522, -1.2364504337311, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d6_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d6_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d6_glass_rgt_lod0.msh",
+								name = "d6_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.1966537386179, 0.004800021648407, 0.61669999361038, 1, },
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d6_rgt_lod0.msh",
+						name = "d6_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.17915374040604, -1.2361862659454, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d7_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d7_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d7_glass_rgt_lod0.msh",
+								name = "d7_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.2042580395937, 0.0048170685768127, 0.61669999361038, 1, },
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d7_rgt_lod0.msh",
+						name = "d7_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.26124197244644, -1.2362033128738, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d8_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d8_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_glass.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d8_glass_rgt_lod0.msh",
+								name = "d8_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.19245551526546, 0.0048070549964905, 0.61669999361038, 1, },
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d8_rgt_lod0.msh",
+						name = "d8_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0474555492401, -1.2361932992935, 1.3588000535965, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_interior_lod.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/b1_lod1.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/w1_lod1.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89370274543762, 0.00039511919021606, 0.3422500193119, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/w1_lod1.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.93774646520615, 0.00039511919021606, 0.3422500193119, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.494430065155, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/b1_lod1.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4631805419922, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/w1_lod1.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5694777965546, 0.00039511919021606, 0.3422500193119, 1, },
+							},
+							{
+								materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+								mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/w1_lod1.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.4009275436401, 0.00039511919021606, 0.3422500193119, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7055945396423, -0.95638066530228, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d2_rgt_lod1.msh",
+						name = "d2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.9420828819275, -1.0869523286819, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d3_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d3_rgt_lod1.msh",
+						name = "d3_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8612604141235, -1.101337313652, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d4_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d4_rgt_lod1.msh",
+						name = "d4_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.086986541748, -1.2377194166183, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d5_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d5_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d5_rgt_lod1.msh",
+						name = "d5_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.60717350244522, -1.2364504337311, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d6_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d6_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d6_rgt_lod1.msh",
+						name = "d6_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.17915374040604, -1.2361862659454, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d7_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d7_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d7_rgt_lod1.msh",
+						name = "d7_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.26124197244644, -1.2362033128738, 1.3588000535965, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/close_doors_right/d8_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/pcc_1643_pittsburgh_v2/open_doors_right/d8_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/d8_rgt_lod1.msh",
+						name = "d8_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0474555492401, -1.2361932992935, 1.3588000535965, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/tram/pcc_1643_pittsburgh_v2/pcc_1643_pittsburgh_lod.mtl", },
+						mesh = "vehicle/tram/pcc_1643_pittsburgh_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1940,
+			yearTo = 1990,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAM_PCC_1643_PITTSBURGH_DESCRIPTION"),
+			name = _("VEHICLE_TRAM_PCC_1643_PITTSBURGH_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 0.69411766529083, 0.67048704624176, 0.6451210975647, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 121.30000305176, 16.300001144409, },
+					transf = { -4.3711387287537e-10, 0.0099999997764826, 0, 0, 4.3711387287537e-10, 1.9106854717821e-17, 0.0099999997764826, 0, 0.0099999997764826, 4.3711387287537e-10, -4.3711387287537e-10, 0, 6.9204001426697, -0.60499995946884, 2.4200000762939, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 0.72156858444214, 0.67365264892578, 0.63101881742477, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 63.599998474121, 17, },
+					transf = { 0.0099999997764826, 0, 0, 0, 0, -4.3711387287537e-10, 0.0099999997764826, 0, 0, -0.0099999997764826, -4.3711387287537e-10, 0, 0.98000001907349, -1.2300000190735, 2.1099998950958, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 25568,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/tram/pcc_1643_pittsburgh_v2/w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { 61, },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { 62, },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/tram/pcc_1643_pittsburgh_v2/w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { 20, },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { 21, },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 3.4700000286102,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -3.4800000190735,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 100,
+					tractiveEffort = 24,
+					type = "ELECTRIC",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/tram_old/bell3.wav",
+				name = "tram_modern",
+			},
+			topSpeed = 12.5,
+			weight = 16,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRAM",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.1949996948242, 0.50499999523163, 1.0240000486374, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6219999790192, -0.82499998807907, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6219999790192, -0.43099996447563, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2559995651245, -0.55299991369247, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2559995651245, -0.014999981038272, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2559995651245, 0.52100002765656, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2820000648499, -0.43099996447563, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9760000705719, -0.43099996447563, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6699998378754, -0.43099996447563, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.3839998245239, -0.43099996447563, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0819997787476, -0.43099996447563, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7599997520447, -0.38699999451637, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7979998588562, 0.87300002574921, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.1119999885559, 0.87300002574921, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.4000000953674, 0.87300002574921, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6819996833801, 0.87300002574921, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0039999485016, 0.87300002574921, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3199999332428, 0.87300002574921, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6119999885559, 0.87300002574921, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2820000648499, -0.82099997997284, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9760000705719, -0.89099997282028, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6699998378754, -0.82099997997284, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.3839998245239, -0.82099997997284, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0819997787476, -0.82099997997284, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7599997520447, -0.77700001001358, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7979998588562, 0.41300001740456, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.1119999885559, 0.41300001740456, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.4000000953674, 0.41300001740456, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6819996833801, 0.41300001740456, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0039999485016, 0.41300001740456, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3199999332428, 0.41300001740456, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6119999885559, 0.41300001740456, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.00872652977705, -0.99996191263199, 0, 0, 0.99996191263199, -0.00872652977705, 0, 0, 0, 0, 1, 0, -0.54199999570847, 0.84999996423721, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.00872652977705, -0.99996191263199, 0, 0, 0.99996191263199, -0.00872652977705, 0, 0, 0, 0, 1, 0, 0.32199999690056, 0.84999996423721, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.00872652977705, -0.99996191263199, 0, 0, 0.99996191263199, -0.00872652977705, 0, 0, 0, 0, 1, 0, 1.1519999504089, 0.84999996423721, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.00872652977705, -0.99996191263199, 0, 0, 0.99996191263199, -0.00872652977705, 0, 0, 0, 0, 1, 0, 1.9880000352859, 0.84799993038177, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.00872652977705, -0.99996191263199, 0, 0, 0.99996191263199, -0.00872652977705, 0, 0, 0, 0, 1, 0, 2.8159999847412, 0.84799993038177, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.00872652977705, -0.99996191263199, 0, 0, 0.99996191263199, -0.00872652977705, 0, 0, 0, 0, 1, 0, 3.6859998703003, 0.84799993038177, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.00872652977705, -0.99996191263199, 0, 0, 0.99996191263199, -0.00872652977705, 0, 0, 0, 0, 1, 0, 4.5710000991821, 0.84799993038177, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.00872652977705, -0.99996191263199, 0, 0, 0.99996191263199, -0.00872652977705, 0, 0, 0, 0, 1, 0, 5.3309998512268, 0.79299992322922, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 0.0017452349420637, 0.99999845027924, 0, 0, -0.99999845027924, 0.0017452349420637, 0, 0, 0, 0, 1, 0, 4.4429998397827, -0.82399994134903, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 0.0017452349420637, 0.99999845027924, 0, 0, -0.99999845027924, 0.0017452349420637, 0, 0, 0, 0, 1, 0, 3.6410000324249, -0.82399994134903, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 0.0017452349420637, 0.99999845027924, 0, 0, -0.99999845027924, 0.0017452349420637, 0, 0, 0, 0, 1, 0, 2.7949998378754, -0.82399994134903, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 0.0017452349420637, 0.99999845027924, 0, 0, -0.99999845027924, 0.0017452349420637, 0, 0, 0, 0, 1, 0, 1.9569998979568, -0.82399994134903, 0.81400001049042, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 0.0017452349420637, 0.99999845027924, 0, 0, -0.99999845027924, 0.0017452349420637, 0, 0, 0, 0, 1, 0, 1.1490000486374, -0.82399994134903, 0.81400001049042, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.094108276069164, -0.99556195735931, 1.1524939557037e-17, 0, 0.99556195735931, -0.094108276069164, -2.4438586653247e-16, 0, 2.4438586653247e-16, -1.1524940384218e-17, 1, 0, -0.57200002670288, -0.19999998807907, 0.84099996089935, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.71202605962753, -0.70215302705765, 1.1524939557037e-17, 0, 0.70215302705765, -0.71202605962753, -2.4438586653247e-16, 0, 1.7980231745674e-16, -1.6591684017795e-16, 1, 0, 0.54299998283386, -0.19999998807907, 0.84099996089935, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.32969084382057, 0.94408887624741, 1.1524939557037e-17, 0, -0.94408887624741, -0.32969084382057, -2.4438586653247e-16, 0, -2.2692232356113e-16, -9.1452347370034e-17, 1, 0, 1.6380000114441, 0.26499998569489, 0.84099996089935, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 0.27144056558609, 0.96245521306992, 1.1524939557037e-17, 0, -0.96245521306992, 0.27144056558609, -2.4438586653247e-16, 0, -2.3833879244291e-16, 5.5244001671905e-17, 1, 0, 3.3480000495911, 0.26499998569489, 0.84099996089935, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { 0.77328735589981, -0.63405573368073, 1.1524939557037e-17, 0, 0.63405573368073, 0.77328735589981, -2.4438586653247e-16, 0, 1.4604217821759e-16, 1.9628793442069e-16, 1, 0, 4.9530000686646, -0.18399998545647, 0.84099996089935, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 63,
+					transf = { -0.47792536020279, -0.87840038537979, 1.1524939557037e-17, 0, 0.87840038537979, -0.47792536020279, -2.4438586653247e-16, 0, 2.2017671198788e-16, -1.066746941025e-16, 1, 0, 6.396999835968, -0.18399998545647, 0.84099996089935, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "TRAM",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 84,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 4,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v06",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,729 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 7.5163760185242, 1.7233757972717, 4.6825451850891, },
+		bbMin = { -17.535312652588, -1.7233757972717, -0.055805325508118, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 12.525844573975, 1.7233757972717, 2.369175195694, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.38934776186943, 1.6023737137302e-31, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/front_b1_lod0.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/front_w1_lod0.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1060262918472, 0, 0.41210666298866, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.1407837867737, 1.6023737137302e-31, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/front_b2_lod0.msh",
+										name = "front_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/front_w6_lod0.msh",
+										name = "front_w6",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1060262918472, 0, 0.55382996797562, 1, },
+									},
+								},
+								name = "front_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7074263095856, 1.6023737137302e-31, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_w2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_w2_lod0.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4222221374512, 1.6023737137302e-31, 0.81326961517334, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_w2_lod0.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6693856716156, 1.6023737137302e-31, 0.81326961517334, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_w4_lod0.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.083022862672806, 1.6023737137302e-31, 0.81326961517334, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_w2_lod0.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8367109298706, 1.6023737137302e-31, 0.81326961517334, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r1_lod0.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.3214383125305, 1.6023737137302e-31, 0.80566030740738, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r2_lod0.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.083022877573967, 1.6023737137302e-31, 1.1284822225571, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r3_lod0.msh",
+								name = "front_r3",
+								transf = { 1, -4.1263459316099e-09, 3.2164649610422e-08, 0, 4.1263459316099e-09, 1, -1.9519875993357e-10, 0, -3.2164649610422e-08, 1.9519891258923e-10, 1, 0, -0.083022877573967, 1.6023737137302e-31, 1.1284822225571, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r4_lod0.msh",
+								name = "front_r4",
+								transf = { 1, -4.3711388286738e-08, -3.5045228941044e-08, 0, 4.3711388286738e-08, 1, -1.5318756022519e-15, 0, 3.5045228941044e-08, -3.3591377618039e-24, 1, 0, 3.362416267395, 1.6023737137302e-31, 0.80566030740738, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r5_lod0.msh",
+								name = "front_r5",
+								transf = { 1, -4.3711388286738e-08, 1.3353351757672e-09, 0, 4.3711388286738e-08, 1, 5.8369358032649e-17, 0, -1.3353351757672e-09, 1.0723151945459e-24, 1, 0, 3.8428936004639, 1.2331051629831e-24, 0.8874591588974, 1, },
+							},
+							{
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r6_lod0.msh",
+								name = "front_r6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8227046728134, 1.6023737137302e-31, 1.5210338830948, 1, },
+							},
+							{
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r7_lod0.msh",
+								name = "front_r7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.083022862672806, 1.6023737137302e-31, 0.83749836683273, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r8.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r8_lod0.msh",
+								name = "front_r8",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.083022877573967, 1.6023737137302e-31, 1.1284822225571, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_headlights_fwd_lod0.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_b1_lod0.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_w1_lod0.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86881893873215, 0, 0.42593070864677, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_w1_lod0.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86881893873215, 0, 0.42593070864677, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.614771604538, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_b1_lod0.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_w1_lod0.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86881893873215, 0, 0.42593070864677, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_w1_lod0.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86881893873215, 0, 0.42593070864677, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4065794944763, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.398129463196, 1.6023737137302e-31, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/front_b1_lod1.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/front_w1_lod1.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1060262918472, 0, 0.41210666298866, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.5301313400269, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/front_b2_lod1.msh",
+										name = "front_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/front_w6_lod1.msh",
+										name = "front_w6",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1060262918472, 0, 0.55382996797562, 1, },
+									},
+								},
+								name = "front_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3180785179138, 0, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_w2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_w2_lod1.msh",
+								name = "front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8115696907043, 0, 0.81326961517334, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_w2_lod1.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0587334632874, 0, 0.81326961517334, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_w4_lod1.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30632489919662, 0, 0.81326961517334, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_w2_lod1.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4473631381989, 0, 0.81326961517334, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r1_lod1.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7107856273651, 0, 0.80566030740738, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r2_lod1.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30632489919662, 0, 1.1284822225571, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r3_lod1.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30632489919662, 0, 1.1284822225571, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r4_lod1.msh",
+								name = "front_r4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7517638206482, 0, 0.80566030740738, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r5_lod1.msh",
+								name = "front_r5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.232241153717, 0, 0.8874591588974, 1, },
+							},
+							{
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r6_lod1.msh",
+								name = "front_r6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2120525836945, 0, 1.5210338830948, 1, },
+							},
+							{
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r7_lod1.msh",
+								name = "front_r7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30632489919662, 0, 0.83749836683273, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/heavy_mikado_v2/wheels/front_r8.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_locomotive.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_r8_lod1.msh",
+								name = "front_r8",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30632489919662, 0, 1.1284822225571, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/front_headlights_fwd_lod1.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.38934776186943, -1.6023737137302e-31, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.38934776186943, 1.6023737137302e-31, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+								mesh = "vehicle/train/heavy_mikado_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_b1_lod1.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_w1_lod1.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86881893873215, 0, 0.42593070864677, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_w1_lod1.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86881893873215, 0, 0.42593070864677, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.614771604538, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_b1_lod1.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_w1_lod1.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86881893873215, 0, 0.42593070864677, 1, },
+									},
+									{
+										materials = { "vehicle/train/heavy_mikado_v2/heavy_mikado_coalcar.mtl", },
+										mesh = "vehicle/train/heavy_mikado_v2/back_w1_lod1.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.86881893873215, 0, 0.42593070864677, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4065794944763, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.398129463196, 1.6023737137302e-31, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1916,
+			yearTo = 1965,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_HEAVY_MIKADO_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_HEAVY_MIKADO_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 25568,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 4.6593480110168, -1.216500043869, 0.80500000715256, },
+					size01 = { 0.30000001192093, 5, },
+					velocity = { -2.2400000095367, -3.2699999809265, -0.54000002145767, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 4.6593480110168, 1.2259999513626, 0.81000000238419, },
+					size01 = { 0.30000001192093, 5, },
+					velocity = { -1.8700000047684, 3.4900000095367, -0.54000002145767, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.54901957511902, 0.54901957511902, 0.54901957511902, },
+					frequency = 60,
+					initialAlpha = 1,
+					lifeTime = 15,
+					position = { 5.3616299629211, 0, 4.6424775123596, },
+					size01 = { 0.69999998807907, 12, },
+					velocity = { 0, 0, 6, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/heavy_mikado_v2/front_w1_lod0.msh", "vehicle/train/heavy_mikado_v2/front_w2_lod0.msh", "vehicle/train/heavy_mikado_v2/front_w4_lod0.msh", "vehicle/train/heavy_mikado_v2/front_w6_lod0.msh", "vehicle/train/heavy_mikado_v2/back_w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 21, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/heavy_mikado_v2/front_w1_lod1.msh", "vehicle/train/heavy_mikado_v2/front_w2_lod1.msh", "vehicle/train/heavy_mikado_v2/front_w4_lod1.msh", "vehicle/train/heavy_mikado_v2/front_w6_lod1.msh", "vehicle/train/heavy_mikado_v2/back_w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 21, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 1173,
+					tractiveEffort = 228,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/train_steam_old/steam_horn_2.wav",
+				name = "train_steam_modern",
+			},
+			topSpeed = 22.219999313354,
+			weight = 219,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 22,
+					transf = { 0.97029566764832, -0.24192190170288, 0, 0, 0.24192190170288, 0.97029566764832, 0, 0, 0, 0, 1, 0, -6.2299990653992, -1.1499999761581, 2.25, 1, },
+				},
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 22,
+					transf = { 0.97814762592316, 0.2079117000103, 0, 0, -0.2079117000103, 0.97814762592316, 0, 0, 0, 0, 1, 0, -6.2299990653992, 1.0599999427795, 2.25, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v02",
+		},
+	},
+	version = 1,
+}
+end

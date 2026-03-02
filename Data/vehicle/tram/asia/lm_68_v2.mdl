@@ -1,0 +1,3186 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 15.710247039795, 1.3236954212189, 4.8125109672546, },
+		bbMin = { -15.838463783264, -1.3182202577591, -0.005295604467392, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 15.774354934692, 1.3209578990936, 2.4089033603668, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_frt_lod0.msh",
+										name = "front_glass1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.3547697067261, -0.00032934709452093, 2.1834442615509, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_left_frt_lod0.msh",
+										name = "front_glass1_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.3946127891541, 0.63062316179276, 2.7918248176575, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_right_frt_lod0.msh",
+										name = "front_glass1_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.3946132659912, -0.63078629970551, 2.7918248176575, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_right_frt_lod0.msh",
+										name = "front_glass2_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.3932847976685, -0.63051730394363, 3.0305650234222, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_lft_lod0.msh",
+										name = "front_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1369481086731, 0.87419486045837, 2.18536901474, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_lft_lod0.msh",
+										name = "front_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.0858354568481, 1.0924100875854, 2.2171704769135, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass3_lft_lod0.msh",
+										name = "front_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.307954788208, 1.2378408908844, 2.2452478408813, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass4_lft_lod0.msh",
+										name = "front_glass4_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8609552383423, 1.2378377914429, 2.2452409267426, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass5_lft_lod0.msh",
+										name = "front_glass5_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4079551696777, 1.2378346920013, 2.2452342510223, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass6_lft_lod0.msh",
+										name = "front_glass6_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.058045148849487, 1.2378327846527, 2.2452280521393, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass7_lft_lod0.msh",
+										name = "front_glass7_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5080451965332, 1.2378325462341, 2.2452356815338, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass8_lft_lod0.msh",
+										name = "front_glass8_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9660451412201, 1.2378356456757, 2.2452445030212, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass9_lft_lod0.msh",
+										name = "front_glass9_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.4330449104309, 1.2378389835358, 2.2452535629272, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass10_lft_lod0.msh",
+										name = "front_glass10_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.243070602417, 1.0991187095642, 2.2311704158783, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass11_lft_lod0.msh",
+										name = "front_glass11_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2955565452576, 0.86810010671616, 2.1835639476776, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_top_lft_lod0.msh",
+										name = "front_glass1_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.2959880828857, 1.0506016016006, 2.9895362854004, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_top_lft_lod0.msh",
+										name = "front_glass2_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.8609552383423, 1.0505932569504, 2.9895260334015, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass3_top_lft_lod0.msh",
+										name = "front_glass3_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4079551696777, 1.050585269928, 2.9895160198212, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass4_top_lft_lod0.msh",
+										name = "front_glass4_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.058045148849487, 1.0505825281143, 2.9895122051239, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass5_top_lft_lod0.msh",
+										name = "front_glass5_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5080451965332, 1.050588965416, 2.9895122051239, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass6_top_lft_lod0.msh",
+										name = "front_glass6_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9660451412201, 1.0506008863449, 2.9895150661469, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass7_top_lft_lod0.msh",
+										name = "front_glass7_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.4287118911743, 1.050613284111, 2.989518404007, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.0930852890015, -0.89121341705322, 2.1841506958008, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.4569549560547, -1.2243440151215, 2.2448379993439, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass3_rgt_lod0.msh",
+										name = "front_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.1594552993774, -1.2242741584778, 2.2450549602509, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass4_rgt_lod0.msh",
+										name = "front_glass4_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7139554023743, -1.224204659462, 2.245274066925, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass5_rgt_lod0.msh",
+										name = "front_glass5_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8330450057983, -1.224227309227, 2.244588136673, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass6_rgt_lod0.msh",
+										name = "front_glass6_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.2700448036194, -1.2242418527603, 2.2448747158051, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass7_rgt_lod0.msh",
+										name = "front_glass7_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5825448036194, -1.2242562770844, 2.2451069355011, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass8_rgt_lod0.msh",
+										name = "front_glass8_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2494149208069, -0.89396667480469, 2.1836688518524, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_top_rgt_lod0.msh",
+										name = "front_glass1_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.2325077056885, -0.83287906646729, 3.0361013412476, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_top_rgt_lod0.msh",
+										name = "front_glass2_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.0404472351074, -1.0532643795013, 2.934201002121, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass3_top_rgt_lod0.msh",
+										name = "front_glass3_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.4399528503418, -1.0371817350388, 2.9889912605286, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass4_top_rgt_lod0.msh",
+										name = "front_glass4_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.1594552993774, -1.0371239185333, 2.9891490936279, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass5_top_rgt_lod0.msh",
+										name = "front_glass5_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7139554023743, -1.0370502471924, 2.9893488883972, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass6_top_rgt_lod0.msh",
+										name = "front_glass6_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.047514677047729, -1.190192937851, 2.9342150688171, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass7_top_rgt_lod0.msh",
+										name = "front_glass7_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8330450057983, -1.0370773077011, 2.9885900020599, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass8_top_rgt_lod0.msh",
+										name = "front_glass8_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.2700448036194, -1.0371388196945, 2.9889302253723, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass9_top_rgt_lod0.msh",
+										name = "front_glass9_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5719661712646, -1.0371888875961, 2.9892680644989, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass10_top_rgt_lod0.msh",
+										name = "front_glass10_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.195086479187, -1.0574095249176, 2.9342014789581, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass11_top_rgt_lod0.msh",
+										name = "front_glass11_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.4470348358154, -0.8355855345726, 3.0368912220001, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_left_ctr_lod0.msh",
+										name = "front_glass1_left_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.5823841094971, 0.36780247092247, 2.2965049743652, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_center_ctr_lod0.msh",
+										name = "front_glass1_center_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.2261385917664, -0.015505954623222, 2.2965049743652, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_right_ctr_lod0.msh",
+										name = "front_glass1_right_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7141141891479, -0.54793834686279, 2.2965049743652, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_bck_lod0.msh",
+										name = "front_glass1_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.521493434906, 0.00096908042905852, 2.1833539009094, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_left_bck_lod0.msh",
+										name = "front_glass1_left_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.6053881645203, 0.63073939085007, 2.7932121753693, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_right_bck_lod0.msh",
+										name = "front_glass1_right_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.6053891181946, -0.63086438179016, 2.793224811554, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_right_bck_lod0.msh",
+										name = "front_glass2_right_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.6040196418762, -0.63061028718948, 3.0313909053802, 1, },
+									},
+								},
+								name = "front_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68_int.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_interior_lod0.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -1.4254414537618e-08, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_b1_lod0.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod0.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.97534108161926, 0, 0.36890536546707, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod0.msh",
+										name = "front_w2",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, -0.95252394676208, 0, 0.36890524625778, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6808159351349, 6.8382360041142e-07, -1.9620257418751e-08, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_b1_lod0.msh",
+										name = "front_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod0.msh",
+										name = "front_w3",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, 0.9755916595459, 0, 0.3689050078392, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod0.msh",
+										name = "front_w4",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, -0.95227217674255, 0, 0.36890494823456, 1, },
+									},
+								},
+								name = "front_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8119502067566, 6.8382360041142e-07, -1.9620257418751e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d1_glass_lod0.msh",
+										name = "front_d1_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.16691923141479, -0.034877181053162, 2.2001399993896, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d1_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d1_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d1_c1_glass_lod0.msh",
+												name = "front_d1_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.16679668426514, -0.034763932228088, 2.2001399993896, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d1_c1_lod0.msh",
+										name = "front_d1_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.33371639251709, -0.069639205932617, 3.1763734812061e-24, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d1_lod0.msh",
+								name = "front_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.709578037262, -0.87897938489914, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d2_glass_lod0.msh",
+										name = "front_d2_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.16691064834595, 0.034520745277405, 2.2001397609711, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d2_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d2_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d2_c1_glass_lod0.msh",
+												name = "front_d2_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.16679716110229, 0.034762382507324, 2.2001397609711, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d2_c1_lod0.msh",
+										name = "front_d2_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.33370685577393, 0.069284439086914, 1.1646702961638e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d2_lod0.msh",
+								name = "front_d2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3749680519104, -1.1569553613663, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d3_glass_lod0.msh",
+										name = "front_d3_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.20153045654297, -0.00065964460372925, 2.2001399993896, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d3_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d3_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d3_c1_glass_lod0.msh",
+												name = "front_d3_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.2012505531311, 0, 2.2001397609711, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d3_c1_lod0.msh",
+										name = "front_d3_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.40278053283691, -0.00065946578979492, 1.4823076640059e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d3_lod0.msh",
+								name = "front_d3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.75774383544922, -1.1651028394699, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d4_glass_lod0.msh",
+										name = "front_d4_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.20128571987152, -5.185604095459e-05, 2.2001395225525, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d4_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d4_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d4_c1_glass_lod0.msh",
+												name = "front_d4_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.20127999782562, -0.010492980480194, 2.2001395225525, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d4_c1_lod0.msh",
+										name = "front_d4_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.40250632166862, 0.010441303253174, 1.058791120959e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d4_lod0.msh",
+								name = "front_d4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.85257464647293, -1.165710568428, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d5_glass_lod0.msh",
+										name = "front_d5_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.16753840446472, 0.035124957561493, 2.2001392841339, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d5_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d5_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d5_c1_glass_lod0.msh",
+												name = "front_d5_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.16754341125488, 0.035201668739319, 2.2001392841339, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d5_c1_lod0.msh",
+										name = "front_d5_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.33508205413818, 0.070325374603271, 4.7645601232016e-24, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d5_lod0.msh",
+								name = "front_d5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5267252922058, -1.160972237587, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d6_glass_lod0.msh",
+										name = "front_d6_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.16769957542419, -0.035388201475143, 2.2001395225525, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d6_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d6_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d6_c1_glass_lod0.msh",
+												name = "front_d6_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.1675436347723, -0.035199970006943, 2.2001395225525, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d6_c1_lod0.msh",
+										name = "front_d6_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.33524322509766, -0.070590019226074, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d6_lod0.msh",
+								name = "front_d6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.8672251701355, -0.87925404310226, -1.4254414537618e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/front_coupling_lod0.msh",
+								name = "front_coupling",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -2.1417774860311e-06, -1.1324882507324e-06, -1.4254414537618e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_headlights_lod0.msh",
+								name = "front_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_blinklights_rgt_lod0.msh",
+								name = "front_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_blinklights_lft_lod0.msh",
+								name = "front_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_brake_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_brakelights_lod0.msh",
+								name = "front_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_add_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_addlights_lod0.msh",
+								name = "front_addlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1417774860311e-06, 6.8382360041142e-07, -1.0264860961229e-08, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.1160449981689, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_frt_lod0.msh",
+										name = "back_glass1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.8773202896118, -0.00032937526702881, 2.1834442615509, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_left_frt_lod0.msh",
+										name = "back_glass1_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.8374767303467, 0.63062316179276, 2.7918248176575, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_right_frt_lod0.msh",
+										name = "back_glass1_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.8374767303467, -0.63078629970551, 2.7918248176575, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_right_frt_lod0.msh",
+										name = "back_glass2_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.8388051986694, -0.63051730394363, 3.0305650234222, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_lft_lod0.msh",
+										name = "back_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.095142364502, 0.87419486045837, 2.18536901474, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_lft_lod0.msh",
+										name = "back_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.146253585815, 1.0924100875854, 2.2171704769135, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass3_lft_lod0.msh",
+										name = "back_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.92413520813, 1.2378408908844, 2.2452478408813, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass4_lft_lod0.msh",
+										name = "back_glass4_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -13.371134757996, 1.2378377914429, 2.2452409267426, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass5_lft_lod0.msh",
+										name = "back_glass5_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.824133872986, 1.2378346920013, 2.2452344894409, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass6_lft_lod0.msh",
+										name = "back_glass6_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -16.290134429932, 1.2378327846527, 2.2452280521393, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass7_lft_lod0.msh",
+										name = "back_glass7_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -17.740135192871, 1.2378325462341, 2.2452356815338, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass8_lft_lod0.msh",
+										name = "back_glass8_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -19.198133468628, 1.2378356456757, 2.2452445030212, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass9_lft_lod0.msh",
+										name = "back_glass9_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20.665134429932, 1.2378389835358, 2.2452535629272, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass10_lft_lod0.msh",
+										name = "back_glass10_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.475160598755, 1.0991187095642, 2.2311706542969, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass11_lft_lod0.msh",
+										name = "back_glass11_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.527645111084, 0.86810004711151, 2.1835639476776, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_top_lft_lod0.msh",
+										name = "back_glass1_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.936101913452, 1.0506016016006, 2.9895362854004, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_top_lft_lod0.msh",
+										name = "back_glass2_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -13.371134757996, 1.0505932569504, 2.9895262718201, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass3_top_lft_lod0.msh",
+										name = "back_glass3_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.824133872986, 1.050585269928, 2.9895162582397, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass4_top_lft_lod0.msh",
+										name = "back_glass4_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -16.290134429932, 1.050582408905, 2.9895122051239, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass5_top_lft_lod0.msh",
+										name = "back_glass5_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -17.740135192871, 1.050588965416, 2.9895122051239, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass6_top_lft_lod0.msh",
+										name = "back_glass6_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -19.198133468628, 1.0506008863449, 2.9895153045654, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass7_top_lft_lod0.msh",
+										name = "back_glass7_top_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20.660800933838, 1.0506131649017, 2.989518404007, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_rgt_lod0.msh",
+										name = "back_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.1390047073364, -0.89121341705322, 2.1841506958008, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_rgt_lod0.msh",
+										name = "back_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.775135040283, -1.22434425354, 2.2448379993439, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass3_rgt_lod0.msh",
+										name = "back_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -13.072633743286, -1.2242741584778, 2.2450549602509, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass4_rgt_lod0.msh",
+										name = "back_glass4_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.518134117126, -1.224204659462, 2.245274066925, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass5_rgt_lod0.msh",
+										name = "back_glass5_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -18.065135955811, -1.224227309227, 2.244588136673, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass6_rgt_lod0.msh",
+										name = "back_glass6_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -19.502132415771, -1.2242418527603, 2.2448747158051, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass7_rgt_lod0.msh",
+										name = "back_glass7_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20.814632415771, -1.2242562770844, 2.2451069355011, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass8_rgt_lod0.msh",
+										name = "back_glass8_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.481506347656, -0.89396667480469, 2.183669090271, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_top_rgt_lod0.msh",
+										name = "back_glass1_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.9995822906494, -0.83287906646729, 3.0361013412476, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_top_rgt_lod0.msh",
+										name = "back_glass2_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.19164276123, -1.0532643795013, 2.934201002121, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass3_top_rgt_lod0.msh",
+										name = "back_glass3_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.792137145996, -1.0371817350388, 2.9889917373657, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass4_top_rgt_lod0.msh",
+										name = "back_glass4_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -13.072633743286, -1.0371239185333, 2.9891490936279, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass5_top_rgt_lod0.msh",
+										name = "back_glass5_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.518134117126, -1.0370502471924, 2.9893493652344, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass6_top_rgt_lod0.msh",
+										name = "back_glass6_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -16.27960395813, -1.1901931762695, 2.9342150688171, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass7_top_rgt_lod0.msh",
+										name = "back_glass7_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -18.065135955811, -1.0370774269104, 2.9885900020599, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass8_top_rgt_lod0.msh",
+										name = "back_glass8_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -19.502132415771, -1.0371389389038, 2.9889302253723, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass9_top_rgt_lod0.msh",
+										name = "back_glass9_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20.804054260254, -1.0371888875961, 2.9892680644989, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass10_top_rgt_lod0.msh",
+										name = "back_glass10_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.427177429199, -1.0574095249176, 2.9342014789581, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass11_top_rgt_lod0.msh",
+										name = "back_glass11_top_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.679124832153, -0.8355855345726, 3.0368912220001, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_left_ctr_lod0.msh",
+										name = "back_glass1_left_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.649705886841, 0.36780241131783, 2.2965049743652, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_center_ctr_lod0.msh",
+										name = "back_glass1_center_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.005950927734, -0.0155059825629, 2.2965049743652, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_right_ctr_lod0.msh",
+										name = "back_glass1_right_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.5179758071899, -0.54793834686279, 2.2965049743652, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", "vehicle/tram/lm_68_v2/lm_68_int_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_bck_lod0.msh",
+										name = "back_glass1_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.753583908081, 0.0009690523147583, 2.1833539009094, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_left_bck_lod0.msh",
+										name = "back_glass1_left_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.837476730347, 0.63073939085007, 2.7932121753693, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass1_right_bck_lod0.msh",
+										name = "back_glass1_right_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.837476730347, -0.63086438179016, 2.793224811554, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_glass2_right_bck_lod0.msh",
+										name = "back_glass2_right_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.836107254028, -0.63061034679413, 3.0313909053802, 1, },
+									},
+								},
+								name = "back_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 16.232089996338, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68_int.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_interior_lod0.msh",
+								name = "back_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -1.4254414537618e-08, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_b1_lod0.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod0.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.97534108161926, 0, 0.36890536546707, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod0.msh",
+										name = "back_w2",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, -0.95252394676208, 0, 0.36890524625778, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6808159351349, 6.8382360041142e-07, -1.9620257418751e-08, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_b1_lod0.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1457672119141e-06, -6.8382360041142e-07, 1.0264861849407e-08, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod0.msh",
+										name = "back_w3",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, 0.9755916595459, 0, 0.3689050078392, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod0.msh",
+										name = "back_w4",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, -0.95227217674255, 0, 0.36890494823456, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8119502067566, 6.8382360041142e-07, -1.9620257418751e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d1_glass_lod0.msh",
+										name = "back_d1_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.16722923517227, -0.034877181053162, 2.2001399993896, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d1_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d1_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d1_c1_glass_lod0.msh",
+												name = "back_d1_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.16710668802261, -0.034763932228088, 2.2001399993896, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d1_c1_lod0.msh",
+										name = "back_d1_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.33371639251709, -0.069639205932617, 3.1763734812061e-24, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d1_lod0.msh",
+								name = "back_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.709578037262, -0.87897938489914, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d2_glass_lod0.msh",
+										name = "back_d2_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.16660064458847, 0.034520745277405, 2.2001397609711, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d2_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d2_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d2_c1_glass_lod0.msh",
+												name = "back_d2_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.16648715734482, 0.034762382507324, 2.2001397609711, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d2_c1_lod0.msh",
+										name = "back_d2_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.33370685577393, 0.069284439086914, 1.1646702961638e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d2_lod0.msh",
+								name = "back_d2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3749680519104, -1.1569553613663, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d3_glass_lod0.msh",
+										name = "back_d3_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.20184046030045, -0.00065964460372925, 2.2001399993896, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d3_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d3_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d3_c1_glass_lod0.msh",
+												name = "back_d3_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.20156055688858, 0, 2.2001397609711, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d3_c1_lod0.msh",
+										name = "back_d3_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.40278053283691, -0.00065946578979492, 1.4823076640059e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d3_lod0.msh",
+								name = "back_d3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.75774383544922, -1.1651028394699, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d4_glass_lod0.msh",
+										name = "back_d4_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.20097571611404, -5.185604095459e-05, 2.2001395225525, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d4_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d4_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d4_c1_glass_lod0.msh",
+												name = "back_d4_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.20096999406815, -0.010492980480194, 2.2001395225525, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d4_c1_lod0.msh",
+										name = "back_d4_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.40250632166862, 0.010441303253174, 1.058791120959e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d4_lod0.msh",
+								name = "back_d4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.85257464647293, -1.165710568428, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d5_glass_lod0.msh",
+										name = "back_d5_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.1678484082222, 0.035124957561493, 2.2001392841339, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d5_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d5_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d5_c1_glass_lod0.msh",
+												name = "back_d5_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.16785341501236, 0.035201668739319, 2.2001392841339, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d5_c1_lod0.msh",
+										name = "back_d5_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.33508205413818, 0.070325374603271, 4.7645601232016e-24, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d5_lod0.msh",
+								name = "back_d5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5267252922058, -1.160972237587, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d6_glass_lod0.msh",
+										name = "back_d6_glass",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.16738955676556, -0.035388201475143, 2.2001395225525, 1, },
+									},
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d6_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d6_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/tram/lm_68_v2/lm_68_glass.mtl", },
+												mesh = "vehicle/tram/lm_68_v2/back_d6_c1_glass_lod0.msh",
+												name = "back_d6_c1_glass",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.16723363101482, -0.035199970006943, 2.2001395225525, 1, },
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d6_c1_lod0.msh",
+										name = "back_d6_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.33524322509766, -0.070590019226074, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d6_lod0.msh",
+								name = "back_d6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.8672251701355, -0.87925404310226, -1.4254414537618e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_coupling_lod0.msh",
+								name = "back_coupling",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -2.1417774860311e-06, -1.1324882507324e-06, -1.4254414537618e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_headlights_lod0.msh",
+								name = "back_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_blinklights_rgt_lod0.msh",
+								name = "back_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_blinklights_lft_lod0.msh",
+								name = "back_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_brake_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_brakelights_lod0.msh",
+								name = "back_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_add_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_addlights_lod0.msh",
+								name = "back_addlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "back_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1417774860311e-06, 6.8382360041142e-07, -1.0264860961229e-08, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.1160449981689, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68_int_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_interior_lod1.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -1.4254414537618e-08, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_b1_lod1.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod1.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.97534108161926, 0, 0.36890536546707, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod1.msh",
+										name = "front_w2",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, -0.95252394676208, 0, 0.36890524625778, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6808159351349, 6.8382360041142e-07, -1.9620257418751e-08, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_b1_lod1.msh",
+										name = "front_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod1.msh",
+										name = "front_w3",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, 0.9755916595459, 0, 0.3689050078392, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod1.msh",
+										name = "front_w4",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, -0.95227217674255, 0, 0.36890494823456, 1, },
+									},
+								},
+								name = "front_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8119502067566, 6.8382360041142e-07, -1.9620257418751e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d1_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d1_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d1_c1_lod1.msh",
+										name = "front_d1_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.33371639251709, -0.069639205932617, 3.1763734812061e-24, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d1_lod1.msh",
+								name = "front_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.709578037262, -0.87897938489914, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d2_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d2_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d2_c1_lod1.msh",
+										name = "front_d2_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.33370685577393, 0.069284439086914, 1.1646702961638e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d2_lod1.msh",
+								name = "front_d2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3749680519104, -1.1569553613663, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d3_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d3_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d3_c1_lod1.msh",
+										name = "front_d3_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.40278053283691, -0.00065946578979492, 1.4823076640059e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d3_lod1.msh",
+								name = "front_d3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.75774383544922, -1.1651028394699, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d4_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d4_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d4_c1_lod1.msh",
+										name = "front_d4_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.40250632166862, 0.010441303253174, 1.058791120959e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d4_lod1.msh",
+								name = "front_d4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.85257464647293, -1.165710568428, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d5_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d5_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d5_c1_lod1.msh",
+										name = "front_d5_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.33508205413818, 0.070325374603271, 4.7645601232016e-24, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d5_lod1.msh",
+								name = "front_d5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5267252922058, -1.160972237587, -1.4254414537618e-08, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/front_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/front_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/front_d6_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/front_d6_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d6_c1_lod1.msh",
+										name = "front_d6_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.33524322509766, -0.070590019226074, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d6_lod1.msh",
+								name = "front_d6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.8672251701355, -0.87925404310226, -1.4254414537618e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/front_coupling_lod1.msh",
+								name = "front_coupling",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -2.1417774860311e-06, -1.1324882507324e-06, -1.4254414537618e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_headlights_lod1.msh",
+								name = "front_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_blinklights_rgt_lod1.msh",
+								name = "front_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_blinklights_lft_lod1.msh",
+								name = "front_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_brake_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_brakelights_lod1.msh",
+								name = "front_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_add_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_addlights_lod1.msh",
+								name = "front_addlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.1160449981689, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1417774860311e-06, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68_int_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_interior_lod1.msh",
+								name = "back_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1417774860311e-06, -6.8382360041142e-07, -3.9895540204782e-09, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_b1_lod1.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod1.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.97533887624741, 6.8382360041142e-07, 0.36890536546707, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod1.msh",
+										name = "back_w2",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, -0.9525260925293, 6.8382360041142e-07, 0.36890524625778, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6808180809021, 0, -9.3553973457006e-09, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_b1_lod1.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod1.msh",
+										name = "back_w3",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, 0.97558951377869, 6.8382360041142e-07, 0.3689050078392, 1, },
+									},
+									{
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_w1_lod1.msh",
+										name = "back_w4",
+										transf = { 1, 5.3531008455944e-24, -2.4492937051703e-16, 0, -5.3531008455944e-24, 1, 9.9579919666515e-17, 0, 2.4492937051703e-16, -9.9579919666515e-17, 1, 0, -0.95227432250977, 6.8382360041142e-07, 0.36890494823456, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8119480609894, 0, -9.3553973457006e-09, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d1_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d1_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d1_c1_lod1.msh",
+										name = "back_d1_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.33371639251709, -0.069639205932617, 3.1763734812061e-24, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d1_lod1.msh",
+								name = "back_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.7095799446106, -0.87898010015488, -3.9895540204782e-09, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d2_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d2_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d2_c1_lod1.msh",
+										name = "back_d2_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.33370685577393, 0.069284439086914, 1.1646702961638e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d2_lod1.msh",
+								name = "back_d2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.374969959259, -1.156956076622, -3.9895540204782e-09, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d3_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d3_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d3_c1_lod1.msh",
+										name = "back_d3_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.40278053283691, -0.00065946578979492, 1.4823076640059e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d3_lod1.msh",
+								name = "back_d3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.75774598121643, -1.1651035547256, -3.9895540204782e-09, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d4_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d4_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d4_c1_lod1.msh",
+										name = "back_d4_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.40250632166862, 0.010441303253174, 1.058791120959e-23, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d4_lod1.msh",
+								name = "back_d4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.85257256031036, -1.1657112836838, -3.9895540204782e-09, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d5_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d5_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d5_c1_lod1.msh",
+										name = "back_d5_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.33508205413818, 0.070325374603271, 5.293955604795e-24, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d5_lod1.msh",
+								name = "back_d5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5267233848572, -1.1609729528427, -3.9895540204782e-09, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/close_doors_right/back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/lm_68_v2/open_doors_right/back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/close_doors_right/back_d6_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_doors_right = {
+												params = {
+													id = "vehicle/tram/lm_68_v2/open_doors_right/back_d6_c1.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+										mesh = "vehicle/tram/lm_68_v2/back_d6_c1_lod1.msh",
+										name = "back_d6_c1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.33524322509766, -0.070590019226074, 0, 1, },
+									},
+								},
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_d6_lod1.msh",
+								name = "back_d6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.8672232627869, -0.879254758358, -3.9895540204782e-09, 1, },
+							},
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_coupling_lod1.msh",
+								name = "back_coupling",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 16.232088088989, -1.1324882507324e-06, -1.4254414537618e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_headlights_lod1.msh",
+								name = "back_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1417774860311e-06, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_blinklights_rgt_lod1.msh",
+								name = "back_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1417774860311e-06, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_blinklights_lft_lod1.msh",
+								name = "back_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1417774860311e-06, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_brake_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_brakelights_lod1.msh",
+								name = "back_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1417774860311e-06, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+							},
+							{
+								materials = { "vehicle/tram/emissive/tram_add_lights.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_addlights_lod1.msh",
+								name = "back_addlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1417774860311e-06, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.1160449981689, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_body_lod2.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.1160449981689, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/lm_68_v2/lm_68_lod.mtl", },
+								mesh = "vehicle/tram/lm_68_v2/back_body_lod2.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.1160449981689, -6.8382360041142e-07, 1.0264860961229e-08, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1968,
+			yearTo = 2008,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAM_LM_68_DESCRIPTION"),
+			name = _("VEHICLE_TRAM_LM_68_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "front_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NUMBER",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 23.89999961853, 20.700000762939, },
+					transf = { -4.3711387287537e-10, 0.0099999997764826, -6.6002355732162e-17, 0, 4.3711387287537e-10, 8.5109208795622e-17, 0.0099999997764826, 0, 0.0099999997764826, 4.3711387287537e-10, -4.3711387287537e-10, 0, 7.3699998855591, -0.75, 2.9500000476837, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "front_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NUMBER",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 23.89999961853, 20.700000762939, },
+					transf = { 0.0098768835887313, 0.0015643448568881, 0, 0, 6.8379683859643e-11, -4.3173228880811e-10, 0.0099999997764826, 0, 0.0015643448568881, -0.0098768835887313, -4.3711387287537e-10, 0, 7.0949544906616, -0.86000001430511, 2.9500000476837, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "front_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 126.5, 16, },
+					transf = { 0.0097992466762662, 0.0019936794415116, 0, 0, 8.7146498350954e-11, -4.2833867008873e-10, 0.0099999997764826, 0, 0.0019936794415116, -0.0097992466762662, -4.3711387287537e-10, 0, 5.3879551887512, -1.1699993610382, 2.8900001049042, 1, },
+					type = "NEXT_STOP",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "front_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 151.10000610352, 16.89999961853, },
+					transf = { 0.0099999997764826, 4.371138451198e-10, 0, 0, 1.9106851409099e-17, -4.3711387287537e-10, 0.0099999997764826, 0, 4.371138451198e-10, -0.0099999997764826, -4.3711387287537e-10, 0, -0.82504498958588, -1.1749993562698, 2.8900001049042, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "front_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 126.41999816895, 16, },
+					transf = { 0.0097992466762662, -0.001993679208681, 0, 0, -8.7146484473166e-11, -4.2833867008873e-10, 0.0099999997764826, 0, -0.001993679208681, -0.0097992466762662, -4.3711387287537e-10, 0, -6.8299999237061, -0.92499929666519, 2.8900001049042, 1, },
+					type = "NEXT_STOP",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "front_body",
+					color = { 0.058362163603306, 0.058362163603306, 0.058823525905609, },
+					filter = "NUMBER",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 23.33790397644, 21.89999961853, },
+					transf = { 0.0098480759188533, -0.0017364815576002, 0, 0, -7.5904026120011e-11, -4.3047310160915e-10, 0.0099999997764826, 0, -0.0017364815576002, -0.0098480759188533, -4.371138451198e-10, 0, -7.5560445785522, -0.78999930620193, 2.9300000667572, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "front_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NUMBER",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 23.33790397644, 21.89999961853, },
+					transf = { -4.3711387287537e-10, -0.0099999997764826, 0, 0, -4.3711387287537e-10, 1.9106854717821e-17, 0.0099999997764826, 0, -0.0099999997764826, 4.3711387287537e-10, -4.3711387287537e-10, 0, -7.5805449485779, -0.49499928951263, 2.9300000667572, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "back_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NUMBER",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 23.89999961853, 20.700000762939, },
+					transf = { -4.3711387287537e-10, 0.0099999997764826, -6.6002355732162e-17, 0, 4.3711387287537e-10, 8.5109208795622e-17, 0.0099999997764826, 0, 0.0099999997764826, 4.3711387287537e-10, -4.3711387287537e-10, 0, 7.3700451850891, -0.73599934577942, 2.9500000476837, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "back_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NUMBER",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 23.89999961853, 20.700000762939, },
+					transf = { 0.0098768835887313, 0.0015643448568881, 0, 0, 6.8379683859643e-11, -4.3173228880811e-10, 0.0099999997764826, 0, 0.0015643448568881, -0.0098768835887313, -4.3711387287537e-10, 0, 7.097044467926, -0.83699923753738, 2.9500000476837, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "back_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 126.5, 16.10000038147, },
+					transf = { 0.0097992466762662, 0.001993679208681, 0, 0, 8.7146484473166e-11, -4.2833867008873e-10, 0.0099999997764826, 0, 0.001993679208681, -0.0097992466762662, -4.3711387287537e-10, 0, 5.3900451660156, -1.1699993610382, 2.8900001049042, 1, },
+					type = "NEXT_STOP",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "back_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 151.10000610352, 16.89999961853, },
+					transf = { 0.0099999997764826, 4.371138451198e-10, 0, 0, 1.9106851409099e-17, -4.3711387287537e-10, 0.0099999997764826, 0, 4.371138451198e-10, -0.0099999997764826, -4.3711387287537e-10, 0, -0.82295501232147, -1.1749993562698, 2.8900001049042, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "back_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 126.41843414307, 16.10000038147, },
+					transf = { 0.0098162712529302, -0.0019080899655819, 0, 0, -8.3405261863678e-11, -4.2908285258214e-10, 0.0099999997764826, 0, -0.0019080899655819, -0.0098162712529302, -4.3711387287537e-10, 0, -6.8229551315308, -0.92499929666519, 2.8900001049042, 1, },
+					type = "NEXT_STOP",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "back_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NUMBER",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 23.33790397644, 21.89999961853, },
+					transf = { 0.0098480759188533, -0.0017364815576002, 0, 0, -7.5904026120011e-11, -4.3047310160915e-10, 0.0099999997764826, 0, -0.0017364815576002, -0.0098480759188533, -4.371138451198e-10, 0, -7.553955078125, -0.78999930620193, 2.9300000667572, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "back_body",
+					color = { 0.058823525905609, 0.058823525905609, 0.058823525905609, },
+					filter = "NUMBER",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 23.33790397644, 21.89999961853, },
+					transf = { -4.3711387287537e-10, -0.0099999997764826, 0, 0, -4.3711387287537e-10, 1.9106854717821e-17, 0.0099999997764826, 0, -0.0099999997764826, 4.3711387287537e-10, -4.3711387287537e-10, 0, -7.5784549713135, -0.49499928951263, 2.9300000667572, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/tram/lm_68_v2/back_w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 89, 180, },
+					blinkLightsLeft0 = { 88, 179, },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { 87, 178, },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { 89, 180, },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 86, 90, 177, 181, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/tram/lm_68_v2/back_w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 28, 57, },
+					blinkLightsLeft0 = { 27, 56, },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { 26, 55, },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { 28, 57, },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 25, 29, 54, 58, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 11.800000190735,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = 4.3000001907349,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -4.4000000953674,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -11.930000305176,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 180,
+					tractiveEffort = 50,
+					type = "ELECTRIC",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/tram_old/bell3.wav",
+				name = "tram_modern",
+			},
+			topSpeed = 16.670000076294,
+			weight = 20,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRAM",
+			seats = {
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 0.49242353439331, -0.87035566568375, 0, 0, 0.87035566568375, 0.49242353439331, 0, 0, 0, 0, 1, 0, -6.2950000762939, 0.50999999046326, 0.94499999284744, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 0.68199837207794, -0.73135364055634, 0, 0, 0.73135364055634, 0.68199837207794, 0, 0, 0, 0, 1, 0, -5.0700001716614, 0.059999998658895, 0.94499999284744, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { -0.58495754003525, -0.81106388568878, 0, 0, 0.81106388568878, -0.58495754003525, 0, 0, 0, 0, 1, 0, 5.2849998474121, 0.17000000178814, 0.94499999284744, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 0.1839511692524, 0.9829353094101, 0, 0, -0.9829353094101, 0.1839511692524, 0, 0, 0, 0, 1, 0, 4.7449998855591, -0.28999999165535, 0.94499999284744, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6119999885559, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7739999294281, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9820001125336, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.154000043869, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3439998626709, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.49399995803833, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1959999799728, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0539999008179, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9039998054504, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6440000534058, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.4949998855591, 0.875, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2399997711182, 0.47999998927116, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2399997711182, -0.0049999998882413, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2399997711182, -0.47999998927116, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0599999427795, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1849999427795, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3399999141693, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4700000286102, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.664999961853, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2450000047684, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0750000476837, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.914999961853, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7549998760223, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 4.9359998703003, -0.79399996995926, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0599999427795, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1849999427795, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3399999141693, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4700000286102, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.664999961853, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2450000047684, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0750000476837, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.914999961853, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7549998760223, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -3.5599999427795, 0.89499998092651, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 182,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -0.14000000059605, 0.90499997138977, 0.95700001716614, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 6.6799998283386, 0.4379999935627, 0.95700001716614, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 0.49242353439331, -0.87035566568375, 0, 0, 0.87035566568375, 0.49242353439331, 0, 0, 0, 0, 1, 0, -6.2950000762939, 0.50999999046326, 0.94499999284744, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 0.68199837207794, -0.73135364055634, 0, 0, 0.73135364055634, 0.68199837207794, 0, 0, 0, 0, 1, 0, -5.0700001716614, 0.059999998658895, 0.94499999284744, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { -0.58495754003525, -0.81106388568878, 0, 0, 0.81106388568878, -0.58495754003525, 0, 0, 0, 0, 1, 0, 5.2849998474121, 0.17000000178814, 0.94499999284744, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 0.1839511692524, 0.9829353094101, 0, 0, -0.9829353094101, 0.1839511692524, 0, 0, 0, 0, 1, 0, 4.7449998855591, -0.28999999165535, 0.94499999284744, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6119999885559, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7739999294281, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9820001125336, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.154000043869, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3439998626709, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.49399995803833, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1959999799728, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0539999008179, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9039998054504, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6440000534058, 0.93800002336502, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.4949998855591, 0.875, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2399997711182, 0.47999998927116, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2399997711182, -0.0049999998882413, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2399997711182, -0.47999998927116, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0599999427795, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1849999427795, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3399999141693, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4700000286102, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.664999961853, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2450000047684, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0750000476837, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.914999961853, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7549998760223, -0.87100005149841, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 4.9359998703003, -0.79399996995926, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0599999427795, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1849999427795, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3399999141693, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4700000286102, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.664999961853, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2450000047684, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0750000476837, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.914999961853, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7549998760223, -0.42899996042252, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -3.5599999427795, 0.89499998092651, 0.95700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 91,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -0.14000000059605, 0.90499997138977, 0.95700001716614, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "TRAM",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

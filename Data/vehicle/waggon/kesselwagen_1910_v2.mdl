@@ -1,0 +1,363 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 4.1701469421387, 1.5005111694336, 4.0546770095825, },
+		bbMin = { -4.670135974884, -1.5005120038986, -0.027888119220734, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.4201412200928, 1.5005116462708, 2.0412826538086, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910.mtl", },
+						mesh = "vehicle/waggon/kesselwagen_1910_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910.mtl", },
+						mesh = "vehicle/waggon/kesselwagen_1910_v2/w1_lod0.msh",
+						name = "w1",
+						transf = { 0.22835086286068, 0, -0.97357892990112, 0, 0, 1, 0, 0, 0.97357892990112, 0, 0.22835086286068, 0, 2.0001487731934, -2.1540595085412e-08, 0.49279135465622, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910.mtl", },
+						mesh = "vehicle/waggon/kesselwagen_1910_v2/w1_lod0.msh",
+						name = "w2",
+						transf = { -0.27899119257927, 0, -0.96029359102249, 0, 0, 1, 0, 0, 0.96029359102249, 0, -0.27899119257927, 0, -2, -2.1540595085412e-08, 0.49279135465622, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/close_all_doors/g.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/close_doors_left/g.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/close_doors_right/g.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/open_all_doors/g.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/open_doors_left/g.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/open_doors_right/g.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910.mtl", },
+						mesh = "vehicle/waggon/kesselwagen_1910_v2/g_lod0.msh",
+						name = "g",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2077598571777, -5.9303783928044e-07, 3.7897591590881, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910_glass.mtl", },
+								mesh = "vehicle/waggon/kesselwagen_1910_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6403737068176, 0.52553641796112, 2.5873188972473, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910_glass.mtl", },
+								mesh = "vehicle/waggon/kesselwagen_1910_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6403737068176, -0.53515326976776, 2.5873188972473, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910_glass.mtl", },
+								mesh = "vehicle/waggon/kesselwagen_1910_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.9658312797546, 7.4505805969238e-08, 2.650714635849, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910.mtl", },
+						mesh = "vehicle/waggon/kesselwagen_1910_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910.mtl", },
+						mesh = "vehicle/waggon/kesselwagen_1910_v2/w1_lod1.msh",
+						name = "w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0001487731934, -2.1540595085412e-08, 0.49279135465622, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910.mtl", },
+						mesh = "vehicle/waggon/kesselwagen_1910_v2/w1_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2, -2.1540595085412e-08, 0.49279135465622, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/close_all_doors/g.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/close_doors_left/g.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/close_doors_right/g.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/open_all_doors/g.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/open_doors_left/g.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/kesselwagen_1910_v2/open_doors_right/g.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910.mtl", },
+						mesh = "vehicle/waggon/kesselwagen_1910_v2/g_lod1.msh",
+						name = "g",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2077598571777, -5.9303783928044e-07, 3.7897591590881, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910_glass_lod.mtl", },
+								mesh = "vehicle/waggon/kesselwagen_1910_v2/glass_lod1.msh",
+								name = "glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/kesselwagen_1910_v2/kesselwagen_1910.mtl", },
+						mesh = "vehicle/waggon/kesselwagen_1910_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1900,
+			yearTo = 2000,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_WAGGON_KESSELWAGEN_1910_DESCRIPTION"),
+			name = _("VEHICLE_WAGGON_KESSELWAGEN_1910_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 32873,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/waggon/kesselwagen_1910_v2/w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/kesselwagen_1910_v2/w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 2,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -2,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "waggon_freight_old",
+			},
+			topSpeed = 22.219999313354,
+			weight = 10,
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v06",
+		},
+	},
+	version = 1,
+}
+end

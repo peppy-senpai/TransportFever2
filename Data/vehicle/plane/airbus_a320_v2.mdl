@@ -1,0 +1,2936 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 16.216171264648, 17.050912857056, 11.61053943634, },
+		bbMin = { -21.334800720215, -17.050912857056, -0.13520503044128, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 18.775485992432, 17.050912857056, 5.8728723526001, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 3, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 14.413811683655, 0.46504500508308, 4.3560175895691, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass2_left_frt_lod0.msh",
+								name = "glass2_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.875088691711, 1.1032890081406, 4.3560185432434, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass3_left_frt_lod0.msh",
+								name = "glass3_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.102548599243, 1.3843204975128, 4.3560180664063, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 14.413811683655, -0.46504500508308, 4.3560175895691, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass2_right_frt_lod0.msh",
+								name = "glass2_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.875088691711, -1.1032890081406, 4.3560185432434, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass3_right_frt_lod0.msh",
+								name = "glass3_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.102548599243, -1.3843204975128, 4.3560180664063, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.7751445770264, 1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5129284858704, 1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4650003910065, 1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.34000015258789, 1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass5_lft_lod0.msh",
+								name = "glass5_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5, 1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass6_lft_lod0.msh",
+								name = "glass6_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5799999237061, 1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass7_lft_lod0.msh",
+								name = "glass7_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.6700000762939, 1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass8_lft_lod0.msh",
+								name = "glass8_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.5500001907349, 1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass9_lft_lod0.msh",
+								name = "glass9_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.840072631836, 1.8281010389328, 4.1300687789917, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.7751445770264, -1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5129284858704, -1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4650003910065, -1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.34000015258789, -1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass5_rgt_lod0.msh",
+								name = "glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5, -1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass6_rgt_lod0.msh",
+								name = "glass6_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5799999237061, -1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass7_rgt_lod0.msh",
+								name = "glass7_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.6700000762939, -1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass8_rgt_lod0.msh",
+								name = "glass8_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.5500001907349, -1.83578145504, 4.0931940078735, 1, },
+							},
+							{
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior_glass.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_glass.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/glass9_rgt_lod0.msh",
+								name = "glass9_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.840072631836, -1.8281010389328, 4.1300687789917, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_interior.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 3, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/aileron_lft_lod0.msh",
+						name = "aileron_lft",
+						transf = { -0.35165604948997, 0.93023580312729, 0.10487812012434, 0, 0.030286159366369, -0.10066980868578, 0.99445879459381, 0, 0.93563914299011, 0.35288381576538, 0.0072278808802366, 0, -4.390200138092, 14.665137290955, 4.0659122467041, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/aileron_rgt_lod0.msh",
+						name = "aileron_rgt",
+						transf = { 0.3516560792923, 0.93023574352264, -0.10487812012434, 0, 0.030286161229014, 0.10066980868578, 0.99445879459381, 0, 0.93563914299011, -0.35288381576538, 0.0072278808802366, 0, -4.390200138092, -14.665137290955, 4.0659122467041, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 0.91442394256592, -1.0327541531296e-05, 0.40475782752037, 0, -4.3597879994195e-05, 1, 0.00012401115964167, 0, -0.40475782752037, -0.00013104535173625, 0.91442382335663, 0, -18.852626800537, 0, 9.3287038803101, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/elevator_lft_lod0.msh",
+						name = "elevator_lft",
+						transf = { -0.32493567466736, 0.9266049861908, 0.18926182389259, 0, 0.017568118870258, -0.19417269527912, 0.98080998659134, 0, 0.94557291269302, 0.32202515006065, 0.046814933419228, 0, -19.124347686768, 3.5600154399872, 4.7767782211304, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/elevator_rgt_lod0.msh",
+						name = "elevator_rgt",
+						transf = { 0.32493570446968, 0.9266049861908, -0.18926179409027, 0, 0.017568111419678, 0.1941726654768, 0.98080998659134, 0, 0.94557291269302, -0.32202517986298, 0.046814933419228, 0, -19.124347686768, -3.5600154399872, 4.7767782211304, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.00896692276, 5.6979851722717, 1.5422469377518, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.00896692276, -5.6979851722717, 1.5422469377518, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/flaps/flap1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/flap1_lft_lod0.msh",
+								name = "flap1_lft",
+								transf = { -4.3320877551878e-08, 0.99106615781784, 0.13337118923664, 0, 4.9541231561534e-08, -0.13337118923664, 0.99106615781784, 0, 1, 4.9541231561534e-08, -4.3320877551878e-08, 0, -1.3397090435028, 4.8379545211792, 2.6397175788879, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/flaps/flap2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/flap2_lft_lod0.msh",
+								name = "flap2_lft",
+								transf = { -0.30901765823364, 0.94557076692581, 0.10200025141239, 0, 1.9894825697975e-07, -0.10724937170744, 0.99423211812973, 0, 0.95105630159378, 0.30723533034325, 0.033141765743494, 0, -2.262704372406, 10.117405891418, 3.3957347869873, 1, },
+							},
+						},
+						name = "flap_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/flaps/flap1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/flap1_rgt_lod0.msh",
+								name = "flap1_rgt",
+								transf = { 7.4823411466696e-08, 0.99106615781784, -0.13337118923664, 0, 5.3780635056455e-08, 0.13337118923664, 0.99106615781784, 0, 1, -8.1327740986126e-08, -4.3320877551878e-08, 0, -1.3397090435028, -4.8379545211792, 2.6397175788879, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/flaps/flap2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/flap2_rgt_lod0.msh",
+								name = "flap2_rgt",
+								transf = { 0.30901771783829, 0.94557070732117, -0.10200025141239, 0, 2.0235732733909e-07, 0.10724937170744, 0.99423211812973, 0, 0.95105630159378, -0.30723536014557, 0.033141765743494, 0, -2.262704372406, -10.117405891418, 3.3957347869873, 1, },
+							},
+						},
+						name = "flap_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.0099999997764826, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d1_left_frt_lod0.msh",
+								name = "gear_d1_left_frt",
+								transf = { -0.99904817342758, 8.7339572019118e-08, -0.04361929371953, 0, 0.043380346149206, 0.10452838242054, -0.99357533454895, 0, 0.0045593669638038, -0.99452191591263, -0.10442889481783, 0, 13.000968933105, 0.41342788934708, 1.9127221107483, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d2_left_frt_lod0.msh",
+								name = "gear_d2_left_frt",
+								transf = { -1, -1.5099578831723e-07, 1.2246468525852e-16, 0, 7.5497894158616e-08, -0.49999994039536, -0.86602538824081, 0, 1.3076619609365e-07, -0.86602538824081, 0.49999994039536, 0, 11.606271743774, 0.42393034696579, 1.8521610498428, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d1_right_frt_lod0.msh",
+								name = "gear_d1_right_frt",
+								transf = { 0.99904817342758, -5.341822380846e-18, 0.04361929371953, 0, 0.043380342423916, -0.10452838242054, -0.99357533454895, 0, 0.0045594545081258, 0.99452191591263, -0.10442889481783, 0, 13.000968933105, -0.39342790842056, 1.9127221107483, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d2_right_frt_lod0.msh",
+								name = "gear_d2_right_frt",
+								transf = { 1, -8.7422776573476e-08, -1.0706201691189e-23, 0, 4.3711384734024e-08, 0.49999994039536, -0.86602538824081, 0, 7.5710346436608e-08, 0.86602538824081, 0.49999994039536, 0, 11.606271743774, -0.40393033623695, 1.8521610498428, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c1_frt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c1_frt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c1_frt_lod0.msh",
+										name = "gear1_c1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.18986511230469, 0, -1.7885339260101, 1, },
+									},
+									{
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/w1_frt_lod0.msh",
+										name = "w1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3001070022583, -4.440891999239e-18, -2.4157106876373, 1, },
+									},
+									{
+										materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/landinglights_gear_frt_lod0.msh",
+										name = "landinglights_gear_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.502589225769, 0, 0.34967893362045, 1, },
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear1_frt_lod0.msh",
+								name = "gear1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.502589225769, 0.0099999997764826, 2.6503210067749, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d1_lft_lod0.msh",
+								name = "gear_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3528410196304, 0.17629100382328, 1.5303554534912, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c1_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c1_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												animations = {
+													close_wheels = {
+														params = {
+															id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c2_lft.ani",
+														},
+														type = "FILE_REF",
+													},
+													open_wheels = {
+														params = {
+															id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c2_lft.ani",
+														},
+														type = "FILE_REF",
+													},
+												},
+												materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+												mesh = "vehicle/plane/airbus_a320_v2/gear1_c2_lft_lod0.msh",
+												name = "gear1_c2_lft",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.84398585557938, 0.57501596212387, 1, },
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c1_lft_lod0.msh",
+										name = "gear1_c1_lft",
+										transf = { 1, -5.1684719596706e-17, -6.0483406685208e-17, 0, 5.1684719596706e-17, 1, 5.1988173026451e-41, 0, 6.0483406685208e-17, -3.1260681669325e-33, 1, 0, -0.0031733512878418, 0.011381506919861, -1.4023728370667, 1, },
+									},
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c3_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c3_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+												mesh = "vehicle/plane/airbus_a320_v2/w2_lft_lod0.msh",
+												name = "w2_lft",
+												transf = { 1, -5.1684719596706e-17, -6.0483406685208e-17, 0, 5.1684719596706e-17, 1, 5.1988173026451e-41, 0, 6.0483406685208e-17, -3.1260681669325e-33, 1, 0, -1.1920928955078e-07, -0.0070409774780273, -2.2665998935699, 1, },
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c3_lft_lod0.msh",
+										name = "gear1_c3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear1_lft_lod0.msh",
+								name = "gear1_lft",
+								transf = { 1, 5.1684719596706e-17, 6.0483406685208e-17, 0, -5.1684719596706e-17, 1, -3.1260681669325e-33, 0, -6.0483406685208e-17, 0, 1, 0, -1.3928076028824, 3.7508232593536, 2.7667977809906, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d1_rgt_lod0.msh",
+								name = "gear_d1_rgt",
+								transf = { 0.99999839067459, -0.0017453283071518, 0, 0, 0.0017453283071518, 0.99999839067459, 0, 0, 0, 0, 1, 0, -1.3528410196304, -0.15629097819328, 1.5303554534912, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c1_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c1_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												animations = {
+													close_wheels = {
+														params = {
+															id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c2_rgt.ani",
+														},
+														type = "FILE_REF",
+													},
+													open_wheels = {
+														params = {
+															id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c2_rgt.ani",
+														},
+														type = "FILE_REF",
+													},
+												},
+												materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+												mesh = "vehicle/plane/airbus_a320_v2/gear1_c2_rgt_lod0.msh",
+												name = "gear1_c2_rgt",
+												transf = { 1, -5.5492165553166e-30, 8.3790850187514e-37, 0, 3.155443620884e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, 2.8421708795129e-16, -0.84398585557938, 0.57501596212387, 1, },
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c1_rgt_lod0.msh",
+										name = "gear1_c1_rgt",
+										transf = { 1, 5.1684719596706e-17, 6.5718359945055e-37, 0, -5.1684719596706e-17, 1, 0, 0, 6.0743734895196e-23, 5.2939559203394e-23, 1, 0, 0.0031733512878418, 0.01138162612915, -1.4023728370667, 1, },
+									},
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c3_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c3_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+												mesh = "vehicle/plane/airbus_a320_v2/w2_rgt_lod0.msh",
+												name = "w2_rgt",
+												transf = { 1, 5.1684719596706e-17, 1.3151060979762e-36, 0, -5.1684719596706e-17, 1, 0, 0, 6.0743734895196e-23, 5.2939559203394e-23, 1, 0, 1.1920928955078e-07, -0.0070409774780273, -2.2666366100311, 1, },
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c3_rgt_lod0.msh",
+										name = "gear1_c3_rgt",
+										transf = { 1, -6.3293761692342e-30, 7.8041756918025e-24, 0, 6.8902062167234e-30, 1, 0, 0, 6.0743734895196e-23, 5.2939559203394e-23, 1, 0, 0, 0, 0, 1, },
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear1_rgt_lod0.msh",
+								name = "gear1_rgt",
+								transf = { -1, 5.1684719596706e-17, 1.5099578831723e-07, 0, 2.2748047274535e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -1.3928076028824, -3.7308232784271, 2.7667977809906, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_door.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.664085388184, 0, 3, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_door.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/d2_lft_lod0.msh",
+						name = "d2_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.808756828308, 0, 3, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_door.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 11.664085388184, 0, 3, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_door.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/d2_rgt_lod0.msh",
+						name = "d2_rgt",
+						transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -12.808756828308, 0, 3, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_wheels/g_landinglight_wing_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_wheels/g_landinglight_wing_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/landinglights_lft_lod0.msh",
+								name = "landinglights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/g_landinglight_wing_lft_lod0.msh",
+						name = "g_landinglight_wing_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.42267593741417, 1.9023313522339, 2.151570558548, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_wheels/g_landinglight_wing_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_wheels/g_landinglight_wing_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/landinglights_rgt_lod0.msh",
+								name = "landinglights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/g_landinglight_wing_rgt_lod0.msh",
+						name = "g_landinglight_wing_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.4226758480072, -1.9023313522339, 2.151570558548, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/beaconlights_lod0.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 3, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/positionlights_lod0.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30000001192093, 0, 3, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/strobelights_lod0.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30000001192093, 0, 3, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 3, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 3, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/aileron_lft_lod1.msh",
+						name = "aileron_lft",
+						transf = { -0.35165604948997, 0.93023580312729, 0.10487812012434, 0, 0.030286159366369, -0.10066980868578, 0.99445879459381, 0, 0.93563914299011, 0.35288381576538, 0.0072278808802366, 0, -4.3901748657227, 14.665137290955, 4.0659122467041, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/aileron_rgt_lod1.msh",
+						name = "aileron_rgt",
+						transf = { 0.3516560792923, 0.93023574352264, -0.10487812012434, 0, 0.030286161229014, 0.10066980868578, 0.99445879459381, 0, 0.93563914299011, -0.35288381576538, 0.0072278808802366, 0, -4.3901748657227, -14.665137290955, 4.0659122467041, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 0.91442394256592, -1.0327541531296e-05, 0.40475782752037, 0, -4.3597879994195e-05, 1, 0.00012401115964167, 0, -0.40475782752037, -0.00013104535173625, 0.91442382335663, 0, -18.852626800537, 0, 9.3287038803101, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/elevator_lft_lod1.msh",
+						name = "elevator_lft",
+						transf = { -0.32493567466736, 0.9266049861908, 0.18926177918911, 0, 0.017568105831742, -0.19417263567448, 0.98080998659134, 0, 0.94557291269302, 0.32202515006065, 0.046814925968647, 0, -19.124347686768, 3.5600154399872, 4.7767782211304, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/elevator_rgt_lod1.msh",
+						name = "elevator_rgt",
+						transf = { 0.32493570446968, 0.9266049861908, -0.18926179409027, 0, 0.017568111419678, 0.1941726654768, 0.98080998659134, 0, 0.94557291269302, -0.32202517986298, 0.046814933419228, 0, -19.124347686768, -3.5600154399872, 4.7767782211304, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.00896692276, 5.6979851722717, 1.5422469377518, 1, },
+					},
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.00896692276, -5.6979851722717, 1.5422469377518, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/flaps/flap1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/flap1_lft_lod1.msh",
+								name = "flap1_lft",
+								transf = { -4.3320877551878e-08, 0.99106615781784, 0.13337118923664, 0, 4.9541231561534e-08, -0.13337118923664, 0.99106615781784, 0, 1, 4.9541231561534e-08, -4.3320877551878e-08, 0, -1.3397090435028, 4.8379545211792, 2.6397175788879, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/flaps/flap2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/flap2_lft_lod1.msh",
+								name = "flap2_lft",
+								transf = { -0.30901765823364, 0.94557076692581, 0.10200025141239, 0, 1.9894825697975e-07, -0.10724937170744, 0.99423211812973, 0, 0.95105630159378, 0.30723533034325, 0.033141765743494, 0, -2.262704372406, 10.117405891418, 3.3957347869873, 1, },
+							},
+						},
+						name = "flap_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/flaps/flap1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/flap1_rgt_lod1.msh",
+								name = "flap1_rgt",
+								transf = { 7.4823411466696e-08, 0.99106615781784, -0.13337118923664, 0, 5.3780635056455e-08, 0.13337118923664, 0.99106615781784, 0, 1, -8.1327740986126e-08, -4.3320877551878e-08, 0, -1.3397090435028, -4.8379545211792, 2.6397175788879, 1, },
+							},
+							{
+								animations = {
+									flaps = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/flaps/flap2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/flap2_rgt_lod1.msh",
+								name = "flap2_rgt",
+								transf = { 0.30901771783829, 0.94557070732117, -0.10200025141239, 0, 2.0235732733909e-07, 0.10724937170744, 0.99423211812973, 0, 0.95105630159378, -0.30723536014557, 0.033141765743494, 0, -2.262704372406, -10.117405891418, 3.3957347869873, 1, },
+							},
+						},
+						name = "flap_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d1_left_frt_lod1.msh",
+								name = "gear_d1_left_frt",
+								transf = { -0.99904817342758, 8.7339572019118e-08, -0.04361929371953, 0, 0.043380346149206, 0.10452838242054, -0.99357533454895, 0, 0.0045593669638038, -0.99452191591263, -0.10442889481783, 0, 13.000968933105, 0.4034278690815, 1.9127221107483, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d2_left_frt_lod1.msh",
+								name = "gear_d2_left_frt",
+								transf = { -1, -1.5099578831723e-07, 1.2246468525852e-16, 0, 7.5497894158616e-08, -0.49999994039536, -0.86602538824081, 0, 1.3076619609365e-07, -0.86602538824081, 0.49999994039536, 0, 11.606271743774, 0.41393035650253, 1.8521610498428, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d1_right_frt_lod1.msh",
+								name = "gear_d1_right_frt",
+								transf = { 0.99904817342758, -5.341822380846e-18, 0.04361929371953, 0, 0.043380342423916, -0.10452838242054, -0.99357533454895, 0, 0.0045594545081258, 0.99452191591263, -0.10442889481783, 0, 13.000968933105, -0.4034278690815, 1.9127221107483, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d2_right_frt_lod1.msh",
+								name = "gear_d2_right_frt",
+								transf = { 1, -8.7422776573476e-08, -1.0706201691189e-23, 0, 4.3711384734024e-08, 0.49999994039536, -0.86602538824081, 0, 7.5710346436608e-08, 0.86602538824081, 0.49999994039536, 0, 11.606271743774, -0.41393035650253, 1.8521610498428, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c1_frt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c1_frt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c1_frt_lod1.msh",
+										name = "gear1_c1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.18986511230469, 0, -1.7885339260101, 1, },
+									},
+									{
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/w1_frt_lod1.msh",
+										name = "w1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3001070022583, -4.9388592774892e-18, -2.4157106876373, 1, },
+									},
+									{
+										materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/landinglights_gear_frt_lod1.msh",
+										name = "landinglights_gear_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.502589225769, 0, 0.34967893362045, 1, },
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear1_frt_lod1.msh",
+								name = "gear1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.502589225769, 0, 2.6503210067749, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d1_lft_lod1.msh",
+								name = "gear_d1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3528410196304, 0.16629099845886, 1.5303554534912, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c1_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c1_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												animations = {
+													close_wheels = {
+														params = {
+															id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c2_lft.ani",
+														},
+														type = "FILE_REF",
+													},
+													open_wheels = {
+														params = {
+															id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c2_lft.ani",
+														},
+														type = "FILE_REF",
+													},
+												},
+												materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+												mesh = "vehicle/plane/airbus_a320_v2/gear1_c2_lft_lod1.msh",
+												name = "gear1_c2_lft",
+												transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.84508091211319, 0.57364094257355, 1, },
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c1_lft_lod1.msh",
+										name = "gear1_c1_lft",
+										transf = { 1, -5.1684719596706e-17, -6.0483406685208e-17, 0, 5.1684719596706e-17, 1, 5.1988173026451e-41, 0, 6.0483406685208e-17, -3.1260681669325e-33, 1, 0, -0.0031733512878418, 0.012476492673159, -1.4009977579117, 1, },
+									},
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c3_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c3_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+												mesh = "vehicle/plane/airbus_a320_v2/w2_lft_lod1.msh",
+												name = "w2_lft",
+												transf = { 1, -5.1684719596706e-17, -6.0483406685208e-17, 0, 5.1684719596706e-17, 1, 5.1988173026451e-41, 0, 6.0483406685208e-17, -3.1260681669325e-33, 1, 0, -1.1920928955078e-07, -0.0070409774780273, -2.2666366100311, 1, },
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c3_lft_lod1.msh",
+										name = "gear1_c3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear1_lft_lod1.msh",
+								name = "gear1_lft",
+								transf = { 1, 5.1684719596706e-17, 6.0483406685208e-17, 0, -5.1684719596706e-17, 1, -3.1260681669325e-33, 0, -6.0483406685208e-17, 0, 1, 0, -1.3928076028824, 3.7408232688904, 2.7667977809906, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear_d1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear_d1_rgt_lod1.msh",
+								name = "gear_d1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3528410196304, -0.16629099845886, 1.5303554534912, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c1_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c1_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												animations = {
+													close_wheels = {
+														params = {
+															id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c2_rgt.ani",
+														},
+														type = "FILE_REF",
+													},
+													open_wheels = {
+														params = {
+															id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c2_rgt.ani",
+														},
+														type = "FILE_REF",
+													},
+												},
+												materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+												mesh = "vehicle/plane/airbus_a320_v2/gear1_c2_rgt_lod1.msh",
+												name = "gear1_c2_rgt",
+												transf = { 1, -5.5492165553166e-30, 8.3790850187514e-37, 0, 3.155443620884e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, -2.8421708795129e-16, -0.84508085250854, 0.57364094257355, 1, },
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c1_rgt_lod1.msh",
+										name = "gear1_c1_rgt",
+										transf = { 1, 5.1684719596706e-17, 6.5718359945055e-37, 0, -5.1684719596706e-17, 1, 0, 0, 6.0743734895196e-23, 5.2939559203394e-23, 1, 0, 0.0031733512878418, 0.012476444244385, -1.4009977579117, 1, },
+									},
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c3_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c3_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+												mesh = "vehicle/plane/airbus_a320_v2/w2_rgt_lod1.msh",
+												name = "w2_rgt",
+												transf = { 1, 5.1684719596706e-17, 1.3151060979762e-36, 0, -5.1684719596706e-17, 1, 0, 0, 6.0743734895196e-23, 5.2939559203394e-23, 1, 0, 1.1920928955078e-07, -0.0070409774780273, -2.2666366100311, 1, },
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c3_rgt_lod1.msh",
+										name = "gear1_c3_rgt",
+										transf = { 1, -6.3293761692342e-30, 7.8041756918025e-24, 0, 6.8902062167234e-30, 1, 0, 0, 6.0743734895196e-23, 5.2939559203394e-23, 1, 0, 0, 0, 0, 1, },
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear1_rgt_lod1.msh",
+								name = "gear1_rgt",
+								transf = { -1, 5.1684719596706e-17, 1.5099578831723e-07, 0, 2.2748047274535e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -1.3928076028824, -3.7408232688904, 2.7667977809906, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.664085388184, 0, 3, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_doors_left/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/d2_lft_lod1.msh",
+						name = "d2_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.808756828308, 0, 3, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { -1, 0, 8.7422776573476e-08, 0, 7.6427427076918e-15, -1, 8.7422776573476e-08, 0, 8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 11.664085388184, 0, 3, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_doors_right/d2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/d2_rgt_lod1.msh",
+						name = "d2_rgt",
+						transf = { -1, 0, 8.7422776573476e-08, 0, 7.6427427076918e-15, -1, 8.7422776573476e-08, 0, 8.7422776573476e-08, 8.7422776573476e-08, 1, 0, -12.808756828308, 0, 3, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_wheels/g_landinglight_wing_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_wheels/g_landinglight_wing_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/landinglights_lft_lod1.msh",
+								name = "landinglights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/g_landinglight_wing_lft_lod1.msh",
+						name = "g_landinglight_wing_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.42267593741417, 1.9023313522339, 2.151570558548, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/close_wheels/g_landinglight_wing_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/airbus_a320_v2/open_wheels/g_landinglight_wing_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/landinglights_rgt_lod1.msh",
+								name = "landinglights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/g_landinglight_wing_rgt_lod1.msh",
+						name = "g_landinglight_wing_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.4226758480072, -1.9023313522339, 2.151570558548, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/beaconlights_lod1.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 3, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/positionlights_lod1.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30000001192093, 0, 3, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/strobelights_lod1.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.30000001192093, 0, 3, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+						mesh = "vehicle/plane/airbus_a320_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 3, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/w1_frt_lod2.msh",
+										name = "w1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3001070022583, -4.9388592774892e-18, -2.4157106876373, 1, },
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear1_frt_lod2.msh",
+								name = "gear1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.502589225769, 0.0099999997764826, 2.6503210067749, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.0099999997764826, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c3_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c3_lft.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+												mesh = "vehicle/plane/airbus_a320_v2/w2_lft_lod2.msh",
+												name = "w2_lft",
+												transf = { 1, -5.1684719596706e-17, -6.0483406685208e-17, 0, 5.1684719596706e-17, 1, 5.1988173026451e-41, 0, 6.0483406685208e-17, -3.1260681669325e-33, 1, 0, -1.1920928955078e-07, -0.0070409774780273, -2.2666366100311, 1, },
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c3_lft_lod2.msh",
+										name = "gear1_c3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear1_lft_lod2.msh",
+								name = "gear1_lft",
+								transf = { 1, 5.1684719596706e-17, 6.0483406685208e-17, 0, -5.1684719596706e-17, 1, -3.1260681669325e-33, 0, -6.0483406685208e-17, 0, 1, 0, -1.3928076028824, 3.7508232593536, 2.7667977809906, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.0099999997764826, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										animations = {
+											close_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/close_wheels/gear1_c3_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+											open_wheels = {
+												params = {
+													id = "vehicle/plane/airbus_a320_v2/open_wheels/gear1_c3_rgt.ani",
+												},
+												type = "FILE_REF",
+											},
+										},
+										children = {
+											{
+												materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+												mesh = "vehicle/plane/airbus_a320_v2/w2_rgt_lod2.msh",
+												name = "w2_rgt",
+												transf = { 1, 5.1684719596706e-17, 6.0483386832873e-17, 0, -5.1684719596706e-17, 1, 0, 0, -6.0483333893314e-17, 5.2939559203394e-23, 1, 0, 1.1920928955078e-07, -0.0070409774780273, -2.2666366100311, 1, },
+											},
+										},
+										materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", },
+										mesh = "vehicle/plane/airbus_a320_v2/gear1_c3_rgt_lod2.msh",
+										name = "gear1_c3_rgt",
+										transf = { 1, -6.3293761692342e-30, 7.8041756918025e-24, 0, 6.8902062167234e-30, 1, 0, 0, 6.0743734895196e-23, 5.2939559203394e-23, 1, 0, 0, 0, 0, 1, },
+									},
+								},
+								materials = { "vehicle/plane/airbus_a320_v2/airbus_a320_additional.mtl", "vehicle/plane/airbus_a320_v2/airbus_a320_lod.mtl", },
+								mesh = "vehicle/plane/airbus_a320_v2/gear1_rgt_lod2.msh",
+								name = "gear1_rgt",
+								transf = { -1, 5.1684719596706e-17, 1.5099578831723e-07, 0, 2.2748047274535e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -1.3928076028824, -3.7308232784271, 2.7667977809906, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.0099999997764826, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		airVehicle = {
+			configs = {
+				{
+					aileronLeft = {
+						ids = { 28, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 29, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.62000000476837, 0.62000000476837, },
+					axles = { "vehicle/plane/airbus_a320_v2/w2_lft_lod0.msh", "vehicle/plane/airbus_a320_v2/w2_rgt_lod0.msh", },
+					beaconLights = { 72, },
+					elevator = {
+						ids = { 31, 32, },
+						maxAngle = 20,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 35,
+					},
+					landingLight = { 49, 69, 71, },
+					props = { 33, 34, },
+					propsB = { },
+					rudder = {
+						ids = { 30, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { 74, },
+					wheelRadii = { 0.37000000476837, },
+					wheels = { "vehicle/plane/airbus_a320_v2/w1_frt_lod0.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 2, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.62000000476837, 0.62000000476837, },
+					axles = { "vehicle/plane/airbus_a320_v2/w2_lft_lod1.msh", "vehicle/plane/airbus_a320_v2/w2_rgt_lod1.msh", },
+					beaconLights = { 46, },
+					elevator = {
+						ids = { 5, 6, },
+						maxAngle = 20,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 35,
+					},
+					landingLight = { 23, 43, 45, },
+					props = { 7, 8, },
+					propsB = { },
+					rudder = {
+						ids = { 4, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { 48, },
+					wheelRadii = { 0.37000000476837, },
+					wheels = { "vehicle/plane/airbus_a320_v2/w1_frt_lod1.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { },
+						maxAngle = 0,
+					},
+					aileronRight = {
+						ids = { },
+						maxAngle = 0,
+					},
+					axleRadii = { 0.62000000476837, 0.62000000476837, },
+					axles = { "vehicle/plane/airbus_a320_v2/w2_lft_lod2.msh", "vehicle/plane/airbus_a320_v2/w2_rgt_lod2.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { },
+						maxAngle = 0,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { },
+					propsB = { },
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.37000000476837, },
+					wheels = { "vehicle/plane/airbus_a320_v2/w1_frt_lod2.msh", },
+				},
+			},
+			idleThrust = 11800,
+			maxPayload = 0,
+			maxTakeOffWeight = 78000,
+			maxThrust = 236000,
+			timeToFullThrust = 3,
+			topSpeed = 230,
+			type = "BIG",
+			weight = 44000,
+			wingArea = 122,
+		},
+		availability = {
+			yearFrom = 1992,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_PLANE_AIRBUS_A320_DESCRIPTION"),
+			name = _("VEHICLE_PLANE_AIRBUS_A320_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "AIR",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.318578720093, 0.87347149848938, 0.035532366484404, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.318578720093, -0.9513350725174, 0.035532366484404, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.8199996948242, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.0200004577637, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.2200002670288, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4199995994568, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.6199998855591, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8099999427795, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0199999809265, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.2149996757507, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4199998378754, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6150000095367, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4399999380112, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.14000000059605, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.6599999666214, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4599999189377, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2699999809265, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0699999332428, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8650000095367, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6599998474121, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.4649996757507, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2649998664856, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.0650000572205, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.8649997711182, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.6700000762939, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.4650001525879, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.264999389648, -1.4299999475479, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.064999580383, -1.3899999856949, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.8199996948242, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.0200004577637, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.2200002670288, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4199995994568, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.6199998855591, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8099999427795, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0199999809265, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.2149996757507, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4199998378754, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6150000095367, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4399999380112, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.14000000059605, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.6599999666214, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4599999189377, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2699999809265, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0699999332428, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8650000095367, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6599998474121, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.4649996757507, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2649998664856, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.0650000572205, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.8649997711182, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.6700000762939, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.4650001525879, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.264999389648, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.064999580383, -1.0609999895096, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.8199996948242, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.0200004577637, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.2200002670288, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4199995994568, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.6199998855591, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8099999427795, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0199999809265, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.2149996757507, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4199998378754, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6150000095367, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4399999380112, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.14000000059605, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.6599999666214, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4599999189377, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2699999809265, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0699999332428, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8650000095367, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6599998474121, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.4649996757507, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2649998664856, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.0650000572205, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.8649997711182, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.6700000762939, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.4650001525879, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.264999389648, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.064999580383, -0.50999999046326, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.8199996948242, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.0200004577637, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.2200002670288, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4199995994568, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.6199998855591, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8099999427795, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0199999809265, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.2149996757507, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4199998378754, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6150000095367, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4399999380112, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.14000000059605, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.6599999666214, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4599999189377, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2699999809265, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0699999332428, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8650000095367, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6599998474121, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.4649996757507, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2649998664856, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.0650000572205, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.8649997711182, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.6700000762939, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.4650001525879, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.264999389648, 1.5449999570847, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.064999580383, 1.5169999599457, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.8199996948242, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.0200004577637, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.2200002670288, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4199995994568, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.6199998855591, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8099999427795, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0199999809265, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.2149996757507, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4199998378754, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6150000095367, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4399999380112, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.14000000059605, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.6599999666214, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4599999189377, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2699999809265, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0699999332428, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8650000095367, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6599998474121, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.4649996757507, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2649998664856, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.0650000572205, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.8649997711182, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.6700000762939, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.4650001525879, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.264999389648, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.064999580383, 1.0579999685287, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.8199996948242, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.0200004577637, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.2200002670288, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4199995994568, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.6199998855591, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8099999427795, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.0199999809265, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.2149996757507, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4199998378754, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6150000095367, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4399999380112, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.14000000059605, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.6599999666214, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4599999189377, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2699999809265, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0699999332428, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8650000095367, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6599998474121, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.4649996757507, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.2649998664856, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.0650000572205, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.8649997711182, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.6700000762939, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.4650001525879, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.264999389648, 0.533999979496, 0.22200000286102, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 75,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.064999580383, 0.533999979496, 0.22200000286102, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "aircraft_jet_modern",
+			},
+		},
+		transportVehicle = {
+			carrier = "AIR",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 148,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 7,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,848 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 4.0615000724792, 1.2181175947189, 2.5105106830597, },
+		bbMin = { -5.3636898994446, -1.204799413681, -0.0088751614093781, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.7125949859619, 1.2114584445953, 1.2596929073334, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5447154045105, 0.50924414396286, 1.7868490219116, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5447154045105, -0.50624477863312, 1.7868489027023, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.4896426200867, 1.0012406110764, 1.7868491411209, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9902899265289, 1.028608083725, 1.7532266378403, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2618774175644, 1.0285842418671, 1.7507424354553, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.6226224899292, 1.028519153595, 1.7497664690018, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass5_lft_lod0.msh",
+								name = "glass5_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.011218190193176, 1.028453707695, 1.7487903833389, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass6_lft_lod0.msh",
+								name = "glass6_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.64115935564041, 1.028383731842, 1.7478187084198, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass7_lft_lod0.msh",
+								name = "glass7_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2749999761581, 1.0283186435699, 1.7468409538269, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass8_lft_lod0.msh",
+								name = "glass8_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9067660570145, 1.0282542705536, 1.7458852529526, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass9_lft_lod0.msh",
+								name = "glass9_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5412659645081, 1.0282037258148, 1.7448852062225, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass10_lft_lod0.msh",
+								name = "glass10_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.1699998378754, 1.0282137393951, 1.7438999414444, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass11_lft_lod0.msh",
+								name = "glass11_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7974998950958, 1.0282092094421, 1.7429118156433, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass12_lft_lod0.msh",
+								name = "glass12_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.4286727905273, 1.0282092094421, 1.7419315576553, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass13_lft_lod0.msh",
+								name = "glass13_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0037717819214, 1.0282037258148, 1.7409321069717, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.4894251823425, -1.0012413263321, 1.7868486642838, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2591081857681, -1.0286087989807, 1.7506372928619, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.62331813573837, -1.0285197496414, 1.7496845722198, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.013000011444092, -1.0284543037415, 1.7486231327057, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass5_rgt_lod0.msh",
+								name = "glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.6424999833107, -1.0283842086792, 1.7477688789368, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass6_rgt_lod0.msh",
+								name = "glass6_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2724999189377, -1.0283192396164, 1.7468283176422, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass7_rgt_lod0.msh",
+								name = "glass7_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9049999713898, -1.0282547473907, 1.7458724975586, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass8_rgt_lod0.msh",
+								name = "glass8_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5374999046326, -1.028204202652, 1.7448966503143, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass9_rgt_lod0.msh",
+								name = "glass9_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.1644999980927, -1.0282142162323, 1.7438998222351, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass10_rgt_lod0.msh",
+								name = "glass10_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7899522781372, -1.0282096862793, 1.7429287433624, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass11_rgt_lod0.msh",
+								name = "glass11_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.424952507019, -1.0282096862793, 1.7419375181198, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass12_rgt_lod0.msh",
+								name = "glass12_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.0020995140076, -1.028204202652, 1.7409369945526, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass1_left_bck_lod0.msh",
+								name = "glass1_left_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.25825548172, 0.68803441524506, 1.7505511045456, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass1_right_bck_lod0.msh",
+								name = "glass1_right_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.258264541626, -0.69310039281845, 1.7505511045456, 1, },
+							},
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/glass1_center_bck_lod0.msh",
+								name = "glass1_center_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2586736679077, -0.0010000020265579, 1.7504378557205, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2749998569489, 0.71368497610092, 0.43299993872643, 1, },
+					},
+					{
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 3.2749998569489, -0.71368497610092, 0.43299993872643, 1, },
+					},
+					{
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4300003051758, 0, 0.43499994277954, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/chevrolet_c60_1974_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/chevrolet_c60_1974_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_door_glass.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/d1_glass_rgt_lod0.msh",
+								name = "d1_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.18027925491333, -0.00086569786071777, 1.1648207902908, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/bus/chevrolet_c60_1974_v2/close_doors_right/d1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/bus/chevrolet_c60_1974_v2/open_doors_right/d1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_glass.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_door_glass.mtl", },
+										mesh = "vehicle/bus/chevrolet_c60_1974_v2/d1_c1_glass_rgt_lod0.msh",
+										name = "d1_c1_glass_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.19644147157669, 0.008502721786499, 1.1646350622177, 1, },
+									},
+								},
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_door.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/d1_c1_rgt_lod0.msh",
+								name = "d1_c1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.3922324180603, -0.0092616081237793, 0, 1, },
+							},
+						},
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974.mtl", "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_door.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3849997520447, -1.0219999551773, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/chevrolet_c60_1974_v2/close_doors_right/g1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/chevrolet_c60_1974_v2/open_doors_right/g1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/bus/chevrolet_c60_1974_v2/close_doors_right/g2.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/bus/chevrolet_c60_1974_v2/open_doors_right/g2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_door.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/g2_lod0.msh",
+								name = "g2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.012841939926147, -0.13006007671356, 0, 1, },
+							},
+						},
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_door.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/g1_lod0.msh",
+						name = "g1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3619997501373, -0.089999996125698, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_brake_lights.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_lod.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_interior_lod.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_lod.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2749998569489, 0.71368497610092, 0.43299993872643, 1, },
+					},
+					{
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_lod.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 3.2749998569489, -0.71368497610092, 0.43299993872643, 1, },
+					},
+					{
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_lod.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4300003051758, 0, 0.43499994277954, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/bus/chevrolet_c60_1974_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/bus/chevrolet_c60_1974_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/bus/chevrolet_c60_1974_v2/close_doors_right/d1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/bus/chevrolet_c60_1974_v2/open_doors_right/d1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_lod.mtl", },
+								mesh = "vehicle/bus/chevrolet_c60_1974_v2/d1_c1_rgt_lod1.msh",
+								name = "d1_c1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.3922324180603, -0.0092616081237793, 0, 1, },
+							},
+						},
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_lod.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3849997520447, -1.0219999551773, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_brake_lights.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/emissive/bus_blink_lights.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/chevrolet_c60_1974_v2/chevrolet_c60_1974_lod.mtl", },
+						mesh = "vehicle/bus/chevrolet_c60_1974_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1976,
+			yearTo = 2025,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_BUS_CHEVROLET_C60_1974_DESCRIPTION"),
+			name = _("VEHICLE_BUS_CHEVROLET_C60_1974_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 0.039215683937073, 0.039215683937073, 0.039215683937073, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 95.300003051758, 16.599998474121, },
+					transf = { -4.3711387287537e-10, 0.0099999997764826, -6.6002355732162e-17, 0, 4.3711387287537e-10, 8.5109208795622e-17, 0.0099999997764826, 0, 0.0099999997764826, 4.3711387287537e-10, -4.3711387287537e-10, 0, 2.5150001049042, -0.47400000691414, 2.1800000667572, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "CENTER",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 40,
+					initialAlpha = 0.5,
+					lifeTime = 1,
+					position = { -5.2939877510071, 1.0900900363922, 0.2968829870224, },
+					size01 = { 0.079999998211861, 0.89999997615814, },
+					velocity = { -2.1900000572205, 3.3099999427795, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/bus/chevrolet_c60_1974_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 45, },
+					blinkLightsRight = { 46, },
+					brakeLights = { 44, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 43, },
+					steeringParts = { },
+					wheels = { "vehicle/bus/chevrolet_c60_1974_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/bus/chevrolet_c60_1974_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 10, },
+					blinkLightsRight = { 11, },
+					brakeLights = { 9, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 8, },
+					steeringParts = { },
+					wheels = { "vehicle/bus/chevrolet_c60_1974_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -2.4300000667572,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 160,
+				tractiveEffort = 20,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "vehicle/truck_modern/horn.wav",
+				name = "bus_modern",
+			},
+			topSpeed = 22.219999313354,
+			weight = 6,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7219998836517, 0.54699999094009, 0.62300002574921, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.91499996185303, 0.71499997377396, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.91499996185303, 0.29499998688698, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.029999999329448, 0.71499997377396, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.029999999329448, 0.29499998688698, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1, 0.71499997377396, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1, 0.29499998688698, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9599999189377, 0.71499997377396, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9599999189377, 0.29499998688698, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.914999961853, 0.29499998688698, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8849999904633, 0.71499997377396, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8849999904633, 0.29499998688698, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.8649997711182, 0.71499997377396, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.8649997711182, 0.29499998688698, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.8649997711182, -0.30000001192093, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.8649997711182, -0.71999996900558, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8849999904633, -0.30000001192093, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.8849999904633, -0.71999996900558, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8599998950958, -0.30000001192093, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9699999094009, -0.30000001192093, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9699999094009, -0.71999996900558, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0249999761581, -0.30000001192093, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0249999761581, -0.71999996900558, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.03999999910593, -0.30000001192093, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.03999999910593, -0.71999996900558, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.91499996185303, -0.30000001192093, 0.63999998569489, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 47,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.91499996185303, -0.71999996900558, 0.63999998569489, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 52,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v08",
+		},
+	},
+	version = 1,
+}
+end

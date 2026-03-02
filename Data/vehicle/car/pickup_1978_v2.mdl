@@ -1,0 +1,303 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.6950860023499, 1.229455947876, 1.8150449991226, },
+		bbMin = { -2.6527059078217, -1.229455947876, -0.014059007167816, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.6738958358765, 1.229455947876, 0.9145519733429, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/pickup_1978_v2/pickup_1978.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/pickup_1978_v2/pickup_1978_interior_glass.mtl", "vehicle/car/pickup_1978_v2/pickup_1978_glass.mtl", },
+								mesh = "vehicle/car/pickup_1978_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.94168096780777, 0, 1.5167553424835, 1, },
+							},
+							{
+								materials = { "vehicle/car/pickup_1978_v2/pickup_1978_interior_glass.mtl", "vehicle/car/pickup_1978_v2/pickup_1978_glass.mtl", },
+								mesh = "vehicle/car/pickup_1978_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.50919383764267, 0.8260754942894, 1.4408559799194, 1, },
+							},
+							{
+								materials = { "vehicle/car/pickup_1978_v2/pickup_1978_interior_glass.mtl", "vehicle/car/pickup_1978_v2/pickup_1978_glass.mtl", },
+								mesh = "vehicle/car/pickup_1978_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.50919383764267, -0.8260754942894, 1.4408559799194, 1, },
+							},
+							{
+								materials = { "vehicle/car/pickup_1978_v2/pickup_1978_interior_glass.mtl", "vehicle/car/pickup_1978_v2/pickup_1978_glass.mtl", },
+								mesh = "vehicle/car/pickup_1978_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.12029649317265, 0, 1.4878923892975, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/pickup_1978_v2/pickup_1978_interior.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/pickup_1978_v2/pickup_1978.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8143389225006, 0.69471502304077, 0.40205401182175, 1, },
+					},
+					{
+						materials = { "vehicle/car/pickup_1978_v2/pickup_1978.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, -1.577721810442e-30, -1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 1.8143389225006, -0.69471502304077, 0.40205401182175, 1, },
+					},
+					{
+						materials = { "vehicle/car/pickup_1978_v2/pickup_1978.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4140169620514, 0, 0.40205401182175, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/brakeLight_lod0.msh",
+						name = "brakeLight",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 90,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/pickup_1978_v2/pickup_1978_lod.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/pickup_1978_v2/pickup_1978_lod.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8143389225006, 0.69471502304077, 0.40205401182175, 1, },
+					},
+					{
+						materials = { "vehicle/car/pickup_1978_v2/pickup_1978_lod.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, 7.8886090522101e-31, -8.7422776573476e-08, 0, 7.6427427076918e-15, -1, 8.7422776573476e-08, 0, 8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 1.8143389225006, -0.69471502304077, 0.40205401182175, 1, },
+					},
+					{
+						materials = { "vehicle/car/pickup_1978_v2/pickup_1978_lod.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4140169620514, 0, 0.40205401182175, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/brakeLight_lod1.msh",
+						name = "brakeLight",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 8.7422776573476e-08, -1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, -1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 90,
+			visibleTo = 210,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/pickup_1978_v2/pickup_1978_lod.mtl", },
+						mesh = "vehicle/car/pickup_1978_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 210,
+			visibleTo = 600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1978,
+			yearTo = 0,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.20404458045959, 0.41960781812668, 0.41579055786133, },
+				},
+				{
+					{ 0.28550556302071, 0.51346069574356, 0.61960780620575, },
+				},
+				{
+					{ 0.12941175699234, 0.12941175699234, 0.12941175699234, },
+				},
+				{
+					{ 0.81568628549576, 0.81568628549576, 0.81568628549576, },
+				},
+				{
+					{ 0.090457513928413, 0.21178488433361, 0.26666665077209, },
+				},
+				{
+					{ 0.34117645025253, 0.28670740127563, 0.21206457912922, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/pickup_1978_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 13, },
+					blinkLightsRight = { 14, },
+					brakeLights = { 12, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = -0.30000001192093,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 11, },
+					steeringParts = { },
+					wheels = { "vehicle/car/pickup_1978_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/pickup_1978_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = -0.30000001192093,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/pickup_1978_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = { },
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 70,
+				tractiveEffort = 8.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 27.777778625488,
+			weight = 2.7000000476837,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 15,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.35799998044968, 0.39999997615814, 0.29899999499321, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

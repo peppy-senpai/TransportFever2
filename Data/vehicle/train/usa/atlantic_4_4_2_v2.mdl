@@ -1,0 +1,867 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 12.809717178345, 1.6963957548141, 4.7873902320862, },
+		bbMin = { -11.175634384155, -1.6963975429535, -0.038374781608582, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 11.99267578125, 1.6963965892792, 2.412882566452, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_glass.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_glass_left_frt_lod0.msh",
+										name = "front_glass_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_glass.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_glass_right_frt_lod0.msh",
+										name = "front_glass_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_glass.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_glass1_lft_lod0.msh",
+										name = "front_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_glass.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_glass2_lft_lod0.msh",
+										name = "front_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_glass.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_glass_left_bck_lod0.msh",
+										name = "front_glass_left_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_glass.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_glass_right_bck_lod0.msh",
+										name = "front_glass_right_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_glass.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_glass.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+								},
+								name = "front_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_b1_lod0.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_w1_lod0.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1535568237305, -5.6107462426125e-18, 0.43508815765381, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_w1_lod0.msh",
+										name = "front_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1276607513428, -5.6107462426125e-18, 0.43508815765381, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6513671875, 2.8610229492188e-05, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_b2_lod0.msh",
+										name = "front_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_w5_lod0.msh",
+										name = "front_w5",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5196998119354, -9.5367431640625e-06, 0.5857105255127, 1, },
+									},
+								},
+								name = "front_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3124084472656, 3.814697265625e-05, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_w3_lod0.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3334126472473, 2.8610229492188e-05, 0.91683834791183, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_w4_lod0.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.83881950378418, 2.8610229492188e-05, 0.91683834791183, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r1_lod0.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0825674533844, 0.00052642822265625, 0.80400002002716, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r2_lod0.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.87182807922363, 2.8610229492188e-05, 0.45578879117966, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r3_lod0.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.8111886382103, 2.8610229492188e-05, 0.430753916502, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r4_lod0.msh",
+								name = "front_r4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.83816528320313, 2.8610229492188e-05, 0.82561480998993, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r5_lod0.msh",
+								name = "front_r5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2531423568726, 2.8610229492188e-05, 1.5511038303375, 1, },
+							},
+							{
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r6_lod0.msh",
+								name = "front_r6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.581080198288, 2.8610229492188e-05, 1.437132358551, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r7.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r7_lod0.msh",
+								name = "front_r7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0961644649506, 2.8610229492188e-05, 0.40706729888916, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r8.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r8_lod0.msh",
+								name = "front_r8",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.4142007827759, 2.8610229492188e-05, 0.92788022756577, 1, },
+							},
+							{
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r9_lod0.msh",
+								name = "front_r9",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3686060905457, 2.8610229492188e-05, 1.4660733938217, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_headlights_fwd_lod0.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.6034326553345, -2.8610229492188e-05, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_b1_lod0.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_w1_lod0.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89262008666992, 0, 0.46885004639626, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_w1_lod0.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.88894844055176, 0, 0.46885004639626, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2598390579224, 0, -0.020750105381012, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_b1_lod0.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_w1_lod0.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89262008666992, 0, 0.46885004639626, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_w1_lod0.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.88894844055176, 0, 0.46885004639626, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8280115127563, 0, -0.020750105381012, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/back_coal_lod0.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4825859069824, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/back_headlights_bwd_lod0.msh",
+								name = "back_headlights_bwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7206711769104, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_body_glass_lod1.msh",
+								name = "front_body_glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_b1_lod1.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_w1_lod1.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1535568237305, -5.6107462426125e-18, 0.43508815765381, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_w1_lod1.msh",
+										name = "front_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1276607513428, -5.6107462426125e-18, 0.43508815765381, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.6513671875, 2.8610229492188e-05, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_b2_lod1.msh",
+										name = "front_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/front_w5_lod1.msh",
+										name = "front_w5",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5196998119354, -9.5367431640625e-06, 0.5857105255127, 1, },
+									},
+								},
+								name = "front_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3124084472656, 3.814697265625e-05, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_w3_lod1.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3334126472473, 5.7220458984375e-05, 0.91683834791183, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_w4_lod1.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.83881950378418, 5.7220458984375e-05, 0.91683834791183, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r1_lod1.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.0825674533844, 0.00052642822265625, 0.80400002002716, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r2_lod1.msh",
+								name = "front_r2",
+								transf = { 1, -7.9590240648075e-12, -6.4340366368043e-10, 0, 7.9590240648075e-12, 1, -8.225937427964e-14, 0, 6.4340366368043e-10, 8.225937427964e-14, 1, 0, -0.87182807922363, 2.8610229492188e-05, 0.45578879117966, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r3_lod1.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.8111886382103, 5.7220458984375e-05, 0.430753916502, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r4_lod1.msh",
+								name = "front_r4",
+								transf = { 1, 2.6610299741492e-08, -3.4783958824391e-08, 0, -2.6610299741492e-08, 1, -9.0331884194939e-09, 0, 3.4783958824391e-08, 9.0331884194939e-09, 1, 0, -0.83816528320313, 5.7292636483908e-05, 0.82561480998993, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r5_lod1.msh",
+								name = "front_r5",
+								transf = { 1, 2.6610294412421e-08, 3.1648632159431e-08, 0, -2.6610299741492e-08, 1, 1.6581236650381e-07, 0, -3.1648632159431e-08, -1.6581236650381e-07, 1, 0, 1.2531422376633, 5.7217832363676e-05, 1.5511038303375, 1, },
+							},
+							{
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r6_lod1.msh",
+								name = "front_r6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.581080198288, 2.8610229492188e-05, 1.437132358551, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r7.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r7_lod1.msh",
+								name = "front_r7",
+								transf = { 1, 0, 8.1827280951074e-08, 0, 0, 1, 0, 0, -8.1827280951074e-08, 0, 1, 0, 3.0961644649506, 5.7220458984375e-05, 0.40706729888916, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/atlantic_4_4_2_v2/wheels/front_r8.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r8_lod1.msh",
+								name = "front_r8",
+								transf = { 1, 0, 1.3978031176975e-07, 0, 0, 1, 0, 0, -1.3978031176975e-07, 0, 1, 0, 3.4142007827759, 5.7220458984375e-05, 0.9278804063797, 1, },
+							},
+							{
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_r9_lod1.msh",
+								name = "front_r9",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.3686060905457, 2.8610229492188e-05, 1.4660733938217, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_headlights_fwd_lod1.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.6034326553345, -2.8610229492188e-05, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_b1_lod1.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_w1_lod1.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89262008666992, 0, 0.46885004639626, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_w1_lod1.msh",
+										name = "back_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.88894844055176, 0, 0.46885004639626, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.2598390579224, 0, -0.020750105381012, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_b1_lod1.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_w1_lod1.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89262008666992, 0, 0.46885004639626, 1, },
+									},
+									{
+										materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+										mesh = "vehicle/train/atlantic_4_4_2_v2/back_w1_lod1.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.88894844055176, 0, 0.46885004639626, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8280115127563, 0, -0.020750105381012, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/back_coal_lod1.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4825859069824, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/back_headlights_bwd_lod1.msh",
+								name = "back_headlights_bwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7206711769104, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2_lod.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/front_body_lod2.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.6034326553345, -2.8610229492188e-05, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/atlantic_4_4_2_v2/atlantic_4_4_2.mtl", },
+								mesh = "vehicle/train/atlantic_4_4_2_v2/back_body_lod2.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7206711769104, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1902,
+			yearTo = 1951,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_ATLANTIC_4_4_2_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_ATLANTIC_4_4_2_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 4.041567325592, 1.0350285768509, 0.46500000357628, },
+					size01 = { 0.30000001192093, 6, },
+					velocity = { 0, 4, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 4.041567325592, -1.1099714040756, 0.46500000357628, },
+					size01 = { 0.30000001192093, 6, },
+					velocity = { 0, -4, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.39999997615814, 0.39999997615814, 0.39999997615814, },
+					frequency = 60,
+					initialAlpha = 1,
+					lifeTime = 14,
+					position = { 4.7985672950745, 2.8610229492188e-05, 4.7360000610352, },
+					size01 = { 0.60000002384186, 15, },
+					velocity = { 0, 0, 9, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/atlantic_4_4_2_v2/front_w1_lod0.msh", "vehicle/train/atlantic_4_4_2_v2/front_w3_lod0.msh", "vehicle/train/atlantic_4_4_2_v2/front_w4_lod0.msh", "vehicle/train/atlantic_4_4_2_v2/back_w1_lod0.msh", "vehicle/train/atlantic_4_4_2_v2/front_w5_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 43, },
+					frontForwardParts = { 30, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/atlantic_4_4_2_v2/front_w1_lod1.msh", "vehicle/train/atlantic_4_4_2_v2/front_w3_lod1.msh", "vehicle/train/atlantic_4_4_2_v2/front_w4_lod1.msh", "vehicle/train/atlantic_4_4_2_v2/back_w1_lod1.msh", "vehicle/train/atlantic_4_4_2_v2/front_w5_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 34, },
+					frontForwardParts = { 22, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 11.39999961853,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = 1.7000000476837,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -1.5,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -9.3999996185303,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 700,
+					tractiveEffort = 100,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/train_steam_old/steam_horn_2.wav",
+				name = "train_steam_modern",
+			},
+			topSpeed = 27.780000686646,
+			weight = 130,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 31,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -4.75, -1.0419999361038, 2.1419999599457, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v07",
+		},
+	},
+	version = 1,
+}
+end

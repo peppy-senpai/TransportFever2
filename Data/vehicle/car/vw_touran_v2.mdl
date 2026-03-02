@@ -1,0 +1,346 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.1690766811371, 1.0413936376572, 1.6660000085831, },
+		bbMin = { -2.2009999752045, -1.0413937568665, -0.0021125078201294, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.1850383281708, 1.0413937568665, 0.8340562582016, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/vw_touran_v2/vw_touran.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/vw_touran_v2/vw_touran_interior_glass.mtl", "vehicle/car/vw_touran_v2/vw_touran_glass.mtl", },
+								mesh = "vehicle/car/vw_touran_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.73250371217728, 2.9802322387695e-08, 1.3281273841858, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_touran_v2/vw_touran_glass.mtl", "vehicle/car/vw_touran_v2/vw_touran_interior_glass.mtl", },
+								mesh = "vehicle/car/vw_touran_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.91380912065506, 0.74338084459305, 1.1420642137527, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_touran_v2/vw_touran_glass.mtl", "vehicle/car/vw_touran_v2/vw_touran_interior_glass.mtl", },
+								mesh = "vehicle/car/vw_touran_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.25134521722794, 0.71345067024231, 1.2803907394409, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_touran_v2/vw_touran_glass.mtl", "vehicle/car/vw_touran_v2/vw_touran_interior_glass.mtl", },
+								mesh = "vehicle/car/vw_touran_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.72586119174957, 0.70871007442474, 1.3180506229401, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_touran_v2/vw_touran_glass.mtl", "vehicle/car/vw_touran_v2/vw_touran_interior_glass.mtl", },
+								mesh = "vehicle/car/vw_touran_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5661432743073, 0.68566280603409, 1.3202488422394, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_touran_v2/vw_touran_glass.mtl", "vehicle/car/vw_touran_v2/vw_touran_interior_glass.mtl", },
+								mesh = "vehicle/car/vw_touran_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5661432743073, -0.68566280603409, 1.3202488422394, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_touran_v2/vw_touran_glass.mtl", "vehicle/car/vw_touran_v2/vw_touran_interior_glass.mtl", },
+								mesh = "vehicle/car/vw_touran_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.72586119174957, -0.70871007442474, 1.3180506229401, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_touran_v2/vw_touran_glass.mtl", "vehicle/car/vw_touran_v2/vw_touran_interior_glass.mtl", },
+								mesh = "vehicle/car/vw_touran_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.25134521722794, -0.71345067024231, 1.2803907394409, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_touran_v2/vw_touran_glass.mtl", "vehicle/car/vw_touran_v2/vw_touran_interior_glass.mtl", },
+								mesh = "vehicle/car/vw_touran_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89555698633194, -0.015127539634705, 1.1420642137527, 1, },
+							},
+							{
+								materials = { "vehicle/car/vw_touran_v2/vw_touran_interior_glass.mtl", "vehicle/car/vw_touran_v2/vw_touran_glass.mtl", },
+								mesh = "vehicle/car/vw_touran_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9526166915894, 0, 1.2926052808762, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_touran_v2/vw_touran_interior.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_touran_v2/vw_touran.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.2954363822937, 0.75499999523163, 0.32199999690056, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_touran_v2/vw_touran.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, 1.499759904158e-32, 1.2246468525852e-16, 0, 0, 1, -1.2246468525852e-16, 0, -1.2246468525852e-16, 1.2246468525852e-16, 1, 0, 1.2954363822937, -0.75499999523163, 0.32199999690056, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_touran_v2/vw_touran.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3650000095367, 0, 0.32199999690056, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/breaklights_lod0.msh",
+						name = "breaklights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/vw_touran_v2/vw_touran_lod.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_touran_v2/vw_touran_lod.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/w1_lod1.msh",
+						name = "w1",
+						transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 1.2954363822937, 0.75499999523163, 0.32199999690056, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_touran_v2/vw_touran_lod.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/w1_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, 0, -1.5099578831723e-07, 0, 0, 1, 0, 0, 1.5099578831723e-07, 0, -1, 0, 1.2954363822937, -0.75499999523163, 0.32199999690056, 1, },
+					},
+					{
+						materials = { "vehicle/car/vw_touran_v2/vw_touran_lod.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3650000095367, 0, 0.32199999690056, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/breaklights_lod1.msh",
+						name = "breaklights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/vw_touran_v2/vw_touran_lod.mtl", },
+						mesh = "vehicle/car/vw_touran_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 650,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2011,
+			yearTo = 0,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.17254900932312, 0.17254900932312, 0.17254900932312, },
+				},
+				{
+					{ 0.035194177180529, 0.49007540941238, 0.78039216995239, },
+				},
+				{
+					{ 0.16473661363125, 0.2195498496294, 0.40392154455185, },
+				},
+				{
+					{ 0.15667818486691, 0.28235292434692, 0.19608241319656, },
+				},
+				{
+					{ 0.27843135595322, 0.16436496376991, 0.050772782415152, },
+				},
+				{
+					{ 0.55686271190643, 0.55686271190643, 0.55686271190643, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/vw_touran_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 19, },
+					blinkLightsRight = { 20, },
+					brakeLights = { 18, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 17, },
+					steeringParts = { },
+					wheels = { "vehicle/car/vw_touran_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/vw_touran_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/vw_touran_v2/w1_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 77,
+				tractiveEffort = 6.9000000953674,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 27.780000686646,
+			weight = 1.4299999475479,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 21,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.11999999731779, 0.40999999642372, 0.13499999046326, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

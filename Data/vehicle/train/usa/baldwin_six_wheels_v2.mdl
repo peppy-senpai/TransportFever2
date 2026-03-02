@@ -1,0 +1,342 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.9472484588623, 1.0597931146622, 4.663074016571, },
+		bbMin = { -4.1326608657837, -1.0597931146622, -0.030206382274628, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.039954662323, 1.0597931146622, 2.3466401100159, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/train/baldwin_six_wheels_v2/wheels/w1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/w1_lod0.msh",
+						name = "w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.709260225296, 0, 0.66279721260071, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/train/baldwin_six_wheels_v2/wheels/w2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10581392794847, 0, 0.66279721260071, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/train/baldwin_six_wheels_v2/wheels/w3.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/w3_lod0.msh",
+						name = "w3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.369682431221, 0, 0.66279721260071, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/train/baldwin_six_wheels_v2/wheels/r1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/r1_lod0.msh",
+						name = "r1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7104306221008, 0, 0.48748308420181, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/train/baldwin_six_wheels_v2/wheels/r2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/r2_lod0.msh",
+						name = "r2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7104306221008, 0, 0.48748308420181, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/train/baldwin_six_wheels_v2/wheels/w1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/w1_lod1.msh",
+						name = "w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.709260225296, 0, 0.66279721260071, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/train/baldwin_six_wheels_v2/wheels/w2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10581392794847, 0, 0.66279721260071, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/train/baldwin_six_wheels_v2/wheels/w3.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/w3_lod1.msh",
+						name = "w3",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.369682431221, 0, 0.66279721260071, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/train/baldwin_six_wheels_v2/wheels/r1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/r1_lod1.msh",
+						name = "r1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7104306221008, 0, 0.48748308420181, 1, },
+					},
+					{
+						animations = {
+							wheels = {
+								params = {
+									id = "vehicle/train/baldwin_six_wheels_v2/wheels/r2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/baldwin_six_wheels_v2/baldwin_six_wheels.mtl", },
+						mesh = "vehicle/train/baldwin_six_wheels_v2/r2_lod1.msh",
+						name = "r2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7104306221008, 0, 0.48748308420181, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1850,
+			yearTo = 1896,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_BALDWIN_SIX_WHEELS_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_BALDWIN_SIX_WHEELS_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 6,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 1.6499999761581, 0.79607313871384, 1.4800000190735, },
+					size01 = { 0.20000000298023, 5, },
+					velocity = { 0, 3, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 6,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 1.6499999761581, -0.793073117733, 1.4800000190735, },
+					size01 = { 0.20000000298023, 5, },
+					velocity = { 0, -3, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.30000001192093, 0.30000001192093, 0.30000001192093, },
+					frequency = 40,
+					initialAlpha = 1,
+					lifeTime = 10,
+					position = { 2.047952413559, 0, 4.6496677398682, },
+					size01 = { 0.5, 10, },
+					velocity = { 0, 0, 6, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/baldwin_six_wheels_v2/w1_lod0.msh", "vehicle/train/baldwin_six_wheels_v2/w2_lod0.msh", "vehicle/train/baldwin_six_wheels_v2/w3_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/baldwin_six_wheels_v2/w1_lod1.msh", "vehicle/train/baldwin_six_wheels_v2/w2_lod1.msh", "vehicle/train/baldwin_six_wheels_v2/w3_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 70,
+					tractiveEffort = 25,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/train_steam_old/steam_horn_6.wav",
+				name = "train_steam_old",
+			},
+			topSpeed = 11.109999656677,
+			weight = 20,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 7,
+					transf = { 0.9681476354599, -0.25038000941277, 0, 0, 0.25038000941277, 0.9681476354599, 0, 0, 0, 0, 1, 0, -3, -0.03999999910593, 1.2400000095367, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v02",
+		},
+	},
+	version = 1,
+}
+end

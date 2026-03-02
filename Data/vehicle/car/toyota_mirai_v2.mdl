@@ -1,0 +1,334 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.4460000991821, 1.0397132635117, 1.5379998683929, },
+		bbMin = { -2.4404399394989, -1.0397133827209, -0.00074997544288635, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.4432201385498, 1.0397133827209, 0.76937490701675, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_interior_glass.mtl", "vehicle/car/toyota_mirai_v2/toyota_mirai_glass.mtl", },
+								mesh = "vehicle/car/toyota_mirai_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.88934141397476, 5.9604644775391e-08, 1.2370799779892, 1, },
+							},
+							{
+								materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_interior_glass.mtl", "vehicle/car/toyota_mirai_v2/toyota_mirai_glass.mtl", },
+								mesh = "vehicle/car/toyota_mirai_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.51402419805527, 0.68649703264236, 1.2107094526291, 1, },
+							},
+							{
+								materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_interior_glass.mtl", "vehicle/car/toyota_mirai_v2/toyota_mirai_glass.mtl", },
+								mesh = "vehicle/car/toyota_mirai_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.67708247900009, 0.69086849689484, 1.2447421550751, 1, },
+							},
+							{
+								materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_interior_glass.mtl", "vehicle/car/toyota_mirai_v2/toyota_mirai_glass.mtl", },
+								mesh = "vehicle/car/toyota_mirai_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3753695487976, 0.65739446878433, 1.2322251796722, 1, },
+							},
+							{
+								materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_interior_glass.mtl", "vehicle/car/toyota_mirai_v2/toyota_mirai_glass.mtl", },
+								mesh = "vehicle/car/toyota_mirai_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.51402419805527, -0.68649697303772, 1.2107094526291, 1, },
+							},
+							{
+								materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_interior_glass.mtl", "vehicle/car/toyota_mirai_v2/toyota_mirai_glass.mtl", },
+								mesh = "vehicle/car/toyota_mirai_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.68735200166702, -0.69086849689484, 1.2447421550751, 1, },
+							},
+							{
+								materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_interior_glass.mtl", "vehicle/car/toyota_mirai_v2/toyota_mirai_glass.mtl", },
+								mesh = "vehicle/car/toyota_mirai_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3753695487976, -0.65739452838898, 1.2353940010071, 1, },
+							},
+							{
+								materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_interior_glass.mtl", "vehicle/car/toyota_mirai_v2/toyota_mirai_glass.mtl", },
+								mesh = "vehicle/car/toyota_mirai_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5797502994537, -5.9604644775391e-08, 1.2678649425507, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_interior.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3860000371933, 0.75897002220154, 0.3299999833107, 1, },
+					},
+					{
+						materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -1.5099578831723e-07, -1.2246468525852e-16, 0, 1.5099578831723e-07, -1, -1.2246465878874e-16, 0, -1.2246465878874e-16, -1.2246468525852e-16, 1, 0, 1.3860000371933, -0.75896978378296, 0.3299999833107, 1, },
+					},
+					{
+						materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3960000276566, 0, 0.3299999833107, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, -9.5367429508997e-09, 0, 1.9073485901799e-08, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_lod.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, -4.3711388286738e-08, 0, 0, 4.3711388286738e-08, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_lod.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, -4.3711388286738e-08, 0, 0, 4.3711388286738e-08, 1, 0, 1.3899999856949, 0.75897002220154, 0.3299999833107, 1, },
+					},
+					{
+						materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_lod.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.5099578831723e-07, 0, 8.7422797889758e-08, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 1.3860000371933, -0.75896978378296, 0.3299999833107, 1, },
+					},
+					{
+						materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_lod.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, -4.3711388286738e-08, 0, 0, 4.3711388286738e-08, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, -4.3711388286738e-08, 0, 0, 4.3711388286738e-08, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, -4.3711388286738e-08, 0, 0, 4.3711388286738e-08, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, -9.5367429508997e-09, 0, 1.9073485901799e-08, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/toyota_mirai_v2/toyota_mirai_lod.mtl", },
+						mesh = "vehicle/car/toyota_mirai_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2016,
+			yearTo = 0,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.29019606113434, 0.29019606113434, 0.29019606113434, },
+				},
+				{
+					{ 0.31814685463905, 0.49019604921341, 0.38051471114159, },
+				},
+				{
+					{ 0.61176466941833, 0.24750480055809, 0.22791232168674, },
+				},
+				{
+					{ 0.678431391716, 0.39220568537712, 0.16096118092537, },
+				},
+				{
+					{ 0.050396025180817, 0.61983817815781, 0.88627451658249, },
+				},
+				{
+					{ 0.62745094299316, 0.41214913129807, 0.51396894454956, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/toyota_mirai_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 17, },
+					blinkLightsRight = { 18, },
+					brakeLights = { 16, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 15, },
+					steeringParts = { },
+					wheels = { "vehicle/car/toyota_mirai_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/toyota_mirai_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/toyota_mirai_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 114,
+				tractiveEffort = 6.9000000953674,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 27.777778625488,
+			weight = 1.8500000238419,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 19,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.24377490580082, 0.45070806145668, 0.067000009119511, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

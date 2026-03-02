@@ -1,0 +1,2093 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 18.67066192627, 16.416221618652, 8.8334608078003, },
+		bbMin = { -17.229898452759, -16.416221618652, -0.022891968488693, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 17.95027923584, 16.416221618652, 4.4281764030457, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4199496293978e-29, 0, 2.7000000476837, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.674491882324, 0.19684664905071, 3.6047921180725, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass2_left_frt_lod0.msh",
+								name = "glass2_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.486433029175, 0.53320246934891, 3.5812056064606, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass3_left_frt_lod0.msh",
+								name = "glass3_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.298656463623, 0.83348315954208, 3.5720415115356, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass4_left_frt_lod0.msh",
+								name = "glass4_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 16.865949630737, 0.96925604343414, 3.5470662117004, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.674491882324, -0.15819399058819, 3.6047921180725, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass2_right_frt_lod0.msh",
+								name = "glass2_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.486433029175, -0.49638700485229, 3.5812056064606, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass3_right_frt_lod0.msh",
+								name = "glass3_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.298656463623, -0.79176604747772, 3.5720415115356, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass4_right_frt_lod0.msh",
+								name = "glass4_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 16.865949630737, -0.91591382026672, 3.5470662117004, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.211153030396, 1.5667895078659, 3.4744691848755, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.7599997520447, 1.5667895078659, 3.4744691848755, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3151154518127, 1.5667895078659, 3.4744691848755, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4715473651886, 1.5667840242386, 3.4744691848755, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.211153030396, -1.5267895460129, 3.4744691848755, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.7599997520447, -1.5267895460129, 3.4744691848755, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3151154518127, -1.5267895460129, 3.4744691848755, 1, },
+							},
+							{
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_glass.mtl", "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior_glass.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.47154712677, -1.5267840623856, 3.4744691848755, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/aileron_lft_lod0.msh",
+						name = "aileron_lft",
+						transf = { -0.21017822623253, 0.97577738761902, 0.060691654682159, 0, -0.0023698504082859, -0.062586590647697, 0.99803674221039, 0, 0.97766023874283, 0.20962175726891, 0.015466786921024, 0, -2.8699564933777, 10.84091758728, 2.4986047744751, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/aileron_rgt_lod0.msh",
+						name = "aileron_rgt",
+						transf = { 0.21017827093601, 0.97577738761902, -0.060691654682159, 0, -0.0023698485456407, 0.062586590647697, 0.99803674221039, 0, 0.97766017913818, -0.20962180197239, 0.015466786921024, 0, -2.8699564933777, -10.84091758728, 2.4986047744751, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.529562950134, -7.105427357601e-15, 6.5222768783569, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/elevator_lft_lod0.msh",
+						name = "elevator_lft",
+						transf = { -0.058716304600239, 0.97807347774506, 0.19981141388416, 0, -0.036285422742367, -0.20211550593376, 0.97868925333023, 0, 0.9976150393486, 0.050214771181345, 0.04735728725791, 0, -15.666631698608, 0.50264084339142, 3.9072194099426, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/elevator_rgt_lod0.msh",
+						name = "elevator_rgt",
+						transf = { 0.058716330677271, 0.97807347774506, -0.19981141388416, 0, -0.036285411566496, 0.20211550593376, 0.97868925333023, 0, 0.9976150393486, -0.050214804708958, 0.04735728725791, 0, -15.666631698608, -0.50264084339142, 3.9072194099426, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap1_lft_lod0.msh",
+						name = "flap1_lft",
+						transf = { -0.16654835641384, 0.9838273525238, 0.065919235348701, 0, -0.01625132188201, -0.069582708179951, 0.99744379520416, 0, 0.98589926958084, 0.16505134105682, 0.027577381581068, 0, -1.8631376028061, 5.933464050293, 2.180002450943, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap2_lft_lod0.msh",
+						name = "flap2_lft",
+						transf = { -0.1666092723608, 0.98423993587494, 0.059270340949297, 0, 0.035682450979948, -0.054052740335464, 0.9979003071785, 0, 0.98537707328796, 0.1683743596077, -0.026114407926798, 0, -2.3895347118378, 9.0430746078491, 2.3757891654968, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap1_rgt_lod0.msh",
+						name = "flap1_rgt",
+						transf = { 0.16654838621616, 0.9838273525238, -0.065919235348701, 0, -0.01625132188201, 0.069582708179951, 0.99744379520416, 0, 0.98589926958084, -0.16505138576031, 0.027577381581068, 0, -1.8631376028061, -5.933464050293, 2.180002450943, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap2_rgt_lod0.msh",
+						name = "flap2_rgt",
+						transf = { 0.16660930216312, 0.98423993587494, -0.059270340949297, 0, 0.035682450979948, 0.054052740335464, 0.9979003071785, 0, 0.98537707328796, -0.16837438941002, -0.026114407926798, 0, -2.3895347118378, -9.0430746078491, 2.3757891654968, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_left_frt_lod0.msh",
+								name = "gear_d1_left_frt",
+								transf = { 0.99716091156006, 6.9388939039072e-18, 0.075300306081772, 0, 0.074156321585178, 0.17364820837975, -0.9820117354393, 0, -0.013075763359666, 0.98480767011642, 0.17315521836281, 0, 15.992790222168, 0.41089999675751, 1.7817679643631, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_right_frt_lod0.msh",
+								name = "gear_d1_right_frt",
+								transf = { 0.99716085195541, 0, 0.075300693511963, 0, 0.074156709015369, 0.17364820837975, -0.98201167583466, 0, -0.013075831346214, 0.98480767011642, 0.17315518856049, 0, 15.992790222168, -0.41094800829887, 1.7817679643631, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w1_frt_lod0.msh",
+										name = "w1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.087285995483398, 0, -1.5662133693695, 1, },
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_w1_steering_frt_lod0.msh",
+								name = "gear_w1_steering_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 15.603452682495, 0, 1.8610447645187, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_left_lft_lod0.msh",
+								name = "gear_d1_left_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.045743010938168, 6.3527860641479, 1.962624669075, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_right_lft_lod0.msh",
+								name = "gear_d1_right_lft",
+								transf = { 1, -1.2246468525852e-16, 0, 0, 2.1265774609889e-17, 0.17364820837975, -0.98480767011642, 0, 1.2060416415498e-16, 0.98480767011642, 0.17364820837975, 0, -0.0093250749632716, 4.3822951316833, 1.778980255127, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w2_lft_lod0.msh",
+										name = "w2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.19300079345703, -1.4277814626694, 1, },
+									},
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w3_lft_lod0.msh",
+										name = "w3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0813843011856, 0.6195240020752, -1.4277814626694, 1, },
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear2_lft_lod0.msh",
+								name = "gear2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.49635314941406, 4.4828186035156, 1.7832775115967, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_left_rgt_lod0.msh",
+								name = "gear_d1_left_rgt",
+								transf = { -1, -1.2246468525852e-16, 1.5099578831723e-07, 0, -1.4870182951654e-07, -0.17364819347858, -0.98480767011642, 0, 2.6220146054357e-08, -0.98480767011642, 0.17364819347858, 0, -0.0093250749632716, -4.3822951316833, 1.778980255127, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_right_rgt_lod0.msh",
+								name = "gear_d1_right_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -0.045743010938168, -6.3527860641479, 1.962624669075, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w2_rgt_lod0.msh",
+										name = "w2_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, 1.4210854397565e-16, 0.19300079345703, -1.4277814626694, 1, },
+									},
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w3_rgt_lod0.msh",
+										name = "w3_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, 1.0813843011856, 0.6195240020752, -1.4277814626694, 1, },
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear2_rgt_lod0.msh",
+								name = "gear2_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 0.49635314941406, -4.4828186035156, 1.7832775115967, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4939470291138, 1.6301081180573, 3.1705284118652, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4939470291138, -1.6301081180573, 3.1705284118652, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/landinglights_lod0.msh",
+						name = "landinglights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/beaconlights_lod0.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2.7000000476837, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/positionlights_lod0.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2.7000000476837, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/strobelights_lod0.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2.7000000476837, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_interior.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2.7000000476837, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4199496293978e-29, 0, 2.7000000476837, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/aileron_lft_lod1.msh",
+						name = "aileron_lft",
+						transf = { -0.21017822623253, 0.97577738761902, 0.060691654682159, 0, -0.0023698504082859, -0.062586590647697, 0.99803674221039, 0, 0.97766023874283, 0.20962175726891, 0.015466786921024, 0, -2.8699564933777, 10.84091758728, 2.4986047744751, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/aileron_rgt_lod1.msh",
+						name = "aileron_rgt",
+						transf = { 0.21017827093601, 0.97577738761902, -0.060691654682159, 0, -0.0023698485456407, 0.062586590647697, 0.99803674221039, 0, 0.97766017913818, -0.20962180197239, 0.015466786921024, 0, -2.8699564933777, -10.84091758728, 2.4986047744751, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.529562950134, -7.105427357601e-15, 6.5222768783569, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/elevator_lft_lod1.msh",
+						name = "elevator_lft",
+						transf = { -0.058716304600239, 0.97807347774506, 0.19981141388416, 0, -0.036285422742367, -0.20211550593376, 0.97868925333023, 0, 0.9976150393486, 0.050214771181345, 0.04735728725791, 0, -15.666631698608, 0.50264084339142, 3.9072194099426, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/elevator_rgt_lod1.msh",
+						name = "elevator_rgt",
+						transf = { 0.058716330677271, 0.97807347774506, -0.19981141388416, 0, -0.036285411566496, 0.20211550593376, 0.97868925333023, 0, 0.9976150393486, -0.050214804708958, 0.04735728725791, 0, -15.666631698608, -0.50264084339142, 3.9072194099426, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap1_lft_lod1.msh",
+						name = "flap1_lft",
+						transf = { -0.16654835641384, 0.9838273525238, 0.065919235348701, 0, -0.01625132188201, -0.069582708179951, 0.99744379520416, 0, 0.98589926958084, 0.16505134105682, 0.027577381581068, 0, -1.8631376028061, 5.933464050293, 2.180002450943, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap2_lft_lod1.msh",
+						name = "flap2_lft",
+						transf = { -0.1666092723608, 0.98423993587494, 0.059270340949297, 0, 0.035682450979948, -0.054052740335464, 0.9979003071785, 0, 0.98537707328796, 0.1683743596077, -0.026114407926798, 0, -2.3895347118378, 9.0430746078491, 2.3757891654968, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap1_rgt_lod1.msh",
+						name = "flap1_rgt",
+						transf = { 0.16654838621616, 0.9838273525238, -0.065919235348701, 0, -0.01625132188201, 0.069582708179951, 0.99744379520416, 0, 0.98589926958084, -0.16505138576031, 0.027577381581068, 0, -1.8631376028061, -5.933464050293, 2.180002450943, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap2_rgt_lod1.msh",
+						name = "flap2_rgt",
+						transf = { 0.16660930216312, 0.98423993587494, -0.059270340949297, 0, 0.035682450979948, 0.054052740335464, 0.9979003071785, 0, 0.98537707328796, -0.16837438941002, -0.026114407926798, 0, -2.3895347118378, -9.0430746078491, 2.3757891654968, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_left_frt_lod1.msh",
+								name = "gear_d1_left_frt",
+								transf = { 0.99716091156006, 6.9388939039072e-18, 0.075300306081772, 0, 0.074156321585178, 0.17364820837975, -0.9820117354393, 0, -0.013075763359666, 0.98480767011642, 0.17315521836281, 0, 15.992790222168, 0.41089999675751, 1.7817679643631, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_right_frt_lod1.msh",
+								name = "gear_d1_right_frt",
+								transf = { 0.99716085195541, 0, 0.075300693511963, 0, 0.074156709015369, 0.17364820837975, -0.98201167583466, 0, -0.013075831346214, 0.98480767011642, 0.17315518856049, 0, 15.992790222168, -0.41094800829887, 1.7817679643631, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w1_frt_lod1.msh",
+										name = "w1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.087285995483398, 0, -1.5662133693695, 1, },
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_w1_steering_frt_lod1.msh",
+								name = "gear_w1_steering_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 15.603452682495, 0, 1.8610447645187, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_left_lft_lod1.msh",
+								name = "gear_d1_left_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.045743010938168, 6.3527860641479, 1.962624669075, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_right_lft_lod1.msh",
+								name = "gear_d1_right_lft",
+								transf = { 1, -1.2246468525852e-16, 0, 0, 2.1265774609889e-17, 0.17364820837975, -0.98480767011642, 0, 1.2060416415498e-16, 0.98480767011642, 0.17364820837975, 0, -0.0093250749632716, 4.3822951316833, 1.778980255127, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w2_lft_lod1.msh",
+										name = "w2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.19300079345703, -1.4277814626694, 1, },
+									},
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w3_lft_lod1.msh",
+										name = "w3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0813843011856, 0.6195240020752, -1.4277814626694, 1, },
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear2_lft_lod1.msh",
+								name = "gear2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.49635314941406, 4.4828186035156, 1.7832775115967, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_right_rgt_lod1.msh",
+								name = "gear_d1_right_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -0.045743010938168, -6.3527860641479, 1.962624669075, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_left_rgt_lod1.msh",
+								name = "gear_d1_left_rgt",
+								transf = { -1, -1.2246468525852e-16, 1.5099578831723e-07, 0, -1.4870182951654e-07, -0.17364819347858, -0.98480767011642, 0, 2.6220146054357e-08, -0.98480767011642, 0.17364819347858, 0, -0.0093250749632716, -4.3822951316833, 1.778980255127, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w2_rgt_lod1.msh",
+										name = "w2_rgt",
+										transf = { 1, -1.9110454607847e-17, 2.8855983654655e-24, 0, 1.9110454607847e-17, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, 1.4210854397565e-16, 0.19300079345703, -1.4277814626694, 1, },
+									},
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w3_rgt_lod1.msh",
+										name = "w3_rgt",
+										transf = { 1, -1.9110454607847e-17, 2.8855983654655e-24, 0, 1.9110454607847e-17, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, 1.0813843011856, 0.6195240020752, -1.4277814626694, 1, },
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear2_rgt_lod1.msh",
+								name = "gear2_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 0.49635314941406, -4.4828186035156, 1.7832775115967, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4939470291138, 1.6301081180573, 3.1705284118652, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4939470291138, -1.6301081180573, 3.1705284118652, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/landinglights_lod1.msh",
+						name = "landinglights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/beaconlights_lod1.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2.7000000476837, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/positionlights_lod1.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2.7000000476837, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_strobe_light.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/strobelights_lod1.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2.7000000476837, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4199496293978e-29, 0, 2.7000000476837, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/aileron_lft_lod2.msh",
+						name = "aileron_lft",
+						transf = { -0.21017822623253, 0.97577738761902, 0.060691654682159, 0, -0.0023698504082859, -0.062586590647697, 0.99803674221039, 0, 0.97766023874283, 0.20962175726891, 0.015466786921024, 0, -2.8699564933777, 10.84091758728, 2.4986047744751, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/aileron_rgt_lod2.msh",
+						name = "aileron_rgt",
+						transf = { 0.21017827093601, 0.97577738761902, -0.060691654682159, 0, -0.0023698485456407, 0.062586590647697, 0.99803674221039, 0, 0.97766017913818, -0.20962180197239, 0.015466786921024, 0, -2.8699564933777, -10.84091758728, 2.4986047744751, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/rudder_lod2.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.529562950134, -7.105427357601e-15, 6.5222768783569, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/elevator_lft_lod2.msh",
+						name = "elevator_lft",
+						transf = { -0.058716304600239, 0.97807347774506, 0.19981141388416, 0, -0.036285422742367, -0.20211550593376, 0.97868925333023, 0, 0.9976150393486, 0.050214771181345, 0.04735728725791, 0, -15.666631698608, 0.50264084339142, 3.9072194099426, 1, },
+					},
+					{
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/elevator_rgt_lod2.msh",
+						name = "elevator_rgt",
+						transf = { 0.058716330677271, 0.97807347774506, -0.19981141388416, 0, -0.036285411566496, 0.20211550593376, 0.97868925333023, 0, 0.9976150393486, -0.050214804708958, 0.04735728725791, 0, -15.666631698608, -0.50264084339142, 3.9072194099426, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap1_lft_lod2.msh",
+						name = "flap1_lft",
+						transf = { -0.16654835641384, 0.9838273525238, 0.065919235348701, 0, -0.01625132188201, -0.069582708179951, 0.99744379520416, 0, 0.98589926958084, 0.16505134105682, 0.027577381581068, 0, -1.8631376028061, 5.933464050293, 2.180002450943, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap2_lft_lod2.msh",
+						name = "flap2_lft",
+						transf = { -0.1666092723608, 0.98423993587494, 0.059270340949297, 0, 0.035682450979948, -0.054052740335464, 0.9979003071785, 0, 0.98537707328796, 0.1683743596077, -0.026114407926798, 0, -2.3895347118378, 9.0430746078491, 2.3757891654968, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap1_rgt_lod2.msh",
+						name = "flap1_rgt",
+						transf = { 0.16654838621616, 0.9838273525238, -0.065919235348701, 0, -0.01625132188201, 0.069582708179951, 0.99744379520416, 0, 0.98589926958084, -0.16505138576031, 0.027577381581068, 0, -1.8631376028061, -5.933464050293, 2.180002450943, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/flaps/flap2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/flap2_rgt_lod2.msh",
+						name = "flap2_rgt",
+						transf = { 0.16660930216312, 0.98423993587494, -0.059270340949297, 0, 0.035682450979948, 0.054052740335464, 0.9979003071785, 0, 0.98537707328796, -0.16837438941002, -0.026114407926798, 0, -2.3895347118378, -9.0430746078491, 2.3757891654968, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_left_frt_lod2.msh",
+								name = "gear_d1_left_frt",
+								transf = { 0.99716091156006, 6.9388939039072e-18, 0.075300306081772, 0, 0.074156321585178, 0.17364820837975, -0.9820117354393, 0, -0.013075763359666, 0.98480767011642, 0.17315521836281, 0, 15.992790222168, 0.41089999675751, 1.7817679643631, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_right_frt_lod2.msh",
+								name = "gear_d1_right_frt",
+								transf = { 0.99716085195541, 0, 0.075300693511963, 0, 0.074156709015369, 0.17364820837975, -0.98201167583466, 0, -0.013075831346214, 0.98480767011642, 0.17315518856049, 0, 15.992790222168, -0.41094800829887, 1.7817679643631, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w1_frt_lod2.msh",
+										name = "w1_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.087285995483398, 0, -1.5662133693695, 1, },
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_w1_steering_frt_lod2.msh",
+								name = "gear_w1_steering_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 15.603452682495, 0, 1.8610447645187, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_left_lft_lod2.msh",
+								name = "gear_d1_left_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.045743010938168, 6.3527860641479, 1.962624669075, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_right_lft_lod2.msh",
+								name = "gear_d1_right_lft",
+								transf = { 1, -1.2246468525852e-16, 0, 0, 2.1265774609889e-17, 0.17364820837975, -0.98480767011642, 0, 1.2060416415498e-16, 0.98480767011642, 0.17364820837975, 0, -0.0093250749632716, 4.3822951316833, 1.778980255127, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear2_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w2_lft_lod2.msh",
+										name = "w2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.19300079345703, -1.4277814626694, 1, },
+									},
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w3_lft_lod2.msh",
+										name = "w3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0813843011856, 0.6195240020752, -1.4277814626694, 1, },
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear2_lft_lod2.msh",
+								name = "gear2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.49635314941406, 4.4828186035156, 1.7832775115967, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_right_rgt_lod2.msh",
+								name = "gear_d1_right_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, -0.045743010938168, -6.3527860641479, 1.962624669075, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear_d1_left_rgt_lod2.msh",
+								name = "gear_d1_left_rgt",
+								transf = { -1, -1.2246468525852e-16, 1.5099578831723e-07, 0, -1.4870182951654e-07, -0.17364819347858, -0.98480767011642, 0, 2.6220146054357e-08, -0.98480767011642, 0.17364819347858, 0, -0.0093250749632716, -4.3822951316833, 1.778980255127, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/close_wheels/gear2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/de_havilland_comet_4b_v2/open_wheels/gear2_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w2_rgt_lod2.msh",
+										name = "w2_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, 1.4210854397565e-16, 0.19300079345703, -1.4277814626694, 1, },
+									},
+									{
+										materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+										mesh = "vehicle/plane/de_havilland_comet_4b_v2/w3_rgt_lod2.msh",
+										name = "w3_rgt",
+										transf = { 1, 0, 0, 0, 6.3108872417681e-30, 1, 0, 0, 5.2939559203394e-23, 5.2939559203394e-23, 1, 0, 1.0813843011856, 0.6195240020752, -1.4277814626694, 1, },
+									},
+								},
+								materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+								mesh = "vehicle/plane/de_havilland_comet_4b_v2/gear2_rgt_lod2.msh",
+								name = "gear2_rgt",
+								transf = { -1, 0, 1.5099578831723e-07, 0, 2.2799731530911e-14, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 0.49635314941406, -4.4828186035156, 1.7832775115967, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/d1_lft_lod2.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4939470291138, 1.6301081180573, 3.1705284118652, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/plane/de_havilland_comet_4b_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/de_havilland_comet_4b_v2/comet_4b_lod.mtl", },
+						mesh = "vehicle/plane/de_havilland_comet_4b_v2/d1_rgt_lod2.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4939470291138, -1.6301081180573, 3.1705284118652, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		airVehicle = {
+			configs = {
+				{
+					aileronLeft = {
+						ids = { 19, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 20, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.37999999523163, 0.37999999523163, 0.37999999523163, 0.37999999523163, },
+					axles = { "vehicle/plane/de_havilland_comet_4b_v2/w2_lft_lod0.msh", "vehicle/plane/de_havilland_comet_4b_v2/w3_lft_lod0.msh", "vehicle/plane/de_havilland_comet_4b_v2/w2_rgt_lod0.msh", "vehicle/plane/de_havilland_comet_4b_v2/w3_rgt_lod0.msh", },
+					beaconLights = { 48, },
+					elevator = {
+						ids = { 22, 23, },
+						maxAngle = 20,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 35,
+					},
+					landingLight = { 47, },
+					props = { },
+					propsB = { },
+					rudder = {
+						ids = { 21, },
+						maxAngle = 30,
+					},
+					steeringParts = { 31, },
+					strobeLights = { 50, },
+					wheelRadii = { 0.28999999165535, },
+					wheels = { "vehicle/plane/de_havilland_comet_4b_v2/w1_frt_lod0.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 2, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.37999999523163, 0.37999999523163, 0.37999999523163, 0.37999999523163, },
+					axles = { "vehicle/plane/de_havilland_comet_4b_v2/w2_lft_lod1.msh", "vehicle/plane/de_havilland_comet_4b_v2/w3_lft_lod1.msh", "vehicle/plane/de_havilland_comet_4b_v2/w2_rgt_lod1.msh", "vehicle/plane/de_havilland_comet_4b_v2/w3_rgt_lod1.msh", },
+					beaconLights = { 31, },
+					elevator = {
+						ids = { 5, 6, },
+						maxAngle = 20,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { 30, },
+					props = { },
+					propsB = { },
+					rudder = {
+						ids = { 4, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { 33, },
+					wheelRadii = { 0.28999999165535, },
+					wheels = { "vehicle/plane/de_havilland_comet_4b_v2/w1_frt_lod1.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { },
+						maxAngle = 0,
+					},
+					aileronRight = {
+						ids = { },
+						maxAngle = 0,
+					},
+					axleRadii = { 0.37999999523163, 0.37999999523163, 0.37999999523163, 0.37999999523163, },
+					axles = { "vehicle/plane/de_havilland_comet_4b_v2/w2_lft_lod2.msh", "vehicle/plane/de_havilland_comet_4b_v2/w3_lft_lod2.msh", "vehicle/plane/de_havilland_comet_4b_v2/w2_rgt_lod2.msh", "vehicle/plane/de_havilland_comet_4b_v2/w3_rgt_lod2.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { },
+						maxAngle = 0,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { },
+					propsB = { },
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+					steeringParts = { 14, },
+					strobeLights = { },
+					wheelRadii = { 0.28999999165535, },
+					wheels = { "vehicle/plane/de_havilland_comet_4b_v2/w1_frt_lod2.msh", },
+				},
+			},
+			idleThrust = 9400,
+			maxPayload = 0,
+			maxTakeOffWeight = 71600,
+			maxThrust = 160000,
+			timeToFullThrust = 3,
+			topSpeed = 201,
+			type = "BIG",
+			weight = 33000,
+			wingArea = 191,
+		},
+		availability = {
+			yearFrom = 1960,
+			yearTo = 2000,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_PLANE_COMET_4B_DESCRIPTION"),
+			name = _("VEHICLE_PLANE_COMET_4B_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "AIR",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 16.798089981079, -0.41211381554604, 2.3874773979187, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 16.798089981079, 0.49500361084938, 2.3874773979187, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.0120000839233, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.0120000839233, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.0120000839233, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.0120000839233, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.0120000839233, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.0989999771118, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.0989999771118, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.0989999771118, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.0989999771118, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.0989999771118, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1820001602173, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1820001602173, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1820001602173, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1820001602173, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.1820001602173, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.2690000534058, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.2690000534058, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.2690000534058, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.2690000534058, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.2690000534058, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.4860000610352, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3990001678467, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3990001678467, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3990001678467, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3990001678467, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3990001678467, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.4860000610352, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.4860000610352, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.4860000610352, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.4860000610352, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7129999399185, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6259999275208, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6259999275208, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6259999275208, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6259999275208, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6259999275208, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7129999399185, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7129999399185, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7129999399185, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7129999399185, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10199999809265, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.81099998950958, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.81099998950958, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.81099998950958, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.81099998950958, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.81099998950958, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10199999809265, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10199999809265, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10199999809265, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10199999809265, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8980000019073, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.98499995470047, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.98499995470047, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.98499995470047, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.98499995470047, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.98499995470047, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8980000019073, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8980000019073, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8980000019073, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8980000019073, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6930000782013, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6930000782013, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7799999713898, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7799999713898, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7799999713898, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7799999713898, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.7799999713898, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6930000782013, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6930000782013, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.6930000782013, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5430002212524, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5430002212524, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6300001144409, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6300001144409, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6300001144409, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6300001144409, -0.65799999237061, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6300001144409, -1.1419999599457, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5430002212524, 1.1599999666214, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5430002212524, 0.69599997997284, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5430002212524, -0.19400000572205, 2.5700001716614, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { -1, -3.8941436741879e-07, 0, 0, 3.8941436741879e-07, -1, 0, 0, 0, 0, 1, 0, 10.482998847961, 1.1000000238419, 2.5699999332428, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 10.482998847961, 0.69599997997284, 2.5699999332428, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 10.482998847961, -0.19400000572205, 2.5699999332428, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 10.482998847961, -0.65799999237061, 2.5699999332428, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 52,
+					transf = { -1, -3.8941436741879e-07, 0, 0, 3.8941436741879e-07, -1, 0, 0, 0, 0, 1, 0, 10.482998847961, -1.1000000238419, 2.5699999332428, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "aircraft_jet_old",
+			},
+		},
+		transportVehicle = {
+			carrier = "AIR",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 84,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 4,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

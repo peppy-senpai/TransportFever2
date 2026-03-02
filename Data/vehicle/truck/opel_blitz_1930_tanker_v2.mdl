@@ -1,0 +1,322 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.189001083374, 1.1996839046478, 2.5131816864014, },
+		bbMin = { -3.0568699836731, -1.1996839046478, -0.0031109750270844, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 3.1229355335236, 1.1996839046478, 1.2581462860107, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930.mtl", "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_tanker_add.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_tanker_v2/tanker_body_lod0.msh",
+						name = "tanker_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_interior_glass.mtl", "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_glass.mtl", },
+								mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_glass_frt_lod0.msh",
+								name = "universal_glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6080919504166, 0, 1.7670313119888, 1, },
+							},
+							{
+								materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_interior_glass.mtl", "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_glass.mtl", },
+								mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_glass_lft_lod0.msh",
+								name = "universal_glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2016764879227, 0.73739093542099, 1.7348194122314, 1, },
+							},
+							{
+								materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_interior_glass.mtl", "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_glass.mtl", },
+								mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_glass_rgt_lod0.msh",
+								name = "universal_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2016764879227, -0.73739093542099, 1.7348194122314, 1, },
+							},
+						},
+						name = "tanker_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_interior.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_interior_lod0.msh",
+						name = "universal_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_w1_lft_lod0.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2848329544067, 0.80809146165848, 0.47566372156143, 1, },
+					},
+					{
+						materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_w1_rgt_lod0.msh",
+						name = "universal_w1_rgt",
+						transf = { -1, -8.7422776573476e-08, -8.7422776573476e-08, 0, 8.7422769468049e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, 2.2848329544067, -0.80809146165848, 0.47566372156143, 1, },
+					},
+					{
+						materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_w2_lod0.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.484308719635, -4.9667871283567e-17, 0.47566372156143, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_headlights_lod0.msh",
+						name = "universal_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "tanker_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_lod.mtl", "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_tanker_add.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_tanker_v2/tanker_body_lod1.msh",
+						name = "tanker_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_lod.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_w1_lft_lod1.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2806587219238, 0.80661505460739, 0.47479465603828, 1, },
+					},
+					{
+						materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_lod.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_w1_rgt_lod1.msh",
+						name = "universal_w1_rgt",
+						transf = { -1, -8.7422776573476e-08, -8.7422776573476e-08, 0, 8.7422769468049e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, 2.2806587219238, -0.80661511421204, 0.47479465603828, 1, },
+					},
+					{
+						materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_lod.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_w2_lod1.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4815969467163, 0, 0.47479465603828, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_universal_v2/universal_headlights_lod1.msh",
+						name = "universal_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_lod.mtl", "vehicle/truck/opel_blitz_1930_v2/opel_blitz_1930_tanker_add.mtl", },
+						mesh = "vehicle/truck/opel_blitz_1930_tanker_v2/tanker_body_lod2.msh",
+						name = "tanker_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1935,
+			yearTo = 1980,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_OPEL_BLITZ_TANKER_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_OPEL_BLITZ_TANKER_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.10176084935665, 0.10196077823639, 0.10196077823639, },
+					frequency = 40,
+					initialAlpha = 0.5,
+					lifeTime = 1,
+					position = { -0.28484851121902, 0.48163202404976, 0.40033620595932, },
+					size01 = { 0.079999998211861, 0.89999997615814, },
+					velocity = { -1.8899999856949, 5.5100002288818, -0.15643312036991, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/opel_blitz_1930_universal_v2/universal_w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 10, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/opel_blitz_1930_universal_v2/universal_w1_lft_lod0.msh", "vehicle/truck/opel_blitz_1930_universal_v2/universal_w1_rgt_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/opel_blitz_1930_universal_v2/universal_w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/opel_blitz_1930_universal_v2/universal_w1_lft_lod1.msh", "vehicle/truck/opel_blitz_1930_universal_v2/universal_w1_rgt_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -1.5,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 74,
+				tractiveEffort = 7,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 16.670000076294,
+			weight = 2.5,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 11,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 1.0799301862717, 0.31323942542076, 0.61000001430511, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 56,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 56,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 56,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 3,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v04",
+		},
+	},
+	version = 1,
+}
+end

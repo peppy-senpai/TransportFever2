@@ -1,0 +1,310 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.7679100036621, 1.0520499944687, 2.0311999320984, },
+		bbMin = { -2.4453265666962, -1.0520499944687, 0.0027182102203369, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.6066184043884, 1.0520499944687, 1.014240860939, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series_interior_glass.mtl", "vehicle/car/ford_f_series_pickup_v2/ford_f_series_glass.mtl", },
+								mesh = "vehicle/car/ford_f_series_pickup_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.97643172740936, 0, 1.6545275449753, 1, },
+							},
+							{
+								materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series_interior_glass.mtl", "vehicle/car/ford_f_series_pickup_v2/ford_f_series_glass.mtl", },
+								mesh = "vehicle/car/ford_f_series_pickup_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.51961743831635, 0.6920114159584, 1.6241929531097, 1, },
+							},
+							{
+								materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series_interior_glass.mtl", "vehicle/car/ford_f_series_pickup_v2/ford_f_series_glass.mtl", },
+								mesh = "vehicle/car/ford_f_series_pickup_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.51961743831635, -0.68865925073624, 1.6241929531097, 1, },
+							},
+							{
+								materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series_interior_glass.mtl", "vehicle/car/ford_f_series_pickup_v2/ford_f_series_glass.mtl", },
+								mesh = "vehicle/car/ford_f_series_pickup_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.095201134681702, 0, 1.6261749267578, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series_interior.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8600000143051, 0.66667801141739, 0.40999999642372, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -1.5099578831723e-07, 1.2246468525852e-16, 0, 1.5099578831723e-07, -1, -1.2246469849341e-16, 0, 1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 1.8600000143051, -0.66667801141739, 0.40999999642372, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2749998569489, -2.9802322387695e-08, 0.41000011563301, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/breaklights_lod0.msh",
+						name = "breaklights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.8600000143051, 0.66667801141739, 0.40999999642372, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, 1.2246468525852e-16, -1.5099578831723e-07, 0, -2.2922193860359e-14, -1, 1.5099578831723e-07, 0, -1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 1.8600000143051, -0.66667801141739, 0.40999999642372, 1, },
+					},
+					{
+						materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2749998569489, -2.9802322387695e-08, 0.41000011563301, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/breaklights_lod1.msh",
+						name = "breaklights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/ford_f_series_pickup_v2/ford_f_series.mtl", },
+						mesh = "vehicle/car/ford_f_series_pickup_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1948,
+			yearTo = 1980,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.47070357203484, 0.58038800954819, 0.6235294342041, },
+				},
+				{
+					{ 0.32941174507141, 0.19224432110786, 0.090426750481129, },
+				},
+				{
+					{ 0.16862744092941, 0.16862744092941, 0.16862744092941, },
+				},
+				{
+					{ 0.12166088819504, 0.21176469326019, 0.17262582480907, },
+				},
+				{
+					{ 0.18823526799679, 0.35698530077934, 0.39999997615814, },
+				},
+				{
+					{ 0.69019603729248, 0.66687798500061, 0.5291503071785, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/ford_f_series_pickup_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 13, },
+					blinkLightsRight = { 14, },
+					brakeLights = { 12, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 11, },
+					steeringParts = { },
+					wheels = { "vehicle/car/ford_f_series_pickup_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/ford_f_series_pickup_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/ford_f_series_pickup_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 71,
+				tractiveEffort = 8.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_old",
+			},
+			topSpeed = 22.222221374512,
+			weight = 2.539999961853,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 15,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3459999859333, 0.25, 0.46799999475479, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

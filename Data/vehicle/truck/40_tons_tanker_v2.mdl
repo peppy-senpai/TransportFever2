@@ -1,0 +1,520 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 6.5875177383423, 1.5642023086548, 3.747739315033, },
+		bbMin = { -6.8091635704041, -1.5642023086548, -0.00050222873687744, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 6.6983404159546, 1.5642023086548, 1.8741207122803, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_body_lod0.msh",
+								name = "universal_front_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/truck/40_tons_v2/40_tons_glass.mtl", "vehicle/truck/40_tons_v2/40_tons_interior.mtl", },
+										mesh = "vehicle/truck/40_tons_universal_v2/universal_glass_frt_lod0.msh",
+										name = "universal_glass_frt",
+										transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 2.9110019207001, 0, 2.1982989311218, 1, },
+									},
+									{
+										materials = { "vehicle/truck/40_tons_v2/40_tons_glass.mtl", "vehicle/truck/40_tons_v2/40_tons_interior.mtl", },
+										mesh = "vehicle/truck/40_tons_universal_v2/universal_glass_lft_lod0.msh",
+										name = "universal_glass_lft",
+										transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 2.0023245811462, 1.2197835445404, 2.3066489696503, 1, },
+									},
+									{
+										materials = { "vehicle/truck/40_tons_v2/40_tons_glass.mtl", "vehicle/truck/40_tons_v2/40_tons_interior.mtl", },
+										mesh = "vehicle/truck/40_tons_universal_v2/universal_glass_rgt_lod0.msh",
+										name = "universal_glass_rgt",
+										transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 2.0024001598358, -1.2149000167847, 2.3066999912262, 1, },
+									},
+									{
+										materials = { "vehicle/truck/40_tons_v2/40_tons_glass.mtl", "vehicle/truck/40_tons_v2/40_tons_interior.mtl", },
+										mesh = "vehicle/truck/40_tons_universal_v2/universal_glass_top2_lod0.msh",
+										name = "universal_glass_top2",
+										transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+									},
+								},
+								name = "tanker_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_interior.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_interior_lod0.msh",
+								name = "universal_front_interior",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod0.msh",
+								name = "universal_front_w1_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 1.7690001726151, 1.0223524570465, 0.49849995970726, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod0.msh",
+								name = "universal_front_w1_lft",
+								transf = { -1.2000000476837, 1.0490733615143e-07, 0, 0, -1.0490733615143e-07, -1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 1.7690001726151, -1.0223524570465, 0.49850004911423, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod0.msh",
+								name = "universal_front_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -1.1816170215607, 6.1062267677873e-17, 0.50057762861252, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod0.msh",
+								name = "universal_front_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -2.2944521903992, 0, 0.50057756900787, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_headlights_lod0.msh",
+								name = "universal_front_headlights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_blinklights_lft_lod0.msh",
+								name = "universal_front_blinklights_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_blinklights_rgt_lod0.msh",
+								name = "universal_front_blinklights_rgt",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "tanker_front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "tanker_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5114998817444, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_tanker.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_body_lod0.msh",
+								name = "tanker_back_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 1.6308945513521e-11, 0, 1.7936697266352e-11, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_w1_lod0.msh",
+								name = "tanker_back_w1",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -5.4813733100891, 0, 0.50382202863693, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_w1_lod0.msh",
+								name = "tanker_back_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -6.6411995887756, 6.1062267677873e-17, 0.50379997491837, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_w1_lod0.msh",
+								name = "tanker_back_w3",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -7.8190002441406, 0, 0.50400000810623, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_backlights_lod0.msh",
+								name = "tanker_back_backlights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_brakelights_lod0.msh",
+								name = "tanker_back_brakelights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_blinklights_lft_lod0.msh",
+								name = "tanker_back_blinklights_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_blinklights_rgt_lod0.msh",
+								name = "tanker_back_blinklights_rgt",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "tanker_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2750000953674, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 145.84977722168,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_body_lod1.msh",
+								name = "universal_front_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114762783051, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod1.msh",
+								name = "universal_front_w1_lft",
+								transf = { -1.2000000476837, 1.4695762231022e-16, -1.811949630337e-07, 0, -2.7506636020563e-14, -1.2000000476837, 1.811949630337e-07, 0, -1.811949630337e-07, 1.811949630337e-07, 1.2000000476837, 0, 5.2799997329712, 1.0223524570465, 0.49799999594688, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod1.msh",
+								name = "universal_front_w1_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 5.2799997329712, -1.0223524570465, 0.49799999594688, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod1.msh",
+								name = "universal_front_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 2.3288350105286, 0, 0.5009999871254, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod1.msh",
+								name = "universal_front_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 1.2169998884201, 0, 0.5009999871254, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_headlights_lod1.msh",
+								name = "universal_front_headlights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114998817444, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_blinklights_lft_lod1.msh",
+								name = "universal_front_blinklights_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114998817444, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_blinklights_rgt_lod1.msh",
+								name = "universal_front_blinklights_rgt",
+								transf = { -1.2000000476837, 1.811949630337e-07, -1.4695762231022e-16, 0, -1.811949630337e-07, -1.2000000476837, -1.4695762231022e-16, 0, -1.4695763554511e-16, -1.4695760907533e-16, 1.2000000476837, 0, 3.5114998817444, 0, 0, 1, },
+							},
+						},
+						name = "tanker_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_tanker_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_body_lod1.msh",
+								name = "tanker_back_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 1.6308945513521e-11, 0, 1.7936697266352e-11, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_w1_lod1.msh",
+								name = "tanker_back_w1",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -5.4805917739868, 0, 0.50357764959335, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_w1_lod1.msh",
+								name = "tanker_back_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -6.6404142379761, 6.1062267677873e-17, 0.50357758998871, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_w1_lod1.msh",
+								name = "tanker_back_w3",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -7.8192491531372, 0, 0.503577709198, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_backlights_lod1.msh",
+								name = "tanker_back_backlights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_brakelights_lod1.msh",
+								name = "tanker_back_brakelights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_blinklights_lft_lod1.msh",
+								name = "tanker_back_blinklights_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_blinklights_rgt_lod1.msh",
+								name = "tanker_back_blinklights_rgt",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "tanker_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2750000953674, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 145.84977722168,
+			visibleTo = 437.54931640625,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_body_lod2.msh",
+								name = "universal_front_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114762783051, 0, 0, 1, },
+							},
+						},
+						name = "tanker_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", "vehicle/truck/40_tons_v2/40_tons_tanker_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_tanker_v2/tanker_back_body_lod2.msh",
+								name = "tanker_back_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 1.6308945513521e-11, 0, 1.7936697266352e-11, 1, },
+							},
+						},
+						name = "tanker_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2750000953674, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 437.54931640625,
+			visibleTo = 1312.6479492188,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1990,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_40_TONS_TANKER_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_40_TONS_TANKER_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 25568,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 2,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 40,
+					initialAlpha = 0.69999998807907,
+					lifeTime = 1.2000000476837,
+					position = { -2.5, 0, 0.10800000280142, },
+					size01 = { 0.079999998211861, 0.89999997615814, },
+					velocity = { -5, 0, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod0.msh", "vehicle/truck/40_tons_tanker_v2/tanker_back_w1_lod0.msh", },
+					blinkLightsLeft = { 14, 24, },
+					blinkLightsRight = { 15, 25, },
+					brakeLights = { 23, },
+					fakeBogies = {
+						{
+							group = 17,
+							offset = 0,
+							position = 2.3299999237061,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = 1.210000038147,
+							upright = false,
+						},
+					},
+					headLights = { 13, 22, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod1.msh", "vehicle/truck/40_tons_tanker_v2/tanker_back_w1_lod1.msh", },
+					blinkLightsLeft = { 8, 17, },
+					blinkLightsRight = { 9, 18, },
+					brakeLights = { 16, },
+					fakeBogies = {
+						{
+							group = 10,
+							offset = 0,
+							position = 2.3299999237061,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = 1.210000038147,
+							upright = false,
+						},
+					},
+					headLights = { 7, 15, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 2.3299999237061,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = 1.210000038147,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -4.4000000953674,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 560,
+				tractiveEffort = 60,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 27.780000686646,
+			weight = 15,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 16,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 1.7799999713898, 0.69999998807907, 1.0499999523163, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v2",
+		},
+	},
+	version = 1,
+}
+end

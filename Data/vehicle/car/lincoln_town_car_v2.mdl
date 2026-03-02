@@ -1,0 +1,334 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.7595000267029, 1.0805802345276, 1.4844599962234, },
+		bbMin = { -2.7620003223419, -1.0805802345276, -0.0055000782012939, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.7607502937317, 1.0805802345276, 0.74498003721237, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_interior_glass.mtl", "vehicle/car/lincoln_town_car_v2/lincoln_town_car_glass.mtl", },
+								mesh = "vehicle/car/lincoln_town_car_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.73884612321854, 2.9802322387695e-08, 1.1826114654541, 1, },
+							},
+							{
+								materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_interior_glass.mtl", "vehicle/car/lincoln_town_car_v2/lincoln_town_car_glass.mtl", },
+								mesh = "vehicle/car/lincoln_town_car_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3668409883976, 0.74275439977646, 1.1841175556183, 1, },
+							},
+							{
+								materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_interior_glass.mtl", "vehicle/car/lincoln_town_car_v2/lincoln_town_car_glass.mtl", },
+								mesh = "vehicle/car/lincoln_town_car_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.58284413814545, 0.73796653747559, 1.1890538930893, 1, },
+							},
+							{
+								materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_interior_glass.mtl", "vehicle/car/lincoln_town_car_v2/lincoln_town_car_glass.mtl", },
+								mesh = "vehicle/car/lincoln_town_car_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1056735515594, 0.73969060182571, 1.1839337348938, 1, },
+							},
+							{
+								materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_interior_glass.mtl", "vehicle/car/lincoln_town_car_v2/lincoln_town_car_glass.mtl", },
+								mesh = "vehicle/car/lincoln_town_car_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3668409883976, -0.74275439977646, 1.1841175556183, 1, },
+							},
+							{
+								materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_interior_glass.mtl", "vehicle/car/lincoln_town_car_v2/lincoln_town_car_glass.mtl", },
+								mesh = "vehicle/car/lincoln_town_car_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.58284413814545, -0.7379664182663, 1.1890538930893, 1, },
+							},
+							{
+								materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_interior_glass.mtl", "vehicle/car/lincoln_town_car_v2/lincoln_town_car_glass.mtl", },
+								mesh = "vehicle/car/lincoln_town_car_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1056735515594, -0.73969054222107, 1.1839337348938, 1, },
+							},
+							{
+								materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_interior_glass.mtl", "vehicle/car/lincoln_town_car_v2/lincoln_town_car_glass.mtl", },
+								mesh = "vehicle/car/lincoln_town_car_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.573429942131, 0, 1.1716175079346, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_interior.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6819999217987, 0.72245091199875, 0.33450001478195, 1, },
+					},
+					{
+						materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -1.5099578831723e-07, -1.2246468525852e-16, 0, 1.5099578831723e-07, -1, -1.2246465878874e-16, 0, -1.2246465878874e-16, -1.2246468525852e-16, 1, 0, 1.6819999217987, -0.72245091199875, 0.33450001478195, 1, },
+					},
+					{
+						materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3597402572632, 0, 0.33450001478195, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_lod.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_lod.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6819999217987, 0.72245091199875, 0.33450001478195, 1, },
+					},
+					{
+						materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_lod.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.5099578831723e-07, 0, 8.7422797889758e-08, -1, 1.5099578831723e-07, 0, 1.5099578831723e-07, 1.5099578831723e-07, 1, 0, 1.6819999217987, -0.72245091199875, 0.33450001478195, 1, },
+					},
+					{
+						materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_lod.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3597402572632, 0, 0.3345000743866, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/lincoln_town_car_v2/lincoln_town_car_lod.mtl", },
+						mesh = "vehicle/car/lincoln_town_car_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1995,
+			yearTo = 0,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.12941175699234, 0.12941175699234, 0.12941175699234, },
+				},
+				{
+					{ 0.27450978755951, 0.082352936267853, 0.12158491462469, },
+				},
+				{
+					{ 0.45882350206375, 0.45882350206375, 0.45882350206375, },
+				},
+				{
+					{ 0.63529407978058, 0.58016258478165, 0.51820069551468, },
+				},
+				{
+					{ 0.058731250464916, 0.12156055867672, 0.22352939844131, },
+				},
+				{
+					{ 0.19999998807907, 0.1137458756566, 0.039215680211782, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/lincoln_town_car_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 17, },
+					blinkLightsRight = { 18, },
+					brakeLights = { 16, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 15, },
+					steeringParts = { },
+					wheels = { "vehicle/car/lincoln_town_car_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/lincoln_town_car_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 8, },
+					blinkLightsRight = { 7, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/lincoln_town_car_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 157,
+				tractiveEffort = 6.9000000953674,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 27.780000686646,
+			weight = 1.7799999713898,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 19,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.32499998807907, 0.46299996972084, 0.050000000745058, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,2774 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.990642547607, 18.625843048096, 8.5583047866821, },
+		bbMin = { -21.231903076172, -18.626920700073, -0.21854788064957, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 17.61127281189, 18.62638092041, 4.3884263038635, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass1_center_frt_lod0.msh",
+								name = "glass1_center_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.811364173889, 0.0020000040531158, 4.4336490631104, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.74729347229, 0.37598249316216, 4.4290952682495, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass2_left_frt_lod0.msh",
+								name = "glass2_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.58882522583, 0.65947163105011, 4.4085516929626, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass3_left_frt_lod0.msh",
+								name = "glass3_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.197380065918, 0.84742039442062, 4.4035501480103, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.747713088989, -0.37397003173828, 4.4292078018188, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass2_right_frt_lod0.msh",
+								name = "glass2_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.588832855225, -0.65944737195969, 4.4085516929626, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass3_right_frt_lod0.msh",
+								name = "glass3_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.197337150574, -0.84740889072418, 4.4035639762878, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.9057712554932, 1.5602407455444, 4.4026370048523, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3837043046951, 1.5908821821213, 4.4817743301392, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7533626556396, 1.5866647958755, 4.479211807251, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.9635305404663, 1.4689232110977, 4.4256248474121, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.6049365997314, -1.3362709283829, 3.9235687255859, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4482145309448, -1.4449249505997, 4.28435754776, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.2795829772949, -1.547070145607, 4.3909907341003, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3837043046951, -1.5908546447754, 4.4817743301392, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass5_rgt_lod0.msh",
+								name = "glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.7533626556396, -1.5866405963898, 4.479211807251, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass6_rgt_lod0.msh",
+								name = "glass6_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.0892019271851, -1.5050481557846, 4.4256248474121, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/glass7_rgt_lod0.msh",
+								name = "glass7_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.7204446792603, -1.3958452939987, 4.4084911346436, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/aileron_lft_lod0.msh",
+						name = "aileron_lft",
+						transf = { 0.00045541368308477, 0.99239599704742, 0.1230850815773, 0, -5.9561818488874e-05, -0.12308505922556, 0.99239611625671, 0, 0.99999988079071, -0.00045928196050227, 3.054287390114e-06, 0, -3.0709495544434, 14.223698616028, 4.1084127426147, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/aileron_rgt_lod0.msh",
+						name = "aileron_rgt",
+						transf = { -0.00045538827544078, 0.99239599704742, -0.1230850815773, 0, -5.9788646467496e-05, 0.12308505922556, 0.99239611625671, 0, 0.99999988079071, 0.00045928463805467, 3.2825184916874e-06, 0, -3.0709495544434, -14.223361968994, 4.1084127426147, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rudder_lft_lod0.msh",
+						name = "rudder_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -19.993654251099, 7.0667815208435, 6.2226872444153, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rudder_rgt_lod0.msh",
+						name = "rudder_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20.110670089722, -7.06671667099, 6.2226867675781, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rudder_ctr_lod0.msh",
+						name = "rudder_ctr",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20.026002883911, 2.1229388948996e-05, 7.1844005584717, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/elevator_lft_lod0.msh",
+						name = "elevator_lft",
+						transf = { -2.9899163700442e-10, 0.9999765753746, 0.0068401321768761, 0, 4.3712411468277e-08, -0.0068401321768761, 0.9999765753746, 0, 1, 5.9798327400884e-10, -4.3709345476373e-08, 0, -19.596565246582, 3.3528380393982, 5.184338092804, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/elevator_rgt_lod0.msh",
+						name = "elevator_rgt",
+						transf = { -2.9899163700442e-10, 0.9999765753746, -0.0068401321768761, 0, 4.3710368657912e-08, 0.0068401321768761, 0.9999765753746, 0, 1, 8.3767458769539e-19, -4.3711388286738e-08, 0, -19.596567153931, -3.3528141975403, 5.184338092804, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 0.56640625, -0.82412612438202, 0, 0, 0.82412612438202, 0.56640625, 0, 2.9878389835358, 4.2844572067261, 2.9687581062317, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1_lft_lod0.msh",
+						name = "rotor2_lft",
+						transf = { 1, 0, 0, 0, 0, 0.87881702184677, -0.47715878486633, 0, 0, 0.47715878486633, 0.87881702184677, 0, 2.6061708927155, 9.0884532928467, 3.4974727630615, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1_lft_lod0.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 0.77162456512451, -0.63607823848724, 0, 0, 0.63607823848724, 0.77162456512451, 0, 2.9878392219543, -4.284140586853, 2.9687585830688, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1_lft_lod0.msh",
+						name = "rotor2_rgt",
+						transf = { 1, 0, 0, 0, 0, 0.63742399215698, 0.77051317691803, 0, 0, -0.77051317691803, 0.63742399215698, 0, 2.6061708927155, -9.0881214141846, 3.4973831176758, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod0.msh",
+						name = "rotor1b_lft",
+						transf = { 1, 0, 0, 0, 0, 0.56640625, -0.82412612438202, 0, 0, 0.82412612438202, 0.56640625, 0, 2.9878389835358, 4.2844572067261, 2.9687581062317, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod0.msh",
+						name = "rotor2b_lft",
+						transf = { 1, 0, 0, 0, 0, 0.87881702184677, -0.47715878486633, 0, 0, 0.47715878486633, 0.87881702184677, 0, 2.6061708927155, 9.0884532928467, 3.4974727630615, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod0.msh",
+						name = "rotor1b_rgt",
+						transf = { 1, 0, 0, 0, 0, 0.77162456512451, -0.63607823848724, 0, 0, 0.63607823848724, 0.77162456512451, 0, 2.9878392219543, -4.284140586853, 2.9687585830688, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod0.msh",
+						name = "rotor2b_tgt",
+						transf = { 1, 0, 0, 0, 0, 0.63742399215698, 0.77051317691803, 0, 0, -0.77051317691803, 0.63742399215698, 0, 2.6061708927155, -9.0881214141846, 3.4973831176758, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/flaps/flap1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/flap1_lft_lod0.msh",
+						name = "flap1_lft",
+						transf = { -0.0084751397371292, 0.99532920122147, 0.096165798604488, 0, -0.98438680171967, 0.0086041307076812, -0.17580842971802, 0, -0.17581470310688, -0.096154347062111, 0.97971606254578, 0, -3.7193522453308, 2.8767242431641, 2.5738921165466, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/flaps/flap2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/flap2_lft_lod0.msh",
+						name = "flap2_lft",
+						transf = { 0.05991455540061, 0.99023497104645, 0.12587603926659, 0, -0.98611998558044, 0.078278511762619, -0.14642325043678, 0, -0.15484683215618, -0.11535599827766, 0.9811806678772, 0, -3.5211672782898, 7.3206372261047, 3.1393957138062, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/flaps/flap1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/flap1_rgt_lod0.msh",
+						name = "flap1_rgt",
+						transf = { 0.0084751890972257, 0.99532920122147, -0.096165679395199, 0, -0.98438662290573, -0.0086041241884232, -0.17580907046795, 0, -0.17581531405449, 0.096154227852821, 0.97971594333649, 0, -3.7193505764008, -2.8763890266418, 2.5738916397095, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/flaps/flap2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/flap2_rgt_lod0.msh",
+						name = "flap2_rgt",
+						transf = { -0.059914488345385, 0.99023509025574, -0.12587584555149, 0, -0.98611998558044, -0.078278407454491, -0.14642319083214, 0, -0.15484674274921, 0.11535582691431, 0.9811806678772, 0, -3.5211668014526, -7.320300579071, 3.1393949985504, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_frt_lod0.msh",
+								name = "gear_d1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.173520088196, 3.4091499401256e-08, 2.3516235351563, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_c1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_c1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_c1_frt_lod0.msh",
+								name = "gear_d1_c1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.175403594971, 3.2397316829247e-08, 2.3497214317322, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_left_frt_lod0.msh",
+								name = "gear_d2_left_frt",
+								transf = { 0.99961411952972, 0.0055658272467554, 0.027214260771871, 0, 0.027766963467002, -0.22731101512909, -0.97342628240585, 0, 0.00076817814260721, 0.97380632162094, -0.22737784683704, 0, 8.5323829650879, -0.52020364999771, 2.4661574363708, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_right_frt_lod0.msh",
+								name = "gear_d2_right_frt",
+								transf = { 0.99961411952972, -0.005587347317487, 0.027210036292672, 0, -0.02776656486094, -0.22880601882935, 0.97307592630386, 0, 0.0007889072294347, -0.97345596551895, -0.22887286543846, 0, 8.5323829650879, 0.520203769207, 2.4661469459534, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_frt_lod0.msh",
+								name = "gear1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.768991470337, -3.0410759791266e-05, 2.8138558864594, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_c1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_c1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c1_frt_lod0.msh",
+								name = "gear1_c1_frt",
+								transf = { 0.9998477101326, 0, -0.017452405765653, 0, 0, 1, 0, 0, 0.017452405765653, 0, 0.9998477101326, 0, 11.201892852783, 0, 1.1717147827148, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_c2_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_c2_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c2_frt_lod0.msh",
+								name = "gear1_c2_frt",
+								transf = { 0.9998477101326, 0, 0.017452405765653, 0, 0, 1, 0, 0, -0.017452405765653, 0, 0.9998477101326, 0, 9.6820001602173, -3.0518731364282e-05, 2.6713557243347, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_c3_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_c3_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c3_frt_lod0.msh",
+								name = "gear1_c3_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.6819353103638, -1.4901161193848e-08, 2.6934196949005, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w1_left_frt_lod0.msh",
+										name = "w1_left_frt",
+										transf = { 0.98447686433792, 0.025778668001294, -0.17361046373844, 0, -0.038216531276703, 0.99690610170364, -0.068684704601765, 0, 0.17130273580551, 0.074253298342228, 0.98241633176804, 0, 0.0045863925479352, 0.21784356236458, -1.3448412418365, 1, },
+									},
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w1_left_frt_lod0.msh",
+										name = "w1_right_frt",
+										transf = { 0.98447698354721, 0.025778668001294, -0.17361028492451, 0, -0.014003893360496, 0.99753838777542, 0.068709656596184, 0, 0.1749541759491, -0.065211854875088, 0.98241454362869, 0, 0.015977388247848, -0.21721059083939, -1.3448467254639, 1, },
+									},
+									{
+										materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/landinglights_gear_frt_lod0.msh",
+										name = "landinglights_gear_frt",
+										transf = { 0.98447698354721, 0.025778668001294, -0.17361028492451, 0, -0.026173966005445, 0.99965733289719, 1.2503750440374e-05, 0, 0.17355112731457, 0.0045317597687244, 0.98481440544128, 0, -0.00079920660937205, -3.8756024878239e-05, 1.4147117137909, 1, },
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_w1_steering_frt_lod0.msh",
+								name = "gear_w1_steering_frt",
+								transf = { 0.98447698354721, -0.026173962280154, 0.17355114221573, 0, 0.025778668001294, 0.99965733289719, 0.0045317597687244, 0, -0.17361029982567, 1.2503796824603e-05, 0.98481440544128, 0, 11.015386581421, -3.0275687095127e-05, 1.4207662343979, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_left_lft_lod0.msh",
+								name = "gear_d1_left_lft",
+								transf = { -1, 6.9074452824225e-08, 1.5099578831723e-07, 0, -1.2108728464355e-09, 0.90630769729614, -0.42261829972267, 0, -1.6604079178251e-07, -0.42261829972267, -0.90630769729614, 0, -0.66518598794937, 4.8352794647217, 2.4271266460419, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_left_lft_lod0.msh",
+								name = "gear_d2_left_lft",
+								transf = { -0.99854451417923, -0.047582697123289, 0.025389287620783, 0, -0.049838922917843, 0.99401342868805, -0.097227774560452, 0, -0.020610935986042, -0.098351642489433, -0.99493825435638, 0, -2.2690443992615, 4.8363571166992, 2.4262270927429, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_right_lft_lod0.msh",
+								name = "gear_d1_right_lft",
+								transf = { -1, -6.9847324368766e-08, 1.5099578831723e-07, 0, -1.3991422243009e-08, 0.93969255685806, 0.34202006459236, 0, -1.6577882888669e-07, 0.34202006459236, -0.93969255685806, 0, -0.66507393121719, 3.7365119457245, 2.4298820495605, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_right_lft_lod0.msh",
+								name = "gear_d2_right_lft",
+								transf = { -0.99925947189331, 0.028465274721384, 0.025888552889228, 0, 0.030737014487386, 0.99527871608734, 0.092062681913376, 0, -0.02314573712647, 0.092790246009827, -0.99541664123535, 0, -2.2693512439728, 3.739648103714, 2.4306263923645, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w2_lft_lod0.msh",
+										name = "w2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4432544708252, -9.9658966064453e-05, -2.339989900589, 1, },
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_lft_lod0.msh",
+								name = "gear1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6265215873718, 4.2781448364258, 2.9652724266052, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_c1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_c1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c1_lft_lod0.msh",
+								name = "gear1_c1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3219851255417, 4.2791419029236, 3.1490240097046, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c2_lft_lod0.msh",
+								name = "gear1_c2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3422853946686, 4.2781271934509, 2.5639834403992, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_left_rgt_lod0.msh",
+								name = "gear_d1_left_rgt",
+								transf = { 1, 1.059487386712e-09, -2.7829677451408e-10, 0, 1.0907755809697e-09, -0.93969255685806, 0.34202021360397, 0, 1.0085269425142e-10, -0.34202021360397, -0.93969255685806, 0, -0.66507416963577, -3.7365117073059, 2.4298822879791, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_left_rgt_lod0.msh",
+								name = "gear_d2_left_rgt",
+								transf = { 0.99925947189331, 0.028465315699577, -0.025888573378325, 0, 0.030737055465579, -0.99527871608734, 0.092062681913376, 0, -0.023145750164986, -0.092790246009827, -0.99541664123535, 0, -2.2693514823914, -3.7396476268768, 2.4306266307831, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_right_rgt_lod0.msh",
+								name = "gear_d1_right_rgt",
+								transf = { 1, 1.0085262486248e-10, -1.0907755809697e-09, 0, -3.6957822913131e-10, -0.90630769729614, -0.42261829972267, 0, -1.0312005693791e-09, 0.42261829972267, -0.90630769729614, 0, -0.66518622636795, -4.8352794647217, 2.427127122879, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_right_rgt_lod0.msh",
+								name = "gear_d2_right_rgt",
+								transf = { 0.99854451417923, -0.047582659870386, -0.025389326736331, 0, -0.04983888939023, -0.99401342868805, -0.09722775220871, 0, -0.020610976964235, 0.098351620137691, -0.99493825435638, 0, -2.2690446376801, -4.8363571166992, 2.4262270927429, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w2_rgt_lod0.msh",
+										name = "w2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4432544708252, -9.9658966064453e-05, -2.339989900589, 1, },
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_rgt_lod0.msh",
+								name = "gear1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6265215873718, -4.2777304649353, 2.9666001796722, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c1_rgt_lod0.msh",
+								name = "gear1_c1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3219851255417, -4.2767333984375, 3.1503517627716, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/geaer1_c2_rgt_lod0.msh",
+								name = "geaer1_c2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3422853946686, -4.2777481079102, 2.5653111934662, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/close_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/open_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cago_main_door.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { -0.99527126550674, 0.017289660871029, 0.09558329731226, 0, -0.085813663899899, -0.61754757165909, -0.78183811903, 0, 0.045509520918131, -0.78634339570999, 0.61611109972, 0, 7.2202167510986, 0.81462788581848, 5.2228097915649, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/close_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/open_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cago_main_door_glass.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_glass.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/d2_glass_lft_lod0.msh",
+								name = "d2_glass_lft",
+								transf = { 1, -1.0408340855861e-17, -3.4694469519536e-18, 0, 1.3877787807814e-17, 1, 0, 0, -3.4694469519536e-18, 5.5511151231258e-17, 1, 0, -0.039579648524523, 0.42384615540504, -0.9377573132515, 1, },
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cago_main_door.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/d2_lft_lod0.msh",
+						name = "d2_lft",
+						transf = { -0.99855673313141, -0.034209851175547, -0.04140143096447, 0, 0.053001403808594, -0.50319910049438, -0.86254358291626, 0, 0.0086743198335171, -0.86349302530289, 0.50428611040115, 0, -11.825047492981, 0.66857540607452, 5.2551321983337, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_interior.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/close_wheels/g_landinglight_wing_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/open_wheels/g_landinglight_wing_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/landinglight_wubg_lft_lod0.msh",
+								name = "landinglight_wubg_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -22.793613433838, 0, 1, },
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/g_landinglight_wing_lft_lod0.msh",
+						name = "g_landinglight_wing_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2705693244934, 11.396747589111, 3.6945555210114, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/close_wheels/g_landinglight_wing_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/open_wheels/g_landinglight_wing_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/landinglight_wing_rgt_lod0.msh",
+								name = "landinglight_wing_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 22.794019699097, 0, 1, },
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/g_landinglight_wing_rgt_lod0.msh",
+						name = "g_landinglight_wing_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2705693244934, -11.396865844727, 3.6945555210114, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/beaconlights_lod0.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1.2239212992426e-05, 0.15433792769909, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/positionlights_lod0.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1.2239212992426e-05, 0.15433792769909, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/strobelights_lod0.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1.2239212992426e-05, 0.15433792769909, 1, },
+					},
+					{
+						name = "comp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/aileron_lft_lod1.msh",
+						name = "aileron_lft",
+						transf = { 0.00045541368308477, 0.99239599704742, 0.1230850815773, 0, -5.9561818488874e-05, -0.12308505922556, 0.99239611625671, 0, 0.99999988079071, -0.00045928196050227, 3.054287390114e-06, 0, -3.0709495544434, 14.223698616028, 4.1084127426147, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/aileron_rgt_lod1.msh",
+						name = "aileron_rgt",
+						transf = { -0.00045538827544078, 0.99239599704742, -0.1230850815773, 0, -5.9788646467496e-05, 0.12308505922556, 0.99239611625671, 0, 0.99999988079071, 0.00045928463805467, 3.2825184916874e-06, 0, -3.0709495544434, -14.223361968994, 4.1084127426147, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rudder_lft_lod1.msh",
+						name = "rudder_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -19.993654251099, 7.0667815208435, 6.2226872444153, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rudder_rgt_lod1.msh",
+						name = "rudder_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20.110670089722, -7.06671667099, 6.2226867675781, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rudder_ctr_lod1.msh",
+						name = "rudder_ctr",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20.026002883911, 2.1229388948996e-05, 7.1844005584717, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/elevator_lft_lod1.msh",
+						name = "elevator_lft",
+						transf = { -2.9899163700442e-10, 0.9999765753746, 0.0068401321768761, 0, 4.3712411468277e-08, -0.0068401321768761, 0.9999765753746, 0, 1, 5.9798327400884e-10, -4.3709345476373e-08, 0, -19.596565246582, 3.3528380393982, 5.184338092804, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/elevator_rgt_lod1.msh",
+						name = "elevator_rgt",
+						transf = { -2.9899163700442e-10, 0.9999765753746, -0.0068401321768761, 0, 4.3710368657912e-08, 0.0068401321768761, 0.9999765753746, 0, 1, 8.3767458769539e-19, -4.3711388286738e-08, 0, -19.596567153931, -3.3528141975403, 5.184338092804, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_lft",
+						transf = { 1, 0, 0, 0, 0, 0.56640625, -0.82412612438202, 0, 0, 0.82412612438202, 0.56640625, 0, 2.9878389835358, 4.2844572067261, 2.9687581062317, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1_lft_lod1.msh",
+						name = "rotor2_lft",
+						transf = { 1, 0, 0, 0, 0, 0.87881702184677, -0.47715878486633, 0, 0, 0.47715878486633, 0.87881702184677, 0, 2.6061708927155, 9.0884532928467, 3.4974727630615, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1_lft_lod1.msh",
+						name = "rotor1_rgt",
+						transf = { 1, 0, 0, 0, 0, 0.77162456512451, -0.63607823848724, 0, 0, 0.63607823848724, 0.77162456512451, 0, 2.9878392219543, -4.284140586853, 2.9687585830688, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1_lft_lod1.msh",
+						name = "rotor2_rgt",
+						transf = { 1, 0, 0, 0, 0, 0.63742399215698, 0.77051317691803, 0, 0, -0.77051317691803, 0.63742399215698, 0, 2.6061708927155, -9.0881214141846, 3.4973831176758, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod1.msh",
+						name = "rotor1b_lft",
+						transf = { 1, 0, 0, 0, 0, 0.56640625, -0.82412612438202, 0, 0, 0.82412612438202, 0.56640625, 0, 2.9878389835358, 4.2844572067261, 2.9687581062317, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod1.msh",
+						name = "rotor2b_lft",
+						transf = { 1, 0, 0, 0, 0, 0.87881702184677, -0.47715878486633, 0, 0, 0.47715878486633, 0.87881702184677, 0, 2.6061708927155, 9.0884532928467, 3.4974727630615, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod1.msh",
+						name = "rotor1b_rgt",
+						transf = { 1, 0, 0, 0, 0, 0.77162456512451, -0.63607823848724, 0, 0, 0.63607823848724, 0.77162456512451, 0, 2.9878392219543, -4.284140586853, 2.9687585830688, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod1.msh",
+						name = "rotor2b_rgt",
+						transf = { 1, 0, 0, 0, 0, 0.63742399215698, 0.77051317691803, 0, 0, -0.77051317691803, 0.63742399215698, 0, 2.6061708927155, -9.0881214141846, 3.4973831176758, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/flaps/flap1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/flap1_lft_lod1.msh",
+						name = "flap1_lft",
+						transf = { -0.0084751378744841, 0.99532920122147, 0.096165738999844, 0, -0.98438680171967, 0.0086041251197457, -0.17580844461918, 0, -0.1758147329092, -0.096154280006886, 0.97971606254578, 0, -3.7193522453308, 2.8767242431641, 2.5738918781281, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/flaps/flap2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/flap2_lft_lod1.msh",
+						name = "flap2_lft",
+						transf = { 0.059914570301771, 0.99023497104645, 0.12587602436543, 0, -0.98611998558044, 0.0782785192132, -0.14642328023911, 0, -0.15484684705734, -0.11535597592592, 0.9811806678772, 0, -3.5211672782898, 7.3206377029419, 3.1393954753876, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/flaps/flap1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/flap1_rgt_lod1.msh",
+						name = "flap1_rgt",
+						transf = { 0.008475192822516, 0.99532920122147, -0.096165738999844, 0, -0.98438662290573, -0.0086041335016489, -0.17580911517143, 0, -0.17581537365913, 0.096154280006886, 0.97971594333649, 0, -3.7193505764008, -2.8763890266418, 2.5738918781281, 1, },
+					},
+					{
+						animations = {
+							flaps = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/flaps/flap2_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/flap2_rgt_lod1.msh",
+						name = "flap2_rgt",
+						transf = { -0.059914506971836, 0.99023509025574, -0.1258759200573, 0, -0.98611998558044, -0.078278429806232, -0.14642314612865, 0, -0.15484672784805, 0.11535589396954, 0.9811806678772, 0, -3.5211668014526, -7.320300579071, 3.1393954753876, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_frt_lod1.msh",
+								name = "gear_d1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.173520088196, 3.4091499401256e-08, 2.3516235351563, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_c1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_c1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_c1_frt_lod1.msh",
+								name = "gear_d1_c1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.175403594971, 3.2397316829247e-08, 2.3497214317322, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_left_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_left_frt_lod1.msh",
+								name = "gear_d2_left_frt",
+								transf = { 0.99961411952972, 0.0055658272467554, 0.027214260771871, 0, 0.027766963467002, -0.22731067240238, -0.9734263420105, 0, 0.00076816813088953, 0.97380632162094, -0.22737748920918, 0, 8.5323829650879, -0.52020364999771, 2.4661574363708, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_right_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_right_frt_lod1.msh",
+								name = "gear_d2_right_frt",
+								transf = { 0.99961411952972, -0.0055873477831483, 0.027210036292672, 0, -0.02776656486094, -0.22880601882935, 0.97307592630386, 0, 0.00078890682198107, -0.97345596551895, -0.22887286543846, 0, 8.5323829650879, 0.520203769207, 2.4661469459534, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_frt_lod1.msh",
+								name = "gear1_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.768991470337, -3.0410759791266e-05, 2.8138558864594, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_c1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_c1_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c1_frt_lod1.msh",
+								name = "gear1_c1_frt",
+								transf = { 0.9998477101326, 0, -0.017452405765653, 0, 0, 1, 0, 0, 0.017452405765653, 0, 0.9998477101326, 0, 11.201892852783, 0, 1.1717147827148, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_c2_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_c2_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c2_frt_lod1.msh",
+								name = "gear1_c2_frt",
+								transf = { 0.9998477101326, 0, 0.017452405765653, 0, 0, 1, 0, 0, -0.017452405765653, 0, 0.9998477101326, 0, 9.6820001602173, -3.0518731364282e-05, 2.6713557243347, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_c3_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_c3_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c3_frt_lod1.msh",
+								name = "gear1_c3_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.6819353103638, -1.4901161193848e-08, 2.6934196949005, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w1_left_frt_lod1.msh",
+										name = "w1_left_frt",
+										transf = { 0.98447686433792, 0.025778668001294, -0.17361046373844, 0, -0.038216531276703, 0.99690610170364, -0.068684704601765, 0, 0.17130273580551, 0.074253298342228, 0.98241633176804, 0, 0.0045863925479352, 0.21784356236458, -1.3448412418365, 1, },
+									},
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w1_left_frt_lod1.msh",
+										name = "w1_right_frt",
+										transf = { 0.98447698354721, 0.025778668001294, -0.17361028492451, 0, -0.014003893360496, 0.99753838777542, 0.068709656596184, 0, 0.1749541759491, -0.065211854875088, 0.98241454362869, 0, 0.015977388247848, -0.21721059083939, -1.3448467254639, 1, },
+									},
+									{
+										materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/landinglights_gear_frt_lod1.msh",
+										name = "landinglights_gear_frt",
+										transf = { 0.98447698354721, 0.025778668001294, -0.17361028492451, 0, -0.026173966005445, 0.99965733289719, 1.2503750440374e-05, 0, 0.17355112731457, 0.0045317597687244, 0.98481440544128, 0, -0.00079920660937205, -3.8756024878239e-05, 1.4147117137909, 1, },
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_w1_steering_frt_lod1.msh",
+								name = "gear_w1_steering_frt",
+								transf = { 0.98447698354721, -0.026173962280154, 0.17355114221573, 0, 0.025778668001294, 0.99965733289719, 0.0045317597687244, 0, -0.17361029982567, 1.2503796824603e-05, 0.98481440544128, 0, 11.015386581421, -3.0275687095127e-05, 1.4207662343979, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_left_lft_lod1.msh",
+								name = "gear_d1_left_lft",
+								transf = { -1, -1.8015665403937e-08, 1.5099578831723e-07, 0, -8.0141319358518e-08, 0.90630781650543, -0.4226182103157, 0, -1.2923490544381e-07, -0.4226182103157, -0.90630781650543, 0, -0.66518616676331, 4.8352789878845, 2.427127122879, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_left_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_left_lft_lod1.msh",
+								name = "gear_d2_left_lft",
+								transf = { -0.99854451417923, -0.047582648694515, 0.025389287620783, 0, -0.049838878214359, 0.99401342868805, -0.097227789461613, 0, -0.020610939711332, -0.098351657390594, -0.99493825435638, 0, -2.2690441608429, 4.8363571166992, 2.4262270927429, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_right_lft_lod1.msh",
+								name = "gear_d1_right_lft",
+								transf = { -1, -1.5727010804767e-07, 1.5099578831723e-07, 0, -9.6141960170826e-08, 0.93969255685806, 0.34202006459236, 0, -1.9567917775021e-07, 0.34202006459236, -0.93969255685806, 0, -0.66507405042648, 3.7365119457245, 2.4298820495605, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_right_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_right_lft_lod1.msh",
+								name = "gear_d2_right_lft",
+								transf = { -0.99925947189331, 0.028465233743191, 0.025888552889228, 0, 0.030736971646547, 0.99527871608734, 0.092062629759312, 0, -0.023145742714405, 0.092790186405182, -0.99541664123535, 0, -2.2693512439728, 3.739648103714, 2.4306261539459, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w2_lft_lod1.msh",
+										name = "w2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4432544708252, -9.9658966064453e-05, -2.339989900589, 1, },
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_lft_lod1.msh",
+								name = "gear1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6265215873718, 4.2781448364258, 2.9652724266052, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_c1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_c1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c1_lft_lod1.msh",
+								name = "gear1_c1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3219851255417, 4.2791419029236, 3.1490240097046, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/geaer1_c2_lft_lod1.msh",
+								name = "geaer1_c2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3422853946686, 4.2781271934509, 2.5639834403992, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_left_rgt_lod1.msh",
+								name = "gear_d1_left_rgt",
+								transf = { 1, 1.4917983515161e-09, -7.8837558703526e-10, 0, 1.6714722939071e-09, -0.93969255685806, 0.34202021360397, 0, -2.306055485457e-10, -0.34202021360397, -0.93969255685806, 0, -0.66507416963577, -3.7365119457245, 2.4298820495605, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_left_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_left_rgt_lod1.msh",
+								name = "gear_d2_left_rgt",
+								transf = { 0.99925947189331, 0.028465311974287, -0.025888573378325, 0, 0.030737053602934, -0.99527871608734, 0.092062681913376, 0, -0.023145750164986, -0.092790246009827, -0.99541664123535, 0, -2.2693514823914, -3.7396473884583, 2.4306268692017, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d1_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d1_right_rgt_lod1.msh",
+								name = "gear_d1_right_rgt",
+								transf = { 1, 1.0085256241243e-10, -1.0907755809697e-09, 0, -3.6957828464246e-10, -0.90630769729614, -0.42261829972267, 0, -1.0312005693791e-09, 0.42261829972267, -0.90630769729614, 0, -0.66518622636795, -4.8352794647217, 2.427127122879, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_d2_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_d2_right_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_d2_right_rgt_lod1.msh",
+								name = "gear_d2_right_rgt",
+								transf = { 0.99854451417923, -0.047582659870386, -0.025389326736331, 0, -0.04983888939023, -0.99401342868805, -0.09722775220871, 0, -0.020610976964235, 0.098351620137691, -0.99493825435638, 0, -2.2690446376801, -4.8363571166992, 2.4262270927429, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w2_rgt_lod1.msh",
+										name = "w2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4432544708252, -9.9658966064453e-05, -2.339989900589, 1, },
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_rgt_lod1.msh",
+								name = "gear1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6265215873718, -4.2777304649353, 2.9666001796722, 1, },
+							},
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_c1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c1_rgt_lod1.msh",
+								name = "gear1_c1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3219851255417, -4.2767333984375, 3.1503517627716, 1, },
+							},
+							{
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_c2_rgt_lod1.msh",
+								name = "gear1_c2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3422853946686, -4.2777481079102, 2.5653111934662, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/close_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/open_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { -0.99527126550674, 0.017289660871029, 0.09558329731226, 0, -0.085813663899899, -0.61754757165909, -0.78183811903, 0, 0.045509520918131, -0.78634339570999, 0.61611109972, 0, 7.2202167510986, 0.81462788581848, 5.2228097915649, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/close_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/open_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/d2_lft_lod1.msh",
+						name = "d2_lft",
+						transf = { -0.99855673313141, -0.034209851175547, -0.04140143096447, 0, 0.053001403808594, -0.50319910049438, -0.86254358291626, 0, 0.0086743198335171, -0.86349302530289, 0.50428611040115, 0, -11.825047492981, 0.66857540607452, 5.2551321983337, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_lod.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/close_wheels/g_landinglight_wing_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/open_wheels/g_landinglight_wing_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/landinglight_wing_lft_lod1.msh",
+								name = "landinglight_wing_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -22.793613433838, 0, 1, },
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/g_landinglight_wing_lft_lod1.msh",
+						name = "g_landinglight_wing_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2705693244934, 11.396747589111, 3.6945555210114, 1, },
+					},
+					{
+						animations = {
+							close_wheels = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/close_wheels/g_landinglight_wing_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_wheels = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/open_wheels/g_landinglight_wing_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/landinglight_wing_rgt_lod1.msh",
+								name = "landinglight_wing_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 22.794019699097, 0, 1, },
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/g_landinglight_wing_rgt_lod1.msh",
+						name = "g_landinglight_wing_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.2705693244934, -11.396865844727, 3.6945555210114, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/beaconlights_lod1.msh",
+						name = "beaconlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1.2239212992426e-05, 0.15433792769909, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/positionlights_lod1.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1.2239212992426e-05, 0.15433792769909, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/strobelights_lod1.msh",
+						name = "strobelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1.2239212992426e-05, 0.15433792769909, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/close_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/open_doors_cargo/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/d1_lft_lod2.msh",
+						name = "d1_lft",
+						transf = { -0.99527126550674, 0.017289660871029, 0.09558329731226, 0, -0.085813663899899, -0.61754757165909, -0.78183811903, 0, 0.045509520918131, -0.78634339570999, 0.61611109972, 0, 7.2202167510986, 0.81462788581848, 5.2228097915649, 1, },
+					},
+					{
+						animations = {
+							close_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/close_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_cargo = {
+								params = {
+									id = "vehicle/plane/super_connie_cargo_v2/open_doors_cargo/d2_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/d2_lft_lod2.msh",
+						name = "d2_lft",
+						transf = { -0.99855673313141, -0.034209851175547, -0.04140143096447, 0, 0.053001403808594, -0.50319910049438, -0.86254358291626, 0, 0.0086743198335171, -0.86349302530289, 0.50428611040115, 0, -11.825047492981, 0.66857540607452, 5.2551321983337, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_interior_lod.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/interior_lod2.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod2.msh",
+						name = "rotor1b_lft",
+						transf = { 1, 0, 0, 0, 0, 0.56640625, -0.82412612438202, 0, 0, 0.82412612438202, 0.56640625, 0, 2.9878389835358, 4.2844572067261, 2.9687581062317, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod2.msh",
+						name = "rotor2b_lft",
+						transf = { 1, 0, 0, 0, 0, 0.87881702184677, -0.47715878486633, 0, 0, 0.47715878486633, 0.87881702184677, 0, 2.6061708927155, 9.0884532928467, 3.4974727630615, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod2.msh",
+						name = "rotor1b_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9878392219543, -4.284140586853, 2.9687585830688, 1, },
+					},
+					{
+						materials = { "vehicle/plane/super_connie_cargo_v2/lockheed_super_constellation_cargo_rotor.mtl", "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+						mesh = "vehicle/plane/super_connie_cargo_v2/rotor1b_lft_lod2.msh",
+						name = "rotor2b_rgt",
+						transf = { 1, 0, 0, 0, 0, 0.63742399215698, 0.77051317691803, 0, 0, -0.77051317691803, 0.63742399215698, 0, 2.6061708927155, -9.0881214141846, 3.4973831176758, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear_w1_steering_frt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w1_left_frt_lod2.msh",
+										name = "w1_left_frt",
+										transf = { 1, 4.1243350401565e-10, -1.6522346868442e-07, 0, -1.1936834631854e-08, 0.99756401777267, -0.069756470620632, 0, 1.6479222608723e-07, 0.069756470620632, 0.99756401777267, 0, 0.49000525474548, 0.21763218939304, -2.7157254219055, 1, },
+									},
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w1_left_frt_lod2.msh",
+										name = "w1_right_frt",
+										transf = { 1, 1.464717236388e-09, 1.3537647447492e-08, 0, -2.4054880309876e-09, 0.99756401777267, 0.069756470620632, 0, -1.340249689008e-08, -0.069756470620632, 0.99756401777267, 0, 0.49000528454781, -0.21757106482983, -2.7157254219055, 1, },
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_cargo_main_lod.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear_w1_steering_frt_lod2.msh",
+								name = "gear_w1_steering_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.768991470337, -3.0410759791266e-05, 2.8138558864594, 1, },
+							},
+						},
+						name = "gear_frt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_lft.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w2_lft_lod2.msh",
+										name = "w2_lft",
+										transf = { 1, 0, 1.4945923385031e-24, 0, 6.3108872417681e-30, 1, 0, 0, 1.4729481449098e-23, 0, 1, 0, 0.4432544708252, -9.9658966064453e-05, -2.339989900589, 1, },
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_lft_lod2.msh",
+								name = "gear1_lft",
+								transf = { 1, -7.5108757714303e-15, -5.5636267148884e-08, 0, 1.23747532539e-14, 1, 8.7422776573476e-08, 0, 5.5636267148884e-08, -8.7422776573476e-08, 1, 0, -2.6265215873718, 4.2781443595886, 2.9652726650238, 1, },
+							},
+						},
+						name = "gear_lft_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								animations = {
+									close_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/close_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_wheels = {
+										params = {
+											id = "vehicle/plane/super_connie_cargo_v2/open_wheels/gear1_rgt.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+										mesh = "vehicle/plane/super_connie_cargo_v2/w2_rgt_lod2.msh",
+										name = "w2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4432544708252, -9.9658966064453e-05, -2.339989900589, 1, },
+									},
+								},
+								materials = { "vehicle/plane/super_connie_cargo_v2/lockhead_super_constellation_additional.mtl", },
+								mesh = "vehicle/plane/super_connie_cargo_v2/gear1_rgt_lod2.msh",
+								name = "gear1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6265215873718, -4.2777304649353, 2.9666001796722, 1, },
+							},
+						},
+						name = "gear_rgt_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		airVehicle = {
+			configs = {
+				{
+					aileronLeft = {
+						ids = { 21, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 22, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.60000002384186, 0.60000002384186, },
+					axles = { "vehicle/plane/super_connie_cargo_v2/w2_lft_lod0.msh", "vehicle/plane/super_connie_cargo_v2/w2_rgt_lod0.msh", },
+					beaconLights = { 79, },
+					elevator = {
+						ids = { 26, 27, },
+						maxAngle = 25,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { 36, 37, 38, 39, },
+						maxAngle = 30,
+					},
+					landingLight = { 76, 78, 52, },
+					props = { 28, 29, 30, 31, },
+					propsB = { 32, 33, 34, 35, },
+					rudder = {
+						ids = { 23, 24, 25, },
+						maxAngle = 30,
+					},
+					steeringParts = { 49, },
+					strobeLights = { 81, },
+					wheelRadii = { 0.40000000596046, },
+					wheels = { "vehicle/plane/super_connie_cargo_v2/w1_left_frt_lod0.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 2, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.60000002384186, 0.60000002384186, },
+					axles = { "vehicle/plane/super_connie_cargo_v2/w2_lft_lod1.msh", "vehicle/plane/super_connie_cargo_v2/w2_rgt_lod1.msh", },
+					beaconLights = { 59, },
+					elevator = {
+						ids = { 7, 8, },
+						maxAngle = 25,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { 17, 18, 19, 20, },
+						maxAngle = 30,
+					},
+					landingLight = { 56, 58, 33, },
+					props = { 9, 10, 11, 12, },
+					propsB = { 13, 14, 15, 16, },
+					rudder = {
+						ids = { 4, 5, 6, },
+						maxAngle = 30,
+					},
+					steeringParts = { 30, },
+					strobeLights = { 61, },
+					wheelRadii = { 40, },
+					wheels = { "vehicle/plane/super_connie_cargo_v2/w1_left_frt_lod1.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { },
+						maxAngle = 0,
+					},
+					aileronRight = {
+						ids = { },
+						maxAngle = 0,
+					},
+					axleRadii = { 0.60000002384186, 0.60000002384186, },
+					axles = { "vehicle/plane/super_connie_cargo_v2/w2_lft_lod2.msh", "vehicle/plane/super_connie_cargo_v2/w2_rgt_lod2.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { },
+						maxAngle = 0,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { },
+					propsB = { 5, 6, 7, 8, },
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 40, },
+					wheels = { "vehicle/plane/super_connie_cargo_v2/w1_left_frt_lod2.msh", },
+				},
+			},
+			idleThrust = 0,
+			maxPayload = 0,
+			maxTakeOffWeight = 54400,
+			maxThrust = 100000,
+			timeToFullThrust = 3,
+			topSpeed = 135,
+			type = "BIG",
+			weight = 31300,
+			wingArea = 153,
+		},
+		availability = {
+			yearFrom = 1952,
+			yearTo = 1986,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_PLANE_SUPER_CONNIE_CARGO_DESCRIPTION"),
+			name = _("VEHICLE_PLANE_SUPER_CONNIE_CARGO_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 0.88999998569489, -9.8299999237061, 3.0879144668579, },
+					size01 = { 0.10000000149012, 2, },
+					velocity = { -4, 2, -1.1000000238419, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19569393992424, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 0.91228604316711, 9.8275995254517, 3.0731630325317, },
+					size01 = { 0.10000000149012, 2, },
+					velocity = { -4, -2, -1.1000000238419, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 1.0835000276566, -8.3179998397827, 3.2338433265686, },
+					size01 = { 0.10000000149012, 2, },
+					velocity = { -4, 2, -1.1000000238419, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 1.128843665123, 8.3403186798096, 3.2426989078522, },
+					size01 = { 0.10000000149012, 2, },
+					velocity = { -4, -2, -1.1000000238419, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 1.2637180089951, 5.0174713134766, 2.5608432292938, },
+					size01 = { 0.10000000149012, 2, },
+					velocity = { -4, 2, -1.1000000238419, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 1.2699999809265, -5.0199999809265, 2.5366988182068, },
+					size01 = { 0.10000000149012, 2, },
+					velocity = { -4, -2, -1.1000000238419, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 1.4559998512268, -3.5179998874664, 2.657999753952, },
+					size01 = { 0.10000000149012, 2, },
+					velocity = { -4, 2, -1.1000000238419, },
+					velocityDampingFactor = 4,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 1.5155721902847, 3.5461626052856, 2.7019145488739, },
+					size01 = { 0.10000000149012, 2, },
+					velocity = { -4, -2, -1.1000000238419, },
+					velocityDampingFactor = 4,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "AIR",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 82,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.945999145508, 0.52358734607697, 3.2479999065399, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 82,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.945999145508, -0.52376359701157, 3.2479999065399, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 82,
+					transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 10.195330619812, -0.29876360297203, 3.1379997730255, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 82,
+					transf = { -1, -1.2246468525852e-16, -8.7422776573476e-08, 0, -7.5202778371448e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 10.164999961853, 0.63064348697662, 3.1139998435974, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "aircraft_prop_modern",
+			},
+		},
+		transportVehicle = {
+			carrier = "AIR",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1099998950958, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { -2.1050000190735, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -8.8000001907349, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.1399998664856, 0.99400001764297, 4.710000038147, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 36,
+									cargoBay = {
+										bbMax = { 7.0875000953674, 0.99400001764297, 4.7149000167847, },
+										bbMin = { -2.1050000190735, -0.99400001764297, 2.7255001068115, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 4,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v09",
+		},
+	},
+	version = 1,
+}
+end

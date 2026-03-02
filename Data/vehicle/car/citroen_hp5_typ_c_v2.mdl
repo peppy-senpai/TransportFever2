@@ -1,0 +1,267 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.4516987800598, 0.62526744604111, 1.5982251167297, },
+		bbMin = { -1.6879999637604, -0.60986113548279, -0.009698748588562, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.5698493719101, 0.61756432056427, 0.80396193265915, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c.mtl", "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c_window.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c_glass.mtl", },
+								mesh = "vehicle/car/citroen_hp5_typ_c_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.079911604523659, 0, 1.1800056695938, 1, },
+							},
+							{
+								materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c_glass.mtl", },
+								mesh = "vehicle/car/citroen_hp5_typ_c_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.99152463674545, 0, 1.2140375375748, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c.mtl", "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c_window.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/roof_up_lod0.msh",
+						name = "roof_up",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.12600004673, 0.45699995756149, 0.31599998474121, 1, },
+					},
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 1.12600004673, -0.45699995756149, 0.31599998474121, 1, },
+					},
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1138999462128, 0, 0.31599998474121, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c_lod.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c_lod.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/roof_up_lod1.msh",
+						name = "roof_up",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c_lod.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.12600004673, 0.45699995756149, 0.31599998474121, 1, },
+					},
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c_lod.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, -8.7422776573476e-08, 0, 8.7422769468049e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, 1.12600004673, -0.45699995756149, 0.31599998474121, 1, },
+					},
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c_lod.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1138999462128, 0, 0.31599998474121, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c_lod.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/citroen_hp5_typ_c_v2/citreon_hp5_typ_c_lod.mtl", },
+						mesh = "vehicle/car/citroen_hp5_typ_c_v2/roof_folded_lod2.msh",
+						name = "roof_folded",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1900,
+			yearTo = 1950,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.62745094299316, 0.62389588356018, 0.5376393198967, },
+				},
+				{
+					{ 0.87058824300766, 0.87058824300766, 0.87058824300766, },
+				},
+				{
+					{ 0.047404859215021, 0.30202481150627, 0.53725492954254, },
+				},
+				{
+					{ 0.35686272382736, 0.22391384840012, 0.24344071745872, },
+				},
+				{
+					{ 0.57647061347961, 0.1718108355999, 0.17223243415356, },
+				},
+				{
+					{ 0.066643603146076, 0.41556340456009, 0.41960781812668, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/citroen_hp5_typ_c_v2/w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 9, },
+					steeringParts = { },
+					wheels = { "vehicle/car/citroen_hp5_typ_c_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/citroen_hp5_typ_c_v2/w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 6, },
+					steeringParts = { },
+					wheels = { "vehicle/car/citroen_hp5_typ_c_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = { },
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 8,
+				tractiveEffort = 4.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_old",
+			},
+			topSpeed = 13.888889312744,
+			weight = 0.54000002145767,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 10,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -0.5799999833107, 0.15000000596046, 0.090000003576279, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

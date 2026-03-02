@@ -1,0 +1,310 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.702957868576, 0.73925000429153, 1.4955779314041, },
+		bbMin = { -1.9457960128784, -0.73925000429153, -0.0085999965667725, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.8243769407272, 0.73925000429153, 0.75208896398544, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.0084206000117e-16, 1.430511442635e-08, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_interior_glass.mtl", "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_glass.mtl", },
+								mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.43608373403549, -2.9802322387695e-08, 1.0427774190903, 1, },
+							},
+							{
+								materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_interior_glass.mtl", "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_glass.mtl", },
+								mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.14988893270493, 0.52157145738602, 1.0406528711319, 1, },
+							},
+							{
+								materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_interior_glass.mtl", "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_glass.mtl", },
+								mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.14988893270493, -0.52157145738602, 1.0406528711319, 1, },
+							},
+							{
+								materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_interior_glass.mtl", "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_glass.mtl", },
+								mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.8359496593475, 0, 0.98561012744904, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_interior.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2005000114441, 0.56879991292953, 0.25639998912811, 1, },
+					},
+					{
+						materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, 1.5099578831723e-07, -1.2246468525852e-16, 0, 1.5099578831723e-07, -1, 1.2246465878874e-16, 0, 1.2246465878874e-16, 1.2246468525852e-16, 1, 0, 1.2005000114441, -0.56879991292953, 0.25639998912811, 1, },
+					},
+					{
+						materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2194999456406, 0, 0.25639998912811, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_lod.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.0084206000117e-16, 1.430511442635e-08, 1, },
+					},
+					{
+						materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_lod.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2005000114441, 0.56879991292953, 0.25639998912811, 1, },
+					},
+					{
+						materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_lod.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, -1.2246468525852e-16, 1.5099578831723e-07, 0, 2.2677265813331e-14, -1, -1.5099578831723e-07, 0, -1.5099578831723e-07, -1.5099578831723e-07, 1, 0, 1.2005000114441, -0.56879991292953, 0.25639998912811, 1, },
+					},
+					{
+						materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_lod.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2195000648499, 5.9604644775391e-08, 0.25639998912811, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/renault_4_f4_fourgonnette_v2/renault_4_f4_fourgonnette_lod.mtl", },
+						mesh = "vehicle/car/renault_4_f4_fourgonnette_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.0084206000117e-16, 1.430511442635e-08, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1961,
+			yearTo = 2000,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.26643979549408, 0.31372547149658, 0.22329871356487, },
+				},
+				{
+					{ 0.61601996421814, 0.61960780620575, 0.52119952440262, },
+				},
+				{
+					{ 0.37277966737747, 0.55688577890396, 0.62745094299316, },
+				},
+				{
+					{ 0.69411766529083, 0.55601441860199, 0.22728951275349, },
+				},
+				{
+					{ 0.81960785388947, 0.81960785388947, 0.81960785388947, },
+				},
+				{
+					{ 0.38405349850655, 0.54901957511902, 0.27020373940468, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/renault_4_f4_fourgonnette_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 13, },
+					blinkLightsRight = { 14, },
+					brakeLights = { 12, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 11, },
+					steeringParts = { },
+					wheels = { "vehicle/car/renault_4_f4_fourgonnette_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/renault_4_f4_fourgonnette_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/renault_4_f4_fourgonnette_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 17,
+				tractiveEffort = 6.9000000953674,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_old",
+			},
+			topSpeed = 22.222221374512,
+			weight = 0.69999998807907,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 15,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.068000003695488, 0.21999999880791, -0.035000007599592, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

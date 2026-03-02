@@ -1,0 +1,1114 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 12.147384643555, 1.6058623790741, 4.3711743354797, },
+		bbMin = { -12.147384643555, -1.6058623790741, -0.021140158176422, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 12.147384643555, 1.6058623790741, 2.1961572170258, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe.mtl", },
+						mesh = "vehicle/waggon/streamlined_santa_fe_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.719024658203, -0.0040000081062317, 2.9839999675751, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.214971542358, 1.5064116716385, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.245999336243, 1.5064116716385, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.746000289917, 1.5064116716385, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.8619999885559, 1.506411075592, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass5_lft_lod0.msh",
+								name = "glass5_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5865001678467, 1.506411075592, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass6_lft_lod0.msh",
+								name = "glass6_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.294499874115, 1.506411075592, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass7_lft_lod0.msh",
+								name = "glass7_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.00049999356269836, 1.506411075592, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass8_lft_lod0.msh",
+								name = "glass8_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3010001182556, 1.506411075592, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass9_lft_lod0.msh",
+								name = "glass9_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.5954999923706, 1.506411075592, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass10_lft_lod0.msh",
+								name = "glass10_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4805002212524, 1.506411075592, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass11_lft_lod0.msh",
+								name = "glass11_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.0769996643066, 1.5134845972061, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass_interior_lft_lod0.msh",
+								name = "glass_interior_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.0640001296997, 0.49390798807144, 2.5650000572205, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 11.211971282959, -1.5064116716385, 2.5700001716614, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.239999771118, -1.5064116716385, 2.5700001716614, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.7474994659424, -1.5064116716385, 2.5700001716614, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.875, -1.506411075592, 2.5700001716614, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass5_rgt_lod0.msh",
+								name = "glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.585000038147, -1.506411075592, 2.5700001716614, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass6_rgt_lod0.msh",
+								name = "glass6_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2925000190735, -1.506411075592, 2.5700001716614, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass7_rgt_lod0.msh",
+								name = "glass7_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.0024999976158142, -1.506411075592, 2.5700001716614, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass8_rgt_lod0.msh",
+								name = "glass8_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3069999217987, -1.506411075592, 2.5700001716614, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass9_rgt_lod0.msh",
+								name = "glass9_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.6075000762939, -1.506411075592, 2.5700001716614, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass10_rgt_lod0.msh",
+								name = "glass10_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.4849996566772, -1.506411075592, 2.5700001716614, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass11_rgt_lod0.msh",
+								name = "glass11_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.0750007629395, -1.5134845972061, 2.5674998760223, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass_interior_rgt_lod0.msh",
+								name = "glass_interior_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.0640001296997, -0.49390798807144, 2.5650000572205, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.719024658203, -0.0059999972581863, 2.9769999980927, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_interior.mtl", },
+						mesh = "vehicle/waggon/streamlined_santa_fe_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/b1_lod0.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/w1_lod0.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4530639648438, 0, 0.53320002555847, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/w1_lod0.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4530684947968, -1.3148336586166e-14, 0.53324168920517, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.8295993804932, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/b1_lod0.msh",
+								name = "b2",
+								transf = { 1, 0, 5.5397757069146e-24, 0, 2.6469779601697e-23, 1, -2.6469779601697e-23, 0, -2.0930003894782e-23, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/w1_lod0.msh",
+								name = "w3",
+								transf = { 1, 0, 5.5397757069146e-24, 0, 2.6469779601697e-23, 1, -2.6469779601697e-23, 0, -2.0930003894782e-23, 0, 1, 0, -1.4530684947968, -1.3148336586166e-14, 0.53324168920517, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/w1_lod0.msh",
+								name = "w4",
+								transf = { 1, 0, 5.5397757069146e-24, 0, 2.6469779601697e-23, 1, -2.6469779601697e-23, 0, -2.0930003894782e-23, 0, 1, 0, 1.4530639648438, 0, 0.53320002555847, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { -1, -8.7422776573476e-08, -8.7422776573476e-08, 0, 8.7422769468049e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, -7.8295950889587, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_door_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/d1_glass_lft_lod0.msh",
+								name = "d1_glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.48870721459389, 0, 2.9849998950958, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_door.mtl", },
+						mesh = "vehicle/waggon/streamlined_santa_fe_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.349292755127, 1.4673072099686, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_glass.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_door_glass.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/d1_glass_rgt_lod0.msh",
+								name = "d1_glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.48170721530914, -0.00071291532367468, 2.9830000400543, 1, },
+							},
+						},
+						materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe.mtl", "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_door.mtl", },
+						mesh = "vehicle/waggon/streamlined_santa_fe_v2/d1_rgt_lod0.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.349292755127, -1.4827997684479, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_all_doors/s1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_doors_left/s1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_all_doors/s1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_doors_left/s1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe.mtl", },
+						mesh = "vehicle/waggon/streamlined_santa_fe_v2/s1_lft_lod0.msh",
+						name = "s1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.349292755127, 1.0253072977066, 0.93984711170197, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_all_doors/s1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_doors_right/s1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_all_doors/s1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_doors_right/s1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe.mtl", },
+						mesh = "vehicle/waggon/streamlined_santa_fe_v2/s1_rgt_lod0.msh",
+						name = "s1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.349292755127, -1.0253072977066, 0.93984711170197, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_lod.mtl", },
+						mesh = "vehicle/waggon/streamlined_santa_fe_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_lod.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/b1_lod1.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_lod.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/w1_lod1.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4530644416809, 0, 0.53320002555847, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_lod.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/w1_lod1.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4530684947968, -1.3148336586166e-14, 0.53324168920517, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.8295993804932, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_lod.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/b1_lod1.msh",
+								name = "b2",
+								transf = { 1, -2.6469779601697e-23, -4.1068079793144e-23, 0, 0, 1, -2.6469779601697e-23, 0, -4.106806717137e-23, 0, 1, 0, 1.1368683518052e-15, 1.3552526853146e-22, 1.3552526853146e-22, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_lod.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/w1_lod1.msh",
+								name = "w3",
+								transf = { 1, -2.6469779601697e-23, -4.1068079793144e-23, 0, 0, 1, -2.6469779601697e-23, 0, -4.106806717137e-23, 0, 1, 0, -1.4530684947968, -1.3148336586166e-14, 0.53324168920517, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_lod.mtl", },
+								mesh = "vehicle/waggon/streamlined_santa_fe_v2/w1_lod1.msh",
+								name = "w4",
+								transf = { 1, -2.6469779601697e-23, -4.1068079793144e-23, 0, 0, 1, -2.6469779601697e-23, 0, -4.106806717137e-23, 0, 1, 0, 1.4530644416809, 0, 0.53320002555847, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { -1, -8.7422776573476e-08, -1.5099578831723e-07, 0, 8.7422755257194e-08, -1, 1.5099581673894e-07, 0, -1.5099581673894e-07, 1.5099578831723e-07, 1, 0, -7.8295950889587, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_all_doors/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_lod.mtl", },
+						mesh = "vehicle/waggon/streamlined_santa_fe_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.349292755127, 1.4673072099686, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_all_doors/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_doors_right/d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_lod.mtl", },
+						mesh = "vehicle/waggon/streamlined_santa_fe_v2/d1_rgt_lod1.msh",
+						name = "d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.349292755127, -1.4827997684479, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_all_doors/s1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_doors_left/s1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_all_doors/s1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_doors_left/s1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_lod.mtl", },
+						mesh = "vehicle/waggon/streamlined_santa_fe_v2/s1_lft_lod1.msh",
+						name = "s1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.349292755127, 1.0253072977066, 0.93984711170197, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_all_doors/s1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/close_doors_right/s1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_all_doors/s1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/streamlined_santa_fe_v2/open_doors_right/s1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/streamlined_santa_fe_v2/streamlined_santa_fe_lod.mtl", },
+						mesh = "vehicle/waggon/streamlined_santa_fe_v2/s1_rgt_lod1.msh",
+						name = "s1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.349292755127, -1.0253072977066, 0.93984711170197, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1935,
+			yearTo = 2000,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_WAGGON_STREAMLINED_SANTA_FE_DESCRIPTION"),
+			name = _("VEHICLE_WAGGON_STREAMLINED_SANTA_FE_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 25568,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/waggon/streamlined_santa_fe_v2/w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/waggon/streamlined_santa_fe_v2/w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "waggon_old",
+			},
+			topSpeed = 41.669998168945,
+			weight = 30,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.8170003890991, -0.62999999523163, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.1900000572205, -0.62999999523163, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8999998569489, -0.62999999523163, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6100000143051, -0.62999999523163, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.67400002479553, -0.62999999523163, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9519996643066, -0.62999999523163, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2479996681213, -0.62999999523163, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7420001029968, -0.62999999523163, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 10.142000198364, -0.63599997758865, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 7.5149998664856, -0.63599997758865, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 5.2249999046326, -0.63599997758865, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 2.9349999427795, -0.63599997758865, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0.65100002288818, -0.63599997758865, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -1.6269999742508, -0.63599997758865, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -3.9230000972748, -0.63599997758865, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.8170003890991, 1.1210000514984, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.1900000572205, 1.1210000514984, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8999998569489, 1.1210000514984, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6100000143051, 1.1210000514984, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.67400002479553, 1.1210000514984, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9519996643066, 1.1210000514984, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2479996681213, 1.1210000514984, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7420001029968, 1.1210000514984, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 10.142000198364, 1.1150000095367, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 7.5149998664856, 1.1150000095367, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 5.2249999046326, 1.1150000095367, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 2.9349999427795, 1.1150000095367, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0.65100002288818, 1.1150000095367, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -1.6269999742508, 1.1150000095367, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -3.9230000972748, 1.1150000095367, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.8170003890991, -1.0989998579025, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.1900000572205, -1.0989998579025, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8999998569489, -1.0989998579025, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6100000143051, -1.0989998579025, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.67400002479553, -1.0989998579025, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9519996643066, -1.0989998579025, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2479996681213, -1.0989998579025, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7420001029968, -1.0989998579025, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 10.142000198364, -1.1050000190735, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 7.5149998664856, -1.1050000190735, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 5.2249999046326, -1.1050000190735, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 2.9349999427795, -1.1050000190735, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0.65100002288818, -1.1050000190735, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -1.6269999742508, -1.1050000190735, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -3.9230000972748, -1.1050000190735, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.8170003890991, 0.65200001001358, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.1900000572205, 0.65200001001358, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8999998569489, 0.65200001001358, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6100000143051, 0.65200001001358, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.67400002479553, 0.65200001001358, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9519996643066, 0.65200001001358, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.2479996681213, 0.65200001001358, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.7420001029968, 0.65200001001358, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 10.142000198364, 0.64600002765656, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 7.5149998664856, 0.64600002765656, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 5.2249999046326, 0.64600002765656, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 2.9349999427795, 0.64600002765656, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0.65100002288818, 0.64600002765656, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -1.6269999742508, 0.64600002765656, 1.2560000419617, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 44,
+					transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -3.9230000972748, 0.64600002765656, 1.2560000419617, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 72,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

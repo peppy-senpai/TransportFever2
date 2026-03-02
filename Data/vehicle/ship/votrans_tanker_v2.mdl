@@ -1,0 +1,540 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 25.730583190918, 5.9777002334595, 8.8215456008911, },
+		bbMin = { -26.074855804443, -5.9776949882507, -2.083359003067, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 25.902719497681, 5.9776973724365, 5.4524521827698, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans.mtl", "vehicle/ship/votrans_v2/votrans_hull.mtl", },
+						mesh = "vehicle/ship/votrans_tanker_v2/tanker_body_lod0.msh",
+						name = "tanker_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.25, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", "vehicle/ship/votrans_v2/votrans_interior_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass_left_frt_lod0.msh",
+								name = "tanker_glass_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.46116065979, 1.1656712293625, 6.8472356796265, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass1_center_frt_lod0.msh",
+								name = "tanker_glass1_center_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.4093017578125, -0.00013041496276855, 1.7709037065506, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", "vehicle/ship/votrans_v2/votrans_interior_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass2_center_frt_lod0.msh",
+								name = "tanker_glass2_center_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.3856172561646, -0.00011280179023743, 6.8472361564636, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", "vehicle/ship/votrans_v2/votrans_interior_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass_right_frt_lod0.msh",
+								name = "tanker_glass_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.4611625671387, -1.1667015552521, 6.8472361564636, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass1_lft_lod0.msh",
+								name = "tanker_glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.4794783592224, 1.8849697113037, 1.7030320167542, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass2_lft_lod0.msh",
+								name = "tanker_glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.8199996948242, 1.913703083992, 1.6064459085464, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass3_lft_lod0.msh",
+								name = "tanker_glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.25, 1.9435839653015, 1.5018340349197, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", "vehicle/ship/votrans_v2/votrans_interior_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass4_lft_lod0.msh",
+								name = "tanker_glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.270562171936, 1.5426554679871, 6.8255105018616, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass5_lft_lod0.msh",
+								name = "tanker_glass5_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -16.480274200439, 2.622944355011, 1.3516405820847, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass6_lft_lod0.msh",
+								name = "tanker_glass6_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -18.739999771118, 2.6030375957489, 1.5534439086914, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass7_lft_lod0.msh",
+								name = "tanker_glass7_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -21.147819519043, 2.581826210022, 1.3516404628754, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass1_rgt_lod0.msh",
+								name = "tanker_glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -21.107822418213, -2.5824213027954, 1.3516409397125, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass2_rgt_lod0.msh",
+								name = "tanker_glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -18.689998626709, -2.6037232875824, 1.3516409397125, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass3_rgt_lod0.msh",
+								name = "tanker_glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -16.470275878906, -2.6232805252075, 1.3516409397125, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", "vehicle/ship/votrans_v2/votrans_interior_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass4_rgt_lod0.msh",
+								name = "tanker_glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.270565032959, -1.5436818599701, 6.8255105018616, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass5_rgt_lod0.msh",
+								name = "tanker_glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.059999465942, -1.9415012598038, 1.5082552433014, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass6_rgt_lod0.msh",
+								name = "tanker_glass6_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.6849994659424, -1.9122987985611, 1.6127234697342, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass7_rgt_lod0.msh",
+								name = "tanker_glass7_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.3994798660278, -1.8842449188232, 1.7047649621964, 1, },
+							},
+							{
+								materials = { "vehicle/ship/votrans_v2/votrans_glass.mtl", "vehicle/ship/votrans_v2/votrans_interior_glass.mtl", },
+								mesh = "vehicle/ship/votrans_tanker_v2/tanker_glass_bck_lod0.msh",
+								name = "tanker_glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -13.117793083191, -0.00010931491851807, 6.8472361564636, 1, },
+							},
+						},
+						name = "tanker_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_interior.mtl", },
+						mesh = "vehicle/ship/votrans_tanker_v2/tanker_interior_lod0.msh",
+						name = "tanker_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.25, 0, 0, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/ship/votrans_tanker_v2/forever/tanker_g1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/votrans_v2/votrans.mtl", },
+						mesh = "vehicle/ship/votrans_tanker_v2/tanker_g1_lod0.msh",
+						name = "tanker_g1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -13.723315238953, -0.00028578052297235, 8.688889503479, 1, },
+					},
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_hull.mtl", },
+						mesh = "vehicle/ship/votrans_universal_v2/universal_rudder_lft_lod0.msh",
+						name = "universal_rudder_lft",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -23.950086593628, 2.0698246955872, -0.45718756318092, 1, },
+					},
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_hull.mtl", },
+						mesh = "vehicle/ship/votrans_universal_v2/universal_rudder_rgt_lod0.msh",
+						name = "universal_rudder_rgt",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -23.950086593628, -2.0701112747192, -0.45718756318092, 1, },
+					},
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_hull.mtl", },
+						mesh = "vehicle/ship/votrans_universal_v2/universal_propeller_lft_lod0.msh",
+						name = "universal_propeller_lft",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -23.300226211548, 2.0720505714417, -0.87701833248138, 1, },
+					},
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_hull.mtl", },
+						mesh = "vehicle/ship/votrans_universal_v2/universal_propeller_rgt_lod0.msh",
+						name = "universal_propeller_rgt",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, -1.2325950468584e-31, 0, -1.2325950468584e-31, 0, 1, 0, -23.300226211548, -2.0721116065979, -0.87701833248138, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", "vehicle/ship/barges_v2/barges_body.mtl", },
+						mesh = "vehicle/ship/barges_v2/body_double_lod0.msh",
+						name = "body_double",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.979999542236, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", },
+						mesh = "vehicle/ship/barges_v2/tanker_double_lod0.msh",
+						name = "tanker_double",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.979999542236, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/emissive/ship_all_lights.mtl", },
+						mesh = "vehicle/ship/votrans_tanker_v2/tanker_headlights_lod0.msh",
+						name = "tanker_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.25, 0, 2.7400000095367, 1, },
+					},
+					{
+						name = "tanker_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_lod.mtl", },
+						mesh = "vehicle/ship/votrans_tanker_v2/tanker_body_lod1.msh",
+						name = "tanker_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.25, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_interior_lod.mtl", },
+						mesh = "vehicle/ship/votrans_tanker_v2/tanker_interior_lod1.msh",
+						name = "tanker_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.25, 0, 0, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/ship/votrans_tanker_v2/forever/tanker_g1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/ship/votrans_v2/votrans_lod.mtl", },
+						mesh = "vehicle/ship/votrans_tanker_v2/tanker_g1_lod1.msh",
+						name = "tanker_g1",
+						transf = { 0.0099999997764826, 0, 0, 0, 0, 0.0099999997764826, 3.5527135993912e-17, 0, 0, -3.5527135993912e-17, 0.0099999997764826, 0, -13.723316192627, -0.00028578052297235, 8.688889503479, 1, },
+					},
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_lod.mtl", },
+						mesh = "vehicle/ship/votrans_universal_v2/universal_rudder_lft_lod1.msh",
+						name = "universal_rudder_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.950086593628, 2.0698246955872, -0.45718756318092, 1, },
+					},
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_lod.mtl", },
+						mesh = "vehicle/ship/votrans_universal_v2/universal_rudder_rgt_lod1.msh",
+						name = "universal_rudder_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -23.950086593628, -2.0701112747192, -0.45718756318092, 1, },
+					},
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_lod.mtl", },
+						mesh = "vehicle/ship/votrans_universal_v2/universal_propeller_lft_lod1.msh",
+						name = "universal_propeller_lft",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, 2.560847475965e-22, 0, 2.560847475965e-22, -1.5680669945641e-38, 1, 0, -23.300226211548, 2.0720505714417, -0.87701833248138, 1, },
+					},
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_lod.mtl", },
+						mesh = "vehicle/ship/votrans_universal_v2/universal_propeller_rgt_lod1.msh",
+						name = "universal_propeller_rgt",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, 2.560847475965e-22, 0, 2.560847475965e-22, -1.5680669945641e-38, 1, 0, -23.300226211548, -2.0721116065979, -0.87701833248138, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", "vehicle/ship/barges_v2/barges_body.mtl", },
+						mesh = "vehicle/ship/barges_v2/body_double_lod1.msh",
+						name = "body_double",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.979999542236, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", },
+						mesh = "vehicle/ship/barges_v2/tanker_double_lod1.msh",
+						name = "tanker_double",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.979999542236, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/emissive/ship_all_lights.mtl", },
+						mesh = "vehicle/ship/votrans_tanker_v2/tanker_headlights_lod1.msh",
+						name = "tanker_headlights",
+						transf = { 0.0099999997764826, 0, 0, 0, 0, 0.0099999997764826, 3.5527135993912e-17, 0, 0, -3.5527135993912e-17, 0.0099999997764826, 0, -14.250000953674, 0, 2.7400000095367, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/votrans_v2/votrans_lod.mtl", },
+						mesh = "vehicle/ship/votrans_tanker_v2/tanker_body_lod2.msh",
+						name = "tanker_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.25, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", "vehicle/ship/barges_v2/barges_body.mtl", },
+						mesh = "vehicle/ship/barges_v2/body_double_lod2.msh",
+						name = "body_double",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.979999542236, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/barges_v2/barges_details.mtl", },
+						mesh = "vehicle/ship/barges_v2/tanker_double_lod2.msh",
+						name = "tanker_double",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 17.979999542236, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 4000,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1943,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_SHIP_VOTRANS_TANKER_DESCRIPTION"),
+			name = _("VEHICLE_SHIP_VOTRANS_TANKER_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.25, 0.25, 0.30000001192093, },
+					frequency = 70,
+					initialAlpha = 0.079999998211861,
+					lifeTime = 2.5,
+					position = { -0.51620292663574, 0.36635810136795, 4.8287534713745, },
+					size01 = { 0.20000000298023, 1.2000000476837, },
+					velocity = { -1.2000000476837, 1.6000000238419, 1.6000000238419, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.25, 0.25, 0.30000001192093, },
+					frequency = 70,
+					initialAlpha = 0.079999998211861,
+					lifeTime = 2.5,
+					position = { -0.51594525575638, -0.36658063530922, 4.8284063339233, },
+					size01 = { 0.20000000298023, 1.2000000476837, },
+					velocity = { -1.2000000476837, -1.6000000238419, 1.6000000238419, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "WATER",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 31,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.262630462646, 7.014052971499e-05, 5.9760327339172, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = true,
+					forward = true,
+					group = 31,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.159999847412, -0.56999999284744, 5.9800000190735, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "ship_diesel_old",
+			},
+		},
+		transportVehicle = {
+			carrier = "WATER",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 800,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 800,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 800,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 100,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v02",
+		},
+		waterVehicle = {
+			area = 11,
+			availPower = 1000000,
+			configs = {
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 26, 27, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 24, 25, },
+						maxAngle = 30,
+					},
+				},
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 6, 7, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 4, 5, },
+						maxAngle = 30,
+					},
+				},
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+				},
+			},
+			maxRpm = 150,
+			topSpeed = 7.5,
+			type = "SMALL",
+			waterLine = {
+				{ 25.273509979248, 0, },
+				{ 25.273509979248, 4.9777002334595, },
+				{ 25.231399536133, 5.3376998901367, },
+				{ 25.105140686035, 5.6177000999451, },
+				{ 24.894939422607, 5.8176999092102, },
+				{ 24.60112953186, 5.9376997947693, },
+				{ 24.224170684814, 5.9777002334595, },
+				{ -0.80177998542786, 5.9777002334595, },
+				{ -1.1554499864578, 5.9376997947693, },
+				{ -1.4308400154114, 5.8176999092102, },
+				{ -1.62773001194, 5.6177000999451, },
+				{ -1.7459299564362, 5.3376998901367, },
+				{ -1.7853499650955, 4.9777002334595, },
+				{ -1.7853499650955, 2.3908500671387, },
+				{ -2.0250298976898, 2.3908500671387, },
+				{ -2.0984899997711, 2.162230014801, },
+				{ -2.253839969635, 2.1978600025177, },
+				{ -2.7340800762177, 2.1926798820496, },
+				{ -5.4662699699402, 2.3189299106598, },
+				{ -6.0611000061035, 1.8856300115585, },
+				{ -7.2702798843384, 2.2252700328827, },
+				{ -8.0437498092651, 2.4101700782776, },
+				{ -9.6130199432373, 2.7000799179077, },
+				{ -10.407250404358, 2.7686200141907, },
+				{ -14.174240112305, 2.917690038681, },
+				{ -19.464599609375, 2.9324200153351, },
+				{ -23.04986000061, 2.6991600990295, },
+				{ -23.59515953064, 2.5486900806427, },
+				{ -24.038990020752, 2.2978899478912, },
+				{ -24.225870132446, 2.1078898906708, },
+				{ -24.633260726929, 1.4953600168228, },
+				{ -24.78558921814, 0.94488000869751, },
+				{ -24.836849212646, 0.3934899866581, },
+				{ -24.836849212646, 7.999999797903e-05, },
+			},
+			weight = 1157000,
+		},
+	},
+	version = 1,
+}
+end

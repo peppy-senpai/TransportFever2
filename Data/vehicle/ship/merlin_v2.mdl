@@ -1,0 +1,901 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 35.617462158203, 4.6142959594727, 4.693724155426, },
+		bbMin = { -36.528022766113, -4.6168856620789, -1.2062863111496, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 36.072742462158, 4.6155910491943, 2.9500052928925, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_body.mtl", "vehicle/ship/merlin_v2/ship_merlin_detail_insides.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass1_top_frt_lod0.msh",
+						name = "body_glass1_top_frt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -28.481378555298, -0.035593211650848, 3.4419877529144, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass1_top_lft_lod0.msh",
+						name = "body_glass1_top_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -28.974714279175, 1.9389464855194, 3.4419906139374, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass2_top_lft_lod0.msh",
+						name = "body_glass2_top_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -29.869422912598, 1.9389464855194, 3.4092509746552, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass3_top_lft_lod0.msh",
+						name = "body_glass3_top_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -30.8669090271, 1.9389466047287, 3.4419920444489, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass1_lft_lod0.msh",
+						name = "body_glass1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 32.221717834473, 2.9809575080872, 2.0166161060333, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass2_lft_lod0.msh",
+						name = "body_glass2_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 31.434675216675, 2.9809575080872, 1.750908613205, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass3_lft_lod0.msh",
+						name = "body_glass3_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 30.647657394409, 2.9809575080872, 2.0166161060333, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass4_lft_lod0.msh",
+						name = "body_glass4_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -28.979398727417, 2.9738478660583, 1.7317457199097, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass5_lft_lod0.msh",
+						name = "body_glass5_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -31.020215988159, 2.9738478660583, 2.004444360733, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass6_lft_lod0.msh",
+						name = "body_glass6_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -32.082118988037, 2.9738478660583, 2.0045058727264, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass7_lft_lod0.msh",
+						name = "body_glass7_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -33.143714904785, 2.9738476276398, 2.0045058727264, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass8_lft_lod0.msh",
+						name = "body_glass8_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -34.205303192139, 2.9738478660583, 2.0045058727264, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass1_top_rgt_lod0.msh",
+						name = "body_glass1_top_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -28.974714279175, -2.0101327896118, 3.441990852356, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass2_top_rgt_lod0.msh",
+						name = "body_glass2_top_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -29.869422912598, -2.0101327896118, 3.4092509746552, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass3_top_rgt_lod0.msh",
+						name = "body_glass3_top_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -30.8669090271, -2.0101327896118, 3.4419920444489, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass1_rgt_lod0.msh",
+						name = "body_glass1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 32.221717834473, -3.0541167259216, 2.0166161060333, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass2_rgt_lod0.msh",
+						name = "body_glass2_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 31.434675216675, -3.0541167259216, 1.750908613205, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass3_rgt_lod0.msh",
+						name = "body_glass3_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 30.647657394409, -3.0541167259216, 2.0166161060333, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass4_rgt_lod0.msh",
+						name = "body_glass4_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -28.979398727417, -3.047301530838, 1.7317457199097, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass5_rgt_lod0.msh",
+						name = "body_glass5_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -31.020215988159, -3.047301530838, 2.004444360733, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass6_rgt_lod0.msh",
+						name = "body_glass6_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -32.082118988037, -3.047301530838, 2.0045058727264, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass7_rgt_lod0.msh",
+						name = "body_glass7_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -33.143714904785, -3.0473017692566, 2.0045058727264, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass8_rgt_lod0.msh",
+						name = "body_glass8_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -34.205303192139, -3.047301530838, 2.0045058727264, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass1_top_bck_lod0.msh",
+						name = "body_glass1_top_bck",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -31.551158905029, -0.035593211650848, 3.4419920444489, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_detail_insides.mtl", },
+						mesh = "vehicle/ship/merlin_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/emissive/ship_all_lights.mtl", },
+						mesh = "vehicle/ship/merlin_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_detail_insides.mtl", "vehicle/ship/merlin_v2/ship_merlin_body.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_glass_lod.mtl", },
+						mesh = "vehicle/ship/merlin_v2/body_glass_lod1.msh",
+						name = "body_glass",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/merlin_v2/ship_merlin_detail_insides.mtl", },
+						mesh = "vehicle/ship/merlin_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 5860,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1990,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_SHIP_MERLIN_V3_DESCRIPTION"),
+			name = _("VEHICLE_SHIP_MERLIN_V3_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = { },
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "WATER",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 28,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -29.343997955322, 0.13399997353554, 2.085000038147, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 28,
+					transf = { -4.3711391839452e-08, -1, 0, 0, 1, -4.3711391839452e-08, 0, 0, 0, 0, 1, 0, -30.442998886108, -0.25600001215935, 2.085000038147, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "ship_diesel_modern",
+			},
+		},
+		transportVehicle = {
+			carrier = "WATER",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 252,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 100,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+		waterVehicle = {
+			area = 12,
+			availPower = 2800000,
+			configs = {
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+				},
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { },
+						maxAngle = 0,
+					},
+				},
+			},
+			maxRpm = 0,
+			topSpeed = 8.8888893127441,
+			type = "BIG",
+			waterLine = {
+				{ -36.226879119873, 0, },
+				{ -36.226879119873, -0.054680000990629, },
+				{ -36.1022605896, -0.054680000990629, },
+				{ -36.1022605896, -0.16043999791145, },
+				{ -36.068161010742, -0.16911999881268, },
+				{ -36.05899810791, -0.36006000638008, },
+				{ -35.975540161133, -1.2615599632263, },
+				{ -35.587940216064, -1.6437900066376, },
+				{ -34.860759735107, -2.2346999645233, },
+				{ -34.422821044922, -2.5535700321198, },
+				{ -33.839279174805, -2.9099700450897, },
+				{ -33.16482925415, -3.2289199829102, },
+				{ -32.617340087891, -3.4529500007629, },
+				{ -31.894229888916, -3.7202498912811, },
+				{ -31.163480758667, -3.9652500152588, },
+				{ -29.085609436035, -4.0128998756409, },
+				{ -24.558479309082, -4.2904500961304, },
+				{ -8.3679800033569, -4.297679901123, },
+				{ 7.8006501197815, -4.297679901123, },
+				{ 24.211519241333, -4.2906899452209, },
+				{ 25.029279708862, -4.3046698570251, },
+				{ 25.590259552002, -4.3337998390198, },
+				{ 28.979459762573, -4.2859702110291, },
+				{ 29.735059738159, -4.1544098854065, },
+				{ 30.476350784302, -3.9659199714661, },
+				{ 31.27499961853, -3.6752099990845, },
+				{ 32.200538635254, -3.2406299114227, },
+				{ 33.087730407715, -2.6136798858643, },
+				{ 33.777408599854, -1.7336399555206, },
+				{ 34.151538848877, -1.0195100307465, },
+				{ 34.208839416504, -1.0501199960709, },
+				{ 34.327011108398, -0.74639999866486, },
+				{ 34.284610748291, -0.72342997789383, },
+				{ 34.395530700684, -0.37145000696182, },
+				{ 34.409328460693, 0, },
+			},
+			weight = 1400000,
+		},
+	},
+	version = 1,
+}
+end

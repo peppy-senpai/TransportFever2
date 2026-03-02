@@ -1,0 +1,1319 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 8.0156221389771, 1.2922991514206, 4.8217372894287, },
+		bbMin = { -7.8351860046387, -1.3427500724792, -0.011306256055832, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 7.9254040718079, 1.3175246715546, 2.4165217876434, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 1.7099208831787, -0.00066959857940674, 1.5774841308594, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4909210205078, 0.4745027422905, 2.0589528083801, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4909200668335, -0.47551271319389, 2.0589535236359, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass1_top_frt_lod0.msh",
+								name = "glass1_top_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4407205581665, -0.00050002336502075, 2.7979998588562, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.3649997711182, 1.0204046964645, 2.0594999790192, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass4_lft_lod0.msh",
+								name = "glass4_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5729999542236, 1.1736686229706, 2.0594999790192, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass5_lft_lod0.msh",
+								name = "glass5_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.1789999008179, 1.1736698150635, 2.0594999790192, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass6_lft_lod0.msh",
+								name = "glass6_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7820000648499, 1.1736710071564, 2.0594999790192, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass7_lft_lod0.msh",
+								name = "glass7_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.38799998164177, 1.17367208004, 2.0594999790192, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass8_lft_lod0.msh",
+								name = "glass8_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2099999189377, 1.1736733913422, 2.0594999790192, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass9_lft_lod0.msh",
+								name = "glass9_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8229997158051, 1.1736743450165, 2.0594999790192, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass10_lft_lod0.msh",
+								name = "glass10_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2420001029968, 1.1736749410629, 2.0594999790192, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass11_lft_lod0.msh",
+								name = "glass11_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.8369998931885, 1.0524665117264, 2.0594999790192, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.2490000724792, -1.0122542381287, 2.4279999732971, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5679998397827, -1.1742918491364, 2.0614998340607, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.1770000457764, -1.1742917299271, 2.0615000724792, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass4_rgt_lod0.msh",
+								name = "glass4_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.7739999294281, -1.1742916107178, 2.0615000724792, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass5_rgt_lod0.msh",
+								name = "glass5_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.38400000333786, -1.1742913722992, 2.0615000724792, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass6_rgt_lod0.msh",
+								name = "glass6_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2099999189377, -1.126428604126, 2.4395000934601, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass7_rgt_lod0.msh",
+								name = "glass7_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8140001296997, -1.174290060997, 2.0615000724792, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass8_rgt_lod0.msh",
+								name = "glass8_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.2170000076294, -1.1742893457413, 2.0615000724792, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass9_rgt_lod0.msh",
+								name = "glass9_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.8439993858337, -1.0542666912079, 2.0615000724792, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass1_left_bck_lod0.msh",
+								name = "glass1_left_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.9812021255493, 0.49127405881882, 2.0589141845703, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass1_right_bck_lod0.msh",
+								name = "glass1_right_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.9812021255493, -0.49160009622574, 2.0589146614075, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/glass1_top_bck_lod0.msh",
+								name = "glass1_top_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.9532284736633, 0.0024999976158142, 2.7947499752045, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 1.7099208831787, -1.1920928955078e-07, 1.5774841308594, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/b1_lod0.msh",
+								name = "b1",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/w1_lod0.msh",
+								name = "w1",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 1.030217051506, 0, -0.21280562877655, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/w1_lod0.msh",
+								name = "w2",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -1.0317124128342, 2.3841857910156e-07, -0.21280562877655, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0178251266479, 0, 0.57158935070038, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/b2_lod0.msh",
+								name = "b2",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/w1_lod0.msh",
+								name = "w3",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 1.0302169322968, 0, -0.21280550956726, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/w1_lod0.msh",
+								name = "w4",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -1.0317124128342, 2.3841857910156e-07, -0.21280550956726, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5839776992798, 2.3841857910156e-07, 0.57158893346786, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/d1_glass_lod0.msh",
+								name = "d1_glass",
+								transf = { 4.3215013079134e-07, -0.98444491624832, 0.1756933927536, 0, 0.049711346626282, -0.17547614872456, -0.98322778940201, 0, 0.99876356124878, 0.0087343798950315, 0.048938009887934, 0, 0.9816672205925, 0.19038231670856, -0.0099760005250573, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d1_c1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d1_c1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", },
+										mesh = "vehicle/tram/toronto_clrv_v2/d1_c1_glass_lod0.msh",
+										name = "d1_c1_glass",
+										transf = { 1.808189864505e-07, -0.98444491624832, 0.17569360136986, 0, 0.04971132054925, -0.17547638714314, -0.98322767019272, 0, 0.99876356124878, 0.0087341405451298, 0.048938028514385, 0, 0.98166739940643, 0.19037859141827, 0.010000073350966, 1, },
+									},
+								},
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/d1_c1_lod0.msh",
+								name = "d1_c1",
+								transf = { 1, 2.4245983354376e-07, -4.2619895168627e-08, 0, -2.4245983354376e-07, 1, 2.4911764739954e-07, 0, 4.261995556476e-08, -2.4911764739954e-07, 1, 0, -0.0033297566697001, 0.38076025247574, -0.019975978881121, 1, },
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d1_lod0.msh",
+						name = "d1",
+						transf = { 4.3259026938358e-07, 0.049711298197508, 0.99876356124878, 0, -0.98444491624832, -0.17547613382339, 0.0087343715131283, 0, 0.17569337785244, -0.98322778940201, 0.04893796145916, 0, 6.9982976913452, -0.96255612373352, 0.28797996044159, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/d2_glass_lod0.msh",
+								name = "d2_glass",
+								transf = { -0.00034341108403169, -0.98444485664368, 0.17569364607334, 0, 0.049650102853775, -0.17549374699593, -0.98322767019272, 0, 0.99876654148102, 0.0083855558186769, 0.048938054591417, 0, 0.98396915197372, -0.19071716070175, -0.0099760489538312, 1, },
+							},
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d2_c1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d2_c1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								children = {
+									{
+										materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", },
+										mesh = "vehicle/tram/toronto_clrv_v2/d2_c1_glass_lod0.msh",
+										name = "d2_c1_glass",
+										transf = { -2.8624086212403e-08, -0.98444491624832, 0.1756933927536, 0, 0.049711305648088, -0.17547614872456, -0.98322778940201, 0, 0.99876356124878, 0.0087339198216796, 0.048938050866127, 0, 0.98499715328217, -0.19037795066833, 0.009999793022871, 1, },
+									},
+								},
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/d2_c1_lod0.msh",
+								name = "d2_c1",
+								transf = { 0.99999988079071, -0.00034882820909843, -8.8940028675211e-09, 0, 0.00034882820909843, 0.99999988079071, -3.0791218819104e-07, 0, 9.0014111719938e-09, 3.07909061803e-07, 1, 0, 0.0022351806983352, -0.38075259327888, -0.019976045936346, 1, },
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d2_lod0.msh",
+						name = "d2",
+						transf = { -0.00034341923310421, 0.049650028347969, 0.99876654148102, 0, -0.98444473743439, -0.17549377679825, 0.0083855371922255, 0, 0.17569367587566, -0.98322767019272, 0.048937980085611, 0, 5.4989643096924, -1.2304254770279, 0.28894025087357, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d3.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/d3_glass_lod0.msh",
+								name = "d3_glass",
+								transf = { -2.1866194401809e-06, -1, 8.6474588897545e-05, 0, 0.049711309373379, -8.6476378783118e-05, -0.99876356124878, 0, 0.99876356124878, 2.114849166901e-06, 0.049711309373379, 0, 0.98319911956787, 0.18872304260731, -0.010023122653365, 1, },
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d3_lod0.msh",
+						name = "d3",
+						transf = { -2.1867715531698e-06, 0.049711216241121, 0.99876356124878, 0, -1, -8.648259245092e-05, 2.1149985514057e-06, 0, 8.6480817117263e-05, -0.99876356124878, 0.049711216241121, 0, -0.44976797699928, -1.2300307750702, 0.2884241938591, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d4.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/d4_glass_lod0.msh",
+								name = "d4_glass",
+								transf = { 0.00034899465390481, 0.037439573556185, -0.99929881095886, 0, 0.049624912440777, 0.99806702136993, 0.037410750985146, 0, 0.9987678527832, -0.049603171646595, -0.0015096154529601, 0, 0.98339587450027, 0.017051225528121, -0.18576636910439, 1, },
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d4_lod0.msh",
+						name = "d4",
+						transf = { 0.00034904733183794, 0.049624904990196, 0.9987678527832, 0, 0.037439573556185, 0.99806702136993, -0.049603171646595, 0, -0.99929881095886, 0.037410754710436, -0.0015095627168193, 0, -1.1880432367325, -1.2300300598145, 0.28795856237411, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d5.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/d5_glass_lod0.msh",
+								name = "d5_glass",
+								transf = { -4.3680742578545e-08, 0.037439547479153, -0.99929887056351, 0, 0.049624882638454, 0.99806767702103, 0.037393417209387, 0, 0.99876791238785, -0.049590092152357, -0.0018579766619951, 0, 0.98332786560059, 0.0031548254191875, 0.18515180051327, 1, },
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d5_lod0.msh",
+						name = "d5",
+						transf = { -4.3657536252795e-08, 0.049624882638454, 0.99876791238785, 0, 0.037439543753862, 0.99806767702103, -0.049590092152357, 0, -0.99929887056351, 0.037393413484097, -0.0018579765455797, 0, -1.2332909107208, -1.2300300598145, 0.28796154260635, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d6.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_glass.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/d6_glass_lod0.msh",
+								name = "d6_glass",
+								transf = { 0.00034899465390481, 0.037439573556185, -0.99929881095886, 0, 0.049624912440777, 0.99806702136993, 0.037410750985146, 0, 0.9987678527832, -0.049603171646595, -0.0015096154529601, 0, 0.98343068361282, 0.017195053398609, -0.18958434462547, 1, },
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d6_lod0.msh",
+						name = "d6",
+						transf = { 0.00034904733183794, 0.049624904990196, 0.9987678527832, 0, 0.037439573556185, 0.99806702136993, -0.049603171646595, 0, -0.99929881095886, 0.037410754710436, -0.0015095627168193, 0, -1.9715648889542, -1.2300319671631, 0.28792518377304, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_brake_lights.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_add_lights.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/addlights_lod0.msh",
+						name = "addlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 1.7099208831787, -0.00066959857940674, 1.5774841308594, 1, },
+					},
+					{
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_interior_lod.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/interior_lod1.msh",
+						name = "interior",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 1.7099208831787, -1.1920928955078e-07, 1.5774841308594, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/b1_lod1.msh",
+								name = "b1",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/w1_lod1.msh",
+								name = "w1",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 1.030217051506, 0, -0.21280562877655, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/w1_lod1.msh",
+								name = "w2",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -1.0317124128342, 2.3841857910156e-07, -0.21280562877655, 1, },
+							},
+						},
+						name = "b1_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0178251266479, 0, 0.57158935070038, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/b1_lod1.msh",
+								name = "b2",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/w1_lod1.msh",
+								name = "w3",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 1.0302169322968, 0, -0.21280550956726, 1, },
+							},
+							{
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/w1_lod1.msh",
+								name = "w4",
+								transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, -1.0317124128342, 2.3841857910156e-07, -0.21280550956726, 1, },
+							},
+						},
+						name = "b2_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5839776992798, 2.3841857910156e-07, 0.57158893346786, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d1_c1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d1_c1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/d1_c1_lod1.msh",
+								name = "d1_c1",
+								transf = { 1, 2.4245983354376e-07, -4.2619895168627e-08, 0, -2.4245983354376e-07, 1, 2.4911764739954e-07, 0, 4.261995556476e-08, -2.4911764739954e-07, 1, 0, -0.0033297566697001, 0.38076025247574, -0.019975978881121, 1, },
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d1_lod1.msh",
+						name = "d1",
+						transf = { 4.3259026938358e-07, 0.049711298197508, 0.99876356124878, 0, -0.98444491624832, -0.17547613382339, 0.0087343715131283, 0, 0.17569337785244, -0.98322778940201, 0.04893796145916, 0, 6.9982976913452, -0.96255612373352, 0.28797996044159, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d2.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						children = {
+							{
+								animations = {
+									close_doors_right = {
+										params = {
+											id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d2_c1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d2_c1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+								mesh = "vehicle/tram/toronto_clrv_v2/d2_c1_lod1.msh",
+								name = "d2_c1",
+								transf = { 0.99999988079071, -0.00034882820909843, -8.8940028675211e-09, 0, 0.00034882820909843, 0.99999988079071, -3.0791218819104e-07, 0, 9.0014111719938e-09, 3.07909061803e-07, 1, 0, 0.0022351806983352, -0.38075259327888, -0.019976045936346, 1, },
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d2_lod1.msh",
+						name = "d2",
+						transf = { -0.00034341923310421, 0.049650028347969, 0.99876654148102, 0, -0.98444473743439, -0.17549377679825, 0.0083855371922255, 0, 0.17569367587566, -0.98322767019272, 0.048937980085611, 0, 5.4989643096924, -1.2304254770279, 0.28894025087357, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d3.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d3.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d3_lod1.msh",
+						name = "d3",
+						transf = { -2.1867715531698e-06, 0.049711216241121, 0.99876356124878, 0, -1, -8.648259245092e-05, 2.1149985514057e-06, 0, 8.6480817117263e-05, -0.99876356124878, 0.049711216241121, 0, -0.44976797699928, -1.2300307750702, 0.2884241938591, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d4.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d4.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d4_lod1.msh",
+						name = "d4",
+						transf = { 0.00034904733183794, 0.049624904990196, 0.9987678527832, 0, 0.037439573556185, 0.99806702136993, -0.049603171646595, 0, -0.99929881095886, 0.037410754710436, -0.0015095627168193, 0, -1.1880432367325, -1.2300300598145, 0.28795856237411, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d5.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d5.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d5_lod1.msh",
+						name = "d5",
+						transf = { -4.3657536252795e-08, 0.049624882638454, 0.99876791238785, 0, 0.037439543753862, 0.99806767702103, -0.049590092152357, 0, -0.99929887056351, 0.037393413484097, -0.0018579765455797, 0, -1.2332909107208, -1.2300300598145, 0.28796154260635, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/close_doors_right/d6.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/tram/toronto_clrv_v2/open_doors_right/d6.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/d6_lod1.msh",
+						name = "d6",
+						transf = { 0.00034904733183794, 0.049624904990196, 0.9987678527832, 0, 0.037439573556185, 0.99806702136993, -0.049603171646595, 0, -0.99929881095886, 0.037410754710436, -0.0015095627168193, 0, -1.9715648889542, -1.2300319671631, 0.28792518377304, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_all_lights.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_brake_lights.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_blink_lights.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/tram/emissive/tram_add_lights.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/addlights_lod1.msh",
+						name = "addlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/tram/toronto_clrv_v2/toronto_clrv_lod.mtl", },
+						mesh = "vehicle/tram/toronto_clrv_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, -1.7484555314695e-07, 0, 0, 1, 0, 0, 1.7484555314695e-07, 0, 1, 0, 1.7099208831787, -0.00066959857940674, 1.5774841308594, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1976,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAM_TORONTO_CLRV_DESCRIPTION"),
+			name = _("VEHICLE_TRAM_TORONTO_CLRV_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 1, 0.94384801387787, 0.77254903316498, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 118.20000457764, 9.8999996185303, },
+					transf = { 0.0098479902371764, 0.0017369515262544, 9.1234342107782e-06, 0, -0.00019048985268455, 0.0010277819819748, 0.0099452193826437, 0, 0.0017264987109229, -0.0097942156717181, 0.0010452457936481, 0, 3.9582471847534, -1.1095926761627, 0.79000002145767, 1, },
+					type = "NEXT_STOP",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 1, 0.94503271579742, 0.77254903316498, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 123.59999084473, 13.60000038147, },
+					transf = { -4.3711387287537e-10, -0.0099999997764826, 7.6427425488731e-17, 0, 6.8604976959164e-17, 7.6427418871286e-17, 0.0099999997764826, 0, -0.0099999997764826, 4.3711387287537e-10, 6.8604976959164e-17, 0, -8.6329212188721, 0.6266695857048, 1.1455143690109, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "body",
+					color = { 1, 0.94503271579742, 0.77254903316498, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 122.30000305176, 12.39999961853, },
+					transf = { -4.3711387287537e-10, 0.0099999997764826, -2.6469776544861e-25, 0, -3.1391647059564e-09, -1.3721724634261e-16, 0.0099999997764826, 0, 0.0099999997764826, 4.3711387287537e-10, 3.1391647059564e-09, 0, 5.6875786781311, -0.6103304028511, 1.1499999761581, 1, },
+					type = "LINE_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/tram/toronto_clrv_v2/w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { 54, },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { 55, },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { 53, },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 52, 56, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/tram/toronto_clrv_v2/w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { 21, },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { 22, },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { 20, },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { 19, 23, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 4,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -3.5999999046326,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 272,
+					tractiveEffort = 50,
+					type = "ELECTRIC",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/tram_old/bell3.wav",
+				name = "tram_modern",
+			},
+			topSpeed = 16.670000076294,
+			weight = 22.700000762939,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRAM",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.576000213623, 0.53299999237061, 1.1280000209808, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 0.17364822328091, -0.98480772972107, 0, 0, 0.98480772972107, 0.17364822328091, 0, 0, 0, 0, 1, 0, 6.0539994239807, 0, 0.88200002908707, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 0.28903183341026, 0.95731943845749, 0, 0, -0.95731943845749, 0.28903183341026, 0, 0, 0, 0, 1, 0, 4.9439992904663, 0.51999998092651, 0.88200002908707, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 0.040131829679012, 0.99919438362122, 0, 0, -0.99919438362122, 0.040131829679012, 0, 0, 0, 0, 1, 0, 1.7139998674393, 0.51999998092651, 0.88200002908707, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 0.52100968360901, -0.85355079174042, 0, 0, 0.85355079174042, 0.52100968360901, 0, 0, 0, 0, 1, 0, 1.0140000581741, 0.15000000596046, 0.88200002908707, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { -0.13225641846657, -0.991215467453, 0, 0, 0.991215467453, -0.13225641846657, 0, 0, 0, 0, 1, 0, -0.82099997997284, 0.875, 0.88200002908707, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 0.98713618516922, -0.15988118946552, 0, 0, 0.15988118946552, 0.98713618516922, 0, 0, 0, 0, 1, 0, -1.7480000257492, 0.55199998617172, 0.88200002908707, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { -0.12533320486546, -0.99211472272873, 0, 0, 0.99211472272873, -0.12533320486546, 0, 0, 0, 0, 1, 0, -1.4859998226166, -0.17499999701977, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.3060002326965, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5520000457764, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7579998970032, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9830000400543, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1879999637604, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.402999997139, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.61799991130829, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.13600000739098, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5729997158051, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3109998703003, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0570001602173, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.816999912262, 0.87999999523163, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.6859993934631, 0.47299998998642, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.6859993934631, 0.020999997854233, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.6859993934631, -0.47200000286102, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.8060002326965, -0.85599994659424, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0879998207092, -0.85599994659424, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3529996871948, -0.85599994659424, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5980000495911, -0.85599994659424, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.063000001013279, -0.85599994659424, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.70200002193451, -0.85599994659424, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.441999912262, -0.85599994659424, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.191999912262, -0.85599994659424, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9619996547699, -0.85599994659424, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6970000267029, -0.85599994659424, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.4270000457764, -0.85599994659424, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.8060002326965, -0.43399995565414, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.0879998207092, -0.43399995565414, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3529996871948, -0.43399995565414, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5980000495911, -0.43399995565414, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.063000001013279, -0.43399995565414, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.70200002193451, -0.43399995565414, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.441999912262, -0.43399995565414, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.191999912262, -0.43399995565414, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9619996547699, -0.43399995565414, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.6970000267029, -0.43399995565414, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.4270000457764, -0.43399995565414, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { -0.00872652977705, 0.99996191263199, 0, 0, -0.99996191263199, -0.00872652977705, 0, 0, 0, 0, 1, 0, 5.1869993209839, -0.92399996519089, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 0.32556810975075, 0.94551855325699, 0, 0, -0.94551855325699, 0.32556810975075, 0, 0, 0, 0, 1, 0, -5.9099998474121, -0.72699993848801, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 0.32556810975075, 0.94551855325699, 0, 0, -0.94551855325699, 0.32556810975075, 0, 0, 0, 0, 1, 0, -5.4739999771118, -0.80699992179871, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 0.12983396649361, -0.99153572320938, 0, 0, 0.99153572320938, 0.12983396649361, 0, 0, 0, 0, 1, 0, -5.4739999771118, 0.82599997520447, 0.88200002908707, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 57,
+					transf = { 0.29170399904251, -0.95650863647461, 0, 0, 0.95650863647461, 0.29170399904251, 0, 0, 0, 0, 1, 0, -5.9159994125366, 0.73099994659424, 0.88200002908707, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "TRAM",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 80,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 4,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v08",
+		},
+	},
+	version = 1,
+}
+end

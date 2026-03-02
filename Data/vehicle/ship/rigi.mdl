@@ -1,0 +1,1153 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 18.629199981689, 4.230899810791, 6.9249057769775, },
+		bbMin = { -19.892700195313, -4.2309999465942, -1.1777937412262, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 19.260950088501, 4.2309498786926, 4.0513496398926, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/rigi/rigi_floor.mtl", "vehicle/ship/rigi/rigi_special.mtl", "vehicle/ship/rigi/rigi_main.mtl", "vehicle/ship/rigi/rigi_hull.mtl", "vehicle/ship/rigi/rigi_main_transparent.mtl", "vehicle/ship/rigi/rigi_strip.mtl", },
+						mesh = "vehicle/ship/rigi/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/rigi/rigi_main.mtl", "vehicle/ship/rigi/rigi_strip.mtl", },
+						mesh = "vehicle/ship/rigi/boat_lod0.msh",
+						name = "boat",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -17.896499633789, 0, 2.5440063476563, 1, },
+					},
+					{
+						materials = { "vehicle/ship/rigi/rigi_main.mtl", },
+						mesh = "vehicle/ship/rigi/paddle_lod0.msh",
+						name = "paddle",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.19155000150204, 0, 0.81430631875992, 1, },
+					},
+					{
+						materials = { "vehicle/ship/rigi/rigi_hull.mtl", },
+						mesh = "vehicle/ship/rigi/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.26969909668, 0, -0.5, 1, },
+					},
+					{
+						materials = { "vehicle/ship/rigi/rigi_hull_logo.mtl", "vehicle/ship/rigi/rigi_main_logo.mtl", },
+						mesh = "vehicle/ship/rigi/logo_body_lod0.msh",
+						name = "logo_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_a",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_b",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 450,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/ship/rigi/rigi_main.mtl", "vehicle/ship/rigi/rigi_special.mtl", "vehicle/ship/rigi/rigi_floor.mtl", "vehicle/ship/rigi/rigi_hull.mtl", "vehicle/ship/rigi/rigi_main_transparent.mtl", },
+						mesh = "vehicle/ship/rigi/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/ship/rigi/rigi_main.mtl", },
+						mesh = "vehicle/ship/rigi/boat_lod1.msh",
+						name = "boat",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -17.896499633789, 0, 2.5440063476563, 1, },
+					},
+					{
+						materials = { "vehicle/ship/rigi/rigi_main.mtl", },
+						mesh = "vehicle/ship/rigi/paddle_lod1.msh",
+						name = "paddle",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.19155000150204, 0, 0.81430631875992, 1, },
+					},
+					{
+						materials = { "vehicle/ship/rigi/rigi_hull.mtl", },
+						mesh = "vehicle/ship/rigi/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.26969909668, 0, -0.5, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 450,
+			visibleTo = 4000,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1850,
+			yearTo = 1930,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			description = _("VEHICLE_SHIP_RIGI_DESCRIPTION"),
+			name = _("VEHICLE_SHIP_RIGI_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.10000000149012, 0.10000000149012, 0.10000000149012, },
+					frequency = 90,
+					initialAlpha = 0.15000000596046,
+					lifeTime = 20,
+					position = { -4, 0, 7, },
+					size01 = { 0.69999998807907, 5, },
+					velocity = { 0, 0, 2, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "WATER",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 6,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15.920000076294, 0.0099999997764826, 1.4099999666214, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { 0.15815809369087, 0.98741376399994, 0, 0, -0.98741376399994, 0.15815809369087, 0, 0, 0, 0, 1, 0, -12.460000038147, 1.0199999809265, 1.1599999666214, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.45212322473526, -0.89195549488068, 0, 0, 0.89195549488068, -0.45212322473526, 0, 0, 0, 0, 1, 0, -12.460000038147, -1.1000000238419, 1.1599999666214, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.45212322473526, -0.89195549488068, 0, 0, 0.89195549488068, -0.45212322473526, 0, 0, 0, 0, 1, 0, -9.0200004577637, -1.1100000143051, 0.96999996900558, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.16022592782974, 0.98708033561707, 0, 0, -0.98708033561707, -0.16022592782974, 0, 0, 0, 0, 1, 0, -9.0200004577637, 1.2300000190735, 0.9899999499321, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { 0.97349911928177, 0.22869078814983, 0, 0, -0.22869078814983, 0.97349911928177, 0, 0, 0, 0, 1, 0, -7.8199996948242, 0.66999995708466, 0.94999998807907, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.99740314483643, 0.072020091116428, 0, 0, -0.072020091116428, -0.99740314483643, 0, 0, 0, 0, 1, 0, -6.9899997711182, 0.66999995708466, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.99740314483643, 0.072020091116428, 0, 0, -0.072020091116428, -0.99740314483643, 0, 0, 0, 0, 1, 0, -4.2800002098083, 2.4500000476837, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.34808111190796, 0.93746441602707, 0, 0, -0.93746441602707, -0.34808111190796, 0, 0, 0, 0, 1, 0, -5.1900000572205, 2.1800000667572, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.34808111190796, 0.93746441602707, 0, 0, -0.93746441602707, -0.34808111190796, 0, 0, 0, 0, 1, 0, -4.460000038147, -2.7200000286102, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.79260921478271, -0.60972988605499, 0, 0, 0.60972988605499, -0.79260921478271, 0, 0, 0, 0, 1, 0, -4.4400000572205, -2.0199999809265, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { 0.78661209344864, -0.61744749546051, 0, 0, 0.61744749546051, 0.78661209344864, 0, 0, 0, 0, 1, 0, -2.2799999713898, 0.44999998807907, 0.93999999761581, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { 0.93667221069336, 0.35020738840103, 0, 0, -0.35020738840103, 0.93667221069336, 0, 0, 0, 0, 1, 0, 0.019999999552965, 0.6599999666214, 0.93999999761581, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { 0.99862951040268, -0.05233595892787, 0, 0, 0.05233595892787, 0.99862951040268, 0, 0, 0, 0, 1, 0, 0.019999999552965, -0.0099999997764826, 0.93999999761581, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { 0.98480772972107, -0.17364817857742, 0, 0, 0.17364817857742, 0.98480772972107, 0, 0, 0, 0, 1, 0, -0.0099999997764826, -0.58999997377396, 0.93999999761581, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.27563735842705, -0.96126163005829, 0, 0, 0.96126163005829, -0.27563735842705, 0, 0, 0, 0, 1, 0, -0.31000000238419, -1.0099999904633, 0.96999996900558, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.98540782928467, 0.17020951211452, 0, 0, -0.17020951211452, -0.98540782928467, 0, 0, 0, 0, 1, 0, -0.81999999284744, -0.30000001192093, 1.0099999904633, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.82114917039871, 0.5707134604454, 0, 0, -0.5707134604454, -0.82114917039871, 0, 0, 0, 0, 1, 0, -0.64999997615814, 0.85999995470047, 1.0099999904633, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.82114917039871, 0.5707134604454, 0, 0, -0.5707134604454, -0.82114917039871, 0, 0, 0, 0, 1, 0, -5.210000038147, 0.85999995470047, 0.97999995946884, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.99978065490723, -0.020942499861121, 0, 0, 0.020942499861121, -0.99978065490723, 0, 0, 0, 0, 1, 0, -5.3499999046326, -0.10999999940395, 0.97999995946884, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 7,
+					transf = { -0.87714612483978, -0.48022344708443, 0, 0, 0.48022344708443, -0.87714612483978, 0, 0, 0, 0, 1, 0, -5.2399997711182, -0.81999999284744, 0.97999995946884, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.78661209344864, -0.61744749546051, 0, 0, 0.61744749546051, 0.78661209344864, 0, 0, 0, 0, 1, 0, 2.4200000762939, 1.5199999809265, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.16556441783905, 0.98619896173477, 0, 0, -0.98619896173477, 0.16556441783905, 0, 0, 0, 0, 1, 0, 2.9399998188019, 0.87000000476837, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.63648241758347, 0.77129125595093, 0, 0, -0.77129125595093, 0.63648241758347, 0, 0, 0, 0, 1, 0, 4.210000038147, 2.4400000572205, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.63648241758347, 0.77129125595093, 0, 0, -0.77129125595093, 0.63648241758347, 0, 0, 0, 0, 1, 0, 4.9099998474121, 1.8199999332428, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.33430072665215, 0.94246643781662, 0, 0, -0.94246643781662, 0.33430072665215, 0, 0, 0, 0, 1, 0, 5.7300000190735, 1.6200000047684, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.89902359247208, 0.43790021538734, 0, 0, -0.43790021538734, 0.89902359247208, 0, 0, 0, 0, 1, 0, 3.7999999523163, -2.2400000095367, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.48435133695602, -0.87487357854843, 0, 0, 0.87487357854843, 0.48435133695602, 0, 0, 0, 0, 1, 0, 4.5599999427795, -1.9900000095367, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.30851882696152, -0.95121824741364, 0, 0, 0.95121824741364, 0.30851882696152, 0, 0, 0, 0, 1, 0, 5.4200000762939, -1.7799999713898, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.99019503593445, -0.13969138264656, 0, 0, 0.13969138264656, 0.99019503593445, 0, 0, 0, 0, 1, 0, 1.4199999570847, -1.5099999904633, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.61868232488632, -0.78564125299454, 0, 0, 0.78564125299454, 0.61868232488632, 0, 0, 0, 0, 1, 0, 6.6799998283386, 0.97999995946884, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { -0.76119899749756, 0.64851838350296, 9.3219999251835e-17, 0, -0.64851838350296, -0.76119899749756, -4.3044090179651e-17, 0, 4.3044080253483e-17, -9.322000586928e-17, 1, 0, 7.3999996185303, 0.34000000357628, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { -0.56827419996262, -0.82283926010132, 6.9593517348169e-17, 0, 0.82283926010132, -0.56827419996262, -2.232334156665e-16, 0, 2.232334156665e-16, -6.9593523965614e-17, 1, 0, 7.7199997901917, -0.81999999284744, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.42056158185005, -0.90726399421692, 0, 0, 0.90726399421692, 0.42056158185005, 0, 0, 0, 0, 1, 0, 6.7399997711182, -1.2200000286102, 0.93999999761581, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.35624817013741, -0.93439137935638, 0, 0, 0.93439137935638, 0.35624817013741, 0, 0, 0, 0, 1, 0, 10.079999923706, -1.0299999713898, 0.94999998807907, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { -0.26101088523865, -0.96533584594727, 3.1964608061989e-17, 0, 0.96533584594727, -0.26101088523865, -2.4068422667385e-16, 0, 2.4068422667385e-16, -3.1964621296878e-17, 1, 0, 10.89999961853, -0.93999999761581, 0.96999996900558, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.97059065103531, -0.24073588848114, 0, 0, 0.24073588848114, 0.97059065103531, 0, 0, 0, 0, 1, 0, 10.89999961853, -0.14000000059605, 0.96999996900558, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.98883455991745, 0.14901722967625, 0, 0, -0.14901722967625, 0.98883455991745, 0, 0, 0, 0, 1, 0, 10.609999656677, 0.91999995708466, 0.96999996900558, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.4683920443058, 0.88352072238922, 0, 0, -0.88352072238922, 0.4683920443058, 0, 0, 0, 0, 1, 0, 9.6199998855591, 0.91999995708466, 0.96999996900558, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.34087213873863, 0.94010961055756, 0, 0, -0.94010961055756, 0.34087213873863, 0, 0, 0, 0, 1, 0, 8.5500001907349, 1.2599999904633, 0.96999996900558, 1, },
+				},
+				{
+					animation = "idle",
+					crew = false,
+					forward = true,
+					group = 8,
+					transf = { 0.63836532831192, -0.76973354816437, 0, 0, 0.76973354816437, 0.63836532831192, 0, 0, 0, 0, 1, 0, 8.9399995803833, -1.2000000476837, 0.96999996900558, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "ship_paddle_steamer",
+			},
+		},
+		transportVehicle = {
+			carrier = "WATER",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									seats = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { 10.777400016785, 1.3279000520706, 3.452399969101, },
+										bbMin = { 5.8529000282288, -1.3279000520706, 0.9524000287056, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									seats = { 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 140,
+									cargoBay = {
+										bbMax = { -5.7554998397827, 1.3279000520706, 3.5360000133514, },
+										bbMin = { -10.380000114441, -1.3279000520706, 1.0360000133514, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { 4, 2, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 20,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		waterVehicle = {
+			area = 3,
+			availPower = 250000,
+			configs = {
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 3, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 4, },
+						maxAngle = 60,
+					},
+				},
+				{
+					flags = {
+						ids = { },
+						maxAngle = 0,
+					},
+					paddles = {
+						ids = { 3, },
+						maxAngle = 0,
+					},
+					rudder = {
+						ids = { 4, },
+						maxAngle = 60,
+					},
+				},
+			},
+			maxRpm = 35,
+			topSpeed = 6.9444446563721,
+			type = "SMALL",
+			waterLine = {
+				{ -15.250599861145, 0, },
+				{ -15.250599861145, -0.05970000103116, },
+				{ -15.094349861145, -0.10685999691486, },
+				{ -15.039199829102, -0.10711000114679, },
+				{ -14.980299949646, -0.12706999480724, },
+				{ -14.203100204468, -0.70882999897003, },
+				{ -14.119999885559, -0.75865000486374, },
+				{ -13.437560081482, -0.97829002141953, },
+				{ -12.806099891663, -1.1361999511719, },
+				{ -12.116840362549, -1.2566100358963, },
+				{ -10.341919898987, -1.467710018158, },
+				{ -8.8049001693726, -1.6274199485779, },
+				{ -3.0190498828888, -1.9428700208664, },
+				{ -1.3430999517441, -1.9958800077438, },
+				{ 0.38670000433922, -1.9990600347519, },
+				{ 3.3518400192261, -1.930999994278, },
+				{ 6.4272899627686, -1.7340099811554, },
+				{ 9.4689702987671, -1.4632699489594, },
+				{ 10.912899971008, -1.2979500293732, },
+				{ 12.305979728699, -1.0980099439621, },
+				{ 13.676810264587, -0.85367000102997, },
+				{ 14.737750053406, -0.5911899805069, },
+				{ 15.735870361328, -0.23367999494076, },
+				{ 16.090549468994, -0.065930001437664, },
+				{ 16.090549468994, 0, },
+			},
+			weight = 67000,
+		},
+	},
+	version = 1,
+}
+end

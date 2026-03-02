@@ -1,0 +1,241 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.634245634079, 1.5028017759323, 2.5033445358276, },
+		bbMin = { -3.6335966587067, -1.5028042793274, -0.022323310375214, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 3.6339211463928, 1.5028030872345, 1.2628339529037, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/stake_car_as_1850/stake_car_as_1850.mtl", },
+						mesh = "vehicle/waggon/stake_car_as_1850/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/stake_car_as_1850/stake_car_as_1850.mtl", },
+						mesh = "vehicle/waggon/stake_car_as_1850/w1_lod0.msh",
+						name = "w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9110552072525, -7.4505805969238e-07, 0.42655318975449, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/stake_car_as_1850/stake_car_as_1850.mtl", },
+						mesh = "vehicle/waggon/stake_car_as_1850/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9201128482819, -7.4505805969238e-07, 0.42655318975449, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100.0,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/stake_car_as_1850/stake_car_as_1850.mtl", },
+						mesh = "vehicle/waggon/stake_car_as_1850/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/stake_car_as_1850/stake_car_as_1850.mtl", },
+						mesh = "vehicle/waggon/stake_car_as_1850/w1_lod1.msh",
+						name = "w1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9110552072525, -7.4505805969238e-07, 0.42655318975449, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/stake_car_as_1850/stake_car_as_1850.mtl", },
+						mesh = "vehicle/waggon/stake_car_as_1850/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.9201126098633, -7.4505805969238e-07, 0.42655318975449, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100.0,
+			visibleTo = 400.0,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/stake_car_as_1850/stake_car_as_1850.mtl", },
+						mesh = "vehicle/waggon/stake_car_as_1850/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400.0,
+			visibleTo = 1600.0,
+		},
+	},
+	
+	metadata = {
+		availability = {
+			yearFrom = 1850,
+			yearTo = 1950,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			description = _("VEHICLE_WAGGON_STAKE_CAR_AS_1850_DESCRIPTION"),
+			name = _("VEHICLE_WAGGON_STAKE_CAR_AS_1850_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/waggon/stake_car_as_1850/w1_lod0.msh", "vehicle/waggon/stake_car_as_1850/w2_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},{
+					axles = { "vehicle/waggon/stake_car_as_1850/w1_lod1.msh", "vehicle/waggon/stake_car_as_1850/w2_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},{
+					axles = {},
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = { 
+						{
+							group = 1,
+							offset = 0,
+							position = 1.9201126098633,
+						},{
+							group = 1,
+							offset = 0,
+							position =  -1.9201126098633,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "waggon_freight_old",
+			},
+			topSpeed = 13.8888888889,
+			weight = 10,
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartments = {
+				{
+					{
+						{
+							capacity = 28,
+							cargoBay = {
+								bbMax = { 3, 1.2799999713898, 3, },
+								bbMin = { -3.0999999046326, -1.2799999713898, 1.1699999570847, },
+								cargoFormat = "",
+								childId = 0,
+								gridSize = { },
+								sizePolicy = "STRETCH_HEIGHT_SCALEY",
+								type = "DISCRETE",
+							},
+							type = "LOGS",
+						},
+					},
+					{
+						{
+							capacity = 28,
+							cargoBay = {
+								bbMax = { 3, 1.2799999713898, 3, },
+								bbMin = { -3.0999999046326, -1.2799999713898, 1.1699999570847, },
+								cargoFormat = "",
+								childId = 0,
+								gridSize = { },
+								sizePolicy = "STRETCH",
+								type = "DISCRETE",
+							},
+							type = "STEEL",
+						},
+					},
+					{
+						{
+							capacity = 28,
+							cargoBay = {
+								bbMax = { 3, 1.2799999713898, 3, },
+								bbMin = { -3.0999999046326, -1.2799999713898, 1.1699999570847, },
+								cargoFormat = "",
+								childId = 0,
+								gridSize = { },
+								sizePolicy = "STRETCH",
+								type = "DISCRETE",
+							},
+							type = "PLANKS",
+						},
+					},
+					{
+						{
+							capacity = 28,
+							cargoBay = {
+								bbMax = { 3, 1.2799999713898, 3, },
+								bbMin = { -3.0999999046326, -1.2799999713898, 1.1699999570847, },
+								cargoFormat = "",
+								childId = 0,
+								gridSize = { },
+								sizePolicy = "STRETCH",
+								type = "DISCRETE",
+							},
+							type = "CONSTRUCTION_MATERIALS",
+						},
+					},
+				},
+			},
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+	},
+	version = 1,
+}
+end

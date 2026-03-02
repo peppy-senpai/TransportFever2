@@ -1,0 +1,334 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.3954975605011, 0.96157491207123, 1.8218499422073, },
+		bbMin = { -2.4922196865082, -0.96157491207123, -0.00099629163742065, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.4438586235046, 0.96157491207123, 0.91142308712006, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_interior_glass.mtl", "vehicle/car/gaz_22_wolga_v2/gaz_22_glass.mtl", },
+								mesh = "vehicle/car/gaz_22_wolga_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.74264669418335, 0, 1.2869248390198, 1, },
+							},
+							{
+								materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_interior_glass.mtl", "vehicle/car/gaz_22_wolga_v2/gaz_22_glass.mtl", },
+								mesh = "vehicle/car/gaz_22_wolga_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3057599067688, 0.7098760008812, 1.2660149335861, 1, },
+							},
+							{
+								materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_interior_glass.mtl", "vehicle/car/gaz_22_wolga_v2/gaz_22_glass.mtl", },
+								mesh = "vehicle/car/gaz_22_wolga_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.53949797153473, 0.7179474234581, 1.2539598941803, 1, },
+							},
+							{
+								materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_interior_glass.mtl", "vehicle/car/gaz_22_wolga_v2/gaz_22_glass.mtl", },
+								mesh = "vehicle/car/gaz_22_wolga_v2/glass3_lft_lod0.msh",
+								name = "glass3_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4440394639969, 0.68643796443939, 1.2318049669266, 1, },
+							},
+							{
+								materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_interior_glass.mtl", "vehicle/car/gaz_22_wolga_v2/gaz_22_glass.mtl", },
+								mesh = "vehicle/car/gaz_22_wolga_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.3057599067688, -0.7098760008812, 1.2660149335861, 1, },
+							},
+							{
+								materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_interior_glass.mtl", "vehicle/car/gaz_22_wolga_v2/gaz_22_glass.mtl", },
+								mesh = "vehicle/car/gaz_22_wolga_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.53949797153473, -0.7179474234581, 1.2539598941803, 1, },
+							},
+							{
+								materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_interior_glass.mtl", "vehicle/car/gaz_22_wolga_v2/gaz_22_glass.mtl", },
+								mesh = "vehicle/car/gaz_22_wolga_v2/glass3_rgt_lod0.msh",
+								name = "glass3_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4440394639969, -0.68643796443939, 1.2318049669266, 1, },
+							},
+							{
+								materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_interior_glass.mtl", "vehicle/car/gaz_22_wolga_v2/gaz_22_glass.mtl", },
+								mesh = "vehicle/car/gaz_22_wolga_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0081000328064, 0, 1.2224750518799, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_interior.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5, 0.59498995542526, 0.33399996161461, 1, },
+					},
+					{
+						materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, -1.4547322883389e-15, 0, 8.7422776573476e-08, -1, -1.2246455290962e-16, 0, -1.4547322883389e-15, -1.2246468525852e-16, 1, 0, 1.5, -0.59498995542526, 0.33399996161461, 1, },
+					},
+					{
+						materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 0.91224992275238, 7.9751423243124e-08, 2.2343680945296e-16, 0, -7.9751423243124e-08, 0.91224992275238, -1.953346607933e-23, 0, -2.2343680945296e-16, 8.2360522684714e-31, 0.91224992275238, 0, -1.1499999761581, -0.59498995542526, 0.33399996161461, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_lod.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_lod.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5, 0.59498995542526, 0.33399996161461, 1, },
+					},
+					{
+						materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_lod.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.5, -0.59498995542526, 0.33399996161461, 1, },
+					},
+					{
+						materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_lod.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1499999761581, -0.59498995542526, 0.33399996161461, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/gaz_22_wolga_v2/gaz_22_lod.mtl", },
+						mesh = "vehicle/car/gaz_22_wolga_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1956,
+			yearTo = 2000,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.45520952343941, 0.58039212226868, 0.48272356390953, },
+				},
+				{
+					{ 0.5137255191803, 0.22765089571476, 0.22794896364212, },
+				},
+				{
+					{ 0.39999997615814, 0.39999997615814, 0.39999997615814, },
+				},
+				{
+					{ 0.33333331346512, 0.2510007917881, 0.21960781514645, },
+				},
+				{
+					{ 0.13725489377975, 0.13725489377975, 0.13725489377975, },
+				},
+				{
+					{ 0.81960785388947, 0.81960785388947, 0.81960785388947, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/gaz_22_wolga_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 17, },
+					blinkLightsRight = { 18, },
+					brakeLights = { 16, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 15, },
+					steeringParts = { },
+					wheels = { "vehicle/car/gaz_22_wolga_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/gaz_22_wolga_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/gaz_22_wolga_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 60,
+				tractiveEffort = 6.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_old",
+			},
+			topSpeed = 22.219999313354,
+			weight = 1.3799999952316,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 19,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.23000000417233, 0.3299999833107, 0.21999999880791, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

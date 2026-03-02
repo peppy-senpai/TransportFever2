@@ -1,0 +1,688 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.5135924816132, 0.90428048372269, 2.2530698776245, },
+		bbMin = { -2.5617730617523, -0.90428066253662, 0.0021421015262604, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.5376827716827, 0.90428054332733, 1.1254638433456, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_body_lod0.msh",
+						name = "universal_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.09881453961134, -2.2351741790771e-08, 0.60901892185211, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/amo_f15_v2/amo_f15_glass.mtl", "vehicle/truck/amo_f15_v2/amo_f15_interior_glass.mtl", },
+								mesh = "vehicle/truck/amo_f15_universal_v2/universal_glass_lod0.msh",
+								name = "universal_glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86093121767044, -1.4901161193848e-07, 1.776774764061, 1, },
+							},
+						},
+						name = "universal_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15_int.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_interior_lod0.msh",
+						name = "universal_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89483433961868, -1.1920928955078e-07, 1.3673610687256, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w1_lft_lod0.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0135087966919, 0.65132564306259, 0.46433341503143, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w1_rgt_lod0.msh",
+						name = "universal_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0135087966919, -0.65132993459702, 0.46433341503143, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w2_lod0.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1905202865601, 0, 0.46433329582214, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/truck/amo_f15_universal_v2/close_doors_left/universal_d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/truck/amo_f15_universal_v2/open_doors_left/universal_d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_d1_lft_lod0.msh",
+						name = "universal_d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2690601348877, 0.87453413009644, 0.99756735563278, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/truck/amo_f15_universal_v2/close_doors_right/universal_d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/truck/amo_f15_universal_v2/open_doors_right/universal_d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_d1_rgt_lod0.msh",
+						name = "universal_d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2690598964691, -0.87452983856201, 0.99756735563278, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_d2_lod0.msh",
+						name = "universal_d2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5050659179688, 2.1457672119141e-06, 1.011446595192, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_headlights_lod0.msh",
+						name = "universal_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.09881453961134, -2.2351741790771e-08, 0.60901892185211, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_body_cargo_lod0.msh",
+						name = "universal_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2644634246826, -0.001738429069519, 0.98368233442307, 1, },
+					},
+					{
+						name = "unviversal_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15_lod.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_body_lod1.msh",
+						name = "universal_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.098814532160759, -9.4768651592858e-08, 0.60658419132233, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15_lod.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w1_lft_lod1.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0135087966919, 0.6513255238533, 0.46433347463608, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15_lod.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w1_rgt_lod1.msh",
+						name = "universal_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0135087966919, -0.65132993459702, 0.46433332562447, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15_lod.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w2_lod1.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1905202865601, -5.5352852967872e-08, 0.46433329582214, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/truck/amo_f15_universal_v2/close_doors_left/universal_d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/truck/amo_f15_universal_v2/open_doors_left/universal_d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_d1_lft_lod1.msh",
+						name = "universal_d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2690601348877, 0.87453389167786, 0.99756741523743, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								params = {
+									id = "vehicle/truck/amo_f15_universal_v2/close_doors_right/universal_d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/truck/amo_f15_universal_v2/open_doors_right/universal_d1_rgt.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_d1_rgt_lod1.msh",
+						name = "universal_d1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2690598964691, -0.87452983856201, 0.99756717681885, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_d2_lod1.msh",
+						name = "universal_d2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5050659179688, 2.0251934529369e-06, 1.011446595192, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_headlights_lod1.msh",
+						name = "universal_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.098814532160759, -9.4952461893172e-08, 0.60901892185211, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_body_cargo_lod1.msh",
+						name = "universal_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2644634246826, -0.0017385458340868, 0.98368233442307, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", "vehicle/truck/amo_f15_v2/amo_f15_lod.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_body_lod2.msh",
+						name = "universal_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.098814532160759, -9.4768651592858e-08, 0.60658419132233, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1924,
+			yearTo = 1964,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_AMO_F15_UNIVERSAL_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_AMO_F15_UNIVERSAL_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 40,
+					initialAlpha = 0.5,
+					lifeTime = 1,
+					position = { -0.20170302689075, 0.33782732486725, -0.13701996207237, },
+					size01 = { 0.0049999998882413, 0.80000001192093, },
+					velocity = { -0.61000001430511, 4, -0.36076137423515, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/amo_f15_universal_v2/universal_w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 11, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/amo_f15_universal_v2/universal_w1_lft_lod0.msh", "vehicle/truck/amo_f15_universal_v2/universal_w1_rgt_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/amo_f15_universal_v2/universal_w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 8, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/amo_f15_universal_v2/universal_w1_lft_lod1.msh", "vehicle/truck/amo_f15_universal_v2/universal_w1_rgt_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -1.1900000572205,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 40,
+				tractiveEffort = 20,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 11.109999656677,
+			weight = 1.5,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 13,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.29800000786781, -0.25299999117851, 0.71799999475479, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 1.4500000476837, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 1.4500000476837, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 1.4500000476837, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 1.4500000476837, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "STRETCH",
+										type = "LEVEL",
+									},
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 24,
+									cargoBay = {
+										bbMax = { -0.065999999642372, 0.83899998664856, 2.5, },
+										bbMin = { -2.4809999465942, -0.83899998664856, 1.0115000009537, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { },
+										sizePolicy = "BEST_FIT",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,883 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 11.457773208618, 1.3979353904724, 4.0198097229004, },
+		bbMin = { -10.316501617432, -1.3945469856262, -0.031765341758728, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 10.887137413025, 1.3962411880493, 2.0257875919342, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9027671813965, -0.0001393191923853, 2.7364690303802, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_glass.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_glass1_left_frt_lod0.msh",
+										name = "front_glass1_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.30430528521538, 1.0300946235657, 3.4468178749084, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_glass.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_glass1_right_frt_lod0.msh",
+										name = "front_glass1_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.30430528521538, -1.0300946235657, 3.4468178749084, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_glass.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_glass1_lft_lod0.msh",
+										name = "front_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.87122702598572, 1.2795329093933, 3.0195279121399, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_glass.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_glass2_lft_lod0.msh",
+										name = "front_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0804862976074, 1.2567892074585, 3.0195279121399, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_glass.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_glass3_lft_lod0.msh",
+										name = "front_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1890839338303, 1.3485336303711, 3.0614216327667, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_glass.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.87122702598572, -1.2795329093933, 3.0195279121399, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_glass.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0804862976074, -1.2567892074585, 3.0195279121399, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_glass.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_glass3_rgt_lod0.msh",
+										name = "front_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1890839338303, -1.3485336303711, 3.0614216327667, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_glass.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_glass1_left_ctr_lod0.msh",
+										name = "front_glass1_left_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0977163314819, 0.22638520598412, 3.2988109588623, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_glass.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_glass1_right_ctr_lod0.msh",
+										name = "front_glass1_right_ctr",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0977163314819, -0.22638520598412, 3.2988109588623, 1, },
+									},
+								},
+								name = "glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_b1_lod0.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_w1_lod0.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.94616788625717, 2.3122993297875e-08, 0.50062602758408, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_w1_lod0.msh",
+										name = "front_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.94593238830566, -1.4228862710297e-07, 0.50062602758408, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.9821281433105, -0.00013907780521549, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_w3_lod0.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.3606085777283, -0.00013923645019531, 1.0304461717606, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_w4_lod0.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.162437915802, -0.00013953447341919, 1.0304461717606, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_w5_lod0.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9642660617828, -0.00013977289199829, 1.0304461717606, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_w6_lod0.msh",
+								name = "front_w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.9448818564415, -0.00014038011431694, 0.57523167133331, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r1_lod0.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.5505871772766, -0.00013926255633123, 1.0422390699387, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r2_lod0.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.1052632331848, -0.00013956375187263, 0.71086007356644, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r3_lod0.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.1052632331848, -0.00013956375187263, 0.71086007356644, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r6_lod0.msh",
+								name = "front_r6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8708505630493, -0.0001394093997078, 1.1844416856766, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r7.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r7_lod0.msh",
+								name = "front_r7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8535447120667, -0.00013941091310699, 1.6545143127441, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r8_lod0.msh",
+								name = "front_r8",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8534426689148, -0.0001394109276589, 1.6578364372253, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r9.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r9_lod0.msh",
+								name = "front_r9",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.9286465644836, -0.00013922949437983, 1.622189283371, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r10_lod0.msh",
+								name = "front_r10",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.319685459137, -0.00013945758109912, 1.6636297702789, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r11.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r11_lod0.msh",
+								name = "front_r11",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.552836894989, -0.00013926235260442, 0.82863515615463, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_headlights_fwd_lod0.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9027671813965, -0.0001393191923853, 2.7364690303802, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_tender.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1592931747437, -0.0001404611102771, 2.200736284256, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_coal_lod0.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1592931747437, -0.0001404611102771, 2.200736284256, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_tender.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_w1_lod0.msh",
+								name = "back_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7365334033966, -0.00016248182510026, 0.63499999046326, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_tender.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_w1_lod0.msh",
+								name = "back_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.3367381095886, -0.00016262172721326, 0.63499999046326, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_tender.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_w1_lod0.msh",
+								name = "back_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.0131335258484, -0.00016276827955153, 0.63499999046326, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_tender.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_w1_lod0.msh",
+								name = "back_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.6133365631104, -0.00016290816711262, 0.63499999046326, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_headlights_bwd_lod0.msh",
+								name = "back_headlights_bwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9027671813965, -0.0001393191923853, 2.7364690303802, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9027671813965, -0.0001393191923853, 2.7364690303802, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_b1_lod1.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_w1_lod1.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.94616788625717, 2.3122993297875e-08, 0.50062602758408, 1, },
+									},
+									{
+										materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+										mesh = "vehicle/train/lner_class_a4_v2/front_w1_lod1.msh",
+										name = "front_w2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.94593238830566, -1.4228862710297e-07, 0.50062602758408, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.9821281433105, -0.00013907780521549, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_w3_lod1.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.3606085777283, -0.00013923645019531, 1.0304461717606, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_w4_lod1.msh",
+								name = "front_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.162437915802, -0.00013953447341919, 1.0304461717606, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_w5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_w5_lod1.msh",
+								name = "front_w5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9642660617828, -0.00013977289199829, 1.0304461717606, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_w6_lod1.msh",
+								name = "front_w6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.9448818564415, -0.00014038011431694, 0.57523167133331, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r1_lod1.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.5505871772766, -0.00013926255633123, 1.0422390699387, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r2_lod1.msh",
+								name = "front_r2",
+								transf = { 1, 8.7421547334543e-08, -1.3840460999504e-09, 0, -8.7421547334543e-08, 1, -2.9896176630356e-25, 0, 1.3840460999504e-09, 1.2099545367194e-16, 1, 0, 4.1052627563477, -0.00013920485798735, 0.71086007356644, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r3_lod1.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.1052632331848, -0.00013956375187263, 0.71086007356644, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r6_lod1.msh",
+								name = "front_r6",
+								transf = { 1, -2.9103224719051e-08, -3.0162337072426e-09, 0, 2.9103224719051e-08, 1, 8.5727789311818e-09, 0, 3.0162337072426e-09, -8.5727789311818e-09, 1, 0, 5.8708505630493, -0.00013955461326987, 1.1844416856766, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r7.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r7_lod1.msh",
+								name = "front_r7",
+								transf = { 1, -2.9309562776803e-08, -1.1944702293931e-07, 0, 2.9309562776803e-08, 1, 8.5727789311818e-09, 0, 1.1944702293931e-07, -8.5727824838955e-09, 1, 0, 5.8535447120667, -0.00013941091310699, 1.6545143127441, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r8_lod1.msh",
+								name = "front_r8",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.8534426689148, -0.0001394109276589, 1.6578364372253, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r9.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r9_lod1.msh",
+								name = "front_r9",
+								transf = { 1, 1.4216450239246e-08, -1.9830790165543e-07, 0, -1.4216433363856e-08, 1, 9.3881602936108e-08, 0, 1.9830790165543e-07, -9.3881602936108e-08, 1, 0, 7.9286465644836, -0.00013932419824414, 1.622189283371, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r10_lod1.msh",
+								name = "front_r10",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.319685459137, -0.00013945758109912, 1.6636297702789, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/lner_class_a4_v2/wheels/front_r11.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_r11_lod1.msh",
+								name = "front_r11",
+								transf = { 1, 1.4216450239246e-08, -6.636184934905e-08, 0, -1.4216455568317e-08, 1, -8.0963943105417e-08, 0, 6.636184934905e-08, 8.0963943105417e-08, 1, 0, 7.552836894989, -0.00013928726548329, 0.82863509654999, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_headlights_fwd_lod1.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9027671813965, -0.0001393191923853, 2.7364690303802, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1592931747437, -0.0001404611102771, 2.200736284256, 1, },
+							},
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_coal_lod1.msh",
+								name = "back_coal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1592931747437, -0.0001404611102771, 2.200736284256, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_w1_lod1.msh",
+								name = "back_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7365334033966, -0.00016248182510026, 0.63499999046326, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_w1_lod1.msh",
+								name = "back_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.3367381095886, -0.00016262172721326, 0.63499999046326, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_w1_lod1.msh",
+								name = "back_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.0131335258484, -0.00016276827955153, 0.63499999046326, 1, },
+							},
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_w1_lod1.msh",
+								name = "back_w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.6133365631104, -0.00016290816711262, 0.63499999046326, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_headlights_bwd_lod1.msh",
+								name = "back_headlights_bwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9027671813965, -0.0001393191923853, 2.7364690303802, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/lner_class_a4_v2/lner_class_a4_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/front_body_lod2.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.9027671813965, -0.0001393191923853, 2.7364690303802, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/shared/as_coal.mtl", "vehicle/train/lner_class_a4_v2/lner_class_a4_tender_lod.mtl", },
+								mesh = "vehicle/train/lner_class_a4_v2/back_body_lod2.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.1592931747437, -0.0001404611102771, 2.200736284256, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1935,
+			yearTo = 1985,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_LNER_CLASS_A4_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_LNER_CLASS_A4_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "front_body",
+					color = { 0.49019604921341, 0.47001150250435, 0.47070533037186, },
+					filter = "NONE",
+					fitting = "CUT",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 145.79998779297, 13.60000038147, },
+					transf = { -0.0099965734407306, 0.00026176951359957, -8.739282075787e-10, 0, -8.5134316263336e-10, 8.739282075787e-10, 0.0099999997764826, 0, 0.00026176951359957, 0.0099965734407306, -8.5134316263336e-10, 0, 1.7152328491211, 1.0591393709183, -0.041469097137451, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "front_body",
+					color = { 0.49019604921341, 0.47001150250435, 0.47070533037186, },
+					filter = "NONE",
+					fitting = "CUT",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 145.79998779297, 13.60000038147, },
+					transf = { 0.0099984770640731, 0.00017452405882068, 0, 0, 0, 0, 0.0099999997764826, 0, 0.00017452405882068, -0.0099984770640731, 0, 0, 0.26223278045654, -1.0978606939316, -0.041469097137451, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 2,
+					color = { 0.54901957511902, 0.54901957511902, 0.54901957511902, },
+					frequency = 60,
+					initialAlpha = 1,
+					lifeTime = 12,
+					position = { 1.6322326660156, -0.0048606810159981, 1.2935307025909, },
+					size01 = { 0.85000002384186, 12, },
+					velocity = { 0, 8.9406967163086e-08, 7, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.54901957511902, 0.54901957511902, 0.54901957511902, },
+					frequency = 60,
+					initialAlpha = 1,
+					lifeTime = 12,
+					position = { 2.1322326660156, -0.0048606810159981, 1.2935307025909, },
+					size01 = { 0.85000002384186, 12, },
+					velocity = { 0, 8.9406967163086e-08, 7, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 15,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 2.8582322597504, 1.1551393270493, -2.2414691448212, },
+					size01 = { 0.15000000596046, 2, },
+					velocity = { 4, 0, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 2,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 15,
+					initialAlpha = 1,
+					lifeTime = 3,
+					position = { 2.8582322597504, -1.1398606300354, -2.2414689064026, },
+					size01 = { 0.15000000596046, 2, },
+					velocity = { 4, 0, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/lner_class_a4_v2/front_w1_lod0.msh", "vehicle/train/lner_class_a4_v2/front_w3_lod0.msh", "vehicle/train/lner_class_a4_v2/front_w4_lod0.msh", "vehicle/train/lner_class_a4_v2/front_w5_lod0.msh", "vehicle/train/lner_class_a4_v2/front_w6_lod0.msh", "vehicle/train/lner_class_a4_v2/back_w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 40, },
+					frontForwardParts = { 31, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/lner_class_a4_v2/front_w1_lod1.msh", "vehicle/train/lner_class_a4_v2/front_w3_lod1.msh", "vehicle/train/lner_class_a4_v2/front_w4_lod1.msh", "vehicle/train/lner_class_a4_v2/front_w5_lod1.msh", "vehicle/train/lner_class_a4_v2/front_w6_lod1.msh", "vehicle/train/lner_class_a4_v2/back_w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 28, },
+					frontForwardParts = { 20, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 9,
+							upright = false,
+						},
+						{
+							group = 1,
+							offset = 0,
+							position = -0.89999997615814,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -3.7000000476837,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -8.6000003814697,
+							upright = false,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 1986,
+					tractiveEffort = 158,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "vehicle/train_steam_old/steam_horn_12.wav",
+				name = "train_steam_modern",
+			},
+			topSpeed = 40.279998779297,
+			weight = 105,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "idle",
+					crew = true,
+					forward = true,
+					group = 32,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6549996137619, 0, 1.3899999856949, 1, },
+				},
+				{
+					animation = "idle",
+					crew = true,
+					forward = false,
+					group = 32,
+					transf = { -0.87714612483978, 0.48022350668907, -7.6682553640239e-08, 0, -0.48022350668907, -0.87714612483978, 4.5440305740385e-08, 0, -4.5440305740385e-08, 7.6682553640239e-08, 1, 0, -2.3540000915527, 0.92800003290176, 1.3899999856949, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v15",
+		},
+	},
+	version = 1,
+}
+end

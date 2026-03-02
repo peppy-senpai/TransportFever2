@@ -1,0 +1,450 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.8693542480469, 0.75086295604706, 1.9367890357971, },
+		bbMin = { -2.6375596523285, -0.75086295604706, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.253457069397, 0.75086295604706, 0.96839451789856, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/dmg_cannstatt_v2/dmg_cannstatt.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							drive = {
+								params = {
+									id = "vehicle/truck/dmg_cannstatt_v2/drive/g.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/truck/dmg_cannstatt_v2/dmg_cannstatt.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/g_lod0.msh",
+						name = "g",
+						transf = { 6.1232342629258e-17, 1, 0, 0, -1, 6.1232342629258e-17, 0, 0, 0, 0, 1, 0, -1.2518088817596, 0, 0.46730613708496, 1, },
+					},
+					{
+						materials = { "vehicle/truck/dmg_cannstatt_v2/dmg_cannstatt.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4756896495819, 0.42407923936844, 0.37966939806938, 1, },
+					},
+					{
+						materials = { "vehicle/truck/dmg_cannstatt_v2/dmg_cannstatt.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/w1_rgt_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4756896495819, -0.42399996519089, 0.37966939806938, 1, },
+					},
+					{
+						materials = { "vehicle/truck/dmg_cannstatt_v2/dmg_cannstatt.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4827588796616, 0, 0.42025652527809, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/dmg_cannstatt_v2/dmg_cannstatt.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							drive = {
+								params = {
+									id = "vehicle/truck/dmg_cannstatt_v2/drive/g.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/truck/dmg_cannstatt_v2/dmg_cannstatt.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/g_lod1.msh",
+						name = "g",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2518088817596, 0, 0.46730613708496, 1, },
+					},
+					{
+						materials = { "vehicle/truck/dmg_cannstatt_v2/dmg_cannstatt.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4756896495819, 0.42407923936844, 0.37966939806938, 1, },
+					},
+					{
+						materials = { "vehicle/truck/dmg_cannstatt_v2/dmg_cannstatt.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/w1_rgt_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4756896495819, -0.42399996519089, 0.37966939806938, 1, },
+					},
+					{
+						materials = { "vehicle/truck/dmg_cannstatt_v2/dmg_cannstatt.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4827588796616, 0, 0.42025652527809, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/dmg_cannstatt_v2/dmg_cannstatt.mtl", },
+						mesh = "vehicle/truck/dmg_cannstatt_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1890,
+			yearTo = 1946,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_DMG_CANNSTATT_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_DMG_CANNSTATT_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.12941175699234, 0.12941175699234, 0.12941175699234, },
+					frequency = 40,
+					initialAlpha = 0.5,
+					lifeTime = 1,
+					position = { -1.7940000295639, -0.13423907756805, 0.80900001525879, },
+					size01 = { 0.050000000745058, 0.80000001192093, },
+					velocity = { -4, 0, -2.3699998855591, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/dmg_cannstatt_v2/w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 6, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/dmg_cannstatt_v2/w1_lft_lod0.msh", "vehicle/truck/dmg_cannstatt_v2/w1_rgt_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/dmg_cannstatt_v2/w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 6, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/dmg_cannstatt_v2/w1_lft_lod1.msh", "vehicle/truck/dmg_cannstatt_v2/w1_rgt_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -1.5,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 14,
+				tractiveEffort = 8,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 6.9400000572205,
+			weight = 1,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 7,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.5440000295639, -0.041999995708466, 0.97399991750717, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "COAL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "IRON_ORE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "STONE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "GRAIN",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "PLASTIC",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "MACHINES",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "TOOLS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "FOOD",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "GOODS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1.5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v04",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,586 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 4.0986771583557, 9.8033885955811, 4.0756421089172, },
+		bbMin = { -8.8827152252197, -9.8033885955811, -0.045553952455521, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 6.4906959533691, 9.8033885955811, 2.0605981349945, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_glass.mtl", },
+								mesh = "vehicle/plane/dornier_b_merkur_v2/glass1_left_frt_lod0.msh",
+								name = "glass1_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.92646443843842, 0.37300345301628, 2.9178609848022, 1, },
+							},
+							{
+								materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_glass.mtl", },
+								mesh = "vehicle/plane/dornier_b_merkur_v2/glass1_right_frt_lod0.msh",
+								name = "glass1_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.92646443843842, -0.37300345301628, 2.9178609848022, 1, },
+							},
+							{
+								materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_interior_glass.mtl", "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_glass.mtl", },
+								mesh = "vehicle/plane/dornier_b_merkur_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89972943067551, 0.73315089941025, 1.8522788286209, 1, },
+							},
+							{
+								materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_interior_glass.mtl", "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_glass.mtl", },
+								mesh = "vehicle/plane/dornier_b_merkur_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2848445177078, -0.71566414833069, 1.8522788286209, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/aileron_lft_lod0.msh",
+						name = "aileron_lft",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -1.0298279523849, 4.4539918899536, 3.1375079154968, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/aileron_rgt_lod0.msh",
+						name = "aileron_rgt",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -1.0298279523849, -4.4539918899536, 3.1375279426575, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/rudder_lod0.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.8998041152954, 0, 3.5567650794983, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/elevator_lod0.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -8.1201658248901, 0, 2.4191329479218, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/rotor1_lod0.msh",
+						name = "rotor1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5056657791138, 0, 2.0795390605927, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_rotor.mtl", "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/rotor_b1_lod0.msh",
+						name = "rotor_b1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7708382606506, 0, 2.0795390605927, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.81200367212296, 1.1339093446732, 0.44156360626221, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 0.81200367212296, -1.1339093446732, 0.44156360626221, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 0.029999999329448, 0, 0, 0, 0, 0.029999999329448, 0, 0, 0, 0, 0.029999999329448, 0, -7.2823996543884, 0, 1.6296000480652, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/dornier_b_merkur_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/dornier_b_merkur_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/d1_lft_lod0.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1219370365143, 0.73255699872971, 2, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/positionlights_lod0.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_interior.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/aileron_lft_lod1.msh",
+						name = "aileron_lft",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -1.0298279523849, 4.4539918899536, 3.1375079154968, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/aileron_rgt_lod1.msh",
+						name = "aileron_rgt",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -1.0298279523849, -4.4539918899536, 3.1375279426575, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/rudder_lod1.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.8998041152954, 0, 3.5567650794983, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/elevator_lod1.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -8.1201658248901, 0, 2.4191329479218, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/rotor1_lod1.msh",
+						name = "rotor1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5056657791138, 0, 2.0795390605927, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_rotor.mtl", "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/rotor_b1_lod1.msh",
+						name = "rotor_b1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7708382606506, 0, 2.0795390605927, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.81200367212296, 1.1339093446732, 0.44156360626221, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 0.81200367212296, -1.1339093446732, 0.44156360626221, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 0.029999999329448, 0, 0, 0, 0, 0.029999999329448, 0, 0, 0, 0, 0.029999999329448, 0, -7.2823996543884, 0, 1.6296000480652, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/dornier_b_merkur_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/dornier_b_merkur_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/d1_lft_lod1.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1219370365143, 0.73255699872971, 2, 1, },
+					},
+					{
+						materials = { "vehicle/plane/emissive/plane_all_lights.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/positionlights_lod1.msh",
+						name = "positionlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/aileron_lft_lod2.msh",
+						name = "aileron_lft",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -1.0298279523849, 4.4539918899536, 3.1375079154968, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/aileron_rgt_lod2.msh",
+						name = "aileron_rgt",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -1.0298279523849, -4.4539918899536, 3.1375279426575, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/rudder_lod2.msh",
+						name = "rudder",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.8998041152954, 0, 3.5567650794983, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/elevator_lod2.msh",
+						name = "elevator",
+						transf = { 6.1232342629258e-17, 1, 0, 0, 4.3711388286738e-08, -2.6765504227972e-24, 1, 0, 1, -6.1232342629258e-17, -4.3711388286738e-08, 0, -8.1201658248901, 0, 2.4191329479218, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/rotor1_lod2.msh",
+						name = "rotor1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5056657791138, 0, 2.0795390605927, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_rotor.mtl", "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/rotor_b1_lod2.msh",
+						name = "rotor_b1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.7708382606506, 0, 2.0795390605927, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/w1_lft_lod2.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.81200367212296, 1.1339093446732, 0.44156360626221, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/w1_lft_lod2.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 0.81200367212296, -1.1339093446732, 0.44156360626221, 1, },
+					},
+					{
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/w2_bck_lod2.msh",
+						name = "w2_bck",
+						transf = { 0.029999999329448, 0, 0, 0, 0, 0.029999999329448, 0, 0, 0, 0, 0.029999999329448, 0, -7.2823996543884, 0, 1.6296000480652, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/plane/dornier_b_merkur_v2/close_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/plane/dornier_b_merkur_v2/open_doors_left/d1_lft.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/plane/dornier_b_merkur_v2/dornier_b_merkur_lod.mtl", },
+						mesh = "vehicle/plane/dornier_b_merkur_v2/d1_lft_lod2.msh",
+						name = "d1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.1219370365143, 0.73255699872971, 2, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		airVehicle = {
+			configs = {
+				{
+					aileronLeft = {
+						ids = { 7, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 8, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.49000000953674, },
+					axles = { "vehicle/plane/dornier_b_merkur_v2/w1_lft_lod0.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { 10, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { 11, },
+					propsB = { 12, },
+					rudder = {
+						ids = { 9, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.090000003576279, },
+					wheels = { "vehicle/plane/dornier_b_merkur_v2/w2_lod0.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 2, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.49000000953674, },
+					axles = { "vehicle/plane/dornier_b_merkur_v2/w1_lft_lod1.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { 5, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { 6, },
+					propsB = { 7, },
+					rudder = {
+						ids = { 4, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.090000003576279, },
+					wheels = { "vehicle/plane/dornier_b_merkur_v2/w2_lod1.msh", },
+				},
+				{
+					aileronLeft = {
+						ids = { 2, },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { 3, },
+						maxAngle = 30,
+					},
+					axleRadii = { 0.49000000953674, },
+					axles = { "vehicle/plane/dornier_b_merkur_v2/w1_lft_lod2.msh", },
+					beaconLights = { },
+					elevator = {
+						ids = { 5, },
+						maxAngle = 30,
+					},
+					fakeBogies = { },
+					flaps = {
+						ids = { },
+						maxAngle = 0,
+					},
+					landingLight = { },
+					props = { 6, },
+					propsB = { 7, },
+					rudder = {
+						ids = { 4, },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = { },
+					wheelRadii = { 0.090000003576279, },
+					wheels = { "vehicle/plane/dornier_b_merkur_v2/w2_bck_lod2.msh", },
+				},
+			},
+			idleThrust = 0,
+			maxPayload = 0,
+			maxTakeOffWeight = 3700,
+			maxThrust = 8000,
+			timeToFullThrust = 3,
+			topSpeed = 48.610000610352,
+			type = "SMALL",
+			weight = 2300,
+			wingArea = 64,
+		},
+		availability = {
+			yearFrom = 1925,
+			yearTo = 1960,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_PLANE_DORNIER_B_MERKUR_DESCRIPTION"),
+			name = _("VEHICLE_PLANE_DORNIER_B_MERKUR_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 3.1488168239594, 1.0733000040054, 0.45832571387291, },
+					size01 = { 0.019999999552965, 2, },
+					velocity = { -2.6500000953674, 2.0999999046326, -1.5258945495589e-05, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 1,
+					color = { 0.19607841968536, 0.19607841968536, 0.19607841968536, },
+					frequency = 100,
+					initialAlpha = 0.20000000298023,
+					lifeTime = 0.40000000596046,
+					position = { 3.1488168239594, -1.0732560157776, 0.45832571387291, },
+					size01 = { 0.019999999552965, 2, },
+					velocity = { -2.6500000953674, -2.0999999046326, -1.5258945495589e-05, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "AIR_OUTDOOR",
+			seats = {
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 19,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4819999933243, 0.41299998760223, 1.0069999694824, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 19,
+					transf = { -1, -8.7422776573476e-08, -8.7422776573476e-08, 0, 8.7422769468049e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, -0.087999999523163, 0.41299998760223, 1.0069999694824, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 19,
+					transf = { -1, -8.7422776573476e-08, -8.7422776573476e-08, 0, 8.7422769468049e-08, -1, 8.7422790784331e-08, 0, -8.7422790784331e-08, 8.7422776573476e-08, 1, 0, -0.087999999523163, -0.42099997401237, 1.0069999694824, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 19,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4819999933243, -0.42299997806549, 1.0069999694824, 1, },
+				},
+				{
+					animation = "sitting",
+					crew = false,
+					forward = true,
+					group = 19,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5280001163483, -0.42299997806549, 1.0069999694824, 1, },
+				},
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 19,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.62082988023758, 0.40248584747314, 1.7734175920486, 1, },
+				},
+			},
+		},
+		soundConfig = {
+			effects = { },
+			soundSet = {
+				horn = "",
+				name = "aircraft_prop_old",
+			},
+		},
+		transportVehicle = {
+			carrier = "AIR",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 20,
+									seats = { },
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

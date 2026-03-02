@@ -1,0 +1,322 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.0594975948334, 0.89822292327881, 1.4487099647522, },
+		bbMin = { -2.0694103240967, -0.89822292327881, 0.005843847990036, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.0644540786743, 0.89822292327881, 0.72143304347992, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/lada_riva_v2/lada_riva.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/lada_riva_v2/lada_riva_interior_glass.mtl", "vehicle/car/lada_riva_v2/lada_riva_glass.mtl", },
+								mesh = "vehicle/car/lada_riva_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.77492904663086, 1.1920928955078e-07, 1.1584944725037, 1, },
+							},
+							{
+								materials = { "vehicle/car/lada_riva_v2/lada_riva_interior_glass.mtl", "vehicle/car/lada_riva_v2/lada_riva_glass.mtl", },
+								mesh = "vehicle/car/lada_riva_v2/glass1_lft_lod0.msh",
+								name = "glass1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.39607256650925, 0.67406040430069, 1.1491895914078, 1, },
+							},
+							{
+								materials = { "vehicle/car/lada_riva_v2/lada_riva_interior_glass.mtl", "vehicle/car/lada_riva_v2/lada_riva_glass.mtl", },
+								mesh = "vehicle/car/lada_riva_v2/glass2_lft_lod0.msh",
+								name = "glass2_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.50319635868073, 0.66077500581741, 1.1364200115204, 1, },
+							},
+							{
+								materials = { "vehicle/car/lada_riva_v2/lada_riva_interior_glass.mtl", "vehicle/car/lada_riva_v2/lada_riva_glass.mtl", },
+								mesh = "vehicle/car/lada_riva_v2/glass1_rgt_lod0.msh",
+								name = "glass1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.39607256650925, -0.67406040430069, 1.1491895914078, 1, },
+							},
+							{
+								materials = { "vehicle/car/lada_riva_v2/lada_riva_interior_glass.mtl", "vehicle/car/lada_riva_v2/lada_riva_glass.mtl", },
+								mesh = "vehicle/car/lada_riva_v2/glass2_rgt_lod0.msh",
+								name = "glass2_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.50319635868073, -0.66077506542206, 1.1364200115204, 1, },
+							},
+							{
+								materials = { "vehicle/car/lada_riva_v2/lada_riva_interior_glass.mtl", "vehicle/car/lada_riva_v2/lada_riva_glass.mtl", },
+								mesh = "vehicle/car/lada_riva_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0894644260406, 0, 1.1251826286316, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/lada_riva_v2/lada_riva_interior.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/lada_riva_v2/lada_riva.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { -1, 1.5099578831723e-07, -1.0106430784889e-15, 0, -1.5099578831723e-07, -1, -1.2246481760741e-16, 0, -1.0106430784889e-15, -1.2246468525852e-16, 1, 0, 1.4299999475479, 0.59498995542526, 0.30199998617172, 1, },
+					},
+					{
+						materials = { "vehicle/car/lada_riva_v2/lada_riva.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, -1.2376823513099e-31, -1.0106430784889e-15, 0, 0, 1, -1.2246481760741e-16, 0, 1.0106430784889e-15, 1.2246481760741e-16, 1, 0, 1.4299999475479, -0.59499001502991, 0.30199998617172, 1, },
+					},
+					{
+						materials = { "vehicle/car/lada_riva_v2/lada_riva.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 1.5099578831723e-07, 6.890185803671e-16, 0, -1.5099578831723e-07, 1, -1.0403890155241e-22, 0, -6.890185803671e-16, -5.635994745639e-30, 1, 0, -0.97499996423721, 1.2128722470806e-09, 0.30199992656708, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/lada_riva_v2/lada_riva_lod.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/lada_riva_v2/lada_riva_lod.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4299999475479, 0.59498995542526, 0.30199998617172, 1, },
+					},
+					{
+						materials = { "vehicle/car/lada_riva_v2/lada_riva_lod.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.4299999475479, -0.59499001502991, 0.30199998617172, 1, },
+					},
+					{
+						materials = { "vehicle/car/lada_riva_v2/lada_riva_lod.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.97499996423721, 1.2128722470806e-09, 0.30199992656708, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/lada_riva_v2/lada_riva_lod.mtl", },
+						mesh = "vehicle/car/lada_riva_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1956,
+			yearTo = 2002,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.47831603884697, 0.60012727975845, 0.64705884456635, },
+				},
+				{
+					{ 0.40784311294556, 0.19636608660221, 0.19592463970184, },
+				},
+				{
+					{ 0.44783544540405, 0.54509806632996, 0.5216943025589, },
+				},
+				{
+					{ 0.63137257099152, 0.55296677350998, 0.38377550244331, },
+				},
+				{
+					{ 0.13725489377975, 0.13725489377975, 0.13725489377975, },
+				},
+				{
+					{ 0.81960785388947, 0.81960785388947, 0.81960785388947, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/lada_riva_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 15, },
+					blinkLightsRight = { 16, },
+					brakeLights = { 14, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 13, },
+					steeringParts = { },
+					wheels = { "vehicle/car/lada_riva_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/lada_riva_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/lada_riva_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.30000001192093,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 60,
+				tractiveEffort = 6.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_old",
+			},
+			topSpeed = 22.222221374512,
+			weight = 1.3799999952316,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 17,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.23999999463558, 0.36499997973442, 0.049999993294477, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

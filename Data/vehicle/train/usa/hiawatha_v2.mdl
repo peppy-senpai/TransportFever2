@@ -1,0 +1,701 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 8.3324127197266, 1.5230973958969, 4.3761835098267, },
+		bbMin = { -18.58288192749, -1.5230973958969, -0.11597767472267, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 13.457647323608, 1.5230973958969, 2.2460806369781, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_body_lod0.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_glass.mtl", "vehicle/train/hiawatha_v2/hiawatha_interior_glass.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_glass_left_frt_lod0.msh",
+										name = "front_glass_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.9529867172241, 1.3599506616592, 3.1942698955536, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_glass.mtl", "vehicle/train/hiawatha_v2/hiawatha_interior_glass.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_glass_right_frt_lod0.msh",
+										name = "front_glass_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.9529867172241, -1.3616321086884, 3.1942698955536, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_glass.mtl", "vehicle/train/hiawatha_v2/hiawatha_interior_glass.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_glass1_lft_lod0.msh",
+										name = "front_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6472721099854, 1.5102877616882, 3.0419998168945, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_glass.mtl", "vehicle/train/hiawatha_v2/hiawatha_interior_glass.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_glass2_lft_lod0.msh",
+										name = "front_glass2_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.5499997138977, 1.5102877616882, 3.0419998168945, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_glass.mtl", "vehicle/train/hiawatha_v2/hiawatha_interior_glass.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_glass3_lft_lod0.msh",
+										name = "front_glass3_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.496000289917, 1.3875538110733, 3.0625, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_glass.mtl", "vehicle/train/hiawatha_v2/hiawatha_interior_glass.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_glass1_rgt_lod0.msh",
+										name = "front_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.6559820175171, -1.5102877616882, 3.0824999809265, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_glass.mtl", "vehicle/train/hiawatha_v2/hiawatha_interior_glass.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_glass2_rgt_lod0.msh",
+										name = "front_glass2_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.5459995269775, -1.5102877616882, 3.0824999809265, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_glass.mtl", "vehicle/train/hiawatha_v2/hiawatha_interior_glass.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_glass3_rgt_lod0.msh",
+										name = "front_glass3_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.4975004196167, -1.3875538110733, 3.0645000934601, 1, },
+									},
+								},
+								name = "front_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/hiawatha_v2/hiawatha_interior.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_interior_lod0.msh",
+								name = "front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.1593399531575e-16, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_b1_lod0.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_w1_lod0.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0868139266968, 0, 0.44295179843903, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_w1_lod0.msh",
+										name = "front_w2",
+										transf = { 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, -1.0863872766495, 0, 0.41553500294685, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.5314087867737, 0, 0.021213293075562, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_b2_lod0.msh",
+										name = "front_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_w5_lod0.msh",
+										name = "front_w5",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.388712644577, 0, 0.63971620798111, 1, },
+									},
+								},
+								name = "front_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4635803699493, 0, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_w3_lod0.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4351013898849, 0, 1.0709162950516, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_w3_lod0.msh",
+								name = "front_w4",
+								transf = { 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, -1.0185205936432, 0, 1.067542552948, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_r1_lod0.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0736999511719, 0, 1.126944065094, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_r2_lod0.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4448735713959, 0, 0.726353764534, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_r3_lod0.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4366978406906, 0, 0.72211199998856, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_r4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_r4_lod0.msh",
+								name = "front_r4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4366978406906, 0, 0.72211199998856, 1, },
+							},
+							{
+								materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_r5_lod0.msh",
+								name = "front_r5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4448735713959, 0, 1.080557346344, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_headlights_fwd_lod0.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								name = "front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.1593399531575e-16, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/back_body_lod0.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_b1_lod0.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_w1_lod0.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3264493942261, 0, 0.45659312605858, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_w1_lod0.msh",
+										name = "back_w2",
+										transf = { 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, 1.177191734314e-06, 0, 0.43897071480751, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_w1_lod0.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3725111484528, 0, 0.45659312605858, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2129020690918, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_b2_lod0.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_w1_lod0.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0145139694214, 0, 0.45659312605858, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_w1_lod0.msh",
+										name = "back_w5",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0145139694214, 0, 0.45659312605858, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9513826370239, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/back_headlights_bwd_lod0.msh",
+								name = "back_headlights_bwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -13.209338188171, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_body_lod1.msh",
+								name = "front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_b1_lod1.msh",
+										name = "front_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1368683518052e-15, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_w1_lod1.msh",
+										name = "front_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0868139266968, 0, 0.44295179843903, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_w1_lod1.msh",
+										name = "front_w2",
+										transf = { 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, -1.0863872766495, 0, 0.41553500294685, 1, },
+									},
+								},
+								name = "front_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.5314087867737, 0, 0.021213293075562, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_b2_lod1.msh",
+										name = "front_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.5265126385388e-16, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/front_w5_lod1.msh",
+										name = "front_w5",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.388712644577, 0, 0.63971620798111, 1, },
+									},
+								},
+								name = "front_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.4635803699493, 0, 0, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_w3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_w3_lod1.msh",
+								name = "front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4351013898849, 0, 1.0709162950516, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_w4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_w3_lod1.msh",
+								name = "front_w4",
+								transf = { 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, -1.0185205936432, 0, 1.067542552948, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_r1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_r1_lod1.msh",
+								name = "front_r1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.0736999511719, 0, 1.126944065094, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_r2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_r2_lod1.msh",
+								name = "front_r2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4448735713959, 0, 0.726353764534, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_r3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_r3_lod1.msh",
+								name = "front_r3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4366978406906, 0, 0.72211199998856, 1, },
+							},
+							{
+								animations = {
+									wheels = {
+										params = {
+											id = "vehicle/train/hiawatha_v2/wheels/front_r4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_r4_lod1.msh",
+								name = "front_r4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4366978406906, 0, 0.72211199998856, 1, },
+							},
+							{
+								materials = { "vehicle/train/hiawatha_v2/hiawatha_lod.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_r5_lod1.msh",
+								name = "front_r5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.4448735713959, 0, 1.080557346344, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/front_headlights_fwd_lod1.msh",
+								name = "front_headlights_fwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.1593399531575e-16, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/back_body_lod1.msh",
+								name = "back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_b1_lod1.msh",
+										name = "back_b1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_w1_lod1.msh",
+										name = "back_w1",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3264493942261, 0, 0.45659312605858, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_w1_lod1.msh",
+										name = "back_w2",
+										transf = { 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, 0, 0, 0, 1.0327999591827, 0, 1.177191734314e-06, 0, 0.43897071480751, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_w1_lod1.msh",
+										name = "back_w3",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.3725111484528, 0, 0.45659312605858, 1, },
+									},
+								},
+								name = "back_b1_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2129020690918, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_b2_lod1.msh",
+										name = "back_b2",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_w1_lod1.msh",
+										name = "back_w4",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0145139694214, 0, 0.45659312605858, 1, },
+									},
+									{
+										materials = { "vehicle/train/hiawatha_v2/hiawatha.mtl", },
+										mesh = "vehicle/train/hiawatha_v2/back_w1_lod1.msh",
+										name = "back_w5",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0145139694214, 0, 0.45659312605858, 1, },
+									},
+								},
+								name = "back_b2_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9513826370239, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+								mesh = "vehicle/train/hiawatha_v2/back_headlights_bwd_lod1.msh",
+								name = "back_headlights_bwd",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -13.209338188171, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1935,
+			yearTo = 1985,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRAIN_HIAWATHA_DESCRIPTION"),
+			name = _("VEHICLE_TRAIN_HIAWATHA_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 25568,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 3,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 2,
+					position = { 5.0135326385498, 1.0205655097961, 1.1168128252029, },
+					size01 = { 0.30000001192093, 5, },
+					velocity = { 0, 4, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 3,
+					color = { 0.70196080207825, 0.70196080207825, 0.70196080207825, },
+					frequency = 12,
+					initialAlpha = 1,
+					lifeTime = 2,
+					position = { 5.0135326385498, -1.0381549596786, 1.1168128252029, },
+					size01 = { 0.30000001192093, 5, },
+					velocity = { 0, -4, 0, },
+					velocityDampingFactor = 2.5,
+				},
+				{
+					child = 3,
+					color = { 0.57254898548126, 0.57254898548126, 0.57254898548126, },
+					frequency = 70,
+					initialAlpha = 1,
+					lifeTime = 12,
+					position = { 5.5371384620667, 0, 4.3761835098267, },
+					size01 = { 0.69999998807907, 12, },
+					velocity = { 0, 0, 13, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		railVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/train/hiawatha_v2/front_w1_lod0.msh", "vehicle/train/hiawatha_v2/front_w3_lod0.msh", "vehicle/train/hiawatha_v2/front_w5_lod0.msh", "vehicle/train/hiawatha_v2/back_w1_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 40, },
+					frontForwardParts = { 27, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/hiawatha_v2/front_w1_lod1.msh", "vehicle/train/hiawatha_v2/front_w3_lod1.msh", "vehicle/train/hiawatha_v2/front_w5_lod1.msh", "vehicle/train/hiawatha_v2/back_w1_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkLightsLeft0 = { },
+					blinkLightsLeft1 = { },
+					blinkLightsRight0 = { },
+					blinkLightsRight1 = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					brakeLights = { },
+					fakeBogies = { },
+					frontBackwardParts = { 29, },
+					frontForwardParts = { 17, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+				{
+					power = 2940,
+					tractiveEffort = 136,
+					type = "STEAM",
+				},
+			},
+			soundSet = {
+				horn = "",
+				name = "train_steam_modern",
+			},
+			topSpeed = 44.439998626709,
+			weight = 243,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "RAIL",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 28,
+					transf = { 0.9961946606636, 0, -0.087155729532242, 0, 0, 1, 0, 0, 0.087155729532242, 0, 0.9961946606636, 0, -6.039999961853, -1.1449999809265, 1.7799999713898, 1, },
+				},
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 28,
+					transf = { 0.9961946606636, 0, -0.087155714631081, 0, 0, 1, 0, 0, 0.087155714631081, 0, 0.9961946606636, 0, -6.039999961853, 1.1699999570847, 1.7799999713898, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = { },
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

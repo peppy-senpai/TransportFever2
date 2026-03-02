@@ -1,0 +1,334 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 6.0949912071228, 1.6416685581207, 4.5093941688538, },
+		bbMin = { -6.0979032516479, -1.6080513000488, -0.019389718770981, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 6.0964469909668, 1.6248599290848, 2.2643918991089, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+						mesh = "vehicle/waggon/tankcar_as_1950/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/tankcar_as_1950/close_doors_left/cap.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/tankcar_as_1950/close_doors_right/cap.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/tankcar_as_1950/open_doors_left/cap.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/tankcar_as_1950/open_doors_right/cap.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+						mesh = "vehicle/waggon/tankcar_as_1950/cap_lod0.msh",
+						name = "cap",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.40923765301704, 0.00090634572552517, 4.3088064193726, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/b1_lod0.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.001198410987854, 8.3506107330322e-05, -6.2217452523328e-07, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/w1_lod0.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.93668556213379, 8.9406967163086e-07, 0.46646696329117, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/w2_lod0.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.92463201284409, 8.9406967163086e-07, 0.46646705269814, 1, },
+							},
+						},
+						name = "b1_group",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.8994832038879, 0, 6.2217452523328e-07, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/b2_lod0.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.001198410987854, 8.3506107330322e-05, -6.1918564142616e-07, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/w3_lod0.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.93572163581848, 8.9406967163086e-07, 0.46646732091904, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/w4_lod0.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.92559599876404, 8.9406967163086e-07, 0.46646738052368, 1, },
+							},
+						},
+						name = "b2_group",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.9565377235413, 0, 6.1918564142616e-07, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100.0,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+						mesh = "vehicle/waggon/tankcar_as_1950/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/waggon/tankcar_as_1950/close_doors_left/cap.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/waggon/tankcar_as_1950/close_doors_right/cap.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/tankcar_as_1950/open_doors_left/cap.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/tankcar_as_1950/open_doors_right/cap.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+						mesh = "vehicle/waggon/tankcar_as_1950/cap_lod1.msh",
+						name = "cap",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.40923765301704, 0.00090634572552517, 4.3088064193726, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/b1_lod1.msh",
+								name = "b1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.9006819725037, 8.3506107330322e-05, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/w1_lod1.msh",
+								name = "w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.8361692428589, 8.9406967163086e-07, 0.46646758913994, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/w2_lod1.msh",
+								name = "w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.9748518466949, 8.9406967163086e-07, 0.46646764874458, 1, },
+							},
+						},
+						name = "b1_group",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/b2_lod1.msh",
+								name = "b2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.9553389549255, 8.3506107330322e-05, 1.1368683772162e-13, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/w3_lod1.msh",
+								name = "w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0208160877228, 8.940695011006e-07, 0.46646791696548, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+								mesh = "vehicle/waggon/tankcar_as_1950/w4_lod1.msh",
+								name = "w4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.8821334838867, 8.9406967163086e-07, 0.46646800637245, 1, },
+							},
+						},
+						name = "b2_group",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100.0,
+			visibleTo = 400.0,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/tankcar_as_1950/tankcar_as_1950.mtl", },
+						mesh = "vehicle/waggon/tankcar_as_1950/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400.0,
+			visibleTo = 1600.0,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1950,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			description = _("VEHICLE_WAGGON_TANKCAR_AS_1950_DESCRIPTION"),
+			name = _("VEHICLE_WAGGON_TANKCAR_AS_1950_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 36525,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/waggon/tankcar_as_1950/w1_lod0.msh", "vehicle/waggon/tankcar_as_1950/w2_lod0.msh", "vehicle/waggon/tankcar_as_1950/w3_lod0.msh", "vehicle/waggon/tankcar_as_1950/w4_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},{
+					axles = { "vehicle/waggon/tankcar_as_1950/w1_lod1.msh", "vehicle/waggon/tankcar_as_1950/w2_lod1.msh", "vehicle/waggon/tankcar_as_1950/w3_lod1.msh", "vehicle/waggon/tankcar_as_1950/w4_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},{
+					axles = {  },
+					backBackwardParts = { },
+					backForwardParts = { },
+					blinkingLights0 = { },
+					blinkingLights1 = { },
+					fakeBogies = { 
+						{
+							group = 1,
+							offset = 0,
+							position =  3.9565377235413,
+						},{
+							group = 1,
+							offset = 0,
+							position =  -3.9565377235413,
+						},
+					},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = { },
+			soundSet = {
+				horn = "",
+				name = "waggon_freight_old",
+			},
+			topSpeed = 33.3333333333,
+			weight = 30,
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartments = {
+				{
+					{
+						{
+							capacity = 72,
+							type = "CRUDE",
+						},
+					},
+					{
+						{
+							capacity = 72,
+							type = "OIL",
+						},
+					},
+					{
+						{
+							capacity = 72,
+							type = "FUEL",
+						},
+					},
+				},
+			},
+			loadSpeed = 3,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+	},
+	version = 1,
+}
+end

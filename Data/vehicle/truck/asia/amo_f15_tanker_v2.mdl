@@ -1,0 +1,386 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.5135924816132, 0.87864583730698, 2.2964890003204, },
+		bbMin = { -2.752138376236, -0.8786501288414, 0.0021421015262604, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.6328654289246, 0.87864798307419, 1.1471734046936, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_body_lod0.msh",
+						name = "universal_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.09881453961134, -2.2351741790771e-08, 0.60901892185211, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/amo_f15_v2/amo_f15_glass.mtl", "vehicle/truck/amo_f15_v2/amo_f15_interior_glass.mtl", },
+								mesh = "vehicle/truck/amo_f15_universal_v2/universal_glass_lod0.msh",
+								name = "universal_glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.86093121767044, -1.4901161193848e-07, 1.776774764061, 1, },
+							},
+						},
+						name = "tanker_glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15_int.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_interior_lod0.msh",
+						name = "universal_interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89483433961868, -1.1920928955078e-07, 1.3673610687256, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w1_lft_lod0.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0135087966919, 0.65132564306259, 0.46433341503143, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w1_rgt_lod0.msh",
+						name = "universal_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0135087966919, -0.65132993459702, 0.46433341503143, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w2_lod0.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1905202865601, 0, 0.46433329582214, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_headlights_lod0.msh",
+						name = "universal_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.09881453961134, -2.2351741790771e-08, 0.60901892185211, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_tanker_v2/tanker_body_cargo_lod0.msh",
+						name = "tanker_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, -6.6174449004242e-24, 0, 0, 6.6174449004242e-24, 1, 0, 2.0861625671387e-06, 2.145143071175e-06, 0, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/truck/amo_f15_tanker_v2/close_doors_left/tanker_d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/truck/amo_f15_tanker_v2/close_doors_right/tanker_d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/truck/amo_f15_tanker_v2/open_doors_left/tanker_d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/truck/amo_f15_tanker_v2/open_doors_right/tanker_d1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_tanker_v2/tanker_d1_lod0.msh",
+						name = "tanker_d1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4991292953491, 2.2649765014648e-06, 2.1931056976318, 1, },
+					},
+					{
+						name = "tanker_comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15_lod.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_body_lod1.msh",
+						name = "universal_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.098814532160759, -9.4768651592858e-08, 0.60658419132233, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15_lod.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w1_lft_lod1.msh",
+						name = "universal_w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0135087966919, 0.6513255238533, 0.46433347463608, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15_lod.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w1_rgt_lod1.msh",
+						name = "universal_w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0135087966919, -0.65132993459702, 0.46433332562447, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/amo_f15_lod.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_w2_lod1.msh",
+						name = "universal_w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1905202865601, -5.5352852967872e-08, 0.46433329582214, 1, },
+					},
+					{
+						materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+						mesh = "vehicle/truck/amo_f15_universal_v2/universal_headlights_lod1.msh",
+						name = "universal_headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.098814532160759, -9.4952461893172e-08, 0.60901892185211, 1, },
+					},
+					{
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_tanker_v2/tanker_body_cargo_lod1.msh",
+						name = "tanker_body_cargo",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2888182229508e-06, 2.1362304778449e-06, 3.8147220493556e-08, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								params = {
+									id = "vehicle/truck/amo_f15_tanker_v2/close_doors_left/tanker_d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								params = {
+									id = "vehicle/truck/amo_f15_tanker_v2/close_doors_right/tanker_d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/truck/amo_f15_tanker_v2/open_doors_left/tanker_d1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/truck/amo_f15_tanker_v2/open_doors_right/tanker_d1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", },
+						mesh = "vehicle/truck/amo_f15_tanker_v2/tanker_d1_lod1.msh",
+						name = "tanker_d1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4991292953491, 2.0273796508263e-06, 2.1931056976318, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/truck/amo_f15_v2/trailers.mtl", "vehicle/truck/amo_f15_v2/amo_f15_lod.mtl", },
+						mesh = "vehicle/truck/amo_f15_tanker_v2/tanker_body_lod2.msh",
+						name = "tanker_body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.098812408745289, 2.0636298359022e-06, 0.60901886224747, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1924,
+			yearTo = 1964,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_AMO_F15_TANKER_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_AMO_F15_TANKER_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 40,
+					initialAlpha = 0.5,
+					lifeTime = 1,
+					position = { -0.20170302689075, 0.33782732486725, -0.13701996207237, },
+					size01 = { 0.0049999998882413, 0.80000001192093, },
+					velocity = { -0.61000001430511, 4, -0.36076137423515, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/amo_f15_universal_v2/universal_w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 8, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/amo_f15_universal_v2/universal_w1_lft_lod0.msh", "vehicle/truck/amo_f15_universal_v2/universal_w1_rgt_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/amo_f15_universal_v2/universal_w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/amo_f15_universal_v2/universal_w1_lft_lod1.msh", "vehicle/truck/amo_f15_universal_v2/universal_w1_rgt_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 0,
+							offset = 0,
+							position = -1.1900000572205,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 40,
+				tractiveEffort = 20,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 11.109999656677,
+			weight = 1.5,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 11,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.29800000786781, -0.25299999117851, 0.71799999475479, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 32,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 2,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,292 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.3075377941132, 0.95792371034622, 1.6268754005432, },
+		bbMin = { -2.1978588104248, -0.95792371034622, -0.0051250457763672, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.2526984214783, 0.95792371034622, 0.81600022315979, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_interior_glass.mtl", "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_glass.mtl", },
+								mesh = "vehicle/car/chevrolet_master_deluxe_v2/glass_left_frt_lod0.msh",
+								name = "glass_left_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.58919906616211, 0.26334294676781, 1.2694897651672, 1, },
+							},
+							{
+								materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_interior_glass.mtl", "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_glass.mtl", },
+								mesh = "vehicle/car/chevrolet_master_deluxe_v2/glass_right_frt_lod0.msh",
+								name = "glass_right_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.58919906616211, -0.26334294676781, 1.2694897651672, 1, },
+							},
+							{
+								materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_interior_glass.mtl", "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_glass.mtl", },
+								mesh = "vehicle/car/chevrolet_master_deluxe_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10571447014809, 0.58608138561249, 1.2185552120209, 1, },
+							},
+							{
+								materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_interior_glass.mtl", "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_glass.mtl", },
+								mesh = "vehicle/car/chevrolet_master_deluxe_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10571447014809, -0.58608138561249, 1.2185552120209, 1, },
+							},
+							{
+								materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_interior_glass.mtl", "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_glass.mtl", },
+								mesh = "vehicle/car/chevrolet_master_deluxe_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.8585519194603, 0, 1.3157061338425, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_interior.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6347109079361, 0.61683410406113, 0.34813368320465, 1, },
+					},
+					{
+						materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, 1.5099578831723e-07, 1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246465878874e-16, 0, 1.2246465878874e-16, -1.2246468525852e-16, 1, 0, 1.6347109079361, -0.61683410406113, 0.34813368320465, 1, },
+					},
+					{
+						materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1920367479324, -1.9845864163649e-16, 0.34813368320465, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/brakelights_lod0.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_lod.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_lod.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6347109079361, 0.61683410406113, 0.34813368320465, 1, },
+					},
+					{
+						materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_lod.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.5099578831723e-07, 0, -1.509958309498e-07, -1, 1.5099577410638e-07, 0, -1.5099577410638e-07, 1.5099578831723e-07, 1, 0, 1.6347109079361, -0.61683410406113, 0.34813368320465, 1, },
+					},
+					{
+						materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_lod.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1920367479324, -1.9845864163649e-16, 0.34813368320465, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/brakelights_lod1.msh",
+						name = "brakelights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/chevrolet_master_deluxe_v2/chevrolet_master_deluxe_lod.mtl", },
+						mesh = "vehicle/car/chevrolet_master_deluxe_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1900,
+			yearTo = 1960,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.39212608337402, 0.47052001953125, 0.47843134403229, },
+				},
+				{
+					{ 0.17254900932312, 0, 0.0079084578901529, },
+				},
+				{
+					{ 0.60392153263092, 0.60392153263092, 0.60392153263092, },
+				},
+				{
+					{ 0.34901958703995, 0.34901958703995, 0.33327949047089, },
+				},
+				{
+					{ 0.25882351398468, 0.14916610717773, 0.054809682071209, },
+				},
+				{
+					{ 0.094117641448975, 0.094117641448975, 0.094117641448975, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/chevrolet_master_deluxe_v2/w2_lod0.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { 13, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 12, },
+					steeringParts = { },
+					wheels = { "vehicle/car/chevrolet_master_deluxe_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/chevrolet_master_deluxe_v2/w2_lod1.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/chevrolet_master_deluxe_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 60,
+				tractiveEffort = 6.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_old",
+			},
+			topSpeed = 13.888889312744,
+			weight = 1.3700000047684,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 14,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.14499999582767, 0.2960000038147, 0.070000000298023, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

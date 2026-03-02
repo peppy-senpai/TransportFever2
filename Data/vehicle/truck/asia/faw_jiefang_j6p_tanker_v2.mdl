@@ -1,0 +1,986 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.6160488128662, 1.5467621088028, 3.5302724838257, },
+		bbMin = { -11.75476360321, -1.5467640161514, -1.1920928955078e-07, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 7.6854062080383, 1.5467630624771, 1.7651362419128, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_body_lod0.msh",
+								name = "universal_front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int_glass.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_glass.mtl", },
+										mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_glass1_left_frt_lod0.msh",
+										name = "universal_glass1_left_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.1209306716919, 0.59798729419708, 2.424578666687, 1, },
+									},
+									{
+										materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int_glass.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_glass.mtl", },
+										mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_glass1_right_frt_lod0.msh",
+										name = "universal_glass1_right_frt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.1209304332733, -0.58298790454865, 2.424578666687, 1, },
+									},
+									{
+										materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int_glass.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_glass.mtl", },
+										mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_glass1_lft_lod0.msh",
+										name = "universal_glass1_lft",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5336208343506, 1.1699728965759, 2.4250245094299, 1, },
+									},
+									{
+										materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int_glass.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_glass.mtl", },
+										mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_glass1_rgt_lod0.msh",
+										name = "universal_glass1_rgt",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.5336203575134, -1.1699738502502, 2.4250245094299, 1, },
+									},
+									{
+										materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int_glass.mtl", "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_glass.mtl", },
+										mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_glass1_bck_lod0.msh",
+										name = "universal_glass1_bck",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2090260982513, 0.0089999735355377, 2.6696362495422, 1, },
+									},
+								},
+								name = "tanker_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_int.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_interior_lod0.msh",
+								name = "universal_front_interior",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.712632894516, -4.1723251342773e-07, 1.1058056354523, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w1_lft_lod0.msh",
+								name = "universal_front_w1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.979478597641, 1.0923010110855, 0.57125234603882, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w1_rgt_lod0.msh",
+								name = "universal_front_w1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9794782400131, -1.0923022031784, 0.57125234603882, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w2_lod0.msh",
+								name = "universal_front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.4930760860443, -2.3841857910156e-07, 0.57125234603882, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w3_lod0.msh",
+								name = "universal_front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8455994129181, -2.3841857910156e-07, 0.57125234603882, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_headlights_lod0.msh",
+								name = "universal_front_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_brakelights_lod0.msh",
+								name = "universal_front_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 5.3644180297852e-07, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_blinklights_lft_lod0.msh",
+								name = "universal_front_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_blinklights_rgt_lod0.msh",
+								name = "universal_front_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+							},
+							{
+								name = "tanker_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "tanker_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_body_lod0.msh",
+								name = "tanker_back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w1_lod0.msh",
+								name = "tanker_back_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.756516456604, -5.1367184811246e-11, 0.57125228643417, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w2_lod0.msh",
+								name = "tanker_back_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.1100449562073, -5.1367184811246e-11, 0.57125228643417, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w3_lod0.msh",
+								name = "tanker_back_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.463436126709, -5.1367184811246e-11, 0.57125228643417, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d1_lod0.msh",
+								name = "tanker_back_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.80845832824707, 5.7228262448916e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d2_lod0.msh",
+								name = "tanker_back_d2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0194525718689, 5.7228262448916e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d3_lod0.msh",
+								name = "tanker_back_d3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.3969621658325, 5.7228262448916e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d4_lod0.msh",
+								name = "tanker_back_d4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7744722366333, 5.7228262448916e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d5_lod0.msh",
+								name = "tanker_back_d5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.1519823074341, 5.7228262448916e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d6_lod0.msh",
+								name = "tanker_back_d6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.5294919013977, 5.7228262448916e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d7.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d7.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d7.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d7.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d7_lod0.msh",
+								name = "tanker_back_d7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.4789543151855, 5.7228262448916e-06, 3.3137505054474, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_headlights_lod0.msh",
+								name = "tanker_back_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1.9074000192632e-06, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_brakelights_lod0.msh",
+								name = "tanker_back_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1.9074000192632e-06, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_blinklights_lft_lod0.msh",
+								name = "tanker_back_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7740819454193, -1.9074000192632e-06, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_blinklights_rgt_lod0.msh",
+								name = "tanker_back_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.7740819454193, -1.9074000192632e-06, 0, 1, },
+							},
+						},
+						name = "tanker_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0041742324829, 5.1367184811246e-11, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_body_lod1.msh",
+								name = "universal_front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w1_lft_lod1.msh",
+								name = "universal_front_w1_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.979478597641, 1.0923010110855, 0.57125228643417, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w1_rgt_lod1.msh",
+								name = "universal_front_w1_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9794782400131, -1.0923022031784, 0.57125222682953, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w2_lod1.msh",
+								name = "universal_front_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.493075966835, -2.3841857910156e-07, 0.57125228643417, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w3_lod1.msh",
+								name = "universal_front_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.8455994129181, -2.3841857910156e-07, 0.57125228643417, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_headlights_lod1.msh",
+								name = "universal_front_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 1.6263032223775e-21, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_brakelights_lod1.msh",
+								name = "universal_front_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 5.3644180297852e-07, 8.6736171860136e-21, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_front_blinklights_lft_lod1.msh",
+								name = "tanker_front_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_front_blinklights_rgt_lod1.msh",
+								name = "tanker_front_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 8.9406967163086e-08, 0, 1, },
+							},
+						},
+						name = "tanker_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_body_lod1.msh",
+								name = "tanker_back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0041742324829, 5.1367184811246e-11, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w1_lod1.msh",
+								name = "tanker_back_w1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.7606906890869, -2.5007773629682e-14, 0.57125228643417, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w2_lod1.msh",
+								name = "tanker_back_w2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.1142196655273, -2.5007773629682e-14, 0.57125228643417, 1, },
+							},
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w3_lod1.msh",
+								name = "tanker_back_w3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.467609405518, -2.5007773629682e-14, 0.57125228643417, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d1_lod1.msh",
+								name = "tanker_back_d1",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1957161426544, 5.7228771765949e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d2_lod1.msh",
+								name = "tanker_back_d2",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.0236265659332, 5.7228771765949e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d3.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d3_lod1.msh",
+								name = "tanker_back_d3",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.4011363983154, 5.7228771765949e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d4.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d4_lod1.msh",
+								name = "tanker_back_d4",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7786459922791, 5.7228771765949e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d5.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d5_lod1.msh",
+								name = "tanker_back_d5",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.156156539917, 5.7228771765949e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d6.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d6_lod1.msh",
+								name = "tanker_back_d6",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -8.5336666107178, 5.7228771765949e-06, 3.3137505054474, 1, },
+							},
+							{
+								animations = {
+									close_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_left/tanker_back_d7.ani",
+										},
+										type = "FILE_REF",
+									},
+									close_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/close_doors_right/tanker_back_d7.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_left = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_left/tanker_back_d7.ani",
+										},
+										type = "FILE_REF",
+									},
+									open_doors_right = {
+										params = {
+											id = "vehicle/truck/faw_jiefang_j6p_tanker_v2/open_doors_right/tanker_back_d7.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_d7_lod1.msh",
+								name = "tanker_back_d7",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.483128547668, 5.7228771765949e-06, 3.3137505054474, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_brakelights_lod1.msh",
+								name = "tanker_back_brakelights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0041742324829, -1.9073486328125e-06, -9.8097004819476e-21, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_headlights_lod1.msh",
+								name = "tanker_back_headlights",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0041742324829, -1.9073486328125e-06, -9.8097004819476e-21, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_blinklights_lft_lod1.msh",
+								name = "tanker_back_blinklights_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7782559394836, -1.9073486328125e-06, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_blinklights_rgt_lod1.msh",
+								name = "tanker_back_blinklights_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.7782559394836, -1.9073486328125e-06, 0, 1, },
+							},
+						},
+						name = "tanker_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 400,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_lod.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_body_lod2.msh",
+								name = "universal_front_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "tanker_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/faw_jiefang_g6p_v2/faw_jiefang_j6p_tanker.mtl", },
+								mesh = "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_body_lod2.msh",
+								name = "tanker_back_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0041742324829, 5.1367184811246e-11, 0, 1, },
+							},
+						},
+						name = "tanker_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2014,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_FAW_JIEFANG_J6P_TANKER_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_FAW_JIEFANG_J6P_TANKER_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 29220,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 2,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 50,
+					initialAlpha = 0.80000001192093,
+					lifeTime = 1,
+					position = { 0.0018241576617584, 0.25422877073288, 0.46160849928856, },
+					size01 = { 0.050000000745058, 0.89999997615814, },
+					velocity = { -3.4800000190735, 9, -0.16464626789093, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w2_lod0.msh", "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w3_lod0.msh", "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w1_lod0.msh", "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w2_lod0.msh", "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w3_lod0.msh", },
+					blinkLightsLeft = { 16, 33, },
+					blinkLightsRight = { 17, 34, },
+					brakeLights = { 15, 32, },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 19,
+							offset = 0,
+							position = -2.1700000762939,
+							upright = false,
+						},
+					},
+					headLights = { 14, 31, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w1_lft_lod0.msh", "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w1_rgt_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w2_lod1.msh", "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w3_lod1.msh", "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w1_lod1.msh", "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w2_lod1.msh", "vehicle/truck/faw_jiefang_j6p_tanker_v2/tanker_back_w3_lod1.msh", },
+					blinkLightsLeft = { 9, 25, },
+					blinkLightsRight = { 10, 26, },
+					brakeLights = { 8, 23, },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 11,
+							offset = 0,
+							position = -2.1700000762939,
+							upright = false,
+						},
+					},
+					headLights = { 7, 24, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w1_lft_lod1.msh", "vehicle/truck/faw_jiefang_j6p_universal_v2/universal_front_w1_rgt_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -2.1700000762939,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -9.1099996566772,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 350,
+				tractiveEffort = 50,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 27.777778625488,
+			weight = 12,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 18,
+					transf = { 0.99357181787491, 0, -0.11320321261883, 0, 0, 1, 0, 0, 0.11320321261883, 0, 0.99357181787491, 0, 2.125, 0.76399999856949, 1.3600000143051, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 152,
+									seats = { },
+									type = "CRUDE",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 152,
+									seats = { },
+									type = "OIL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 152,
+									seats = { },
+									type = "FUEL",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

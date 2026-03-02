@@ -1,0 +1,303 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.981528878212, 0.8967432975769, 1.3720989227295, },
+		bbMin = { -1.9820230007172, -0.89674305915833, -0.015058994293213, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.9817759990692, 0.89674317836761, 0.69357895851135, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/corolla_v2/corolla.mtl", },
+						mesh = "vehicle/car/corolla_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/corolla_v2/corolla_interior_glass.mtl", "vehicle/car/corolla_v2/corolla_glass.mtl", },
+								mesh = "vehicle/car/corolla_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.46386450529099, 2.9802322387695e-08, 1.0962026119232, 1, },
+							},
+							{
+								materials = { "vehicle/car/corolla_v2/corolla_interior_glass.mtl", "vehicle/car/corolla_v2/corolla_glass.mtl", },
+								mesh = "vehicle/car/corolla_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.57509005069733, 0.65562695264816, 0.98136395215988, 1, },
+							},
+							{
+								materials = { "vehicle/car/corolla_v2/corolla_interior_glass.mtl", "vehicle/car/corolla_v2/corolla_glass.mtl", },
+								mesh = "vehicle/car/corolla_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.57509005069733, -0.65562695264816, 0.98136395215988, 1, },
+							},
+							{
+								materials = { "vehicle/car/corolla_v2/corolla_interior_glass.mtl", "vehicle/car/corolla_v2/corolla_glass.mtl", },
+								mesh = "vehicle/car/corolla_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.6165462732315, 2.9802322387695e-08, 1.0006899833679, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/corolla_v2/corolla_interior.mtl", },
+						mesh = "vehicle/car/corolla_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/corolla_v2/corolla.mtl", },
+						mesh = "vehicle/car/corolla_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1523360013962, 0.65987300872803, 0.29546099901199, 1, },
+					},
+					{
+						materials = { "vehicle/car/corolla_v2/corolla.mtl", },
+						mesh = "vehicle/car/corolla_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { 1, -1.5099578831723e-07, 1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 1.1523360013962, -0.65987300872803, 0.29546099901199, 1, },
+					},
+					{
+						materials = { "vehicle/car/corolla_v2/corolla.mtl", },
+						mesh = "vehicle/car/corolla_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2447259426117, -5.8776509565037e-17, 0.29546111822128, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/corolla_v2/headlights_lod0.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/corolla_v2/breaklights_lod0.msh",
+						name = "breaklights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/corolla_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/corolla_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 90,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/corolla_v2/corolla.mtl", },
+						mesh = "vehicle/car/corolla_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 0.99999392032623, -0.0034906514920294, 0, 0, 0.0034906514920294, 0.99999392032623, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/corolla_v2/corolla.mtl", },
+						mesh = "vehicle/car/corolla_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1523360013962, 0.65987300872803, 0.29546099901199, 1, },
+					},
+					{
+						materials = { "vehicle/car/corolla_v2/corolla.mtl", },
+						mesh = "vehicle/car/corolla_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, -8.7422776573476e-08, 1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, -1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.1523360013962, -0.65408539772034, 0.29546102881432, 1, },
+					},
+					{
+						materials = { "vehicle/car/corolla_v2/corolla.mtl", },
+						mesh = "vehicle/car/corolla_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 0.99999392032623, -0.0034906514920294, 0, 0, 0.0034906514920294, 0.99999392032623, 0, -1.2447259426117, -5.8776509565037e-17, 0.29546111822128, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/corolla_v2/headlights_lod1.msh",
+						name = "headlights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/corolla_v2/breaklights_lod1.msh",
+						name = "breaklights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/corolla_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/corolla_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 8.7422776573476e-08, -1.2246468525852e-16, 0, -8.7422776573476e-08, -1, -1.2246468525852e-16, 0, -1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 90,
+			visibleTo = 190,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/corolla_v2/corolla.mtl", },
+						mesh = "vehicle/car/corolla_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 190,
+			visibleTo = 600,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1983,
+			yearTo = 0,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.29424431920052, 0.34901958703995, 0.20804303884506, },
+				},
+				{
+					{ 0.56470584869385, 0.43511989712715, 0.25134947896004, },
+				},
+				{
+					{ 0.39244908094406, 0.46671536564827, 0.59215688705444, },
+				},
+				{
+					{ 0.38823527097702, 0.18802766501904, 0.21555617451668, },
+				},
+				{
+					{ 0.77254903316498, 0.77254903316498, 0.77254903316498, },
+				},
+				{
+					{ 0.13348710536957, 0.29812124371529, 0.4862744808197, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/corolla_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 13, },
+					blinkLightsRight = { 14, },
+					brakeLights = { 12, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.25,
+							upright = false,
+						},
+					},
+					headLights = { 11, },
+					steeringParts = { },
+					wheels = { "vehicle/car/corolla_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/corolla_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = -0.25,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/corolla_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = { },
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 60,
+				tractiveEffort = 9,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 27.777778625488,
+			weight = 0.93999999761581,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 15,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.10400000214577, 0.34000000357628, -0.054000001400709, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

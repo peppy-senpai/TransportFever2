@@ -1,0 +1,310 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.8359998464584, 0.78695321083069, 1.4696700572968, },
+		bbMin = { -1.7680000066757, -0.78695321083069, 0.00099998712539673, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.8019999265671, 0.78695321083069, 0.734335064888, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/trabant_v2/trabant.mtl", },
+						mesh = "vehicle/car/trabant_v2/body_lod0.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1.0049999952316, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/car/trabant_v2/trabant_interior_glass.mtl", "vehicle/car/trabant_v2/trabant_glass.mtl", },
+								mesh = "vehicle/car/trabant_v2/glass_frt_lod0.msh",
+								name = "glass_frt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.56819248199463, 0, 1.1349189281464, 1, },
+							},
+							{
+								materials = { "vehicle/car/trabant_v2/trabant_interior_glass.mtl", "vehicle/car/trabant_v2/trabant_glass.mtl", },
+								mesh = "vehicle/car/trabant_v2/glass_lft_lod0.msh",
+								name = "glass_lft",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.20621198415756, 0.57327365875244, 1.1183094978333, 1, },
+							},
+							{
+								materials = { "vehicle/car/trabant_v2/trabant_interior_glass.mtl", "vehicle/car/trabant_v2/trabant_glass.mtl", },
+								mesh = "vehicle/car/trabant_v2/glass_rgt_lod0.msh",
+								name = "glass_rgt",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.20621198415756, -0.57327365875244, 1.1183094978333, 1, },
+							},
+							{
+								materials = { "vehicle/car/trabant_v2/trabant_interior_glass.mtl", "vehicle/car/trabant_v2/trabant_glass.mtl", },
+								mesh = "vehicle/car/trabant_v2/glass_bck_lod0.msh",
+								name = "glass_bck",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.0436252355576, 0, 1.1482425928116, 1, },
+							},
+						},
+						name = "glass_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/trabant_v2/trabant_interior.mtl", },
+						mesh = "vehicle/car/trabant_v2/interior_lod0.msh",
+						name = "interior",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/trabant_v2/trabant.mtl", },
+						mesh = "vehicle/car/trabant_v2/w1_lft_lod0.msh",
+						name = "w1_lft",
+						transf = { -1, -8.7422776573476e-08, 1.2246468525852e-16, 0, 8.7422776573476e-08, -1, -1.2246468525852e-16, 0, 1.2246468525852e-16, -1.2246468525852e-16, 1, 0, 1.1859999895096, 0.55516612529755, 0.28799998760223, 1, },
+					},
+					{
+						materials = { "vehicle/car/trabant_v2/trabant.mtl", },
+						mesh = "vehicle/car/trabant_v2/w1_lft_lod0.msh",
+						name = "w1_rgt",
+						transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, 1.2246468525852e-16, 1, 1.0706203268911e-23, 0, 8.7422776573476e-08, -7.347007848455e-40, -1, 0, 1.1859999895096, -0.55516612529755, 0.28799998760223, 1, },
+					},
+					{
+						materials = { "vehicle/car/trabant_v2/trabant.mtl", },
+						mesh = "vehicle/car/trabant_v2/w2_lod0.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.85800004005432, 0, 0.28799998760223, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/trabant_v2/headLights_lod0.msh",
+						name = "headLights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/trabant_v2/brakeLights_lod0.msh",
+						name = "brakeLights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/trabant_v2/blinklights_lft_lod0.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/trabant_v2/blinklights_rgt_lod0.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, -9.5367429508997e-09, 0, 1.9073485901799e-08, 1, },
+					},
+					{
+						name = "comp_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/trabant_v2/trabant_lod.mtl", },
+						mesh = "vehicle/car/trabant_v2/body_lod1.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/trabant_v2/trabant_lod.mtl", },
+						mesh = "vehicle/car/trabant_v2/w1_lft_lod1.msh",
+						name = "w1_lft",
+						transf = { -1, 1.2246468525852e-16, -8.7422776573476e-08, 0, -7.7652067312058e-15, -1, 8.7422776573476e-08, 0, -8.7422776573476e-08, 8.7422776573476e-08, 1, 0, 1.1859999895096, 0.55516612529755, 0.28799998760223, 1, },
+					},
+					{
+						materials = { "vehicle/car/trabant_v2/trabant_lod.mtl", },
+						mesh = "vehicle/car/trabant_v2/w1_lft_lod1.msh",
+						name = "w1_rgt",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.1859999895096, -0.55516612529755, 0.28799998760223, 1, },
+					},
+					{
+						materials = { "vehicle/car/trabant_v2/trabant_lod.mtl", },
+						mesh = "vehicle/car/trabant_v2/w2_lod1.msh",
+						name = "w2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.85800004005432, 0, 0.28799998760223, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_all_lights.mtl", },
+						mesh = "vehicle/car/trabant_v2/headLights_lod1.msh",
+						name = "headLights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_brake_lights.mtl", },
+						mesh = "vehicle/car/trabant_v2/brakeLights_lod1.msh",
+						name = "brakeLights",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/trabant_v2/blinklights_lft_lod1.msh",
+						name = "blinklights_lft",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/car/emissive/car_blink_lights.mtl", },
+						mesh = "vehicle/car/trabant_v2/blinklights_rgt_lod1.msh",
+						name = "blinklights_rgt",
+						transf = { -1, 1.5099578831723e-07, -1.2246468525852e-16, 0, -1.5099578831723e-07, -1, -1.2246469849341e-16, 0, -1.2246469849341e-16, -1.2246468525852e-16, 1, 0, -9.5367429508997e-09, 0, 1.9073485901799e-08, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/car/trabant_v2/trabant_lod.mtl", },
+						mesh = "vehicle/car/trabant_v2/body_lod2.msh",
+						name = "body",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 625,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1958,
+			yearTo = 1990,
+		},
+		car = { },
+		colorConfig = {
+			configs = {
+				{
+					{ 0.3920926451683, 0.40392154455185, 0.2977931201458, },
+				},
+				{
+					{ 0.32179933786392, 0.43923017382622, 0.52941179275513, },
+				},
+				{
+					{ 0.38409841060638, 0.43921566009521, 0.40379133820534, },
+				},
+				{
+					{ 0.45490193367004, 0.22774082422256, 0.15698575973511, },
+				},
+				{
+					{ 0.49803918600082, 0.32128408551216, 0.44703796505928, },
+				},
+				{
+					{ 0.54509806632996, 0.30990642309189, 0.13680891692638, },
+				},
+			},
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/car/trabant_v2/w2_lod0.msh", },
+					blinkLightsLeft = { 13, },
+					blinkLightsRight = { 14, },
+					brakeLights = { 12, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 11, },
+					steeringParts = { },
+					wheels = { "vehicle/car/trabant_v2/w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/car/trabant_v2/w2_lod1.msh", },
+					blinkLightsLeft = { 7, },
+					blinkLightsRight = { 8, },
+					brakeLights = { 6, },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { 5, },
+					steeringParts = { },
+					wheels = { "vehicle/car/trabant_v2/w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 0,
+							offset = 0,
+							position = 0,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 50,
+				tractiveEffort = 7.5,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "car_modern",
+			},
+			topSpeed = 22.222221374512,
+			weight = 0.63999998569489,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "BUS",
+			seats = {
+				{
+					animation = "driving",
+					crew = true,
+					forward = true,
+					group = 15,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.099999994039536, 0.28499999642372, 0.05400000885129, 1, },
+				},
+			},
+		},
+		versioning = {
+			__version = "_v03",
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,566 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 6.5875177383423, 1.5642023086548, 3.747739315033, },
+		bbMin = { -8.9801807403564, -1.5642023086548, -0.00042423605918884, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 7.7838492393494, 1.5642023086548, 1.8740817308426, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_body_lod0.msh",
+								name = "universal_front_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114998817444, 0, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "vehicle/truck/40_tons_v2/40_tons_glass.mtl", "vehicle/truck/40_tons_v2/40_tons_interior.mtl", },
+										mesh = "vehicle/truck/40_tons_universal_v2/universal_glass_frt_lod0.msh",
+										name = "universal_glass_frt",
+										transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 2.9110019207001, 0, 2.1982989311218, 1, },
+									},
+									{
+										materials = { "vehicle/truck/40_tons_v2/40_tons_glass.mtl", "vehicle/truck/40_tons_v2/40_tons_interior.mtl", },
+										mesh = "vehicle/truck/40_tons_universal_v2/universal_glass_lft_lod0.msh",
+										name = "universal_glass_lft",
+										transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 2.0023245811462, 1.2197835445404, 2.3066489696503, 1, },
+									},
+									{
+										materials = { "vehicle/truck/40_tons_v2/40_tons_glass.mtl", "vehicle/truck/40_tons_v2/40_tons_interior.mtl", },
+										mesh = "vehicle/truck/40_tons_universal_v2/universal_glass_rgt_lod0.msh",
+										name = "universal_glass_rgt",
+										transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 2.0024001598358, -1.2149000167847, 2.3066999912262, 1, },
+									},
+									{
+										materials = { "vehicle/truck/40_tons_v2/40_tons_glass.mtl", "vehicle/truck/40_tons_v2/40_tons_interior.mtl", },
+										mesh = "vehicle/truck/40_tons_universal_v2/universal_glass_top2_lod0.msh",
+										name = "universal_glass_top2",
+										transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+									},
+								},
+								name = "stake_glass_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5114998817444, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_interior.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_interior_lod0.msh",
+								name = "universal_front_interior",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114998817444, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod0.msh",
+								name = "universal_front_w1_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 5.2805500030518, 1.0223524570465, 0.49857795238495, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod0.msh",
+								name = "universal_front_w1_lft",
+								transf = { -1.2000000476837, -1.0490733615143e-07, 0, 0, 1.0490733615143e-07, -1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 5.2805500030518, -1.0223524570465, 0.49857798218727, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod0.msh",
+								name = "universal_front_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 2.3288850784302, 6.1062267677873e-17, 0.50058001279831, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod0.msh",
+								name = "universal_front_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 1.216050028801, 0, 0.50058001279831, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_headlights_lod0.msh",
+								name = "universal_front_headlights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114998817444, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_blinklights_lft_lod0.msh",
+								name = "universal_front_blinklights_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114998817444, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_blinklights_rgt_lod0.msh",
+								name = "universal_front_blinklights_rgt",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114998817444, 0, 0, 1, },
+							},
+							{
+								name = "stake_front_comp_grp",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.5114998817444, 0, 0, 1, },
+							},
+						},
+						name = "stake_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_stake.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_body_lod0.msh",
+								name = "stake_back_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_w1_lod0.msh",
+								name = "stake_back_w1",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -6.9608044624329, 0, 0.50057762861252, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_w1_lod0.msh",
+								name = "stake_back_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -8.107533454895, 6.1062267677873e-17, 0.50057756900787, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_w1_lod0.msh",
+								name = "stake_back_w3",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -9.2481727600098, 0, 0.50057768821716, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_backlights_lod0.msh",
+								name = "stake_back_backlights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_brakelights_lod0.msh",
+								name = "stake_back_brakelights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_blinklights_lft_lod0.msh",
+								name = "stake_back_blinklights_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_blinklights_rgt_lod0.msh",
+								name = "stake_back_blinklights_rgt",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "stake_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2750000953674, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 157.2745513916,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_body_lod1.msh",
+								name = "universal_front_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114762783051, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod1.msh",
+								name = "universal_front_w1_lft",
+								transf = { -1.2000000476837, 1.4695762231022e-16, -1.811949630337e-07, 0, -2.7506636020563e-14, -1.2000000476837, 1.811949630337e-07, 0, -1.811949630337e-07, 1.811949630337e-07, 1.2000000476837, 0, 5.2799997329712, 1.0223524570465, 0.49799999594688, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod1.msh",
+								name = "universal_front_w1_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 5.2799997329712, -1.0223524570465, 0.49799999594688, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod1.msh",
+								name = "universal_front_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 2.3288350105286, 0, 0.5, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod1.msh",
+								name = "universal_front_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 1.2159999608994, 0, 0.5, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_headlights_lod1.msh",
+								name = "universal_front_headlights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114998817444, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_blinklights_lft_lod1.msh",
+								name = "universal_front_blinklights_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114998817444, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_blinklights_rgt_lod1.msh",
+								name = "universal_front_blinklights_rgt",
+								transf = { -1.2000000476837, 1.811949630337e-07, -1.4695762231022e-16, 0, -1.811949630337e-07, -1.2000000476837, -1.4695762231022e-16, 0, -1.4695763554511e-16, -1.4695760907533e-16, 1.2000000476837, 0, 3.5114998817444, 0, 0, 1, },
+							},
+						},
+						name = "stake_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_stake_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_body_lod1.msh",
+								name = "stake_back_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_w1_lod1.msh",
+								name = "stake_back_w1",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -6.9608044624329, 0, 0.50057762861252, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_w1_lod1.msh",
+								name = "stake_back_w2",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -8.107533454895, 6.1062267677873e-17, 0.50057756900787, 1, },
+							},
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_w1_lod1.msh",
+								name = "stake_back_w3",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, -9.2481727600098, 0, 0.50057768821716, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_all_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_backlights_lod1.msh",
+								name = "stake_back_backlights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_brake_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_brakelights_lod1.msh",
+								name = "stake_back_brakelights",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_blinklights_lft_lod1.msh",
+								name = "stake_back_blinklights_lft",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/truck/emissive/truck_blink_lights.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_blinklights_rgt_lod1.msh",
+								name = "stake_back_blinklights_rgt",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "stake_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2750000953674, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 157.2745513916,
+			visibleTo = 471.82363891602,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons.mtl", },
+								mesh = "vehicle/truck/40_tons_universal_v2/universal_front_body_lod2.msh",
+								name = "universal_front_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 3.5114762783051, 0, 0, 1, },
+							},
+						},
+						name = "stake_front_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "vehicle/truck/40_tons_v2/40_tons_stake_lod.mtl", "vehicle/truck/40_tons_v2/40_tons_lod.mtl", },
+								mesh = "vehicle/truck/40_tons_stake_v2/stake_back_body_lod2.msh",
+								name = "stake_back_body",
+								transf = { 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1.2000000476837, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "stake_back_grp",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.2750000953674, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 471.82363891602,
+			visibleTo = 1415.4709472656,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1990,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			description = _("VEHICLE_TRUCK_40_TONS_STAKE_DESCRIPTION"),
+			name = _("VEHICLE_TRUCK_40_TONS_STAKE_NAME"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 25568,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 2,
+					color = { 0.08627450466156, 0.08627450466156, 0.08627450466156, },
+					frequency = 40,
+					initialAlpha = 0.69999998807907,
+					lifeTime = 1.2000000476837,
+					position = { -2.5, 0, 0.10800000280142, },
+					size01 = { 0.079999998211861, 0.89999997615814, },
+					velocity = { -5, 0, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			blinkInterval = 500,
+			configs = {
+				{
+					axles = { "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod0.msh", "vehicle/truck/40_tons_stake_v2/stake_back_w1_lod0.msh", },
+					blinkLightsLeft = { 14, 24, },
+					blinkLightsRight = { 15, 25, },
+					brakeLights = { 23, },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 2.3199999332428,
+							upright = false,
+						},
+						{
+							group = 17,
+							offset = 0,
+							position = 1.210000038147,
+							upright = false,
+						},
+					},
+					headLights = { 13, 22, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod0.msh", },
+				},
+				{
+					axles = { "vehicle/truck/40_tons_universal_v2/universal_front_w2_lod1.msh", "vehicle/truck/40_tons_stake_v2/stake_back_w1_lod1.msh", },
+					blinkLightsLeft = { 8, 17, },
+					blinkLightsRight = { 9, 18, },
+					brakeLights = { 16, },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 2.3199999332428,
+							upright = false,
+						},
+						{
+							group = 10,
+							offset = 0,
+							position = 1.210000038147,
+							upright = false,
+						},
+					},
+					headLights = { 7, 15, },
+					steeringParts = { },
+					wheels = { "vehicle/truck/40_tons_universal_v2/universal_front_w1_lft_lod1.msh", },
+				},
+				{
+					axles = { },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					fakeBogies = {
+						{
+							group = 1,
+							offset = 0,
+							position = 2.3199999332428,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = 1.210000038147,
+							upright = false,
+						},
+						{
+							group = 3,
+							offset = 0,
+							position = -5.8299999237061,
+							upright = false,
+						},
+					},
+					headLights = { },
+					steeringParts = { },
+					wheels = { },
+				},
+			},
+			engine = {
+				power = 560,
+				tractiveEffort = 60,
+				type = "DIESEL",
+			},
+			soundSet = {
+				horn = "",
+				name = "truck_old",
+			},
+			topSpeed = 27.780000686646,
+			weight = 15,
+		},
+		seatProvider = {
+			crewModels = { },
+			drivingLicense = "TRUCK",
+			seats = {
+				{
+					animation = "driving_upright",
+					crew = true,
+					forward = true,
+					group = 16,
+					transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 1.8899999856949, 0.68000000715256, 1.0900000333786, 1, },
+				},
+			},
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									cargoBay = {
+										bbMax = { 0.80000001192093, 1.1799999475479, 2.6800000667572, },
+										bbMin = { -10.869999885559, -1.1799999475479, 1.289999961853, },
+										cargoFormat = "BIG",
+										childId = 17,
+										gridSize = { 2, 1, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "LOGS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									cargoBay = {
+										bbMax = { 0.80000001192093, 1.0348000526428, 2.6800000667572, },
+										bbMin = { -9.3690004348755, -1.0348000526428, 1.0887999534607, },
+										cargoFormat = "BIG",
+										childId = 17,
+										gridSize = { 2, 1, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									cargoBay = {
+										bbMax = { 0.80000001192093, 1.0348000526428, 2.6800000667572, },
+										bbMin = { -9.3690004348755, -1.0348000526428, 1.0887999534607, },
+										cargoFormat = "BIG",
+										childId = 17,
+										gridSize = { 2, 1, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "PLANKS",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 120,
+									cargoBay = {
+										bbMax = { 0.80000001192093, 1.0348000526428, 2.6800000667572, },
+										bbMin = { -9.3690004348755, -1.0348000526428, 1.0887999534607, },
+										cargoFormat = "BIG",
+										childId = 17,
+										gridSize = { 2, 1, },
+										sizePolicy = "STRETCH_HEIGHT_SCALEY",
+										type = "DISCRETE",
+									},
+									seats = { },
+									type = "CONSTRUCTION_MATERIALS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
+			},
+			groupFileName = "",
+			loadSpeed = 5,
+			multipleUnitOnly = false,
+			reversible = false,
+		},
+		versioning = {
+			__version = "_v2",
+		},
+	},
+	version = 1,
+}
+end
