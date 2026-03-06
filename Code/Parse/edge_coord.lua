@@ -14,25 +14,22 @@
 --}
 
 -- 1. Get the list of edges
-local all = game.interface.getEntities({ pos = {0,0}, radius = 90000000 }, { type="CONSTRUCTION" })
+local all = game.interface.getEntities({ pos = {0,0}, radius = 90000000 }, { type="BASE_EDGE" })
 
 -- 2. Open a file for writing ("w" mode)
 -- On Windows, this usually saves to: .../userdata/[ID]/1066780/local/
-local file = io.open("edge_coords.txt", "w")
+local file = io.open("edge_coords_v2.txt", "w")
 
 if file then
     file:write("id,node0,x_0,y_0,z_0,node1,x_1,y_1,z_1,bus,tram,track,streetType\n") -- Header row
-    
+
     for i=1, #all do
         local t = game.interface.getEntity(all[i])
         local x_0, y_0, z_0 = t.node0pos[1], t.node0pos[2], t.node0pos[3]
         local x_1, y_1, z_1 = t.node1pos[1], t.node1pos[2], t.node1pos[3]
         -- Write the formatted line to the file
-        file:write(string.format("%d, %d, %.3f, %.3f, %.3f, %d, %.3f, %.3f, %.3f,%s,%s,%s,%s,\n",
-        t.id, t.node0, x_0, y_0, z_0, t.node1, x_1, y_1, z_1, t.hasBus, t.hasTram,
-        t.track, t.streetType))
+        file:write(string.format("%d, %d, %.3f, %.3f, %.3f, %d, %.3f, %.3f, %.3f,%s,%s,%s,%s,\n",t.id, t.node0, x_0, y_0, z_0, t.node1, x_1, y_1, z_1, t.hasBus, t.hasTram,t.track, t.streetType))
     end
-    
     file:close()
     print("Success! File saved as edges_coords.txt")
 else
